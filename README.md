@@ -1,2 +1,2 @@
 # Nomifactory
-There are currently multiblock branches for developpment
+There are currently multiples branches for developpment
