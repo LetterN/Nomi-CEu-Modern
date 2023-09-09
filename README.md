@@ -1,2 +1,2 @@
 # Nomifactory
-Goofy ass 1.20.1 port of Nomi (for now)
+There are currently multiblock branches for developpment
