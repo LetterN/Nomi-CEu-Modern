@@ -89,6 +89,27 @@ StartupEvents.registry('item', event => {
     event.create('eternalcatalyst').displayName("Eternal Catalyst")
     event.create('ultimate_gem').displayName("\u00A7dUltimate Gem").glow(true)
 
+    //Misc Items
+    event.create('grainsofinnocence').displayName("Grains of Innocence")
+    event.create('radiumsalt').displayName("Radium Salt").rarity('Epic')
+    event.create('moondust').displayName("Moon Dust")
+        //public static ItemBase REDSTONE_ARMOR_PLATE;
+        //public static ItemBase CARBON_ARMOR_PLATE;
+        //public static ItemBase LAPIS_ARMOR_PLATE;
+        //TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
+    event.create('compressedoctadiccapacitor').displayName("Compressed Octadic Capacitor")
+    event.create('doublecompressedoctadiccapacitor').displayName("Double Compressed Octadic Capacitor")
+        // Core and North are part of the Crafting Nether Star mod.
+    event.create('netherstarnorth').displayName("Nether Star North Tip")
+    event.create('netherstarsouth').displayName("Nether Star South Tip")
+    event.create('netherstareast').displayName("Nether Star East Tip")
+    event.create('netherstarwest').displayName("Nether Star West Tip")
+    event.create('netherstarcenter').displayName("Nether Star Center")
+        // Hydrogen is part of Solidified Items section.
+    event.create('densehydrogen').displayName("Dense Hydrogen").rarity('Uncommon')
+    event.create('ultradensehydrogen').displayName("Ultra Dense Hydrogen").rarity('Rare')
+
+    //TODO: Add Hand Framing Tool
 })
 
 
