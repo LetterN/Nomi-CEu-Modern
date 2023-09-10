@@ -29,10 +29,15 @@ StartupEvents.registry('item', event => {
     event.create('nomiquarter').displayName("\u00A7bNomiquarter [25]")
     event.create('nomidollar').displayName("\u00A7dNomidollar [100]")
 
-
-
-
-
+    //widgets
+    event.create('woodenwidget').displayName("Wooden Widget")
+    event.create('woodwidgetleft').displayName("Wooden Widget Left Part")
+    event.create('woodwidgetright').displayName("Wooden Widget Right Part")
+    event.create('stonewidget').displayName("Stone Widget")
+    event.create('stonewidgetup').displayName("Stone Widget Up Side")
+    event.create('stonewidgetdown').displayName("Stone Widget Down Side")
+    event.create('alloywidget').displayName("Alloy Widget")
+    event.create('enderwidget').displayName("Ender Widget")
 })
 
 
