@@ -18,4 +18,8 @@ ItemEvents.tooltip(tooltip => {
 
     //Microminer Components
     tooltip.add('universal_navigator', '\u00A79See You Later, navigator!')
+
+
+    //Endgame Items
+    tooltip.add('ultimate_gem', '\u00A7eRecipe is shapeless.')
 })
