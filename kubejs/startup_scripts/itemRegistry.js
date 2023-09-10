@@ -72,6 +72,16 @@ StartupEvents.registry('item', event => {
     event.create('solidifiedradon').displayName("Solidified Radon")
     event.create('solidifiedxenon').displayName("Solidified Xenon")
 
+    //Stabilized Items
+    event.create('stabilizedeinsteinium').displayName("\u00A7dStabilized Einsteinium")
+    event.create('stabilizedberkelium').displayName("Stabilized Berkelium")
+    event.create('stabilizedneptunium').displayName("Stabilized Neptunium")
+    event.create('stabilizedplutonium').displayName("Stabilized Plutonium")
+    event.create('stabilizeduranium').displayName("Stabilized Uranium")
+    event.create('stabilizedcurium').displayName("Stabilized Curium")
+    event.create('stabilizedcalifornium').displayName("Stabilized Californium")
+    event.create('stabilizedamericium').displayName("Stabilized Americium")
+
 
 })
 
