@@ -22,6 +22,8 @@ StartupEvents.registry('item', event => {
     event.create('warp_engine').displayName("\u00A7dWarp Engine")
     event.create('universal_navigator').displayName("\u00A7dUniversal Navigator")
     event.create('quantum_fluxed_eternium_heavy_plating').displayName("\u00A7dQuantum Fluxed Eternium Heavy Plating")
+    event.create('quantumflux').displayName("\u00A7dQuantum Flux")
+    event.create('gemsensor').displayName("Gemstone Sensor")
 
     //Nomi Coins
     event.create('nomipenny').displayName("Nomipenny [1]")
@@ -38,6 +40,26 @@ StartupEvents.registry('item', event => {
     event.create('stonewidgetdown').displayName("Stone Widget Down Side")
     event.create('alloywidget').displayName("Alloy Widget")
     event.create('enderwidget').displayName("Ender Widget")
+
+    //Space Items.  
+    event.create('radiationlayer').displayName("Radiaton Layer")
+    event.create('pressurelayer').displayName("Pressure Layer")
+    event.create('thermalcloth').displayName("Thermal Cloth")
+    event.create('unpreparedspacehelmet').displayName("Unprepared Space Helmet")
+    event.create('unpreparedspacechestpiece').displayName("Unprepared Space Chestpiece")
+    event.create('unpreparedspaceleggings').displayName("Unprepared Space Leggings")
+    event.create('unpreparedspaceboots').displayName("Unprepared Space Boots")
+
+
+
+
+
+
+
+
+
+
+
 })
 
 
