@@ -82,6 +82,12 @@ StartupEvents.registry('item', event => {
     event.create('stabilizedcalifornium').displayName("Stabilized Californium")
     event.create('stabilizedamericium').displayName("Stabilized Americium")
 
+    //End Game Items
+    event.create('heartofauniverse').displayName("\u00A7dHeart Of A Universe")
+    event.create('creativeportabletankmold').displayName("Creative Quantum Tank Data")
+    event.create('exoticmaterialscatalyst').displayName("Exotic Materials Catalyst")
+    event.create('eternalcatalyst').displayName("Eternal Catalyst")
+    event.create('ultimate_gem').displayName("\u00A7dUltimate Gem").glow(true)
 
 })
 
