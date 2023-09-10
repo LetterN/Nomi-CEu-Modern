@@ -50,9 +50,13 @@ StartupEvents.registry('item', event => {
     event.create('unpreparedspaceleggings').displayName("Unprepared Space Leggings")
     event.create('unpreparedspaceboots').displayName("Unprepared Space Boots")
 
-
-
-
+    //Data
+    event.create('lairofthechaosguardiandata').displayName("\u00A7dLair Of The Chaos Guardian Data")
+    event.create('stellarcreationdata').displayName("\u00A7bStellar Creation Data")
+    event.create('universecreationdata').displayName("\u00A7dUniverse Creation Data")
+    event.create('impossiblerealmdata').displayName("\u00A7bImpossible Realm Data")
+    event.create('witherrealmdata').displayName("\u00A7dWither Realm Data")
+    event.create('dragonlairdata').displayName("\u00A7dDragon Lair Data")
 
 
 
