@@ -58,10 +58,19 @@ StartupEvents.registry('item', event => {
     event.create('witherrealmdata').displayName("\u00A7dWither Realm Data")
     event.create('dragonlairdata').displayName("\u00A7dDragon Lair Data")
 
-
-
-
-
+    //Solidified Items
+    event.create('solidifiedargon').displayName("Solidified Argon")
+    event.create('solidifiedchlorine').displayName("Solidified Chlorine")
+    event.create('solidifiedfluorine').displayName("Solidified Fluorine")
+    event.create('solidifiedhelium').displayName("Solidified Helium")
+    event.create('solidifiedhydrogen').displayName("Solidified Hydrogen")
+    event.create('solidifiedkrypton').displayName("Solidified Krypton")
+    event.create('solidifiedmercury').displayName("Solidified Mercury")
+    event.create('solidifiedneon').displayName("Solidified Neon")
+    event.create('solidifiednitrogen').displayName("Solidified Nitrogen")
+    event.create('solidifiedoxygen').displayName("Solidified Oxygen")
+    event.create('solidifiedradon').displayName("Solidified Radon")
+    event.create('solidifiedxenon').displayName("Solidified Xenon")
 
 
 })
