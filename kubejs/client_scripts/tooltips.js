@@ -1,4 +1,7 @@
 ItemEvents.tooltip(tooltip => {
+
+
+    //Microminers
     tooltip.add('kubejs:microminer_t1', '\u00A7oHarvests Titanium and other light metals from asteroids in the microverse.')
     tooltip.add('kubejs:microminer_t2', '\u00A7oHarvests Tungsten and other heavy metals from asteroids in the microverse.')
     tooltip.add('kubejs:microminer_t3', '\u00A7oHarvests ultra hot metals and gems from Nether microverses.')
@@ -12,4 +15,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('kubejs:microminer_t9', '\u00A7oCollapses microverse stars and harvests their delicious neutronium cores.')
     tooltip.add('kubejs:microminer_t10', '\u00A7oCollapses an entire microverse and harvests it whole.')
     tooltip.add('kubejs:microminer_t10', '\u00A7oTry to aim for uninhabited ones.')
+
+    //Microminer Components
+    tooltip.add('universal_navigator', '\u00A79See You Later, navigator!')
 })
