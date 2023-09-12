@@ -252,11 +252,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("signalum")
         .ingot().fluid()
         .element(GTElements.get("signalum"))
-        .color(0x9949cc)
+        .color(0xff7f0f)
         .iconSet('shiny')
         .blastTemp(4000)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
-
+        .cableProperties(32768, 1, 0, true)
     event.create("lumium")
         .ingot().fluid()
         .element(GTElements.get("lumium"))
@@ -302,6 +302,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x414751)
         .iconSet('dull')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FRAME)
+
+        event.create("cpnductive_iron")
+        .ingot().fluid()
+        .element(GTElements.get("conductive_iron"))
+        .color(0xf7b29b)
+        .iconSet('metallic')
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
+        .cableProperties(32, 1, 0, true)
 
     event.create("energetic_alloy")
         .ingot().fluid()
@@ -351,4 +359,14 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
         .cableProperties(2048, 1, 0, true)
 
+})
+
+// Endgame shit
+GTCEuStartupEvents.registry('gtceu:material', event => {
+event.create("draconic_superconductor")
+.ingot().fluid()
+.element(GTElements.get("draconic_superconductor"))
+.color(0xffffff)
+.iconSet('shiny')
+.cableProperties(2147483647, 4, 0, true)
 })
