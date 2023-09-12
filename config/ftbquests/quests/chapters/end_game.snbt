@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "end_game"
+	group: ""
+	icon: "kubejs:heartofauniverse"
+	id: "2BEB72BC6C6FB4E9"
+	order_index: 9
+	quest_links: [ ]
+	quests: [ ]
+	title: "End Game"
+}

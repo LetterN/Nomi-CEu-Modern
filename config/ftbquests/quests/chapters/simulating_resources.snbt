@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "simulating_resources"
+	group: ""
+	icon: "hostilenetworks:sim_chamber"
+	id: "6D8C988EFB3F7437"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Simulating Resources"
+}

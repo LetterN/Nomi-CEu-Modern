@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "fun_with_fusion"
+	group: ""
+	icon: "gtceu:luv_fusion_reactor"
+	id: "40F7695BE1E65C41"
+	order_index: 8
+	quest_links: [ ]
+	quests: [ ]
+	title: "Fun With Fusion"
+}
