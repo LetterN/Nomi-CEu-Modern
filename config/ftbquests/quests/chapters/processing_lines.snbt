@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "processing_lines"
+	group: ""
+	icon: "gtceu:lv_chemical_reactor"
+	id: "055C0B43FE14258F"
+	order_index: 10
+	quest_links: [ ]
+	quests: [ ]
+	title: "Processing Lines"
+}

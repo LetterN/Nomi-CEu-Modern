@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "early_game"
+	group: ""
+	icon: "gtceu:advanced_integrated_circuit"
+	id: "7041EC01A69404E6"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "Early Game"
+}
