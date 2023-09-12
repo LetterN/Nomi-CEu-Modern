@@ -50,9 +50,14 @@
 					type: "item"
 				}
 				{
-					id: "328C742B58E65E03"
-					item: "minecraft:bedrock"
-					title: "Electric Prospector's Scanner (HV)"
+					id: "3451D4471E82E65A"
+					item: {
+						Count: 1b
+						id: "gtceu:prospector.hv"
+						tag: {
+							Charge: 1600000L
+						}
+					}
 					type: "item"
 				}
 			]
@@ -84,8 +89,8 @@
 				type: "checkmark"
 			}]
 			title: "Cake Based Dimensional Transit"
-			x: -4.0d
-			y: -2.5d
+			x: -3.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -112,8 +117,8 @@
 				title: "Any #storagedrawers:drawers"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -0.5d
+			x: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
