@@ -119,6 +119,9 @@ StartupEvents.registry('item', event => {
     event.create('pyrotheum_dust').texture('kubejs:item/pyrotheum_blend').displayName('\u00A76Pyrotheum dust')
     event.create('primal_mana').displayName("Primal Mana Dust").rarity('epic')
 
+    //random AE2 stuff
+    event.create('fluix_plate').displayName("Fluix Plate").tag('forge:plates/fluix')
+
 })
 
 
