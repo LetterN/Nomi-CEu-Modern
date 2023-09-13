@@ -2,7 +2,7 @@
     "modPriorities": [
         "minecraft",
         "kubejs",
-        "gregtech",
+        "gtceu",
         "thermal"
     ],
     "stoneStrata": [
@@ -74,7 +74,16 @@
         "tin",
         "tungsten",
         "uranium",
-        "zinc"
+        "zinc",
+        "dark_steel",
+        "neutronium",
+        "certus_quartz",
+        "energetic_alloy",
+        "vibrant_alloy",
+        "pulsating_alloy",
+        "conductive_alloy",
+        "soularium",
+        "end_steel"
     ],
     "priorityOverrides": {},
     "tagOwnerships": {},

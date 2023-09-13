@@ -3,3 +3,6 @@
 !/mods
 !/kubejs
 !/.gitignore
+
+/config/fml.toml
+/kubejs/probe

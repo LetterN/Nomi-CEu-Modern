@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "into_the_microverse"
+	group: ""
+	icon: "kubejs:microminer_t1"
+	id: "68F29871402A6B1B"
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+	title: "Into The Microverse"
+}

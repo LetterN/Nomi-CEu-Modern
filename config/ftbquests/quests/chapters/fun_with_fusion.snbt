@@ -1,0 +1,192 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "fun_with_fusion"
+	group: ""
+	icon: "gtceu:luv_fusion_reactor"
+	id: "40F7695BE1E65C41"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			id: "57627DCF9F46A8E2"
+			tasks: [{
+				id: "393228A0D8F67AD2"
+				item: "gtceu:trinium_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["57627DCF9F46A8E2"]
+			id: "70EFDBB0FFC9B28D"
+			tasks: [{
+				id: "28F27BBFA5273F78"
+				item: "gtceu:luv_fusion_reactor"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["70EFDBB0FFC9B28D"]
+			id: "1405D08C6A87B3BB"
+			tasks: [{
+				id: "5CA6A3EE3EF632F5"
+				item: "gtceu:plasma_large_turbine"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["70EFDBB0FFC9B28D"]
+			id: "25E1DE210726372E"
+			tasks: [{
+				id: "6A87828F83C85FC9"
+				item: "gtceu:europium_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["25E1DE210726372E"]
+			id: "1183B96529D08326"
+			tasks: [{
+				id: "4D32C3161DD5623E"
+				item: "gtceu:fusion_coil"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1183B96529D08326"]
+			id: "069773756716E192"
+			tasks: [{
+				id: "1318C0E509554BEF"
+				item: "gtceu:zpm_fusion_reactor"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["069773756716E192"]
+			id: "10DD3A6BE5F9624D"
+			tasks: [{
+				id: "4E4BF30AA04246D9"
+				item: "gtceu:naquadria_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["069773756716E192"]
+			id: "3FFC053E3E11D586"
+			tasks: [{
+				id: "33B59563EFF662EE"
+				item: "gtceu:darmstadtium_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["069773756716E192"]
+			id: "79EFCD8E01384C0C"
+			tasks: [{
+				id: "26D3C433DB615E42"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["79EFCD8E01384C0C"]
+			id: "15607184B546F5EE"
+			tasks: [{
+				id: "29D1DB4708B2D316"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["79EFCD8E01384C0C"]
+			id: "6F9BAA754DC26A3D"
+			tasks: [{
+				id: "3B593A41F874A1DC"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7D29C79DE1CCA2A2"]
+			id: "0DF2AF70CB1FEFB3"
+			tasks: [{
+				id: "038C507EEFE6A5EE"
+				item: "gtceu:neutronium_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"4A8FB1EF600F0882"
+				"6F9BAA754DC26A3D"
+				"5BADF536443E712D"
+			]
+			id: "7D29C79DE1CCA2A2"
+			tasks: [{
+				id: "3816F5546D4E770F"
+				item: "gtceu:uv_fusion_reactor"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7D29C79DE1CCA2A2"]
+			id: "4D0E5DE8475E126E"
+			tasks: [{
+				id: "013101DE01341EF9"
+				item: "gtceu:awakened_draconium_block"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3FFC053E3E11D586"]
+			id: "5BADF536443E712D"
+			tasks: [{
+				id: "1D4F6E06507385B8"
+				item: "gtceu:uv_machine_hull"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["069773756716E192"]
+			id: "4A8FB1EF600F0882"
+			tasks: [{
+				id: "58B3062238CFC79D"
+				item: "gtceu:americium_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+	]
+	title: "Fun With Fusion"
+}
