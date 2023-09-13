@@ -303,9 +303,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet('dull')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FRAME)
 
-        event.create("cpnductive_iron")
+    event.create("conductive_alloy")
         .ingot().fluid()
-        .element(GTElements.get("conductive_iron"))
+        .element(GTElements.get("conductive_alloy"))
         .color(0xf7b29b)
         .iconSet('metallic')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
@@ -329,9 +329,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW)
         .cableProperties(512, 1, 0, true)
 
-    event.create("pulsating_iron")
+    event.create("pulsating_alloy")
         .ingot().fluid()
-        .element(GTElements.get("pulsating_iron"))
+        .element(GTElements.get("pulsating_alloy"))
         .color(0x6ae26e)
         .iconSet('shiny')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
@@ -347,15 +347,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("soularium")
         .ingot().fluid()
         .element(GTElements.get("soularium"))
-        .color(0x7c674d)
+        .color(0x7c674)
         .iconSet('metallic')
         .flags(GTMaterialFlags.GENERATE_PLATE)
-
-        event.create("dark_soularium")
-        .ingot().fluid()
-        .element(GTElements.get("dark_soularium"))
-        .color(0x7c674d)
-        .iconSet('metallic')
 
     event.create("end_steel")
         .ingot().fluid()
@@ -369,10 +363,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 // Endgame shit
 GTCEuStartupEvents.registry('gtceu:material', event => {
-event.create("draconic_superconductor")
-.ingot().fluid()
-.element(GTElements.get("draconic_superconductor"))
-.color(0xffffff)
-.iconSet('shiny')
-.cableProperties(2147483647, 4, 0, true)
+    event.create("draconic_superconductor")
+        .ingot().fluid()
+        .element(GTElements.get("draconic_superconductor"))
+        .color(0xffffff)
+        .iconSet('shiny')
+        .cableProperties(2147483647, 4, 0, true)
 })
