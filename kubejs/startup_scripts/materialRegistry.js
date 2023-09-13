@@ -361,7 +361,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 })
 
-// Endgame shit
+// Endgame stuff
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("draconic_superconductor")
         .ingot().fluid()
