@@ -1,81 +1,43 @@
 ServerEvents.recipes(event => {
 
-event.shaped(
 
-    Item.of('kubejs:nomipenny', 5), 
-    [ 
-      '   ', 
-      ' A ', 
-      '   '  
-    ],
-    {
-      A: 'kubejs:nominickel'  
-    }
-  )
+    event.shapeless('5x kubejs:nomipenny', 'kubejs:nominickel')
 
-  event.shaped(
+    event.shaped(
 
-    Item.of('kubejs:nominickel', 1), 
-    [ 
-      ' A ', 
-      'AAA', 
-      ' A '  
-    ],
-    {
-      A: 'kubejs:nomipenny'  
-    }
-  )
-  
-  event.shaped(
+        Item.of('kubejs:nominickel', 1), [
+            ' A ',
+            'AAA',
+            ' A '
+        ], {
+            A: 'kubejs:nomipenny'
+        }
+    )
 
-    Item.of('kubejs:nominickel', 5), 
-    [ 
-      '   ', 
-      ' A ', 
-      '   '  
-    ],
-    {
-      A: 'kubejs:nomiquarter'  
-    }
-  )
+    event.shapeless('5x kubejs:nominickel', 'kubejs:nomiquarter')
 
-  event.shaped(
+    event.shaped(
 
-    Item.of('kubejs:nomiquarter', 1), 
-    [ 
-      ' A ', 
-      'AAA', 
-      ' A '  
-    ],
-    {
-      A: 'kubejs:nominickel'  
-    }
-  )
+        Item.of('kubejs:nomiquarter', 1), [
+            ' A ',
+            'AAA',
+            ' A '
+        ], {
+            A: 'kubejs:nominickel'
+        }
+    )
 
-  event.shaped(
+    event.shapeless('4x kubejs:nomiquarter', 'kubejs:nomidollar')
 
-  Item.of('kubejs:nomiquarter', 4), 
-  [ 
-    '   ', 
-    ' A ', 
-    '   '  
-  ],
-  {
-    A: 'kubejs:nomidollar'  
-  }
-)
+    event.shaped(
 
-event.shaped(
-
-    Item.of('kubejs:nomidollar', 1), 
-    [ 
-      'A A', 
-      '   ', 
-      'A A'  
-    ],
-    {
-      A: 'kubejs:nomiquarter'  
-    }
-  )
+        Item.of('kubejs:nomidollar', 1), [
+            'A A',
+            '   ',
+            'A A'
+        ], {
+            A: 'kubejs:nomiquarter'
+        }
+    )
 
 })

@@ -4,5 +4,5 @@
 !/kubejs
 !/.gitignore
 
-config/fml.toml
-
+/config/fml.toml
+/kubejs/probe
