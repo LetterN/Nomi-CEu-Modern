@@ -110,6 +110,18 @@ StartupEvents.registry('item', event => {
     event.create('ultradensehydrogen').displayName("Ultra Dense Hydrogen").rarity('Rare')
 
     //TODO: Add Hand Framing Tool
+    event.create('handframingtool').displayName("Hand Framing Tool [W.I.P]")
+
+    //Add Thermal Expansion items that were missing
+    event.create('aerotheum_dust').texture('kubejs:item/aerotheum_blend').displayName('\u00A77Aerotheum Dust')
+    event.create('cryotheum_dust').texture('kubejs:item/cryotheum_blend').displayName('\u00A7bCryotheum Dust')
+    event.create('petrotheum_dust').texture('kubejs:item/petrotheum_blend').displayName('\u00A78Petrotheum Dust')
+    event.create('pyrotheum_dust').texture('kubejs:item/pyrotheum_blend').displayName('\u00A76Pyrotheum dust')
+    event.create('primal_mana').displayName("Primal Mana Dust").rarity('epic')
+
+    //random AE2 stuff
+    event.create('fluix_plate').displayName("Fluix Plate").tag('forge:plates/fluix')
+
 })
 
 
