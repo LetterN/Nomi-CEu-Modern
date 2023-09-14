@@ -198,6 +198,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("osmiridiumyes")
         .dust().ore()
         .element(GTElements.get("osmiridiumyes"))
+        .components(GTMaterials.Iridum, 8, GTMaterials.Osmium, 2)
         .iconSet('dull')
 
     event.create("iridosmineyes")
