@@ -1,10 +1,10 @@
 {
-    "name": "ULV Age",
+    "name": "LV Age",
     "tooltip": [
-        "Welcome to the ULV age!"
+        "Welcome to the LV age!"
     ],
     "item": {
-        "item": "gtceu:wrought_iron_ingot",
+        "item": "gtceu:steel_ingot",
         "count": 1
     },
     "display": {
@@ -26,6 +26,6 @@
     },
     "colors": {
         "base": "#6B8F85",
-        "accent": "#544A43"
+        "accent": "#1e2420"
     }
 }
