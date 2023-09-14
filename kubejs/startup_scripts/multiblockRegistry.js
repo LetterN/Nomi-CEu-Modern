@@ -76,7 +76,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.air())
             .build())
         .workableCasingRenderer("kubejs:block/microverse_casing",
-            "kubejs:block/multiblock/basic_machine_smile", false)
+            "gtceu:block/multiblock/implosion_compressor", false)
 })
 
 // Advanced Microverse Projecctor II 
