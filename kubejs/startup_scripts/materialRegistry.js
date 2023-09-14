@@ -371,3 +371,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet('shiny')
         .cableProperties(2147483647, 4, 0, true)
 })
+
+//Screret's dark magic
+const $PropertyKey = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey')
+const $IngotProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty')
+
+GTCEuStartupEvents.registry('gtceu:material', event => {
+    GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
+})
