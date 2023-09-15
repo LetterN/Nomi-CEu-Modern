@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
 
+// Base AE2
     // ME Controller
     event.remove({ output: 'ae2:controller' })
     event.shaped(
@@ -94,4 +95,44 @@ ServerEvents.recipes(event => {
     // Pattern Provider
 
     // Molecular Assembler
+
+    // Interface
+
+    // Quantum Ring
+
+    // Quantum Link Chamber
+
+    // Storage Component
+
+    // Storage Housing
+
+    // CPUs
+    
+// PackagedAuto 
+    // Packager
+
+    // Unpackager
+
+    // Packager Extension
+    
+    // Package Encoder
+
+    // Pauto Pattern
+
+    // Pauto Components
+
+    // 5x5 Pauto Table
+
+    // 7x7 Pauto Table
+
+    // 9x9 Pauto Table
+
+    // Combination Pauto Crafter
+
+    // Marked Pedestal
+    
+// Extended AE2
+    // Big Drive
+
+    // Big Pattern Provider
 })
