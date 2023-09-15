@@ -69,7 +69,7 @@ StartupEvents.registry('item', event => {
     event.create('solidified_neon').displayName("Solidified Neon")
     event.create('solidified_nitrogen').displayName("Solidified Nitrogen")
     event.create('solidified_oxygen').displayName("Solidified Oxygen")
-    event.create('solidifie_radon').displayName("Solidified Radon")
+    event.create('solidified_radon').displayName("Solidified Radon")
     event.create('solidified_xenon').displayName("Solidified Xenon")
 
     //Stabilized Items
@@ -96,7 +96,8 @@ StartupEvents.registry('item', event => {
         //public static ItemBase REDSTONE_ARMOR_PLATE;
         //public static ItemBase CARBON_ARMOR_PLATE;
         //public static ItemBase LAPIS_ARMOR_PLATE;
-        //TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
+
+    //TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
     event.create('compressed_octadic_capacitor').displayName("Compressed Octadic Capacitor")
     event.create('double_compressed_octadic_capacitor').displayName("Double Compressed Octadic Capacitor")
         // Core and North are part of the Crafting Nether Star mod.
@@ -112,15 +113,32 @@ StartupEvents.registry('item', event => {
     //TODO: Add Hand Framing Tool
     event.create('hand_framing_tool').displayName("Hand Framing Tool [W.I.P]")
 
-    //Add Thermal Expansion items that were missing
+    //Add Thermal Series items that were missing
     event.create('aerotheum_dust').texture('kubejs:item/aerotheum_blend').displayName('\u00A77Aerotheum Dust')
     event.create('cryotheum_dust').texture('kubejs:item/cryotheum_blend').displayName('\u00A7bCryotheum Dust')
     event.create('petrotheum_dust').texture('kubejs:item/petrotheum_blend').displayName('\u00A78Petrotheum Dust')
     event.create('pyrotheum_dust').texture('kubejs:item/pyrotheum_blend').displayName('\u00A76Pyrotheum Dust')
     event.create('primal_mana').displayName("Primal Mana Dust").rarity('epic')
 
+    event.create('destabilized_clathrate').rarity('uncommon')
+    event.create('energized_clathrate').rarity('uncommon')
+    event.create('resonant_clathrate').rarity('rare')
+
+    //Upgrade Kits
+    event.create('hardened_upgrade_kit').displayName("Hardened Upgrade Kit")
+    event.create('reinforced_upgrade_kit').rarity('uncommon').displayName("Reinforced Upgrade Kit")
+    event.create('signalum_upgrade_kit').rarity('uncommon').displayName("Signalum Upgrade Kit")
+    event.create('resonant_upgrade_kit').rarity('rare').displayName("Resonant Upgrade Kit")
+    event.create('reinforced_convertion_kit').rarity('uncommon').displayName("Reinforced Convertion Kit")
+    event.create('signalum_convertion_kit').rarity('uncommon').displayName("Signalum Convertion Kit")
+    event.create('resonant_convertion_kit').rarity('rare').displayName("Resonant Convertion Kit")
+
     //random AE2 stuff
     event.create('fluix_plate').displayName("Fluix Plate").tag('forge:plates/fluix')
+
+    //PPC Stuff
+    event.create('pulsating_mesh').displayName("Pulsating Mesh")
+    event.create('pulsating_dust').displayName("Pulsating Dust")
 
 })
 
