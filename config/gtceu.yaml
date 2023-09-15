@@ -183,6 +183,10 @@ machines:
   # Default: true
   doProcessingArray: true
 
+  # Makes nearly every GCYM Multiblock require blocks which set their maximum voltages.
+  # Default: false
+  enableTieredCasings: false
+
 client:
   # Whether or not to enable Emissive Textures for GregTech Machines.
   # Default: true
