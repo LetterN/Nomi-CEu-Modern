@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-// Base AE2
+    // Base AE2
     // ME Controller
     event.remove({ output: 'ae2:controller' })
     event.shaped(
@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
             'ABA'
         ], {
             A: 'gtceu:dark_steel_plate',
-            B: 'kubejs:fluix_plate',
+            B: 'gtceu:fluix_plate',
             C: 'ae2:energy_acceptor'
         }
     )
@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
             'ABA'
         ], {
             A: 'gtceu:electrical_steel_plate',
-            B: 'kubejs:fluix_plate',
+            B: 'gtceu:fluix_plate',
             C: 'gtceu:lv_machine_hull'
         }
     )
@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
             B: '#ae2:illuminated_panel',
             C: 'gtceu:certus_quartz_plate',
             D: 'gtceu:aluminium_crate',
-            E: 'kubejs:fluix_plate',
+            E: 'gtceu:fluix_plate',
             F: 'gtceu:dark_steel_block',
             G: 'gtceu:nether_quartz_plate'
         }
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'gtceu:dark_steel_plate',
             B: 'gtceu:mv_electric_piston',
-            C: 'ae2:fluix_crystal',
+            C: 'gtceu:fluix_gem',
             D: 'gtceu:mv_machine_hull'
         }
     )
@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:aluminium_plate',
             B: 'ae2:quartz_glass',
             C: 'ae2:annihilation_core',
-            D: 'minecraft:crafting_table',
+            D: 'avaritia:compressed_crafting_table',
             E: 'ae2:formation_core'
         }
     )
@@ -347,9 +347,9 @@ ServerEvents.recipes(event => {
     // Level Emitter
 
     // Network Tool (SET RECIPE IF AE2 GLITCH IS FIXED)
-    event.remove({ output: 'ae2:network_tool'})
+    event.remove({ output: 'ae2:network_tool' })
 
-// Extended AE2
+    // Extended AE2
     // Big Drive
     event.remove({ output: 'expatternprovider:ex_drive' })
     event.shaped(
@@ -358,7 +358,7 @@ ServerEvents.recipes(event => {
             'CDC',
             'AEA'
         ], {
-            A: 'kubejs:fluix_plate',
+            A: 'gtceu:fluix_plate',
             B: 'ae2:capacity_card',
             C: 'ae2:spatial_pylon',
             D: 'ae2:drive',
