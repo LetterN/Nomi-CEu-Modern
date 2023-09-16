@@ -83,7 +83,8 @@
         "pulsating_alloy",
         "conductive_alloy",
         "soularium",
-        "end_steel"
+        "end_steel",
+        "fluix"
     ],
     "priorityOverrides": {},
     "tagOwnerships": {},

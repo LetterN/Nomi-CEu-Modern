@@ -367,6 +367,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
         .cableProperties(2048, 1, 0, true)
 
+
+
 })
 
 // Endgame stuff
@@ -379,10 +381,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .cableProperties(2147483647, 4, 0, true)
 })
 
-//Screret's dark magic
+//Missing ingots
 const $PropertyKey = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey')
 const $IngotProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty')
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
+})
+
+//AE2 Materials
+GTCEuStartupEvents.registry('gtceu:material', event => {
+    event.create('fluix')
+        .gem()
+        .dust()
+        .color(0x7f5bb3)
+        .iconSet(GTMaterialIconSet.CERTUS)
+        .flags(GTMaterialFlags.GENERATE_PLATE)
 })

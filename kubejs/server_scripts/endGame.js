@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    //FIXME Broken recipe and needs tier 2
     event.custom({
         "type": "extendedcrafting:shaped_table",
         // "tier": "2",

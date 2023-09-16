@@ -1,4 +1,3 @@
-
 // Small Microverse Projector Recipe Type
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('basic_microverse')
@@ -43,7 +42,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("CCC", "GDG", "CCC")
             .aisle("CSC", "CGC", "CCC")
             .where('S', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('D', Predicates.blocks("minecraft:diamond_block"))
+            .where('D', Predicates.blocks("kubejs:starry_diamond_block"))
             .where('C', Predicates.blocks("kubejs:microverse_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeType())))
             .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
@@ -68,7 +67,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("CVCVC", "GDDDG", "GDDDG", "GDDDG", "CVCVC")
             .aisle("CCSCC", "CGGGC", "CGGGC", "CGGGC", "CCCCC")
             .where('S', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('D', Predicates.blocks("minecraft:diamond_block"))
+            .where('D', Predicates.blocks("kubejs:starry_diamond_block"))
             .where('C', Predicates.blocks("kubejs:microverse_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeType())))
             .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
@@ -96,7 +95,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("#########", "##CGGGC##", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "#CDDDDDC#", "##CGGGC##", "#########")
             .aisle("#########", "#########", "##CCCCC##", "##CVCVC##", "##CCCCC##", "##CVCVC##", "##CCCCC##", "#########", "#########")
             .where('S', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('D', Predicates.blocks("minecraft:diamond_block"))
+            .where('D', Predicates.blocks("kubejs:starry_diamond_block"))
             .where('C', Predicates.blocks("kubejs:microverse_casing")
                 .or(Predicates.autoAbilities(definition.getRecipeType())))
             .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))

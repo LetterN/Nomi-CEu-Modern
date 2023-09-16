@@ -134,7 +134,7 @@ StartupEvents.registry('item', event => {
     event.create('resonant_convertion_kit').rarity('rare').displayName("Resonant Convertion Kit")
 
     //random AE2 stuff
-    event.create('fluix_plate').displayName("Fluix Plate").tag('forge:plates/fluix')
+    //event.create('fluix_plate').displayName("Fluix Plate").tag('forge:plates/fluix')
 
     //PPC Stuff
     event.create('pulsating_mesh').displayName("Pulsating Mesh")
