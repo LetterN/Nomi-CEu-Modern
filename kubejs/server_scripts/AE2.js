@@ -343,13 +343,63 @@ ServerEvents.recipes(event => {
     )
 
     // AE2 Cards
+    event.remove({ output: ['ae2:basic_card', 'ae2:advanced_card', 'ae2:memory_card'] })
+    event.shaped(
+        'ae2:basic_card', [
+            'AB ',
+            'ACB',
+            'AB '
+        ], {
+            A: 'gtceu:copper_fine_wire',
+            B: 'gtceu:iron_plate',
+            C: 'ae2:calculation_processor'
+        }
+    )
+    event.shaped(
+        'ae2:advanced_card', [
+            'AB ',
+            'ACB',
+            'AB '
+        ], {
+            A: 'gtceu:aluminium_fine_wire',
+            B: 'gtceu:electrical_steel_plate',
+            C: 'ae2:calculation_processor'
+        }
+    )
 
-    // Level Emitter
+    event.shapeless('ae2:memory_card', ['#forge:circuits/hv', 'ae2:basic_card'])
+
+
+
+    //Level Emitter
+    event.remove({ output: ['ae2:level_emitter'] })
+    event.shaped(
+        'ae2:level_emitter', [
+            'AB ',
+            'CD ',
+            '   '
+        ], {
+            A: 'minecraft:redstone_torch',
+            B: 'gtceu:aluminium_plate',
+            C: 'ae2:calculation_processor',
+            D: '#forge:rods/stainless_steel'
+        })
 
     // Network Tool (SET RECIPE IF AE2 GLITCH IS FIXED)
     event.remove({ output: 'ae2:network_tool' })
+    event.shaped(
+        'ae2:network_tool', [
+            'AB ',
+            'CD ',
+            '   '
+        ], {
+            A: 'enderio:yeta_wrench',
+            B: '#forge:circuits/ev',
+            C: 'ae2:calculation_processor',
+            D: 'ae2:terminal'
+        })
 
-    // Extended AE2
+
     // Big Drive
     event.remove({ output: 'expatternprovider:ex_drive' })
     event.shaped(
@@ -366,7 +416,169 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // Big Pattern Provider
-})
+    //TODO Big Pattern Provider/Interface (MAKE IN HV ASSEMBLER)
 
-// AE2WT
+    //TODO Big I/O (MAKE IN IV ASSEMBLY LINE)
+
+    //TODO AE2WT
+
+    //Infinite Cobble/Water cell
+    event.replaceInput({ output: Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:f",id:"minecraft:water"}}') }, 'minecraft:water_bucket', 'gtceu:infinite_water_cover')
+    event.replaceInput({ output: Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:f",id:"minecraft:water"}}') }, 'minecraft:diamond', 'gtceu:diamond_plate')
+
+    //Processors
+    event.remove({ output: ['ae2:printed_silicon', 'ae2:logic_processor', 'ae2:calculation_processor', 'ae2:engineering_processor'] })
+    event.custom({
+        "type": "ae2:inscriber",
+        "ingredients": {
+            "middle": {
+                "tag": "gtceu:silicon_plate"
+            },
+            "top": {
+                "item": "ae2:silicon_press"
+            }
+        },
+        "mode": "inscribe",
+        "result": {
+            "item": "ae2:printed_silicon"
+        }
+    })
+    event.custom({
+        "type": "ae2:inscriber",
+        "ingredients": {
+            "bottom": {
+                "item": "ae2:printed_silicon"
+            },
+            "middle": {
+                "tag": "forge:circuits/lv"
+            },
+            "top": {
+                "item": "ae2:printed_logic_processor"
+            }
+        },
+        "mode": "press",
+        "result": {
+            "item": "ae2:logic_processor"
+        }
+    })
+    event.custom({
+        "type": "ae2:inscriber",
+        "ingredients": {
+            "bottom": {
+                "item": "ae2:printed_silicon"
+            },
+            "middle": {
+                "tag": "forge:circuits/lv"
+            },
+            "top": {
+                "item": "ae2:printed_calculation_processor"
+            }
+        },
+        "mode": "press",
+        "result": {
+            "item": "ae2:calculation_processor"
+        }
+    })
+
+    event.custom({
+        "type": "ae2:inscriber",
+        "ingredients": {
+            "bottom": {
+                "item": "ae2:printed_silicon"
+            },
+            "middle": {
+                "tag": "forge:circuits/lv"
+            },
+            "top": {
+                "item": "ae2:printed_engineering_processor"
+            }
+        },
+        "mode": "press",
+        "result": {
+            "item": "ae2:engineering_processor"
+        }
+    })
+
+    //Storage bus
+    event.remove({ output: 'ae2:storage_bus' })
+    event.shapeless('ae2:storage_bus', ['ae2:interface', 'gtceu:mv_electric_piston', 'gtceu:mv_electric_pump'])
+
+    //busses
+    event.remove({ output: ['ae2:import_bus', 'ae2:export_bus'] })
+    event.shaped(
+        'ae2:export_bus', [
+            ' A ',
+            'DBD',
+            ' C '
+        ], {
+            A: 'gtceu:mv_electric_pump',
+            B: 'ae2:formation_core',
+            C: 'gtceu:mv_electric_piston',
+            D: 'gtceu:aluminium_plate'
+        })
+    event.shaped(
+        'ae2:import_bus', [
+            ' A ',
+            'DBD',
+            ' C '
+        ], {
+            A: 'gtceu:mv_electric_pump',
+            B: 'ae2:annihilation_core',
+            C: 'gtceu:mv_electric_piston',
+            D: 'gtceu:aluminium_plate'
+        })
+
+    //P2P
+    event.remove({ output: 'ae2:me_p2p_tunnel' })
+    event.shaped(
+        'ae2:me_p2p_tunnel', [
+            ' A ',
+            'ABA',
+            'CCC'
+        ], {
+            A: 'gtceu:stainless_steel_plate',
+            B: 'ae2:engineering_processor',
+            C: 'gtceu:fluix_plate'
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+})
