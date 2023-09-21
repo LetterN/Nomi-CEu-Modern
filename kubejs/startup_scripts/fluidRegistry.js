@@ -7,4 +7,8 @@ StartupEvents.registry('fluid', event => {
     event.create('molten_aerotheum').bucketColor(0xc8da94).displayName('\u00A77Zephyrean Aerotheum').stillTexture('kubejs:block/aerotheum_still').flowingTexture('kubejs:block/aerotheum_flow')
     event.create("primal_mana").displayName("\u00A7dPrimal Mana").stillTexture('kubejs:block/mana_still').flowingTexture('kubejs:block/mana_flow').bucketColor(0x004870)
 
+
+
+
+
 })
