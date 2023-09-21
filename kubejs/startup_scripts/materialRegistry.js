@@ -33,15 +33,15 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
         .cableProperties('2147483647', '64', '0', true);
 
-        event.create('taranium')
-            .element(GTElements.get("taranium"))
-                .ingot()
-                .fluid()
-                .color(0xff00ff)
-                .iconSet("bright")
-                .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
-        
-        })
+    event.create('taranium')
+        .element(GTElements.get("taranium"))
+        .ingot()
+        .fluid()
+        .color(0xff00ff)
+        .iconSet("bright")
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
+
+})
 
 
 
@@ -349,9 +349,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 //Missing ingots
 const $PropertyKey = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey')
 const $IngotProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty')
+const $FluidProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty')
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Lutetium.setProperty($PropertyKey.INGOT, new $IngotProperty())
+    GTMaterials.Einsteinium.setProperty($PropertyKey.FLUID, new $FluidProperty())
+    GTMaterials.Berkelium.setProperty($PropertyKey.FLUID, new $FluidProperty())
+    GTMaterials.Californium.setProperty($PropertyKey.FLUID, new $FluidProperty())
 })
 
 //AE2 Materials
@@ -363,4 +367,3 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.CERTUS)
         .flags(GTMaterialFlags.GENERATE_PLATE)
 })
-
