@@ -356,6 +356,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.Einsteinium.setProperty($PropertyKey.FLUID, new $FluidProperty())
     GTMaterials.Berkelium.setProperty($PropertyKey.FLUID, new $FluidProperty())
     GTMaterials.Californium.setProperty($PropertyKey.FLUID, new $FluidProperty())
+    GTMaterials.Neptunium.setProperty($PropertyKey.FLUID, new $FluidProperty())
+    GTMaterials.Curium.setProperty($PropertyKey.FLUID, new $FluidProperty())
 })
 
 //AE2 Materials
