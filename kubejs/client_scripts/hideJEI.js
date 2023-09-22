@@ -12,7 +12,6 @@ REIEvents.removeCategories(event => {
 
 REIEvents.groupEntries(event => {
 
-    //FIXME Im gonna cry
     const useNbt = ['chiselsandbits:block_bit']
 
     useNbt.forEach(id => {

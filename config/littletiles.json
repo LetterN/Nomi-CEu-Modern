@@ -18,43 +18,79 @@
   },
   "build": {
     "default": {
-      "limitAffectedBlocks": true,
-      "maxAffectedBlocks": 0,
       "harvestLevelBlock": "WOOD",
       "editUnbreakable": false,
       "minimumTransparency": 255,
-      "limitEditBlocks": true,
-      "maxEditBlocks": 0,
-      "limitPlaceBlocks": true,
-      "maxPlaceBlocks": 0,
-      "limitRecipeSize": false,
-      "recipeBlocksLimit": 16
+      "affectedBlockLimit": {
+        "enabled": true,
+        "content": 2
+      },
+      "editBlockLimit": {
+        "enabled": true,
+        "content": 10
+      },
+      "placeBlockLimit": {
+        "enabled": true,
+        "content": 10
+      },
+      "blueprintSizeLimit": {
+        "enabled": false,
+        "content": 16
+      },
+      "gridLimit": {
+        "enabled": false,
+        "content": 32
+      }
     },
     "survival": {
-      "limitAffectedBlocks": true,
-      "maxAffectedBlocks": 2,
       "harvestLevelBlock": "STONE",
       "editUnbreakable": false,
       "minimumTransparency": 255,
-      "limitEditBlocks": true,
-      "maxEditBlocks": 10,
-      "limitPlaceBlocks": true,
-      "maxPlaceBlocks": 10,
-      "limitRecipeSize": false,
-      "recipeBlocksLimit": 16
+      "affectedBlockLimit": {
+        "enabled": true,
+        "content": 2
+      },
+      "editBlockLimit": {
+        "enabled": true,
+        "content": 10
+      },
+      "placeBlockLimit": {
+        "enabled": true,
+        "content": 10
+      },
+      "blueprintSizeLimit": {
+        "enabled": false,
+        "content": 16
+      },
+      "gridLimit": {
+        "enabled": false,
+        "content": 32
+      }
     },
     "creative": {
-      "limitAffectedBlocks": false,
-      "maxAffectedBlocks": 2,
       "harvestLevelBlock": "DIAMOND",
       "editUnbreakable": true,
       "minimumTransparency": 0,
-      "limitEditBlocks": false,
-      "maxEditBlocks": 10,
-      "limitPlaceBlocks": false,
-      "maxPlaceBlocks": 10,
-      "limitRecipeSize": false,
-      "recipeBlocksLimit": 16
+      "affectedBlockLimit": {
+        "enabled": true,
+        "content": 2
+      },
+      "editBlockLimit": {
+        "enabled": true,
+        "content": 10
+      },
+      "placeBlockLimit": {
+        "enabled": true,
+        "content": 10
+      },
+      "blueprintSizeLimit": {
+        "enabled": false,
+        "content": 16
+      },
+      "gridLimit": {
+        "enabled": false,
+        "content": 32
+      }
     }
   }
 }

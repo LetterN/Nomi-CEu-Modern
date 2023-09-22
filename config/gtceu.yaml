@@ -195,7 +195,7 @@ client:
   # The default color to overlay onto machines.
   # #FFFFFF is no coloring (default).
   # #D2DCFF is the classic blue from GT5.
-  defaultPaintingColor: #FFFFFF
+  defaultPaintingColor: #D2DCFF
 
 # Config options for Mod Compatibility
 compat:
