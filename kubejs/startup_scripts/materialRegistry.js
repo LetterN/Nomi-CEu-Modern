@@ -369,3 +369,28 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.CERTUS)
         .flags(GTMaterialFlags.GENERATE_PLATE)
 })
+
+//Ad Astra Materials
+
+
+GTCEuStartupEvents.registry('gtceu:material', event => {
+    event.create("desh")
+        .ingot().fluid()
+        .color(0xff9e42)
+        .iconSet('metallic')
+        .flags(GTMaterialFlags.GENERATE_PLATE)
+
+
+    event.create("ostrum")
+        .ingot().fluid()
+        .color(0xa74aff)
+        .iconSet('metallic')
+        .flags(GTMaterialFlags.GENERATE_PLATE)
+
+
+    event.create("calorite")
+        .ingot().fluid()
+        .color(0xff0335)
+        .iconSet('metallic')
+        .flags(GTMaterialFlags.GENERATE_PLATE)
+})
