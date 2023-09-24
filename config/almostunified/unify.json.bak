@@ -85,13 +85,9 @@
         "conductive_alloy",
         "soularium",
         "end_steel",
-        "fluix",
-        "desh",
-        "ostrum",
-        "calorite"
+        "fluix"
     ],
     "priorityOverrides": {},
-    "customTags": {},
     "tagOwnerships": {},
     "itemTagInheritanceMode": "ALLOW",
     "itemTagInheritance": {},

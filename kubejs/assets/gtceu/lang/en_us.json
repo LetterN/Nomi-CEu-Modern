@@ -57,6 +57,9 @@
     "gtceu.advanced_microverse": "Advanced Microvesrse Projector",
     "gtceu.advanced_microverse_ii": "Advanced Microvesrse Projector II",
     "gtceu.naquadah_reactor_i": "Naquadah Reactor",
-    "gtceu.naquadah_reactor_ii": "Naquadah Reactor II"
+    "gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
+    "material.desh": "Desh",
+    "material.ostrum": "Ostrum",
+    "material.calorite": "Calorite"
 
 }
