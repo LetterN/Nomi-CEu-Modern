@@ -418,9 +418,12 @@ ServerEvents.recipes(event => {
 
     //TODO Big Pattern Provider/Interface (MAKE IN HV ASSEMBLER)
 
+
     //TODO Big I/O (MAKE IN IV ASSEMBLY LINE)
 
+
     //TODO AE2WT
+
 
     //Infinite Cobble/Water cell
     event.replaceInput({ output: Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:f",id:"minecraft:water"}}') }, 'minecraft:water_bucket', 'gtceu:infinite_water_cover')
@@ -540,6 +543,24 @@ ServerEvents.recipes(event => {
             B: 'ae2:engineering_processor',
             C: 'gtceu:fluix_plate'
         })
+
+    //cables
+
+    event.remove({ output: ['ae2:quartz_fiber'] })
+    event.remove({ id: 'gtceu:shapeless/gem_to_gem_flawedgem_nether_quartz' })
+    event.remove({ id: "ae2:network/cables/glass_fluix" })
+
+    event.recipes.gtceu.wiremill('quartz_fiber')
+        .itemInputs('gtceu:nether_quartz_flawed_gem')
+        .itemOutputs('ae2:quartz_fiber')
+        .duration(50)
+        .EUt(16)
+
+    event.recipes.gtceu.alloy_smelter('fluix_cable')
+        .itemInputs(['gtceu:fluix_dust', 'ae2:quartz_fiber'])
+        .itemOutputs('2x ae2:fluix_glass_cable')
+        .duration(50)
+        .EUt(16)
 
 
 
