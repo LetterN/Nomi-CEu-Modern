@@ -7,6 +7,457 @@
 	id: "6D8C988EFB3F7437"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "05B3758B509861B8"
+			rewards: [{
+				id: "66B40D7D2041E17A"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "148FF0671E07B839"
+				item: "hostilenetworks:sim_chamber"
+				type: "item"
+			}]
+			title: "Simulating Mobs"
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"05B3758B509861B8"
+				"39A04E694747714D"
+			]
+			id: "0006FEA1843FEA0A"
+			rewards: [{
+				id: "41BB142FCD5A17DD"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "55E8991AB9A9ED20"
+				item: "hostilenetworks:loot_fabricator"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			id: "39A04E694747714D"
+			rewards: [{
+				id: "56897DF5637F6E91"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5C585188F64F54CC"
+				item: "gtceu:energetic_alloy_ingot"
+				type: "item"
+			}]
+			title: "&2Energetic Alloy"
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["39A04E694747714D"]
+			id: "47BBC84E7CB9874F"
+			rewards: [{
+				id: "608EBD7C1446D580"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0309AF57DFC8E9CE"
+				item: "gtceu:vibrant_alloy_ingot"
+				type: "item"
+			}]
+			title: "&2Vibrant Alloy"
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["47BBC84E7CB9874F"]
+			id: "6FDF37EE046349F7"
+			rewards: [{
+				id: "158200BCC5B8B926"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "552C09235D8FE4F1"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			title: "Numismatic Power"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			id: "3F62C4BB7F36BC98"
+			rewards: [{
+				id: "710E9560161DF894"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F5D362FB00827E4"
+				item: "gtceu:mv_chemical_reactor"
+				type: "item"
+			}]
+			title: "MV Chemical Reactor"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3F62C4BB7F36BC98"]
+			id: "5E80297BCBEA3C27"
+			rewards: [{
+				id: "1C6E51A8176CFB52"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "255142F1CEAD1AEA"
+				item: "kubejs:resonant_clathrate"
+				type: "item"
+			}]
+			title: "&1Resonant&r Clathrate"
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["05B3758B509861B8"]
+			id: "73C6E2724EBEC997"
+			rewards: [{
+				id: "6D51757F4B8A104D"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4E993E92512B1386"
+					item: "hostilenetworks:blank_data_model"
+					type: "item"
+				}
+				{
+					id: "7B6FC48A79FB076D"
+					item: "hostilenetworks:prediction_matrix"
+					type: "item"
+				}
+			]
+			title: "Simulated Mobs"
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["72D61AFACC53A34A"]
+			id: "1062A387E899434C"
+			tasks: [
+				{
+					id: "39BB37A04BD2A17D"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:blaze"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "02A84CAF628AA38A"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:wither_skeleton"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7CD80AE13126B3DC"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:ghast"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&4Nether&r Mobs"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			id: "61E018C3BAB05818"
+			rewards: [{
+				count: 10
+				id: "37D51103CDBEF3CF"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "392C69C0A027A256"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:zombie"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5AE0806274510B68"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:creeper"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3D6D1F055EE8FCCF"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:witch"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "044CAD01DB09EE97"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:skeleton"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1FE91F62FA6DBFDC"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:spider"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "29EBB069295CAC7A"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:guardian"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "576DD12BB7568C8F"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:slime"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&2Overworld&r Mobs"
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"73C6E2724EBEC997"
+				"61E018C3BAB05818"
+			]
+			id: "2201391DEEBE79E4"
+			rewards: [{
+				id: "1009ACAEC97F01D9"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "26B7583E7E5E6B17"
+				item: "hostilenetworks:overworld_prediction"
+				type: "item"
+			}]
+			title: "&2Overworld&r Prediction"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2201391DEEBE79E4"]
+			id: "72D61AFACC53A34A"
+			rewards: [{
+				id: "364D96E3EA9A4952"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C1AAFF54A2ADB45"
+				item: "hostilenetworks:nether_prediction"
+				type: "item"
+			}]
+			title: "&4Nether&r Prediction"
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["72D61AFACC53A34A"]
+			id: "09F8678BBA41D15E"
+			rewards: [{
+				id: "1F5EA736BD59C447"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "561690BFD67351E7"
+				item: "hostilenetworks:end_prediction"
+				type: "item"
+			}]
+			title: "&8End&r Prediction"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["09F8678BBA41D15E"]
+			id: "637953544CE66BDB"
+			rewards: [{
+				count: 10
+				id: "13A8E2F02B97AC09"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4F5F5198F39BABCA"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:enderman"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1BA5BE35C701AC5C"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:shulker"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2D300F4677701B59"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:wither"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1C75BB7AF0616CD8"
+					item: {
+						Count: 1b
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:ender_dragon"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&8End&r Mobs"
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["72D61AFACC53A34A"]
+			id: "7A67E519745A8361"
+			rewards: [{
+				id: "5E252CA9C37789FE"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E87A07E1757F58F"
+				item: "telepastries:nether_cake"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A67E519745A8361"]
+			id: "45DD07F2BB9C6A59"
+			rewards: [{
+				id: "5EEB9D28CDCA083B"
+				item: "kubejs:nomi_dollar"
+				type: "item"
+			}]
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:liquid_nether_air"
+				id: "2776CA0F55ED0D3C"
+				type: "fluid"
+			}]
+			title: "&2Distilling the Nether"
+			x: -2.5d
+			y: 4.5d
+		}
+	]
 	title: "Simulating Resources"
 }

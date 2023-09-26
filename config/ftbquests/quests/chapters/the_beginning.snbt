@@ -7,6 +7,832 @@
 	id: "2763DAD954E0EED8"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["0381DCD3FD3C9ED2"]
+			id: "62BBD1F6767A4D90"
+			size: 2.0d
+			tasks: [{
+				id: "298288137C88DDFF"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["62BBD1F6767A4D90"]
+			id: "19233A97579E0BDD"
+			tasks: [{
+				id: "2AAE22F760F73AD8"
+				item: "gtceu:lv_polarizer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["62BBD1F6767A4D90"]
+			id: "1FF652D16CE97C79"
+			tasks: [{
+				id: "766F95CEB364086E"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			id: "0381DCD3FD3C9ED2"
+			size: 1.25d
+			tasks: [{
+				id: "2EFBBA282EB42CAF"
+				item: {
+					Count: 1b
+					id: "gtceu:programmed_circuit"
+					tag: {
+						Configuration: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.9047619047619193d
+			y: 3.720238095238088d
+		}
+		{
+			dependencies: ["055193574D203872"]
+			id: "6197C51E04761371"
+			size: 2.0d
+			tasks: [{
+				id: "4FEE8532736A49E2"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7A12743F5ECCED90"]
+			id: "055193574D203872"
+			tasks: [{
+				id: "5B30A9407F5E838F"
+				item: "gtceu:lv_robot_arm"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["62BBD1F6767A4D90"]
+			id: "7A12743F5ECCED90"
+			size: 1.25d
+			tasks: [{
+				id: "7341F3ADD0737579"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A12743F5ECCED90"]
+			id: "2A84013C14085C7B"
+			tasks: [{
+				id: "5D06DCFA7A00AE81"
+				item: "gtceu:lv_lathe"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A12743F5ECCED90"]
+			id: "3EDD0A986384F2A7"
+			tasks: [{
+				id: "5D9E01E9FFB9F05B"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A12743F5ECCED90"]
+			id: "7460F22545A4EFB2"
+			tasks: [{
+				id: "05CB7EE672B034D4"
+				item: "storagedrawers:compacting_drawers_3"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A12743F5ECCED90"]
+			id: "5795EE147D4879B7"
+			tasks: [{
+				id: "2B92B2273B4DBA4E"
+				item: "gtceu:lv_compressor"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6A262AA410619C23"
+				"7A12743F5ECCED90"
+			]
+			id: "038D06BCA022C1BF"
+			tasks: [{
+				id: "302CBE00E5451E5E"
+				item: "gtceu:lv_extractor"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7A12743F5ECCED90"]
+			id: "4685AC9E6CD87B77"
+			tasks: [{
+				id: "29E5699EC44EAFB5"
+				item: "gtceu:lv_macerator"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["62BBD1F6767A4D90"]
+			id: "6A262AA410619C23"
+			tasks: [{
+				id: "79C2BBD9C422BA1E"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"6A262AA410619C23"
+				"62BBD1F6767A4D90"
+				"404C9497C46E7608"
+			]
+			id: "4EAD8756BAAC6B2E"
+			tasks: [{
+				id: "421570E2D8BAB4DE"
+				item: "gtceu:lv_fluid_solidifier"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["6A262AA410619C23"]
+			id: "09C0CDC1DFA7842D"
+			tasks: [{
+				id: "03C18BA6D84BA956"
+				item: "gtceu:lv_pump"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["038D06BCA022C1BF"]
+			id: "47094A5717952699"
+			tasks: [{
+				id: "11FEC1EF6257937D"
+				item: "gtceu:lv_autoclave"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"47094A5717952699"
+				"273F3F8DD6A3DCC5"
+			]
+			id: "529D50CE814AF449"
+			tasks: [{
+				id: "77ADD3B3DA61DC55"
+				item: "snad:snad"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5301E546BAA69844"]
+			id: "404C9497C46E7608"
+			tasks: [{
+				id: "4D0AD1CE56BC17CA"
+				item: "gtceu:gear_casting_mold"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["29A487F0BC43AAF9"]
+			id: "30EBD4E7BBFFEF2C"
+			tasks: [{
+				id: "771429E0BF88C060"
+				item: "kubejs:pulsating_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["30EBD4E7BBFFEF2C"]
+			id: "273F3F8DD6A3DCC5"
+			tasks: [{
+				id: "22A4BABD40C1A481"
+				item: "gtceu:pulsating_alloy_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["273F3F8DD6A3DCC5"]
+			id: "161892EC84F0237D"
+			tasks: [{
+				id: "22CFFD2E31601A1A"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["29A487F0BC43AAF9"]
+			id: "5301E546BAA69844"
+			size: 2.0d
+			tasks: [{
+				id: "17210F38B40BAAD7"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["29A487F0BC43AAF9"]
+			id: "3F6EDC2481D5877F"
+			tasks: [{
+				id: "708858A9BC1F9ABE"
+				item: "gtceu:cupronickel_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["62BBD1F6767A4D90"]
+			id: "29A487F0BC43AAF9"
+			tasks: [{
+				id: "1E91BE2938B1B8CE"
+				item: "gtceu:lv_alloy_smelter"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["29A487F0BC43AAF9"]
+			id: "46AF35D4EECA5BDB"
+			tasks: [{
+				id: "065486502C7A58BA"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 1.0357142857142563d
+			y: -0.4761904761904816d
+		}
+		{
+			dependencies: ["29A487F0BC43AAF9"]
+			id: "545CCC24D9401794"
+			tasks: [{
+				id: "64761A1D5DA1599D"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5301E546BAA69844"]
+			id: "500E619D568C07C2"
+			tasks: [{
+				id: "13BC210346486E40"
+				item: "gtceu:lv_arc_furnace"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5301E546BAA69844"]
+			id: "4624889F738AB21B"
+			tasks: [{
+				id: "62E30094941243B0"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4624889F738AB21B"]
+			id: "0EDFB0C24B9129AB"
+			tasks: [{
+				id: "29F11B4491A6064D"
+				item: "gtceu:lv_forge_hammer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["30EBD4E7BBFFEF2C"]
+			id: "645B1DCB3DA7198A"
+			tasks: [{
+				id: "3FB8F2F8B1867430"
+				item: "kubejs:pulsating_mesh"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"645B1DCB3DA7198A"
+				"3BD20358F137E7C6"
+			]
+			id: "715BC5C7DAC53B7B"
+			size: 2.0d
+			tasks: [{
+				id: "15A06F5EF4CADA4C"
+				item: "hostilenetworks:sim_chamber"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"5301E546BAA69844"
+				"74B5CA5A48CE7B39"
+			]
+			id: "3BD20358F137E7C6"
+			tasks: [{
+				id: "6C0D6663D13E8C74"
+				item: "gtceu:dark_steel_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["545CCC24D9401794"]
+			id: "41C2E49E70D76330"
+			size: 2.0d
+			tasks: [{
+				id: "7DD0FE0A1E868294"
+				item: "gtceu:steam_grinder"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"5301E546BAA69844"
+				"5B0200011DF8E1B6"
+			]
+			id: "025543EDB0A4AC22"
+			tasks: [{
+				id: "3D964DFA52F261AB"
+				item: "gtceu:electrical_steel_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			id: "74B5CA5A48CE7B39"
+			tasks: [{
+				id: "08959EE1440564D6"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5301E546BAA69844"]
+			id: "1CA6D620309F2B9E"
+			tasks: [{
+				id: "4410D5DCD0B1C1C6"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1CA6D620309F2B9E"
+				"3BD20358F137E7C6"
+			]
+			id: "4C2FE08AF5EF37F7"
+			tasks: [{
+				id: "5117F1809E9134E3"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4C2FE08AF5EF37F7"]
+			id: "1657FEC07998C9D0"
+			tasks: [{
+				id: "77DC5C373B34E731"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3BD20358F137E7C6"]
+			id: "6D03BB4A6A4BBA27"
+			tasks: [{
+				id: "39AA9BBDCACBC109"
+				item: "ae2:charger"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6D03BB4A6A4BBA27"]
+			id: "4174A6C6403DD245"
+			size: 2.0d
+			tasks: [{
+				id: "652709622C84E4CC"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["025543EDB0A4AC22"]
+			id: "7842EC1C389C4B7E"
+			tasks: [{
+				id: "039675643A0EF572"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7842EC1C389C4B7E"]
+			id: "2845151447537433"
+			tasks: [{
+				id: "1101B4E6A2C73A2E"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["025543EDB0A4AC22"]
+			id: "356DA8DE256356B8"
+			tasks: [{
+				id: "7BF0EB45E469A58E"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7842EC1C389C4B7E"]
+			id: "3A18C673D76382E9"
+			tasks: [{
+				id: "5FFAD74ABDA85AAA"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["62BBD1F6767A4D90"]
+			id: "5B0200011DF8E1B6"
+			tasks: [{
+				id: "7AE6F9DF96ADD8D2"
+				item: "gtceu:lv_electrolyzer"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5B0200011DF8E1B6"]
+			id: "6FE99EDDC6223F2E"
+			tasks: [
+				{
+					amount: 1000L
+					fluid: "gtceu:hydrogen"
+					id: "3811A2C3181FBC0D"
+					type: "fluid"
+				}
+				{
+					amount: 1000L
+					fluid: "ad_astra:oxygen"
+					id: "6732F515AE6C060A"
+					type: "fluid"
+				}
+			]
+			x: 8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3F6EDC2481D5877F"]
+			id: "59AC5F89444A0663"
+			tasks: [{
+				id: "4CD59AF2C3A9AA25"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"59AC5F89444A0663"
+				"3AB0402B19DD5BA8"
+			]
+			id: "15808BD9C5DBA0F7"
+			tasks: [{
+				id: "0232D1852CB53449"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"3F6EDC2481D5877F"
+				"6197C51E04761371"
+			]
+			id: "4CD6C60CBEFFA317"
+			tasks: [{
+				id: "2EB8F8C2ABFD2637"
+				item: "gtceu:cupronickel_coil_block"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"5B0200011DF8E1B6"
+				"1BC6DDC2D50F9C46"
+			]
+			id: "3AB0402B19DD5BA8"
+			tasks: [{
+				id: "76883573CA1B54F4"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"3F6EDC2481D5877F"
+				"4CD6C60CBEFFA317"
+			]
+			id: "1BC6DDC2D50F9C46"
+			size: 2.0d
+			tasks: [{
+				id: "0E093ED43F2B2E14"
+				item: "gtceu:electric_blast_furnace"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1DBBE96165C7987D"]
+			id: "6A914B240E1A7BCB"
+			tasks: [{
+				id: "7FF7158E0BBDD3AE"
+				item: "gtceu:energetic_alloy_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6A914B240E1A7BCB"]
+			id: "73C1AB31431B5C11"
+			tasks: [{
+				id: "6194BD41B07BAA23"
+				item: "gtceu:vibrant_alloy_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["6A914B240E1A7BCB"]
+			id: "4F4F120AFB3A9250"
+			tasks: [{
+				id: "45561FC8024BD7F3"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["6A914B240E1A7BCB"]
+			id: "780706A4C4AEB9CE"
+			tasks: [{
+				id: "6A08FDD4D0930907"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["3AB0402B19DD5BA8"]
+			id: "5C4E189A3E401566"
+			size: 2.0d
+			tasks: [{
+				id: "3F0884D8F0926142"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["62BBD1F6767A4D90"]
+			id: "1DBBE96165C7987D"
+			tasks: [{
+				id: "0199D55D895EDDC9"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["1DBBE96165C7987D"]
+			id: "56924FC6B029BA0F"
+			tasks: [{
+				id: "00DCE69057EC3D8F"
+				item: "gtceu:soldering_alloy_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4CD6C60CBEFFA317"]
+			id: "5F8BEC7DD6C9D4AF"
+			size: 2.0d
+			tasks: [{
+				id: "35BF0C2CA3CCCF3E"
+				item: "gtceu:pyrolyse_oven"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			icon: "gtceu:maintenance_hatch"
+			id: "0523F4AB9A794390"
+			size: 1.5d
+			tasks: [{
+				id: "44CBD475F0332E0C"
+				type: "checkmark"
+			}]
+			title: "&2Maintenance and Muffler Mechanics"
+			x: 12.75d
+			y: 5.25d
+		}
+		{
+			icon: "gtceu:mv_transformer_1a"
+			id: "18D8D18C4494C587"
+			size: 1.5d
+			tasks: [{
+				id: "14E359BEBFB23558"
+				type: "checkmark"
+			}]
+			title: "&2GT Power Management"
+			x: 15.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			id: "1A427A8CB43C8B59"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7E69A18642BC819F"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_screwdriver"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1D9F1F42A80B4792"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_crowbar"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&2Machine Covers"
+			x: 15.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			icon: {
+				Count: 1b
+				id: "gtceu:wrought_iron_screwdriver"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "431BB650AC492C84"
+			size: 1.5d
+			tasks: [{
+				id: "65EF130C1913A8AD"
+				title: "Screwdrive Output Sides!"
+				type: "checkmark"
+			}]
+			title: "Screwdrive Output Sides!"
+			x: 12.75d
+			y: 7.5d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			id: "5F6B13DBCABA5078"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0F35F2EAFC2DF767"
+					item: "gtceu:item_filter"
+					type: "item"
+				}
+				{
+					id: "792F99EEC26B16A3"
+					item: "gtceu:item_tag_filter"
+					type: "item"
+				}
+				{
+					id: "5AA2DA67B49432C1"
+					item: "gtceu:fluid_filter"
+					type: "item"
+				}
+				{
+					id: "2FF3685DED5F68A9"
+					item: "gtceu:fluid_tag_filter"
+					type: "item"
+				}
+			]
+			title: "&2Filters"
+			x: 10.5d
+			y: 7.5d
+		}
+	]
 	title: "The Beginning"
 }
