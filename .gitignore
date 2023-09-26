@@ -8,6 +8,7 @@
 /kubejs/probe
 /mods/.connector
 
-/config/fabric/indigo-renderer.properties
-/config/roughlyenoughitems/pinyin_double.properties
-/config/roughlyenoughitems/pinyin.properties
+config/fabric/indigo-renderer.properties
+config/roughlyenoughitems/pinyin.properties
+config/roughlyenoughitems/pinyin_double.properties
+config/forge-client.toml
