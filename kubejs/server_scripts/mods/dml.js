@@ -53,5 +53,10 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.replaceInput({ id: "hostilenetworks:living_matter/nether_to_ender" }, 'minecraft:end_stone', 'minecraft:ender_pearl')
 
 })
+
+//TODO Give Platinium coin a melting recipe
+//FIXME If ArmorPlus ever gets added, add the remaining items
+//TODO Thermal Elemental Matters
