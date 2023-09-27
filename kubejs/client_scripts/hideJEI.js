@@ -12,10 +12,11 @@ REIEvents.hide('item', event => {
     //ad astra
     event.hide(['ad_astra:cryo_freezer', 'ad_astra:water_pump', 'ad_astra:coal_generator', 'ad_astra:fuel_refinery', 'ad_astra:compressor', 'ad_astra:solar_panel'])
 
+    //dml
+    event.hide(['hostilenetworks:twilight_prediction'])
 })
 
 REIEvents.removeCategories(event => {
-    //FIXME HELP
     event.remove('minecraft:plugins/tag')
 })
 
