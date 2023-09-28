@@ -55,6 +55,49 @@ ServerEvents.recipes(event => {
 
     event.replaceInput({ id: "hostilenetworks:living_matter/nether_to_ender" }, 'minecraft:end_stone', 'minecraft:ender_pearl')
 
+
+    //PPC
+    event.remove({ output: 'hostilenetworks:prediction_matrix' })
+
+    event.recipes.gtceu.alloy_smelter('pulsating_polymer_clay')
+        .itemInputs(['kubejs:pulsating_dust', 'minecraft:clay'])
+        .itemOutputs('4x hostilenetworks:prediction_matrix')
+        .duration(240)
+        .EUt(7)
+
+    event.recipes.minecraft.smelting('kubejs:pulsating_dust', ['gtceu:uraninite_dust', 'kubejs:resonant_clathrate'])
+
+    event.recipes.gtceu.extractor('resonant_ender')
+        .itemInputs('minecraft:ender_pearl')
+        .outputFluids(Fluid.of('kubejs:resonant_ender', 250))
+        .duration(40)
+        .EUt(30)
+
+    event.recipes.gtceu.chemical_reactor('resonant_clathrate')
+        .itemInputs('minecraft:quartz')
+        .inputFluids(Fluid.of('kubejs:resonant_ender', 250))
+        .itemOutputs('kubejs:resonant_clathrate')
+        .duration(120)
+        .EUt(75)
+
+    event.recipes.gtceu.electrolyzer('gt_quartz')
+        .itemInputs('4x minecraft:glass')
+        .itemOutputs('minecraft:quartz')
+        .duration(100)
+        .EUt(20)
+
+    event.recipes.gtceu.forge_hammer('dust')
+        .itemInputs('minecraft:sand')
+        .itemOutputs('kubejs:dust')
+        .duration(16)
+        .EUt(10)
+
+    event.recipes.gtceu.chemical_reactor('gt_clay')
+        .itemInputs('kubejs:dust')
+        .itemOutputs('minecraft:clay')
+        .inputFluids('water')
+        .duration(20)
+        .EUt(15)
 })
 
 //TODO Give Platinium coin a melting recipe
