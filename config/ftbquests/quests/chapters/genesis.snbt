@@ -293,6 +293,7 @@
 				item: "kubejs:nominickel"
 				type: "item"
 			}]
+			size: 1.5d
 			subtitle: "A lot of tools!"
 			tasks: [
 				{
@@ -377,14 +378,210 @@
 			y: 4.0d
 		}
 		{
-			description: ["&dExtraterrestial&r Matter"]
-			id: "3340467E1648C193"
+			dependencies: ["4FE53F31E68F4C1C"]
+			icon: {
+				Count: 1b
+				id: "gtceu:iron_mining_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "07D45A3F8A74A61C"
 			tasks: [{
-				id: "0EC5B71326B8C4D9"
+				id: "39656E09593E3D83"
+				type: "checkmark"
+			}]
+			title: "Mining Hammers"
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4FE53F31E68F4C1C"]
+			id: "6FB3E3D9CA0F4B30"
+			tasks: [{
+				count: 3L
+				id: "7BA753DF38DEC329"
+				item: { Count: 3b, id: "gtceu:rubber_plate" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6FB3E3D9CA0F4B30"]
+			id: "78B5D55A3560B98E"
+			tasks: [{
+				id: "253D34B000F903DD"
+				item: {
+					Count: 1b
+					id: "gtceu:rubber_mallet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			id: "7865CDE5CFE005DC"
+			tasks: [{
+				id: "6A2879717EF57D8A"
+				item: "ironfurnaces:iron_furnace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7865CDE5CFE005DC"]
+			id: "0591171F13A45283"
+			tasks: [{
+				id: "14CDC80A449BD388"
+				item: "ironfurnaces:copper_furnace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0591171F13A45283"]
+			id: "3F77EDE69BB649DA"
+			tasks: [{
+				id: "266C775298CDC137"
+				item: "ironfurnaces:silver_furnace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6B121BEFD852BC2D"]
+			id: "1AE46C1970378083"
+			tasks: [{
+				id: "67B5E4F996C454C8"
+				item: "ironfurnaces:diamond_furnace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3F77EDE69BB649DA"]
+			id: "6B121BEFD852BC2D"
+			tasks: [{
+				id: "0FD61CD4D237D131"
+				item: "ironfurnaces:gold_furnace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1AE46C1970378083"]
+			id: "3969150B59EA38A2"
+			tasks: [{
+				id: "223332FE4EEB31B0"
+				item: "ironfurnaces:obsidian_furnace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["3969150B59EA38A2"]
+			id: "69E77BD01CFF65EB"
+			invisible: true
+			tasks: [{
+				id: "015B7C7A82AE67C5"
+				item: "ironfurnaces:netherite_furnace"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["4FE53F31E68F4C1C"]
+			id: "5430ED88A8D10502"
+			tasks: [{
+				id: "38E44244B336F941"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			id: "57D1B1D74391A05F"
+			tasks: [{
+				id: "10632C37C6050A0C"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			title: "Item Pipes"
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			id: "7F291FE6247B57BC"
+			tasks: [{
+				id: "164127A0828A29E1"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			title: "Crafting Station"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			id: "1B86EF5A24286787"
+			tasks: [{
+				id: "2BFE87C449C8D8F3"
+				item: "toolbelt:belt"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			id: "5D97206C8135872B"
+			tasks: [{
+				id: "36D486BE19669899"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			x: 4.5d
 			y: 1.5d
+		}
+		{
+			id: "64AAF0CD958D836A"
+			tasks: [
+				{
+					id: "150F57D9BEE7CCEE"
+					item: "enderio:pressurized_fluid_conduit"
+					type: "item"
+				}
+				{
+					id: "277C38246AE179F6"
+					item: "gtceu:potin_normal_fluid_pipe"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			icon: "gtceu:aluminium_ingot"
+			id: "53E600ADCC9DD608"
+			tasks: [{
+				id: "5E73C23D1FA65873"
+				title: "Material Tree"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 2.0d
 		}
 	]
 	title: "Genesis"

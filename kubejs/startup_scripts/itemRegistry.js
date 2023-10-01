@@ -88,6 +88,8 @@ StartupEvents.registry('item', event => {
     event.create('exotic_materials_catalyst').displayName("Exotic Materials Catalyst")
     event.create('eternal_catalyst').displayName("Eternal Catalyst")
     event.create('ultimate_gem').displayName("\u00A7dUltimate Gem").glow(true)
+    event.create('mote_of_omnium').displayName("Mote of Omnium").glow(true).rarity("epic")
+    event.create('omnium_ingot').displayName("Omnium Ingot").glow(true).rarity("epic")
 
     //Misc Items
     event.create('grains_of_innocence').displayName("Grains of Innocence")

@@ -4,4 +4,7 @@ ServerEvents.tags('item', event => {
     event.add('forge:storage_blocks/neutronium', 'avaritia:neutronium_block')
     event.add('forge:dusts/tiny/neutronium', 'avaritia:pile_of_neutrons')
     event.add('ae2:all_fluix', 'gtceu:fluix_gem')
+    event.add('forge:singularities/ultimate', 'kubejs:mote_of_omnium')
+    event.add('forge:singularities/ultimate', 'extendedcrafting:ultimate_singularity')
+    event.add('forge:ingots/the_ultimate', 'kubejs:omnium_ingot')
 })
