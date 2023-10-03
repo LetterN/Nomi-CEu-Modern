@@ -525,6 +525,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["2E8BFA2E719B1C47"]
 			id: "7F291FE6247B57BC"
 			tasks: [{
 				id: "164127A0828A29E1"
@@ -536,6 +537,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["2E8BFA2E719B1C47"]
 			id: "1B86EF5A24286787"
 			tasks: [{
 				id: "2BFE87C449C8D8F3"
@@ -546,6 +548,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["2E8BFA2E719B1C47"]
 			id: "5D97206C8135872B"
 			tasks: [{
 				id: "36D486BE19669899"
@@ -556,6 +559,7 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["2E8BFA2E719B1C47"]
 			id: "64AAF0CD958D836A"
 			tasks: [
 				{
@@ -569,10 +573,12 @@
 					type: "item"
 				}
 			]
+			title: "Fluid Transport"
 			x: -3.5d
 			y: 2.5d
 		}
 		{
+			dependencies: ["2E8BFA2E719B1C47"]
 			icon: "gtceu:aluminium_ingot"
 			id: "53E600ADCC9DD608"
 			tasks: [{
@@ -582,6 +588,99 @@
 			}]
 			x: -5.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			icon: "kubejs:mote_of_omnium"
+			id: "0C173EF148EFEF8E"
+			tasks: [{
+				id: "647D560D77DBCEA5"
+				type: "checkmark"
+			}]
+			title: "End Game Tab"
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			icon: "kubejs:nomi_penny"
+			id: "115D2BEB18929C7C"
+			tasks: [{
+				id: "7275E7D7E7F140B8"
+				type: "checkmark"
+			}]
+			title: "Spend your coins !"
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			id: "0FF18D13CD42F48A"
+			tasks: [{
+				id: "4E72048527D74637"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			title: "Infinite Water"
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"4FE53F31E68F4C1C"
+				"115D2BEB18929C7C"
+			]
+			id: "7C3B69B3DC09FE96"
+			tasks: [{
+				id: "7B4500A4503F2F6D"
+				item: {
+					Count: 1b
+					id: "hangglider:hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4FE53F31E68F4C1C"]
+			id: "1229234A71CE0A99"
+			tasks: [
+				{
+					count: 76L
+					id: "581CD7E50AC3F5E3"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "102B3966BE895F45"
+					item: { Count: 36b, id: "minecraft:copper_ingot" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "3CEB53996CBB7381"
+					item: { Count: 20b, id: "gtceu:tin_ingot" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "5A94EE9BCBADE6BF"
+					item: { Count: 16b, id: "minecraft:coal" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "77FEEB10E7B091B8"
+					item: { Count: 6b, id: "minecraft:gold_ingot" }
+					type: "item"
+				}
+			]
+			title: "More Materials"
+			x: -1.0d
+			y: 5.5d
 		}
 	]
 	title: "Genesis"
