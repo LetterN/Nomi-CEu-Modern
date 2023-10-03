@@ -21,4 +21,6 @@ ServerEvents.recipes(event => {
             E: 'kubejs:nether_star_center'
         }
     )
+
+    event.replaceInput({ id: "hangglider:glider_framework" }, 'minecraft:iron_ingot', 'gtceu:iron_rod')
 })
