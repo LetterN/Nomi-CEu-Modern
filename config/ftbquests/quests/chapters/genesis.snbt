@@ -682,6 +682,28 @@
 			x: -1.0d
 			y: 5.5d
 		}
+		{
+			icon: "minecraft:book"
+			id: "3B200AD6EFF90DFA"
+			tasks: [{
+				id: "7449A54608D60DF8"
+				type: "checkmark"
+			}]
+			title: "USE JEI USE JEI USE JEI USE JEI"
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			icon: "minecraft:tnt"
+			id: "6A7A480FAC6103D2"
+			tasks: [{
+				id: "78BC5B51125B35BD"
+				title: "Claim your chunks !"
+				type: "checkmark"
+			}]
+			x: -10.0d
+			y: 0.0d
+		}
 	]
 	title: "Genesis"
 }
