@@ -768,7 +768,7 @@
 			}]
 			title: "USE JEI USE JEI USE JEI USE JEI"
 			x: -8.5d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			icon: "minecraft:tnt"
@@ -779,7 +779,7 @@
 				type: "checkmark"
 			}]
 			x: -10.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
@@ -835,7 +835,7 @@
 					type: "item"
 				}
 			]
-			title: "From dust to wires"
+			title: "From Dust to Wires"
 			x: -1.0d
 			y: 7.0d
 		}
@@ -891,6 +891,11 @@
 			y: 7.0d
 		}
 		{
+			dependencies: [
+				"7FA0E6F3B466576C"
+				"747434DD99118DA4"
+			]
+			icon: "gtceu:resistor"
 			id: "58F9A5310D43A2B0"
 			tasks: [
 				{
@@ -914,6 +919,244 @@
 			title: "Electronic Subcomponents"
 			x: 2.5d
 			y: 8.5d
+		}
+		{
+			dependencies: [
+				"58F9A5310D43A2B0"
+				"12B95158E4C792DB"
+			]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "7358461DB0D9A9AF"
+			tasks: [
+				{
+					id: "0DFBE070AAC08C6C"
+					item: "gtceu:basic_electronic_circuit"
+					type: "item"
+				}
+				{
+					id: "6D1F30CE04E0D26B"
+					item: "gtceu:steel_plate"
+					type: "item"
+				}
+			]
+			title: "Your First Circuit"
+			x: 2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1FF132DED1748D11"]
+			id: "747434DD99118DA4"
+			size: 1.5d
+			tasks: [
+				{
+					id: "35C6F2F120BD65AF"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "254A5A7997F2EF9E"
+					item: { Count: 32b, id: "gtceu:firebricks" }
+					type: "item"
+				}
+			]
+			title: "Primitive Steelworks"
+			x: 2.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"39D4174834F3879D"
+				"7358461DB0D9A9AF"
+				"08948A23B3A17923"
+				"747434DD99118DA4"
+			]
+			id: "297B523B6C503957"
+			tasks: [{
+				id: "3217FC6AD2AFA67A"
+				item: "gtceu:lv_4a_energy_converter"
+				type: "item"
+			}]
+			title: "Lv Power"
+			x: -1.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["297B523B6C503957"]
+			icon: "gtceu:hpic_wafer"
+			id: "5A94534682807314"
+			tasks: [{
+				id: "60242EACEEB6B6C8"
+				type: "checkmark"
+			}]
+			title: "A Primer on Power"
+			x: -1.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["5A94534682807314"]
+			icon: "gtceu:uhpic_wafer"
+			id: "2D31856F6EF1ED69"
+			size: 2.0d
+			tasks: [{
+				id: "44E7A2BF6528EC4E"
+				type: "checkmark"
+			}]
+			title: "Putting it all Together"
+			x: -1.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["297B523B6C503957"]
+			id: "2FA9404468E4BBD9"
+			tasks: [{
+				id: "0527876D6287634B"
+				item: "gtceu:lv_battery_buffer_4x"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2FA9404468E4BBD9"]
+			id: "077AA27F26B7831F"
+			tasks: [{
+				count: 4L
+				id: "7923DEDAB3298371"
+				item: { Count: 4b, id: "gtceu:lv_battery_hull" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["2FA9404468E4BBD9"]
+			icon: "buildinggadgets2:gadget_building"
+			id: "5F9C7FB40AD2640B"
+			tasks: [
+				{
+					id: "449B547CDED79AE3"
+					item: "buildinggadgets2:gadget_building"
+					type: "item"
+				}
+				{
+					id: "30A321B32CDAF437"
+					item: "buildinggadgets2:gadget_exchanging"
+					type: "item"
+				}
+				{
+					id: "4763F5F3C0771FFA"
+					item: {
+						Count: 1b
+						id: "buildinggadgets2:gadget_copy_paste"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "284A671CC5192B50"
+					item: {
+						Count: 1b
+						id: "buildinggadgets2:gadget_cut_paste"
+						tag: {
+							pastereplace: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "51485964CFCB26B9"
+					item: "buildinggadgets2:gadget_destruction"
+					type: "item"
+				}
+			]
+			title: "Inspector Gadget"
+			x: -2.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["2FA9404468E4BBD9"]
+			id: "7E66445087E82F65"
+			tasks: [{
+				id: "7CE647770625D692"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:leadstone"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2FA9404468E4BBD9"]
+			id: "39394D5596FF8BC8"
+			tasks: [{
+				id: "36817E3C33876798"
+				item: {
+					Count: 1b
+					id: "enderio:electromagnet"
+					tag: {
+						Energy: {
+							EnergyStored: 0
+							MaxEnergyStored: 100000
+							MaxEnergyUse: 100000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 12.5d
+		}
+		{
+			id: "58566C7BF4C22D86"
+			tasks: [{
+				id: "0AA42BA22D46012E"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			title: "Calculators"
+			x: -10.0d
+			y: 1.0d
+		}
+		{
+			id: "0137ECCCD7A11A15"
+			tasks: [{
+				id: "0351F40C63136AD0"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			title: "Effortless Building"
+			x: -10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["115D2BEB18929C7C"]
+			icon: "gtceu:redstone_crushed_ore"
+			id: "17E92ED356B6737F"
+			tasks: [{
+				id: "36817889D65727FA"
+				type: "checkmark"
+			}]
+			title: "Ore Doubling ?"
+			x: -8.5d
+			y: 2.5d
+		}
+		{
+			icon: "minecraft:writable_book"
+			id: "70026930847E8EC0"
+			tasks: [{
+				id: "1278CD7DD38F751A"
+				type: "checkmark"
+			}]
+			title: "Discord and Github"
+			x: -8.5d
+			y: 4.0d
 		}
 	]
 	title: "Genesis"
