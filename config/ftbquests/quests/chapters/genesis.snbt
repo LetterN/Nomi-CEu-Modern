@@ -5,6 +5,80 @@
 	group: ""
 	icon: "minecraft:iron_ingot"
 	id: "0654B76C306712BE"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "avaritia:block/infinity_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.5d
+			y: 10.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "avaritia:block/infinity_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.0d
+			y: 9.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "avaritia:block/infinity_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.5d
+			y: 10.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "avaritia:block/infinity_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.0d
+			y: 9.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "avaritia:block/infinity_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.0d
+			y: 8.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "avaritia:block/infinity_block"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.0d
+			y: 8.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -374,6 +448,7 @@
 					type: "item"
 				}
 			]
+			title: "Some Starter Tools"
 			x: -1.0d
 			y: 4.0d
 		}
@@ -514,6 +589,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["1229234A71CE0A99"]
 			id: "57D1B1D74391A05F"
 			tasks: [{
 				id: "10632C37C6050A0C"
@@ -645,6 +721,7 @@
 		}
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
+			icon: "minecraft:redstone"
 			id: "1229234A71CE0A99"
 			tasks: [
 				{
@@ -703,6 +780,140 @@
 			}]
 			x: -10.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["1229234A71CE0A99"]
+			icon: "gtceu:red_alloy_dust"
+			id: "7FA0E6F3B466576C"
+			tasks: [
+				{
+					count: 16L
+					id: "6FE4A0D51F6AF22F"
+					item: { Count: 16b, id: "gtceu:copper_dust" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "6449998172457471"
+					item: { Count: 16b, id: "gtceu:red_alloy_dust" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "16D7046417209756"
+					item: { Count: 16b, id: "gtceu:red_alloy_ingot" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "57A26AF688B59DAB"
+					item: { Count: 32b, id: "gtceu:iron_dust" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "5627DEBC5B168743"
+					item: { Count: 32b, id: "gtceu:conductive_alloy_ingot" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "15CAA2C5B513BFC2"
+					item: { Count: 8b, id: "gtceu:red_alloy_plate" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "14B188414BF825E6"
+					item: { Count: 3b, id: "gtceu:red_alloy_single_wire" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "7B8835F95B9739D6"
+					item: { Count: 16b, id: "gtceu:conductive_alloy_single_wire" }
+					type: "item"
+				}
+			]
+			title: "From dust to wires"
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7FA0E6F3B466576C"]
+			id: "08948A23B3A17923"
+			tasks: [{
+				id: "7D0E23630A562F6A"
+				item: "enderio:energy_conduit"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"6FB3E3D9CA0F4B30"
+				"7FA0E6F3B466576C"
+			]
+			id: "12B95158E4C792DB"
+			tasks: [{
+				count: 12L
+				id: "24A84AB536BB27B0"
+				item: { Count: 12b, id: "gtceu:red_alloy_single_cable" }
+				type: "item"
+			}]
+			title: "Cables"
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0FF18D13CD42F48A"]
+			id: "39D4174834F3879D"
+			tasks: [{
+				id: "3D2D6D746FC51682"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			title: "Dynamos"
+			x: -3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["39D4174834F3879D"]
+			id: "098CF1FD284B09E7"
+			tasks: [{
+				id: "6CCAFF01C813229C"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			title: "Fuel Catalyzer"
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			id: "58F9A5310D43A2B0"
+			tasks: [
+				{
+					count: 2L
+					id: "3531424527B8E732"
+					item: { Count: 2b, id: "gtceu:resistor" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3A7AC364B2EBF6D9"
+					item: { Count: 2b, id: "gtceu:vacuum_tube" }
+					type: "item"
+				}
+				{
+					id: "6F5AB3013B280937"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "Electronic Subcomponents"
+			x: 2.5d
+			y: 8.5d
 		}
 	]
 	title: "Genesis"

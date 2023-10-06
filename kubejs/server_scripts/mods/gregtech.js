@@ -11,6 +11,8 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.shapeless('gtceu:conductive_alloy_dust', ['minecraft:redstone', 'gtceu:iron_dust'])
+
     event.recipes.gtceu.extractor('one_experience_fluid')
         .itemInputs('miniutilities:experience_pearl')
         .outputFluids(Fluid.of('enderio:xp_juice', 140))
