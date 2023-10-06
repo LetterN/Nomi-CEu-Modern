@@ -216,12 +216,30 @@
 				"47094A5717952699"
 				"273F3F8DD6A3DCC5"
 			]
+			icon: "snad:snad"
 			id: "529D50CE814AF449"
-			tasks: [{
-				id: "77ADD3B3DA61DC55"
-				item: "snad:snad"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "77ADD3B3DA61DC55"
+					item: "snad:snad"
+					type: "item"
+				}
+				{
+					id: "719FAF0F70FA25E5"
+					item: "enderio:vacuum_chest"
+					type: "item"
+				}
+				{
+					id: "2DCBDFF5EB0F7CD9"
+					item: "miniutilities:redstone_clock"
+					type: "item"
+				}
+				{
+					id: "3DBB91C93688C4FC"
+					item: "storagedrawers:void_upgrade"
+					type: "item"
+				}
+			]
 			x: -4.5d
 			y: -9.5d
 		}
