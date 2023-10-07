@@ -22,4 +22,9 @@ ItemEvents.tooltip(tooltip => {
 
     //Endgame Items
     tooltip.add('ultimate_gem', '\u00A7eRecipe is shapeless.')
+
+    //DML Matters
+    tooltip.add('hostilenetworks:overworld_prediction', '\u00A77Experience per item: 10')
+    tooltip.add('hostilenetworks:nether_prediction', '\u00A77Experience per item: 20')
+    tooltip.add('hostilenetworks:end_prediction', '\u00A77Experience per item: 25')
 })

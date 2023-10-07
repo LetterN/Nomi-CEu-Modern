@@ -75,6 +75,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-
+    //TODO NETHER STAR RECIPES
 
 })
