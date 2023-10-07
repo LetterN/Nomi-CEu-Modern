@@ -101,3 +101,18 @@ ServerEvents.recipes(event => {
     })
     //FIXME If ArmorPlus ever gets added, add the remaining items
     //TODO Thermal Elemental Matters
+
+ItemEvents.rightClicked(event => {
+    if (event.item.id === 'hostilenetworks:overworld_prediction') {
+        event.player.xp += 10
+        event.item.count--
+    }
+    if (event.item.id === 'hostilenetworks:nether_prediction') {
+        event.player.xp += 20
+        event.item.count--
+    }
+    if (event.item.id === 'hostilenetworks:end_prediction') {
+        event.player.xp += 25
+        event.item.count--
+    }
+})
