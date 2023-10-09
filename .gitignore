@@ -12,3 +12,11 @@ config/fabric/indigo-renderer.properties
 config/roughlyenoughitems/pinyin.properties
 config/roughlyenoughitems/pinyin_double.properties
 config/forge-client.toml
+config/trofers/general.json5
+config/roughlyenoughitems/config.json5
+config/ae2/common.json
+config/sidebar_buttons.json
+config/oculus.properties
+config/modernfix-mixins.properties
+config/immediatelyfast.json
+config/ftbbackups2.json
