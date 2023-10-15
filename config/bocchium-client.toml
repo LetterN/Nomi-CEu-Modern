@@ -2,4 +2,5 @@
 [BocchiTheBedrock]
 	shouldCullTopBedrock = true
 	shouldCullBottomBedrock = true
+	enableBocchium = true
 

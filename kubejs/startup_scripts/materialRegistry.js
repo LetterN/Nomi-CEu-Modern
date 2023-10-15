@@ -38,7 +38,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot()
         .fluid()
         .color(0xff00ff)
-        .iconSet("bright")
+        .iconSet('bright')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
 
 })
@@ -51,25 +51,25 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xc7af2e)
         .iconSet('butanol')
-        .components(GTMaterials.Carbon, 4, GTMaterials.Hydrogen, 10, GTMaterials.Oxygen, 1)
+        .components('4x carbon', '10x hydrogen', '1x oxygen')
 
     event.create('phosphorus_trichloride')
         .fluid()
         .color(0xe8c474)
         .iconSet('phosphorus_trichloride')
-        .components(GTMaterials.Phosphorus, 1, GTMaterials.Chlorine, 3)
+        .components('1x phosphorus', '3x chlorine')
 
     event.create('tributyl_phosphate')
         .fluid()
         .color(0xe8c474)
         .iconSet('tributyl_phosphate')
-        .components(GTMaterials.Carbon, 12, GTMaterials.Hydrogen, 27, GTMaterials.Oxygen, 4, GTMaterials.Phosphorus, 1)
+        .components('12x carbon', '27x hydrogen', '4x oxygen', '1x phosphorus')
 
     event.create('phosphoryl_chloride')
         .fluid()
         .color(0xe8bb5b)
         .iconSet('phosphoryl_chloride')
-        .components(GTMaterials.Phosphorus, 1, GTMaterials.Oxygen, 1, GTMaterials.Chlorine, 3)
+        .components('1x phosphorus', '1x oxygen', '3x chlorine')
 
 })
 
@@ -80,7 +80,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xd00010)
         .iconSet('hexafluorosilicic_acid')
-        .components(GTMaterials.Hydrogen, 2, GTMaterials.Silicon, 1, GTMaterials.Fluorine, 6)
+        .components('2x hydrogen', '1x silicon', '6x fluorine')
 
     event.create('ultraacidic_residue')
         .fluid()
@@ -91,7 +91,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xd00010)
         .iconSet('dirty_hexafluorosilicic_acid')
-        .components(GTMaterials.Hydrogen, 2, GTMaterials.Silicon, 1, GTMaterials.Fluorine, 6)
+        .components('2x hydrogen', '1x silicon', '6x fluorine')
 
     event.create('xenic_acid')
         .fluid()
@@ -117,13 +117,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xd01010)
         .iconSet('tritium_hydride')
-        .components(GTMaterials.Tritium, 1, GTMaterials.Hydrogen, 1, )
+        .components('1x tritium', '1x hydrogen')
 
     event.create('dioxygen_difluoride')
         .fluid()
         .color(0xFFFFFF)
         .iconSet('dioxygen_difluoride')
-        .components(GTMaterials.Oxygen, 2, GTMaterials.Fluorine, 2, )
+        .components('2x oxygen', '2x fluorine')
 
     event.create('helium_hydride')
         .fluid()
@@ -137,13 +137,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xfef0c2F)
         .iconSet('chloroplatinic_acid')
-        .components(GTMaterials.Hydrogen, 2, GTMaterials.Platinum, 1, GTMaterials.Chlorine, 6)
+        .components('2x hydrogen', '1x platinum', '6x chlorine')
 
     event.create('palladium_rich_ammonia')
         .fluid()
         .color(0x808080)
         .iconSet('palladium_rich_ammonia')
-        .components(GTMaterials.Ammonia, 2, GTMaterials.Palladium, 1, GTMaterials.Chlorine, 1)
+        .components('2x ammonia', '1x palladium', '1x chlorine')
 
     event.create('rhodium_sulfate_solution')
         .fluid()
@@ -164,13 +164,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .fluid()
         .color(0xffaaaa)
         .iconSet('methyl_formate')
-        .components(GTMaterials.Carbon, 2, GTMaterials.Hydrogen, 4, GTMaterials.Oxygen, 2)
+        .components('2x carbon', '4x hydrogen', '2x oxygen')
 
     event.create('formic_acid')
         .fluid()
         .color(0xffffc5)
         .iconSet('formic_acid')
-        .components(GTMaterials.Carbon, 1, GTMaterials.Hydrogen, 2, GTMaterials.Oxygen, 2)
+        .components('1x carbon', '2x hydrogen', '2x oxygen')
 })
 
 
@@ -184,12 +184,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create("osmiridiumyes")
         .dust().ore()
-        .components(GTMaterials.Osmium, 8, GTMaterials.Iridium, 2)
+        .components('8x osmium', '2x iridium')
         .iconSet('dull')
 
     event.create("iridosmineyes")
         .dust().ore()
-        .components(GTMaterials.Iridium, 8, GTMaterials.Osmium, 2)
+        .components('8x iridium', '2x osmium')
         .iconSet('dull')
 
     event.create("kaemanite")
@@ -380,4 +380,22 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xff0335)
         .iconSet('metallic')
         .flags(GTMaterialFlags.GENERATE_PLATE)
+})
+
+//PERFECT GEMS
+
+GTCEuStartupEvents.registry('gtceu:material_icon_type', event => {
+    event.create('perfect')
+})
+
+GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
+    event.create('perfect').parent(GTMaterialIconSet.SHINY)
+})
+
+GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
+    event.create('perfect')
+        .unificationEnabled(true)
+        .generateItem(true)
+        .materialIconType(GTMaterialIconType.getByName('perfect'))
+        .generationCondition(ItemGenerationCondition.hasGemProperty)
 })

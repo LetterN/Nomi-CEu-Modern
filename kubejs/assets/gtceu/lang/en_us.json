@@ -60,6 +60,8 @@
     "gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
     "material.desh": "Desh",
     "material.ostrum": "Ostrum",
-    "material.calorite": "Calorite"
+    "material.calorite": "Calorite",
+    "tagprefix.perfect": "Perfect %s"
+
 
 }

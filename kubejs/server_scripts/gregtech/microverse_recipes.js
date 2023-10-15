@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     //TODO PERFECT GEMS
     event.recipes.gtceu.basic_microverse('t_one_second')
         .itemInputs('kubejs:microminer_t1', 'kubejs:quantum_flux', 'kubejs:gemstone_sensor')
-        .itemOutputs('64x kubejs:perfect_diamond', '64x gtceu:apatite_ore', '64x gtceu:tricalcium_phosphate_ore', '64x gtceu:quartzite')
+        .itemOutputs('64x gtceu:diamond_perfect', '64x gtceu:apatite_ore', '64x gtceu:tricalcium_phosphate_ore', '64x gtceu:quartzite')
         .inputFluids(Fluid.of('gtceu:rocket_fuel', 8000))
         .duration(500)
         .EUt(500)
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.basic_microverse('t_three_third')
         .itemInputs('kubejs:microminer_t3', '4x kubejs:quantum_flux', 'kubejs:gemstone_sensor')
-        .itemOutputs('64x kubejs:perfect_diamond', '32x kubejs:perfect_diamond', '64x kubejs:perfect_ruby', '48x kubejs:perfect_topaz', '32x kubejs:perfect_emerald', '64x gtceu:nether_sapphire_ore', '64x gtceu:nether_gold_ore', '64x gtceu:nether_silver_ore')
+        .itemOutputs('64x gtceu:diamond_perfect', '32x gtceu:diamond_perfect', '64x gtceu:ruby_perfect', '48x gtceu:topaz_perfect', '32x gtceu:emerald_perfect', '64x gtceu:nether_sapphire_ore', '64x gtceu:nether_gold_ore', '64x gtceu:nether_silver_ore')
         .inputFluids(Fluid.of('gtceu:rocket_fuel', 20000))
         .duration(700)
         .EUt(2000)
