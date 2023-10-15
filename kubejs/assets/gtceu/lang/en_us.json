@@ -53,15 +53,16 @@
     "block.gtceu.advanced_microverse_projector_ii": "Advanced Microverse Projector II",
     "block.gtceu.naquadah_reactor_i": "Naquadah Reactor",
     "block.gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
-    "gtceu.basic_microverse": "Basic Microvesrse Projector",
-    "gtceu.advanced_microverse": "Advanced Microvesrse Projector",
-    "gtceu.advanced_microverse_ii": "Advanced Microvesrse Projector II",
+    "gtceu.basic_microverse": "Basic Microverse Projector",
+    "gtceu.advanced_microverse": "Advanced Microverse Projector",
+    "gtceu.advanced_microverse_ii": "Advanced Microverse Projector II",
     "gtceu.naquadah_reactor_i": "Naquadah Reactor",
     "gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
     "material.desh": "Desh",
     "material.ostrum": "Ostrum",
     "material.calorite": "Calorite",
-    "tagprefix.perfect": "Perfect %s"
+    "tagprefix.perfect": "Perfect %s",
+    "material.dilithium": "Dilithium"
 
 
 }
