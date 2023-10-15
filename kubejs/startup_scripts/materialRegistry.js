@@ -380,6 +380,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0xff0335)
         .iconSet('metallic')
         .flags(GTMaterialFlags.GENERATE_PLATE)
+
+    event.create("dilithium")
+        .dust()
+        .ore()
+        .color(0xd1b5b4)
+        .iconSet(GTMaterialIconSet.CERTUS)
 })
 
 //PERFECT GEMS
