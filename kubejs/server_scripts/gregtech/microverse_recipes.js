@@ -52,14 +52,14 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.basic_microverse('t_three_second')
         .itemInputs('kubejs:microminer_t3', '4x kubejs:quantum_flux', 'gtceu:super_chest_ii')
-        .itemOutputs('64x gtceu:nether_scheelite_ore', '64x gtceu:nether_scheelite_ore', '64x gtceu:nether_scheelite_ore', '64x gtceu:netherrack_tungstate_ore', '64x gtceu:netherrack_tungstate_ore', '64x gtceu:netherrack_tungstate_ore', '64x gtceu:nether_vanadium_magnetite_ore', '64x gtceu:nether_tetrahedrite_ore', '64x gtceu:nether_cassiterite_ore', '64x gtceu:nether_tin_ore', '64x gtceu:nether_redstone_ore', '64x gtceu:nether_certus_quartz_ore', '64x gtceu:nether_almandine_ore', '64x gtceu:nether_lepidolite_ore')
+        .itemOutputs('64x gtceu:netherrack_scheelite_ore', '64x gtceu:netherrack_scheelite_ore', '64x gtceu:netherrack_scheelite_ore', '64x gtceu:netherrackrack_tungstate_ore', '64x gtceu:netherrackrack_tungstate_ore', '64x gtceu:netherrackrack_tungstate_ore', '64x gtceu:netherrack_vanadium_magnetite_ore', '64x gtceu:netherrack_tetrahedrite_ore', '64x gtceu:netherrack_cassiterite_ore', '64x gtceu:netherrack_tin_ore', '64x gtceu:netherrack_redstone_ore', '64x gtceu:netherrack_certus_quartz_ore', '64x gtceu:netherrack_almandine_ore', '64x gtceu:netherrack_lepidolite_ore')
         .inputFluids(Fluid.of('gtceu:rocket_fuel', 20000))
         .duration(700)
         .EUt(2000)
 
     event.recipes.gtceu.basic_microverse('t_three_third')
         .itemInputs('kubejs:microminer_t3', '4x kubejs:quantum_flux', 'kubejs:gemstone_sensor')
-        .itemOutputs('64x gtceu:diamond_perfect', '32x gtceu:diamond_perfect', '64x gtceu:ruby_perfect', '48x gtceu:topaz_perfect', '32x gtceu:emerald_perfect', '64x gtceu:nether_sapphire_ore', '64x gtceu:nether_gold_ore', '64x gtceu:nether_silver_ore')
+        .itemOutputs('64x gtceu:diamond_perfect', '32x gtceu:diamond_perfect', '64x gtceu:ruby_perfect', '48x gtceu:topaz_perfect', '32x gtceu:emerald_perfect', '64x gtceu:netherrack_sapphire_ore', '64x gtceu:netherrack_gold_ore', '64x gtceu:netherrack_silver_ore')
         .inputFluids(Fluid.of('gtceu:rocket_fuel', 20000))
         .duration(700)
         .EUt(2000)
