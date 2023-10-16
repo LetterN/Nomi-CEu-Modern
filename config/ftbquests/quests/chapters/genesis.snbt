@@ -592,8 +592,8 @@
 			dependencies: ["1229234A71CE0A99"]
 			id: "57D1B1D74391A05F"
 			tasks: [{
-				id: "10632C37C6050A0C"
-				item: "minecraft:barrier"
+				id: "72798E2CFE3F6FB5"
+				item: "gtceu:tin_normal_item_pipe"
 				type: "item"
 			}]
 			title: "Item Pipes"
