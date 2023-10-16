@@ -95,6 +95,7 @@ StartupEvents.registry('item', event => {
     event.create('grains_of_innocence').displayName("Grains of Innocence")
     event.create('radium_salt').displayName("Radium Salt").rarity('Epic')
     event.create('moon_dust').displayName("Moon Dust")
+    event.create('dilithium_crystal').displayName("Dilithium Crystal")
         //public static ItemBase REDSTONE_ARMOR_PLATE;
         //public static ItemBase CARBON_ARMOR_PLATE;
         //public static ItemBase LAPIS_ARMOR_PLATE;
