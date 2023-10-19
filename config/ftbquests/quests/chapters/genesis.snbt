@@ -604,8 +604,8 @@
 			dependencies: ["2E8BFA2E719B1C47"]
 			id: "7F291FE6247B57BC"
 			tasks: [{
-				id: "164127A0828A29E1"
-				item: "minecraft:barrier"
+				id: "6E936CEF869788B9"
+				item: "craftingstation:crafting_station"
 				type: "item"
 			}]
 			title: "Crafting Station"
