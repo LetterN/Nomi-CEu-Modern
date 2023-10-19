@@ -202,6 +202,13 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:moon_dust')
         .duration(200)
         .EUt(400)
+
+    event.recipes.gtceu.autoclave('dilithium_helium')
+        .itemInputs('4x gtceu:dilithium_dust')
+        .inputFluids(Fluid.of('gtceu:helium'), 1000)
+        .itemOutputs('4x kubejs:dilithium_crystal')
+        .duration(400)
+        .EUt(110)
 })
 
 //TODO MAKE COBBLE/WATER SOURCE WITH KUBEJS
