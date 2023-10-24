@@ -7,7 +7,6 @@ ServerEvents.recipes(event => {
     event.shapeless('snad:snad', ['compressium:sand_2', 'compressium:sand_2'])
     event.shapeless('snad:red_snad', ['compressium:redsand_2', 'compressium:redsand_2'])
 
-    //TODO check remaining nether star recipes
     event.shaped(
         'minecraft:nether_star', [
             ' A ',
@@ -33,4 +32,39 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:platinum_credit')
         .duration(40)
         .EUt(7)
+
+    //Infinity Dust Blocks
+    event.recipes.shapeless('9x kubejs:compressed_infinity_dust_block', 'kubejs:double_compressed_infinity_dust_block')
+    event.recipes.shapeless('9x kubejs:infinity_dust_block', 'kubejs:compressed_infinity_dust_block')
+    event.recipes.shapeless('9x enderio:grains_of_infinity', 'kubejs:infinity_dust_block')
+
+    event.shaped(
+        'kubejs:infinity_dust_block', [
+            'AAA',
+            'AAA',
+            'AAA'
+        ], {
+            A: 'enderio:grains_of_infinity'
+        }
+    )
+
+    event.shaped(
+        'kubejs:compressed_infinity_dust_block', [
+            'AAA',
+            'AAA',
+            'AAA'
+        ], {
+            A: 'kubejs:infinity_dust_block'
+        }
+    )
+
+    event.shaped(
+        'kubejs:double_compressed_infinity_dust_block', [
+            'AAA',
+            'AAA',
+            'AAA'
+        ], {
+            A: 'kubejs:compressed_infinity_dust_block'
+        }
+    )
 })
