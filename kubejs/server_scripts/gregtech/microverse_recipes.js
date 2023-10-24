@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.basic_microverse('t_one_third')
             .itemInputs('kubejs:microminer_t1', 'kubejs:quantum_flux', 'minecraft:chest')
-            .itemOutputs('64x gtceu:cassiterite_ore', '64x minecraft:redstone_ore', '64x gtceu:nickel_ore', '64x gtceu:ilmenite_ore', '64x gtceu:ilmenite_ore', '64x gtceu:ilmenite_ore', '64x gtceu:uraninite_ore', '64x gtceu:galena_ore', '64x gtceu:galena_ore', '64x gtceu:molybdenum_ore', '64x ad_astra:moon_stone', '64x gtceu:dilithium_ore', '64x gtceu:salt_ore')
+            .itemOutputs('64x gtceu:cassiterite_ore', '64x minecraft:redstone_ore', '64x gtceu:nickel_ore', '64x gtceu:ilmenite_ore', '64x gtceu:ilmenite_ore', '64x gtceu:ilmenite_ore', '64x gtceu:uraninite_ore', '64x gtceu:galena_ore', '64x gtceu:galena_ore', '64x gtceu:molybdenum_ore', '64x gcys:moon_stone', '64x gtceu:dilithium_ore', '64x gtceu:salt_ore')
             .inputFluids(Fluid.of('gtceu:rocket_fuel', 8000))
             .duration(500)
             .EUt(500)
@@ -85,10 +85,10 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_microverse('t_four_second')
         .itemInputs('kubejs:microminer_t4', '8x kubejs:quantum_flux', 'gtceu:advanced_power_thruster', '64x kubejs:petrotheum_dust')
-        .itemOutputs('minecraft:paper')
+        .itemOutputs('64x kubejs:dense_oilsands_ore', '64x kubejs:dense_oilsands_ore', '32x kubejs:compressed_infinity_dust_block')
         .duration(800)
         .EUt(3750)
-        //TODO DENSE BLOCKS
+
     event.recipes.gtceu.advanced_microverse('t_five_first')
         .itemInputs('kubejs:microminer_t5', '16x kubejs:quantum_flux', '32x kubejs:stabilized_plutonium')
         .itemOutputs('64x gtceu:endstone_cooperite_ore', '64x gtceu:endstone_cooperite_ore', '64x gtceu:naquadah_ore', '64x gtceu:naquadah_ore', '64x gtceu:naquadah_ore', '48x gtceu:kaemanite_ore')
