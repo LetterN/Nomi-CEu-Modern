@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
     //Space Stuff
 
     event.recipes.gtceu.macerator('moon_dust')
-        .itemInputs('gcys:moon_stone')
+        .itemInputs('gcyr:moon_stone')
         .itemOutputs('kubejs:moon_dust')
         .duration(200)
         .EUt(400)
