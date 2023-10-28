@@ -363,7 +363,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("dilithium")
         .dust()
-        .ore()
         .color(0xd1b5b4)
         .iconSet(GTMaterialIconSet.CERTUS)
 })
