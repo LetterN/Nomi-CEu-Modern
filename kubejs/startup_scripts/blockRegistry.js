@@ -11,5 +11,5 @@ StartupEvents.registry("block", (event) => {
 
 
     //EMERGENCY FIX
-    event.create('gtceu:dilithium_ore')
+    event.create('gtceu:dilithium_ore').soundType('stone').hardness(2).resistance(2).tagBlock("mineable/pickaxe").requiresTool()
 })
