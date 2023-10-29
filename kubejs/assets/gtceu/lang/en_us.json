@@ -46,7 +46,7 @@
     "material.dark_soularium": "Dark Soularium",
     "material.end_steel": "End Steel",
     "material.draconic_superconductor": "Draconic Superconductor",
-    "material.fluix": "Fluix",
+    "material.fluix": "Fluix Cystal",
     "material.taranium": "Taranium",
     "block.gtceu.basic_microverse_projector": "Basic Microverse Projector",
     "block.gtceu.advanced_microverse_projector": "Advanced Microverse Projector",
@@ -58,8 +58,5 @@
     "gtceu.advanced_microverse_ii": "Advanced Microverse Projector II",
     "gtceu.naquadah_reactor_i": "Naquadah Reactor",
     "gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
-    "tagprefix.perfect": "Perfect %s",
-    "material.dilithium": "Dilithium"
-
-
+    "tagprefix.perfect": "Perfect %s"
 }
