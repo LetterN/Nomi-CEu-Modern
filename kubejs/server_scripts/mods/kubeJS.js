@@ -209,6 +209,16 @@ ServerEvents.recipes(event => {
         .itemOutputs('4x kubejs:dilithium_crystal')
         .duration(400)
         .EUt(110)
+
+    event.recipes.gtceu.macerator('dilithium_dust')
+        .itemInputs('gtceu:dilithium_ore')
+        .itemOutputs('2x gtceu:dilithium_dust')
+        .duration(200)
+        .EUt(420)
+
+    event.recipes.minecraft.smelting('gtceu:dilithium_dust', 'gtceu:dilithium_ore')
+
+
 })
 
 //TODO MAKE COBBLE/WATER SOURCE WITH KUBEJS
