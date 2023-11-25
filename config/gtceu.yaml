@@ -194,6 +194,13 @@ machines:
   # Default: 50
   ldFluidPipeMinDistance: 50
 
+  # If High Tier (>UV-tier) GT content should be registered.
+  # Items and Machines enabled with this config will have missing recipes by default.
+  # This is intended for modpack developers only, and is not playable without custom tweaks or addons.
+  # Other mods can override this to true, regardless of the config file.
+  # Default: false
+  highTierContent: false
+
 client:
   # Whether or not to enable Emissive Textures for GregTech Machines.
   # Default: true
@@ -203,6 +210,11 @@ client:
   # #FFFFFF is no coloring (default).
   # #D2DCFF is the classic blue from GT5.
   defaultPaintingColor: #D2DCFF
+
+  # Use VBO cache for multiblock preview.
+  # Disable it if you have issues with rendering multiblocks.
+  # Default: true
+  useVBO: true
 
 # Config options for Mod Compatibility
 compat:
@@ -247,4 +259,8 @@ dev:
   # Dump all registered GT recipes?
   # Default: false
   dumpRecipes: false
+
+  # Dump all registered GT models/blockstates/etc?
+  # Default: false
+  dumpAssets: false
 
