@@ -37,3 +37,24 @@ machine:
   # Default: 5.0
   dysonControllerBeamDamage: 5.0
 
+rocket:
+  # How much fuel is required to travel to a moon or back?
+  # note: this is platform-specific.
+  # Default: 8 buckets.
+  moonFuelAmount: 8000
+
+  # How much fuel is required to travel to a planet in the same solar system?
+  # note: this is platform-specific.
+  # Default: 14 buckets.
+  solarSystemFuelAmount: 14000
+
+  # How much fuel is required to travel to a planet in the same galaxy?
+  # note: this is platform-specific.
+  # Default: 26 buckets.
+  galaxyFuelAmount: 26000
+
+  # How much fuel is required to travel to a planet anywhere?
+  # note: this is platform-specific.
+  # Default: 8 buckets.
+  anywhereFuelAmount: 48000
+
