@@ -29,4 +29,15 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('hostilenetworks:end_prediction', '\u00A77Experience per item: 25')
 
     //Hand Framing Tool
+
+    //Conduits
+    tooltip.add('enderio:conductive_conduit', '\u00A77Max Output 512 RF/t')
+    tooltip.add('enderio:energetic_conduit', '\u00A77Max Output 2,048 RF/t')
+    tooltip.add('enderio:vibrant_conduit', '\u00A77Max Output 8,192 RF/t')
+    tooltip.add('enderio:endsteel_conduit', '\u00A77Max Output 32,768 RF/t')
+    tooltip.add('enderio:lumium_conduit', '\u00A77Max Output 131,072 RF/t')
+    tooltip.add('enderio:signalum_conduit', '\u00A77Max Output 524,288 RF/t')
+    tooltip.add('enderio:enderium_conduit', '\u00A77Max Output 2,097,152 RF/t')
+    tooltip.add('enderio:draconium_conduit', '\u00A77Max Output 8,388,608 RF/t')
+    tooltip.add('enderio:draconic_superconductor_conduit', '\u00A77Max Output 134,217,728 RF/t')
 })
