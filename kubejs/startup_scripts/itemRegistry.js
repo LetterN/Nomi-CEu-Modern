@@ -141,6 +141,11 @@ StartupEvents.registry('item', event => {
     event.create('pulsating_mesh').displayName("Pulsating Mesh")
     event.create('pulsating_dust').displayName("Pulsating Dust")
 
+
+    //I hate ArmorPlus
+    event.create('guardian_scale').rarity('rare').displayName("Guardian Scale")
+    event.create('ender_dragon_scale').rarity('epic').displayName("Ender Dragon Scale")
+    event.create('wither_bone').displayName("Wither Bone")
 })
 
 
