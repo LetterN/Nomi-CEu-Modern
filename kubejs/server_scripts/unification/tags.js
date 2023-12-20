@@ -7,4 +7,8 @@ ServerEvents.tags('item', event => {
     event.add('forge:singularities/ultimate', 'kubejs:mote_of_omnium')
     event.add('forge:singularities/ultimate', 'extendedcrafting:ultimate_singularity')
     event.add('forge:ingots/the_ultimate', 'kubejs:omnium_ingot')
+    event.add('forge:ingots/electrum_flux', 'redstone_arsenal:flux_ingot')
+    event.add('forge:dusts/electrum_flux', 'redstone_arsenal:flux_dust')
+    event.add('forge:nuggets/electrum_flux', 'redstone_arsenal:flux_nugget')
+    event.add('forge:gears/electrum_flux', 'redstone_arsenal:flux_gear')
 })

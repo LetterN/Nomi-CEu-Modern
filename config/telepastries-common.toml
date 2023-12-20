@@ -18,8 +18,6 @@
 	consumeNetherCake = true
 	#Set the refill items used by Nether Cake (Only change if you know what you're doing) [modid:itemname].
 	netherCakeRefillItems = ["minecraft:obsidian"]
-	#Defines if the Nether Cake should teleport the player 1x1 (Use this if you're replacing the Nether dimension with one that is 1x1) [default: false].
-	netherCake1x1Logic = false
 
 #End settings
 [End]
