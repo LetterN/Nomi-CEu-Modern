@@ -12,4 +12,8 @@ StartupEvents.registry("block", (event) => {
 
     //EMERGENCY FIX
     event.create('gtceu:dilithium_ore').soundType('stone').hardness(2).resistance(2).tagBlock("mineable/pickaxe").requiresTool()
+
+    //I hate ArmorPlus
+    event.create('block_lava_crystal_infused')
+    event.create('block_compressed_lava_crystal')
 })
