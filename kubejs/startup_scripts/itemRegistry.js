@@ -127,15 +127,6 @@ StartupEvents.registry('item', event => {
     event.create('energized_clathrate').rarity('uncommon')
     event.create('resonant_clathrate').rarity('rare')
 
-    //Upgrade Kits
-    event.create('hardened_upgrade_kit').displayName("Hardened Upgrade Kit")
-    event.create('reinforced_upgrade_kit').rarity('uncommon').displayName("Reinforced Upgrade Kit")
-    event.create('signalum_upgrade_kit').rarity('uncommon').displayName("Signalum Upgrade Kit")
-    event.create('resonant_upgrade_kit').rarity('rare').displayName("Resonant Upgrade Kit")
-    event.create('reinforced_convertion_kit').rarity('uncommon').displayName("Reinforced Convertion Kit")
-    event.create('signalum_convertion_kit').rarity('uncommon').displayName("Signalum Convertion Kit")
-    event.create('resonant_convertion_kit').rarity('rare').displayName("Resonant Convertion Kit")
-
 
     //PPC Stuff
     event.create('pulsating_mesh').displayName("Pulsating Mesh")
