@@ -83,7 +83,7 @@ ServerEvents.recipes(event => {
 
     //TODO DENSE ORES
 
-    event.recipes.gtceu.advanced_microverse('t_four_second')
+    event.recipes.gtceu.advanced_microverse('t_four_third')
         .itemInputs('kubejs:microminer_t4', '8x kubejs:quantum_flux', 'gtceu:advanced_power_thruster', '64x kubejs:petrotheum_dust')
         .itemOutputs('64x kubejs:dense_oilsands_ore', '64x kubejs:dense_oilsands_ore', '32x kubejs:compressed_infinity_dust_block')
         .duration(800)

@@ -9,9 +9,6 @@ REIEvents.hide('item', event => {
     //literally compressium
     event.hide(['compressium:netherite_1', 'compressium:dirt_1', 'compressium:redstone_1', 'compressium:andesite_1', 'compressium:diorite_1', 'compressium:copper_1', 'compressium:granite_1', 'compressium:stone_1', 'compressium:netherrack_1', 'compressium:soulsand_1', 'compressium:iron_1', 'compressium:gravel_1', 'compressium:snow_1', 'compressium:gold_1', 'compressium:diamond_1', 'compressium:emerald_1', 'compressium:clay_1', 'compressium:coal_1', 'compressium:redsand_1', 'compressium:endstone_1', 'compressium:obsidian_1', 'compressium:lapis_1', 'compressium:quartz_1'])
 
-    //ad astra
-    event.hide(['ad_astra:cryo_freezer', 'ad_astra:water_pump', 'ad_astra:coal_generator', 'ad_astra:fuel_refinery', 'ad_astra:compressor', 'ad_astra:solar_panel'])
-
     //dml
     event.hide(['hostilenetworks:twilight_prediction'])
 
@@ -20,6 +17,9 @@ REIEvents.hide('item', event => {
 
     //Avaritia
     event.hide(['avaritia:emerald_singularity', 'avaritia:netherite_singularity', 'avaritia:diamond_singularity', 'avaritia:quartz_singularity', 'avaritia:copper_singularity', 'avaritia:redstone_singularity', 'avaritia:lapis_singularity', 'avaritia:gold_singularity', 'avaritia:iron_singularity', 'avaritia:amethyst_singularity'])
+
+    //Thermal
+    event.hide(['systeams:numismatic_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler'])
 })
 
 REIEvents.removeCategories(event => {
