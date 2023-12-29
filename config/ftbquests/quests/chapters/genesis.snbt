@@ -691,8 +691,8 @@
 		{
 			id: "0FF18D13CD42F48A"
 			tasks: [{
-				id: "4E72048527D74637"
-				item: "minecraft:barrier"
+				id: "2ECEDA36F2ADFDE8"
+				item: "watercondenser:watercondenser"
 				type: "item"
 			}]
 			title: "Infinite Water"
@@ -882,11 +882,12 @@
 			dependencies: ["39D4174834F3879D"]
 			id: "098CF1FD284B09E7"
 			tasks: [{
-				id: "6CCAFF01C813229C"
-				item: "minecraft:barrier"
+				count: 2L
+				id: "66B9B329F6ED7939"
+				item: { Count: 2b, id: "thermal:dynamo_fuel_augment" }
 				type: "item"
 			}]
-			title: "Fuel Catalyzer"
+			title: "More Efficient"
 			x: -5.0d
 			y: 7.0d
 		}
