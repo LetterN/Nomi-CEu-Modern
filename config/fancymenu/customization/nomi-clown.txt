@@ -46,18 +46,18 @@ customization {
   width = 360
   action = deep_customization_element:drippy_overlay_progress_bar
   actionid = 2d3e8ea0-9721-4b18-8321-de713d509c3d1703872138146
-  y = 276
+  y = 249
   height = 10
 }
 
 customization {
   path = resources/minecraft/textures/gui/title/top.png
   orientation = top-left
-  x = 130
+  x = 129
   width = 382
   action = addtexture
   actionid = b357ae31-83a6-4e9e-88c6-dadcdbf78e151703872261817
-  y = 120
+  y = 68
   height = 100
 }
 

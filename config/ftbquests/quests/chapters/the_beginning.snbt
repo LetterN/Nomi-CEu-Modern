@@ -578,7 +578,7 @@
 				}
 				{
 					amount: 1000L
-					fluid: "ad_astra:oxygen"
+					fluid: "minecraft:water"
 					id: "6732F515AE6C060A"
 					type: "fluid"
 				}
