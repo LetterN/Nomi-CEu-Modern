@@ -1,0 +1,270 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.TitleScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  name = nomi
+  action = setbackgroundslideshow
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = 125
+  advanced_posy = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiheight"} / 2) - 46","decimal":"false"}}
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 120
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = 125
+  advanced_posy = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiheight"} / 2) - 22","decimal":"false"}}
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 120
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = 4
+  advanced_posy = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiheight"} / 2) - 46","decimal":"false"}}
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 120
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = 4
+  advanced_posy = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiheight"} / 2) - 22","decimal":"false"}}
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  width = 120
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 145
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = df8382f2-f501-49dc-8cfe-d162b24a7cba1703773756308
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 2
+  width = 128
+  action = deep_customization_element:title_screen_branding
+  actionid = 1c560ae7-8780-491d-bf13-2be40f7d224a1703773756317
+  y = 303
+  height = 50
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 330
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 39889f7e-5e91-41a3-b65d-19b4779c51651703773756317
+  y = 335
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 382
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 393d7a1e-df7e-43de-b368-08037938e53b1703773756317
+  y = 188
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 76
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = a3d135d7-8b3f-4821-9605-b8a1d36f20051703773756317
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = d1912ca1-f751-49d5-ab15-2c70e82cdb2b1703773756318
+  y = 0
+  height = 30
+}
+
+customization {
+  path = resources/minecraft/textures/gui/title/top.png
+  orientation = top-left
+  x = 0
+  width = 300
+  action = addtexture
+  actionid = 49f2fe32-f3d2-49e9-b456-5342e6e510d41703774248159
+  y = 0
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"} / 2) - 150","decimal":"false"}}
+  advanced_posy = 4
+  height = 79
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://discord.gg/zwQzqP8b6q%btnaction_splitter_fm%
+  label = Join Us On Discord!
+  advanced_posx = 4
+  advanced_posy = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiheight"} / 2) + 26","decimal":"false"}}
+  loopbackgroundanimations = true
+  x = 0
+  width = 120
+  action = addbutton
+  actionid = 55bd536a-c3f0-47e5-93a4-5dd6b255386e1703776144778
+  y = 0
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = 245
+  advanced_posy = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiheight"} / 2) + 50","decimal":"false"}}
+}
+
+customization {
+  path = 
+  orientation = top-left
+  x = 0
+  width = -1
+  action = addtexture
+  actionid = 3f5a02a6-add9-40c7-af49-3032524733521703776272832
+  y = 10
+  height = 100
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://github.com/Nomi-CEu/Nomi-CEu/releases/tag/1.7-alpha-2a%btnaction_splitter_fm%
+  label = Update Changes
+  advanced_posx = 125
+  advanced_posy = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiheight"} / 2) + 26","decimal":"false"}}
+  loopbackgroundanimations = true
+  x = 0
+  width = 120
+  action = addbutton
+  actionid = c0d3f32f-81f9-42b5-9eb7-e43784cd42fd1703776279755
+  y = 0
+  height = 20
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://akliz.net/nomifactory%btnaction_splitter_fm%
+  label = Rent Your Own Nomifactory Server!
+  advanced_posx = 4
+  advanced_posy = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiheight"} / 2) + 50","decimal":"false"}}
+  loopbackgroundanimations = true
+  x = 0
+  width = 240
+  action = addbutton
+  actionid = 625ea93f-82be-431e-ac5f-69b46a1e98821703776452377
+  y = 0
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = 4
+  advanced_posy = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiheight"} / 2) + 74","decimal":"false"}}
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 240
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  action = hidebutton
+}
+
