@@ -2,8 +2,6 @@
 
 ServerEvents.recipes(event => {
 
-    event.remove({ mod: "nuclearcraft" })
-
     event.shaped(
         'watercondenser:watercondenser', [
             'AAA',
