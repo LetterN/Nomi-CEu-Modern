@@ -20,3 +20,4 @@ config/oculus.properties
 config/modernfix-mixins.properties
 config/immediatelyfast.json
 config/ftbbackups2.json
+config/spark/tmp
