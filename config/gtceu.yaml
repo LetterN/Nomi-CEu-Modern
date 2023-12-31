@@ -6,7 +6,7 @@ recipes:
 
   # Whether to remove Block/Ingot compression and decompression in the Crafting Table.
   # Default: false
-  disableManualCompression: true
+  disableManualCompression: false
 
   # Change the recipe of Rods in the Lathe to 1 Rod and 2 Small Piles of Dust, instead of 2 Rods.
   # Default: false
@@ -47,7 +47,7 @@ recipes:
 
   # Whether to nerf the Paper crafting recipe.
   # Default: true
-  nerfPaperCrafting: true
+  nerfPaperCrafting: false
 
   # Recipes for items like Iron Doors, Trapdoors, Anvil require Iron Plates, Rods, and more.
   # Default: false
@@ -59,7 +59,7 @@ recipes:
 
   # Whether to remove charcoal smelting recipes from the vanilla furnace.
   # Default: true
-  harderCharcoalRecipe: true
+  harderCharcoalRecipe: false
 
   # Whether to make the Flint and Steel recipe require steel parts.
   # Default: true.
