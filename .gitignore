@@ -2,6 +2,7 @@
 !/config
 !/mods
 !/kubejs
+!/defaultconfigs
 !/.gitignore
 
 /config/fml.toml
