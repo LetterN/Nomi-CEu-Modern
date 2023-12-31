@@ -138,6 +138,11 @@ StartupEvents.registry('item', event => {
     event.create('ender_dragon_scale').rarity('epic').displayName("Ender Dragon Scale")
     event.create('wither_bone').displayName("Wither Bone")
     event.create('lava_crystal_charged').displayName("\u00A76Infused Lava Crystal")
+
+
+    //Thermal Augments
+    event.create('thermal:upgrade_augment_signalum').displayName("Signalum Integral Components")
+
 })
 
 
