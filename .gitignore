@@ -21,3 +21,6 @@ config/modernfix-mixins.properties
 config/immediatelyfast.json
 config/ftbbackups2.json
 config/spark/tmp
+config/chiselandbits-client.toml
+config/chiselandbits-common.toml
+config/roughlyenoughitems/hints.json
