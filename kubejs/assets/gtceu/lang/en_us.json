@@ -58,6 +58,14 @@
     "gtceu.advanced_microverse_ii": "Advanced Microverse Projector II",
     "gtceu.naquadah_reactor_i": "Naquadah Reactor",
     "gtceu.naquadah_reactor_ii": "Naquadah Reactor II",
+    "block.gtceu.mv_atomic_reconstructor": "Atomic Reconstructor",
+    "gtceu.atomic_reconstruction": "Atomic Reconstruction",
     "tagprefix.perfect": "Perfect %s",
-    "material.dilithium": "Dilithium"
+    "material.dilithium": "Dilithium",
+    "material.redstonia": "Redstonia Crystal",
+    "material.enori": "Enori Crystal",
+    "material.void": "Void Crystal",
+    "material.palis": "Palis Crystal",
+    "material.diamatine": "Diamatine Crystal",
+    "material.emeradic": "Emeradic Crystal"
 }
