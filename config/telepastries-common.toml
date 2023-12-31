@@ -49,11 +49,11 @@
 	#Defines if the Custom Cake gets partly consumed when eaten [default: true]
 	consumeCustomCake = true
 	#Defines the name of the cake [default: "Custom"]
-	customCakeName = "Custom"
+	customCakeName = "Void World"
 	#Defines the dimension bound to the custom cake [default: "minecraft:overworld"]
-	customCakeDimension = "minecraft:overworld"
+	customCakeDimension = "javd:void"
 	#Set the refill items used by the Custom Cake (Only change if you know what you're doing) [modid:itemname]
-	customCakeRefillItem = ["minecraft:cobblestone"]
+	customCakeRefillItem = ["kubejs:pulsating_dust"]
 	#Set the minimum Y location that the cake can spawn you at [Default: 2]
 	#Range: 1 ~ 256
 	customCakeMinY = 2

@@ -113,14 +113,12 @@
 				}
 				{
 					id: "031A59BA80B8796A"
-					item: "minecraft:bedrock"
-					title: "Void world cake"
+					item: "telepastries:custom_cake"
 					type: "item"
 				}
 				{
 					id: "48B3D498AC0B2BE0"
-					item: "minecraft:bedrock"
-					title: "Overworld cake"
+					item: "telepastries:overworld_cake"
 					type: "item"
 				}
 				{
@@ -249,7 +247,7 @@
 			id: "04A0863937695AC4"
 			rewards: [{
 				id: "247FC44B6E456222"
-				item: "kubejs:nominickel"
+				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
 			subtitle: "Confused about all the Wrenches yet?"
@@ -364,7 +362,7 @@
 			rewards: [{
 				count: 2
 				id: "1DA0C8E82ED7EAD8"
-				item: "kubejs:nominickel"
+				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
 			size: 1.5d
