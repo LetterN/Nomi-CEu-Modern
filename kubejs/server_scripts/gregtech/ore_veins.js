@@ -24,3 +24,12 @@ GTCEuServerEvents.oreVeins(event => {
     })
     */
 })
+
+
+// Remove ore indicators
+
+GTCEuServerEvents.oreVeins(event => {
+    event.modifyAll((id, vein) => {
+        vein.indicatorGenerators().clear()
+    })
+})  
