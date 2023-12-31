@@ -384,3 +384,37 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
         .materialIconType(GTMaterialIconType.getByName('perfect'))
         .generationCondition(ItemGenerationCondition.hasGemProperty)
 })
+
+// AA gems
+
+GTCEuStartupEvents.registry('gtceu:material', event => {
+    event.create('redstonia')
+        .gem()
+        .color(0xA60000)
+        .iconSet(GTMaterialIconSet.OPAL)
+
+    event.create('enori')
+        .gem()
+        .color(0xEDE6FF)
+        .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
+
+    event.create('void')
+        .gem()
+        .color(0x0F0F0F)
+        .iconSet(GTMaterialIconSet.FINE)
+    
+    event.create('palis')
+        .gem()
+        .color(0x1C1C89)
+        .iconSet(GTMaterialIconSet.OPAL)
+    
+    event.create('diamatine')
+        .gem()
+        .color(0x8B8DF3)
+        .iconSet(GTMaterialIconSet.FINE)
+
+    event.create('emeradic')
+        .gem()
+        .color(0x09E103)
+        .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
+})
