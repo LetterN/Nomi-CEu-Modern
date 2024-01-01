@@ -3,8 +3,8 @@
 	loot_size: 1
 	order_index: 0
 	rewards: [
-		{ item: "minecraft:bedrock", title: "Overworld Cake" }
-		{ item: "minecraft:bedrock", title: "Void World Cake" }
+		{ item: "telepastries:overworld_cake" }
+		{ item: "telepastries:custom_cake" }
 	]
 	title: "Cakes"
 }
