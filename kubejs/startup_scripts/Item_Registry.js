@@ -141,8 +141,11 @@ StartupEvents.registry('item', event => {
 
 
     //Thermal Augments
-    event.create('thermal:upgrade_augment_signalum').displayName("Signalum Integral Components")
-
+    //Very Hacky but whatever
+    event.create('thermal:upgrade_augment_1').displayName("Hardened Integral Components")
+    event.create('thermal:upgrade_augment_2').displayName("Reinforced Integral Components")
+    event.create('thermal:upgrade_augment_4').displayName("Signalum Integral Components")
+    event.create('thermal:upgrade_augment_3').displayName("Resonant Integral Components")
 })
 
 
