@@ -99,7 +99,6 @@ ServerEvents.recipes(event => {
             .duration(20)
             .EUt(15)
     })
-    //FIXME If ArmorPlus ever gets added, add the remaining items
     //TODO Thermal Elemental Matters
 
 ItemEvents.rightClicked(event => {

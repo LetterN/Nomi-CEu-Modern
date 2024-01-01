@@ -4,13 +4,14 @@ ServerEvents.recipes(event => {
 
     //einsteinium
 
-    //FIXME Fusion Recipes Energy to Start
+
 
     event.recipes.gtceu.fusion_reactor('einsteinium_fusion')
         .inputFluids(Fluid.of('gtceu:berkelium', 16), Fluid.of('gtceu:californium', 16))
         .outputFluids(Fluid.of('gtceu:einsteinium', 16))
         .duration(100)
         .EUt(15360)
+        .fusionStartEU(400000000)
 
     event.recipes.gtceu.fluid_solidifier('stabilized_einsteinium')
         .inputFluids(Fluid.of('gtceu:einsteinium', 144))
@@ -220,5 +221,3 @@ ServerEvents.recipes(event => {
 
 
 })
-
-//TODO MAKE COBBLE/WATER SOURCE WITH KUBEJS
