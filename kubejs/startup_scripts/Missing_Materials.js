@@ -29,4 +29,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     GTMaterials.NetherStar.getProperty($PropertyKey.FLUID).storage.enqueueRegistration($FluidStorageKeys.LIQUID, new GTFluidBuilder())
 
     //GTMaterials.NetherQuartz.setProperty($PropertyKey.GEM, new $GemProperty())
+
+    GTMaterials.Electrum.addFlags(GTMaterialFlags.GENERATE_GEAR)
 })

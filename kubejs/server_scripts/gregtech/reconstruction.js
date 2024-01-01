@@ -1,5 +1,5 @@
 let reconstructedItems = [
-    ['minecraft:redstone', 'gtceu:redstonia_gem', 'redstonia'],
+    ['minecraft:redstone', 'gtceu:restonia_gem', 'restonia'],
     ['minecraft:iron_ingot', 'gtceu:enori_gem', 'enori'],
     ['minecraft:coal', 'gtceu:void_gem', 'void'],
     ['minecraft:lapis_lazuli', 'gtceu:palis_gem', 'palis'],

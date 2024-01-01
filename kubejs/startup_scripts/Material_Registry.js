@@ -388,33 +388,39 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
 // AA gems
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    event.create('redstonia')
+    event.create('restonia')
         .gem()
         .color(0xA60000)
         .iconSet(GTMaterialIconSet.OPAL)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
 
     event.create('enori')
         .gem()
         .color(0xEDE6FF)
         .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
 
     event.create('void')
         .gem()
         .color(0x0F0F0F)
         .iconSet(GTMaterialIconSet.FINE)
-    
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+
     event.create('palis')
         .gem()
         .color(0x1C1C89)
         .iconSet(GTMaterialIconSet.OPAL)
-    
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+
     event.create('diamatine')
         .gem()
         .color(0x8B8DF3)
         .iconSet(GTMaterialIconSet.FINE)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
 
     event.create('emeradic')
         .gem()
         .color(0x09E103)
         .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
 })
