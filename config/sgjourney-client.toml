@@ -28,6 +28,8 @@
 			universe_front_rotates = false
 			#Decide if Movie Stargate model should use alternate chevron locking
 			alternate_movie_chevron_locking = false
+			#Decide if the Primary Chevron on the Movie Stargate model should open
+			movie_primary_chevron_opens = false
 
 			["Stargate Journey Client Config"."Stargate Config".client.universe_stargate]
 				#The RGBA values in Universe Stargate's Event Horizon
