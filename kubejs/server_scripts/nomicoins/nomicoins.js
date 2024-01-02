@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.shapeless('4x kubejs:nomi_quarter', 'kubejs:nomidollar')
+    event.shapeless('4x kubejs:nomi_quarter', 'kubejs:nomi_dollar')
 
     event.shaped(
 
