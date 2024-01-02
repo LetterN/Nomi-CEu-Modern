@@ -38,10 +38,3 @@ REIEvents.groupEntries(event => {
 
 
 })
-
-REIEvents.add('item', event => {
-    event.add(Item.of('thermal:upgrade_augment_1', '{AugmentData:{BaseMod:1.5f,Type:"Upgrade"}}'))
-    event.add(Item.of('thermal:upgrade_augment_2', '{AugmentData:{BaseMod:2.5f,Type:"Upgrade"}}'))
-    event.add(Item.of('thermal:upgrade_augment_signalum', '{AugmentData:{BaseMod:5.0f,Type:"Upgrade"}}'))
-    event.add(Item.of('thermal:upgrade_augment_3', '{AugmentData:{BaseMod:10.0f,Type:"Upgrade"}}'))
-})
