@@ -135,7 +135,7 @@
     },
     {
         "name": "redsand",
-        "nestedDepth": 1,
+        "nestedDepth": 2,
         "isBlockOf": true,
         "baseResourceLocation": "minecraft:red_sand",
         "particlePath": "minecraft:block/red_sand",

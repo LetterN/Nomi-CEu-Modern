@@ -92,16 +92,7 @@ ServerEvents.recipes(event => {
     )
 
     //Power Augment
-    event.shaped(
-        Item.of('thermal:dynamo_output_augment', '{AugmentData:{DynamoPower:3.0f,Type:"Dynamo"}}'), [
-            'ABD',
-            'BCB',
-            'DBA'
-        ], {
-            A: '3x gtceu:sterling_silver_ingot',
-            B: '3x gtceu:energetic_alloy_ingot',
-            C: '3x thermal:rf_coil',
-            D: '3x gtceu:conductive_alloy_block'
-        }
-    )
+
+    //Item.of('thermal:dynamo_output_augment', '{AugmentData:{DynamoPower:3.0f,Type:"Dynamo"}}')
+
 })
