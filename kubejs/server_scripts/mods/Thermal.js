@@ -1,7 +1,7 @@
 //TODO: Take care of all Thermal stuff
 
 ServerEvents.recipes(event => {
-    event.remove({ output: ['systeams:boiler_pipe', 'thermal:dynamo_fuel_augment', 'thermal:rf_coil'] })
+    event.remove({ output: ['systeams:boiler_pipe', 'thermal:dynamo_fuel_augment', 'thermal:rf_coil', 'thermal:dynamo_output_augment'] })
     event.remove({ output: ['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3'] })
     event.shaped(
         'systeams:boiler_pipe', [
@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
     )
 
     event.shaped(
-        Item.of('thermal:upgrade_augment_signalum', '{AugmentData:{BaseMod:5.0f,Type:"Upgrade"}}'), [
+        Item.of('thermal:upgrade_augment_4', '{AugmentData:{BaseMod:5.0f,Type:"Upgrade"}}'), [
             'ABA',
             'BCB',
             'ABA'
@@ -77,4 +77,31 @@ ServerEvents.recipes(event => {
     )
 
     //FIXME: Temporary Recipe until DE comes out
+
+    event.shaped(
+        Item.of('thermal:upgrade_augment_3', '{AugmentData:{BaseMod:10.0f,Type:"Upgrade"}}'), [
+            'ABD',
+            'BCB',
+            'DBA'
+        ], {
+            A: 'gtceu:draconium_plate',
+            B: 'gtceu:enderium_plate',
+            C: 'thermal:upgrade_augment_4',
+            D: 'gtceu:tungsten_carbide_plate'
+        }
+    )
+
+    //Power Augment
+    event.shaped(
+        Item.of('thermal:dynamo_output_augment', '{AugmentData:{DynamoPower:3.0f,Type:"Dynamo"}}'), [
+            'ABD',
+            'BCB',
+            'DBA'
+        ], {
+            A: '3x gtceu:sterling_silver_ingot',
+            B: '3x gtceu:energetic_alloy_ingot',
+            C: '3x thermal:rf_coil',
+            D: '3x gtceu:conductive_alloy_block'
+        }
+    )
 })
