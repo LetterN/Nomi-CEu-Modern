@@ -15,7 +15,7 @@
 			image: "avaritia:block/infinity_block"
 			rotation: 0.0d
 			width: 1.0d
-			x: -5.5d
+			x: -6.0d
 			y: 10.0d
 		}
 		{
@@ -27,7 +27,7 @@
 			image: "avaritia:block/infinity_block"
 			rotation: 0.0d
 			width: 1.0d
-			x: -5.0d
+			x: -6.5d
 			y: 9.5d
 		}
 		{
@@ -39,7 +39,7 @@
 			image: "avaritia:block/infinity_block"
 			rotation: 0.0d
 			width: 1.0d
-			x: -4.5d
+			x: -7.0d
 			y: 10.0d
 		}
 		{
@@ -51,7 +51,7 @@
 			image: "avaritia:block/infinity_block"
 			rotation: 0.0d
 			width: 1.0d
-			x: -5.0d
+			x: -6.5d
 			y: 9.0d
 		}
 		{
@@ -63,7 +63,7 @@
 			image: "avaritia:block/infinity_block"
 			rotation: 0.0d
 			width: 1.0d
-			x: -5.0d
+			x: -6.5d
 			y: 8.5d
 		}
 		{
@@ -75,7 +75,7 @@
 			image: "avaritia:block/infinity_block"
 			rotation: 0.0d
 			width: 1.0d
-			x: -5.0d
+			x: -6.5d
 			y: 8.0d
 		}
 	]
@@ -868,8 +868,8 @@
 			dependencies: ["0FF18D13CD42F48A"]
 			id: "39D4174834F3879D"
 			tasks: [{
-				id: "3D2D6D746FC51682"
-				item: "minecraft:barrier"
+				id: "78D31068BB10B20B"
+				item: "thermal:dynamo_stirling"
 				type: "item"
 			}]
 			title: "Dynamos"
@@ -1161,6 +1161,7 @@
 		{
 			can_repeat: true
 			dependencies: ["39D4174834F3879D"]
+			description: ["Adds +300% to the Max Power/t of your Dynamo"]
 			icon: "thermal:dynamo_output_augment"
 			id: "703D0E1210E4300A"
 			rewards: [{
