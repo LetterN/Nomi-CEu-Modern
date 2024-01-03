@@ -20,6 +20,9 @@ REIEvents.hide('item', event => {
 
     //Thermal
     event.hide(['systeams:numismatic_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler'])
+
+    //EnderIO
+    event.hide(['enderio:energy_conduit'])
 })
 
 REIEvents.removeCategories(event => {
