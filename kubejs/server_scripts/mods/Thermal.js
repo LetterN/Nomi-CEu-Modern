@@ -39,6 +39,17 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.shaped(
+        'kubejs:thermal_transmission_coil', [
+            ' BA',
+            'BAB',
+            'AB '
+        ], {
+            A: 'gtceu:silver_rod',
+            B: 'minecraft:redstone'
+        }
+    )
+
     //Upgrade Kits
     event.shaped(
         Item.of('thermal:upgrade_augment_1', '{AugmentData:{BaseMod:1.5f,Type:"Upgrade"}}'), [
@@ -94,5 +105,9 @@ ServerEvents.recipes(event => {
     //Power Augment
 
     //Item.of('thermal:dynamo_output_augment', '{AugmentData:{DynamoPower:3.0f,Type:"Dynamo"}}')
-
+    event.recipes.gtceu.assembler('triple_power_augment')
+        .itemInputs('6x gtceu:conductive_alloy_block', '6x gtceu:sterling_silver_ingot', '3x kubejs:redstone_transmission_coil', '12x gtceu:energetic_alloy_ingot')
+        .itemOutputs(Item.of('thermal:dynamo_output_augment', '{AugmentData:{DynamoPower:3.0f,Type:"Dynamo"}}'))
+        .duration(80)
+        .EUt(32)
 })

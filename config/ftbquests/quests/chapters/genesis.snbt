@@ -1180,13 +1180,6 @@
 				}
 				{
 					consume_items: true
-					count: 3L
-					id: "6EA66CEDCBFB8B4C"
-					item: { Count: 3b, id: "thermal:rf_coil" }
-					type: "item"
-				}
-				{
-					consume_items: true
 					count: 12L
 					id: "4980DDAC1A83053E"
 					item: { Count: 12b, id: "gtceu:energetic_alloy_ingot" }
@@ -1197,6 +1190,12 @@
 					count: 6L
 					id: "3D2E81CCF2F0F422"
 					item: { Count: 6b, id: "gtceu:conductive_alloy_block" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "065DE9E1A4307218"
+					item: { Count: 3b, id: "kubejs:redstone_transmission_coil" }
 					type: "item"
 				}
 			]
