@@ -15,5 +15,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__fireclay" })
 
     //Thermal
-    event.remove({ output: ['systeams:numismatic_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler'] })
+    event.remove({ output: ['thermal:dynamo_gourmand', 'thermal:dynamo_lapidary', 'thermal:dynamo_disenchantment', 'systeams:numismatic_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler'] })
+    event.remove({ id: 'systeams:boilers/stirling' })
 })
