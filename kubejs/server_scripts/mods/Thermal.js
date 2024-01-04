@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
     )
 
     event.shaped(
-        'kubejs:thermal_transmission_coil', [
+        'kubejs:redstone_transmission_coil', [
             ' BA',
             'BAB',
             'AB '
