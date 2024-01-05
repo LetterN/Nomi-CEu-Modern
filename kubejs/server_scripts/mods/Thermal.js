@@ -1,8 +1,9 @@
 //TODO: Take care of all Thermal stuff
 
 ServerEvents.recipes(event => {
-    event.remove({ output: ['systeams:boiler_pipe', 'thermal:dynamo_fuel_augment', 'thermal:rf_coil', 'thermal:dynamo_output_augment'] })
-    event.remove({ output: ['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3'] })
+    event.remove({ output: ['systeams:steam_dynamo', 'thermal:dynamo_stirling', 'thermal:dynamo_compression', 'thermal:dynamo_magmatic', 'thermal:dynamo_numismatic', 'systeams:boiler_pipe', 'thermal:dynamo_fuel_augment', 'thermal:rf_coil', 'thermal:dynamo_output_augment'] })
+    event.remove({ output: ['thermal:dynamo_throttle_augment', 'thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3'] })
+    event.remove({ output: ['thermal:machine_frame', 'thermal:energy_cell_frame', 'thermal:fluid_cell_frame'] })
     event.shaped(
         'systeams:boiler_pipe', [
             ' C ',
@@ -110,4 +111,113 @@ ServerEvents.recipes(event => {
         .itemOutputs(Item.of('thermal:dynamo_output_augment', '{AugmentData:{DynamoPower:3.0f,Type:"Dynamo"}}'))
         .duration(80)
         .EUt(32)
+
+    //Dynamos
+    event.shaped(
+        'kubejs:excitationcoil', [
+            ' B ',
+            'BAB',
+            'BAB'
+        ], {
+            A: 'thermal:rf_coil',
+            B: 'gtceu:red_alloy_plate'
+        }
+    )
+
+    event.shaped(
+        'thermal:dynamo_stirling', [
+            ' A ',
+            'BCB',
+            'DED'
+        ], {
+            A: 'kubejs:excitationcoil',
+            B: 'gtceu:copper_plate',
+            C: 'ironfurnaces:iron_furnace',
+            D: 'gtceu:wrought_iron_gear',
+            E: 'kubejs:redstone_transmission_coil'
+        }
+    )
+
+    event.shaped(
+        'systeams:steam_dynamo', [
+            ' A ',
+            'BCB',
+            'DED'
+        ], {
+            A: 'kubejs:excitationcoil',
+            B: 'gtceu:copper_plate',
+            C: 'ironfurnaces:iron_furnace',
+            D: 'gtceu:wrought_iron_gear',
+            E: 'systeams:boiler_pipe'
+        }
+    )
+
+    event.shaped(
+        'thermal:dynamo_magmatic', [
+            ' A ',
+            'BCB',
+            'DED'
+        ], {
+            A: 'kubejs:excitationcoil',
+            B: 'gtceu:dark_steel_plate',
+            C: 'ironfurnaces:copper_furnace',
+            D: 'gtceu:dark_steel_gear',
+            E: 'kubejs:redstone_transmission_coil'
+        }
+    )
+
+    event.shaped(
+        'thermal:dynamo_numismatic', [
+            ' A ',
+            'BCB',
+            'DED'
+        ], {
+            A: 'kubejs:excitationcoil',
+            B: 'gtceu:vibrant_alloy_plate',
+            C: 'ironfurnaces:diamond_furnace',
+            D: 'enderio:vibrant_gear',
+            E: 'kubejs:redstone_transmission_coil'
+        }
+    )
+
+    event.shaped(
+        'thermal:dynamo_compression', [
+            ' A ',
+            'BCB',
+            'DED'
+        ], {
+            A: 'kubejs:excitationcoil',
+            B: 'gtceu:energetic_alloy_plate',
+            C: 'ironfurnaces:gold_furnace',
+            D: 'enderio:energized_gear',
+            E: 'kubejs:redstone_transmission_coil'
+        }
+    )
+
+
+    event.shaped(
+        'thermal:dynamo_throttle_augment', [
+            'ABA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'minecraft:iron_ingot',
+            B: 'gtceu:iron_plate',
+            C: 'kubejs:excitationcoil'
+        }
+    )
+
+
+    //Diamond as Fuel
+    event.recipes.thermal.numismatic_fuel('minecraft:diamond').energy(1200000)
+    event.recipes.thermal.numismatic_fuel('gtceu:topaz_gem').energy(200000)
+    event.recipes.thermal.numismatic_fuel('gtceu:malachite_gem').energy(200000)
+    event.recipes.thermal.numismatic_fuel('minecraft:emerald').energy(200000)
+    event.recipes.thermal.numismatic_fuel('minecraft:prismarine_shard').energy(150000)
+    event.recipes.thermal.numismatic_fuel('minecraft:quartz').energy(40000)
+    event.recipes.thermal.numismatic_fuel('gtceu:sapphire_gem').energy(200000)
+    event.recipes.thermal.numismatic_fuel('gtceu:ruby_gem').energy(200000)
+    event.recipes.thermal.numismatic_fuel('gtceu:apatite_gem').energy(40000)
+    event.recipes.thermal.numismatic_fuel('redstone_arsenal:flux_gem').energy(1500000)
+    event.recipes.thermal.numismatic_fuel('minecraft:lapis_lazuli').energy(80000)
 })

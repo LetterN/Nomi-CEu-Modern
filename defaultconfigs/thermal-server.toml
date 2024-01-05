@@ -175,7 +175,7 @@
 	[Dynamos.Magmatic]
 		#This sets the base power generation (RF/t) for the Magmatic Dynamo.
 		#Range: 10 ~ 32000
-		"Base Power" = 60 
+		"Base Power" = 60
 
 	[Dynamos.Numismatic]
 		#This sets the base power generation (RF/t) for the Numismatic Dynamo.
