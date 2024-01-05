@@ -101,3 +101,5 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(16)
 })
+
+//TODO: BIMETAL GEARS RECIPES
