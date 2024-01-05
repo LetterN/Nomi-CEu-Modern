@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.basic_microverse('t_one_third')
             .itemInputs('kubejs:microminer_t1', 'kubejs:quantum_flux', 'minecraft:chest')
-            .itemOutputs('64x gtceu:cassiterite_ore', '64x minecraft:redstone_ore', '64x gtceu:nickel_ore', '64x gtceu:ilmenite_ore', '64x gtceu:ilmenite_ore', '64x gtceu:ilmenite_ore', '64x gtceu:uraninite_ore', '64x gtceu:galena_ore', '64x gtceu:galena_ore', '64x gtceu:molybdenum_ore', '64x gcyr:moon_stone', '64x gtceu:dilithium_ore', '64x gtceu:salt_ore')
+            .itemOutputs('64x kubejs:dense_iron_ore', '64x gtceu:cassiterite_ore', '64x minecraft:redstone_ore', '64x gtceu:nickel_ore', '64x gtceu:ilmenite_ore', '64x gtceu:ilmenite_ore', '64x gtceu:ilmenite_ore', '64x gtceu:uraninite_ore', '64x gtceu:galena_ore', '64x gtceu:galena_ore', '64x gtceu:molybdenum_ore', '64x gcyr:moon_stone', '64x gtceu:dilithium_ore', '64x gtceu:salt_ore')
             .inputFluids(Fluid.of('gtceu:rocket_fuel', 8000))
             .duration(500)
             .EUt(500)
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.basic_microverse('t_two_third')
             .itemInputs('kubejs:microminer_t2', '2x kubejs:quantum_flux')
-            .itemOutputs('64x minecraft:copper_ore', '64x gtceu:endstone_bauxite_ore', '64x gtceu:endstone_pyrochlore_ore', '64x gtceu:endstone_pyrochlore_ore', '64x gtceu:endstone_sphalerite_ore', '64x gtceu:endstone_cassiterite_ore', '64x gtceu:endstone_scheelite_ore', '64x gtceu:endstone_scheelite_ore', '64x gtceu:endstone_scheelite_ore', '64x gtceu:endstone_tungstate_ore', '64x gtceu:endstone_tungstate_ore', '64x gtceu:endstone_tungstate_ore', '64x kubejs:radium_salt', '64x kubejs:radium_salt')
+            .itemOutputs('64x kubejs:dense_copper_ore', '64x gtceu:endstone_bauxite_ore', '64x gtceu:endstone_pyrochlore_ore', '64x gtceu:endstone_pyrochlore_ore', '64x gtceu:endstone_sphalerite_ore', '64x gtceu:endstone_cassiterite_ore', '64x gtceu:endstone_scheelite_ore', '64x gtceu:endstone_scheelite_ore', '64x gtceu:endstone_scheelite_ore', '64x gtceu:endstone_tungstate_ore', '64x gtceu:endstone_tungstate_ore', '64x gtceu:endstone_tungstate_ore', '64x kubejs:radium_salt', '64x kubejs:radium_salt')
             .inputFluids(Fluid.of('gtceu:rocket_fuel', 12000))
             .duration(600)
             .EUt(1000)
@@ -77,11 +77,9 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_microverse('t_four_second')
         .itemInputs('kubejs:microminer_t4', '8x kubejs:quantum_flux', 'kubejs:gem_sensor', '64x kubejs:petrotheum_dust')
-        .itemOutputs('minecraft:paper')
+        .itemOutputs('64x kubejs:dense_lapis_ore', '64x kubejs:dense_diamond_ore', '64x kubejs:dense_diamond_ore', '64x kubejs:dense_coal_ore', '32x kubejs:dense_emerald_ore', '16x kubejs:dense_redstone_ore')
         .duration(800)
         .EUt(3750)
-
-    //TODO DENSE ORES
 
     event.recipes.gtceu.advanced_microverse('t_four_third')
         .itemInputs('kubejs:microminer_t4', '8x kubejs:quantum_flux', 'gtceu:advanced_power_thruster', '64x kubejs:petrotheum_dust')
