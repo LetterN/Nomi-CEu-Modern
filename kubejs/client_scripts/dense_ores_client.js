@@ -1,3 +1,4 @@
+/* From before we ported dense ores to KJS
 let ores = [
     "redstone_ore",
     'diamond_ore',
@@ -30,3 +31,4 @@ ItemEvents.tooltip(tooltip => {
         tooltip.add("denseores:dense_" + ore, "\u00A7oI don't recommend placing this down.");
     })
 })
+*/
