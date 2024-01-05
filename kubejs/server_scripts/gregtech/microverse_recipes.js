@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.basic_microverse('t_two_third')
             .itemInputs('kubejs:microminer_t2', '2x kubejs:quantum_flux')
-            .itemOutputs('64x minecraft:copper_ore', '64x gtceu:endstone_bauxite_ore', '64x gtceu:endstone_pyrochlore_ore', '64x gtceu:endstone_pyrochlore_ore', '64x gtceu:endstone_sphalerite_ore', '64x gtceu:endstone_cassiterite_ore', '64x gtceu:endstone_scheelite_ore', '64x gtceu:endstone_scheelite_ore', '64x gtceu:endstone_scheelite_ore', '64x gtceu:endstone_tungstate_ore', '64x gtceu:endstone_tungstate_ore', '64x gtceu:endstone_tungstate_ore', '64x kubejs:radium_salt', '64x kubejs:radium_salt')
+            .itemOutputs('64x denseores:dense_copper_ore', '64x gtceu:endstone_bauxite_ore', '64x gtceu:endstone_pyrochlore_ore', '64x gtceu:endstone_pyrochlore_ore', '64x gtceu:endstone_sphalerite_ore', '64x gtceu:endstone_cassiterite_ore', '64x gtceu:endstone_scheelite_ore', '64x gtceu:endstone_scheelite_ore', '64x gtceu:endstone_scheelite_ore', '64x gtceu:endstone_tungstate_ore', '64x gtceu:endstone_tungstate_ore', '64x gtceu:endstone_tungstate_ore', '64x kubejs:radium_salt', '64x kubejs:radium_salt')
             .inputFluids(Fluid.of('gtceu:rocket_fuel', 12000))
             .duration(600)
             .EUt(1000)
