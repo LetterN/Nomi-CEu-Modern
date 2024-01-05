@@ -9,7 +9,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('kubejs:microminer_t5', '\u00A7oHarvests strange materials from End microverses.')
     tooltip.add('kubejs:microminer_t6', '\u00A7oHarvests extremely rare materials from every concievable reality.')
     tooltip.add('kubejs:microminer_t7', '\u00A7oHunts Wyrms and End Dragons from the microverse')
-    tooltip.add('kubejs:microminer_7', '\u00A7oand returns with parts from their carapaces.')
+    tooltip.add('kubejs:microminer_t7', '\u00A7oand returns with parts from their carapaces.')
     tooltip.add('kubejs:microminer_t8', '\u00A7oHunts inconcievable monstrosities from beyond the End')
     tooltip.add('kubejs:microminer_t8', '\u00A7oand returns with bizzare trinkets.')
     tooltip.add('kubejs:microminer_t9', '\u00A7oCollapses microverse stars and harvests their delicious neutronium cores.')

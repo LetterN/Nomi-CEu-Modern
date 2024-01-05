@@ -9,6 +9,33 @@ StartupEvents.registry("block", (event) => {
     event.create('double_compressed_infinity_dust_block', 'falling').displayName('Double Compressed Infinity Dust Block').soundType('sand').resistance(6).hardness(5).tagBlock("mineable/shovel").requiresTool(true)
     event.create('dense_oilsands_ore').displayName('Dense Oilsands Ore').soundType('stone').resistance(6).hardness(5).tagBlock("mineable/shovel").requiresTool(true)
 
+    //Dense Ores
+    let ores = [
+        "redstone_ore",
+        'diamond_ore',
+        'emerald_ore',
+        'gold_ore',
+        'lapis_ore',
+        'iron_ore',
+        'coal_ore',
+        'nether_quartz_ore',
+        'copper_ore'
+    ]
+
+    function Capitalize(word) {
+        return (word[0].toUpperCase() + word.substring(1));
+    }
+
+    ores.forEach(ore => {
+        let oreArr = ore.split("_");
+        for (let i = 0; i < oreArr.length; i++) {
+            oreArr[i] = Capitalize(oreArr[i]);
+        }
+        let displayName = "Dense " + oreArr.join(" ");
+        event.create('dense_' + ore).displayName(displayName).soundType('stone').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true);
+    })
+
+
 
     //EMERGENCY FIX
     event.create('gtceu:dilithium_ore').soundType('stone').hardness(2).resistance(2).tagBlock("mineable/pickaxe").requiresTool()
