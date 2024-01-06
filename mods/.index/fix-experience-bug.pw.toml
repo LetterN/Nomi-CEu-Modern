@@ -1,0 +1,13 @@
+filename = 'fixexperiencebug-1.20-46.2.2.jar'
+name = 'Fix Experience Bug (now with FABRIC and FORGE versions)'
+side = 'both'
+
+[download]
+hash = '8de09b075088c64e8108cac8aa0117a8c3086b5b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4587408
+project-id = 486778

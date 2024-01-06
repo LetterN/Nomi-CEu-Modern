@@ -1,0 +1,13 @@
+filename = 'NuclearCraft-1.20.1-1.0.0-beta.1.jar'
+name = 'NuclearCraft: Neoteric'
+side = 'both'
+
+[download]
+hash = '096908be9dc82a091b88e9c2676e7b7f88fa4d80'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4947601
+project-id = 840010
