@@ -423,4 +423,49 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x09E103)
         .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
         .flags(GTMaterialFlags.GENERATE_GEAR)
+
+    event.create('black_quartz')
+        .gem()
+        .color(0x0F0F0F)
+        .iconSet(GTMaterialIconSet.QUARTZ)
+})
+
+// AA empowered gems
+
+GTCEuStartupEvents.registry('gtceu:material', event => {
+    event.create('restonia_empowered')
+        .gem()
+        .color(0xA60000)
+        .iconSet(GTMaterialIconSet.OPAL)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+
+    event.create('enori_empowered')
+        .gem()
+        .color(0xEDE6FF)
+        .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+
+    event.create('void_empowered')
+        .gem()
+        .color(0x0F0F0F)
+        .iconSet(GTMaterialIconSet.FINE)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+
+    event.create('palis_empowered')
+        .gem()
+        .color(0x1C1C89)
+        .iconSet(GTMaterialIconSet.OPAL)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+
+    event.create('diamatine_empowered')
+        .gem()
+        .color(0x8B8DF3)
+        .iconSet(GTMaterialIconSet.FINE)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
+
+    event.create('emeradic_empowered')
+        .gem()
+        .color(0x09E103)
+        .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
+        .flags(GTMaterialFlags.GENERATE_GEAR)
 })
