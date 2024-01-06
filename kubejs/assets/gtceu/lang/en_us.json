@@ -67,5 +67,11 @@
     "material.void": "Void Crystal",
     "material.palis": "Palis Crystal",
     "material.diamatine": "Diamatine Crystal",
-    "material.emeradic": "Emeradic Crystal"
+    "material.emeradic": "Emeradic Crystal",
+    "material.restonia_empowered": " Empowered Restonia Crystal",
+    "material.enori_empowered": "Empowered Enori Crystal",
+    "material.void_empowered": "Empowered Void Crystal",
+    "material.palis_empowered": "Empowered Palis Crystal",
+    "material.diamatine_empowered": "Empowered Diamatine Crystal",
+    "material.emeradic_empowered": "Empowered Emeradic Crystal"
 }
