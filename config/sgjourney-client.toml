@@ -86,3 +86,17 @@
 				#Range: 0 ~ 255
 				alpha = 255
 
+	["Stargate Journey Client Config"."Sky Config"]
+
+		["Stargate Journey Client Config"."Sky Config".client]
+			#If true you will render a custom Abydos sky
+			custom_abydos_sky = true
+			#If true you will render a custom Chulak sky
+			custom_chulak_sky = true
+			#If true you will render a custom Cavum Tenebrae sky
+			custom_cavum_tenebrae_sky = true
+			#If true you will render a custom Lantea sky
+			custom_lantea_sky = true
+			#If true you will render a custom Athos sky
+			custom_athos_sky = true
+
