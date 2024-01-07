@@ -100,6 +100,38 @@ ServerEvents.recipes(event => {
         .itemOutputs('4x enderio:draconic_superconductor_conduit')
         .duration(80)
         .EUt(16)
-})
 
-//TODO: BIMETAL GEARS RECIPES
+
+    //TODO: BIMETAL GEARS RECIPES
+    //TODO: CRYSTALS
+
+    event.remove({ output: ['enderio:pulsating_crystal', 'enderio:vibrant_crystal'] })
+
+    event.recipes.gtceu.autoclave('green_crystal')
+        .itemInputs('minecraft:emerald')
+        .inputFluids(Fluid.of('gtceu:pulsating_alloy', 144))
+        .itemOutputs('enderio:vibrant_crystal')
+        .duration(100)
+        .EUt(30)
+
+    event.recipes.gtceu.autoclave('blue_crystal')
+        .itemInputs('minecraft:diamond')
+        .inputFluids(Fluid.of('gtceu:pulsating_alloy', 144))
+        .itemOutputs('enderio:pulsating_crystal')
+        .duration(100)
+        .EUt(30)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+})
