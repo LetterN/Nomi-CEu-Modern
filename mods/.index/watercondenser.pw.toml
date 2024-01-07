@@ -1,0 +1,13 @@
+filename = 'watercondenser-1.20.1-1.4.2.jar'
+name = 'Water condenser'
+side = 'both'
+
+[download]
+hash = 'a624b33bd3f539c0c73bd13bfbe965727108430c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4685740
+project-id = 663013

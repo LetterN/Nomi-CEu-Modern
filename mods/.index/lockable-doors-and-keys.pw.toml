@@ -1,0 +1,13 @@
+filename = 'lockable_doors-1.0.0.jar'
+name = 'Lockable Doors and Keys'
+side = 'both'
+
+[download]
+hash = '99d957506cff9a467a0537d920523bf6355d9a98'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4997920
+project-id = 956552
