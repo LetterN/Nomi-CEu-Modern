@@ -113,6 +113,8 @@
 			stargate_energy_max_receive = 1000000000000
 			#Enables choosing the Address when first creating a Stargate by right-clicking it with a renamed Control Crystal
 			enable_address_choice = false
+			#If true, allow the disintegration of Create Entities by Kawooshes
+			kawoosh_disintegrates_create_entities = false
 
 	["Stargate Journey Common Config"."Naquadah Generator Config"]
 
