@@ -121,9 +121,11 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(30)
 
+        // Disable EnderIO machinery
 
-
-
+        event.remove({type: 'enderio:primitive_alloy_smelting'})
+        event.remove({type: 'enderio:alloy_smelting'})
+        event.remove({type: 'enderio:sagmilling'})
 
 
 
