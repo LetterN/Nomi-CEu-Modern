@@ -28,6 +28,7 @@ REIEvents.hide('item', event => {
 REIEvents.removeCategories(event => {
     event.remove('minecraft:plugins/tag')
     event.remove(['thermal:gourmand_fuel', 'thermal:disenchantement_fuel', 'thermal:lapidary_fuel'])
+    event.remove(['enderio:alloy_smelting', 'thermal:furnace'])
 })
 
 REIEvents.groupEntries(event => {
