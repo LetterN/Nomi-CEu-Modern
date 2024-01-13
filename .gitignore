@@ -32,3 +32,4 @@ config/roughlyenoughitems/hints.json
 config/embeddium++.toml
 config/oculus.properties
 config/voicechat/username-cache.json
+config/minihud/*
