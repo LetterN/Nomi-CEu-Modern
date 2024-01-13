@@ -220,4 +220,5 @@ ServerEvents.recipes(event => {
     event.recipes.minecraft.smelting('gtceu:dilithium_dust', 'gtceu:dilithium_ore')
 
 
+
 })

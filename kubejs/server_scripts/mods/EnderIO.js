@@ -121,14 +121,15 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(30)
 
-        // Disable EnderIO machinery
+    // Disable EnderIO machinery
 
-        event.remove({type: 'enderio:primitive_alloy_smelting'})
-        event.remove({type: 'enderio:alloy_smelting'})
-        event.remove({type: 'enderio:sagmilling'})
+    event.remove({ type: 'enderio:primitive_alloy_smelting' })
+    event.remove({ type: 'enderio:alloy_smelting' })
+    event.remove({ type: 'enderio:sagmilling' })
 
 
 
+    //TODO: Conduit Recipe, Capacitor Banks Recipes, Capacitors Recipes, Alloys
 
 
 

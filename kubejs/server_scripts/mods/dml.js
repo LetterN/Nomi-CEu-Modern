@@ -100,6 +100,7 @@ ServerEvents.recipes(event => {
             .EUt(15)
     })
     //TODO Thermal Elemental Matters
+    //TODO: PPC Stuff Recipes and Cabon Fiber mesh
 
 ItemEvents.rightClicked(event => {
     if (event.item.id === 'hostilenetworks:overworld_prediction') {

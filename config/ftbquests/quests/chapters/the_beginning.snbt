@@ -368,12 +368,31 @@
 		}
 		{
 			dependencies: ["5301E546BAA69844"]
+			icon: "gtceu:gear_casting_mold"
 			id: "404C9497C46E7608"
-			tasks: [{
-				id: "4D0AD1CE56BC17CA"
-				item: "gtceu:gear_casting_mold"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 3L
+					id: "003802F16404404C"
+					item: { Count: 3b, id: "gtceu:empty_mold" }
+					type: "item"
+				}
+				{
+					id: "500A01A974ACFC7D"
+					item: "gtceu:block_casting_mold"
+					type: "item"
+				}
+				{
+					id: "427921CAA3277199"
+					item: "gtceu:gear_casting_mold"
+					type: "item"
+				}
+				{
+					id: "17037C04324A5D7A"
+					item: "gtceu:rotor_casting_mold"
+					type: "item"
+				}
+			]
 			x: 2.5d
 			y: -5.5d
 		}
@@ -386,12 +405,20 @@
 				""
 				"&cPlease note that the Enderpearl Dust electrolysis recipe requires an EV Electrolyzer, and is most likely not worth it.&r"
 			]
+			icon: "kubejs:pulsating_dust"
 			id: "30EBD4E7BBFFEF2C"
-			tasks: [{
-				id: "771429E0BF88C060"
-				item: "kubejs:pulsating_dust"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "771429E0BF88C060"
+					item: "kubejs:pulsating_dust"
+					type: "item"
+				}
+				{
+					id: "7CD88A0039FEDB93"
+					item: "gtceu:uraninite_dust"
+					type: "item"
+				}
+			]
 			title: "Pulsating Dust"
 			x: 2.5d
 			y: -8.0d
@@ -399,26 +426,23 @@
 		{
 			dependencies: ["30EBD4E7BBFFEF2C"]
 			description: ["If you can't find one otherwise, &6Ender Pearls&r can be crafted using Pulsating Dust and a &6Diamond&r in an &3Alloy Smelter&r."]
+			icon: "gtceu:pulsating_alloy_ingot"
 			id: "273F3F8DD6A3DCC5"
 			subtitle: "A mysterious alloy, made from &6Pulsating Dust&r and &6Iron&r."
-			tasks: [{
-				id: "22A4BABD40C1A481"
-				item: "gtceu:pulsating_alloy_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "22A4BABD40C1A481"
+					item: "gtceu:pulsating_alloy_ingot"
+					type: "item"
+				}
+				{
+					id: "1D2D8CC9B069A59B"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+			]
 			title: "Pulsating Iron and Ender Pearls"
 			x: 2.5d
-			y: -9.5d
-		}
-		{
-			dependencies: ["273F3F8DD6A3DCC5"]
-			id: "161892EC84F0237D"
-			tasks: [{
-				id: "22CFFD2E31601A1A"
-				item: "minecraft:bedrock"
-				type: "item"
-			}]
-			x: 4.5d
 			y: -9.5d
 		}
 		{
@@ -469,33 +493,58 @@
 		{
 			dependencies: ["29A487F0BC43AAF9"]
 			id: "46AF35D4EECA5BDB"
-			tasks: [{
-				id: "065486502C7A58BA"
-				item: "minecraft:bedrock"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 8L
+					id: "280F3C72A8B03756"
+					item: { Count: 8b, id: "enderio:fused_quartz" }
+					type: "item"
+				}
+				{
+					id: "10F80A969FA43359"
+					item: "watercondenser:watercondenser"
+					type: "item"
+				}
+			]
 			x: 1.0357142857142563d
 			y: -0.4761904761904816d
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
 			id: "545CCC24D9401794"
-			tasks: [{
-				id: "64761A1D5DA1599D"
-				item: "minecraft:bedrock"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 2L
+					id: "68CB667BEFDBE67D"
+					item: "systeams:steam_dynamo"
+					type: "item"
+				}
+				{
+					id: "12315AEA66B77CB2"
+					item: { Count: 2b, id: "systeams:stirling_boiler" }
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["5301E546BAA69844"]
 			id: "500E619D568C07C2"
-			tasks: [{
-				id: "13BC210346486E40"
-				item: "gtceu:lv_arc_furnace"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "13BC210346486E40"
+					item: "gtceu:lv_arc_furnace"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2238DE5FBD5952C8"
+					item: "gtceu:mv_arc_furnace"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: -4.5d
 		}
@@ -503,8 +552,8 @@
 			dependencies: ["5301E546BAA69844"]
 			id: "4624889F738AB21B"
 			tasks: [{
-				id: "62E30094941243B0"
-				item: "minecraft:bedrock"
+				id: "20C8F57CE9379A41"
+				item: "minecraft:cobblestone"
 				type: "item"
 			}]
 			x: 4.5d
@@ -524,11 +573,18 @@
 		{
 			dependencies: ["30EBD4E7BBFFEF2C"]
 			id: "645B1DCB3DA7198A"
-			tasks: [{
-				id: "3FB8F2F8B1867430"
-				item: "kubejs:pulsating_mesh"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3FB8F2F8B1867430"
+					item: "kubejs:pulsating_mesh"
+					type: "item"
+				}
+				{
+					id: "6684545526C4AD44"
+					item: "gtceu:carbon_fiber_mesh"
+					type: "item"
+				}
+			]
 			x: 6.5d
 			y: -8.0d
 		}
@@ -600,11 +656,24 @@
 		{
 			dependencies: ["5301E546BAA69844"]
 			id: "1CA6D620309F2B9E"
-			tasks: [{
-				id: "4410D5DCD0B1C1C6"
-				item: "minecraft:bedrock"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4A822DF50CD59532"
+					item: {
+						Count: 1b
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E07B0FCC2B8D3EF"
+					item: "enderio:grains_of_infinity"
+					type: "item"
+				}
+			]
 			x: 8.5d
 			y: -3.0d
 		}
@@ -636,11 +705,18 @@
 		{
 			dependencies: ["3BD20358F137E7C6"]
 			id: "6D03BB4A6A4BBA27"
-			tasks: [{
-				id: "39AA9BBDCACBC109"
-				item: "ae2:charger"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "39AA9BBDCACBC109"
+					item: "ae2:charger"
+					type: "item"
+				}
+				{
+					id: "5359172F26D9A46A"
+					item: "gtceu:certus_quartz_gem"
+					type: "item"
+				}
+			]
 			x: 10.5d
 			y: -3.0d
 		}
@@ -648,11 +724,18 @@
 			dependencies: ["6D03BB4A6A4BBA27"]
 			id: "4174A6C6403DD245"
 			size: 2.0d
-			tasks: [{
-				id: "652709622C84E4CC"
-				item: "ae2:energy_acceptor"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "652709622C84E4CC"
+					item: "ae2:energy_acceptor"
+					type: "item"
+				}
+				{
+					id: "3550456A821A6975"
+					item: "gtceu:fluix_gem"
+					type: "item"
+				}
+			]
 			x: 13.0d
 			y: -3.0d
 		}
@@ -660,8 +743,8 @@
 			dependencies: ["025543EDB0A4AC22"]
 			id: "7842EC1C389C4B7E"
 			tasks: [{
-				id: "039675643A0EF572"
-				item: "minecraft:bedrock"
+				id: "12BB374292CCF6F8"
+				item: "enderio:basic_capacitor"
 				type: "item"
 			}]
 			x: 8.5d
@@ -671,8 +754,8 @@
 			dependencies: ["7842EC1C389C4B7E"]
 			id: "2845151447537433"
 			tasks: [{
-				id: "1101B4E6A2C73A2E"
-				item: "minecraft:bedrock"
+				id: "61E7629E44901031"
+				item: "enderio:basic_capacitor_bank"
 				type: "item"
 			}]
 			x: 10.5d
@@ -682,8 +765,8 @@
 			dependencies: ["025543EDB0A4AC22"]
 			id: "356DA8DE256356B8"
 			tasks: [{
-				id: "7BF0EB45E469A58E"
-				item: "minecraft:bedrock"
+				id: "26BC97C8FD16C12D"
+				item: "thermal:upgrade_augment_1"
 				type: "item"
 			}]
 			x: 8.5d
@@ -716,6 +799,7 @@
 		}
 		{
 			dependencies: ["5B0200011DF8E1B6"]
+			icon: "gtceu:oxygen_bucket"
 			id: "6FE99EDDC6223F2E"
 			tasks: [
 				{
@@ -738,8 +822,12 @@
 			dependencies: ["3F6EDC2481D5877F"]
 			id: "59AC5F89444A0663"
 			tasks: [{
-				id: "4CD59AF2C3A9AA25"
-				item: "minecraft:bedrock"
+				id: "7F99A21E6EE1E487"
+				item: {
+					Count: 1b
+					id: "thermal:satchel"
+					tag: { }
+				}
 				type: "item"
 			}]
 			x: 4.5d
@@ -752,8 +840,12 @@
 			]
 			id: "15808BD9C5DBA0F7"
 			tasks: [{
-				id: "0232D1852CB53449"
-				item: "minecraft:bedrock"
+				id: "209DE065BB54505D"
+				item: {
+					Count: 1b
+					id: "thermal:satchel"
+					tag: { }
+				}
 				type: "item"
 			}]
 			x: 6.5d
@@ -1044,6 +1136,17 @@
 			title: "&2Filters"
 			x: 10.5d
 			y: 7.5d
+		}
+		{
+			dependencies: ["273F3F8DD6A3DCC5"]
+			id: "4F239316765C7CA1"
+			tasks: [{
+				id: "6DEB6911246BA1D9"
+				item: "enderio:item_conduit"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -9.5d
 		}
 	]
 	title: "The Beginning"

@@ -1,13 +1,13 @@
 ServerEvents.recipes(event => {
     // Ender Pearls
     event.recipes.gtceu.alloy_smelter("pulsating_ender_pearl")
-    .itemInputs("minecraft:diamond", "kubejs:pulsating_dust")
-    .itemOutputs("minecraft:ender_pearl")
-    .duration(300)
-    .EUt(16)
+        .itemInputs("minecraft:diamond", "kubejs:pulsating_dust")
+        .itemOutputs("minecraft:ender_pearl")
+        .duration(300)
+        .EUt(16)
 
     // May as well remove ender dust usage while we're at it
-    event.remove({input: "miniutilities:ender_dust"})
+    event.remove({ input: "miniutilities:ender_dust" })
 
     var plantMaterial = ["#minecraft:leaves", "#minecraft:saplings", "minecraft:vine"]
     plantMaterial.forEach(ballIngredient => {
@@ -28,22 +28,22 @@ ServerEvents.recipes(event => {
     event.shapeless("kubejs:dust", ["minecraft:sand", "#forge:tools/hammers"])
 
     // EIO Solar
-    event.remove("enderio:photovoltaic_plate")
+    event.remove({ output: "enderio:photovoltaic_plate" })
     event.recipes.gtceu.alloy_smelter("photovoltaic_plate")
-    .itemInputs("2x enderio:photovoltaic_composite", "gtceu:electrical_steel_plate")
-    .itemOutputs("enderio:photovoltaic_plate")
-    .duration(180)
-    .EUt(16)
+        .itemInputs("2x enderio:photovoltaic_composite", "gtceu:electrical_steel_plate")
+        .itemOutputs("enderio:photovoltaic_plate")
+        .duration(180)
+        .EUt(16)
 
     // Solar composite
-    event.remove("enderio:photovoltaic_composite")
+    event.remove({ output: "enderio:photovoltaic_composite" })
     event.shapeless("3x enderio:photovoltaic_composite", ["gtceu:lapis_dust", "gtceu:coal_dust", "gtceu:silicon_dust"])
 
     // Drawers
-    event.remove("storagedrawers:obsidian_storage_upgrade")
-    event.remove("storagedrawers:compacting_drawers_3")
-    event.remove("storagedrawers:controller")
-    event.remove("storagedrawers:controller_slave")
+    event.remove({ output: "storagedrawers:obsidian_storage_upgrade" })
+    event.remove({ output: "storagedrawers:compacting_drawers_3" })
+    event.remove({ output: "storagedrawers:controller" })
+    event.remove({ output: "storagedrawers:controller_slave" })
     event.shaped(
         "storagedrawers:obsidian_storage_upgrade", [
             'SSS',
