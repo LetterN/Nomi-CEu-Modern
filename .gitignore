@@ -26,10 +26,8 @@ config/modernfix-mixins.properties
 config/immediatelyfast.json
 config/ftbbackups2.json
 config/spark/tmp
-config/chiselandbits-client.toml
-config/chiselandbits-common.toml
+config/chiselandbits-c*
 config/roughlyenoughitems/hints.json
 config/embeddium++.toml
-config/oculus.properties
 config/voicechat/username-cache.json
 config/minihud/*
