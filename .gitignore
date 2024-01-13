@@ -5,10 +5,13 @@
 !/defaultconfigs
 !/resources
 !/.gitignore
+/mods/.index
 
 /config/fml.toml
 /kubejs/probe
 /mods/.connector
+
+/mods/memoryleakfix*
 
 config/fabric/indigo-renderer.properties
 config/roughlyenoughitems/pinyin.properties
@@ -28,3 +31,4 @@ config/chiselandbits-common.toml
 config/roughlyenoughitems/hints.json
 config/embeddium++.toml
 config/oculus.properties
+config/voicechat/username-cache.json
