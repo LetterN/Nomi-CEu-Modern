@@ -103,7 +103,6 @@ ServerEvents.recipes(event => {
 
 
     //TODO: BIMETAL GEARS RECIPES
-    //TODO: CRYSTALS
 
     event.remove({ output: ['enderio:pulsating_crystal', 'enderio:vibrant_crystal'] })
 

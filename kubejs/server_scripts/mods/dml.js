@@ -98,9 +98,42 @@ ServerEvents.recipes(event => {
             .inputFluids('water')
             .duration(20)
             .EUt(15)
+
+        event.recipes.gtceu.alloy_smelter('carbon_fiber_mesh_coal')
+            .itemInputs(['4x minecraft:string', 'gtceu:coal_dust'])
+            .itemOutputs('gtceu:carbon_fiber_mesh')
+            .duration(100)
+            .EUt(16)
+
+        event.recipes.gtceu.alloy_smelter('carbon_fiber_mesh_carbon')
+            .itemInputs(['4x minecraft:string', 'gtceu:carbon_dust'])
+            .itemOutputs('gtceu:carbon_fiber_mesh')
+            .duration(100)
+            .EUt(16)
+
+        event.recipes.gtceu.alloy_smelter('pulsating_mesh')
+            .itemInputs(['gtceu:carbon_fiber_mesh', '4x kubejs:pulsating_dust'])
+            .itemOutputs('kubejs:pulsating_mesh')
+            .duration(200)
+            .EUt(16)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     })
     //TODO Thermal Elemental Matters
-    //TODO: PPC Stuff Recipes and Cabon Fiber mesh
 
 ItemEvents.rightClicked(event => {
     if (event.item.id === 'hostilenetworks:overworld_prediction') {
