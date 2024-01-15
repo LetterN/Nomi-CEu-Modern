@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.electrolyzer("clay_electrolysis_lv")
     .itemInputs("13x gtceu:clay_dust")
     .itemOutputs("2x gtceu:sodium_dust", "2x gtceu:silicon_dust", "gtceu:lithium_dust", "2x gtceu:aluminium_dust")
-    .outputFluids("6000x minecraft:water")
+    .outputFluids("minecraft:water 6000")
     .duration(364)
     .EUt(15)
 
