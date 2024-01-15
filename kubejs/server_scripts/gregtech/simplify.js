@@ -1,31 +1,31 @@
 ServerEvents.recipes(event => {
 
     // Nether cake
-    event.remove({output: "telepastries:nether_cake"})
+    event.remove({ output: "telepastries:nether_cake" })
     event.shaped(
-        "telepastries:nether_cake", [
-            'NNN',
-            'OBO',
-            'SSS'
-        ], {
-            N: "gtceu:netherrack_dust",
-            O: "minecraft:obsidian",
-            B: "enderio:cake_base",
-            S: "minecraft:soul_sand"
-        }
-    )
-    // Nomi Steel
-    event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot"})
+            "telepastries:nether_cake", [
+                'NNN',
+                'OBO',
+                'SSS'
+            ], {
+                N: "gtceu:netherrack_dust",
+                O: "minecraft:obsidian",
+                B: "enderio:cake_base",
+                S: "minecraft:soul_sand"
+            }
+        )
+        // Nomi Steel
+    event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot" })
 
     var carbonSources = ["gtceu:coal_dust", "gtceu:charcoal_dust", "gtceu:carbon_dust"]
-    
+
     // Alloy smelter steel
     carbonSources.forEach(carbonSource => {
         event.recipes.gtceu.alloy_smelter("steel_" + carbonSource.replace(/\W/g, '')) // The replace line removes non alphanumeric chars, regex is magic
-        .itemInputs("#forge:ingots/wrought_iron", carbonSource)
-        .itemOutputs("gtceu:steel_ingot")
-        .duration(150)
-        .EUt(16)
+            .itemInputs("#forge:ingots/wrought_iron", carbonSource)
+            .itemOutputs("gtceu:steel_ingot")
+            .duration(150)
+            .EUt(16)
     })
 
     // Wrought iron per ingot
@@ -38,15 +38,15 @@ ServerEvents.recipes(event => {
     // Make clay electrolysis an LV recipe
     event.remove({ id: "gtceu:electrolyzer/decomposition_electrolyzing_clay" })
     event.recipes.gtceu.electrolyzer("clay_electrolysis_lv")
-    .itemInputs("13x gtceu:clay_dust")
-    .itemOutputs("2x gtceu:sodium_dust", "2x gtceu:silicon_dust", "gtceu:lithium_dust", "2x gtceu:aluminium_dust")
-    .outputFluids("6000x minecraft:water")
-    .duration(364)
-    .EUt(15)
+        .itemInputs("13x gtceu:clay_dust")
+        .itemOutputs("2x gtceu:sodium_dust", "2x gtceu:silicon_dust", "gtceu:lithium_dust", "2x gtceu:aluminium_dust")
+        .outputFluids(Fluid.of('water', 6000))
+        .duration(364)
+        .EUt(15)
 
     // Change recipes for LV and MV macerators
-    event.remove({ output: "gtceu:lv_macerator"})
-    event.remove({ output: "gtceu:mv_macerator"})
+    event.remove({ output: "gtceu:lv_macerator" })
+    event.remove({ output: "gtceu:mv_macerator" })
 
     event.shaped(
         "gtceu:lv_macerator", [
