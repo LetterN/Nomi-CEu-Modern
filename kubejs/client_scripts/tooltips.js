@@ -40,4 +40,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('enderio:enderium_conduit', '\u00A77Max Output 2,097,152 RF/t')
     tooltip.add('enderio:draconium_conduit', '\u00A77Max Output 8,388,608 RF/t')
     tooltip.add('enderio:draconic_superconductor_conduit', '\u00A77Max Output 134,217,728 RF/t')
+
+    tooltip.add("thermal:device_rock_gen", "\u00A77Must be placed next to lava and water to produce cobblestone.")
 })

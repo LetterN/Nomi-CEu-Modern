@@ -23,6 +23,13 @@ REIEvents.hide('item', event => {
 
     //EnderIO
     event.hide(['enderio:energy_conduit'])
+
+    // GT Steam Age
+    var gtMachines = ['extractor', 'macerator', 'compressor', 'forge_hammer', 'furnace', 'alloy_smelter']
+
+    gtMachines.forEach(machine => {
+        event.hide(['gtceu:lp_steam_' + machine, 'gtceu:hp_steam_' + machine])
+    })
 })
 
 REIEvents.removeCategories(event => {
