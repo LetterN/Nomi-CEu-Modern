@@ -332,6 +332,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
         .cableProperties(2048, 1, 0, true)
 
+    event.create("stellar_alloy")
+        .ingot().fluid()
+        .color(0xc5c8c8)
+        .iconSet('metallic')
+
 
 
 })

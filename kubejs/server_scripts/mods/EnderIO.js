@@ -101,8 +101,29 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(16)
 
+    event.remove({ output: ['enderio:iron_gear', 'enderio:energized_gear', 'enderio:vibrant_gear'] })
 
-    //TODO: BIMETAL GEARS RECIPES
+    // Infinity Bimetal Gear
+    event.recipes.gtceu.alloy_smelter('infinity_gear')
+    .itemInputs('gtceu:iron_gear', '2x enderio:grains_of_infinity')
+    .itemOutputs('enderio:iron_gear')
+    .duration(100)
+    .EUt(16)
+
+    // Energized Bimetal Gear
+    event.recipes.gtceu.alloy_smelter('energetic_gear')
+    .itemInputs('enderio:iron_gear', '4x gtceu:energetic_alloy_ingot')
+    .itemOutputs('enderio:energized_gear')
+    .duration(150)
+    .EUt(16)
+
+    // Vibrant Bimetal Gear
+    event.recipes.gtceu.alloy_smelter('vibrant_gear')
+    .itemInputs('enderio:energized_gear', '4x gtceu:vibrant_alloy_ingot')
+    .itemOutputs('enderio:vibrant_gear')
+    .duration(200)
+    .EUt(16)
+
 
     event.remove({ output: ['enderio:pulsating_crystal', 'enderio:vibrant_crystal'] })
 
@@ -128,12 +149,108 @@ ServerEvents.recipes(event => {
 
 
 
-    //TODO: Conduit Recipe, Capacitor Banks Recipes, Capacitors Recipes, Alloys
+    //TODO: Capacitor Banks Recipes
+    
+    // Capacitors
 
+    event.remove({ output: 'enderio:basic_capacitor' })
 
+    var capacitorCores = [
+        ['#forge:circuits/ulv', 1],
+        ['gtceu:capacitor', 2],
+        ['gtceu:smd_capacitor', 3],
+        ['gtceu:advanced_smd_capacitor', 12]
+    ]
 
+    capacitorCores.forEach(core => {
+        event.shaped(
+            core[1] + 'x enderio:basic_capacitor', [
+                ' N ',
+                'NCN',
+                'W W'
+            ], {
+                N: 'gtceu:electrical_steel_nugget',
+                C: core[0],
+                W: 'gtceu:tin_single_wire'
+            }
+        )
+    })
 
+    // Compressed caps
+    event.shaped(
+        'kubejs:compressed_octadic_capacitor', [
+            'CCC',
+            'CCC',
+            'CCC'
+        ], {
+            C: 'enderio:octadic_capacitor'
+        }
+    )
 
+    event.shaped(
+        'kubejs:double_compressed_octadic_capacitor', [
+            'CCC',
+            'CCC',
+            'CCC'
+        ], {
+            C: 'kubejs:compressed_octadic_capacitor'
+        }
+    )
 
+    // Fused Quartz
+    event.recipes.gtceu.alloy_smelter("fused_quartz")
+    .itemInputs('3x minecraft:quartz')
+    .notConsumable('gtceu:block_casting_mold')
+    .itemOutputs('enderio:fused_quartz')
+    .duration(80)
+    .EUt(16)
 
+    // Enlightened fused quartz
+    event.recipes.gtceu.alloy_smelter("enlightened_fused_quartz")
+    .itemInputs('#enderio:fused_quartz', 'minecraft:glowstone')
+    .itemOutputs('enderio:fused_quartz_e')
+    .duration(160)
+    .EUt(16)
+
+    // dark fused quartz (FIXME: replace bedrock with actual AA item, was too lazy to fire up normal nomi to see)
+    event.recipes.gtceu.alloy_smelter("dark_fused_quartz")
+    .itemInputs('#enderio:fused_quartz', 'minecraft:bedrock')
+    .itemOutputs('enderio:fused_quartz_d')
+    .duration(200)
+    .EUt(32)
+
+    // Enlightened clear glass
+    event.recipes.gtceu.alloy_smelter("enlightened_clear_glass")
+    .itemInputs('#enderio:clear_glass', 'minecraft:glowstone')
+    .itemOutputs('enderio:clear_glass_e')
+    .duration(160)
+    .EUt(16)
+
+    // dark clear glass
+    event.recipes.gtceu.alloy_smelter("dark_clear_glass")
+    .itemInputs('#enderio:clear_glass', 'minecraft:bedrock')
+    .itemOutputs('enderio:clear_glass_d')
+    .duration(200)
+    .EUt(32)
+
+    // Stellar Alloy
+    event.recipes.gtceu.alloy_smelter('stellar_alloy')
+    .itemInputs('gtceu:end_steel_ingot', '8x enderio:grains_of_infinity')
+    .itemOutputs('gtceu:stellar_alloy_ingot')
+    .duration(200)
+    .EUt(2000)
+
+    // Remove useless/op conduit recipes from enderio
+    event.remove({ input: '#enderio:fused_quartz', output: 'enderio:pressurized_fluid_conduit' })
+    event.remove({ input: 'gtceu:vibrant_alloy_ingot', output: 'enderio:ender_fluid_conduit' })
+    event.remove({ input: 'gtceu:pulsating_alloy_nugget', output: 'enderio:item_conduit' })
+
+    // TODO: implement Simple Machine Chassis and add chassis recipe chain
+
+    event.remove({ output: 'enderio:infinity_rod' })
+    event.recipes.gtceu.alloy_smelter('infinity_rod')
+    .itemInputs('gtceu:dark_steel_rod', 'enderio:grains_of_infinity')
+    .itemOutputs('enderio:infinity_rod')
+    .duration(200)
+    .EUt(30)
 })
