@@ -31,7 +31,7 @@
 *   - you can have a line "define a_key !value!" to make the compiler replace all a_key with !value! at runtime.
 */
 
-define english "en_us"
+// define english "en_us"
 
 var ourMaterial = false;
 
@@ -67,6 +67,30 @@ function init()
 		.build(2);
 
     Comment end*/
+
+    // Wyvern
+    panel()
+    .name('wyvern')
+    .height(0.5)
+    .generation(32768)
+    .capacity(25600000)
+    .transfer(512000)
+
+    // Draconic
+    panel()
+    .name('draconic')
+    .height(0.5)
+    .generation(131072)
+    .capacity(512000000)
+    .transfer(1024000)
+
+    // Chaotic
+    panel()
+    .name('chaotic')
+    .height(0.5)
+    .generation(262144)
+    .capacity(204800000)
+    .transfer(4096000)
 }
 
 /*

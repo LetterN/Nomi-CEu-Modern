@@ -474,3 +474,16 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
         .flags(GTMaterialFlags.GENERATE_GEAR)
 })
+
+// Sunnarium
+GTCEuStartupEvents.registry('gtceu:material', event => {
+    event.create('sunnarium')
+    .dust()
+    .color(0xDDD692)
+    .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
+
+    event.create('enriched_sunnarium')
+    .dust()
+    .color(0xACFFC2)
+    .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
+})
