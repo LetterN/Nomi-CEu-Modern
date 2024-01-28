@@ -1,65 +1,103 @@
-type = menu
+type = fancymenu_layout
 
-customization-meta {
-  identifier = de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen
-  randomgroup = 1
-  renderorder = foreground
+layout-meta {
+  identifier = drippy_loading_overlay
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1706458707212
+  is_enabled = true
   randommode = false
+  randomgroup = 1
   randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:7df9461a-ef48-4e1a-a445-92eef9746d50-1706458692500] = [groups:][instances:]
+}
+
+menu_background {
+  color = #592770
+  background_type = drippy_color_background
 }
 
 customization {
-  keepaspectratio = false
   action = backgroundoptions
+  keepaspectratio = false
 }
 
-customization {
-  orientation = top-left
-  hidden = true
-  original_pos_size_calculation = true
-  x = 140
-  width = 360
-  action = deep_customization_element:drippy_overlay_logo
-  actionid = d37011dd-f40f-49cb-bd57-845beb2c241f1703872138142
-  y = 135
-  height = 90
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
 }
 
-customization {
-  custom_color_hex = #592770
-  orientation = top-left
-  hidden = false
-  x = -1000000
-  width = 0
-  action = deep_customization_element:drippy_overlay_background
-  actionid = 10b9f864-b9c5-48e2-93f6-9bbfd650fb631703872138146
-  y = -1000000
-  height = 0
-}
-
-customization {
-  custom_color_hex = #fefcff
-  orientation = top-left
-  hidden = false
-  original_pos_size_calculation = true
-  x = 85
-  width = 242
-  action = deep_customization_element:drippy_overlay_progress_bar
-  actionid = 2d3e8ea0-9721-4b18-8321-de713d509c3d1703872138146
-  y = 197
-  height = 10
-}
-
-customization {
-  path = resources/minecraft/textures/gui/title/top.png
-  orientation = top-left
-  x = 0
-  width = 382
-  action = addtexture
-  actionid = b357ae31-83a6-4e9e-88c6-dadcdbf78e151703872261817
-  y = 0
+element {
+  source = [source:local]resources/minecraft/textures/gui/title/top.png
+  element_type = image
+  instance_identifier = b357ae31-83a6-4e9e-88c6-dadcdbf78e151703872261817
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = top-left
   advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"} - 382) / 2","decimal":"true"}}
   advanced_posy = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiheight"} - 100) / 2.25","decimal":"true"}}
+  x = 0
+  y = 0
+  width = 382
   height = 100
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 0e24b93f-3335-4748-88d5-d810b3849813-1706381387421
+  [loading_requirement_container_meta:0e24b93f-3335-4748-88d5-d810b3849813-1706381387421] = [groups:][instances:]
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 44abb33b-19a2-42b8-b010-a9ca9b706f40-1706381387416
+  [executable_block:44abb33b-19a2-42b8-b010-a9ca9b706f40-1706381387416][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = vanillabtn:mojang_logo
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 0
+  y = 0
+  width = 0
+  height = 0
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = ec01a7e3-9004-4ec5-b356-688b9604a287-1706381387416
+  [loading_requirement_container_meta:ec01a7e3-9004-4ec5-b356-688b9604a287-1706381387416] = [groups:][instances:]
+  is_hidden = true
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 137e7ba7-1657-4e4f-a202-8927e83b3ac1-1706381387416
+  [executable_block:137e7ba7-1657-4e4f-a202-8927e83b3ac1-1706381387416][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = vanillabtn:progress_bar
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 0
+  y = 0
+  width = 0
+  height = 0
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 2955d6bb-2dc0-49fc-a403-b7838099bea3-1706381387416
+  [loading_requirement_container_meta:2955d6bb-2dc0-49fc-a403-b7838099bea3-1706381387416] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
 }
 
