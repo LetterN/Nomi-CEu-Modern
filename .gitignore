@@ -26,7 +26,9 @@ config/modernfix-mixins.properties
 config/immediatelyfast.json
 config/ftbbackups2.json
 config/spark/tmp
-config/chiselandbits-c*
 config/roughlyenoughitems/hints.json
 config/voicechat/username-cache.json
 config/minihud/*
+config/embeddium-fingerprint.json
+config/chiselsandbits-client.toml
+config/chiselsandbits-common.toml
