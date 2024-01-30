@@ -318,19 +318,13 @@ ServerEvents.recipes(event => {
 
         // crystal chip shit
 
-        var starterCrystals = ["gtceu:olivine_exquisite_gem", "gtceu:emerald_exquisite_gem"]
-        
-
-        // TODO: allow olivine as starter crystal
-        starterCrystals.forEach(crystal => {
-            event.recipes.gtceu.autoclave("starter_enderium_chip")
-            .itemInputs(crystal)
-            .inputFluids("gtceu:enderium 144")
-            .chancedOutput("gtceu:raw_crystal_chip", 900, 1800)
-            .duration(12000)
-            .EUt(320)
-            .cleanroom(CleanroomType.CLEANROOM)
-        })
+        event.recipes.gtceu.autoclave("starter_enderium_chip")
+        .itemInputs(["gtceu:olivine_exquisite_gem", "gtceu:emerald_exquisite_gem"])
+        .inputFluids("gtceu:enderium 144")
+        .chancedOutput("gtceu:raw_crystal_chip", 900, 1800)
+        .duration(12000)
+        .EUt(320)
+        .cleanroom(CleanroomType.CLEANROOM)
         
         event.recipes.gtceu.autoclave("enderium_chip")
         .itemInputs("gtceu:raw_crystal_chip_parts")

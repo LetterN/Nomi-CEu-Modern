@@ -32,13 +32,6 @@ ServerEvents.recipes(event => {
             .inputFluids(Fluid.of("gtceu:nitric_acid"), 1000)
             .duration(200)
             .EUt(500)
-    
-    event.recipes.gtceu.chemical_reactor("undensify_redstone_ore")
-            .itemInputs("kubejs:dense_redstone_ore")
-            .itemOutputs('16x ' + "minecraft:redstone_ore")
-            .inputFluids(Fluid.of("gtceu:nitric_acid"), 1000)
-            .duration(200)
-            .EUt(500)
 })
 
 ServerEvents.tags('item', event => {
