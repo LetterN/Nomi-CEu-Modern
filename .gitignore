@@ -32,3 +32,4 @@ config/minihud/*
 config/embeddium-fingerprint.json
 config/chiselsandbits-client.toml
 config/chiselsandbits-common.toml
+config/defaultworldtype/world-presets.txt
