@@ -166,7 +166,7 @@ ServerEvents.recipes(event => {
         // Ingot form
         event.recipes.gtceu.primitive_blast_furnace("pbf_" + recipeInfo[0] + "_" + recipeInfo[1])
         .itemInputs((efficent ? "2x " : "") + "#forge:ingots/" + recipeInfo[0], ["#forge:gems/" + recipeInfo[1], "#forge:dusts/" + recipeInfo[1]])
-        .itemOutputs((efficent ? "2x " : "") + "gtceu:steel_ingot", "gtceu:" + (efficent ? "" : "dark_") + "ash_tiny_dust")
+        .itemOutputs((efficent ? "2x " : "") + "gtceu:steel_ingot", "gtceu:tiny_" + (efficent ? "" : "dark_") + "ash_dust")
         .duration(recipeInfo[2])
         
         // Block form
@@ -391,7 +391,7 @@ ServerEvents.recipes(event => {
             event.recipes.gtceu.electric_blast_furnace("draconium_" + fuelType[1].replace(/\W/g, ''))
             .itemInputs("gtceu:draconium_dust")
             .inputFluids(fuelType[1] + " " + fuelType[0])
-            .itemOutputs("gtceu:draconium_hot_ingot")
+            .itemOutputs("gtceu:hot_draconium_ingot")
             .duration(10000)
             .blastFurnaceTemp(6800)
             .EUt(120)
@@ -399,7 +399,7 @@ ServerEvents.recipes(event => {
             event.recipes.gtceu.electric_blast_furnace("draconium_scale_" + fuelType[1].replace(/\W/g, ''))
             .itemInputs("4x kubejs:ender_dragon_scale")
             .inputFluids(fuelType[1] + " " + fuelType[0] * 4)
-            .itemOutputs("2x gtceu:draconium_hot_ingot")
+            .itemOutputs("2x gtceu:hot_draconium_ingot")
             .duration(20000)
             .blastFurnaceTemp(6800)
             .EUt(120)
@@ -467,7 +467,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.arc_furnace("sterile_filter_recycling")
         .itemInputs("gtceu:sterilizing_filter_casing")
         .inputFluids("gtceu:oxygen 1265")
-        .itemOutputs("4x gtceu:iridium_ingot", "2x gtceu:black_steel_ingot", "6x gtceu:ash_small_dust")
+        .itemOutputs("4x gtceu:iridium_ingot", "2x gtceu:black_steel_ingot", "6x gtceu:small_ash_dust")
         .duration(691)
         .EUt(30)
 
@@ -548,7 +548,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.macerator("bbc_crushing")
         .itemInputs("gtceu:mega_vaccum_freezer")
-        .itemOutputs("18x gtceu:naquadah_alloy_dust", "50x gtceu:rubber_small_dust", "49x gtceu:steel_small_dust", "12x gtceu:stainless_steel_dust")
+        .itemOutputs("18x gtceu:naquadah_alloy_dust", "50x gtceu:small_rubber_dust", "49x gtceu:small_steel_dust", "12x gtceu:stainless_steel_dust")
         .duration(25408)
         .EUt(302)
 })
