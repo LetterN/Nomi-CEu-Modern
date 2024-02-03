@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.advanced_microverse_ii('t_seven_second')
         .itemInputs('kubejs:microminer_t7', '32x kubejs:quantum_flux', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '32x kubejs:dragon_lair_data')
-        .itemOutputs('32x minecraft:paper', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_breath', '64x kubejs:ender_dragon_scale', '64x kubejs:ender_dragon_scale', '64x kubejs:ender_dragon_scale', '64x minecraft:gold_block', '64x minecraft:gold_block', '64x minecraft:gold_block', '64x gtceu:silver_block', '64x gtceu:silver_block', '64x minecraft:diamond_block', '64x minecraft:diamond_block', '64x gtceu:platinum_block', '16x gtceu:ruthenium_block')
+        .itemOutputs('32x minecraft:paper', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_breath', '64x armorplus:ender_dragon_scale', '64x armorplus:ender_dragon_scale', '64x armorplus:ender_dragon_scale', '64x minecraft:gold_block', '64x minecraft:gold_block', '64x minecraft:gold_block', '64x gtceu:silver_block', '64x gtceu:silver_block', '64x minecraft:diamond_block', '64x minecraft:diamond_block', '64x gtceu:platinum_block', '16x gtceu:ruthenium_block')
         .duration(1500)
         .EUt(31250)
         //TODO DRAGON SCALES DRAGON HEART
