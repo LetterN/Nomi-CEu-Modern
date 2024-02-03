@@ -3,6 +3,7 @@
 	#Ticks
 	base_time = 240
 	#FE per Tick
+	#Better use value multiple of 8
 	base_power = 100
 	#Generally used for server optimization. Processors will skip defined amount of ticks then and do nothing.
 	#This won't affect recipe production performance
@@ -18,6 +19,13 @@
 	processor_power = [20, 20, 0, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
 	#Time for processor to proceed recipe: rock_crusher, decay_hastener, irradiator, nuclear_furnace, extractor, electrolyzer, pressurizer, alloy_smelter, melter, analyzer, ingot_former, pump, fuel_reprocessor, leacher, crystallizer, assembler, steam_turbine, supercooler, centrifuge, chemical_reactor, fluid_infuser, isotope_separator, fluid_enricher, gas_scrubber, manufactory
 	processor_time = [200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200]
+	#GT EU Amperage
+	gteu_amperage = 2
+	#GT EU direct support enabled?
+	#0 - disabled, 1 - enabled EU and FE, 2 - EU only
+	gteu_support = 1
+	#Enable explosion on wrong GE EU amperage
+	gteu_explode = false
 
 #Settings for ore generation
 [ores]
@@ -102,10 +110,10 @@
 
 #Settings for Fusion Reactor
 [fusion_reactor]
-	#Explosion size if reactor overheats. 4 - TNT size. Set to 0 to disable explosion.
+	#Min reactor size.
 	#Range: 1 ~ 24
 	min_size = 1
-	#Explosion size if reactor overheats. 4 - TNT size. Set to 0 to disable explosion.
+	#Max reactor size.
 	#Range: 3 ~ 48
 	max_size = 32
 	#Explosion size if reactor overheats. 4 - TNT size. Set to 0 to disable explosion.
@@ -123,10 +131,10 @@
 
 #Settings for Fission Reactor
 [fission_reactor]
-	#Explosion size if reactor overheats. 4 - TNT size. Set to 0 to disable explosion.
+	#Reactor min size.
 	#Range: 3 ~ 24
 	min_size = 3
-	#Explosion size if reactor overheats. 4 - TNT size. Set to 0 to disable explosion.
+	#Reactor max size.
 	#Range: 5 ~ 24
 	max_size = 24
 	#Explosion size if reactor overheats. 4 - TNT size. Set to 0 to disable explosion.
@@ -147,6 +155,9 @@
 	#Each attachment of moderator to fuel cell will increase fuel heat generation by given percent value.
 	#Range: 0.0 ~ 1000.0
 	moderator_heat_multiplier = 33.34
+	#Rate at which steam recipes produced.
+	#Range: 0.01 ~ 1000000.0
+	boiling_mult = 5.0
 
 #Settings for Radiation
 [radiation]
@@ -254,7 +265,7 @@
 	register_ingot = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
 	#Enable plate registration: tough_alloy, steel, ferroboron, cobalt, aluminum, graphite, manganese, sic_sic_cmc, netherite, lithium, platinum, thermoconducting, thorium, hard_carbon, tin, palladium, copper, beryllium, zirconium, zinc, extreme, electrum, magnesium, lithium_manganese_dioxide, lead, bronze, iron, silver, hsla_steel, uranium, boron
 	register_plate = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
-	#Enable dust registration: barium, germanium, tungsten, zircaloy, yttrium, thermoconducting, thorium, zirconium_molybdenum, palladium, sulfur, fluorite, lapis, silicon_carbide, zinc, carbon_manganese, molybdenum, purpur, borax, magnesium, bronze, manganese_dioxide, silver, boron_nitride, gadolinium, tough_alloy, steel, ferroboron, cobalt, strontium_90, potassium_hydroxide, alugentum, aluminum, manganese, sic_sic_cmc, protactinium_233, gold, europium_155, hard_carbon, end_stone, niobium, yellowcake, copper, iodine, zirconium, electrum, caesium_137, strontium, rhodochrosite, lead, boron_arsenide, neodymium, lead_platinum, crystal_binder, charcoal, hafnium, sodium_hydroxide, manganese_oxide, samarium, erbium, radium, graphite, netherite, lithium, platinum, carobbiite, tin, beryllium, ruthenium_106, extreme, shibuichi, obsidian, polonium, arsenic, energetic_blend, sodium, tin_silver, pyrolitic_carbon, potassium_fluoride, coal, uranium, emerald, c_mn_blend, potassium, tbp, ytterbium, titanium, dimensional_blend, thallium, enderium, sodium_fluoride, irradiated_borax, terbium, calcium_sulfate, chromium, promethium_147, calcium, potassium_iodide, villiaumite, osmium, lithium_manganese_dioxide, quartz, diamond, iron, hsla_steel, boron, bismuth
+	#Enable dust registration: barium, germanium, tungsten, zircaloy, yttrium, thermoconducting, thorium, zirconium_molybdenum, palladium, sulfur, fluorite, lapis, silicon_carbide, zinc, carbon_manganese, molybdenum, purpur, borax, magnesium, bronze, manganese_dioxide, silver, boron_nitride, gadolinium, tough_alloy, steel, ferroboron, cobalt, strontium_90, potassium_hydroxide, alugentum, aluminum, manganese, sic_sic_cmc, protactinium_233, gold, europium_155, hard_carbon, end_stone, niobium, yellowcake, copper, iodine, zirconium, electrum, caesium_137, strontium, rhodochrosite, lead, boron_arsenide, neodymium, lead_platinum, crystal_binder, charcoal, hafnium, sodium_hydroxide, manganese_oxide, samarium, erbium, radium, bscco, graphite, netherite, lithium, platinum, carobbiite, tin, beryllium, ruthenium_106, extreme, shibuichi, obsidian, polonium, arsenic, energetic_blend, sodium, tin_silver, pyrolitic_carbon, potassium_fluoride, coal, uranium, emerald, c_mn_blend, potassium, tbp, ytterbium, titanium, dimensional_blend, thallium, enderium, sodium_fluoride, irradiated_borax, terbium, calcium_sulfate, chromium, promethium_147, calcium, potassium_iodide, villiaumite, osmium, lithium_manganese_dioxide, quartz, diamond, iron, hsla_steel, boron, bismuth
 	register_dust = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
 	#Enable nuggets registration: steel, electrum, magnesium, cobalt, aluminum, lead, bronze, lithium, platinum, thorium, tin, beryllium, silver, uranium, zirconium, zinc, boron
 	register_nugget = [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]
@@ -289,4 +300,36 @@
 	wasteland = true
 	#Dimension ID for Wasteland
 	wastelandID = -4848
+
+#Settings for Turbine
+[turbine]
+	#Multiblock min size.
+	#Range: 5 ~ 25
+	min_size = 5
+	#Multiblock max size.
+	#Range: 5 ~ 25
+	max_size = 24
+	#Steam flow per blade mB/t
+	#Range: 100 ~ 1000000
+	blade_flow = 2000
+	#Efficiency %: gold, aluminium, copper, magnesium, beryllium, silver
+	efficiency = [104.0, 98.0, 110.0, 86.0, 90.0, 112.0]
+	#You can define blocks by block_name. So copper_turbine_coil will fall back to nuclearcraft:copper_turbine_coil. Or qualify it with namespace like some_mod:some_block.
+	#Or use block tag key. #nuclearcraft:fission_reactor_casing will fall back to blocks with this tag. Do not forget to put #.
+	#if you need AND condition, add comma separated values "block1", "block2" means AND condition
+	#if you need OR condition, use | separator. "block1|block2" means block1 or block2
+	#By default you have rule condition is 'At least 1'. So if you define some block, it will go in the rule as 'at least 1'
+	#Validation options: >2 means at least 2 (use any number)
+	#-2 means between, it is always 2 (opposite sides)
+	#<2 means less than 2 (use any number)
+	#=2 means exact 2 (use any number)
+	#^3 means 3 blocks in the corner (shared vertex or edge). possible values 2 and 3
+	#Default placement rules have all examples
+	placement_explanations = ""
+	gold = ["turbine_beryllium_coil"]
+	aluminium = ["turbine_gold_coil|turbine_magnesium_coil|turbine_beryllium_coil|turbine_gold_coil|turbine_copper_coil"]
+	copper = ["turbine_gold_coil"]
+	magnesium = ["turbine_bearing"]
+	beryllium = ["turbine_magnesium_coil"]
+	silver = ["turbine_magnesium_coil", "turbine_gold_coil"]
 
