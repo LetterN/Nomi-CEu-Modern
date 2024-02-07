@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1706458707212
+  last_edited_time = 1706969013779
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:7df9461a-ef48-4e1a-a445-92eef9746d50-1706458692500] = [groups:][instances:]
+  [loading_requirement_container_meta:41c000bd-dfa9-4fcc-b37b-1b1aa585404a-1706969002511] = [groups:][instances:]
 }
 
 menu_background {
@@ -30,7 +30,7 @@ scroll_list_customization {
 }
 
 element {
-  source = [source:local]resources/minecraft/textures/gui/title/top.png
+  source = [source:local]/config/fancymenu/assets/top.png
   element_type = image
   instance_identifier = b357ae31-83a6-4e9e-88c6-dadcdbf78e151703872261817
   appearance_delay = no_delay
@@ -57,16 +57,16 @@ vanilla_button {
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   element_type = vanilla_button
-  instance_identifier = vanillabtn:mojang_logo
+  instance_identifier = mojang_logo
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
   fade_in = false
   fade_in_speed = 1.0
   anchor_point = vanilla
-  x = 0
-  y = 0
-  width = 0
-  height = 0
+  x = 140
+  y = 135
+  width = 360
+  height = 90
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -82,16 +82,16 @@ vanilla_button {
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   element_type = vanilla_button
-  instance_identifier = vanillabtn:progress_bar
+  instance_identifier = progress_bar
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
   fade_in = false
   fade_in_speed = 1.0
   anchor_point = vanilla
-  x = 0
-  y = 0
-  width = 0
-  height = 0
+  x = 140
+  y = 294
+  width = 360
+  height = 10
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
