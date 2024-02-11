@@ -16,28 +16,28 @@ ServerEvents.recipes(event => {
     event.recipes.extendedcrafting.combination(
         "gtceu:emeradic_empowered_block",
         "gtceu:emeradic_block",
-        ["kubejs:stabilized_uranium", "gtceu:vibrant_alloy_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:argon"}}'), "extendedcrafting:ultimate_component"],
+        ["kubejs:stabilized_uranium", "gtceu:vibrant_alloy_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:argon"}}').strongNBT(), "extendedcrafting:ultimate_component"],
         4000000, 400000
     )
 
     event.recipes.extendedcrafting.combination(
         "gtceu:enori_empowered_block",
         "gtceu:enori_block",
-        ["gtceu:apatite_gem", "gtceu:end_steel_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:helium"}}'), "extendedcrafting:basic_component"],
+        ["gtceu:apatite_gem", "gtceu:end_steel_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:helium"}}').strongNBT(), "extendedcrafting:basic_component"],
         4000000, 400000
     )
 
     event.recipes.extendedcrafting.combination(
         "gtceu:palis_empowered_block",
         "gtceu:palis_block",
-        ["gtceu:sapphire_gem", "minecraft:bedrock", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}'), "extendedcrafting:elite_component"],
+        ["gtceu:sapphire_gem", "minecraft:bedrock", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').strongNBT(), "extendedcrafting:elite_component"],
         4000000, 400000
     )
 
     event.recipes.extendedcrafting.combination(
         "gtceu:void_empowered_block",
         "gtceu:void_block",
-        ["gtceu:black_quartz_gem", "gtceu:dark_steel_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:oil"}}'), "extendedcrafting:advanced_component"],
+        ["gtceu:black_quartz_gem", "gtceu:dark_steel_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"gtceu:oil"}}').strongNBT(), "extendedcrafting:advanced_component"],
         4000000, 400000
     )
 })
