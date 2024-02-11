@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
             }
         )
 
-        event.replaceInput({ id: "hostilenetworks:living_matter/nether_to_ender" }, 'minecraft:end_stone', 'minecraft:ender_pearl')
+        event.replaceInput({ id: 'hostilenetworks:living_matter/nether_to_ender' }, 'minecraft:end_stone', 'minecraft:ender_pearl')
 
 
         //PPC
@@ -148,4 +148,36 @@ ItemEvents.rightClicked(event => {
         event.player.xp += 25
         event.item.count--
     }
+})
+
+// Crafting recipes for the models
+ServerEvents.recipes(event => {
+    var dataModelData = [
+        ['blaze', 'minecraft:blaze_powder', 'nether', true],
+        ['creeper', 'minecraft:gunpowder', 'overworld', true],
+        ['ender_dragon', 'kubejs:dragon_lair_data', 'end', true],
+        ['enderman', 'minecraft:ender_pearl', 'end', true],
+        ['ghast', 'minecraft:ghast_tear', 'nether', true],
+        ['guardian', 'minecraft:prismarine_shard', 'overworld', true],
+        ['shulker', 'minecraft:diamond', 'end', true],
+        ['skeleton', 'minecraft:bone', 'overworld', false],
+        ['slime', 'minecraft:slimeball', 'overworld', false],
+        ['spider', 'minecraft:spider_eye', 'overworld', true],
+        ['witch', 'minecraft:glass_bottle', 'overworld', true],
+        ['wither', 'minecraft:nether_star', 'nether', false],
+        ['wither_skeleton', 'minecraft:wither_skeleton_skull', 'nether', true],
+        ['zombie', 'minecraft:rotten_flesh', 'overworld', false],
+        ['thermal/thermal_elemental', ['kubejs:aerotheum_dust', 'kubejs:cryotheum_dust', 'kubejs:petrotheum_dust', 'kubejs:pyrotheum_dust'], 'overworld', true]
+    ]
+
+    dataModelData.forEach(modeldata => {
+        event.shapeless(
+            Item.of('hostilenetworks:data_model', '{data_model:{data:6,id:\"hostilenetworks:' + modeldata[0] + '\"}}'),
+            [
+                'hostilenetworks:blank_data_model',
+                modeldata[1],
+                modeldata[3] ? '7x hostilenetworks:' + modeldata[2] + '_prediction' : 'minecraft:air'
+            ]
+        )
+    })
 })
