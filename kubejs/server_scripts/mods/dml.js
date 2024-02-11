@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
             ], {
                 A: 'gtceu:gold_fine_wire',
                 B: 'gtceu:electrical_steel_plate',
-                C: '#forge:circuits/lv',
+                C: '#gtceu:circuits/lv',
                 D: 'kubejs:pulsating_mesh'
             }
         )
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
                 'ABA'
             ], {
                 A: 'kubejs:pulsating_mesh',
-                B: '#forge:circuits/lv',
+                B: '#gtceu:circuits/lv',
                 C: 'minecraft:glass_pane',
                 D: 'kubejs:dark_steel_machine_hull'
             }
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
                 'AHA'
             ], {
                 A: 'gtceu:energetic_alloy_plate',
-                B: '#forge:circuits/mv',
+                B: '#gtceu:circuits/mv',
                 C: 'minecraft:glass_pane',
                 D: 'kubejs:dark_steel_machine_hull',
                 H: 'minecraft:hopper'

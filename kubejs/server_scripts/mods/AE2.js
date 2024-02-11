@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'gtceu:aluminium_plate',
             B: 'gtceu:mv_emitter',
-            C: '#forge:circuits/lv',
+            C: '#gtceu:circuits/lv',
             D: 'ae2:chest',
             E: 'gtceu:mv_sensor'
         }
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'gtceu:silver_fine_wire',
             B: 'gtceu:polyethylene_plate',
-            C: '#forge:circuits/hv'
+            C: '#gtceu:circuits/hv'
         }
     )
 
@@ -264,7 +264,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'minecraft:glass',
             B: 'gtceu:red_alloy_plate',
-            C: '#forge:circuits/lv'
+            C: '#gtceu:circuits/lv'
         }
     )
 
@@ -278,7 +278,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'minecraft:glass',
             B: 'ae2:cell_component_1k',
-            C: '#forge:circuits/mv',
+            C: '#gtceu:circuits/mv',
             D: 'ae2:calculation_processor'
         }
     )
@@ -293,7 +293,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'minecraft:glass',
             B: 'ae2:cell_component_4k',
-            C: '#forge:circuits/hv',
+            C: '#gtceu:circuits/hv',
             D: 'ae2:engineering_processor'
         }
     )
@@ -308,7 +308,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'ae2:logic_processor',
             B: 'ae2:cell_component_16k',
-            C: '#forge:circuits/ev',
+            C: '#gtceu:circuits/ev',
             D: 'ae2:engineering_processor'
         }
     )
@@ -323,7 +323,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'ae2:logic_processor',
             B: 'ae2:cell_component_64k',
-            C: '#forge:circuits/iv',
+            C: '#gtceu:circuits/iv',
             D: 'ae2:engineering_processor'
         }
     )
@@ -367,7 +367,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.shapeless('ae2:memory_card', ['#forge:circuits/hv', 'ae2:basic_card'])
+    event.shapeless('ae2:memory_card', ['#gtceu:circuits/hv', 'ae2:basic_card'])
 
 
 
@@ -394,7 +394,7 @@ ServerEvents.recipes(event => {
             '   '
         ], {
             A: 'enderio:yeta_wrench',
-            B: '#forge:circuits/ev',
+            B: '#gtceu:circuits/ev',
             C: 'ae2:calculation_processor',
             D: 'ae2:terminal'
         })
@@ -453,7 +453,7 @@ ServerEvents.recipes(event => {
                 "item": "ae2:printed_silicon"
             },
             "middle": {
-                "tag": "forge:circuits/lv"
+                "tag": "gtceu:circuits/lv"
             },
             "top": {
                 "item": "ae2:printed_logic_processor"
@@ -471,7 +471,7 @@ ServerEvents.recipes(event => {
                 "item": "ae2:printed_silicon"
             },
             "middle": {
-                "tag": "forge:circuits/lv"
+                "tag": "gtceu:circuits/lv"
             },
             "top": {
                 "item": "ae2:printed_calculation_processor"
@@ -490,7 +490,7 @@ ServerEvents.recipes(event => {
                 "item": "ae2:printed_silicon"
             },
             "middle": {
-                "tag": "forge:circuits/lv"
+                "tag": "gtceu:circuits/lv"
             },
             "top": {
                 "item": "ae2:printed_engineering_processor"

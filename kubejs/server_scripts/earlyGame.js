@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
                 'IEI'
             ], {
                 I: "gtceu:iron_plate",
-                C: "#forge:circuits/lv",
+                C: "#gtceu:circuits/lv",
                 D: "#storagedrawers:drawers",
                 E: coreBlock
             }
