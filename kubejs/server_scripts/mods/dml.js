@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
                 'DCA',
                 'BBA'
             ], {
-                A: 'gtceu:gold_fine_wire',
+                A: 'gtceu:fine_gold_wire',
                 B: 'gtceu:electrical_steel_plate',
                 C: '#gtceu:circuits/lv',
                 D: 'kubejs:pulsating_mesh'

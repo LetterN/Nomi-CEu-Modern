@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
             'SCS'
         ], {
             M: 'solarflux:mirror',
-            W: 'gtceu:copper_fine_wire',
+            W: 'gtceu:fine_copper_wire',
             S: 'minecraft:stone_slab',
             C: 'enderio:conductive_conduit'
         }
