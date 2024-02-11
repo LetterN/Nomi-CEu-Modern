@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'gtceu:green_sapphire_plate',
             B: 'ironfurnaces:obsidian_furnace',
-            C: '#forge:circuits/lv',
+            C: '#gtceu:circuits/lv',
             D: 'gtceu:steel_gear'
         }
     )

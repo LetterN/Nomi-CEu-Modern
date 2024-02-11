@@ -156,7 +156,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'enderio:basic_capacitor' })
 
     var capacitorCores = [
-        ['#forge:circuits/ulv', 1],
+        ['#gtceu:circuits/ulv', 1],
         ['gtceu:capacitor', 2],
         ['gtceu:smd_capacitor', 3],
         ['gtceu:advanced_smd_capacitor', 12]

@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
             B: "gtceu:wrought_iron_buzz_saw_blade",
             W: "gtceu:tin_single_cable",
             H: "gtceu:lv_machine_hull",
-            C: "#forge:circuits/lv"
+            C: "#gtceu:circuits/lv"
         }
     )
 
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
             B: "gtceu:steel_buzz_saw_blade",
             W: "gtceu:copper_single_cable",
             H: "gtceu:mv_machine_hull",
-            C: "#forge:circuits/mv"
+            C: "#gtceu:circuits/mv"
         }
     )
 
@@ -373,7 +373,7 @@ ServerEvents.recipes(event => {
         ], {
             L: "gtceu:stainless_steel_large_fluid_pipe",
             P: "gtceu:hv_electric_pump",
-            C: "#forge:circuits/hv",
+            C: "#gtceu:circuits/hv",
             H: "gtceu:hv_machine_hull"
         }
     )
@@ -420,7 +420,7 @@ ServerEvents.recipes(event => {
             'CGM'
         ], {
             W: "gtceu:gold_single_cable",
-            C: "#forge:circuits/hv",
+            C: "#gtceu:circuits/hv",
             G: "gtceu:tempered_glass",
             D: "gtceu:hv_conveyor_module",
             H: "gtceu:hv_machine_hull",
@@ -440,7 +440,7 @@ ServerEvents.recipes(event => {
             S: "gtceu:tungsten_carbide_screw",
             P: "gtceu:tungsten_carbide_plate",
             H: "gtceu:hssg_spring",
-            C: "#forge:circuits/iv",
+            C: "#gtceu:circuits/iv",
             W: "gtceu:platinum_single_cable"
         }
     )
@@ -494,7 +494,7 @@ ServerEvents.recipes(event => {
             'SFE',
             'CMC'
         ], {
-            C: "#forge:circuits/luv",
+            C: "#gtceu:circuits/luv",
             H: "gtceu:hpic_chip",
             S: "gtceu:iv_sensor",
             F: "gtceu:tungsten_steel_frame",
