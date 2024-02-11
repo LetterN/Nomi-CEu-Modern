@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
         ['guardian', 'minecraft:prismarine_shard', 'overworld', true],
         ['shulker', 'minecraft:diamond', 'end', true],
         ['skeleton', 'minecraft:bone', 'overworld', false],
-        ['slime', 'minecraft:slimeball', 'overworld', false],
+        ['slime', 'minecraft:slime_ball', 'overworld', false],
         ['spider', 'minecraft:spider_eye', 'overworld', true],
         ['witch', 'minecraft:glass_bottle', 'overworld', true],
         ['wither', 'minecraft:nether_star', 'nether', false],
@@ -171,13 +171,19 @@ ServerEvents.recipes(event => {
     ]
 
     dataModelData.forEach(modeldata => {
+        // Is this hacky? Yes. Do i care? No.
+        var recipeIngredients = [
+            'hostilenetworks:blank_data_model',
+            modeldata[1]
+        ]
+
+        if(modeldata[3]) {
+            recipeIngredients.push('7x hostilenetworks:' + modeldata[2] + '_prediction')
+        }
+
         event.shapeless(
             Item.of('hostilenetworks:data_model', '{data_model:{data:6,id:\"hostilenetworks:' + modeldata[0] + '\"}}'),
-            [
-                'hostilenetworks:blank_data_model',
-                modeldata[1],
-                modeldata[3] ? '7x hostilenetworks:' + modeldata[2] + '_prediction' : 'minecraft:air'
-            ]
+            recipeIngredients
         )
     })
 })
