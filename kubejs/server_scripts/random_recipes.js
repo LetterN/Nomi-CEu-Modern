@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
     )
 
     event.replaceInput({ id: "hangglider:glider_framework" }, 'minecraft:iron_ingot', 'gtceu:iron_rod')
-    event.replaceInput({ id: "gtceu:shaped/basic_circuit_board" }, 'gtceu:copper_single_wire', 'gtceu:copper_fine_wire')
+    event.replaceInput({ id: "gtceu:shaped/basic_circuit_board" }, 'gtceu:copper_single_wire', 'gtceu:fine_copper_wire')
     event.shapeless('16x gtceu:fireclay_dust', ['gtceu:clay_dust', 'gtceu:brick_dust'])
     event.remove({ id: "gtceu:shapeless/credit_platinum" })
     event.remove({ id: "gtceu:shapeless/credit_platinum_alt" })

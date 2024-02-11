@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
             'BCB',
             'BBB'
         ], {
-            A: 'gtceu:silver_fine_wire',
+            A: 'gtceu:fine_silver_wire',
             B: 'gtceu:polyethylene_plate',
             C: '#gtceu:circuits/hv'
         }
@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
             'B B',
             'ABA'
         ], {
-            A: 'gtceu:red_alloy_fine_wire',
+            A: 'gtceu:fine_red_alloy_wire',
             B: 'gtceu:electrical_steel_plate'
         }
     )
@@ -208,7 +208,7 @@ ServerEvents.recipes(event => {
             'B B',
             'ABA'
         ], {
-            A: 'gtceu:red_alloy_fine_wire',
+            A: 'gtceu:fine_red_alloy_wire',
             B: 'gtceu:energetic_alloy_plate'
         }
     )
@@ -350,7 +350,7 @@ ServerEvents.recipes(event => {
             'ACB',
             'AB '
         ], {
-            A: 'gtceu:copper_fine_wire',
+            A: 'gtceu:fine_copper_wire',
             B: 'gtceu:iron_plate',
             C: 'ae2:calculation_processor'
         }
@@ -361,7 +361,7 @@ ServerEvents.recipes(event => {
             'ACB',
             'AB '
         ], {
-            A: 'gtceu:aluminium_fine_wire',
+            A: 'gtceu:fine_aluminium_wire',
             B: 'gtceu:electrical_steel_plate',
             C: 'ae2:calculation_processor'
         }

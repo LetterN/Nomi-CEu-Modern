@@ -253,14 +253,14 @@ ServerEvents.recipes(event => {
             'RWC'
         ], {
             C: "gtceu:tin_single_cable",
-            W: "gtceu:copper_fine_wire",
+            W: "gtceu:fine_copper_wire",
             R: "gtceu:iron_rod",
             M: "gtceu:magnetic_iron_rod"
         }
     )
 
     event.recipes.gtceu.assembler("lv_motor")
-        .itemInputs("2x gtceu:tin_single_cable", "2x gtceu:iron_rod", "gtceu:magnetic_iron_rod", "4x gtceu:copper_fine_wire")
+        .itemInputs("2x gtceu:tin_single_cable", "2x gtceu:iron_rod", "gtceu:magnetic_iron_rod", "4x gtceu:fine_copper_wire")
         .itemOutputs("gtceu:lv_electric_motor")
         .duration(100)
         .EUt(30)
