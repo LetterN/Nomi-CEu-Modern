@@ -33,3 +33,4 @@ config/chiselsandbits-client.toml
 config/chiselsandbits-common.toml
 config/defaultworldtype/world-presets.txt
 config/ae2/client.json
+config/jecalculation/record.json
