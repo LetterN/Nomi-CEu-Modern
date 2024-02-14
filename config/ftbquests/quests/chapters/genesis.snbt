@@ -33,6 +33,9 @@
 						id: "gtceu:diamond_mining_hammer"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					type: "item"
@@ -59,6 +62,7 @@
 					type: "item"
 				}
 			]
+			shape: "hexagon"
 			size: 2.0d
 			subtitle: "Welcome to Nomifactory: Modern Edition"
 			tasks: [{
@@ -152,6 +156,7 @@
 			]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "2E8BFA2E719B1C47"
+			shape: "hexagon"
 			tasks: [
 				{
 					count: 12L
@@ -202,6 +207,9 @@
 						id: "gtceu:wrought_iron_wrench"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					type: "item"
@@ -306,6 +314,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
@@ -315,6 +324,9 @@
 						id: "gtceu:wrought_iron_hammer"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					type: "item"
@@ -326,6 +338,9 @@
 						id: "gtceu:wrought_iron_file"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					type: "item"
@@ -337,6 +352,9 @@
 						id: "gtceu:wrought_iron_saw"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					type: "item"
@@ -348,6 +366,9 @@
 						id: "gtceu:wrought_iron_wrench"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					type: "item"
@@ -359,6 +380,9 @@
 						id: "gtceu:wrought_iron_screwdriver"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					type: "item"
@@ -370,6 +394,9 @@
 						id: "gtceu:wrought_iron_wire_cutter"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					type: "item"
@@ -381,6 +408,9 @@
 						id: "gtceu:wrought_iron_mortar"
 						tag: {
 							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
 						}
 					}
 					type: "item"
@@ -404,6 +434,9 @@
 				id: "gtceu:iron_mining_hammer"
 				tag: {
 					Damage: 0
+					GT.Tool: {
+						Damage: 0
+					}
 				}
 			}
 			id: "07D45A3F8A74A61C"
@@ -425,6 +458,7 @@
 				"Rubber can be hammered into sheets just like metals can be turned to plates. It's quite inefficient to do it this way, but such is the life of early game &bGregTech&f. At least rubber isn't particularly hard to come by."
 			]
 			id: "6FB3E3D9CA0F4B30"
+			shape: "hexagon"
 			tasks: [{
 				count: 3L
 				id: "7BA753DF38DEC329"
@@ -452,6 +486,9 @@
 					id: "gtceu:rubber_mallet"
 					tag: {
 						Damage: 0
+						GT.Tool: {
+							Damage: 0
+						}
 					}
 				}
 				type: "item"
@@ -464,6 +501,7 @@
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: ["&3Iron Furnaces&f can smelt an item in &a150 ticks&f, which is somewhat faster than a vanilla &6Furnace&f, which takes &a200 ticks&f. The fuel efficiency remains the same for all furnaces."]
 			id: "7865CDE5CFE005DC"
+			shape: "hexagon"
 			tasks: [{
 				id: "6A2879717EF57D8A"
 				item: "ironfurnaces:iron_furnace"
@@ -812,6 +850,7 @@
 			]
 			icon: "minecraft:redstone"
 			id: "1229234A71CE0A99"
+			shape: "hexagon"
 			subtitle: "Before you continue, you'll need access to some more materials."
 			tasks: [
 				{
@@ -914,6 +953,7 @@
 			]
 			icon: "gtceu:red_alloy_dust"
 			id: "7FA0E6F3B466576C"
+			shape: "hexagon"
 			tasks: [
 				{
 					count: 16L
@@ -972,6 +1012,7 @@
 			dependencies: ["7FA0E6F3B466576C"]
 			description: ["These can be used to transport energy from your &3Steam Dynamos&r to various destinations."]
 			id: "08948A23B3A17923"
+			shape: "hexagon"
 			subtitle: "The most basic tier of &aRF&r energy conduits from &bEnderIO&r."
 			tasks: [{
 				id: "7D0E23630A562F6A"
@@ -998,6 +1039,7 @@
 				"&2GT cables now support RF conversion natively! &rYou can plug an &dRF&r machine into an &dEU&r cable directly and it will convert the energy. You cannot, however, plug an &dRF&r power souce directly into an &dEU&r cable."
 			]
 			id: "12B95158E4C792DB"
+			shape: "hexagon"
 			tasks: [{
 				count: 12L
 				id: "24A84AB536BB27B0"
@@ -1018,6 +1060,7 @@
 				"Keep in mind that &eDynamos only output power when burning through fuel, and only the block attached directly to the coil will get provided with power&f."
 			]
 			id: "39D4174834F3879D"
+			shape: "hexagon"
 			subtitle: "Your first major crafting project!"
 			tasks: [{
 				id: "78D31068BB10B20B"
@@ -1057,6 +1100,7 @@
 			]
 			icon: "gtceu:resistor"
 			id: "58F9A5310D43A2B0"
+			shape: "hexagon"
 			tasks: [
 				{
 					count: 2L
@@ -1146,6 +1190,7 @@
 				"&aRF&r converts into &aEU&r at a &e4 to 1 ratio&r. &a100 RF&r becomes &a25 EU&r, and vice-versa. &2Use a Soft Hammer to change the conversion direction."
 			]
 			id: "297B523B6C503957"
+			shape: "hexagon"
 			tasks: [{
 				id: "3217FC6AD2AFA67A"
 				item: "gtceu:lv_4a_energy_converter"
@@ -1170,6 +1215,7 @@
 			]
 			icon: "gtceu:hpic_wafer"
 			id: "5A94534682807314"
+			shape: "hexagon"
 			tasks: [{
 				id: "60242EACEEB6B6C8"
 				type: "checkmark"
@@ -1197,6 +1243,7 @@
 			]
 			icon: "gtceu:uhpic_wafer"
 			id: "2D31856F6EF1ED69"
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "44E7A2BF6528EC4E"
