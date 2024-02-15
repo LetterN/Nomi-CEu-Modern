@@ -7,21 +7,7 @@
 
 ServerEvents.recipes(event => {
 
-    // Nether cake
-    event.remove({ output: "telepastries:nether_cake" })
-    event.shaped(
-            "telepastries:nether_cake", [
-                'NNN',
-                'OBO',
-                'SSS'
-            ], {
-                N: "gtceu:netherrack_dust",
-                O: "minecraft:obsidian",
-                B: "enderio:cake_base",
-                S: "minecraft:soul_sand"
-            }
-        )
-        // Nomi Steel
+    // Nomi Steel
     event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot" })
 
     var carbonSources = ["gtceu:coal_dust", "gtceu:charcoal_dust", "gtceu:carbon_dust"]
