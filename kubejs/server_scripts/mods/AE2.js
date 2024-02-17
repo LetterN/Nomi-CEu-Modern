@@ -562,44 +562,10 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(16)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // Fix Certus
+    event.replaceInput(
+        { type: 'ae2:item_tranformation' },
+        'gtceu:certus_quartz_gem',
+        'gtceu:charged_certus_quartz_gem'
+    )
 })

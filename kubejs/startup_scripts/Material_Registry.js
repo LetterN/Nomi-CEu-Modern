@@ -360,6 +360,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x7f5bb3)
         .iconSet(GTMaterialIconSet.CERTUS)
         .flags(GTMaterialFlags.GENERATE_PLATE)
+    
+    event.create('charged_certus_quartz')
+        .gem()
+        .dust()
+        .color(0x9fd5e8)
+        .iconSet(GTMaterialIconSet.QUARTZ)
 })
 
 //Space Materials

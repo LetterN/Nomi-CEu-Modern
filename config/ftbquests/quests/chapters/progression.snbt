@@ -422,16 +422,6 @@
 			y: 6.5d
 		}
 		{
-			id: "299B7320A480828E"
-			tasks: [{
-				id: "56F06A9ED4CB8039"
-				item: "gtceu:micro_processor"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -4.0d
-		}
-		{
 			id: "3D3626ED09BB2D3B"
 			tasks: [{
 				id: "226816F73F09F2F1"
@@ -440,26 +430,6 @@
 			}]
 			x: -2.0d
 			y: -2.5d
-		}
-		{
-			id: "5B6B66F9B24032F7"
-			tasks: [{
-				id: "20C288764D6674E6"
-				item: "gtceu:micro_processor"
-				type: "item"
-			}]
-			x: -2.5d
-			y: -4.0d
-		}
-		{
-			id: "359E58B118E02BB4"
-			tasks: [{
-				id: "17E770B7A9789AB2"
-				item: "gtceu:micro_processor"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -4.0d
 		}
 		{
 			id: "382F812C958CA791"
@@ -1169,7 +1139,7 @@
 			tasks: [{
 				count: 16L
 				id: "0542F14927307DDF"
-				item: { Count: 16b, id: "gtceu:tungstensteel_coil_block" }
+				item: { Count: 16b, id: "gtceu:rtm_alloy_coil_block" }
 				type: "item"
 			}]
 			x: 13.5d
