@@ -15,6 +15,20 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //End Cake
+
+    event.shaped(
+        'telepastries:end_cake', [
+            'NNN',
+            'OBO',
+            'SSS'
+        ], {
+            N: 'gtceu:endstone_dust',
+            O: 'minecraft:ender_eye',
+            B: "enderio:cake_base",
+            S: 'gtceu:black_steel_plate'
+        }
+    )
 
 
 
