@@ -1,7 +1,7 @@
 //alloys go brrr - ima go insane :)
 
 ServerEvents.recipes(event => {
-    
+
     function getModName(str) {
         let a = str.split(":")[0];
         a = a.split(" ");
@@ -14,14 +14,14 @@ ServerEvents.recipes(event => {
     }
 
     /**
-    * @param {string} name name: The generated name will be {name}_{i}, where i is the iteration number (max 3)
-    * @param {int} voltage 
-    * @param {float} duration Duration: Input the seconds for the recipe
-    * @param {string} ing1 ing1: First recipe Ingredient
-    * @param {string} ing2 ing2: Second recipe Ingredient
-    * @param {string} out out: The recipe output will remain constant
-    */
-   
+     * @param {string} name name: The generated name will be {name}_{i}, where i is the iteration number (max 3)
+     * @param {int} voltage 
+     * @param {float} duration Duration: Input the seconds for the recipe
+     * @param {string} ing1 ing1: First recipe Ingredient
+     * @param {string} ing2 ing2: Second recipe Ingredient
+     * @param {string} out out: The recipe output will remain constant
+     */
+
     function alloy_smelter(name, voltage, duration, ing1, ing2, out) {
         let i = 0;
         let ing_list = [];
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
             b[b.length - 1] = "dust";
             b = b.join("_");
             ing_list.push((a + ":" + b));
-        } else {ing_list = [ing1]}
+        } else { ing_list = [ing1] }
 
         if ((getModName(ing2) == "gtceu") && (ing2.split(":")[1].split("_")[ing2.split(":")[1].split("_").length - 1] == "ingot")) {
             ing_list2 = [ing2];
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
             b[b.length - 1] = "dust";
             b = b.join("_");
             ing_list2.push((a + ":" + b));
-        } else {ing_list2 = [ing2]}
+        } else { ing_list2 = [ing2] }
 
         ing_list.forEach(ing1 => {
             ing_list2.forEach(ing2 => {
@@ -79,4 +79,16 @@ ServerEvents.recipes(event => {
     alloy_smelter("endsteel", 120, 15, "gtceu:dark_steel_ingot", "minecraft:end_stone", "gtceu:end_steel_ingot");
     alloy_smelter("endsteel_endstone_dust", 120, 15, "gtceu:dark_steel_ingot", "gtceu:endstone_dust", "gtceu:end_steel_ingot");
     //alloy_smelter("stellar_alloy", 2000, 10, "gtceu:end_steel_ingot", "8x enderio:infinity_dust", "enderio:stellar_alloy_ingot");
+})
+
+
+ServerEvents.recipes(event => {
+    //Different Steel Recipe
+    event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__black_steel" })
+    event.recipes.gtceu.mixer("mixer_black_steel")
+        .itemInputs('3x gtceu:steel_dust', '2x gtceu:black_bronze_dust', '2x gtceu:void_gem', '2x gtceu:coal_perfect')
+        .itemOutputs('9x gtceu:black_steel_dust')
+        .duration(200)
+        .EUt(15)
+
 })
