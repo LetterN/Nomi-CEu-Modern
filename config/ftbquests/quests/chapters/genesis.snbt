@@ -890,29 +890,24 @@
 		}
 		{
 			description: [
-				"&bJEI&r stands for &bJust Enough Items&r. It's the list of all items that you see every time you open your inventory. It's the better(tm) recipe book that shows you all available items and recipes in the modpack."
+				"&bJEI&r stands for &bRoughly Enough Items&r. It's the list of all items that you see every time you open your inventory. It's the better(tm) recipe book that shows you all available items and recipes in the modpack."
 				""
 				"To see it in action, pull up a quest that requires an item of some sort and just click the item!"
 				""
-				"If you want to know how to craft an item, just hover your mouse over it and press &6R&r. JEI will list all available recipes."
+				"If you want to know how to craft an item, just hover your mouse over it and press &6R&r. REI will list all available recipes."
 				""
 				"If you instead want to know what recipes use an item, hover over it and press &6U&r."
 				""
-				"Hover over an item and press &6A&r to bookmark it. To remove a bookmarked item from the list, press A on the bookmark."
-				""
-				"One of the remarkable features of JEI is that it's also capable of helping you with recipes. Right-click a crafting table, look up the recipe you need and press the &a[+]&r button: if you have all required items for the recipe, this will put them all into the crafting table for you."
-				""
-				"&2A new mod has been added: JEI Utilities.&r"
-				"This mod stores your 20 most recently seen recipes, and you can use the middle mouse button to move bookmarks around. There are some other features, but these features are probably the most notable and useful."
+				"One of the remarkable features of REI is that it's also capable of helping you with recipes. Right-click a crafting table, look up the recipe you need and press the &a[+]&r button: if you have all required items for the recipe, this will put them all into the crafting table for you."
 			]
 			icon: "minecraft:book"
 			id: "3B200AD6EFF90DFA"
-			subtitle: "&eUSE JEI!!!&r"
+			subtitle: "&eUSE REI!!!&r"
 			tasks: [{
 				id: "7449A54608D60DF8"
 				type: "checkmark"
 			}]
-			title: "Use JEI! Use JEI! USE. JEI."
+			title: "Use REI! Use REI! USE. REI."
 			x: -8.5d
 			y: -0.5d
 		}
