@@ -35,7 +35,7 @@ REIEvents.hide('item', event => {
     })
 
     //TelePastries
-    event.hide(['telepastries:custom_cake2', 'telepastries:custom_cake3', 'telepastries:twilight_cake'])
+    event.hide(['telepastries:lost_city_cake', 'telepastries:custom_cake2', 'telepastries:custom_cake3', 'telepastries:twilight_cake'])
 })
 
 REIEvents.removeCategories(event => {

@@ -67,4 +67,11 @@ ServerEvents.recipes(event => {
             A: 'kubejs:compressed_infinity_dust_block'
         }
     )
+
+    event.recipes.gtceu.atomic_reconstruction('red_coal')
+        .itemInputs('#minecraft:coals')
+        .itemOutputs('gtceu:coal_perfect')
+        .duration(80)
+        .EUt(128)
+
 })
