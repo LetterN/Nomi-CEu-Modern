@@ -62,7 +62,6 @@
 					type: "item"
 				}
 			]
-			shape: "hexagon"
 			size: 2.0d
 			subtitle: "Welcome to Nomifactory: Modern Edition"
 			tasks: [{
@@ -156,7 +155,6 @@
 			]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "2E8BFA2E719B1C47"
-			shape: "hexagon"
 			tasks: [
 				{
 					count: 12L
@@ -314,7 +312,6 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
-			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
@@ -440,6 +437,11 @@
 				}
 			}
 			id: "07D45A3F8A74A61C"
+			rewards: [{
+				id: "0969EFC84AA58A45"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "39656E09593E3D83"
 				type: "checkmark"
@@ -458,7 +460,11 @@
 				"Rubber can be hammered into sheets just like metals can be turned to plates. It's quite inefficient to do it this way, but such is the life of early game &bGregTech&f. At least rubber isn't particularly hard to come by."
 			]
 			id: "6FB3E3D9CA0F4B30"
-			shape: "hexagon"
+			rewards: [{
+				id: "4949E1AF8C656F3D"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				count: 3L
 				id: "7BA753DF38DEC329"
@@ -479,6 +485,11 @@
 				"This quest accepts a &aSoft Mallet&r made from any material."
 			]
 			id: "78B5D55A3560B98E"
+			rewards: [{
+				id: "16EF260235D12825"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "253D34B000F903DD"
 				item: {
@@ -501,7 +512,11 @@
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: ["&3Iron Furnaces&f can smelt an item in &a150 ticks&f, which is somewhat faster than a vanilla &6Furnace&f, which takes &a200 ticks&f. The fuel efficiency remains the same for all furnaces."]
 			id: "7865CDE5CFE005DC"
-			shape: "hexagon"
+			rewards: [{
+				id: "55F7CA98F66953A1"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6A2879717EF57D8A"
 				item: "ironfurnaces:iron_furnace"
@@ -515,6 +530,11 @@
 			dependencies: ["7865CDE5CFE005DC"]
 			description: ["&3Copper Furnaces&f are another step up in speed, taking &a100 ticks&f to smelt an item."]
 			id: "0591171F13A45283"
+			rewards: [{
+				id: "20FC1982A662B6C6"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "14CDC80A449BD388"
 				item: "ironfurnaces:copper_furnace"
@@ -528,6 +548,11 @@
 			dependencies: ["0591171F13A45283"]
 			description: ["&3Silver Furnaces&f are another step up in speed, taking a mere &a60 ticks&f to smelt an item."]
 			id: "3F77EDE69BB649DA"
+			rewards: [{
+				id: "77EC0D08F5C99E37"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "266C775298CDC137"
 				item: "ironfurnaces:silver_furnace"
@@ -541,6 +566,11 @@
 			dependencies: ["6B121BEFD852BC2D"]
 			description: ["&3Diamond Furnaces&f are the fastest available, taking only &a25 ticks&f to smelt an item."]
 			id: "1AE46C1970378083"
+			rewards: [{
+				id: "4F7C761D3657868A"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "67B5E4F996C454C8"
 				item: "ironfurnaces:diamond_furnace"
@@ -554,6 +584,11 @@
 			dependencies: ["3F77EDE69BB649DA"]
 			description: ["&3Gold Furnaces&f are yet another step up in speed, taking only &a40 ticks&f to smelt an item."]
 			id: "6B121BEFD852BC2D"
+			rewards: [{
+				id: "045094D4927E2AB5"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0FD61CD4D237D131"
 				item: "ironfurnaces:gold_furnace"
@@ -567,6 +602,11 @@
 			dependencies: ["1AE46C1970378083"]
 			description: ["While &3Obsidian Furnaces&f are the same speed as &3Diamond Furnaces&f, they have twice the throughput since they can &esmelt two items at once&f."]
 			id: "3969150B59EA38A2"
+			rewards: [{
+				id: "7BADB8C39CADB5FF"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "223332FE4EEB31B0"
 				item: "ironfurnaces:obsidian_furnace"
@@ -580,6 +620,11 @@
 			dependencies: ["3969150B59EA38A2"]
 			id: "69E77BD01CFF65EB"
 			invisible: true
+			rewards: [{
+				id: "2BBD659B19ED9807"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "015B7C7A82AE67C5"
 				item: "ironfurnaces:netherite_furnace"
@@ -598,6 +643,11 @@
 				"Also, you can now repair your free &6Mining Hammers&r with some &6Diamonds&r!"
 			]
 			id: "5430ED88A8D10502"
+			rewards: [{
+				id: "1B638AF68A084203"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			subtitle: "&3Anvils&f can be used to repair almost all &bGregTech tools&f!"
 			tasks: [{
 				id: "38E44244B336F941"
@@ -624,6 +674,11 @@
 				"Restrictive Pipes typically have the lowest Priority for insertion due to their higher Routing Value."
 			]
 			id: "57D1B1D74391A05F"
+			rewards: [{
+				id: "04FB020A78370641"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			subtitle: "&2Item Pipes are back in GTCEu! They will transport items instantly through them."
 			tasks: [{
 				id: "72798E2CFE3F6FB5"
@@ -675,6 +730,11 @@
 				"Now, you can insert and extract from the belt! You can also use the Keybinds `&eCycle Tool Left&r' and `&eCycle Tool Right&r' whilst you are in the GUI."
 			]
 			id: "1B86EF5A24286787"
+			rewards: [{
+				id: "637891A6BC00C62D"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			subtitle: "&2A brand new and highly requested mod to CEu to help you manage your tools!&r"
 			tasks: [{
 				id: "2BFE87C449C8D8F3"
@@ -687,11 +747,7 @@
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
-			description: [
-				"No hoops to jump through here. Smelt &6Wood Logs&f to get &6Charcoal&f. It will serve you well as a fuel source until you locate a vein of &6Coal&f."
-				""
-				"You might want to craft Charcoal into &6Tiny Charcoal&f pieces to save some fuel. One tiny piece is enough to smelt exactly one item. Just put charcoal into the crafting grid to make some!"
-			]
+			description: ["No hoops to jump through here. Smelt &6Wood Logs&f to get &6Charcoal&f. It will serve you well as a fuel source until you locate a vein of &6Coal&f."]
 			id: "5D97206C8135872B"
 			tasks: [{
 				id: "36D486BE19669899"
@@ -740,6 +796,11 @@
 			]
 			icon: "gtceu:aluminium_ingot"
 			id: "53E600ADCC9DD608"
+			rewards: [{
+				id: "69DB53B190754B09"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			subtitle: "&2Check out the new Material Tree tab!&r"
 			tasks: [{
 				id: "5E73C23D1FA65873"
@@ -790,6 +851,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
 				"&1Modern replaces this with a water condenser from the Water Condenser mod, as the NuclearCraft Infinite Water Source is not currently functional.&f"
 				""
@@ -800,6 +862,11 @@
 				"&2GTCEu has a Primitive Water Pump, which can do it faster. However, it requires Treated Wood, which requires Creosote from a Coke Oven."
 			]
 			id: "0FF18D13CD42F48A"
+			rewards: [{
+				id: "5B48A2DC5BF8979D"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2ECEDA36F2ADFDE8"
 				item: "watercondenser:watercondenser"
@@ -820,6 +887,11 @@
 				"If you don't want to go exploring for Cows, just buy a pair of \"&6Spawn Cow&f\" eggs and breed them. Seriously, spend your &dcoins&f!"
 			]
 			id: "7C3B69B3DC09FE96"
+			rewards: [{
+				id: "73A54AAACBD32969"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7B4500A4503F2F6D"
 				item: {
@@ -850,7 +922,12 @@
 			]
 			icon: "minecraft:redstone"
 			id: "1229234A71CE0A99"
-			shape: "hexagon"
+			rewards: [{
+				count: 2
+				id: "79C449A6BEC8941F"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			subtitle: "Before you continue, you'll need access to some more materials."
 			tasks: [
 				{
@@ -890,24 +967,29 @@
 		}
 		{
 			description: [
-				"&bJEI&r stands for &bRoughly Enough Items&r. It's the list of all items that you see every time you open your inventory. It's the better(tm) recipe book that shows you all available items and recipes in the modpack."
+				"&bJEI&r stands for &bJust Enough Items&r. It's the list of all items that you see every time you open your inventory. It's the better(tm) recipe book that shows you all available items and recipes in the modpack."
 				""
 				"To see it in action, pull up a quest that requires an item of some sort and just click the item!"
 				""
-				"If you want to know how to craft an item, just hover your mouse over it and press &6R&r. REI will list all available recipes."
+				"If you want to know how to craft an item, just hover your mouse over it and press &6R&r. JEI will list all available recipes."
 				""
 				"If you instead want to know what recipes use an item, hover over it and press &6U&r."
 				""
-				"One of the remarkable features of REI is that it's also capable of helping you with recipes. Right-click a crafting table, look up the recipe you need and press the &a[+]&r button: if you have all required items for the recipe, this will put them all into the crafting table for you."
+				"Hover over an item and press &6A&r to bookmark it. To remove a bookmarked item from the list, press A on the bookmark."
+				""
+				"One of the remarkable features of JEI is that it's also capable of helping you with recipes. Right-click a crafting table, look up the recipe you need and press the &a[+]&r button: if you have all required items for the recipe, this will put them all into the crafting table for you."
+				""
+				"&2A new mod has been added: JEI Utilities.&r"
+				"This mod stores your 20 most recently seen recipes, and you can use the middle mouse button to move bookmarks around. There are some other features, but these features are probably the most notable and useful."
 			]
 			icon: "minecraft:book"
 			id: "3B200AD6EFF90DFA"
-			subtitle: "&eUSE REI!!!&r"
+			subtitle: "&eUSE JEI!!!&r"
 			tasks: [{
 				id: "7449A54608D60DF8"
 				type: "checkmark"
 			}]
-			title: "Use REI! Use REI! USE. REI."
+			title: "Use JEI! Use JEI! USE. JEI."
 			x: -8.5d
 			y: -0.5d
 		}
@@ -948,7 +1030,11 @@
 			]
 			icon: "gtceu:red_alloy_dust"
 			id: "7FA0E6F3B466576C"
-			shape: "hexagon"
+			rewards: [{
+				id: "20BC4F07424D7664"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 16L
@@ -1007,7 +1093,11 @@
 			dependencies: ["7FA0E6F3B466576C"]
 			description: ["These can be used to transport energy from your &3Steam Dynamos&r to various destinations."]
 			id: "08948A23B3A17923"
-			shape: "hexagon"
+			rewards: [{
+				id: "188CE9F6FC9651C5"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			subtitle: "The most basic tier of &aRF&r energy conduits from &bEnderIO&r."
 			tasks: [{
 				id: "7D0E23630A562F6A"
@@ -1034,7 +1124,11 @@
 				"&2GT cables now support RF conversion natively! &rYou can plug an &dRF&r machine into an &dEU&r cable directly and it will convert the energy. You cannot, however, plug an &dRF&r power souce directly into an &dEU&r cable."
 			]
 			id: "12B95158E4C792DB"
-			shape: "hexagon"
+			rewards: [{
+				id: "720A4DC6D3957258"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				count: 12L
 				id: "24A84AB536BB27B0"
@@ -1055,7 +1149,11 @@
 				"Keep in mind that &eDynamos only output power when burning through fuel, and only the block attached directly to the coil will get provided with power&f."
 			]
 			id: "39D4174834F3879D"
-			shape: "hexagon"
+			rewards: [{
+				id: "565EAB360615C53E"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			subtitle: "Your first major crafting project!"
 			tasks: [{
 				id: "78D31068BB10B20B"
@@ -1068,7 +1166,13 @@
 		}
 		{
 			dependencies: ["39D4174834F3879D"]
+			description: ["Better fuel means you need to use less of it."]
 			id: "098CF1FD284B09E7"
+			rewards: [{
+				id: "5ECF74D124102662"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				count: 2L
 				id: "66B9B329F6ED7939"
@@ -1095,7 +1199,11 @@
 			]
 			icon: "gtceu:resistor"
 			id: "58F9A5310D43A2B0"
-			shape: "hexagon"
+			rewards: [{
+				id: "0532511B1AABBA29"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 2L
@@ -1131,6 +1239,11 @@
 			]
 			icon: "gtceu:basic_electronic_circuit"
 			id: "7358461DB0D9A9AF"
+			rewards: [{
+				id: "13796FC2437C31E2"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			subtitle: "With all of the components made, it's time to craft an &2Electronic Circuit&r."
 			tasks: [
 				{
@@ -1152,6 +1265,12 @@
 			dependencies: ["1FF132DED1748D11"]
 			description: ["A mixture of Clay and Brick produces large quantities of &6Firebricks&r, used in building the &3Primitive Blast Furnace&r. This allows you to make &6Steel&r from &6Wrought Iron&r, which &2forms the basis of LV Machine Hulls&r, and allows you to make &6Belt Pouches&r, for upgrading your &eTool Belt&r."]
 			id: "747434DD99118DA4"
+			rewards: [{
+				count: 3
+				id: "0ECA36DF477F8CDE"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [
 				{
@@ -1185,7 +1304,11 @@
 				"&aRF&r converts into &aEU&r at a &e4 to 1 ratio&r. &a100 RF&r becomes &a25 EU&r, and vice-versa. &2Use a Soft Hammer to change the conversion direction."
 			]
 			id: "297B523B6C503957"
-			shape: "hexagon"
+			rewards: [{
+				id: "6F305739BEEDF49B"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3217FC6AD2AFA67A"
 				item: "gtceu:lv_4a_energy_converter"
@@ -1210,7 +1333,6 @@
 			]
 			icon: "gtceu:hpic_wafer"
 			id: "5A94534682807314"
-			shape: "hexagon"
 			tasks: [{
 				id: "60242EACEEB6B6C8"
 				type: "checkmark"
@@ -1238,7 +1360,11 @@
 			]
 			icon: "gtceu:uhpic_wafer"
 			id: "2D31856F6EF1ED69"
-			shape: "hexagon"
+			rewards: [{
+				id: "56BBC13076DA2EA4"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "44E7A2BF6528EC4E"
@@ -1353,7 +1479,7 @@
 					Count: 1b
 					id: "ironjetpacks:jetpack"
 					tag: {
-						Id: "ironjetpacks:leadstone"
+						Id: "ironjetpacks:Leadstone"
 						Throttle: 1.0d
 					}
 				}
@@ -1420,7 +1546,7 @@
 				""
 				"Overall, &bEffortless Building&r is a powerful mod that is very useful for construction. Experiment with it and you'll see how much time it can save you!"
 			]
-			icon: "effortlessbuilding:reach_upgrade1"
+			icon: "minecraft:barrier"
 			id: "0137ECCCD7A11A15"
 			tasks: [{
 				id: "0351F40C63136AD0"
