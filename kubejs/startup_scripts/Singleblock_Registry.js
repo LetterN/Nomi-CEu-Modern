@@ -7,6 +7,14 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.PORTAL_CLOSING)
+
+    event.create('resonator')
+        .category('resonator')
+        .setEUIO('in')
+        .setMaxIOSize(1, 1, 0, 0)
+        .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.PORTAL_CLOSING)
 })
 
 // Machines
@@ -14,5 +22,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     // Atomic Reconstructor
     event.create('atomic_reconstructor', 'simple', GTValues.MV)
         .recipeType('atomic_reconstruction', true, true)
+        .workableTieredHullRenderer('gtceu:block/machines/arc_furnace')
+
+    event.create('resonator', 'simple', GTValues.MV)
+        .recipeType('resonator', true, true)
         .workableTieredHullRenderer('gtceu:block/machines/arc_furnace')
 })
