@@ -9,10 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"46F708DD5000CFB5"
-				"10A31107AE02019C"
-			]
+			dependencies: ["46F708DD5000CFB5"]
 			description: [
 				"Fluix is initially made via in-world crafting, by dropping &6Redstone&r, &6Nether Quartz&r, and a &6Charged Certus Quartz Crystal&r in the same block of &9Water&r. You'll see some sparks then the items will merge into a &6Fluix Crystal&r. Be sure to turn off any nearby item magnets/collectors or they might interrupt this crafting process."
 				""
@@ -293,7 +290,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["7A302B4D5EC1CAD6"]
 			description: [
 				"This device can be powered with RF via energy conduits or use AE energy from a network via ME conduits or cables."
 				""
