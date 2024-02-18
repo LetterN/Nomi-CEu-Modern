@@ -971,6 +971,30 @@
 			x: 5.5d
 			y: 11.5d
 		}
+		{
+			dependencies: ["0EF85170074E70B3"]
+			description: [
+				"Handling &6Patterns&r gets tedious pretty quickly, from not having enough slots to move tens of them at a time, to having to multiply them when upgrading your &3Large Machines&r, which, when equipped with &3Parallel Control Hatches&r, may require you to supply more than one item at a time to utilize them to their fullest."
+				""
+				"You don't want to supply one ingot and get two wires when your &3Large Wire Factory&r can take &e64 ingots&r and make &e128 wires&r at a time, right?"
+				""
+				"That's where the the &6Pattern Modifier&r comes into play, which makes it possible to &emove, multiply, divide and clear patterns in bulk&r. "
+			]
+			id: "73908E06B75B9C9E"
+			rewards: [{
+				id: "2C0AE427B898F09B"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C87128CBD93E0A8"
+				item: "expatternprovider:pattern_modifier"
+				type: "item"
+			}]
+			title: "Mastering Patterns"
+			x: 7.0d
+			y: 10.0d
+		}
 	]
 	title: "Matter-Energy"
 }
