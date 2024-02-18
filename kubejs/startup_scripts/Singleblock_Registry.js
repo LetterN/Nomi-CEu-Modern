@@ -26,5 +26,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('resonator', 'simple', GTValues.MV)
         .recipeType('resonator', true, true)
-        .workableTieredHullRenderer('gtceu:block/machines/arc_furnace')
+        .workableTieredHullRenderer('gtceu:block/machines/resonator')
 })
