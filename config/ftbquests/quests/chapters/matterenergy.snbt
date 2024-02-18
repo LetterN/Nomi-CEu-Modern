@@ -267,6 +267,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["6D03BB4A6A4BBA27"]
 			description: [
 				"This compass will lead you to the nearest meteor impact. Use your favorite mining tools to smash through the &6Skystone&r shell and get to the juicy center where the &6Skystone Chest&r with the plate is found."
 				""
@@ -290,6 +291,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["6D03BB4A6A4BBA27"]
 			description: [
 				"This device can be powered with RF via energy conduits or use AE energy from a network via ME conduits or cables."
 				""
