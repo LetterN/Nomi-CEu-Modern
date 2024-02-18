@@ -568,4 +568,12 @@ ServerEvents.recipes(event => {
         'gtceu:certus_quartz_gem',
         'gtceu:charged_certus_quartz_gem'
     )
+
+
+    // ExtendedAE
+
+    //Pattern Modifier
+    event.remove({ output: 'expatternprovider:pattern_modifier' })
+    event.shapeless('expatternprovider:pattern_modifier', ['ae2:calculation_processor', 'ae2:blank_pattern', 'ae2:calculation_processor'])
+
 })
