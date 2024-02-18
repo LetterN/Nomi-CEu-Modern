@@ -416,18 +416,9 @@ ServerEvents.recipes(event => {
         }
     )
 
-    //TODO Big Pattern Provider/Interface (MAKE IN HV ASSEMBLER)
-
-
     //TODO Big I/O (MAKE IN IV ASSEMBLY LINE)
 
-
     //TODO AE2WT
-
-
-    //Infinite Cobble/Water cell
-    event.replaceInput({ output: Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:f",id:"minecraft:water"}}') }, 'minecraft:water_bucket', 'gtceu:infinite_water_cover')
-    event.replaceInput({ output: Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:f",id:"minecraft:water"}}') }, 'minecraft:diamond', 'gtceu:diamond_plate')
 
     //Processors
     event.remove({ output: ['ae2:printed_silicon', 'ae2:logic_processor', 'ae2:calculation_processor', 'ae2:engineering_processor'] })
@@ -572,8 +563,45 @@ ServerEvents.recipes(event => {
 
     // ExtendedAE
 
-    //Pattern Modifier
+    //Pattern Modifier (NAE2's Pattern Multitool)
     event.remove({ output: 'expatternprovider:pattern_modifier' })
-    event.shapeless('expatternprovider:pattern_modifier', ['ae2:calculation_processor', 'ae2:blank_pattern', 'ae2:calculation_processor'])
+    event.shapeless('expatternprovider:pattern_modifier', ['ae2:calculation_processor', 'ae2:blank_pattern', 'ae2:logic_processor'])
 
-})
+    //Extended Pattern Provider
+    event.remove({ id: 'expatternprovider:epp' })
+    event.recipes.gtceu.assembler("ex_pattern_provider")
+        .itemInputs("4x ae2:pattern_provider", "4x ae2:capacity_card", "4x gtceu:aluminium_plate")
+        .itemOutputs("expatternprovider:ex_pattern_provider")
+        .duration(180)
+        .EUt(512)
+
+        event.remove({ output: 'expatternprovider:pattern_provider_upgrade' })
+        event.recipes.gtceu.assembler("ex_pattern_provider_upgrade")
+            .itemInputs("3x ae2:pattern_provider", "4x ae2:capacity_card", "4x gtceu:aluminium_plate")
+            .itemOutputs("expatternprovider:pattern_provider_upgrade")
+            .duration(180)
+            .circuit(0)
+            .EUt(512)
+
+    // Extended Interface
+
+    event.remove({ id: 'expatternprovider:ei' })
+    event.recipes.gtceu.assembler("ex_interface")
+        .itemInputs("4x ae2:interface", "4x ae2:capacity_card", "4x gtceu:aluminium_plate")
+        .itemOutputs("expatternprovider:ex_interface")
+        .duration(180)
+        .EUt(512)
+
+        event.remove({ output: 'expatternprovider:interface_upgrade' })
+        event.recipes.gtceu.assembler("ex_interface_upgrade")
+            .itemInputs("3x ae2:interface", "4x ae2:capacity_card", "4x gtceu:aluminium_plate")
+            .itemOutputs("expatternprovider:interface_upgrade")
+            .duration(180)
+            .circuit(0)
+            .EUt(512)
+    
+    //Infinite Cobble/Water cell
+    event.replaceInput({ output: Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:f",id:"minecraft:water"}}') }, 'minecraft:water_bucket', 'gtceu:infinite_water_cover')
+    event.replaceInput({ output: Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:f",id:"minecraft:water"}}') }, 'minecraft:diamond', 'gtceu:diamond_plate')
+
+    })
