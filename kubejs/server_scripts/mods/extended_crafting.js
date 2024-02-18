@@ -81,13 +81,26 @@ ServerEvents.recipes(event => {
     //Catalysts
 	event.replaceInput({ id: /extendedcrafting/ }, 'extendedcrafting:black_iron_ingot', 'gtceu:black_steel_plate')
 
+    event.shaped(
+        'kubejs:conflux_catalyst', [
+            ' B ',
+            'ACE',
+            ' U '
+        ], {
+            A: 'extendedcrafting:advanced_catalyst',
+            B: 'extendedcrafting:basic_catalyst',
+            C: 'extendedcrafting:crystaltine_catalyst',
+            E: 'extendedcrafting:elite_catalyst',
+            U: 'extendedcrafting:ultimate_catalyst',
+        })
+
     // Tables
     event.remove({ output: 'extendedcrafting:basic_table' })
 
     event.remove({ output: 'extendedcrafting:advanced_table' })
     event.shaped(
         'extendedcrafting:advanced_table', [
-            'ABA ',
+            'ABA',
             'CDC',
             'ABA'
         ], {
@@ -118,11 +131,11 @@ ServerEvents.recipes(event => {
                 'extendedcrafting:ultimate_table', [
                     'ESSCSSE',
                     'SUUUUUS',
-                    'BUSRSUB',
+                    'SUSRSUS',
                     'CURTRUC',
-                    'BUSRSUB',
+                    'SUSRSUS',
                     'SUUUUUS',
-                    'ESSCSSE',
+                    'ESSCSSE'
                 ], {
                     E: 'minecraft:emerald_block',
                     S: 'gtceu:black_steel_plate',
@@ -135,7 +148,7 @@ ServerEvents.recipes(event => {
 
 //        let tables = ['extendedcrafting:advanced_table', 'extendedcrafting:elite_table', 'extendedcrafting:ultimate_table']
 //        tables.forEach(table => {
-//            event.shapeless(table * 2, [table])
+//            event.shapeless(2x table, [table])
 //        });
         
     // Combination Crafts
