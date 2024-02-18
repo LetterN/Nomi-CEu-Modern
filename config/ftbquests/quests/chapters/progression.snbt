@@ -836,8 +836,8 @@
 		{
 			id: "6013C02A8E538039"
 			tasks: [{
-				id: "3A6CBBF38A8F252A"
-				item: "kubejs:hardened_upgrade_kit"
+				id: "66A158488E448F64"
+				item: "thermal:upgrade_augment_1"
 				type: "item"
 			}]
 			x: 9.0d
@@ -846,8 +846,8 @@
 		{
 			id: "685EE76CC8277C26"
 			tasks: [{
-				id: "3D8EADB299906EAB"
-				item: "kubejs:reinforced_upgrade_kit"
+				id: "416E5A4FC9CC3FC1"
+				item: "thermal:upgrade_augment_2"
 				type: "item"
 			}]
 			x: 9.0d
@@ -856,8 +856,8 @@
 		{
 			id: "2FBB49D3D5B339E1"
 			tasks: [{
-				id: "5E5DAE47B9BFF23E"
-				item: "kubejs:signalum_upgrade_kit"
+				id: "77542D82F09A4D6F"
+				item: "thermal:upgrade_augment_4"
 				type: "item"
 			}]
 			x: 9.0d
@@ -866,8 +866,8 @@
 		{
 			id: "15B1277EF8657C65"
 			tasks: [{
-				id: "68A45A22AE84CF5E"
-				item: "kubejs:resonant_upgrade_kit"
+				id: "445CD99C82559395"
+				item: "thermal:upgrade_augment_3"
 				type: "item"
 			}]
 			x: 9.0d

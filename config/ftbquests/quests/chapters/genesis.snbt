@@ -1568,7 +1568,7 @@
 				""
 				"But at least for now, you shouldn't feel any guilt about smelting the more common ores without doubling them! &eOre doubling can be safely ignored until you have the &2Steam Grinder&r&e, or Medium Voltage machines or even later.&r"
 			]
-			icon: "gtceu:redstone_crushed_ore"
+			icon: "gtceu:crushed_redstone_ore"
 			id: "17E92ED356B6737F"
 			tasks: [{
 				id: "36817889D65727FA"
