@@ -418,8 +418,6 @@ ServerEvents.recipes(event => {
 
     //TODO Big I/O (MAKE IN IV ASSEMBLY LINE)
 
-    //TODO AE2WT
-
     //Processors
     event.remove({ output: ['ae2:printed_silicon', 'ae2:logic_processor', 'ae2:calculation_processor', 'ae2:engineering_processor'] })
     event.custom({

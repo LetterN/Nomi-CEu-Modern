@@ -80,5 +80,7 @@
     "material.gtceu.sunnarium": "Sunnarium",
     "material.gtceu.enriched_sunnarium": "Enriched Sunnarium",
     "material.gtceu.black_quartz": "Black Quartz",
-    "material.gtceu.charged_certus_quartz": "Charged Certus Quartz"
+    "material.gtceu.charged_certus_quartz": "Charged Certus Quartz",
+    "block.gtceu.empowerment": "Empowerer",
+    "gtceu.empowerment": "Empowerment"
 }
