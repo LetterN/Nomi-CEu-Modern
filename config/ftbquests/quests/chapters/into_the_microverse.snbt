@@ -7,6 +7,541 @@
 	id: "68F29871402A6B1B"
 	order_index: 5
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: ["asd"]
+			id: "3AD22A73E517DD01"
+			shape: "hexagon"
+			tasks: [{
+				id: "52E1726424C11C9A"
+				item: "gtceu:mv_resonator"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3AD22A73E517DD01"]
+			id: "74FEF82CA2FB3D02"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "5367AA1BB831957B"
+				item: "gtceu:black_steel_dust"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"004344AC70AE88F1"
+				"74FEF82CA2FB3D02"
+			]
+			id: "01F946C4A4BF4FFE"
+			shape: "hexagon"
+			tasks: [{
+				id: "226E761CB9303F6E"
+				item: "extendedcrafting:ultimate_component"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["74FEF82CA2FB3D02"]
+			id: "718AF2C9476BE1F4"
+			shape: "hexagon"
+			tasks: [{
+				id: "3A436624C655C34F"
+				item: "extendedcrafting:elite_component"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["01F946C4A4BF4FFE"]
+			id: "52B20235882063BF"
+			shape: "hexagon"
+			tasks: [{
+				id: "29A5815A5E4B818F"
+				item: "extendedcrafting:ultimate_catalyst"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			id: "1735403C8B0D3FAD"
+			shape: "hexagon"
+			tasks: [{
+				id: "7F1C7E7DA9B351B1"
+				item: "gtceu:phosphorus_dust"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"648B1E09AA648798"
+				"1735403C8B0D3FAD"
+			]
+			id: "3BB7400C8BB392D9"
+			shape: "hexagon"
+			tasks: [{
+				id: "67E12CCD296D12FD"
+				item: "gtceu:phosphoric_acid_bucket"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -7.5d
+		}
+		{
+			id: "648B1E09AA648798"
+			shape: "hexagon"
+			tasks: [{
+				id: "67FBB38B63BC93BB"
+				item: "gtceu:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["3BB7400C8BB392D9"]
+			id: "004344AC70AE88F1"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "3A0729A4ABF16AE5"
+				item: "extendedcrafting:luminessence"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"74FEF82CA2FB3D02"
+				"004344AC70AE88F1"
+			]
+			id: "56BAC68878E11DF4"
+			shape: "hexagon"
+			tasks: [{
+				id: "1CAB8B6538E485BC"
+				item: "extendedcrafting:advanced_component"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"27692C4A58F1A183"
+				"52B20235882063BF"
+			]
+			id: "04475771966A92C3"
+			shape: "hexagon"
+			tasks: [{
+				id: "38733A0F278A11E1"
+				item: "kubejs:conflux_catalyst"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"04475771966A92C3"
+				"77582C534A994D7C"
+			]
+			id: "555BEBF7FD6012B7"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "07E8313832CB4834"
+				item: "extendedcrafting:ultimate_table"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"27692C4A58F1A183"
+				"2181102841205407"
+			]
+			id: "77582C534A994D7C"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "5986464B608F3B46"
+				item: "extendedcrafting:elite_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["56BAC68878E11DF4"]
+			id: "3729FBA4FA7E9C12"
+			shape: "hexagon"
+			tasks: [{
+				id: "15E4AC502D8DC0AF"
+				item: "extendedcrafting:advanced_catalyst"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["3729FBA4FA7E9C12"]
+			id: "2181102841205407"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "68AA09C07197DF3B"
+				item: "extendedcrafting:advanced_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["718AF2C9476BE1F4"]
+			id: "27692C4A58F1A183"
+			shape: "hexagon"
+			tasks: [{
+				id: "4D8B17F14288E756"
+				item: "extendedcrafting:elite_catalyst"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["74FEF82CA2FB3D02"]
+			id: "56FB624B384FFAF5"
+			shape: "hexagon"
+			tasks: [{
+				id: "0014FE3B92FEBC6B"
+				item: "minecraft:dragon_head"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["56FB624B384FFAF5"]
+			id: "399AE4E449872B8A"
+			tasks: [{
+				id: "7DD19A7DC7557C5D"
+				item: "gtceu:liquid_ender_air_bucket"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1687527842441475"
+				"0400F3BAB236F259"
+				"2BD54071AD23C73C"
+				"4669C1DCEE4AA563"
+			]
+			id: "281C7940CD437B69"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "4A70A666FB5A4A55"
+				item: "gcyr:moon_sand"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["56FB624B384FFAF5"]
+			id: "131EAE1541E9C780"
+			shape: "hexagon"
+			tasks: [{
+				id: "32406EDBF9A81C73"
+				item: "minecraft:chorus_flower"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["131EAE1541E9C780"]
+			id: "1687527842441475"
+			shape: "hexagon"
+			tasks: [{
+				id: "6DB1522B469A9095"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["193B7038EAB6EFA3"]
+			id: "4669C1DCEE4AA563"
+			shape: "hexagon"
+			tasks: [{
+				id: "36AC33D59E419A30"
+				item: "gcyr:basic_rocket_motor"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["193B7038EAB6EFA3"]
+			id: "2BD54071AD23C73C"
+			shape: "hexagon"
+			tasks: [{
+				id: "5D4FFDBF1470DF9D"
+				item: {
+					Count: 1b
+					id: "gcyr:space_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["193B7038EAB6EFA3"]
+			id: "0400F3BAB236F259"
+			shape: "hexagon"
+			tasks: [{
+				id: "1227AEB2B7B46115"
+				item: {
+					Count: 1b
+					id: "gcyr:keycard"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"247F4985B9ACE568"
+				"2181102841205407"
+			]
+			id: "193B7038EAB6EFA3"
+			shape: "hexagon"
+			tasks: [{
+				id: "6A2347A15D82ED0A"
+				item: "gcyr:rocket_scanner"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["24415A26E5A0FD72"]
+			id: "247F4985B9ACE568"
+			tasks: [{
+				id: "798A23BC2D1E704F"
+				item: "gtceu:double_steel_plate"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["5E2489DE2E840738"]
+			id: "24415A26E5A0FD72"
+			shape: "hexagon"
+			tasks: [{
+				id: "645B1719FA830B75"
+				item: "gtceu:rocket_fuel_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -14.5d
+		}
+		{
+			dependencies: [
+				"3547762BC39A0B8F"
+				"4146B73F27D24131"
+			]
+			id: "5E2489DE2E840738"
+			shape: "hexagon"
+			tasks: [{
+				id: "3D4A44BB8FD800F9"
+				item: "gtceu:dimethylhydrazine_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -14.5d
+		}
+		{
+			dependencies: [
+				"5878D53EB85F3881"
+				"374EB1BB1E2F6B9C"
+			]
+			id: "4146B73F27D24131"
+			shape: "hexagon"
+			tasks: [{
+				id: "7D061F50186D2747"
+				item: "gtceu:dimethylamine_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -15.5d
+		}
+		{
+			dependencies: [
+				"5DA5231489336B1B"
+				"374EB1BB1E2F6B9C"
+			]
+			id: "3547762BC39A0B8F"
+			shape: "hexagon"
+			tasks: [{
+				id: "173C4E78E0772B0C"
+				item: "gtceu:monochloramine_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["7A09229ACC000B09"]
+			id: "374EB1BB1E2F6B9C"
+			shape: "hexagon"
+			tasks: [{
+				id: "770D687340CEC979"
+				item: "gtceu:ammonia_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["7A09229ACC000B09"]
+			id: "5DA5231489336B1B"
+			shape: "hexagon"
+			tasks: [{
+				id: "5E85DD8FC98BBCC9"
+				item: "gtceu:hypochlorous_acid_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["7A09229ACC000B09"]
+			id: "5878D53EB85F3881"
+			shape: "hexagon"
+			tasks: [{
+				id: "346BA20113588F1F"
+				item: "gtceu:methanol_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -15.5d
+		}
+		{
+			id: "7A09229ACC000B09"
+			shape: "hexagon"
+			tasks: [{
+				id: "36DC2D981E7898DD"
+				item: "gtceu:mv_chemical_reactor"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -14.5d
+		}
+		{
+			id: "7890528B5B23980B"
+			shape: "hexagon"
+			tasks: [{
+				id: "14743A06F87B4B60"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"281C7940CD437B69"
+				"7890528B5B23980B"
+			]
+			id: "7DE2C9292A09FC76"
+			shape: "hexagon"
+			tasks: [{
+				id: "585B4986E1D33DF9"
+				item: "gtceu:deuterium_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			id: "790E3275E88265E3"
+			shape: "hexagon"
+			tasks: [{
+				id: "479BA190EDA1D5F0"
+				item: "hostilenetworks:end_prediction"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7DE2C9292A09FC76"]
+			id: "5B07A88C0BFF6586"
+			shape: "hexagon"
+			tasks: [{
+				id: "1E96DAB3E49D7362"
+				item: "gtceu:basic_microverse_projector"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7DE2C9292A09FC76"
+				"790E3275E88265E3"
+			]
+			id: "4F572CA3678CB287"
+			shape: "hexagon"
+			tasks: [{
+				id: "326F637FA66766CF"
+				item: "kubejs:quantum_flux"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"4F572CA3678CB287"
+				"5B07A88C0BFF6586"
+			]
+			id: "638130DC8A2BF1C1"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "4362115B3E464772"
+				item: "kubejs:microminer_t1"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+	]
 	title: "Into The Microverse"
 }
