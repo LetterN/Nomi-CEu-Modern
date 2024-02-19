@@ -73,6 +73,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["5B0200011DF8E1B6"]
 			id: "1735403C8B0D3FAD"
 			shape: "hexagon"
 			tasks: [{
@@ -99,6 +100,7 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["0E010F5348FC89BF"]
 			id: "648B1E09AA648798"
 			shape: "hexagon"
 			tasks: [{
@@ -275,7 +277,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["131EAE1541E9C780"]
+			dependencies: ["5EB185AD9BD0D069"]
 			id: "1687527842441475"
 			shape: "hexagon"
 			tasks: [{
@@ -463,6 +465,7 @@
 			y: -14.5d
 		}
 		{
+			dependencies: ["61AD3760E271B431"]
 			id: "7890528B5B23980B"
 			shape: "hexagon"
 			tasks: [{
@@ -489,6 +492,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["6C1AAFF54A2ADB45"]
 			id: "790E3275E88265E3"
 			shape: "hexagon"
 			tasks: [{
@@ -541,6 +545,39 @@
 			}]
 			x: 3.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["131EAE1541E9C780"]
+			description: [
+				"&6Rightclick&r a block with an &6Ender Crystal&r to bind the crystal to said block, then place the crystal into the &6Teleporter&r. Then,&6 crouch&r on the teleporter to teleport to that block."
+				""
+				"Make two of these."
+			]
+			icon: "teleporters:teleporter"
+			id: "5EB185AD9BD0D069"
+			rewards: [{
+				id: "57F0241771210D36"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					count: 2L
+					id: "43DAD243F51574B2"
+					item: "teleporters:teleporter"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "651C47D102F489A7"
+					item: "teleporters:ender_crystal"
+					type: "item"
+				}
+			]
+			title: "Thinking with Teleporters"
+			x: 9.0d
+			y: -4.0d
 		}
 	]
 	title: "Into The Microverse"
