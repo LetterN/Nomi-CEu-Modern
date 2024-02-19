@@ -10,7 +10,12 @@ let reconstructedItems = [
     ['minecraft:lapis_block', 'gtceu:palis_block', 'palis_block'],
     ['minecraft:diamond_block', 'gtceu:diamatine_block', 'diamatine_block'],
     ['minecraft:emerald_block', 'gtceu:emeradic_block', 'emeradic_block'],
-    ['minecraft:iron_block', 'gtceu:enori_block', 'enori_block']
+    ['minecraft:iron_block', 'gtceu:enori_block', 'enori_block'],
+    ['minecraft:sand', 'minecraft:soul_sand', 'soul_sand'],
+    ['minecraft:red_mushroom', 'minecraft:nether_wart', 'nether_wart'],
+    ['minecraft:quartz', 'minecraft:prismarine_shard', 'prismarine_shard'],
+    ['minecraft:rotten_flesh', 'minecraft:leather', 'leather'],
+    ['gtceu:topaz_gem', 'minecraft:prismarine_crystals', 'prismarine_crystals']
 ]
 
 
