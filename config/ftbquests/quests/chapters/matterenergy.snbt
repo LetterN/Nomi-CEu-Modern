@@ -814,8 +814,8 @@
 				type: "item"
 			}]
 			title: "256k Item Storage"
-			x: 1.5d
-			y: -8.5d
+			x: 3.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["5C4E189A3E401566"]
