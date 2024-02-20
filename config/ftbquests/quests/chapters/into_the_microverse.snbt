@@ -454,6 +454,7 @@
 			y: -15.5d
 		}
 		{
+			dependencies: ["5C4E189A3E401566"]
 			id: "7A09229ACC000B09"
 			shape: "hexagon"
 			tasks: [{
@@ -548,11 +549,7 @@
 		}
 		{
 			dependencies: ["131EAE1541E9C780"]
-			description: [
-				"&6Rightclick&r a block with an &6Ender Crystal&r to bind the crystal to said block, then place the crystal into the &6Teleporter&r. Then,&6 crouch&r on the teleporter to teleport to that block."
-				""
-				"Make two of these."
-			]
+			description: ["&6Rightclick&r a block with an &6Ender Crystal&r to bind the crystal to said block, then place the crystal into the &6Teleporter&r. Then,&6 crouch&r on the teleporter to teleport to that block."]
 			icon: "teleporters:teleporter"
 			id: "5EB185AD9BD0D069"
 			rewards: [{
