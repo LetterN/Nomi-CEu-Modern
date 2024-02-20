@@ -842,6 +842,11 @@
 			]
 			icon: "kubejs:nomi_penny"
 			id: "115D2BEB18929C7C"
+			rewards: [{
+				id: "43415141DBD13CDD"
+				item: "gag:no_solicitors"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7275E7D7E7F140B8"
 				type: "checkmark"
