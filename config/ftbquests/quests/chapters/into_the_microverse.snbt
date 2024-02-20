@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["3F39E9B829DAE2F2"]
 			description: ["The &3Resonator&r produces special items like &6Perfect Coal&r, used in the creation of &6Black Steel&r."]
 			id: "3AD22A73E517DD01"
 			rewards: [{

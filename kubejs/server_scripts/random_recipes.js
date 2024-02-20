@@ -74,4 +74,5 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(128)
 
+event.remove({ output: ["gag:time_sand_pouch"] })
 })
