@@ -1262,8 +1262,12 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["1FF132DED1748D11"]
+			dependencies: [
+				"1FF132DED1748D11"
+				"4FE53F31E68F4C1C"
+			]
 			description: ["A mixture of Clay and Brick produces large quantities of &6Firebricks&r, used in building the &3Primitive Blast Furnace&r. This allows you to make &6Steel&r from &6Wrought Iron&r, which &2forms the basis of LV Machine Hulls&r, and allows you to make &6Belt Pouches&r, for upgrading your &eTool Belt&r."]
+			hide_dependency_lines: true
 			id: "747434DD99118DA4"
 			rewards: [{
 				count: 3
