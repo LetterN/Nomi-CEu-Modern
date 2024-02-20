@@ -986,6 +986,7 @@
 				""
 				"It accepts power from two sides. Which two sides? It's pretty easy to guess."
 			]
+			icon: "gtceu:certus_quartz_gem"
 			id: "6D03BB4A6A4BBA27"
 			rewards: [{
 				id: "4450EEE7F4D93EF0"
@@ -1017,6 +1018,7 @@
 				""
 				"Quartz Fiber are &emicroparts&r you can put between an ME Cable and any ME Network block or another ME Cable. This will allow transmission of AE power but not data, which is useful for having data-isolated ME Networks all sharing the same power source."
 			]
+			icon: "ae2:energy_acceptor"
 			id: "4174A6C6403DD245"
 			rewards: [{
 				id: "67642A41B1F7F4E8"
