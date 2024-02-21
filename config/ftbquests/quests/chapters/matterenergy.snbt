@@ -508,6 +508,7 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["417D97D9E3562F45"]
 			description: [
 				"&9Polyethylene (PE)&r is the most common category of plastic, made from polymers of &9Ethylene&r. Adding &9Oxygen&r in a &3Chemical Reactor&r recreates (with some artistic license) early accidental synthesis of Polyethylene."
 				""
@@ -813,8 +814,8 @@
 				type: "item"
 			}]
 			title: "256k Item Storage"
-			x: 1.5d
-			y: -8.5d
+			x: 3.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["5C4E189A3E401566"]
