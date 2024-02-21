@@ -68,10 +68,11 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.recipes.gtceu.atomic_reconstruction('red_coal')
+    event.recipes.gtceu.resonator('red_coal')
         .itemInputs('#minecraft:coals')
         .itemOutputs('gtceu:coal_perfect')
         .duration(80)
         .EUt(128)
 
+event.remove({ output: ["gag:time_sand_pouch"] })
 })

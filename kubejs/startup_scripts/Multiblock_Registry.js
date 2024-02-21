@@ -53,6 +53,17 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.COOLING);
 })
 
+// Empowerer
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    event.create('empowerment')
+        .category('multiblock')
+        .setEUIO('in')
+        .setMaxIOSize(5, 1, 0, 0)
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COOLING);
+})
+
 // Basic Microverse Projector
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('basic_microverse_projector', 'multiblock')
@@ -169,5 +180,32 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('O', Predicates.blocks("extendedcrafting:the_ultimate_block"))
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/reaction_safe_mixing_casing",
+            "gtceu:block/multiblock/implosion_compressor", false)
+})
+
+//TODO: Figure out a way to force specific items into specific busses, perhaps look at assline code?
+//Also make a custom casing texture
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('empowerment', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes('empowerment')
+        .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("###E###", "###I###")
+            .aisle("###W###", "#######")
+            .aisle("###W###", "#######")
+            .aisle("EWWOWWE", "I##I##I")
+            .aisle("###W###", "#######")
+            .aisle("###W###", "#######")
+            .aisle("###C###", "###I###")
+            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('W', Predicates.blocks("gtceu:aluminium_quadruple_wire"))
+            .where('E', Predicates.blocks("kubejs:empowerer_casing")
+                .or(Predicates.blocks("gtceu:mv_energy_input_hatch").setExactLimit(1)))
+            .where('I', Predicates.blocks("gtceu:ulv_input_bus"))
+            .where('O', Predicates.blocks("gtceu:ulv_output_bus"))
+            .where('#', Predicates.any())
+            .build())
+            .workableCasingRenderer("kubejs:block/empowerer_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 })
