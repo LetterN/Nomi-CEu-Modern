@@ -571,6 +571,7 @@ ServerEvents.recipes(event => {
         .itemInputs("4x ae2:pattern_provider", "4x ae2:capacity_card", "4x gtceu:aluminium_plate")
         .itemOutputs("expatternprovider:ex_pattern_provider")
         .duration(180)
+        .circuit(0)
         .EUt(512)
 
         event.remove({ output: 'expatternprovider:pattern_provider_upgrade' })
@@ -578,7 +579,7 @@ ServerEvents.recipes(event => {
             .itemInputs("3x ae2:pattern_provider", "4x ae2:capacity_card", "4x gtceu:aluminium_plate")
             .itemOutputs("expatternprovider:pattern_provider_upgrade")
             .duration(180)
-            .circuit(0)
+            .circuit(1)
             .EUt(512)
 
     // Extended Interface
@@ -588,6 +589,7 @@ ServerEvents.recipes(event => {
         .itemInputs("4x ae2:interface", "4x ae2:capacity_card", "4x gtceu:aluminium_plate")
         .itemOutputs("expatternprovider:ex_interface")
         .duration(180)
+        .circuit(0)
         .EUt(512)
 
         event.remove({ output: 'expatternprovider:interface_upgrade' })
@@ -595,8 +597,15 @@ ServerEvents.recipes(event => {
             .itemInputs("3x ae2:interface", "4x ae2:capacity_card", "4x gtceu:aluminium_plate")
             .itemOutputs("expatternprovider:interface_upgrade")
             .duration(180)
-            .circuit(0)
+            .circuit(1)
             .EUt(512)
+
+        event.remove({ output: 'expatternprovider:ex_molecular_assembler' })
+        event.recipes.gtceu.assembler("expatternprovider:ex_molecular_assembler")
+            .itemInputs("8x ae2:molecular_assembler", "8x gtceu:draconium_plate", "8x ae2:capacity_card")
+            .itemOutputs("expatternprovider:ex_molecular_assembler")
+            .duration(240)
+            .EUt(1024)
     
     //Infinite Cobble/Water cell
     event.replaceInput({ output: Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:f",id:"minecraft:water"}}') }, 'minecraft:water_bucket', 'gtceu:infinite_water_cover')
