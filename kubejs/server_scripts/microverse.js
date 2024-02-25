@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
             G: 'kubejs:basic_micro_miner_guidance_system',
             L: 'kubejs:basic_mining_laser',
             A: 'gtceu:lv_field_generator',
-            T: 'ironjetpacks:thruster', // TODO: remember how to do nbt and make these thrusters actual thrusters
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:conductive_iron"}').strongNBT(), 
             M: 'gtceu:lv_combustion'
         }
     )
@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
             B: 'gtceu:lv_field_generator',
             F: 'thermal:fluid_cell_frame', // TODO: Rename frames
             C: 'gtceu:mv_combustion',
-            T: 'ironjetpacks:thruster'
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:electrical_steel"}').strongNBT()
         }, 2
     )
 
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
             L: 'kubejs:reinforced_mining_laser',
             F: 'thermal:fluid_cell_frame',
             C: 'gtceu:hv_combustion',
-            T: 'ironjetpacks:thruster'
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Reinforced"}').strongNBT()
         }, 3
     )
 
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:tungsten_steel_crate',
             B: 'gtceu:hv_field_generator',
             F: 'thermal:energy_cell_frame',
-            T: 'ironjetpacks:thruster',
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Energetic"}').strongNBT(),
             D: 'thermal:dynamo_magmatic' // TODO: replace with reactant dynamo when possible
         }, 3
     )
@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
             F: 'thermal:energy_cell_frame',
             C: 'minecraft:bedrock', // TODO: replace with fission reactor when NC is readded
             P: 'minecraft:bedrock', // Same but fission port
-            T: 'ironjetpacks:thruster'
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Vibrant"}').strongNBT()
         }, 3
     )
 
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
             B: 'gtceu:iv_field_generator',
             C: 'minecraft:bedrock', // Fission reactor
             P: 'minecraft:bedrock', // Fission port
-            T: 'ironjetpacks:thruster'
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Resonant"}').strongNBT()
         }, 3
     )
 
