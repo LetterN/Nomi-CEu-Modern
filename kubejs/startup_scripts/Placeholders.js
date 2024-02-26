@@ -17,7 +17,26 @@ StartupEvents.registry('item', event => {
         event.create(name).texture('kubejs:item/barrier').displayName("\u00A7eT. B. I. \u00A7r- \u00A7d" + UpperCaseFirst(name).join(" "));
     }
 
-    placeHolder("conductive_iron_thruster");
+    //placeHolder("conductive_iron_thruster");
+    placeHolder("creative_rf_source");
+    placeHolder("draconic_evolution_energy_core");
+    placeHolder("draconic_evolution_energy_pylon");
+    placeHolder("draconic_evolution_particle_generator");
+    placeHolder("draconic_evolution_energy_core_stabilizer");
+    placeHolder("draconic_evolution_reactor_stabilizer");
+    placeHolder("draconic_evolution_reactor_core");
+    placeHolder("draconic_evolution_draconic_core");
+    placeHolder("draconic_evolution_wyvern_core");
+    placeHolder("draconic_evolution_awakened_core");
+    placeHolder("draconic_evolution_chaotic_core");
+    placeHolder("draconic_evolution_ender_energy_manipulator");
+    placeHolder("advanced_rocketry_warp_core");
+    placeHolder("advanced_rocketry_warp_controller");
+    placeHolder("nuclearcraft_fission_reactor");
+    placeHolder("nuclearcraft_fission_reactor_port");
+    placeHolder("ender_star");
+    placeHolder("endest_star");
+    placeHolder("ultimate_generator"); // TODO: I hate this.
 })
 
 Platform.mods.kubejs.name = "Nomi Labs"
