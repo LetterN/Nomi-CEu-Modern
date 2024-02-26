@@ -114,7 +114,7 @@
 			]
 			id: "6FDF37EE046349F7"
 			rewards: [{
-				id: "158200BCC5B8B926"
+				id: "00CF22695EBB0588"
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
@@ -158,6 +158,7 @@
 				""
 				"The exact implementation is up to you. Make use of the various LV and MV machines you have, and look through &bJEI&r and the Processing Lines Tab for the ways to get infinite sources of each ingredient (like &aEnderman Models&r for pearls)."
 			]
+			disable_toast: true
 			id: "5E80297BCBEA3C27"
 			rewards: [{
 				id: "1C6E51A8176CFB52"
