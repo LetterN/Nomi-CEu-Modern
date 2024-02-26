@@ -77,6 +77,7 @@
 			can_repeat: true
 			dependencies: ["66FCC26399376B55"]
 			description: ["This quest is repeatable and gives you a free cake to the Void World or Overworld. You can also refill your cakes with the items indicated in their tooltips."]
+			icon: "telepastries:overworld_cake"
 			id: "542F0090D8975D3C"
 			rewards: [{
 				exclude_from_claim_all: true
