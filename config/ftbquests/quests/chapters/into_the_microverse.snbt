@@ -470,7 +470,12 @@
 		}
 		{
 			dependencies: ["193B7038EAB6EFA3"]
-			description: ["same"]
+			description: [
+				"&6Engines&r provide thrust, and &6Tanks&r provide fuel for your engines, make sure to have a decent amount of both."
+				""
+				"Being able to ride your rocket is important, too, so don't forget to add a &6seat&r."
+			]
+			icon: "gcyr:basic_rocket_motor"
 			id: "4669C1DCEE4AA563"
 			rewards: [{
 				id: "558D57ABDD9D65EC"
@@ -478,11 +483,26 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "36AC33D59E419A30"
-				item: "gcyr:basic_rocket_motor"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 3L
+					id: "36AC33D59E419A30"
+					item: "gcyr:basic_rocket_motor"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "141B8A11234EF26D"
+					item: "gcyr:basic_fuel_tank"
+					type: "item"
+				}
+				{
+					id: "5E5CBFA3F32780BE"
+					item: "gcyr:seat"
+					type: "item"
+				}
+			]
+			title: "&1Rocket Parts"
 			x: 3.5d
 			y: -8.5d
 		}
@@ -553,13 +573,19 @@
 					type: "item"
 				}
 			]
-			title: "Space Suit"
+			title: "&1Space Suit"
 			x: 2.0d
 			y: -8.5d
 		}
 		{
 			dependencies: ["193B7038EAB6EFA3"]
-			description: ["same"]
+			description: [
+				"&6Right-click &rwhile holding this to bring up a catalog of various locations. "
+				""
+				"In this case, you want to go to the &7Overworld's Moon&r, so select that."
+				""
+				"Then, place it in the rocket's inventory, accessed by right-clicking the rocket with an empty hand."
+			]
 			id: "0400F3BAB236F259"
 			rewards: [{
 				id: "352FEDC82096150A"
@@ -567,15 +593,17 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			subtitle: "Tells your rocket where to go"
 			tasks: [{
 				id: "1227AEB2B7B46115"
 				item: {
 					Count: 1b
-					id: "gcyr:keycard"
+					id: "gcyr:id_chip"
 					tag: { }
 				}
 				type: "item"
 			}]
+			title: "&1Planet ID"
 			x: 5.0d
 			y: -8.5d
 		}
@@ -584,7 +612,11 @@
 				"247F4985B9ACE568"
 				"2181102841205407"
 			]
-			description: ["TODO: Learn GCYR and do this quest lol"]
+			description: [
+				"The &1Rocket Scanner&r is used to create rockets from various blocks."
+				""
+				"To use it, build the multiblock, then place &6engines&r and &6tanks&r (as well as other blocks) within the given area. Once you are satisfied, press the &eBuild Rocket&r text in the Rocket Scanner's GUI."
+			]
 			id: "193B7038EAB6EFA3"
 			rewards: [{
 				id: "241FC93655A20BDE"
@@ -592,11 +624,13 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			subtitle: "Now it's time to think vertically"
 			tasks: [{
 				id: "6A2347A15D82ED0A"
 				item: "gcyr:rocket_scanner"
 				type: "item"
 			}]
+			title: "&1Gregtech Rockets"
 			x: 3.5d
 			y: -10.5d
 		}
@@ -777,6 +811,7 @@
 				""
 				"It might seem crazy right now, but you'll want a dedicated &3Chemical Reactor&r for pretty much every chemical you want to process. You probably want to hold off on doing that until you've got a solid base of autocrafting though... it stings a lot less when you can just request crafts of Chemical Reactors from your AE2 system."
 			]
+			disable_toast: true
 			id: "7A09229ACC000B09"
 			shape: "hexagon"
 			tasks: [{

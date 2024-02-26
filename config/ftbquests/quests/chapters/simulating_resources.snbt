@@ -21,6 +21,7 @@
 				""
 				"Yes, you can also use it for generating power... &owith Diamonds."
 			]
+			disable_toast: true
 			id: "05B3758B509861B8"
 			tasks: [{
 				id: "148FF0671E07B839"
@@ -58,6 +59,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["6A914B240E1A7BCB"]
 			description: [
 				"This alloy is made from &2mixing 2 Gold Dust, 1 Redstone, and 1 Glowstone Dust in a Mixer, creating Energetic Alloy Dust,&r and putting it in your new &3Electric Blast Furnace&r."
 				""
@@ -65,6 +67,7 @@
 				""
 				"&2In EV Age, you can build an Alloy Blast Smelter which doubles the yield."
 			]
+			disable_toast: true
 			id: "39A04E694747714D"
 			rewards: [{
 				id: "56897DF5637F6E91"
@@ -125,17 +128,14 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["5357A16B5BF62C96"]
 			description: [
 				"Here comes the chemistry."
 				""
 				"It might seem crazy right now, but you'll want a dedicated &3Chemical Reactor&r for pretty much every chemical you want to process. You probably want to hold off on doing that until you've got a solid base of autocrafting though... it stings a lot less when you can just request crafts of Chemical Reactors from your AE2 system."
 			]
+			disable_toast: true
 			id: "3F62C4BB7F36BC98"
-			rewards: [{
-				id: "710E9560161DF894"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
 			tasks: [{
 				id: "2F5D362FB00827E4"
 				item: "gtceu:mv_chemical_reactor"
@@ -256,6 +256,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["2201391DEEBE79E4"]
 			description: [
 				"There's no rush to get these all done and leveled up, but they do provide a good source of some of the basic resources in exchange for RF."
 				""
@@ -373,10 +374,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"73C6E2724EBEC997"
-				"61E018C3BAB05818"
-			]
+			dependencies: ["73C6E2724EBEC997"]
 			description: [
 				"Provide your &3Simulation Chamber&r with RF power and &6Pulsating Polymer Clay&r. Then insert a &6Data Model&r of your choice. The Simulation Chamber will consume Polymer Clay and a decent amount of power to begin simulating mob kills. This will generate &6Overworldian Matter&r and may occasionally provide you with &6Pristine Matter&r."
 				""
