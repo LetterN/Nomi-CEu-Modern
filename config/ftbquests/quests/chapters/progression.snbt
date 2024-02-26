@@ -302,16 +302,6 @@
 			y: -2.5d
 		}
 		{
-			id: "4B8757F2B75BD3E6"
-			tasks: [{
-				id: "07A99A3235F158A3"
-				item: "gtceu:micro_processor_assembly"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -2.5d
-		}
-		{
 			id: "4C918DE564A3D375"
 			tasks: [{
 				id: "1D9F1470071DDCE9"
@@ -422,54 +412,14 @@
 			y: 6.5d
 		}
 		{
-			id: "3D3626ED09BB2D3B"
-			tasks: [{
-				id: "226816F73F09F2F1"
-				item: "gtceu:micro_processor_assembly"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -2.5d
-		}
-		{
-			id: "382F812C958CA791"
-			tasks: [{
-				id: "68A2D1829860DD45"
-				item: "gtceu:micro_processor_assembly"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -2.5d
-		}
-		{
 			id: "4D730ECD730FCD2C"
 			tasks: [{
 				id: "6FFA94AFF22DBFE6"
 				item: "gtceu:micro_processor_assembly"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -2.75d
 			y: -2.5d
-		}
-		{
-			id: "6F8B24CC9408477E"
-			tasks: [{
-				id: "1D80EFF5BEAC5956"
-				item: "gtceu:micro_processor_computer"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -1.0d
-		}
-		{
-			id: "2C62902EC00E5D24"
-			tasks: [{
-				id: "1304DE15723C8D25"
-				item: "gtceu:micro_processor_computer"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -1.0d
 		}
 		{
 			id: "49FBCFE16F6EBA1A"
@@ -478,17 +428,7 @@
 				item: "gtceu:micro_processor_computer"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -1.0d
-		}
-		{
-			id: "78F1097DE5A1115C"
-			tasks: [{
-				id: "4C90F62142AB4EF8"
-				item: "gtceu:micro_processor_computer"
-				type: "item"
-			}]
-			x: -3.0d
+			x: -2.75d
 			y: -1.0d
 		}
 		{
@@ -640,42 +580,6 @@
 			}]
 			x: 4.0d
 			y: 6.5d
-		}
-		{
-			id: "0CF7676BDABECA1D"
-			tasks: [{
-				id: "781260CE1773CB26"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -4.5d
-		}
-		{
-			id: "384B7EF17FDE1F0C"
-			tasks: [{
-				id: "6D76AE30DD9F46B4"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -4.5d
-		}
-		{
-			id: "24A5C5BBEDC183CE"
-			tasks: [{
-				id: "3BE77829C65365A0"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -4.5d
-		}
-		{
-			id: "6F3AF8DF00104F17"
-			tasks: [{
-				id: "44B9E3B69E495A49"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -4.5d
 		}
 		{
 			id: "47522085F7B4CD94"
@@ -1314,6 +1218,54 @@
 			}]
 			x: 11.5d
 			y: 4.5d
+		}
+		{
+			disable_toast: true
+			icon: "enderio:painted_stairs"
+			id: "6FE8CA55D0EA2A7B"
+			tasks: [{
+				id: "0CDD3322741DFF0E"
+				item: "gtceu:micro_processor_assembly"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			disable_toast: true
+			icon: "enderio:painted_stairs"
+			id: "3ED06451D944E29D"
+			tasks: [{
+				id: "60CB2F1C0DAFDB75"
+				item: "gtceu:micro_processor_assembly"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			disable_toast: true
+			icon: "enderio:painted_stairs"
+			id: "1182D77C304CF6D8"
+			tasks: [{
+				id: "0D8AC86DDA529FC7"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			disable_toast: true
+			icon: "enderio:painted_stairs"
+			id: "6EDE5B0A9401F037"
+			tasks: [{
+				id: "6FF4FBD2D8FFF7A5"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
 		}
 	]
 	title: "Progression"

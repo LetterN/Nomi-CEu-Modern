@@ -643,6 +643,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "798A23BC2D1E704F"
 				item: "gtceu:double_steel_plate"
