@@ -31,6 +31,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "298288137C88DDFF"
@@ -54,6 +55,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "Note: this quest accepts both LV and MV Polarizer."
 			tasks: [{
 				id: "2AAE22F760F73AD8"
@@ -73,6 +75,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "Not as common a component, but used in a number of critical machines."
 			tasks: [{
 				id: "766F95CEB364086E"
@@ -122,6 +125,7 @@
 				id: "381F87172DB87754"
 				type: "checkmark"
 			}]
+			title: "Programmed Circuits"
 			x: -1.9047619047619193d
 			y: 3.720238095238088d
 		}
@@ -142,6 +146,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "4FEE8532736A49E2"
@@ -165,6 +170,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "5B30A9407F5E838F"
 				item: "gtceu:lv_robot_arm"
@@ -183,6 +189,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.25d
 			subtitle: "A piston is a specialized motor, which is needed to make certain machines."
 			tasks: [{
@@ -203,6 +210,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "5D06DCFA7A00AE81"
 				item: "gtceu:lv_lathe"
@@ -234,6 +242,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "5D9E01E9FFB9F05B"
 				item: "gtceu:lv_bender"
@@ -273,6 +282,7 @@
 				"However, this machine will still see use for compressing &eNuggets&r into&e Ingots&r, &eIngots&r into &eBlocks&r, &eGem Dusts&r into &ePlates&r (such as &6Certus Quartz&r), as well as various other useful recipes."
 			]
 			id: "5795EE147D4879B7"
+			shape: "hexagon"
 			tasks: [{
 				id: "2B92B2273B4DBA4E"
 				item: "gtceu:lv_compressor"
@@ -293,6 +303,7 @@
 				"When you have access to &6Steel&r, you can make molds and use &3Fluid Solidifiers&r to form various components more efficiently from fluids, like &6Gears&r."
 			]
 			id: "038D06BCA022C1BF"
+			shape: "hexagon"
 			subtitle: "&2The functions of the Extractor and Fluid Extractor have been combined into a single machine!"
 			tasks: [{
 				id: "302CBE00E5451E5E"
@@ -326,6 +337,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "&oNote: this quest accepts LV, MV and HV Macerators."
 			tasks: [{
 				id: "29E5699EC44EAFB5"
@@ -344,6 +356,7 @@
 				"You must use &6 &6Rubber Rings&r, which requires a &aKnife&r to craft. A stick and a piece of flint will make a Knife with low durability, or check the recipe for metal ones."
 			]
 			id: "6A262AA410619C23"
+			shape: "hexagon"
 			tasks: [{
 				id: "79C2BBD9C422BA1E"
 				item: "gtceu:lv_electric_pump"
@@ -404,6 +417,7 @@
 				"You'll need an Autoclave for many recipes, but most presently you will need it to make &6Pulsating Crystals&r and &6Vibrant Crystals&r from &bEnderIO&r."
 			]
 			id: "47094A5717952699"
+			shape: "hexagon"
 			tasks: [{
 				id: "11FEC1EF6257937D"
 				item: "gtceu:lv_autoclave"
@@ -431,6 +445,7 @@
 			]
 			icon: "snad:snad"
 			id: "529D50CE814AF449"
+			shape: "hexagon"
 			subtitle: "Yes, Snad."
 			tasks: [
 				{
@@ -474,6 +489,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					count: 3L
@@ -512,6 +528,7 @@
 			]
 			icon: "kubejs:pulsating_dust"
 			id: "30EBD4E7BBFFEF2C"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "771429E0BF88C060"
@@ -533,6 +550,7 @@
 			description: ["If you can't find one otherwise, &6Ender Pearls&r can be crafted using Pulsating Dust and a &6Diamond&r in an &3Alloy Smelter&r."]
 			icon: "gtceu:pulsating_alloy_ingot"
 			id: "273F3F8DD6A3DCC5"
+			shape: "hexagon"
 			subtitle: "A mysterious alloy, made from &6Pulsating Dust&r and &6Iron&r."
 			tasks: [
 				{
@@ -554,6 +572,7 @@
 			dependencies: ["29A487F0BC43AAF9"]
 			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either of these dusts, &6Coal Coke Dust&r, &2or Diamond Dust&r into &6Carbon Dust&r, which can be used for Steel and other useful things."]
 			id: "5301E546BAA69844"
+			shape: "hexagon"
 			size: 2.0d
 			subtitle: "You already have &6Steel&r, but it can be made much faster in the &3Alloy Smelter&r, at the cost of EU."
 			tasks: [{
@@ -578,6 +597,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "708858A9BC1F9ABE"
 				item: "gtceu:cupronickel_ingot"
@@ -600,6 +620,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "1E91BE2938B1B8CE"
 				item: "gtceu:lv_alloy_smelter"
@@ -756,6 +777,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "3FB8F2F8B1867430"
@@ -794,6 +816,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "15A06F5EF4CADA4C"
@@ -810,6 +833,7 @@
 				"74B5CA5A48CE7B39"
 			]
 			id: "3BD20358F137E7C6"
+			shape: "hexagon"
 			tasks: [{
 				id: "6C0D6663D13E8C74"
 				item: "gtceu:dark_steel_ingot"
@@ -902,6 +926,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "4A822DF50CD59532"
@@ -996,6 +1021,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "39AA9BBDCACBC109"
@@ -1028,6 +1054,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [
 				{
@@ -1151,6 +1178,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "7AE6F9DF96ADD8D2"
 				item: "gtceu:lv_electrolyzer"
@@ -1182,6 +1210,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					amount: 1000L
@@ -1277,6 +1306,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "2EB8F8C2ABFD2637"
 				item: "gtceu:cupronickel_coil_block"
@@ -1308,6 +1338,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "76883573CA1B54F4"
 				item: "gtceu:aluminium_ingot"
@@ -1346,6 +1377,7 @@
 				item: "kubejs:nomi_dollar"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [
 				{
@@ -1408,7 +1440,20 @@
 		}
 		{
 			dependencies: ["1DBBE96165C7987D"]
+			description: [
+				"This alloy is made from &2mixing 2 Gold Dust, 1 Redstone, and 1 Glowstone Dust in a Mixer, creating Energetic Alloy Dust,&r and putting it in your new &3Electric Blast Furnace&r."
+				""
+				"Throw &2the prepared dust into the input bus&r and in twenty seconds your &6Energetic Alloy Ingot&r will be in the output bus."
+				""
+				"&2In EV Age, you can build an Alloy Blast Smelter which doubles the yield."
+			]
 			id: "6A914B240E1A7BCB"
+			rewards: [{
+				id: "38132DACC54B8BA2"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "7FF7158E0BBDD3AE"
 				item: "gtceu:energetic_alloy_ingot"
@@ -1419,7 +1464,18 @@
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]
+			description: [
+				"Another alloy."
+				""
+				"&2In EV Age, you can build an Alloy Blast Smelter which doubles the yield."
+			]
 			id: "73C1AB31431B5C11"
+			rewards: [{
+				id: "461858A607CACCE1"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "6194BD41B07BAA23"
 				item: "gtceu:vibrant_alloy_ingot"
@@ -1443,6 +1499,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "45561FC8024BD7F3"
 				item: "enderio:energetic_conduit"
@@ -1488,6 +1545,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			subtitle: "Your first MV hull is as good of a place as any to consider yourself graduated from LV."
 			tasks: [{
@@ -1516,6 +1574,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "0199D55D895EDDC9"
 				item: "gtceu:lv_mixer"
@@ -1764,6 +1823,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "6DEB6911246BA1D9"
 				item: "enderio:item_conduit"
@@ -1793,6 +1853,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [
 				{

@@ -23,6 +23,7 @@
 			]
 			disable_toast: true
 			id: "05B3758B509861B8"
+			shape: "hexagon"
 			tasks: [{
 				id: "148FF0671E07B839"
 				item: "hostilenetworks:sim_chamber"
@@ -50,6 +51,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "55E8991AB9A9ED20"
 				item: "hostilenetworks:loot_fabricator"
@@ -69,11 +71,7 @@
 			]
 			disable_toast: true
 			id: "39A04E694747714D"
-			rewards: [{
-				id: "56897DF5637F6E91"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "5C585188F64F54CC"
 				item: "gtceu:energetic_alloy_ingot"
@@ -90,12 +88,9 @@
 				""
 				"&2In EV Age, you can build an Alloy Blast Smelter which doubles the yield."
 			]
+			disable_toast: true
 			id: "47BBC84E7CB9874F"
-			rewards: [{
-				id: "608EBD7C1446D580"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "0309AF57DFC8E9CE"
 				item: "gtceu:vibrant_alloy_ingot"
@@ -118,6 +113,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "552C09235D8FE4F1"
 				item: "thermal:dynamo_numismatic"
@@ -136,6 +132,7 @@
 			]
 			disable_toast: true
 			id: "3F62C4BB7F36BC98"
+			shape: "hexagon"
 			tasks: [{
 				id: "2F5D362FB00827E4"
 				item: "gtceu:mv_chemical_reactor"
@@ -165,6 +162,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "255142F1CEAD1AEA"
 				item: "kubejs:resonant_clathrate"
@@ -182,6 +180,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "4E993E92512B1386"
@@ -208,6 +207,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "39BB37A04BD2A17D"
@@ -270,6 +270,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "392C69C0A027A256"
@@ -387,6 +388,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "26B7583E7E5E6B17"
 				item: "hostilenetworks:overworld_prediction"
@@ -409,6 +411,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "6C1AAFF54A2ADB45"
 				item: "hostilenetworks:nether_prediction"
@@ -427,6 +430,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "561690BFD67351E7"
 				item: "hostilenetworks:end_prediction"
@@ -446,6 +450,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "4F5F5198F39BABCA"
@@ -528,6 +533,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "0E87A07E1757F58F"
 				item: "telepastries:nether_cake"
