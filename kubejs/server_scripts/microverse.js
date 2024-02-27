@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
             G: 'kubejs:basic_micro_miner_guidance_system',
             L: 'kubejs:basic_mining_laser',
             A: 'gtceu:lv_field_generator',
-            T: 'ironjetpacks:thruster', // TODO: remember how to do nbt and make these thrusters actual thrusters
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:conductive_iron"}').strongNBT(), 
             M: 'gtceu:lv_combustion'
         }
     )
@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
             B: 'gtceu:lv_field_generator',
             F: 'thermal:fluid_cell_frame', // TODO: Rename frames
             C: 'gtceu:mv_combustion',
-            T: 'ironjetpacks:thruster'
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:electrical_steel"}').strongNBT()
         }, 2
     )
 
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
             L: 'kubejs:reinforced_mining_laser',
             F: 'thermal:fluid_cell_frame',
             C: 'gtceu:hv_combustion',
-            T: 'ironjetpacks:thruster'
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Reinforced"}').strongNBT()
         }, 3
     )
 
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:tungsten_steel_crate',
             B: 'gtceu:hv_field_generator',
             F: 'thermal:energy_cell_frame',
-            T: 'ironjetpacks:thruster',
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Energetic"}').strongNBT(),
             D: 'thermal:dynamo_magmatic' // TODO: replace with reactant dynamo when possible
         }, 3
     )
@@ -108,9 +108,9 @@ ServerEvents.recipes(event => {
             A: 'gtceu:ev_field_generator',
             B: 'gtceu:mv_super_chest',
             F: 'thermal:energy_cell_frame',
-            C: 'minecraft:bedrock', // TODO: replace with fission reactor when NC is readded
-            P: 'minecraft:bedrock', // Same but fission port
-            T: 'ironjetpacks:thruster'
+            C: 'kubejs:nuclearcraft_fission_reactor', // TODO: REPLACE WITH REAL NC COMPONENT
+            P: 'kubejs:nuclearcraft_fission_reactor_port', // TODO: REPLACE WITH REAL NC COMPONENT
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Vibrant"}').strongNBT()
         }, 3
     )
 
@@ -131,9 +131,9 @@ ServerEvents.recipes(event => {
             A: 'gtceu:mv_super_chest',
             F: 'thermal:energy_cell_frame', // TODO: this should be a third tier of frame
             B: 'gtceu:iv_field_generator',
-            C: 'minecraft:bedrock', // Fission reactor
-            P: 'minecraft:bedrock', // Fission port
-            T: 'ironjetpacks:thruster'
+            C: 'kubejs:nuclearcraft_fission_reactor', // TODO: REPLACE WITH REAL NC COMPONENT
+            P: 'kubejs:nuclearcraft_fission_reactor_port', // TODO: REPLACE WITH REAL NC COMPONENT
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Resonant"}').strongNBT()
         }, 3
     )
 
@@ -152,9 +152,9 @@ ServerEvents.recipes(event => {
             L: 'kubejs:supercharged_laser_array',
             D: 'gtceu:double_draconium_plate',
             G: 'kubejs:advanced_micro_miner_guidance_system',
-            P: 'minecraft:bedrock', // TODO: replace with DE particle generator
+            P: 'kubejs:draconic_evolution_particle_generator', // TODO: REPLACE WITH REAL DE COMPONENT
             A: 'gtceu:luv_field_generator',
-            E: 'minecraft:bedrock', // DE ender energy manipulator
+            E: 'kubejs:draconic_evolution_ender_energy_manipulator', // TODO: REPLACE WITH REAL DE COMPONENT
             W: 'kubejs:warp_engine'
         }, 4
     )
@@ -179,8 +179,8 @@ ServerEvents.recipes(event => {
             I: 'gtceu:double_iridium_plate',
             A: 'gtceu:hv_super_chest',
             B: 'gtceu:zpm_field_generator',
-            D: 'minecraft:bedrock', // TODO: replace with warp core
-            M: 'minecraft:bedrock', // Warp Monitor
+            D: 'kubejs:advanced_rocketry_warp_core', // TODO: REPLACE WITH REAL AR COMPONENT
+            M: 'kubejs:advanced_rocketry_warp_controller', // TODO: REPLACE WITH REAL AR COMPONENT
             E: 'kubejs:warp_engine'
         }, 4
     )
@@ -203,8 +203,8 @@ ServerEvents.recipes(event => {
             U: 'kubejs:universal_navigator',
             A: 'gtceu:uv_field_generator',
             B: 'gtceu:ev_super_chest',
-            R: 'minecraft:bedrock', // TODO: DE reactor component
-            C: 'minecraft:bedrock', // Reactor core
+            R: 'kubejs:draconic_evolution_reactor_stabilizer', // TODO: REPLACE WITH THE REAL DE COMPONENT
+            C: 'kubejs:draconic_evolution_reactor_core', // TODO: REPLACE WITH THE REAL DE COMPONENT
             W: 'kubejs:warp_engine'
         }
     )
@@ -225,9 +225,9 @@ ServerEvents.recipes(event => {
         ], {
             N: 'gtceu:double_neutronium_plate',
             U: 'kubejs:universal_navigator',
-            C: 'minecraft:bedrock', // TODO: DE reactor core
-            P: 'minecraft:bedrock', // Neutronium Solar Panel
-            R: 'minecraft:bedrock', // Reactor component
+            C: 'kubejs:draconic_evolution_reactor_core', // TODO: REPLACE WITH THE REAL DE COMPONENT
+            P: 'solarflux:sp_avaritia.neutronium',
+            R: 'kubejs:draconic_evolution_reactor_stabilizer', // TODO: REPLACE WITH THE REAL DE COMPONENT
             A: 'gtceu:iv_quantum_chest',
             W: 'kubejs:warp_engine'
         }

@@ -168,6 +168,7 @@
 			]
 			icon: "gtceu:tiny_gallium_arsenide_dust"
 			id: "61AD3760E271B431"
+			shape: "hexagon"
 			tasks: [{
 				id: "5E6A27EC5AF00A4B"
 				type: "checkmark"
@@ -191,6 +192,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "6B2421DDCE5F8C75"
 				item: {
@@ -239,6 +241,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "2125B9BDF4FD7904"
 				item: "gtceu:gallium_arsenide_dust"
@@ -269,8 +272,8 @@
 				type: "item"
 			}]
 			title: "Meteorite Hunter"
-			x: 9.0d
-			y: 1.0d
+			x: 6.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["517A89E954C7EA74"]
@@ -281,6 +284,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "3F39E9B829DAE2F2"
 				item: "gtceu:mv_atomic_reconstructor"
@@ -312,7 +316,7 @@
 				item: "enderio:enchanter"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 8.5d
 			y: -1.0d
 		}
 		{
@@ -328,6 +332,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "7FB518F0E0CE601E"
 				item: "gtceu:silicon_boule"
@@ -354,6 +359,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "45C8C466D93D048F"
 				item: "gtceu:silicon_wafer"
@@ -382,6 +388,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "7263ADE06351D41D"
 				item: "gtceu:mv_cutter"
@@ -412,6 +419,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "08336DC0C42C1DC7"
@@ -441,6 +449,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "4E0709ABB3A4680B"
 				item: "gtceu:mv_laser_engraver"
@@ -463,6 +472,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "4EC114672D703667"
 				item: "gtceu:mv_emitter"
@@ -485,6 +495,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "374764695C1CE305"
 				item: "gtceu:red_glass_lens"
@@ -495,6 +506,7 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["1D95AC7CAC7D5121"]
 			description: [
 				"The &3Chemical Bath&r is mainly used as an ore processing machine to extract byproducts from specific &6Crushed Ores&r with either &9Sodium Persulfate&r or &9Mercury&r. It can also dye items, as well as perform some specialised processes."
 				""
@@ -502,12 +514,14 @@
 				""
 				"Are you facing a shortage of &6Gold&r? This can net you some extra Gold by bathing &6Crushed Ores&r in &9Mercury&r, or &6Crushed Iron Ore&r in &9Sodium Persulfate&r."
 			]
+			hide_dependency_lines: true
 			id: "09A389EC37805A0A"
 			rewards: [{
 				id: "75DC3EB5DFF16867"
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "32EC35083D4C7C82"
 				item: "gtceu:mv_chemical_bath"
@@ -535,6 +549,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "22E54D54259A247A"
 				item: "gtceu:kanthal_ingot"
@@ -560,6 +575,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "1E20421B7F182541"
 				item: "gtceu:vanadium_steel_ingot"
@@ -594,6 +610,7 @@
 				item: "kubejs:nomi_dollar"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "79B79F111C73C76E"
@@ -633,6 +650,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "4419A85563C11EB3"
@@ -657,6 +675,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "4EAF3DDFCD0B6CC9"
@@ -679,6 +698,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "1A75AC8DC6ABF569"
 				item: "gtceu:mv_mixer"
@@ -701,9 +721,10 @@
 			id: "1D95AC7CAC7D5121"
 			rewards: [{
 				id: "16FADFA7B37804E4"
-				item: "kubejs:nomi_nickel"
+				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "0792D3F06F03F6DB"
@@ -725,6 +746,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "768DB070EA8F5B25"
 				item: "gtceu:diode"
@@ -750,6 +772,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "69AA06301D6F129B"
@@ -808,6 +831,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "11511AE6B55626FB"
 				item: "gtceu:mv_extruder"
@@ -830,6 +854,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "064E42CEB175552C"
 				item: "gtceu:phenolic_printed_circuit_board"
@@ -855,6 +880,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "49F6E02DD39F9B85"
 				item: "gtceu:phenolic_circuit_board"
@@ -872,6 +898,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "0F8637A79E4018DE"
 				item: "gtceu:lv_chemical_reactor"
@@ -894,12 +921,14 @@
 				""
 				"&2As stated in the tooltip, higher tier coils will make this faster."
 			]
+			icon: "gtceu:pyrolyse_oven"
 			id: "2C74A67552A7DC3D"
 			rewards: [{
-				id: "4E55A922E481DBE4"
-				item: "kubejs:nomi_quarter"
+				id: "3CF93D77E3A403B6"
+				item: "minecraft:polished_diorite"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "0878305C3DB1D708"
@@ -973,6 +1002,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "678C2DC44ECEC7D1"
 				item: "gtceu:sodium_persulfate_bucket"
@@ -1003,6 +1033,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "50921E36B3A588F6"
@@ -1034,6 +1065,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "7A8C8FD7EA66D590"
@@ -1053,6 +1085,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "306711569FD0B84D"
 				item: "gtceu:lv_emitter"
@@ -1094,6 +1127,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "1428CB17E9BF4E5C"
 				item: "gtceu:basic_integrated_circuit"
@@ -1121,6 +1155,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "4C8A9840DD4A970E"
 				item: "gtceu:mv_energy_input_hatch"
@@ -1131,13 +1166,16 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["1D95AC7CAC7D5121"]
 			description: ["&2With the MV Assembling Machine, you can assemble a few necessary parts for the next Circuit tier."]
+			hide_dependency_lines: true
 			id: "2C6BEB5BBE5A91DC"
 			rewards: [{
 				id: "319DE2BCED6B7457"
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "495FB1B792F34BE5"
 				item: "gtceu:mv_assembler"
@@ -1167,6 +1205,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				count: 16L
 				id: "00D5958543D7BBE6"
@@ -1184,6 +1223,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "5F5C08701D516EA3"
 				item: "gtceu:silicon_ingot"
@@ -1209,6 +1249,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "6B68D20D0B8C8886"
 				item: "gtceu:transistor"
@@ -1227,6 +1268,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "00D14EE88E380460"
 				item: "gtceu:good_integrated_circuit"
@@ -1255,6 +1297,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "230F287286C582EB"
@@ -1284,6 +1327,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
@@ -1310,6 +1354,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "0676AE8DAE7AAF77"
@@ -1333,6 +1378,7 @@
 				item: "kubejs:nomi_dollar"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "6E6B85ED9264F8CE"
@@ -1368,6 +1414,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
@@ -1430,6 +1477,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "6A14C9BD20667774"
@@ -1462,6 +1510,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "60B80BCC6DB1BE0A"
@@ -1487,6 +1536,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "7E297FE5F2C0019A"
 				item: "gtceu:polyethylene_plate"
@@ -1512,6 +1562,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "7766ABA36439522B"
 				item: "gtceu:capacitor"
@@ -1538,6 +1589,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "7D4CA81897436591"
@@ -1564,6 +1616,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "4DCAB0C482474942"
@@ -1587,6 +1640,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "464ECF2573D7C72D"
 				item: "gtceu:plastic_printed_circuit_board"
@@ -1609,6 +1663,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "23C8E19877C450E6"
 				item: "gtceu:energy_crystal"
@@ -1627,6 +1682,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "6A35A6FEE154B3F9"
@@ -1650,6 +1706,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "7819AF44A918EC8E"
 				item: "gtceu:hv_energy_input_hatch"
@@ -1672,6 +1729,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "778C1437764DF9E9"
 				item: "gtceu:sodium_potassium_bucket"
@@ -1707,6 +1765,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "23590179340FDEBD"
@@ -1771,6 +1830,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "square"
 			tasks: [{
 				count: 2L
 				id: "7CF5D94575393BCF"
@@ -1803,6 +1863,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "5744E29C138E876A"
 				item: "gtceu:polyvinyl_chloride_plate"
@@ -1833,6 +1894,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "476704217FDC81A0"
@@ -1848,7 +1910,7 @@
 			description: [
 				"&6Sulfur&r will be used in a variety of upcoming chemical reactions."
 				""
-				"It can be electrolyzed easily from &6Sphalerite&r (which also provides &6Gallium&r), &6Cinnabar&r, and &6Pyrite&r. Alternately, Sulfur can be acquired through &bDeep Mob Evolution&r- look into that quest line if you haven't already."
+				"It can be electrolyzed easily from &6Sphalerite&r (which also provides &6Gallium&r), &6Cinnabar&r, and &6Pyrite&r. Alternately, Sulfur can be acquired through &bHNN&r- look into that quest line if you haven't already."
 			]
 			id: "0E010F5348FC89BF"
 			rewards: [{
@@ -1856,6 +1918,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "13B36FBF7AB99852"
 				item: "gtceu:sulfur_dust"
@@ -1874,12 +1937,14 @@
 				""
 				"The Brewery is a very very slow machine, but it requires almost no power. Building &2many Breweries&r is necessary to brew enough Biomass for plastics. &2An alternative and more resource efficient way of making biomass is with a Pyrolyse Oven, Water, and Bio Chaff."
 			]
+			icon: "gtceu:mv_brewery"
 			id: "383FADC5E8BC4E91"
 			rewards: [{
 				id: "6B30FA728917F1B8"
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "45EF5902181733A9"
 				item: {
@@ -1917,6 +1982,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "06864115DFFF1EDD"
 				item: "gtceu:mv_chemical_reactor"
@@ -1939,12 +2005,9 @@
 				""
 				"The exact implementation is up to you. Make use of the various LV and MV machines you have, and look through &bJEI&r and the Processing Lines Tab for the ways to get infinite sources of each ingredient (like &aEnderman Models&r for pearls)."
 			]
+			disable_toast: true
 			id: "0C10EC03A01E7334"
-			rewards: [{
-				id: "7A5F2442C6AC28E9"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "5326C255DC39819A"
 				item: "kubejs:resonant_clathrate"
@@ -1970,6 +2033,7 @@
 			]
 			icon: "gtceu:mv_electric_pump"
 			id: "1D0DF2330B113B7A"
+			shape: "hexagon"
 			tasks: [{
 				id: "516FB95F4092E0AB"
 				type: "checkmark"
@@ -1997,6 +2061,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "036F1F8553EEC984"
 				item: {
@@ -2065,6 +2130,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "4787CC8A2A2100FB"
 				item: "gtceu:chlorine_bucket"
@@ -2187,6 +2253,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [
 				{
@@ -2229,6 +2296,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "21F654243353EECC"
@@ -2254,6 +2322,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "75E2B7E59A591067"
 				item: "gtceu:inductor"
@@ -2274,6 +2343,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "69E98DD72804DC5B"
 				item: "gtceu:micro_processor_assembly"
@@ -2290,7 +2360,9 @@
 				""
 				"&2In EV Age, you can build an Alloy Blast Smelter which doubles the yield."
 			]
+			disable_toast: true
 			id: "0A65FC6D798ABFC5"
+			shape: "hexagon"
 			tasks: [{
 				id: "1920D5C56E94AE17"
 				item: "gtceu:vibrant_alloy_ingot"
@@ -2390,12 +2462,9 @@
 				""
 				"Just like other &bThermal Expansion&r dynamos, the &6Numismatic Dynamo&r can be given tier upgrades to produce more power and gain access to more &aAugment Slots&r."
 			]
+			disable_toast: true
 			id: "2F538E24FE66CD14"
-			rewards: [{
-				id: "367C1D1BAB5C5E16"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "25F41D2CDC426E5A"
@@ -2418,6 +2487,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "5471C4A062CF95A9"
 				item: "enderio:octadic_capacitor"
@@ -2435,6 +2505,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "rectangle"
 			tasks: [{
 				id: "3959B38E4D99E1BC"
 				item: {
@@ -2467,6 +2538,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "5C5170A07C454E7A"
 				item: "enderio:double_layer_capacitor"
@@ -2509,6 +2581,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "square"
 			tasks: [{
 				id: "0C7F0E53B07D41FF"
 				item: "enderio:advanced_capacitor_bank"
@@ -2539,28 +2612,44 @@
 			y: 26.5d
 		}
 		{
+			dependencies: ["1BC6DDC2D50F9C46"]
+			description: [
+				"Overclocking aside, as you continue to progress in &5Nomifactory&f, materials made in the &3Electric Blast Furnace&f will take longer to complete. &eMore advanced coils allow for the furnace to &eget hot enough to process more advanced materials&f, &2and they also granting energy efficiency bonuses and speed bonuses to overclocking.&r"
+				""
+				"Despite this, you'll still need to continually expand your smelting and power generation infrastructure."
+				""
+				"You don't have to get all four of these Electric Blast Furnaces completed and running just yet, but be prepared to make many of them over the course of the pack."
+				""
+				"&2As a reminder, all blocks and hatches can be shared across EBFs, except Maintenance!"
+			]
 			id: "508452E1A3E09B56"
 			rewards: [{
 				id: "4B8C70D4E2DB2E1B"
-				item: "kubejs:nomi_nickel"
+				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
+				count: 4L
 				id: "2665B99B9AC8965C"
 				item: "gtceu:electric_blast_furnace"
 				type: "item"
 			}]
+			title: "&2More Blast Furnaces"
 			x: -6.75d
 			y: 8.75d
 		}
 		{
+			dependencies: ["5C4E189A3E401566"]
+			description: ["WIP"]
 			id: "436F16CC68B39E7C"
 			rewards: [{
 				id: "6D193E4020E1280A"
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "48F41C90D60CC12B"
@@ -2573,32 +2662,44 @@
 				}
 				type: "item"
 			}]
+			title: "Farming"
 			x: -6.75d
 			y: 6.75d
 		}
 		{
+			dependencies: ["3EDD0A986384F2A7"]
+			description: [
+				"Now that you have a &3Wiremill&f and a &2Bending Machine&f, you can consider starting to do &eBounties&f. The &6Bounty Board&f has a global inventory containing quests to turn in specific items in exchange for &dNomicoins&f. These quests have a fairly short duration, so make sure to &estockpile the items&f that come up on them or else they'll &cexpire before you can complete them&f."
+				""
+				"With renewable &dNomicoins&f, you should feel free to spend the ones you have on whatever you need. &aSpend your coins!"
+			]
 			id: "652E049DF60C5174"
 			rewards: [{
 				id: "0BF61AE5C02F99B4"
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "109FDF7F3C6F833A"
 				item: "bountiful:bountyboard"
 				type: "item"
 			}]
+			title: "&2Bounties For Nomicoins!"
 			x: -6.75d
 			y: 4.75d
 		}
 		{
+			dependencies: ["356DA8DE256356B8"]
+			description: ["Same deal as Hardened Components, but even faster."]
 			id: "41501AC2D3FC70AD"
 			rewards: [{
 				id: "6E444F028048555A"
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "766BCD7A512CEFA3"
@@ -2609,18 +2710,47 @@
 			y: 2.75d
 		}
 		{
+			dependencies: ["6A914B240E1A7BCB"]
+			description: [
+				"&eSuperconductor wires also won't kill you when touched now. In fact, you have to use Wires for Superconductors, because they don't even have cables!"
+				""
+				"&bEnderIO&r and &bThermal&r alloys are a bit more expensive than the normal wires, but they come with the huge advantage of being &2superconductors&r. Lossy cables like &6Tin&r and &6Copper&r will bleed out energy for every block they travel, but &2superconductors&r do not."
+				""
+				"The &2cheap superconductors&r for each tier are:"
+				""
+				"LV - Conductive Iron"
+				"MV - Energetic Alloy"
+				"HV - Vibrant Alloy"
+				"EV - End Steel"
+				"IV - Lumium "
+				"LuV - Signalum "
+				"ZPM - Enderium "
+				"UV - Draconium "
+				"MAX - &2Draconic Superconductor&r, Omnium"
+				""
+				"&2There are an additional set of superconductors, one for each tier, which are the CEu default superconductors. Their advantage is their higher amperage rating, reaching the hundreds of amps for higher tier 16x wires. They are also used in crafting Field Generators. They are:"
+				""
+				"LV - Manganese Phosphide"
+				"MV - Magnesium Diboride"
+				"HV - Mercury Barium Calcium Cuprate"
+				"EV - Uranium Triplatinum"
+				"IV - Samarium Iron Arsenic Oxide"
+				"LuV - Indium Tin Barium Titanium Cuprate"
+				"ZPM - Uranium Rhodium Dinaquadide"
+				"UV - Enriched Naquadah Trinium Europium Duranide"
+				"UHV - Ruthenium Trinium Americium Neutronate&r"
+				"&r"
+				"MV and higher cables are made in an &3Assembling Machine&r, with liquid &9Rubber&r and &6Wires&r. &2Keep in mind that you can't combine cables into thicker cables, so you have to make the thickness of cables that you will use."
+			]
+			icon: "gtceu:energetic_alloy_octal_wire"
 			id: "2861BA7C235C52A3"
-			rewards: [{
-				id: "4C849EA8D6914B2D"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
-				id: "3C4B3B17E175C6FA"
-				item: "gtceu:energetic_alloy_octal_wire"
-				type: "item"
+				id: "7A50024966E38151"
+				type: "checkmark"
 			}]
+			title: "&2Lossless Cables"
 			x: -6.75d
 			y: 0.75d
 		}
