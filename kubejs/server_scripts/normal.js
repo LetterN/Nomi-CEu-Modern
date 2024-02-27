@@ -267,7 +267,7 @@ ServerEvents.recipes(event => {
     */
 
     event.recipes.extendedcrafting.shaped_table(
-        "ae2:creative_item_cell", [
+        'gtceu:creative_chest', [
             'ABBBBBBBA',
             'BCTEDETCB',
             'BFSGHGSFB',
@@ -287,13 +287,13 @@ ServerEvents.recipes(event => {
             G: "minecraft:bedrock",
             H: "avaritia:infinity_helmet",
             I: "avaritia:infinity_chestplate",
-            J: "minecraft:bedrock",
+            J: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative",Throttle:1.0d}').strongNBT(),
             K: "avaritia:infinity_sword",
             L: "avaritia:infinity_leggings",
             M: "avaritia:infinity_boots",
             N: "minecraft:bedrock",
             S: "solarflux:sp_avaritia.infinity",
-            T: "ae2:creative_fluid_cell",
+            T: "gtceu:creative_tank",
             U: "ae2:creative_energy_cell",
             W: "minecraft:bedrock",
             X: "minecraft:bedrock"
