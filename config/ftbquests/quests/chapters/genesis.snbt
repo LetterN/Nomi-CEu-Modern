@@ -868,7 +868,13 @@
 			id: "115D2BEB18929C7C"
 			rewards: [{
 				id: "43415141DBD13CDD"
-				item: "gag:no_solicitors"
+				item: {
+					Count: 1b
+					id: "nomowanderer:no_mo_wanderer_totem"
+					tag: {
+						Enabled: 1b
+					}
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -1563,18 +1569,11 @@
 		}
 		{
 			id: "58566C7BF4C22D86"
-			tasks: [
-				{
-					id: "7D456060B7F268D4"
-					item: "jecalculation:item_calculator_craft"
-					type: "item"
-				}
-				{
-					id: "39239FE24C2DF9B1"
-					item: "jecalculation:item_calculator_math"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0AA42BA22D46012E"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
 			title: "Calculators"
 			x: -10.0d
 			y: 1.0d

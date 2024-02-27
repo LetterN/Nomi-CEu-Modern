@@ -67,6 +67,4 @@ ServerEvents.recipes(event => {
             A: 'kubejs:compressed_infinity_dust_block'
         }
     )
-
-event.remove({ output: ["gag:time_sand_pouch"] })
 })
