@@ -1,5 +1,7 @@
 ServerEvents.recipes(event => {
    event.shaped(
+
+    // Space Suit
         '4x kubejs:thermal_cloth', [
             'SSS',
             'SSS',
@@ -92,6 +94,7 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(30)
 
+    // ID Chip
     event.remove({ id: "gcyr:shapeless/id_chip" })
     event.shaped(
         'gcyr:id_chip', [
@@ -105,6 +108,7 @@ ServerEvents.recipes(event => {
             P: 'gtceu:glass_plate'
         })
 
+    // Rocket Scanner
         event.remove({ id: "gcyr:shaped/rocket_scanner" })
         event.recipes.extendedcrafting.shaped_table(
             'gcyr:rocket_scanner', [
@@ -123,6 +127,7 @@ ServerEvents.recipes(event => {
             }, 2
         )
 
+    //Motors and Tanks
         event.shaped(
             'gcyr:basic_rocket_motor', [
                 ' P ',
@@ -143,13 +148,14 @@ ServerEvents.recipes(event => {
                     T: 'enderio:fluid_tank'
                 })
 
-                event.shaped(
-                    '9x gcyr:launch_pad', [
-                        'CCC',
-                        'CCC',
-                        'CCC'
-                    ], {
-                        C: 'gtceu:concrete_dust'
-                    })
+     // Launch Pad           
+            event.shaped(
+                '9x gcyr:launch_pad', [
+                    'CCC',
+                    'CCC',
+                    'CCC'
+                ], {
+                    C: 'gtceu:concrete_dust'
+                })
 
 })
