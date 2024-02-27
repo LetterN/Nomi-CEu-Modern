@@ -62,6 +62,7 @@
 					type: "item"
 				}
 			]
+			shape: "hexagon"
 			size: 2.0d
 			subtitle: "Welcome to Nomifactory: Modern Edition"
 			tasks: [{
@@ -77,6 +78,7 @@
 			can_repeat: true
 			dependencies: ["66FCC26399376B55"]
 			description: ["This quest is repeatable and gives you a free cake to the Void World or Overworld. You can also refill your cakes with the items indicated in their tooltips."]
+			icon: "telepastries:overworld_cake"
 			id: "542F0090D8975D3C"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -155,6 +157,7 @@
 			]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "2E8BFA2E719B1C47"
+			shape: "hexagon"
 			tasks: [
 				{
 					count: 12L
@@ -327,6 +330,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
@@ -480,6 +484,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				count: 3L
 				id: "7BA753DF38DEC329"
@@ -505,6 +510,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "253D34B000F903DD"
 				item: {
@@ -550,6 +556,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "rectangle"
 			tasks: [{
 				id: "14CDC80A449BD388"
 				item: "ironfurnaces:copper_furnace"
@@ -694,6 +701,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "&2Item Pipes are back in GTCEu! They will transport items instantly through them."
 			tasks: [{
 				id: "72798E2CFE3F6FB5"
@@ -888,6 +896,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "2ECEDA36F2ADFDE8"
 				item: "watercondenser:watercondenser"
@@ -913,6 +922,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "rectangle"
 			tasks: [{
 				id: "7B4500A4503F2F6D"
 				item: {
@@ -949,6 +959,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "Before you continue, you'll need access to some more materials."
 			tasks: [
 				{
@@ -1000,11 +1011,10 @@
 				""
 				"One of the remarkable features of JEI is that it's also capable of helping you with recipes. Right-click a crafting table, look up the recipe you need and press the &a[+]&r button: if you have all required items for the recipe, this will put them all into the crafting table for you."
 				""
-				"&2A new mod has been added: JEI Utilities.&r"
-				"This mod stores your 20 most recently seen recipes, and you can use the middle mouse button to move bookmarks around. There are some other features, but these features are probably the most notable and useful."
 			]
-			icon: "minecraft:book"
+			icon: "ftbquests:book"
 			id: "3B200AD6EFF90DFA"
+			shape: "hexagon"
 			subtitle: "&eUSE JEI!!!&r"
 			tasks: [{
 				id: "7449A54608D60DF8"
@@ -1056,6 +1066,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					count: 16L
@@ -1119,6 +1130,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "The most basic tier of &aRF&r energy conduits from &bEnderIO&r."
 			tasks: [{
 				id: "7D0E23630A562F6A"
@@ -1150,6 +1162,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				count: 12L
 				id: "24A84AB536BB27B0"
@@ -1175,6 +1188,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "Your first major crafting project!"
 			tasks: [{
 				id: "78D31068BB10B20B"
@@ -1225,6 +1239,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [
 				{
 					count: 2L
@@ -1265,6 +1280,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "With all of the components made, it's time to craft an &2Electronic Circuit&r."
 			tasks: [
 				{
@@ -1289,6 +1305,7 @@
 			]
 			description: ["A mixture of Clay and Brick produces large quantities of &6Firebricks&r, used in building the &3Primitive Blast Furnace&r. This allows you to make &6Steel&r from &6Wrought Iron&r, which &2forms the basis of LV Machine Hulls&r, and allows you to make &6Belt Pouches&r, for upgrading your &eTool Belt&r."]
 			hide_dependency_lines: true
+			icon: "gtceu:primitive_blast_furnace"
 			id: "747434DD99118DA4"
 			rewards: [{
 				count: 3
@@ -1296,6 +1313,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
@@ -1334,6 +1352,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "3217FC6AD2AFA67A"
 				item: "gtceu:lv_4a_energy_converter"
@@ -1358,6 +1377,7 @@
 			]
 			icon: "gtceu:hpic_wafer"
 			id: "5A94534682807314"
+			shape: "hexagon"
 			tasks: [{
 				id: "60242EACEEB6B6C8"
 				type: "checkmark"
@@ -1390,6 +1410,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "44E7A2BF6528EC4E"

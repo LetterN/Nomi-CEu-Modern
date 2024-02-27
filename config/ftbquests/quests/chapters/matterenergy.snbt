@@ -942,7 +942,7 @@
 					type: "item"
 				}
 			]
-			title: "Automating Extended Crafting"
+			title: "&1Automating Extended Crafting"
 			x: 2.5d
 			y: 11.5d
 		}
