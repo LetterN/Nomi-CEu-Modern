@@ -305,6 +305,21 @@
 				""
 				"&6Wrought Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress. This quest accepts any tool material."
 			]
+			icon: {
+				Count: 1b
+				id: "gtceu:wrought_iron_wire_cutter"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 383
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
 			id: "4FE53F31E68F4C1C"
 			rewards: [{
 				count: 2
@@ -770,6 +785,7 @@
 				""
 				"Pick your poison."
 			]
+			icon: "gtceu:steel_small_fluid_pipe"
 			id: "64AAF0CD958D836A"
 			tasks: [
 				{
