@@ -20,6 +20,8 @@ let reconstructedItems = [
 
 
 ServerEvents.recipes(event => {
+
+    // Reconstruction
     reconstructedItems.forEach(itemPair => {
         event.recipes.gtceu.atomic_reconstruction(itemPair[2])
             .itemInputs(itemPair[0])
@@ -28,6 +30,18 @@ ServerEvents.recipes(event => {
             .EUt(128)
     })
 
+    event.shaped(
+        'gtceu:mv_atomic_reconstructor', [
+            'PPP',
+            'EHE',
+            'PPP'
+        ], {
+            P: 'gtceu:lead_plate',
+            E: 'gtceu:mv_emitter',
+            H: 'gtceu:mv_machine_hull'
+        })
+
+    // Empowerment
     event.recipes.gtceu.empowerment("restonia")
         .itemInputs("gtceu:restonia_block", "gtceu:red_alloy_ingot", "gtceu:almandine_gem", Item.of('gtceu:glass_vial', '{Fluid:{Amount:1000,FluidName:"gtceu:sulfuric_acid"}}').strongNBT(), "extendedcrafting:the_ultimate_component")
         .itemOutputs("gtceu:restonia_empowered_block")
@@ -86,5 +100,22 @@ ServerEvents.recipes(event => {
             V: 'gtceu:vibrant_alloy_plate',
             E: 'kubejs:empowerer_casing'
         })
-
+		
+		// Resonator
+    event.shaped(
+        'gtceu:mv_resonator', [
+            'PVP',
+            'VHV',
+            'PVP'
+        ], {
+            P: 'gtceu:red_alloy_plate',
+            H: 'gtceu:mv_machine_hull',
+            V: 'gtceu:void_gem'
+        })
+		
+    event.recipes.gtceu.resonator('red_coal')
+        .itemInputs('#minecraft:coals')
+        .itemOutputs('gtceu:coal_perfect')
+        .duration(80)
+        .EUt(128)
 })
