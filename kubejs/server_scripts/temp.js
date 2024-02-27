@@ -8,4 +8,17 @@ ServerEvents.recipes(event => {
         .itemOutputs('teleporters:ender_crystal')
         .duration(320)
         .EUt(32)
+
+    event.remove({ output: "thermal:device_water_gen" })
+    event.shaped(
+            "thermal:device_water_gen", [
+                'BBB',
+                'BCB',
+                'BBB'
+            ], {
+                B: "enderio:fused_quartz",
+                C: "watercondenser:watercondenser"
+            }
+        )
+
 })

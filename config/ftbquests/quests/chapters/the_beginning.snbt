@@ -632,27 +632,27 @@
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
-			description: ["mfw no endervior"]
-			icon: "enderio:fused_quartz"
+			description: ["Needs 2 &6Water Source Blocks&r around it to generate water."]
+			icon: {
+				Count: 1b
+				id: "thermal:device_water_gen"
+				tag: { }
+			}
 			id: "46AF35D4EECA5BDB"
 			rewards: [{
 				id: "177319DF620B0BAC"
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
-			tasks: [
-				{
-					count: 8L
-					id: "280F3C72A8B03756"
-					item: { Count: 8b, id: "enderio:fused_quartz" }
-					type: "item"
+			tasks: [{
+				id: "10F80A969FA43359"
+				item: {
+					Count: 1b
+					id: "thermal:device_water_gen"
+					tag: { }
 				}
-				{
-					id: "10F80A969FA43359"
-					item: "watercondenser:watercondenser"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Infiniter Water"
 			x: 1.0357142857142563d
 			y: -0.4761904761904816d
