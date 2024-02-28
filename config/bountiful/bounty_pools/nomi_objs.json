@@ -31,7 +31,7 @@
 				"max": 5
 			},
 			"unitWorth": 20,
-			"rarity": "RARE"
+			"rarity": "UNCOMMON"
 		},
 		"all_obj_ender_widget": {
 			"type": "item",
@@ -51,17 +51,17 @@
 				"max": 5
 			},
 			"unitWorth": 35,
-			"rarity": "RARE"
+			"rarity": "UNCOMMON"
 		},
 		"all_obj_lv_pump": {
 			"type": "item",
-			"content": "gtceu:lv_pump",
+			"content": "gtceu:lv_electric_pump",
 			"amount": {
 				"min": 2,
 				"max": 4
 			},
 			"unitWorth": 10,
-			"rarity": "RARE"
+			"rarity": "UNCOMMON"
 		},
 		"all_obj_lv_robot_arm": {
 			"type": "item",
@@ -71,7 +71,7 @@
 				"max": 4
 			},
 			"unitWorth": 10,
-			"rarity": "RARE"
+			"rarity": "EPIC"
 		},
 		"all_obj_lv_circuit": {
 			"type": "item",
