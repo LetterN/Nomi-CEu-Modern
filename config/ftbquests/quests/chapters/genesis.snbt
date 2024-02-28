@@ -224,10 +224,6 @@
 					}
 					type: "item"
 				}
-				{
-					id: "14A2B3A144A9404C"
-					type: "custom"
-				}
 			]
 			title: "&2Wrenches Galore"
 			x: 0.0d
@@ -640,6 +636,7 @@
 		}
 		{
 			dependencies: ["3969150B59EA38A2"]
+			description: ["At this point you might as well just make a &3Multi Smelter&r."]
 			id: "69E77BD01CFF65EB"
 			invisible: true
 			rewards: [{
@@ -652,6 +649,7 @@
 				item: "ironfurnaces:netherite_furnace"
 				type: "item"
 			}]
+			title: "Furnace v8.0"
 			x: 6.5d
 			y: 11.0d
 		}
@@ -1568,11 +1566,21 @@
 			y: 12.5d
 		}
 		{
+			description: [
+				"This modpack has &aCrafting Calculators&r. It has a steep learning curve, but once you manage to learn how to use it, it's going to be your trusty companion in calculating recipe costs."
+				""
+				"Craft yourself one and hit the book button in the top-left corner for a quick overview of how it works."
+			]
+			icon: "jecalculation:item_calculator_craft"
 			id: "58566C7BF4C22D86"
-			tasks: [{
-				id: "0AA42BA22D46012E"
-				item: "minecraft:barrier"
+			rewards: [{
+				id: "1087EE10B6F84198"
+				item: "jecalculation:item_calculator_craft"
 				type: "item"
+			}]
+			tasks: [{
+				id: "3768A707E0489471"
+				type: "checkmark"
 			}]
 			title: "Calculators"
 			x: -10.0d
@@ -1598,12 +1606,11 @@
 				""
 				"Overall, &bEffortless Building&r is a powerful mod that is very useful for construction. Experiment with it and you'll see how much time it can save you!"
 			]
-			icon: "minecraft:barrier"
+			icon: "effortlessbuilding:reach_upgrade1"
 			id: "0137ECCCD7A11A15"
 			tasks: [{
-				id: "0351F40C63136AD0"
-				item: "minecraft:barrier"
-				type: "item"
+				id: "23ED12507CA3130E"
+				type: "checkmark"
 			}]
 			title: "Effortless Building"
 			x: -10.0d
