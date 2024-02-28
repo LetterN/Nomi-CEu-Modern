@@ -69,6 +69,7 @@
 				id: "6B06F7499D051242"
 				type: "checkmark"
 			}]
+			title: "Resonant Ender"
 			x: -2.5d
 			y: -1.5d
 		}
@@ -135,6 +136,7 @@
 				id: "1BE153396C6622CB"
 				type: "checkmark"
 			}]
+			title: "Concrete"
 			x: 10.0d
 			y: -9.0d
 		}
@@ -209,6 +211,7 @@
 				id: "7070DC4C26103D4B"
 				type: "checkmark"
 			}]
+			title: "Water"
 			x: 8.5d
 			y: -6.0d
 		}
@@ -279,6 +282,7 @@
 				id: "485DD9829B640F9B"
 				type: "checkmark"
 			}]
+			title: "Lava"
 			x: 8.5d
 			y: -3.0d
 		}
@@ -550,6 +554,7 @@
 				id: "7CCFCED8772BF8E6"
 				type: "checkmark"
 			}]
+			title: "Water"
 			x: 3.5d
 			y: -6.0d
 		}

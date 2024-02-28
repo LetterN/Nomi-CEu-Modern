@@ -651,7 +651,7 @@
 			}]
 			title: "Furnace v8.0"
 			x: 6.5d
-			y: 11.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
@@ -717,13 +717,7 @@
 				""
 				"&3Crafting Stations&f are an indispensable tool for batch-crafting. They can save recipes for all the steps in production chains for things like tools, circuits, machine casings, and more. You will want to &emake several of them&r&r for the convenience they offer."
 				""
-				"Each Crafting Station comes with some inventory space for general items, as well as a dedicated row specifically for holding &bGregTech&r tools. In addition, Crafting Stations can &einteract with adjacent inventories&r, so you can keep common materials in a container between them. This includes access points to large virtual inventories, like a &aDrawer Controller&r&r, which you will be able to make later."
-				""
 				"To use the Crafting Station, you must either manually set up a recipe in the pattern area, or click-in a table recipe from &bJEI&r. Place the ingredients inside the Crafting Station or an adjacent container, then you can click the resulting item to craft it. Once an item is crafted, the recipe will appear on the top-right in the history pane. As usual, Shift-clicking the output item will craft up to a stack of it."
-				""
-				"Each Crafting Station will remember &eup to the last nine recipes&r you made in them, which can be recalled by clicking the item in the top-right recipe history pane. Old recipes will be cycled out, so if you want to ensure a recipe doesn't ever get replaced by a different one, &eShift-click the recipe in the history pane to lock it&r."
-				""
-				"The available ingredients from neighboring inventories are visible through the &eStorage&r tab on the Crafting Station, and you can also place items into this tab to send them to available neighboring inventories."
 			]
 			id: "7F291FE6247B57BC"
 			tasks: [{
@@ -926,7 +920,6 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
-			shape: "rectangle"
 			tasks: [{
 				id: "7B4500A4503F2F6D"
 				item: {
@@ -1019,13 +1012,14 @@
 			icon: "ftbquests:book"
 			id: "3B200AD6EFF90DFA"
 			shape: "hexagon"
+			size: 1.5d
 			subtitle: "&eUSE JEI!!!&r"
 			tasks: [{
 				id: "7449A54608D60DF8"
 				type: "checkmark"
 			}]
 			title: "Use JEI! Use JEI! USE. JEI."
-			x: -8.5d
+			x: -9.25d
 			y: -0.5d
 		}
 		{
@@ -1033,8 +1027,6 @@
 				"Open your inventory and look at the top-left corner of the screen. Click the map-looking icon called &eClaimed Chunks&r."
 				""
 				"&6Click a chunk&r to claim it as yours. This will prevent unwanted creeper explosions and other players from interacting with your base."
-				""
-				"&6Shift-left click a claimed chunk&r to load it. This will ensure that the chunk is loaded at all times, even when you're not there. Alternatively, there are &achunk-loading wards&f from &bExtra Utilities&f."
 				""
 				"&eIf you're playing on a server with custom settings, ask the server owner what methods are available&f."
 				""
@@ -1050,7 +1042,7 @@
 			}]
 			title: "Claim Your Chunks and Invite Teammates!"
 			x: -10.0d
-			y: -0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
@@ -1639,7 +1631,7 @@
 		}
 		{
 			description: [
-				"&5Nomi-CEu&r shares an official Discord server with &5Nomifactory&r, which serves as a useful community resource."
+				"&5Nomifactory Modern&r shares an official Discord server with &5Nomifactory&r and &5Nomi-CEu&r, which serves as a useful community resource."
 				""
 				"On the server, there are flowcharts and guides to help you with many parts of the pack, development announcements and more are available in the Nomi-CEu-News channel, and the community helps with tech support questions, and investigates possible bug reports."
 				""
