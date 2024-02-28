@@ -82,5 +82,7 @@
     "material.gtceu.black_quartz": "Black Quartz",
     "material.gtceu.charged_certus_quartz": "Charged Certus Quartz",
     "block.gtceu.empowerment": "Empowerer",
-    "gtceu.empowerment": "Empowerment"
+    "gtceu.empowerment": "Empowerment",
+    "material.gtceu.resonating_redstone": "Resonating Redstone Crystal",
+    "material.gtceu.ender_shard": "Ender Shard"
 }

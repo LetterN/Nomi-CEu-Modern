@@ -37,6 +37,9 @@ StartupEvents.registry('item', event => {
     placeHolder("ender_star");
     placeHolder("endest_star");
     placeHolder("ultimate_generator"); // TODO: I hate this.
+    placeHolder("reactant_dynamo")
+    placeHolder("flight_control_unit")
+    placeHolder("glowstone_elevation_unit")
 })
 
 Platform.mods.kubejs.name = "Nomi Labs"
