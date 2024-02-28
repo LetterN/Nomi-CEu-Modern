@@ -252,30 +252,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["5F688F22A3DB2ADD"]
-			description: [
-				"&bApplied Energistics&r uses &aPresses&r found in mysterious cubes at the heart of meteors as templates for &3Inscribers&r to make &6inscribed circuits&r."
-				""
-				"This compass will lead you to the nearest meteor impact. Use your favorite mining tools to smash through the &6Skystone&r shell and get to the juicy center where the &6Mysterious Cube&r with the plates is found."
-				""
-				"Please note that while they're often in a big crater, the meteors might be buried underground; when the compass is spinning wildly, you're right on top of one."
-			]
-			id: "38ECAF216CD6F84D"
-			rewards: [{
-				id: "4D0594E6E374CF1A"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "7C0D60AB198B2F7A"
-				item: "ae2:meteorite_compass"
-				type: "item"
-			}]
-			title: "Meteorite Hunter"
-			x: 6.5d
-			y: -1.0d
-		}
-		{
 			dependencies: ["517A89E954C7EA74"]
 			description: ["The &3Atomic Reconstructor&r is capable of reconstructing standard materials into special variants."]
 			id: "5F688F22A3DB2ADD"
@@ -292,7 +268,7 @@
 			}]
 			title: "Reconstruction of Atoms"
 			x: 7.5d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5F688F22A3DB2ADD"]
@@ -316,7 +292,7 @@
 				item: "enderio:enchanter"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 9.0d
 			y: -1.0d
 		}
 		{
