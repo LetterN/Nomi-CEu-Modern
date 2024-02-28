@@ -1,7 +1,7 @@
 // /kjs inventory will be your friend.
 
-JEIEvents.hideItems((event) => {
-	//Hides useless items
+REIEvents.hide('item', event => {
+    //Hides useless items
     event.hide(['ae2:vibration_chamber', 'hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper'])
 
     //i really hate these kind of mods
@@ -39,23 +39,26 @@ JEIEvents.hideItems((event) => {
 
     //TelePastries
     event.hide(['telepastries:lost_city_cake', 'telepastries:custom_cake2', 'telepastries:custom_cake3', 'telepastries:twilight_cake'])
+
+    // Gadgets against Grind
+    event.hide('gag:time_sand_pouch')
 })
 
-//REIEvents.removeCategories(event => {
-//    event.remove('minecraft:plugins/tag')
-//    event.remove(['thermal:gourmand_fuel', 'thermal:disenchantement_fuel', 'thermal:lapidary_fuel'])
-//    event.remove(['enderio:alloy_smelting', 'thermal:furnace'])
-//})
+REIEvents.removeCategories(event => {
+    event.remove('minecraft:plugins/tag')
+    event.remove(['thermal:gourmand_fuel', 'thermal:disenchantement_fuel', 'thermal:lapidary_fuel'])
+    event.remove(['enderio:alloy_smelting', 'thermal:furnace'])
+})
 
-//REIEvents.groupEntries(event => {
-//
-//   const useNbt = ['chiselsandbits:block_bit']
-//
-//    useNbt.forEach(id => {
-//        const item = Item.of(id)
-//        const { namespace, path } = Utils.id(item.id)
-//        event.groupSameItem(`kubejs:rei_groups/${namespace}/${path}`, item.name, item)
-//   })
-//
-//
-//})
+REIEvents.groupEntries(event => {
+
+    const useNbt = ['chiselsandbits:block_bit']
+
+    useNbt.forEach(id => {
+        const item = Item.of(id)
+        const { namespace, path } = Utils.id(item.id)
+        event.groupSameItem(`kubejs:rei_groups/${namespace}/${path}`, item.name, item)
+    })
+
+
+})
