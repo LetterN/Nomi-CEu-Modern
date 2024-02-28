@@ -141,7 +141,7 @@
 				title: "Terminal"
 				type: "checkmark"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: -1.5d
 		}
 		{
@@ -928,7 +928,6 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
-			shape: "rectangle"
 			tasks: [{
 				id: "7B4500A4503F2F6D"
 				item: {
@@ -1005,29 +1004,29 @@
 		}
 		{
 			description: [
-				"&bJEI&r stands for &bJust Enough Items&r. It's the list of all items that you see every time you open your inventory. It's the better(tm) recipe book that shows you all available items and recipes in the modpack."
+				"&bEMI&r is the list of all items that you see every time you open your inventory. It's the better(tm) recipe book that shows you all available items and recipes in the modpack. Note that &bEMI&r is based on &bJEI&r, and people tend to use the names interchangably."
 				""
 				"To see it in action, pull up a quest that requires an item of some sort and just click the item!"
 				""
-				"If you want to know how to craft an item, just hover your mouse over it and press &6R&r. JEI will list all available recipes."
+				"If you want to know how to craft an item, just hover your mouse over it and press &6R&r. EMI will list all available recipes."
 				""
 				"If you instead want to know what recipes use an item, hover over it and press &6U&r."
 				""
 				"Hover over an item and press &6A&r to bookmark it. To remove a bookmarked item from the list, press A on the bookmark."
 				""
-				"One of the remarkable features of JEI is that it's also capable of helping you with recipes. Right-click a crafting table, look up the recipe you need and press the &a[+]&r button: if you have all required items for the recipe, this will put them all into the crafting table for you."
-				""
+				"One of the remarkable features of EMI is that it's also capable of helping you with recipes, covered more in the quest to the right."
 			]
 			icon: "ftbquests:book"
 			id: "3B200AD6EFF90DFA"
 			shape: "hexagon"
-			subtitle: "&eUSE JEI!!!&r"
+			size: 1.5d
+			subtitle: "&eUSE EMI!!!&r"
 			tasks: [{
 				id: "7449A54608D60DF8"
 				type: "checkmark"
 			}]
-			title: "Use JEI! Use JEI! USE. JEI."
-			x: -8.5d
+			title: "Use EMI! Use EMI! USE. EMI."
+			x: -10.0d
 			y: -0.5d
 		}
 		{
@@ -1035,8 +1034,6 @@
 				"Open your inventory and look at the top-left corner of the screen. Click the map-looking icon called &eClaimed Chunks&r."
 				""
 				"&6Click a chunk&r to claim it as yours. This will prevent unwanted creeper explosions and other players from interacting with your base."
-				""
-				"&6Shift-left click a claimed chunk&r to load it. This will ensure that the chunk is loaded at all times, even when you're not there. Alternatively, there are &achunk-loading wards&f from &bExtra Utilities&f."
 				""
 				"&eIf you're playing on a server with custom settings, ask the server owner what methods are available&f."
 				""
@@ -1052,7 +1049,7 @@
 			}]
 			title: "Claim Your Chunks and Invite Teammates!"
 			x: -10.0d
-			y: -0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
@@ -1235,8 +1232,6 @@
 				"&2CEu circuit progression means you also have to put wires on your substrates for them to be usable. In this case, use some Fine Copper Wires.&r"
 				""
 				"You'll also need to make &6Vacuum Tubes&f, as well as some primitive &6Resistors&r. &6Paper&r will work as a material for these, for now."
-				""
-				"Make sure to code these recipes into a &3Crafting Station&r... you'll be making a LOT of these things."
 			]
 			icon: "gtceu:resistor"
 			id: "58F9A5310D43A2B0"
@@ -1568,15 +1563,28 @@
 			y: 12.5d
 		}
 		{
+			dependencies: ["3B200AD6EFF90DFA"]
+			description: [
+				"When looking a recipe in EMI, you've likely noticed 3 buttons that appear on each recipe, being &c[❤]&r, &a[┴]&r, and &9[+]&r."
+				""
+				"Let's start with &9[+]&r, as it's the simplest: right-click a crafting table, look up the recipe you need and press the &9[+]&r button: if you have all required items for the recipe, this will put them all into the crafting table for you."
+				""
+				"&c[❤]&r and &a[┴]&r are used in tandem to create &arecipe trees&r. Pressing &a[┴]&r will pull up a &arecipe tree&r for that given item. Pressing &c[❤]&r on a recipe will mark it as the &cdefault recipe&r for that item, and will show that recipe (and the items used to craft it) in &arecipe trees&r. You can then add &cdefault recipes&r for the items used to craft that recipe, repeat ad nauseam. Note that you can click on a item in the &arecipe tree&r and it's recipes will be pulled up."
+				""
+				"In the &arecipe tree&r GUI, you can change the batch size by scrolling on the number to the right of the final result. Finally, and most importantly, you can press the &6Magnifying Glass&r to switch to &6Crafting Tree Mode&r, this will &edisplay the items that you need for every step to craft the number of items that you specified&r in your sidebar, and will dynamically update as you craft items. You can click on these &6Synethic Favorites&r to push the items used to craft said item into the crafting table (or other machine)."
+				""
+				"Also note that EMI will commit &cdefault recipes&r to memory, meaning that as you save more and more recipes, EMI will remember them all, and will automatically use them when you pull up a &arecipe tree&r for any given item. Also, you can change the &cdefault recipe&r for an item, and EMI will automatically update the &arecipe tree&r as well. You can also click the [┴] button found in the bottom left of your screen and it will pull up the &arecipe tree&r GUI as well."
+			]
+			icon: "gtceu:crafting_table_cover"
 			id: "58566C7BF4C22D86"
+			shape: "hexagon"
 			tasks: [{
-				id: "0AA42BA22D46012E"
-				item: "minecraft:barrier"
-				type: "item"
+				id: "17B442D5C3CE847D"
+				type: "checkmark"
 			}]
-			title: "Calculators"
-			x: -10.0d
-			y: 1.0d
+			title: "&1Recipe Trees and Crafting Trees"
+			x: -8.5d
+			y: -0.5d
 		}
 		{
 			description: [
@@ -1598,12 +1606,11 @@
 				""
 				"Overall, &bEffortless Building&r is a powerful mod that is very useful for construction. Experiment with it and you'll see how much time it can save you!"
 			]
-			icon: "minecraft:barrier"
+			icon: "effortlessbuilding:reach_upgrade1"
 			id: "0137ECCCD7A11A15"
 			tasks: [{
-				id: "0351F40C63136AD0"
-				item: "minecraft:barrier"
-				type: "item"
+				id: "34079EBBDAB5AACD"
+				type: "checkmark"
 			}]
 			title: "Effortless Building"
 			x: -10.0d
@@ -1632,7 +1639,7 @@
 		}
 		{
 			description: [
-				"&5Nomi-CEu&r shares an official Discord server with &5Nomifactory&r, which serves as a useful community resource."
+				"&5Nomi Modern&r shares an official Discord server with &5Nomifactory&r and &5Nomi-CEu&r, which serves as a useful community resource."
 				""
 				"On the server, there are flowcharts and guides to help you with many parts of the pack, development announcements and more are available in the Nomi-CEu-News channel, and the community helps with tech support questions, and investigates possible bug reports."
 				""
@@ -1649,8 +1656,8 @@
 				type: "checkmark"
 			}]
 			title: "Discord and GitHub"
-			x: -8.5d
-			y: 4.0d
+			x: -10.0d
+			y: 1.0d
 		}
 		{
 			can_repeat: true
