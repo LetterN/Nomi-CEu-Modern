@@ -305,8 +305,8 @@ ServerEvents.recipes(event => {
                 'minecraft:bedrock', /* DE Magnet */
                 '2x avaritia:crystal_matrix_ingot', /* TODO: replace with plate */
                 '2x gtceu:iv_field_generator',
-                '2x ironjetpacks:thruster',
-                'ironjetpacks:thruster')
+                Item.of('2x ironjetpacks:thruster', '{Id:"ironjetpacks:Fluxed"}').strongNBT(),
+                Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:dark_soularium"}').strongNBT())
     .itemOutputs('kubejs:warp_engine')
     .inputFluids('gtceu:soldering_alloy 1152')
     .duration(1800)

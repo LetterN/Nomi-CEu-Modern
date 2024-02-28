@@ -493,3 +493,16 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     .color(0xACFFC2)
     .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
 })
+
+// Misc
+GTCEuStartupEvents.registry('gtceu:material', event => {
+    event.create('resonating_redstone')
+        .gem()
+        .color(0xA60000)
+        .iconSet(GTMaterialIconSet.FINE)
+    
+    event.create('ender_shard')
+        .gem()
+        .color(0x58998D)
+        .iconSet(GTMaterialIconSet.OPAL)
+})
