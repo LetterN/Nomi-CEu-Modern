@@ -4,8 +4,42 @@ ServerEvents.recipes(event => {
 
     //snad
     event.remove({ output: ["snad:snad", "snad:red_snad"] })
-    event.shapeless('snad:snad', ['compressium:sand_2', 'compressium:sand_2'])
-    event.shapeless('snad:red_snad', ['compressium:redsand_2', 'compressium:redsand_2'])
+    event.shapeless('snad:snad', ['kubejs:double_compressed_sand', 'kubejs:double_compressed_sand'])
+    event.shapeless('snad:red_snad', ['kubejs:double_compressed_red_sand', 'kubejs:double_compressed_red_sand'])
+
+    //snaded sand snad
+    event.shaped("kubejs:compressed_sand", [
+        "AAA",
+        "AAA",
+        "AAA"
+    ], {
+        A: "minecraft:sand"
+    });
+
+    event.shaped("kubejs:double_compressed_sand", [
+        "AAA",
+        "AAA",
+        "AAA"
+    ], {
+        A: "kubejs:compressed_sand"
+    });
+
+    //red snaded red sand red snad
+    event.shaped("kubejs:compressed_red_sand", [
+        "AAA",
+        "AAA",
+        "AAA"
+    ], {
+        A: "minecraft:red_sand"
+    });
+
+    event.shaped("kubejs:double_compressed_red_sand", [
+        "AAA",
+        "AAA",
+        "AAA"
+    ], {
+        A: "kubejs:compressed_red_sand"
+    });
 
     event.shaped(
         'minecraft:nether_star', [
