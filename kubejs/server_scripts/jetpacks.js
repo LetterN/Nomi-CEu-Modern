@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
         I: 'gtceu:dark_soularium_ingot',
         C: 'enderio:draconium_conduit',
         F: 'kubejs:flight_control_unit',
-        T:  Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Vibrant"}').strongNBT()
+        T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Vibrant"}').strongNBT()
     })
 
     // Fluxed
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:resonating_redstone_gem')
         .duration(180)
         .EUt(16)
-    
+
     event.recipes.gtceu.alloy_smelter('resonating_restonia')
         .itemInputs('gtceu:restonia_gem', 'gtceu:ender_shard_gem')
         .itemOutputs('gtceu:resonating_redstone_gem')
@@ -123,4 +123,50 @@ ServerEvents.recipes(event => {
 
     // Battery chain
     // TODO
+
+
+    //Cells
+    event.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:Leadstone"}').strongNBT(), [
+        ' A ',
+        'BCB',
+        'ADA'
+    ], {
+        A: 'minecraft:redstone',
+        B: 'gtceu:lead_ingot',
+        C: 'minecraft:copper_ingot',
+        D: 'gtceu:sulfur_dust'
+    })
+
+    event.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:Hardened"}').strongNBT(), [
+        ' A ',
+        'BCB',
+        'ADA'
+    ], {
+        A: 'minecraft:redstone',
+        B: 'gtceu:invar_ingot',
+        C: Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:Leadstone"}').strongNBT(),
+        D: 'gtceu:tin_ingot'
+    })
+
+    event.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:Reinforced"}').strongNBT(), [
+        ' A ',
+        'BCB',
+        'ADA'
+    ], {
+        A: 'minecraft:redstone',
+        B: 'gtceu:electrum_ingot',
+        C: Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:Hardened"}').strongNBT(),
+        D: '#enderio:fused_quartz'
+    })
+
+    event.shaped(Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:Resonant"}').strongNBT(), [
+        ' A ',
+        'BCB',
+        'ADA'
+    ], {
+        A: 'minecraft:redstone',
+        B: 'gtceu:enderium_ingot',
+        C: Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:Reinforced"}').strongNBT(),
+        D: 'kubejs:pyrotheum_dust'
+    })
 })

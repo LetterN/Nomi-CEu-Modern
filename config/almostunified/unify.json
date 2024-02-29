@@ -116,6 +116,6 @@
         "cucumber:shaped_tag",
         "^gtceu:.*$"
     ],
-    "ignoredRecipes": [],
+    "ignoredRecipes": ["^gtceu:.*$"],
     "itemsHidingJeiRei": true
 }
