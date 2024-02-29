@@ -1,13 +1,13 @@
-<p align="center"><img src="https://github.com/Nomi-CEu/Nomi-CEu/assets/103940576/672808a8-0ad0-4d07-809e-08336a928909" alt="Logo"></p>
-<h1 align="center">Nomifactory CEu</h1>
+<p align="center"><img src="https://cdn.discordapp.com/attachments/1208333401296212029/1212844356671766618/packicon.png?ex=65f35054&is=65e0db54&hm=e0fb5b95cc58967e282a67074650fea049981b7bbae4a61deab1c5ac0e099973&" alt="Logo"></p>
+<h1 align="center">Nomifactory CEu Modern</h1>
 <p align="center"><b><i>Fork of <a href="https://github.com/Nomi-CEu/Nomi-CEu"> Nomifactory CEu</a>, using <a href="https://github.com/GregTechCEu/GregTech-Modern"> GregTech CEu Modern</a> and its related mods.</i></b></p>
 <h1 align="center">
-    <a href="https://github.com/Nomi-CEu/Nomi-CEu-Modern/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Nomi-CEu/Nomi-CEu-Modern?style=for-the-badge&logo=github" alt="License"></a>
+    <a href="https://github.com/Nomi-CEu/Nomi-CEu-Modern/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/Nomi-CEu/Nomi-CEu-Modern?style=for-the-badge&logo=github" alt="License"></a>
     <a href="https://discord.com/invite/zwQzqP8b6q"><img src="https://img.shields.io/discord/927050775073534012?style=for-the-badge&logo=discord&logoColor=%23ffffff&label=discord%20&labelColor=gray&color=%235865F2" alt="Discord"></a>
     <br>
-    <a href="https://www.curseforge.com/minecraft/modpacks/nomifactory-ceu-modern"><img src="https://cf.way2muchnoise.eu/594351.svg?badge_style=for_the_badge" alt="CurseForge"></a>
-    <a href="https://www.curseforge.com/minecraft/modpacks/nomifactory-ceu-modern"><img src="https://cf.way2muchnoise.eu/versions/For%20MC_594351_all.svg?badge_style=for_the_badge" alt="MC Versions"></a>
-    <a href="https://github.com/Nomi-CEu/Nomi-CEu-Modern/releases"><img src="https://img.shields.io/github/downloads/Nomi-CEu/Nomi-CEu/total?sort=semver&logo=github&label=&style=for-the-badge&color=2d2d2d&labelColor=545454&logoColor=FFFFFF" alt="GitHub"></a>
+    <a href="https://www.curseforge.com/minecraft/modpacks/nomifactory-ceu-modern"><img src="https://cf.way2muchnoise.eu/981238.svg?badge_style=for_the_badge" alt="CurseForge"></a>
+    <a href="https://www.curseforge.com/minecraft/modpacks/nomifactory-ceu-modern"><img src="https://cf.way2muchnoise.eu/versions/For%20MC_715572_latest.svg?badge_style=for_the_badge" alt="MC Versions"></a>
+    <a href="https://github.com/Nomi-CEu/Nomi-CEu-Modern/releases"><img src="https://img.shields.io/github/downloads/Nomi-CEu/Nomi-CEu-Modern/total?sort=semver&logo=github&label=&style=for-the-badge&color=2d2d2d&labelColor=545454&logoColor=FFFFFF" alt="GitHub"></a>
 </h1>
 
 ## Features:
