@@ -26,21 +26,6 @@
 			id: "66FCC26399376B55"
 			rewards: [
 				{
-					count: 4
-					id: "2A12A8AF5EA162BA"
-					item: {
-						Count: 1b
-						id: "gtceu:diamond_mining_hammer"
-						tag: {
-							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "031A59BA80B8796A"
 					item: "telepastries:custom_cake"
 					type: "item"
@@ -57,6 +42,33 @@
 						id: "gtceu:prospector.hv"
 						tag: {
 							Charge: 1600000L
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3316656A4E9DA8BF"
+					item: {
+						Count: 1b
+						id: "gtceu:diamond_mining_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								AoEColumn: 1
+								AoELayer: 0
+								AoERow: 1
+								MaxAoEColumn: 1
+								MaxAoELayer: 0
+								MaxAoERow: 1
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 2303
+								ToolSpeed: 6.4f
+							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
