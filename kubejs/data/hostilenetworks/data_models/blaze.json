@@ -1,7 +1,7 @@
 {
     "type": "minecraft:blaze",
     "name": "entity.minecraft.blaze",
-    "name_color": "0xFFD528",
+    "name_color": "0x00FFFFFF",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,

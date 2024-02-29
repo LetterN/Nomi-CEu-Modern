@@ -2,7 +2,7 @@
     "name": "Reinforced",
     "disable": false,
     "tier": 3,
-    "color": "F5D975",
+    "color": "00FFFFFF",
     "armorPoints": 5,
     "enchantability": 0,
     "craftingMaterial": "null",
@@ -22,4 +22,4 @@
     "sprintSpeedMulti": 2.0,
     "sprintSpeedMultiVertical": 1.5,
     "sprintFuelMulti": 0.0
-  }
+}

@@ -357,17 +357,17 @@
 					type: "item"
 				}
 				{
-					id: "576DD12BB7568C8F"
+					id: "4353BDD964D462FA"
 					item: {
 						Count: 1b
 						id: "hostilenetworks:data_model"
 						tag: {
 							data_model: {
+								data: 6
 								id: "hostilenetworks:slime"
 							}
 						}
 					}
-					match_nbt: true
 					type: "item"
 				}
 			]

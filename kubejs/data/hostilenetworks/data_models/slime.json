@@ -6,7 +6,7 @@
         "twilightforest:slime_beetle"
     ],
     "name": "entity.minecraft.slime",
-    "name_color": "0x7BCA62",
+    "name_color": "0x00FFFFFF",
     "gui_scale": 2,
     "gui_x_offset": 0,
     "gui_y_offset": 0,

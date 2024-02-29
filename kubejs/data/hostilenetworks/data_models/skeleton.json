@@ -4,7 +4,7 @@
         "minecraft:stray"
     ],
     "name": "entity.minecraft.skeleton",
-    "name_color": "0xBCBCBC",
+    "name_color": "0x00FFFFFF",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,

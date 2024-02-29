@@ -18,7 +18,7 @@
         "creeperoverhaul:swamp_creeper"
     ],
     "name": "entity.minecraft.creeper",
-    "name_color": "0x70DC5D",
+    "name_color": "0x00FFFFFF",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
