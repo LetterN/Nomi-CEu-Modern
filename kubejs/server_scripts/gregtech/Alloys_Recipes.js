@@ -91,4 +91,21 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(15)
 
+        event.recipes.gtceu.mixer("vibrant_alloy")
+        .itemInputs('gtceu:energetic_alloy_dust', 'gtceu:ender_pearl_dust')
+        .itemOutputs('gtceu:vibrant_alloy_dust')
+        .duration(200)
+        .EUt(30)
+
+        event.recipes.gtceu.mixer("energetic_alloy")
+        .itemInputs('2x gtceu:gold_dust', 'minecraft:redstone', 'minecraft:glowstone_dust')
+        .itemOutputs('2x gtceu:energetic_alloy_dust')
+        .duration(200)
+        .EUt(30)
 })
+
+
+ServerEvents.recipes(event => {
+    event.remove({ id: /thermal:[A-Za-z]+_dust_/ })
+    event.remove({ id: /thermal:fire_charge/ })
+    })
