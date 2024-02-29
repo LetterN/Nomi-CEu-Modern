@@ -90,6 +90,9 @@
   "expatternprovider": {
     "jade_wireless": true
   },
+  "waystones": {
+    "waystone": true
+  },
   "telepastries": {
     "bites": true
   },

@@ -1055,8 +1055,8 @@
 		}
 		{
 			dependencies: ["131EAE1541E9C780"]
-			description: ["&6Right click&r a block with an &6Ender Crystal&r to bind the crystal to said block, then place the crystal into the &6Teleporter&r. Then,&6 crouch&r on the teleporter to teleport to that block."]
-			icon: "teleporters:teleporter"
+			description: ["Place down a &6Waystone&r and set a memorable name and enable &6Global&r if you want other players to access it, in order to be able to easily warp to that location, either using a &6Warp Scroll&r, a &6Warp Stone&r or a second Waystone."]
+			icon: "waystones:waystone"
 			id: "5EB185AD9BD0D069"
 			rewards: [{
 				id: "57F0241771210D36"
@@ -1064,21 +1064,13 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [
-				{
-					count: 2L
-					id: "43DAD243F51574B2"
-					item: "teleporters:teleporter"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "651C47D102F489A7"
-					item: "teleporters:ender_crystal"
-					type: "item"
-				}
-			]
-			title: "Thinking with Teleporters"
+			tasks: [{
+				count: 2L
+				id: "60BBF5D0DFEB3B9A"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			title: "Thinking with Waystones"
 			x: 9.0d
 			y: -6.0d
 		}
