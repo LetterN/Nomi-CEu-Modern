@@ -2,7 +2,7 @@
     "name": "Fluxed",
     "disable": false,
     "tier": 5,
-    "color": "FFE714",
+    "color": "00FFFFFF",
     "armorPoints": 5,
     "enchantability": 0,
     "craftingMaterial": "null",
@@ -22,4 +22,4 @@
     "sprintSpeedMulti": 2.0,
     "sprintSpeedMultiVertical": 1.5,
     "sprintFuelMulti": 0.0
-  }
+}

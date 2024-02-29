@@ -149,7 +149,6 @@ StartupEvents.registry('item', event => {
     event.create('thermal:upgrade_augment_3').displayName("Resonant Integral Components")
     event.create('kubejs:redstone_transmission_coil')
 
-
 })
 
 
