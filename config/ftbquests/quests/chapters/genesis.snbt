@@ -142,7 +142,7 @@
 				type: "checkmark"
 			}]
 			x: 1.5d
-			y: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -636,7 +636,7 @@
 		}
 		{
 			dependencies: ["3969150B59EA38A2"]
-			description: ["At this point you might as well just make a &3Multi Smelter&r."]
+			description: ["At this point, you might as well just make a &3Multi Smelter&r."]
 			id: "69E77BD01CFF65EB"
 			invisible: true
 			rewards: [{
@@ -1726,6 +1726,27 @@
 			}]
 			x: -8.0d
 			y: 1.0d
+		}
+		{
+			description: [
+				"This pack is in &eAlpha&r. Issues are to be expected at this stage of development."
+				""
+				"If you find something broken/missing/etc, make an issue on the &5Nomifactory Modern&r repository, or submit a Pull Request to fix it yourself."
+				""
+				"Currently known issues are:"
+				""
+				"Gregtech will hide recipes from JEI/etc if you attempt to hide an item from it's tag. Until this is fixed, these duplicate items will remain in JEI."
+			]
+			icon: "thermal:nuke_tnt"
+			id: "2A511DB40C66CF35"
+			tasks: [{
+				id: "32200D360A0E185A"
+				item: "thermal:nuke_tnt"
+				type: "item"
+			}]
+			title: "&1This pack is in alpha!"
+			x: 1.5d
+			y: -2.0d
 		}
 	]
 	title: "Genesis"

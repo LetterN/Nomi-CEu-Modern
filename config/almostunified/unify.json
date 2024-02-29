@@ -117,5 +117,5 @@
         "^gtceu:.*$"
     ],
     "ignoredRecipes": ["^gtceu:.*$"],
-    "itemsHidingJeiRei": true
+    "itemsHidingJeiRei": false
 }
