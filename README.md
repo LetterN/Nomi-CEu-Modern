@@ -11,7 +11,7 @@
 </h1>
 
 ## Features:
-
+-Modpack still in the middle of Dev
 ## Contributing and Maintainer Information
 This is available on our [wiki](https://github.com/Nomi-CEu/Nomi-CEu/wiki).
 
