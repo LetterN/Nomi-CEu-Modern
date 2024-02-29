@@ -82,4 +82,6 @@ ServerEvents.recipes(event => {
             }
         )
     })
+
+    event.remove({ id: 'gtceu:assembler/phenolic_board' })
 })
