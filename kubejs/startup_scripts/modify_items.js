@@ -8,7 +8,8 @@ ItemEvents.modification(event => {
         'gtceu:dark_soularium_block',
         'gtceu:dark_soularium_ingot',
         'gtceu:small_dark_soularium_dust',
-        'hostilenetworks:prediction'
+        'hostilenetworks:prediction',
+        /empowered/
     ];
 
     itemsToModify.forEach(itemName => {
