@@ -253,4 +253,20 @@ ServerEvents.recipes(event => {
     .itemOutputs('enderio:infinity_rod')
     .duration(200)
     .EUt(30)
+
+    // Enchanter
+    event.remove({ output: ['enderio:enchanter'] })
+    event.shaped(
+        'enderio:enchanter', [
+            'DCD',
+            'BBB',
+            ' A '
+        ], {
+            A: 'gtceu:void_block',
+            B: 'gtceu:dark_steel_ingot',
+            C: 'minecraft:book',
+            D: 'minecraft:diamond'
+        }
+    )
+
 })

@@ -42,6 +42,7 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('enderio:draconic_superconductor_conduit', '\u00A77Max Output 134,217,728 RF/t')
 
     tooltip.add("thermal:device_rock_gen", "\u00A77Must be placed next to lava and water to produce cobblestone.")
+    tooltip.add("thermal:device_water_gen", "\u00A77Must be placed next to two water source blocks to work.")
 
     // Backpacks, this extra bit of code will made it so that this line will be the first line displayed after the item name (if curios didn't exist lol)
     tooltip.addAdvanced(/simplybackpacks:/, (item, advanced, text) => {

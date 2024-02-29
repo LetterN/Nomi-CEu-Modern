@@ -1232,37 +1232,6 @@
 		}
 		{
 			dependencies: ["3F6EDC2481D5877F"]
-			description: ["Carry even more stuff."]
-			id: "59AC5F89444A0663"
-			rewards: [{
-				id: "71C4F26B0A0A16DA"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "7F99A21E6EE1E487"
-				item: {
-					Count: 1b
-					id: "simplybackpacks:commonbackpack"
-					tag: {
-						UUID: [I;
-							1970718959
-							2049720913
-							-1356269712
-							-2105679826
-						]
-					}
-				}
-				type: "item"
-			}]
-			x: 4.5d
-			y: 3.5d
-		}
-		{
-			dependencies: [
-				"59AC5F89444A0663"
-				"3AB0402B19DD5BA8"
-			]
 			description: ["Carry &oeven more&r stuff."]
 			id: "15808BD9C5DBA0F7"
 			rewards: [{
@@ -1286,8 +1255,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 5.0d
+			x: 4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1912,6 +1881,21 @@
 			]
 			title: "&2Pyrolyse Oven"
 			x: 10.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"3AB0402B19DD5BA8"
+				"15808BD9C5DBA0F7"
+			]
+			description: ["Carry &o&neven more&r stuff"]
+			id: "1C2088A496D8FE4F"
+			tasks: [{
+				id: "554C5636BB994E79"
+				item: "simplybackpacks:rarebackpack"
+				type: "item"
+			}]
+			x: 6.5d
 			y: 5.0d
 		}
 	]

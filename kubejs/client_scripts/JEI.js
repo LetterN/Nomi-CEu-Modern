@@ -39,9 +39,6 @@ REIEvents.hide('item', event => {
 
     //TelePastries
     event.hide(['telepastries:lost_city_cake', 'telepastries:custom_cake2', 'telepastries:custom_cake3', 'telepastries:twilight_cake'])
-
-    // Gadgets against Grind
-    event.hide('gag:time_sand_pouch')
 })
 
 REIEvents.removeCategories(event => {
