@@ -1,6 +1,6 @@
 <p align="center"><img src="https://cdn.discordapp.com/attachments/1208333401296212029/1212844356671766618/packicon.png?ex=65f35054&is=65e0db54&hm=e0fb5b95cc58967e282a67074650fea049981b7bbae4a61deab1c5ac0e099973&" alt="Logo"></p>
 <h1 align="center">Nomifactory CEu Modern</h1>
-<p align="center"><b><i>Fork of <a href="https://github.com/Nomi-CEu/Nomi-CEu"> Nomifactory CEu</a>, using <a href="https://github.com/GregTechCEu/GregTech-Modern"> GregTech CEu Modern</a> and its related mods.</i></b></p>
+<p align="center"><b><i>Port of <a href="https://github.com/Nomi-CEu/Nomi-CEu"> Nomifactory CEu</a>, using <a href="https://github.com/GregTechCEu/GregTech-Modern"> GregTech CEu Modern</a> and its related mods.</i></b></p>
 <h1 align="center">
     <a href="https://github.com/Nomi-CEu/Nomi-CEu-Modern/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/Nomi-CEu/Nomi-CEu-Modern?style=for-the-badge&logo=github" alt="License"></a>
     <a href="https://discord.com/invite/zwQzqP8b6q"><img src="https://img.shields.io/discord/927050775073534012?style=for-the-badge&logo=discord&logoColor=%23ffffff&label=discord%20&labelColor=gray&color=%235865F2" alt="Discord"></a>
