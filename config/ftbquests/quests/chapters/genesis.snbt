@@ -1749,6 +1749,8 @@
 				"Currently known issues are:"
 				""
 				"Gregtech will hide recipes from JEI/etc if you attempt to hide an item from it's tag. Until this is fixed, these duplicate items will remain in JEI."
+				""
+				"The Steam Dynamo (not the boiler) currently does not require water to work."
 			]
 			icon: "thermal:nuke_tnt"
 			id: "2A511DB40C66CF35"
