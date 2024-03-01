@@ -360,7 +360,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x7f5bb3)
         .iconSet(GTMaterialIconSet.CERTUS)
         .flags(GTMaterialFlags.GENERATE_PLATE)
-    
+
     event.create('charged_certus_quartz')
         .gem()
         .dust()
@@ -445,37 +445,37 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('restonia_empowered')
-        .gem()
+        .gem().fluid()
         .color(0xA60000)
         .iconSet(GTMaterialIconSet.OPAL)
         .flags(GTMaterialFlags.GENERATE_GEAR)
 
     event.create('enori_empowered')
-        .gem()
+        .gem().fluid()
         .color(0xEDE6FF)
         .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
         .flags(GTMaterialFlags.GENERATE_GEAR)
 
     event.create('void_empowered')
-        .gem()
+        .gem().fluid()
         .color(0x0F0F0F)
         .iconSet(GTMaterialIconSet.FINE)
         .flags(GTMaterialFlags.GENERATE_GEAR)
 
     event.create('palis_empowered')
-        .gem()
+        .gem().fluid()
         .color(0x1C1C89)
         .iconSet(GTMaterialIconSet.OPAL)
         .flags(GTMaterialFlags.GENERATE_GEAR)
 
     event.create('diamatine_empowered')
-        .gem()
+        .gem().fluid()
         .color(0x8B8DF3)
         .iconSet(GTMaterialIconSet.FINE)
         .flags(GTMaterialFlags.GENERATE_GEAR)
 
     event.create('emeradic_empowered')
-        .gem()
+        .gem().fluid()
         .color(0x09E103)
         .iconSet(GTMaterialIconSet.GEM_HORIZONTAL)
         .flags(GTMaterialFlags.GENERATE_GEAR)
@@ -484,25 +484,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 // Sunnarium
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('sunnarium')
-    .dust()
-    .color(0xDDD692)
-    .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
+        .dust()
+        .color(0xDDD692)
+        .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
 
     event.create('enriched_sunnarium')
-    .dust()
-    .color(0xACFFC2)
-    .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
-})
-
-// Misc
-GTCEuStartupEvents.registry('gtceu:material', event => {
-    event.create('resonating_redstone')
-        .gem()
-        .color(0xA60000)
-        .iconSet(GTMaterialIconSet.FINE)
-    
-    event.create('ender_shard')
-        .gem()
-        .color(0x58998D)
-        .iconSet(GTMaterialIconSet.OPAL)
+        .dust()
+        .color(0xACFFC2)
+        .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
 })
