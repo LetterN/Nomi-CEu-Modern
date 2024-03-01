@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
             'BDB',
             'AEA'
         ], {
-            A: 'compressium:cobblestone_2',
+            A: 'minecraft:cobblestone', //FIXME
             B: 'minecraft:netherite_ingot',
             C: 'minecraft:magma_block',
             D: 'ironfurnaces:obsidian_furnace',
