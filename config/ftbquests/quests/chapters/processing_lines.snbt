@@ -90,6 +90,8 @@
 				""
 				"Also a cheap building block."
 			]
+			disable_toast: true
+			icon: "minecraft:cobblestone"
 			id: "1881488CEB982FCD"
 			size: 2.0d
 			tasks: [{
@@ -564,6 +566,7 @@
 				""
 				"Also a cheap building block."
 			]
+			disable_toast: true
 			id: "6D61F343826FD239"
 			size: 1.0d
 			tasks: [{

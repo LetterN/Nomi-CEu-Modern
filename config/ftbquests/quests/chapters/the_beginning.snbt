@@ -852,6 +852,7 @@
 				""
 				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r."
 			]
+			icon: "gtceu:steam_grinder"
 			id: "41C2E49E70D76330"
 			rewards: [{
 				count: 7
@@ -860,11 +861,34 @@
 				type: "item"
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "7DD0FE0A1E868294"
-				item: "gtceu:steam_grinder"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7DD0FE0A1E868294"
+					item: "gtceu:steam_grinder"
+					type: "item"
+				}
+				{
+					count: 22L
+					id: "18DB8D651F2D31CB"
+					item: "gtceu:steam_machine_casing"
+					type: "item"
+				}
+				{
+					id: "570435DB56E60014"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "4A720EFF7B137995"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+				{
+					id: "76E984019B7F6D6B"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+			]
 			x: 4.5d
 			y: 0.5d
 		}
