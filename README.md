@@ -7,7 +7,7 @@
     <br>
     <a href="https://www.curseforge.com/minecraft/modpacks/nomifactory-ceu-modern"><img src="https://cf.way2muchnoise.eu/981238.svg?badge_style=for_the_badge" alt="CurseForge"></a>
     <a href="https://www.curseforge.com/minecraft/modpacks/nomifactory-ceu-modern"><img src="https://cf.way2muchnoise.eu/versions/For%20MC_715572_latest.svg?badge_style=for_the_badge" alt="MC Versions"></a>
-    <a href="https://github.com/Nomi-CEu/Nomi-CEu-Modern/releases"><img src="https://img.shields.io/github/downloads/Nomi-CEu/Nomi-CEu-Modern/total?sort=semver&logo=github&label=&style=for-the-badge&color=2d2d2d&labelColor=545454&logoColor=FFFFFF" alt="GitHub"></a>
+    <a href="https://github.com/Nomi-CEu/Nomi-CEu-Modern/releases"><img src="https://img.shields.io/github/downloads/Nomi-CEu/Nomi-CEu-Modern/total?style=for-the-badge" alt="GitHub"></a>
 </h1>
 
 ## Features:
