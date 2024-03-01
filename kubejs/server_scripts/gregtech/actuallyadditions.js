@@ -19,7 +19,12 @@ let reconstructedItems = [
 ]
 
 
+
+
 ServerEvents.recipes(event => {
+
+    event.remove({ id: /gtceu:shaped\/gear_\w+_empowered/g })
+    event.remove({ output: ['gtceu:enori_gear', 'gtceu:void_gear', 'gtceu:palis_gear', 'gtceu:diamatine_gear', 'gtceu:restonia_gear', 'gtceu:emeradic_gear'] })
 
     // Reconstruction
     reconstructedItems.forEach(itemPair => {
@@ -100,8 +105,8 @@ ServerEvents.recipes(event => {
             V: 'gtceu:vibrant_alloy_plate',
             E: 'kubejs:empowerer_casing'
         })
-		
-		// Resonator
+
+    // Resonator
     event.shaped(
         'gtceu:mv_resonator', [
             'PVP',
@@ -112,10 +117,51 @@ ServerEvents.recipes(event => {
             H: 'gtceu:mv_machine_hull',
             V: 'gtceu:void_gem'
         })
-		
+
     event.recipes.gtceu.resonator('red_coal')
         .itemInputs('#minecraft:coals')
         .itemOutputs('gtceu:coal_perfect')
         .duration(80)
         .EUt(128)
+
+
+    //Crystal Gears
+
+    event.recipes.gtceu.extruder("restonia_gear")
+        .itemInputs('4x gtceu:restonia_gem')
+        .itemOutputs('gtceu:restonia_gear')
+        .notConsumable('gtceu:gear_extruder_mold')
+        .duration(80)
+        .EUt(32)
+    event.recipes.gtceu.extruder("enori_gear")
+        .itemInputs('4x gtceu:enori_gem')
+        .itemOutputs('gtceu:enori_gear')
+        .notConsumable('gtceu:gear_extruder_mold')
+        .duration(80)
+        .EUt(32)
+    event.recipes.gtceu.extruder("emeradic_gear")
+        .itemInputs('4x gtceu:emeradic_gem')
+        .itemOutputs('gtceu:emeradic_gear')
+        .notConsumable('gtceu:gear_extruder_mold')
+        .duration(80)
+        .EUt(32)
+    event.recipes.gtceu.extruder("void_gear")
+        .itemInputs('4x gtceu:void_gem')
+        .itemOutputs('gtceu:void_gear')
+        .notConsumable('gtceu:gear_extruder_mold')
+        .duration(80)
+        .EUt(32)
+    event.recipes.gtceu.extruder("palis_gear")
+        .itemInputs('4x gtceu:palis_gem')
+        .itemOutputs('gtceu:palis_gear')
+        .notConsumable('gtceu:gear_extruder_mold')
+        .duration(80)
+        .EUt(32)
+    event.recipes.gtceu.extruder("diamatine_gear")
+        .itemInputs('4x gtceu:diamatine_gem')
+        .itemOutputs('gtceu:diamatine_gear')
+        .notConsumable('gtceu:gear_extruder_mold')
+        .duration(80)
+        .EUt(32)
+
 })

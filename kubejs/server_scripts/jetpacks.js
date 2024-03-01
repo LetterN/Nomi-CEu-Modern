@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
 
     // Generate EnderIO thruster recipes
     var EIOType = [
-        ['conductive_iron', 'conductive_alloy', 'conductive', 'gtceu:resonating_redstone_gem', 'gtceu:red_alloy_plate'],
+        ['conductive_iron', 'conductive_alloy', 'conductive', 'kubejs:resonating_crystal', 'gtceu:red_alloy_plate'],
         ['electrical_steel', 'electrical_steel', 'conductive', 'enderio:pulsating_crystal', Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:conductive_iron"}').strongNBT()],
         ['Energetic', 'energetic_alloy', 'energetic', 'enderio:vibrant_crystal', Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:electrical_steel"}').strongNBT()],
         ['Vibrant', 'vibrant_alloy', 'vibrant', 'enderio:prescient_crystal', Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Energetic"}').strongNBT()]
@@ -108,18 +108,18 @@ ServerEvents.recipes(event => {
     //
 
     event.recipes.gtceu.alloy_smelter('resonating_redstone')
-        .itemInputs('minecraft:redstone_block', 'gtceu:ender_shard_gem')
-        .itemOutputs('gtceu:resonating_redstone_gem')
+        .itemInputs('minecraft:redstone_block', 'kubejs:ender_shard')
+        .itemOutputs('kubejs:resonating_crystal')
         .duration(180)
         .EUt(16)
 
     event.recipes.gtceu.alloy_smelter('resonating_restonia')
-        .itemInputs('gtceu:restonia_gem', 'gtceu:ender_shard_gem')
-        .itemOutputs('gtceu:resonating_redstone_gem')
+        .itemInputs('gtceu:restonia_gem', 'kubejs:ender_shard')
+        .itemOutputs('kubejs:resonating_crystal')
         .duration(180)
         .EUt(16)
 
-    event.shapeless('8x gtceu:ender_shard_gem', ['minecraft:ender_pearl'])
+    event.shapeless('8x kubejs:ender_shard', ['minecraft:ender_pearl'])
 
     // Battery chain
     // TODO
