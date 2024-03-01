@@ -22,6 +22,9 @@ WorldgenEvents.remove(event => {
         'nuclearcraft:silver_deepslate_ore',
         'nuclearcraft:lead_ore'
         */
-        'miniutilities:overworld_ender_ore'
+        'miniutilities:overworld_ender_ore',
+        'armorplus:ore_lava_crystal',
+        'armorplus:ore_lava_crystal_stone',
+        'armorplus:ore_lava_obsidian'
     ])
 })
