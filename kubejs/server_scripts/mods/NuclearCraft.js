@@ -2,6 +2,8 @@
 
 ServerEvents.recipes(event => {
 
+    event.remove({ id: 'watercondenser:watercondenser' })
+    
     event.shaped(
         'watercondenser:watercondenser', [
             'AAA',

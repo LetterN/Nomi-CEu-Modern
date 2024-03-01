@@ -1,11 +1,11 @@
 ServerEvents.recipes(event => {
 
     // Need some kind of teleportation, this mod will do for now
-    event.remove({ output: 'teleporters:ender_crystal' })
-    event.recipes.gtceu.autoclave("teleporter_crystal")
+    event.remove({ output: 'waystones:warp_stone' })
+    event.recipes.gtceu.autoclave("warp_stone")
         .itemInputs(["minecraft:chorus_flower"])
         .inputFluids("gtceu:vibrant_alloy 288")
-        .itemOutputs('teleporters:ender_crystal')
+        .itemOutputs('waystones:warp_stone')
         .duration(320)
         .EUt(32)
 
