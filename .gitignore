@@ -9,6 +9,7 @@
 /mods/.index
 
 /config/fml.toml
+/config/jei/world/local/*
 /kubejs/probe
 /mods/.connector
 
