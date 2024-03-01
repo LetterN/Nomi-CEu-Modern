@@ -101,4 +101,37 @@ ServerEvents.recipes(event => {
             A: 'kubejs:compressed_infinity_dust_block'
         }
     )
+
+    //angel ring
+    event.remove({ id: 'miniutilities:angel_ring_crafting' })
+    event.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+            " AAA ",
+            "A B A",
+            "AC CA",
+            "A B A",
+            " AAA "
+        ],
+        "key": {
+            "A": {
+                "item": "gtceu:rose_gold_ingot"
+            },
+            "B": {
+                "type": "forge:nbt",
+                "item": "ironjetpacks:jetpack",
+                "count": 1,
+                "nbt": "{Id:\"ironjetpacks:Reinforced\",Throttle:1.0d}"
+            },
+            "C": {
+                "type": "forge:nbt",
+                "item": "ironjetpacks:jetpack",
+                "count": 1,
+                "nbt": "{Id:\"ironjetpacks:Vibrant\",Throttle:1.0d}"
+            }
+        },
+        "result": {
+            "item": "miniutilities:angel_ring"
+        }
+    })
 })

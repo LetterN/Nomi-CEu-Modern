@@ -4,6 +4,8 @@
 !/kubejs
 !/defaultconfigs
 !/.gitignore
+!/resourcepacks
+
 /mods/.index
 
 /config/fml.toml
