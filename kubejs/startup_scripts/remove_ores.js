@@ -25,6 +25,6 @@ WorldgenEvents.remove(event => {
         'miniutilities:overworld_ender_ore',
         'armorplus:ore_lava_crystal',
         'armorplus:ore_lava_crystal_stone',
-        'armorplus:ore_lava_obsidian'
+        'armorplus:ore_lava_crystal_obsidian'
     ])
 })
