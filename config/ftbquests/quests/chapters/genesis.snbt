@@ -26,21 +26,6 @@
 			id: "66FCC26399376B55"
 			rewards: [
 				{
-					count: 4
-					id: "2A12A8AF5EA162BA"
-					item: {
-						Count: 1b
-						id: "gtceu:diamond_mining_hammer"
-						tag: {
-							Damage: 0
-							GT.Tool: {
-								Damage: 0
-							}
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "031A59BA80B8796A"
 					item: "telepastries:custom_cake"
 					type: "item"
@@ -57,6 +42,33 @@
 						id: "gtceu:prospector.hv"
 						tag: {
 							Charge: 1600000L
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3316656A4E9DA8BF"
+					item: {
+						Count: 1b
+						id: "gtceu:diamond_mining_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								AoEColumn: 1
+								AoELayer: 0
+								AoERow: 1
+								MaxAoEColumn: 1
+								MaxAoELayer: 0
+								MaxAoERow: 1
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 2303
+								ToolSpeed: 6.4f
+							}
+							HideFlags: 2
 						}
 					}
 					type: "item"
@@ -142,7 +154,7 @@
 				type: "checkmark"
 			}]
 			x: 1.5d
-			y: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -636,7 +648,7 @@
 		}
 		{
 			dependencies: ["3969150B59EA38A2"]
-			description: ["At this point you might as well just make a &3Multi Smelter&r."]
+			description: ["At this point, you might as well just make a &3Multi Smelter&r."]
 			id: "69E77BD01CFF65EB"
 			invisible: true
 			rewards: [{
@@ -1726,6 +1738,27 @@
 			}]
 			x: -8.0d
 			y: 1.0d
+		}
+		{
+			description: [
+				"This pack is in &eAlpha&r. Issues are to be expected at this stage of development."
+				""
+				"If you find something broken/missing/etc, make an issue on the &5Nomifactory Modern&r repository, or submit a Pull Request to fix it yourself."
+				""
+				"Currently known issues are:"
+				""
+				"Gregtech will hide recipes from JEI/etc if you attempt to hide an item from it's tag. Until this is fixed, these duplicate items will remain in JEI."
+			]
+			icon: "thermal:nuke_tnt"
+			id: "2A511DB40C66CF35"
+			tasks: [{
+				id: "32200D360A0E185A"
+				item: "thermal:nuke_tnt"
+				type: "item"
+			}]
+			title: "&1This pack is in alpha!"
+			x: 1.5d
+			y: -2.0d
 		}
 	]
 	title: "Genesis"

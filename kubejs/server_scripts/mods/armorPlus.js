@@ -91,4 +91,8 @@ ServerEvents.recipes(event => {
             A: "gtceu:titanium_carbide_plate",
             B: "minecraft:slime_block"
         });
+
+    // Fix buggy recipes
+    event.remove( { id: 'armorplus:crafting/shapeless/storage/infused_frost_crystal_to_item' } )
+    event.remove( { id: 'armorplus:crafting/shapeless/storage/block_infused_frost_crystal_to_item' } )
 });

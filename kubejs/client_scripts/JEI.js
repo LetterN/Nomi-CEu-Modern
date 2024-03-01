@@ -1,6 +1,6 @@
 // /kjs inventory will be your friend.
 
-REIEvents.hide('item', event => {
+JEIEvents.hideItems(event => {
     //Hides useless items
     event.hide(['ae2:vibration_chamber', 'hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper'])
 
@@ -42,23 +42,25 @@ REIEvents.hide('item', event => {
     event.hide(['ironjetpacks:basic_coil', 'ironjetpacks:advanced_coil', 'ironjetpacks:elite_coil', 'ironjetpacks:ultimate_coil'])
 
     event.hide([/antiblocksrechiseled:.*?pressure_plate\S*/g, /antiblocksrechiseled:.*?button\S*/g, /antiblocksrechiseled:.*?stair\S*/g, /antiblocksrechiseled:.*?slab\S*/g, /antiblocksrechiseled:.*?border\b/g, /antiblocksrechiseled:.*?wool\S*/g])
+
+    event.hide('chiselandbits:block_bit')
 })
 
-REIEvents.removeCategories(event => {
+JEIEvents.removeCategories(event => {
     event.remove('minecraft:plugins/tag')
     event.remove(['thermal:gourmand_fuel', 'thermal:disenchantement_fuel', 'thermal:lapidary_fuel'])
     event.remove(['enderio:alloy_smelting', 'thermal:furnace'])
 })
 
-REIEvents.groupEntries(event => {
+/*JEIEvents.groupEntries(event => {
 
     const useNbt = ['chiselsandbits:block_bit']
 
     useNbt.forEach(id => {
         const item = Item.of(id)
         const { namespace, path } = Utils.id(item.id)
-        event.groupSameItem(`kubejs:rei_groups/${namespace}/${path}`, item.name, item)
+        event.groupSameItem(`kubejs:jei_groups/${namespace}/${path}`, item.name, item)
     })
 
 
-})
+})*/

@@ -20,4 +20,8 @@ ServerEvents.recipes(event => {
 
     //ArmorPlus
     event.remove({ output: ["armorplus:the_ultimate_material"]});
+
+    // Misc broken recipes
+    event.remove({ id: 'minecraft:netherite_spikes_smithing' })
+    event.remove({ id: 'storagedrawers:conversion_upgrade' })
 })

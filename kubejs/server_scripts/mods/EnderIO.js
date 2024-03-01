@@ -269,4 +269,5 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.remove({ output: 'enderio:void_chassis' })
 })

@@ -105,7 +105,8 @@ ServerEvents.recipes(event => {
             E: 'gtceu:mv_emitter',
             S: 'gtceu:mv_sensor',
             V: 'gtceu:vibrant_alloy_plate',
-            P: 'gtceu:glass_plate'
+            P: 'gtceu:glass_plate',
+            C: '#gtceu:circuits/mv'
         })
 
     // Rocket Scanner

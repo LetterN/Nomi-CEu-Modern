@@ -168,3 +168,52 @@ ServerEvents.recipes(event => {
 
 // ALMOST COMPLETED DONT TOUCH ILL FIX TOMMORROW - NEMEZANEVEM
 //STFU YOU FUCKING LIAR - CLOWN (Written a Month later)
+// lol - Pansmith
+
+// Microversium
+ServerEvents.recipes(event => {
+
+    event.recipes.gtceu.electric_blast_furnace("microversium")
+        .itemInputs('2x gtceu:steel_ingot', "minecraft:redstone", "minecraft:glowstone_dust")
+        .inputFluids('gtceu:deuterium 100')
+        .itemOutputs('gtceu:microversium_ingot')
+        .duration(600)
+        .blastFurnaceTemp(1700)
+        .EUt(120)
+
+     event.shaped(
+        '2x kubejs:microverse_casing', [
+            'PPP',
+            'PWP',
+            'PPP'
+        ], {
+            P: 'gtceu:microversium_plate',
+            W: '#forge:tools/wrenches'
+        })
+        event.recipes.gtceu.assembler("microverse_casing")
+            .itemInputs("4x gtceu:microversium_plate")
+            .itemOutputs("kubejs:microverse_casing")
+            .duration(50)
+            .circuit(6)
+            .EUt(16)
+
+var projector = [
+    ['gtceu:basic_microverse_projector', '#gtceu:circuits/hv'],
+    ['gtceu:advanced_microverse_projector', '#gtceu:circuits/ev'],
+    ['gtceu:advanced_microverse_projector_ii', '#gtceu:circuits/iv'],
+]
+
+projector.forEach(projector => {
+    event.shaped(
+        projector[0], [
+            'CMC',
+            'MAM',
+            'CMC'
+        ], {
+            C: projector[1],
+            M: 'kubejs:microverse_casing',
+            A: 'gtceu:computer_monitor_cover'
+        }
+    )
+})
+})
