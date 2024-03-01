@@ -84,4 +84,31 @@ ServerEvents.recipes(event => {
     })
 
     event.remove({ id: 'gtceu:assembler/phenolic_board' })
+    event.recipes.gtceu.chemical_reactor('phenolic_board')
+        .itemInputs('gtceu:resin_circuit_board')
+        .inputFluids('gtceu:phenol 100')
+        .itemOutputs('gtceu:phenolic_circuit_board')
+        .duration(100)
+        .EUt(8)
+
+
+    //phenol
+
+    event.recipes.gtceu.pyrolyse_oven('phenol_coal')
+        .itemInputs('16x minecraft:coal')
+        .inputFluids('systeams:steam 4000')
+        .itemOutputs('20x gtceu:coke_gem')
+        .outputFluids('gtceu:phenol 1000')
+        .circuit(14)
+        .duration(600)
+        .EUt(30)
+
+    event.recipes.gtceu.pyrolyse_oven('phenol_coal_dust')
+        .itemInputs('16x gtceu:coal_dust')
+        .inputFluids('systeams:steam 4000')
+        .itemOutputs('20x gtceu:coke_dust')
+        .outputFluids('gtceu:phenol 1000')
+        .circuit(14)
+        .duration(600)
+        .EUt(30)
 })
