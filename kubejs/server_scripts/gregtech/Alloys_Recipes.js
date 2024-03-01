@@ -85,6 +85,7 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
     //Different Steel Recipe
     event.remove({ id: "gtceu:centrifuge/decomposition_centrifuging__black_steel" })
+    event.remove({ id: "gtceu:mixer/black_steel" })
     event.recipes.gtceu.mixer("mixer_black_steel")
         .itemInputs('3x gtceu:steel_dust', '2x gtceu:black_bronze_dust', '2x gtceu:void_gem', '2x gtceu:coal_perfect')
         .itemOutputs('9x gtceu:black_steel_dust')
