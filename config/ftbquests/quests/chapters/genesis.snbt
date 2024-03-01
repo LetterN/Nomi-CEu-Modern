@@ -1740,6 +1740,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["66FCC26399376B55"]
 			description: [
 				"This pack is in &eAlpha&r. Issues are to be expected at this stage of development."
 				""
@@ -1752,9 +1753,8 @@
 			icon: "thermal:nuke_tnt"
 			id: "2A511DB40C66CF35"
 			tasks: [{
-				id: "32200D360A0E185A"
-				item: "thermal:nuke_tnt"
-				type: "item"
+				id: "1A2BD249B1DBDA09"
+				type: "checkmark"
 			}]
 			title: "&1This pack is in alpha!"
 			x: 1.5d
