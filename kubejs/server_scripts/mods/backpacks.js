@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
             'TCT',
             'L L'
         ], {
-            L: 'gtceu:gold_nugget',
+            L: 'minecraft:gold_nugget',
             T: 'gtceu:invar_ingot',
             C: 'simplybackpacks:commonbackpack'
         })
