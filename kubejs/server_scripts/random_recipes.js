@@ -66,6 +66,16 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:platinum_credit')
         .duration(40)
         .EUt(7)
+    
+
+    //Netherrack
+    event.recipes.gtceu.chemical_reactor('dust_to_netherrack')
+        .itemInputs('kubejs:dust')
+        .inputFluids(Fluid.of('minecraft:lava', 1000))
+        .itemOutputs('minecraft:netherrack')
+        .duration(20)
+        .EUt(32)
+
 
     //Infinity Dust Blocks
     event.recipes.shapeless('9x kubejs:compressed_infinity_dust_block', 'kubejs:double_compressed_infinity_dust_block')
