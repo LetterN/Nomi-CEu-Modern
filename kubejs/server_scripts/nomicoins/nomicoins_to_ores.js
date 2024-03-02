@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
 
     event.shaped(
@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -154,7 +154,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -165,7 +165,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -176,7 +176,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -187,7 +187,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -209,7 +209,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -220,7 +220,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -231,7 +231,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -242,7 +242,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -253,7 +253,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -264,7 +264,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -275,7 +275,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -286,7 +286,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -297,7 +297,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -308,7 +308,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -319,7 +319,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -330,7 +330,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -341,7 +341,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_penny'
         }
-    )
+    ).noMirror().noShrink()
 
     //NOMINICKEL RECIPES
     event.shaped(
@@ -353,7 +353,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -364,7 +364,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -375,7 +375,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -386,7 +386,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -397,7 +397,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -408,7 +408,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -419,7 +419,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -430,7 +430,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -441,7 +441,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -452,7 +452,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -463,7 +463,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -474,7 +474,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -485,7 +485,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -496,7 +496,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -507,7 +507,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -518,7 +518,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -529,7 +529,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -540,7 +540,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -551,7 +551,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -562,7 +562,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -573,7 +573,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -584,7 +584,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -595,7 +595,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -606,7 +606,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     /*event.shaped(
 
@@ -619,161 +619,161 @@ ServerEvents.recipes(event => {
       {
         A: 'kubejs:nomi_nickel'  
       }
-    )*/
+    ).noMirror().noShrink()*/
 
     event.shaped(
 
         Item.of('gtceu:galena_ore', 32), [
+            'AA ',
             '   ',
-            '   ',
-            'AA '
+            '   '
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
         Item.of('gtceu:almandine_ore', 32), [
+            'A A',
             '   ',
-            '   ',
-            'A A'
+            '   '
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
         Item.of('gtceu:garnierite_ore', 32), [
-            '   ',
-            '  A',
-            '  A'
+            'A  ',
+            'A  ',
+            '   '
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
         Item.of('gtceu:nickel_ore', 32), [
-            '   ',
-            '  A',
-            ' A '
+            'A  ',
+            ' A ',
+            '   '
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
         Item.of('gtceu:barite_ore', 32), [
-            '   ',
+            'A  ',
             '  A',
-            'A  '
+            '   '
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
         Item.of('gtceu:lepidolite_ore', 32), [
+            'A  ',
             '   ',
-            ' A ',
-            '  A'
-        ], {
-            A: 'kubejs:nomi_nickel'
-        }
-    )
-
-    event.shaped(
-
-        Item.of('gtceu:bentonite_ore', 32), [
-            '   ',
-            ' A ',
-            ' A '
-        ], {
-            A: 'kubejs:nomi_nickel'
-        }
-    )
-
-    event.shaped(
-
-        Item.of('gtceu:aluminium_ore', 32), [
-            '   ',
-            ' A ',
             'A  '
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
-        Item.of('gtceu:bauxite_ore', 32), [
-            '   ',
-            ' AA',
-            '   '
-        ], {
-            A: 'kubejs:nomi_nickel'
-        }
-    )
-
-    event.shaped(
-
-        Item.of('gtceu:grossular_ore', 32), [
-            '   ',
+        Item.of('gtceu:bentonite_ore', 32), [
             'A  ',
-            '  A'
-        ], {
-            A: 'kubejs:nomi_nickel'
-        }
-    )
-
-    event.shaped(
-
-        Item.of('gtceu:pyrolusite_ore', 32), [
             '   ',
-            'A  ',
             ' A '
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
-        Item.of('gtceu:magnesite_ore', 32), [
-            '   ',
-            'A A',
-            '   '
-        ], {
-            A: 'kubejs:nomi_nickel'
-        }
-    )
-
-    event.shaped(
-
-        Item.of('gtceu:olivine_ore', 32), [
-            '   ',
-            'AA ',
-            '   '
-        ], {
-            A: 'kubejs:nomi_nickel'
-        }
-    )
-
-    event.shaped(
-
-        Item.of('gtceu:tin_ore', 32), [
-            '  A',
+        Item.of('gtceu:aluminium_ore', 32), [
+            'A  ',
             '   ',
             '  A'
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
+
+    event.shaped(
+
+        Item.of('gtceu:bauxite_ore', 32), [
+            ' AA',
+            '   ',
+            '   '
+        ], {
+            A: 'kubejs:nomi_nickel'
+        }
+    ).noMirror().noShrink()
+
+    event.shaped(
+
+        Item.of('gtceu:grossular_ore', 32), [
+            ' A ',
+            'A  ',
+            '   '
+        ], {
+            A: 'kubejs:nomi_nickel'
+        }
+    ).noMirror().noShrink()
+
+    event.shaped(
+
+        Item.of('gtceu:pyrolusite_ore', 32), [
+            ' A ',
+            ' A ',
+            '   '
+        ], {
+            A: 'kubejs:nomi_nickel'
+        }
+    ).noMirror().noShrink()
+
+    event.shaped(
+
+        Item.of('gtceu:magnesite_ore', 32), [
+            ' A ',
+            '  A',
+            '   '
+        ], {
+            A: 'kubejs:nomi_nickel'
+        }
+    ).noMirror().noShrink()
+
+    event.shaped(
+
+        Item.of('gtceu:olivine_ore', 32), [
+            ' A ',
+            '   ',
+            'A  '
+        ], {
+            A: 'kubejs:nomi_nickel'
+        }
+    ).noMirror().noShrink()
+
+    event.shaped(
+
+        Item.of('gtceu:tin_ore', 32), [
+            ' A ',
+            '   ',
+            ' A '
+        ], {
+            A: 'kubejs:nomi_nickel'
+        }
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -784,117 +784,117 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
         Item.of('gtceu:lithium_ore', 32), [
+            '  A',
+            'A  ',
+            '   '
+        ], {
+            A: 'kubejs:nomi_nickel'
+        }
+    ).noMirror().noShrink()
+
+    event.shaped(
+
+        Item.of('gtceu:spodumene_ore', 32), [
+            '  A',
             ' A ',
+            '   '
+        ], {
+            A: 'kubejs:nomi_nickel'
+        }
+    ).noMirror().noShrink()
+
+    event.shaped(
+
+        Item.of('gtceu:chalcopyrite_ore', 32), [
+            '  A',
+            '  A',
+            '   '
+        ], {
+            A: 'kubejs:nomi_nickel'
+        }
+    ).noMirror().noShrink()
+
+    event.shaped(
+
+        Item.of('gtceu:copper_ore', 32), [
+            '  A',
+            '   ',
+            'A  '
+        ], {
+            A: 'kubejs:nomi_nickel'
+        }
+    ).noMirror().noShrink()
+
+    event.shaped(
+
+        Item.of('gtceu:sulfur_ore', 32), [
+            '  A',
             '   ',
             ' A '
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
-
-    event.shaped(
-
-        Item.of('gtceu:spodumene_ore', 32), [
-            ' A ',
-            '   ',
-            'A  '
-        ], {
-            A: 'kubejs:nomi_nickel'
-        }
-    )
-
-    event.shaped(
-
-        Item.of('gtceu:chalcopyrite_ore', 32), [
-            ' A ',
-            '  A',
-            '   '
-        ], {
-            A: 'kubejs:nomi_nickel'
-        }
-    )
-
-    event.shaped(
-
-        Item.of('gtceu:copper_ore', 32), [
-            ' A ',
-            ' A ',
-            '   '
-        ], {
-            A: 'kubejs:nomi_nickel'
-        }
-    )
-
-    event.shaped(
-
-        Item.of('gtceu:sulfur_ore', 32), [
-            ' A ',
-            'A  ',
-            '   '
-        ], {
-            A: 'kubejs:nomi_nickel'
-        }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
         Item.of('gtceu:quartzite_ore', 32), [
-            ' AA',
-            '   ',
-            '   '
-        ], {
-            A: 'kubejs:nomi_nickel'
-        }
-    )
-
-    event.shaped(
-
-        Item.of('gtceu:nether_quartz_ore', 32), [
-            'A  ',
+            '  A',
             '   ',
             '  A'
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
+
+    event.shaped(
+
+        Item.of('gtceu:nether_quartz_ore', 32), [
+            '   ',
+            'AA ',
+            '   '
+        ], {
+            A: 'kubejs:nomi_nickel'
+        }
+    ).noMirror().noShrink()
 
     event.shaped(
 
         Item.of('gtceu:certus_quartz_ore', 32), [
-            'A  ',
-            ' A ',
+            '   ',
+            'A A',
             '   '
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
         Item.of('gtceu:pentlandite_ore', 32), [
-            'A  ',
             '   ',
+            'A  ',
             'A  '
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
         Item.of('gtceu:glauconite_sand_ore', 32), [
+            '   ',
             'A  ',
-            '  A',
-            '   '
+            ' A '
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     /*event.shaped(
 
@@ -907,40 +907,40 @@ ServerEvents.recipes(event => {
       {
         A: 'kubejs:nomi_nickel'  
       }
-    )*/
+    ).noMirror().noShrink()*/
 
     event.shaped(
 
         Item.of('gtceu:yellow_limonite_ore', 32), [
+            '   ',
             'A  ',
-            'A  ',
-            '   '
+            '  A'
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
         Item.of('gtceu:iron_ore', 32), [
-            'A A',
             '   ',
+            ' AA',
             '   '
         ], {
             A: 'kubejs:nomi_nickel'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
             Item.of('gtceu:magnetite_ore', 32), [
-                'AA ',
                 '   ',
-                '   '
+                ' A ',
+                'A  '
             ], {
                 A: 'kubejs:nomi_nickel'
             }
-        )
+        ).noMirror().noShrink()
         //NOMIQUARTER RECIPES
     event.shaped(
 
@@ -951,7 +951,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_quarter'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -962,7 +962,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_quarter'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -973,7 +973,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_quarter'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -984,7 +984,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_quarter'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -995,7 +995,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_quarter'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -1006,7 +1006,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_quarter'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -1017,7 +1017,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_quarter'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -1028,7 +1028,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_quarter'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -1039,7 +1039,7 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_quarter'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
@@ -1050,18 +1050,18 @@ ServerEvents.recipes(event => {
         ], {
             A: 'kubejs:nomi_quarter'
         }
-    )
+    ).noMirror().noShrink()
 
     event.shaped(
 
             Item.of('gtceu:diamond_ore', 32), [
-                'AA ',
                 '   ',
-                '   '
+                '  A',
+                'A  '
             ], {
                 A: 'kubejs:nomi_quarter'
             }
-        )
+        ).noMirror().noShrink()
         /*NOMIDOLLAR RECIPES
           NO RECIPES*/
 })
