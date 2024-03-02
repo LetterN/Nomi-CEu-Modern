@@ -20,7 +20,7 @@
 				""
 				"Features new to &2CEu&r and quests with new content will be higlighted in &2dark green&r."
 				""
-				"Features new to &dModern&r and quests with new content will be higlighted in &ddark blue&r."
+				"Features new to &dModern&r and quests with new content will be higlighted in &dLight Purple&r."
 			]
 			icon: "minecraft:crafting_table"
 			id: "66FCC26399376B55"
@@ -714,7 +714,7 @@
 		}
 		{
 			dependencies: ["1AE46C1970378083"]
-			description: ["While &3Obsidian Furnaces&f are the same speed as &3Diamond Furnaces&f, they have twice the throughput since they can &esmelt two items at once&f."]
+			description: ["While &3Obsidian Furnaces&f are the same speed as &3Diamond Furnaces&f, they are the same actually.."]
 			id: "3969150B59EA38A2"
 			rewards: [{
 				id: "7BADB8C39CADB5FF"
