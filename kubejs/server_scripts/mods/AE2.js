@@ -424,7 +424,7 @@ ServerEvents.recipes(event => {
         "type": "ae2:inscriber",
         "ingredients": {
             "middle": {
-                "tag": "gtceu:silicon_plate"
+                "tag": "plates/silicon"
             },
             "top": {
                 "item": "ae2:silicon_press"
