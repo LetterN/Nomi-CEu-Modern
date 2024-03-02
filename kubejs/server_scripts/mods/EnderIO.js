@@ -269,5 +269,17 @@ ServerEvents.recipes(event => {
         }
     )
 
+    // Enchanter
+    event.remove({ output: ['enderio:yeta_wrench'] })
+    event.shaped(
+        'enderio:yeta_wrench', [
+            'I I',
+            ' G ',
+            ' I '
+        ], {
+            I: 'minecraft:iron_ingot',
+            G: 'gtceu:iron_gear'
+        }
+    )
     event.remove({ output: 'enderio:void_chassis' })
 })
