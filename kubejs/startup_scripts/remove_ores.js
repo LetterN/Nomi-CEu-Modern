@@ -3,7 +3,7 @@
 
 WorldgenEvents.remove(event => {
     event.removeFeatureById('underground_ores', [
-        /*'nuclearcraft:lithium_ore',
+        'nuclearcraft:lithium_ore',
         'nuclearcraft:thorium_ore',
         'nuclearcraft:tin_ore',
         'nuclearcraft:cobalt_deepslate_ore',
@@ -20,8 +20,7 @@ WorldgenEvents.remove(event => {
         'nuclearcraft:cobalt_ore',
         'nuclearcraft:platinum_deepslate_ore',
         'nuclearcraft:silver_deepslate_ore',
-        'nuclearcraft:lead_ore'
-        */
+        'nuclearcraft:lead_ore',
         'miniutilities:overworld_ender_ore',
         'armorplus:ore_lava_crystal',
         'armorplus:ore_lava_crystal_stone',
