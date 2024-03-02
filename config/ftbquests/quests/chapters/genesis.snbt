@@ -1755,7 +1755,16 @@
 			id: "703D0E1210E4300A"
 			rewards: [{
 				id: "67402C88DCE6AB7F"
-				item: "thermal:dynamo_output_augment"
+				item: {
+					Count: 1b
+					id: "thermal:dynamo_output_augment"
+					tag: {
+						AugmentData: {
+							DynamoPower: 3.0f
+							Type: "Dynamo"
+						}
+					}
+				}
 				team_reward: false
 				type: "item"
 			}]

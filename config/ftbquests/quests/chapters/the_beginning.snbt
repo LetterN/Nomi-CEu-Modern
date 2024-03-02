@@ -1518,7 +1518,17 @@
 			tasks: [{
 				icon: "thermal:dynamo_output_augment"
 				id: "6A08FDD4D0930907"
-				item: "minecraft:bedrock"
+				item: {
+					Count: 1b
+					id: "thermal:dynamo_output_augment"
+					tag: {
+						AugmentData: {
+							DynamoPower: 3.0f
+							Type: "Dynamo"
+						}
+					}
+				}
+				match_nbt: false
 				type: "item"
 			}]
 			title: "Auxiliary Transmission Coils"
