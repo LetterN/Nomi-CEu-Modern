@@ -502,7 +502,7 @@
 					type: "item"
 				}
 			]
-			title: "&1Rocket Parts"
+			title: "&dRocket Parts"
 			x: 3.5d
 			y: -8.5d
 		}
@@ -573,7 +573,7 @@
 					type: "item"
 				}
 			]
-			title: "&1Space Suit"
+			title: "&dSpace Suit"
 			x: 2.0d
 			y: -8.5d
 		}
@@ -603,7 +603,7 @@
 				}
 				type: "item"
 			}]
-			title: "&1Planet ID"
+			title: "&dPlanet ID"
 			x: 5.0d
 			y: -8.5d
 		}
@@ -613,7 +613,7 @@
 				"2181102841205407"
 			]
 			description: [
-				"The &1Rocket Scanner&r is used to create rockets from various blocks."
+				"The &dRocket Scanner&r is used to create rockets from various blocks."
 				""
 				"To use it, build the multiblock, then place &6engines&r and &6tanks&r (as well as other blocks) within the given area. Once you are satisfied, press the &eBuild Rocket&r text in the Rocket Scanner's GUI."
 			]
@@ -630,7 +630,7 @@
 				item: "gcyr:rocket_scanner"
 				type: "item"
 			}]
-			title: "&1Gregtech Rockets"
+			title: "&dGregtech Rockets"
 			x: 3.5d
 			y: -10.5d
 		}
@@ -860,7 +860,7 @@
 				""
 				"Just keep in mind that it's much less rewarding to skip this and you'll need lots of Hydrogen to compensate, although you won't need too much for the first &3Microverse Projector&r."
 				""
-				"In &6HV&r Age and more effectively in &1IV&r Age, you can also get this from processing &9Ender Air&r, which may be better than going to the moon, depending on your circumstances.&r"
+				"In &6HV&r Age and more effectively in &dIV&r Age, you can also get this from processing &9Ender Air&r, which may be better than going to the moon, depending on your circumstances.&r"
 				""
 				"There are also several ores that are rare on the Overworld but exist in abundance on the Moon. In particular, the Moon contains large quantities of &6Titanium&r (in the form of &6Rutile Ore&r and &6Ilmenite Ore&r) and &6Tungsten&r (in the form of &6Scheelite Ore&r and &6Tungstate Ore&r)."
 			]

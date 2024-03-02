@@ -10,7 +10,7 @@
 	quests: [
 		{
 			description: [
-				"This pack is intended to be played in a &blost cities/ Overworld dimension&r"
+				"This pack is intended to be played in a &bLost cities/Overworld dimension&r"
 				""
 				"If you're playing with friends, don't forget to invite them to the"
 				"&eFTB Teams party&r. "
@@ -20,7 +20,7 @@
 				""
 				"Features new to &2CEu&r and quests with new content will be higlighted in &2dark green&r."
 				""
-				"Features new to &1Modern&r and quests with new content will be higlighted in &1dark blue&r."
+				"Features new to &dModern&r and quests with new content will be higlighted in &ddark blue&r."
 			]
 			icon: "minecraft:crafting_table"
 			id: "66FCC26399376B55"
@@ -113,7 +113,7 @@
 			description: [
 				"&bStorage Drawers&f provide a huge amount of storage for a single item type. Use them for things you have a lot of, such as stone, dirt and ores."
 				""
-				"&1Framed Drawers currently are non-functional.&f"
+				"&dFramed Drawers currently are non-functional.&f"
 				""
 				"Furthermore, you can do special stuff with your drawers, with &6Keys&r! Search &e@StorageDrawers Keys&r in &bJEI&r to see them! You can do things from 'locking' the drawer, meaning only that item can enter the drawer, show how many items are in the drawer, and even remove the display of items! "
 				""
@@ -139,7 +139,7 @@
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["&1Still very barebone at the moment. Currently shows which multiblocks can be made at what tier. How machines function, ore generation, tools, multiblocks, filters and finally covers.&r"]
+			description: ["&dStill very barebone at the moment. Currently shows which multiblocks can be made at what tier. How machines function, ore generation, tools, multiblocks, filters and finally covers.&r"]
 			icon: "gtceu:terminal"
 			id: "07DC7FC23332B847"
 			rewards: [{
@@ -163,7 +163,7 @@
 				"&r"
 				"While the Scanner requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making &2an HV Battery&r to charge &aHV tools &rin your inventory."
 				""
-				"In order to proceed, you'll need to locate a source of &6Iron&f. You have a few options. &6Magnetite&f veins are higher up and contain large amounts of iron, as well as some &6Vanadium&f and &6Gold&f. Another good source of iron is &1Goethite&f veins, which contain several types of iron. Finally, &6Pyrite&f can be found paired with &6Copper&f in several types of veins."
+				"In order to proceed, you'll need to locate a source of &6Iron&f. You have a few options. &6Magnetite&f veins are higher up and contain large amounts of iron, as well as some &6Vanadium&f and &6Gold&f. Another good source of iron is &dGoethite&f veins, which contain several types of iron. Finally, &6Pyrite&f can be found paired with &6Copper&f in several types of veins."
 				""
 				"&6Wrought Iron&f is obtained simply by &esmelting Iron a second time&f. It has more durability than Iron, so it is better for making tools, but &cdo not convert your entire Iron supply over to Wrought Iron&f. The two materials are not interchangeable and you'll need Iron or Wrought Iron as demanded by various recipes."
 			]
@@ -246,7 +246,7 @@
 			description: [
 				"There are lots of ways to upgrade and improve your Grappling Hook, so play around with it."
 				""
-				"&1Since there is no Curios slot for the Hook, you'll have to keep it in your hotbar to use it.&r"
+				"&dSince there is no Curios slot for the Hook, you'll have to keep it in your hotbar to use it.&r"
 			]
 			id: "5B31AB11CC640279"
 			rewards: [{
@@ -976,7 +976,7 @@
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
-				"&1Modern replaces this with a water condenser from the Water Condenser mod, as the NuclearCraft Infinite Water Source is not currently functional.&f"
+				"&dModern replaces this with a water condenser from the Water Condenser mod, as the NuclearCraft Infinite Water Source is not currently functional.&f"
 				""
 				"Feeding a &3Steam Dynamo&f with water by hand is a pretty silly idea."
 				""
@@ -1842,7 +1842,7 @@
 				id: "1A2BD249B1DBDA09"
 				type: "checkmark"
 			}]
-			title: "&1This pack is in alpha!"
+			title: "&dThis pack is in alpha!"
 			x: 1.5d
 			y: -2.0d
 		}

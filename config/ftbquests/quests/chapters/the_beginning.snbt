@@ -1616,7 +1616,7 @@
 				""
 				"Later, you will unlock other Maintenance Hatches that do not enforce fixing the problems manually. Both start with &6no Maintenance required&r:"
 				""
-				"- &3Automatic Maintenance Hatch&r (&1IV&r): Eliminates the need for Maintenance, &6forever&r."
+				"- &3Automatic Maintenance Hatch&r (&dIV&r): Eliminates the need for Maintenance, &6forever&r."
 				""
 				"- &3Configurable Maintenance Hatch&r (&6HV&r): You can configure it to cut off &a10%% duration&r on recipes, at the cost of making Maintenance issues happen three times as fast. That is &d16 real hours&r of activity. &9Tape&r can fix problems in this Hatch as well."
 			]
