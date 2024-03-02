@@ -5,6 +5,7 @@
 !/defaultconfigs
 !/.gitignore
 !/resourcepacks
+!/manifest.json
 
 /mods/.index
 
