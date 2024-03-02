@@ -867,8 +867,8 @@ ServerEvents.recipes(event => {
 
         Item.of('gtceu:certus_quartz_ore', 32), [
             'A  ',
-            '   ',
-            ' A '
+            ' A ',
+            '   '
         ], {
             A: 'kubejs:nomi_nickel'
         }
