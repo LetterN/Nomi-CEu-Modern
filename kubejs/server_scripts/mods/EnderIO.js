@@ -278,7 +278,7 @@ ServerEvents.recipes(event => {
             ' I '
         ], {
             I: 'minecraft:iron_ingot',
-            G: 'gtceu:iron_gear'
+            G: 'gtceu:tin_ingot'
         }
     )
     event.remove({ output: 'enderio:void_chassis' })
