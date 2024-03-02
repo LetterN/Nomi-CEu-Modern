@@ -1,15 +1,6 @@
 ServerEvents.recipes(event => {
 
-    event.shaped(
-        'gtceu:red_alloy_dust', [
-            'ABB',
-            'BB ',
-            '   '
-        ], {
-            A: 'gtceu:copper_dust',
-            B: 'minecraft:redstone'
-        }
-    )
+    event.shapeless('gtceu:red_alloy_dust', ['gtceu:copper_dust', '4x minecraft:redstone'])
 
     event.shapeless('gtceu:conductive_alloy_dust', ['minecraft:redstone', 'gtceu:iron_dust'])
 

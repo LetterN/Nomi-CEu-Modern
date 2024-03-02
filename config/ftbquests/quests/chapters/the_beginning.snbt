@@ -1522,8 +1522,8 @@
 				type: "item"
 			}]
 			title: "Auxiliary Transmission Coils"
-			x: 4.5d
-			y: 11.0d
+			x: 4.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["3AB0402B19DD5BA8"]
