@@ -1643,7 +1643,7 @@
 			y: 3.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Zirconium is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "062E4C27F73EDC20"
@@ -1656,12 +1656,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Zirconium"
 			x: 17.0d
 			y: 3.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Scandium is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6EE904ACA2D7D22C"
@@ -1674,12 +1674,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Scandium"
 			x: 15.5d
 			y: 2.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Strontium is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "150510B59EE6069B"
@@ -1692,12 +1692,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Strontium"
 			x: 14.0d
 			y: 3.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Radium is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6A798E371C43851A"
@@ -1710,12 +1710,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Radium"
 			x: 14.0d
 			y: 5.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Francium is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "44EAC2DD5794E641"
@@ -1728,12 +1728,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Francium"
 			x: 12.5d
 			y: 5.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Actinium is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "36B478563A854573"
@@ -1746,12 +1746,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Actinium"
 			x: 17.0d
 			y: 9.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Protactinium is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "63CFADCCE0688239"
@@ -1764,12 +1764,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Protactinium"
 			x: 20.0d
 			y: 9.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Praseodymium is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "7D50B0E825F8D70B"
@@ -1782,12 +1782,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Praseodymium"
 			x: 20.0d
 			y: 8.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Promethium is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6564ADDBABF7DB49"
@@ -1800,12 +1800,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Promethium"
 			x: 23.0d
 			y: 8.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Samarium is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "75FDDFCD19B1614C"
@@ -1818,12 +1818,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Samarium"
 			x: 24.5d
 			y: 8.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Gadolinium is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "1DD6F43254B077E1"
@@ -1836,12 +1836,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Gadolinium"
 			x: 27.5d
 			y: 8.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Terbium is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "3CFF422D1BAAEB65"
@@ -1854,12 +1854,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Terbium"
 			x: 29.0d
 			y: 8.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Dysprosium is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "7BEAC81200BD7563"
@@ -1872,12 +1872,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Dysprosium"
 			x: 30.5d
 			y: 8.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Holmium is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "441BD16D32E88974"
@@ -1890,12 +1890,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Holmium"
 			x: 32.0d
 			y: 8.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Astatine is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "275EB687F851025B"
@@ -1908,12 +1908,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Astatine"
 			x: 36.5d
 			y: 5.0d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Iodine is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "7978CD633112BE89"
@@ -1926,12 +1926,12 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Iodine"
 			x: 36.5d
 			y: 3.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Bromine is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "721D1C6CA8C2AF22"
@@ -1944,7 +1944,7 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Bromine"
 			x: 36.5d
 			y: 2.0d
 		}
