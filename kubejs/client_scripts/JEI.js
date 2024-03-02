@@ -1,5 +1,6 @@
 // /kjs inventory will be your friend.
-REIEvents.hide('item', event => {
+
+JEIEvents.hideItems(event => {
     //Hides useless items
     event.hide(['ae2:vibration_chamber', 'hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper'])
 
@@ -60,23 +61,13 @@ REIEvents.hide('item', event => {
     event.hide(['nuclearcraft:foursmore', 'nuclearcraft:evenmoresmore', 'nuclearcraft:moresmore', 'nuclearcraft:smore'])
 
 
-		//thermal items that already exist in Gregtech
-		event.hide(['thermal:raw_tin', 'thermal:raw_lead', 'thermal:raw_silver', 'thermal:raw_nickel'])
-		event.hide(['thermal:ruby', 'thermal:sapphire', 'thermal:apatite', 'thermal:cinnabar'])
-		event.hide(['thermal:tin_ingot', 'thermal:lead_ingot', 'thermal:silver_ingot', 'thermal:nickel_ingot', 'thermal:bronze_ingot', 'thermal:electrum_ingot', 'thermal:invar_ingot', 'thermal:signalum_ingot', 'thermal:lumium_ingot', 'thermal:enderium_ingot'])
-		event.hide(['thermal:tin_nugget', 'thermal:lead_nugget', 'thermal:silver_nugget', 'thermal:nickel_nugget', 'thermal:bronze_nugget', 'thermal:electrum_nugget', 'thermal:invar_nugget', 'thermal:copper_nugget', 'thermal:signalum_nugget', 'thermal:lumium_nugget', 'thermal:enderium_nugget'])
-		event.hide(['thermal:tin_plate', 'thermal:lead_plate', 'thermal:silver_plate', 'thermal:nickel_plate', 'thermal:bronze_plate', 'thermal:electrum_plate', 'thermal:invar_plate', 'thermal:iron_plate', 'thermal:gold_plate', 'thermal:copper_plate', 'thermal:signalum_plate', 'thermal:lumium_plate', 'thermal:enderium_plate'])
-		event.hide(['thermal:bronze_gear', 'thermal:electrum_gear', 'thermal:invar_gear', 'thermal:iron_gear', 'thermal:diamond_gear', 'thermal:signalum_gear', 'thermal:lumium_gear', 'thermal:enderium_gear'])
-		event.hide(['thermal:tin_dust', 'thermal:lead_dust', 'thermal:silver_dust', 'thermal:nickel_dust', 'thermal:bronze_dust', 'thermal:electrum_dust', 'thermal:invar_dust', 'thermal:signalum_dust', 'thermal:lumium_dust', 'thermal:enderium_dust'])
-		event.hide(['thermal:ruby_dust', 'thermal:sapphire_dust', 'thermal:apatite_dust', 'thermal:cinnabar_dust', 'thermal:sulfur_dust', 'thermal:iron_dust', 'thermal:gold_dust', 'thermal:copper_dust', 'thermal:lapis_dust', 'thermal:diamond_dust', 'thermal:emerald_dust'])
 
-		event.hide([/thermal:.*_ore/])
-		event.hide(['thermal:raw_tin_block', 'thermal:raw_lead_block', 'thermal:raw_silver_block', 'thermal:raw_nickel_block'])
-		event.hide(['thermal:tin_block', 'thermal:lead_block', 'thermal:silver_block', 'thermal:nickel_block', 'thermal:bronze_block', 'thermal:electrum_block', 'thermal:invar_block', 'thermal:signalum_block', 'thermal:lumium_block', 'thermal:enderium_block'])
-		event.hide(['thermal:apatite_block', 'thermal:cinnabar_block', 'thermal:ruby_block', 'thermal:sapphire_block', 'thermal:charcoal_block'])
+
+
+
 })
 
-REIEvents.removeCategories(event => {
+JEIEvents.removeCategories(event => {
     event.remove(['thermal:gourmand_fuel', 'thermal:disenchantement_fuel', 'thermal:lapidary_fuel'])
     event.remove(['enderio:alloy_smelting', 'thermal:furnace'])
     event.remove(['nuclearcraft:supercooler', 'nuclearcraft:rock_crusher', 'nuclearcraft:decay_hastener', 'nuclearcraft:irradiator', 'nuclearcraft:nuclear_furnace', 'nuclearcraft:extractor', 'nuclearcraft:electrolyzer', 'nuclearcraft:pressurizer', 'nuclearcraft:alloy_smelter', 'nuclearcraft:centrifuge', 'nuclearcraft:manufactory', 'nuclearcraft:gas_scrubber', 'nuclearcraft:fluid_enricher', 'nuclearcraft:isotope_separator', 'nuclearcraft:fluid_infuser', 'nuclearcraft:chemical_reactor', 'nuclearcraft:analyzer', 'nuclearcraft:ingot_former', 'nuclearcraft:pump', 'nuclearcraft:fuel_reprocessor', 'nuclearcraft:leacher', 'nuclearcraft:crystallizer', 'nuclearcraft:assembler', 'nuclearcraft:steam_turbine', 'nuclearcraft:melter'])
@@ -96,6 +87,6 @@ REIEvents.removeCategories(event => {
 })*/
 
 
-REIEvents.add('item', event => {
+JEIEvents.addItems(event => {
     event.add('ae2:facade')
 })
