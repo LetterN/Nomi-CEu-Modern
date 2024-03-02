@@ -1697,7 +1697,7 @@
 			y: 3.5d
 		}
 		{
-			description: ["This element is not in Gregtech."]
+			description: ["Radium is not in Gregtech."]
 			disable_toast: true
 			icon: "enderio:painted_fence"
 			id: "6A798E371C43851A"
@@ -1710,7 +1710,7 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "Nothing"
+			title: "Radium"
 			x: 14.0d
 			y: 5.0d
 		}
