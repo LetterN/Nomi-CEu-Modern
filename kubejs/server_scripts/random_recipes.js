@@ -146,4 +146,5 @@ ServerEvents.recipes(event => {
     })
 
     event.shapeless('minecraft:blaze_rod', 'minecraft:brewing_stand')
+    event.replaceInput({ input: 'gtceu:wood_plate' }, 'gtceu:wood_plate', '#minecraft:planks')
 })
