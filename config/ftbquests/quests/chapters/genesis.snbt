@@ -512,6 +512,20 @@
 				""
 				"This quest accepts a &aSoft Mallet&r made from any material."
 			]
+			icon: {
+				Count: 1b
+				id: "gtceu:rubber_mallet"
+				tag: {
+					Damage: 0
+					GT.Behaviours: { }
+					GT.Tool: {
+						AttackDamage: 0.0f
+						AttackSpeed: -2.4f
+						Damage: 0
+						MaxDamage: 128
+					}
+				}
+			}
 			id: "78B5D55A3560B98E"
 			rewards: [{
 				id: "16EF260235D12825"
@@ -523,14 +537,84 @@
 				id: "253D34B000F903DD"
 				item: {
 					Count: 1b
-					id: "gtceu:rubber_mallet"
+					id: "itemfilters:or"
 					tag: {
-						Damage: 0
-						GT.Tool: {
-							Damage: 0
-						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:wood_mallet"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										AttackDamage: 0.0f
+										AttackSpeed: -2.4f
+										Damage: 0
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:rubber_mallet"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										Damage: 0
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:polytetrafluoroethylene_mallet"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										Damage: 0
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:polyethylene_mallet"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										AttackDamage: 0.0f
+										AttackSpeed: -2.4f
+										Damage: 0
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:polybenzimidazole_mallet"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										AttackDamage: 0.0f
+										AttackSpeed: -2.4f
+										Damage: 0
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+						]
 					}
 				}
+				title: "Any Soft Mallet"
 				type: "item"
 			}]
 			title: "Soft Mallet"
