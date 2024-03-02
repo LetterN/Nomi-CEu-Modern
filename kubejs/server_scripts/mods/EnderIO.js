@@ -105,24 +105,24 @@ ServerEvents.recipes(event => {
 
     // Infinity Bimetal Gear
     event.recipes.gtceu.alloy_smelter('infinity_gear')
-    .itemInputs('gtceu:iron_gear', '2x enderio:grains_of_infinity')
-    .itemOutputs('enderio:iron_gear')
-    .duration(100)
-    .EUt(16)
+        .itemInputs('gtceu:iron_gear', '2x enderio:grains_of_infinity')
+        .itemOutputs('enderio:iron_gear')
+        .duration(100)
+        .EUt(16)
 
     // Energized Bimetal Gear
     event.recipes.gtceu.alloy_smelter('energetic_gear')
-    .itemInputs('enderio:iron_gear', '4x gtceu:energetic_alloy_ingot')
-    .itemOutputs('enderio:energized_gear')
-    .duration(150)
-    .EUt(16)
+        .itemInputs('enderio:iron_gear', '4x gtceu:energetic_alloy_ingot')
+        .itemOutputs('enderio:energized_gear')
+        .duration(150)
+        .EUt(16)
 
     // Vibrant Bimetal Gear
     event.recipes.gtceu.alloy_smelter('vibrant_gear')
-    .itemInputs('enderio:energized_gear', '4x gtceu:vibrant_alloy_ingot')
-    .itemOutputs('enderio:vibrant_gear')
-    .duration(200)
-    .EUt(16)
+        .itemInputs('enderio:energized_gear', '4x gtceu:vibrant_alloy_ingot')
+        .itemOutputs('enderio:vibrant_gear')
+        .duration(200)
+        .EUt(16)
 
 
     event.remove({ output: ['enderio:pulsating_crystal', 'enderio:vibrant_crystal'] })
@@ -150,7 +150,7 @@ ServerEvents.recipes(event => {
 
 
     //TODO: Capacitor Banks Recipes
-    
+
     // Capacitors
 
     event.remove({ output: 'enderio:basic_capacitor' })
@@ -199,46 +199,46 @@ ServerEvents.recipes(event => {
 
     // Fused Quartz
     event.recipes.gtceu.alloy_smelter("fused_quartz")
-    .itemInputs('3x minecraft:quartz')
-    .notConsumable('gtceu:block_casting_mold')
-    .itemOutputs('enderio:fused_quartz')
-    .duration(80)
-    .EUt(16)
+        .itemInputs('3x minecraft:quartz')
+        .notConsumable('gtceu:block_casting_mold')
+        .itemOutputs('enderio:fused_quartz')
+        .duration(80)
+        .EUt(16)
 
     // Enlightened fused quartz
     event.recipes.gtceu.alloy_smelter("enlightened_fused_quartz")
-    .itemInputs('#enderio:fused_quartz', 'minecraft:glowstone')
-    .itemOutputs('enderio:fused_quartz_e')
-    .duration(160)
-    .EUt(16)
+        .itemInputs('#enderio:fused_quartz', 'minecraft:glowstone')
+        .itemOutputs('enderio:fused_quartz_e')
+        .duration(160)
+        .EUt(16)
 
     // dark fused quartz (FIXME: replace bedrock with actual AA item, was too lazy to fire up normal nomi to see)
     event.recipes.gtceu.alloy_smelter("dark_fused_quartz")
-    .itemInputs('#enderio:fused_quartz', 'minecraft:bedrock')
-    .itemOutputs('enderio:fused_quartz_d')
-    .duration(200)
-    .EUt(32)
+        .itemInputs('#enderio:fused_quartz', 'minecraft:bedrock')
+        .itemOutputs('enderio:fused_quartz_d')
+        .duration(200)
+        .EUt(32)
 
     // Enlightened clear glass
     event.recipes.gtceu.alloy_smelter("enlightened_clear_glass")
-    .itemInputs('#enderio:clear_glass', 'minecraft:glowstone')
-    .itemOutputs('enderio:clear_glass_e')
-    .duration(160)
-    .EUt(16)
+        .itemInputs('#enderio:clear_glass', 'minecraft:glowstone')
+        .itemOutputs('enderio:clear_glass_e')
+        .duration(160)
+        .EUt(16)
 
     // dark clear glass
     event.recipes.gtceu.alloy_smelter("dark_clear_glass")
-    .itemInputs('#enderio:clear_glass', 'minecraft:bedrock')
-    .itemOutputs('enderio:clear_glass_d')
-    .duration(200)
-    .EUt(32)
+        .itemInputs('#enderio:clear_glass', 'minecraft:bedrock')
+        .itemOutputs('enderio:clear_glass_d')
+        .duration(200)
+        .EUt(32)
 
     // Stellar Alloy
     event.recipes.gtceu.alloy_smelter('stellar_alloy')
-    .itemInputs('gtceu:end_steel_ingot', '8x enderio:grains_of_infinity')
-    .itemOutputs('gtceu:stellar_alloy_ingot')
-    .duration(200)
-    .EUt(2000)
+        .itemInputs('gtceu:end_steel_ingot', '8x enderio:grains_of_infinity')
+        .itemOutputs('gtceu:stellar_alloy_ingot')
+        .duration(200)
+        .EUt(2000)
 
     // Remove useless/op conduit recipes from enderio
     event.remove({ input: '#enderio:fused_quartz', output: 'enderio:pressurized_fluid_conduit' })
@@ -249,10 +249,10 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: 'enderio:infinity_rod' })
     event.recipes.gtceu.alloy_smelter('infinity_rod')
-    .itemInputs('gtceu:dark_steel_rod', 'enderio:grains_of_infinity')
-    .itemOutputs('enderio:infinity_rod')
-    .duration(200)
-    .EUt(30)
+        .itemInputs('gtceu:dark_steel_rod', 'enderio:grains_of_infinity')
+        .itemOutputs('enderio:infinity_rod')
+        .duration(200)
+        .EUt(30)
 
     // Enchanter
     event.remove({ output: ['enderio:enchanter'] })
@@ -282,4 +282,7 @@ ServerEvents.recipes(event => {
         }
     )
     event.remove({ output: 'enderio:void_chassis' })
+
+    //Redstone Conduit
+    event.replaceInput({ id: 'enderio:redstone_conduit' }, 'enderio:redstone_alloy_ingot', 'gtceu:red_alloy_single_wire')
 })
