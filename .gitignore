@@ -38,3 +38,6 @@ config/defaultworldtype/world-presets.txt
 config/ae2/client.json
 config/jecalculation/record.json
 config/voicechat/voicechat-client.properties
+config/jade/sort-order.json
+config/jei/ingredient-list-mod-sort-order.ini
+config/jei/recipe-category-sort-order.ini
