@@ -1210,16 +1210,6 @@
 			y: 8.55d
 		}
 		{
-			id: "570FD577185BD19C"
-			shape: "rectangle"
-			tasks: [{
-				id: "3950EEC91FD3BF63"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 4.5d
-		}
-		{
 			disable_toast: true
 			icon: "enderio:painted_stairs"
 			id: "6FE8CA55D0EA2A7B"
