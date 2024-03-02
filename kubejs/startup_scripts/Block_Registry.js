@@ -11,7 +11,6 @@ StartupEvents.registry("block", (event) => {
     event.create('empowerer_casing').displayName("Empowerer Casing").soundType('metal').resistance(6).hardness(5).tagBlock("mineable/pickaxe").requiresTool(true)
     event.create('compressed_sand').displayName("Compressed Sand").soundType('sand').resistance(1).hardness(1).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING)
     event.create('double_compressed_sand').displayName("Double Compressed Sand").soundType('sand').resistance(2).hardness(2).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING)
-
     event.create('compressed_red_sand').displayName("Compressed Red Sand").soundType('sand').resistance(1).hardness(1).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING)
     event.create('double_compressed_red_sand').displayName("Double Compressed Red Sand").soundType('sand').resistance(2).hardness(2).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING)
 
@@ -46,4 +45,15 @@ StartupEvents.registry("block", (event) => {
     //EMERGENCY FIX
     event.create('gtceu:dilithium_ore').soundType('stone').hardness(2).resistance(2).tagBlock("mineable/pickaxe").requiresTool()
 
+})
+
+StartupEvents.registry('block', event => {
+    event.create('small_storage_crate')
+        .property(BlockProperties.CHEST_TYPE)
+        .resistance(2)
+        .soundType('oak_plank')
+        .blockEntity(entityInfo => {
+            entityInfo.inventory(13, 9)
+            entityInfo.rightClickOpensInventory()
+        })
 })

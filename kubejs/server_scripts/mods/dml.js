@@ -117,21 +117,6 @@ ServerEvents.recipes(event => {
             .duration(200)
             .EUt(16)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     })
     //TODO Thermal Elemental Matters
 
@@ -177,7 +162,7 @@ ServerEvents.recipes(event => {
             modeldata[1]
         ]
 
-        if(modeldata[3]) {
+        if (modeldata[3]) {
             recipeIngredients.push('7x hostilenetworks:' + modeldata[2] + '_prediction')
         }
 
