@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:platinum_credit')
         .duration(40)
         .EUt(7)
-    
+
 
     //Netherrack
     event.recipes.gtceu.chemical_reactor('dust_to_netherrack')
@@ -144,4 +144,6 @@ ServerEvents.recipes(event => {
             "item": "miniutilities:angel_ring"
         }
     })
+
+    event.shapeless('minecraft:blaze_rod', 'minecraft:brewing_stand')
 })
