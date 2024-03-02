@@ -497,7 +497,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "&1Note: This is a new block in modern versions of AE2, similar to the Interface."
+			subtitle: "&dNote: This is a new block in modern versions of AE2, similar to the Interface."
 			tasks: [{
 				id: "24069DF90AE106FD"
 				item: "ae2:pattern_provider"
@@ -807,7 +807,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
-			subtitle: "&1New in Nomifactory Modern!&r"
+			subtitle: "&dNew in Nomifactory Modern!&r"
 			tasks: [{
 				id: "11828E352A22BA71"
 				item: "ae2:cell_component_256k"
@@ -942,7 +942,7 @@
 					type: "item"
 				}
 			]
-			title: "&1Automating Extended Crafting"
+			title: "&dAutomating Extended Crafting"
 			x: 2.5d
 			y: 11.5d
 		}

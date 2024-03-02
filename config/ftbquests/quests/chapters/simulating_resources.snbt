@@ -168,7 +168,7 @@
 				item: "kubejs:resonant_clathrate"
 				type: "item"
 			}]
-			title: "&1Resonant&r Clathrate"
+			title: "&dResonant&r Clathrate"
 			x: 5.5d
 			y: -3.5d
 		}
