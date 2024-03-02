@@ -21,4 +21,23 @@ ServerEvents.recipes(event => {
             }
         )
 
-})
+	event.remove( {id:"gtceu:smelting/smelt_raw_coal_ore_to_ingot"})
+	event.smelting( "2x minecraft:coal", "gtceu:raw_coal" ).id("gtceu:smelting/smelt_raw_coal_ore_to_ingot")
+	event.remove( {id:"gtceu:blasting/smelt_raw_coal_ore_to_ingot"})
+	event.blasting( "2x minecraft:coal", "gtceu:raw_coal" ).id("gtceu:blasting/smelt_raw_coal_ore_to_ingot")
+
+	event.remove( {id:"gtceu:smelting/smelt_raw_redstone_ore_to_ingot"})
+	event.smelting( "6x minecraft:redstone", "gtceu:raw_redstone" ).id("gtceu:smelting/smelt_raw_redstone_ore_to_ingot")
+	event.remove( {id:"gtceu:blasting/smelt_raw_redstone_ore_to_ingot"})
+	event.blasting( "6x minecraft:redstone", "gtceu:raw_redstone" ).id("gtceu:blasting/smelt_raw_redstone_ore_to_ingot")
+
+	event.remove( {id:"gtceu:smelting/smelt_raw_cassiterite_ore_to_ingot"})
+	event.smelting( "2x gtceu:tin_ingot", "gtceu:raw_cassiterite" ).id("gtceu:smelting/smelt_raw_cassiterite_ore_to_ingot")
+	event.remove( {id:"gtceu:blasting/smelt_raw_cassiterite_ore_to_ingot"})
+	event.blasting( "2x gtceu:tin_ingot", "gtceu:raw_cassiterite" ).id("gtceu:blasting/smelt_raw_cassiterite_ore_to_ingot")
+
+	event.remove( {id:"gtceu:smelting/smelt_raw_cassiterite_sand_ore_to_ingot"})
+	event.smelting( "2x gtceu:tin_ingot", "gtceu:raw_cassiterite_sand" ).id("gtceu:smelting/smelt_raw_cassiterite_sand_ore_to_ingot")
+	event.remove( {id:"gtceu:blasting/smelt_raw_cassiterite_sand_ore_to_ingot"})
+	event.blasting( "2x gtceu:tin_ingot", "gtceu:raw_cassiterite_sand" ).id("gtceu:blasting/smelt_raw_cassiterite_sand_ore_to_ingot")
+        })
