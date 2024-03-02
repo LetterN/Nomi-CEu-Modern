@@ -96,4 +96,72 @@ ServerEvents.recipes(event => {
             I: 'avaritia:infinity_catalyst'
         }, 4
     )
+    
+    // Creative Chest
+    event.recipes.extendedcrafting.shaped_table(
+        'gtceu:creative_chest', [
+            'ABBBBBBBA',
+            'BCTEDETCB',
+            'BFSGHGSFB',
+            'BUJXIXJUB',
+            'BNSWKWSNB',
+            'BUJXLXJUB',
+            'BFSGMGSFB',
+            'BCTEDETCB',
+            'ABBBBBBBA'
+        ], {
+            A: "storagedrawers:creative_storage_upgrade",
+            B: "avaritia:infinity_ingot",
+            C: "enderio:creative_power",
+            D: "minecraft:bedrock",
+            E: "minecraft:bedrock",
+            F: "minecraft:bedrock",
+            G: "minecraft:bedrock",
+            H: "avaritia:infinity_helmet",
+            I: "avaritia:infinity_chestplate",
+            J: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative",Throttle:1.0d}').strongNBT(),
+            K: "avaritia:infinity_sword",
+            L: "avaritia:infinity_leggings",
+            M: "avaritia:infinity_boots",
+            N: "minecraft:bedrock",
+            S: "solarflux:sp_avaritia.infinity",
+            T: "gtceu:creative_tank",
+            U: "ae2:creative_energy_cell",
+            W: "minecraft:bedrock",
+            X: "minecraft:bedrock"
+        }, 4
+    )
+
+    // Angel Ring
+    event.remove({ id: 'miniutilities:angel_ring_crafting' })
+    event.custom({
+        "type": "extendedcrafting:shaped_table",
+        "pattern": [
+            " AAA ",
+            "A B A",
+            "AC CA",
+            "A B A",
+            " AAA "
+        ],
+        "key": {
+            "A": {
+                "item": "gtceu:rose_gold_ingot"
+            },
+            "B": {
+                "type": "forge:nbt",
+                "item": "ironjetpacks:jetpack",
+                "count": 1,
+                "nbt": "{Id:\"ironjetpacks:Reinforced\",Throttle:1.0d}"
+            },
+            "C": {
+                "type": "forge:nbt",
+                "item": "ironjetpacks:jetpack",
+                "count": 1,
+                "nbt": "{Id:\"ironjetpacks:Vibrant\",Throttle:1.0d}"
+            }
+        },
+        "result": {
+            "item": "miniutilities:angel_ring"
+        }
+    })
 })
