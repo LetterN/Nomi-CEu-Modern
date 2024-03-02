@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "mid_game"
 	group: ""
-	icon: "thermal:nuke_tnt"
+	icon: "nuclearcraft:plutonium_rtg"
 	id: "7D825FFA33DC85A7"
 	order_index: 6
 	quest_links: [ ]
