@@ -3,8 +3,11 @@
 !/kubejs
 !/defaultconfigs
 !/.gitignore
-!/resourcepacks
 !/manifest.json
+
+!/mods/HostileNeuralNetworks*
+!/mods/systeams*
+!/mods/NuclearCraft*
 
 /mods/.index
 

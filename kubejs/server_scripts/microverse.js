@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
             G: 'kubejs:basic_micro_miner_guidance_system',
             L: 'kubejs:basic_mining_laser',
             A: 'gtceu:lv_field_generator',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:conductive_iron"}').strongNBT(), 
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:conductive_iron"}').strongNBT(),
             M: 'gtceu:lv_combustion'
         }
     )
@@ -108,8 +108,8 @@ ServerEvents.recipes(event => {
             A: 'gtceu:ev_field_generator',
             B: 'gtceu:mv_super_chest',
             F: 'thermal:energy_cell_frame',
-            C: 'kubejs:nuclearcraft_fission_reactor', // TODO: REPLACE WITH REAL NC COMPONENT
-            P: 'kubejs:nuclearcraft_fission_reactor_port', // TODO: REPLACE WITH REAL NC COMPONENT
+            C: 'nuclearcraft:fission_reactor_controller', // TODO: REPLACE WITH REAL NC COMPONENT
+            P: 'nuclearcraft:fission_reactor_port', // TODO: REPLACE WITH REAL NC COMPONENT
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Vibrant"}').strongNBT()
         }, 3
     )
@@ -131,8 +131,8 @@ ServerEvents.recipes(event => {
             A: 'gtceu:mv_super_chest',
             F: 'thermal:energy_cell_frame', // TODO: this should be a third tier of frame
             B: 'gtceu:iv_field_generator',
-            C: 'kubejs:nuclearcraft_fission_reactor', // TODO: REPLACE WITH REAL NC COMPONENT
-            P: 'kubejs:nuclearcraft_fission_reactor_port', // TODO: REPLACE WITH REAL NC COMPONENT
+            C: 'nuclearcraft:fission_reactor_controller',
+            P: 'nuclearcraft:fission_reactor_port',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Resonant"}').strongNBT()
         }, 3
     )
@@ -210,7 +210,7 @@ ServerEvents.recipes(event => {
     )
 
     // T10 Microminer
-    
+
     event.recipes.extendedcrafting.shaped_table(
         'kubejs:microminer_t10', [
             '  N   N  ',
@@ -299,40 +299,40 @@ ServerEvents.recipes(event => {
 
     // Warp engine
     event.recipes.gtceu.assembly_line('warp_engine')
-    .itemInputs('gtceu:microversium_frame',
-                '6x gtceu:enderium_plate',
-                'minecraft:bedrock', /* Item dislocation inhibitor */
-                'minecraft:bedrock', /* DE Magnet */
-                '2x avaritia:crystal_matrix_ingot', /* TODO: replace with plate */
-                '2x gtceu:iv_field_generator',
-                Item.of('2x ironjetpacks:thruster', '{Id:"ironjetpacks:Fluxed"}').strongNBT(),
-                Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:dark_soularium"}').strongNBT())
-    .itemOutputs('kubejs:warp_engine')
-    .inputFluids('gtceu:soldering_alloy 1152')
-    .duration(1800)
-    .EUt(30720)
+        .itemInputs('gtceu:microversium_frame',
+            '6x gtceu:enderium_plate',
+            'minecraft:bedrock', /* Item dislocation inhibitor */
+            'minecraft:bedrock', /* DE Magnet */
+            '2x avaritia:crystal_matrix_ingot', /* TODO: replace with plate */
+            '2x gtceu:iv_field_generator',
+            Item.of('2x ironjetpacks:thruster', '{Id:"ironjetpacks:Fluxed"}').strongNBT(),
+            Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:dark_soularium"}').strongNBT())
+        .itemOutputs('kubejs:warp_engine')
+        .inputFluids('gtceu:soldering_alloy 1152')
+        .duration(1800)
+        .EUt(30720)
 
     // Supercharged laser array
     event.recipes.gtceu.chemical_reactor('supercharged_laser_array')
-    .itemInputs('kubejs:reinforced_mining_laser')
-    .inputFluids('gtceu:radon 1000')
-    .itemOutputs('kubejs:supercharged_laser_array')
-    .duration(200)
-    .EUt(2000)
+        .itemInputs('kubejs:reinforced_mining_laser')
+        .inputFluids('gtceu:radon 1000')
+        .itemOutputs('kubejs:supercharged_laser_array')
+        .duration(200)
+        .EUt(2000)
 
     // Universal Navigator
     event.recipes.gtceu.assembly_line('universal_navigator')
-    .itemInputs('gtceu:microversium_frame',
-                '24x gtceu:microversium_plate',
-                'gtceu:gravi_star',
-                '2x gtceu:uv_sensor',
-                '2x gtceu:uv_robot_arm',
-                '#gtceu:circuits/uhv',
-                '2x gtceu:dense_naquadah_alloy_plate',
-                '4x gtceu:enriched_naquadah_trinium_europium_diuranide_quadruple_wire',
-                '64x gtceu:fine_tritanium_wire')
-    .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:naquadria 576')
-    .itemOutputs('kubejs:universal_navigator')
-    .duration(6000)
-    .EUt(491520)
+        .itemInputs('gtceu:microversium_frame',
+            '24x gtceu:microversium_plate',
+            'gtceu:gravi_star',
+            '2x gtceu:uv_sensor',
+            '2x gtceu:uv_robot_arm',
+            '#gtceu:circuits/uhv',
+            '2x gtceu:dense_naquadah_alloy_plate',
+            '4x gtceu:enriched_naquadah_trinium_europium_diuranide_quadruple_wire',
+            '64x gtceu:fine_tritanium_wire')
+        .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:naquadria 576')
+        .itemOutputs('kubejs:universal_navigator')
+        .duration(6000)
+        .EUt(491520)
 })

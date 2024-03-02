@@ -132,14 +132,14 @@ ServerEvents.recipes(event => {
         .itemOutputs('32x minecraft:paper', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_breath', '64x armorplus:ender_dragon_scale', '64x armorplus:ender_dragon_scale', '64x armorplus:ender_dragon_scale', '64x minecraft:gold_block', '64x minecraft:gold_block', '64x minecraft:gold_block', '64x gtceu:silver_block', '64x gtceu:silver_block', '64x minecraft:diamond_block', '64x minecraft:diamond_block', '64x gtceu:platinum_block', '16x gtceu:ruthenium_block')
         .duration(1500)
         .EUt(31250)
-        //TODO DRAGON SCALES DRAGON HEART
+        //TODO DRAGON HEART
 
     event.recipes.gtceu.advanced_microverse_ii('t_eight_first')
         .itemInputs('kubejs:microminer_t8', '64x kubejs:quantum_flux', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', 'kubejs:lair_of_the_chaos_guardian_data')
         .itemOutputs('4x minecraft:paper', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg', '64x minecraft:dragon_egg')
         .duration(1500)
         .EUt(62500)
-        //TODO DRAGON SHARDS
+        //TODO CHAOS SHARDS
 
     event.recipes.gtceu.advanced_microverse_ii('t_eight_second')
         .itemInputs('kubejs:microminer_t8', '64x kubejs:quantum_flux', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:dilithium_crystal', '64x kubejs:wither_realm_data', '64x kubejs:wither_realm_data', )
@@ -181,7 +181,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1700)
         .EUt(120)
 
-     event.shaped(
+    event.shaped(
         '2x kubejs:microverse_casing', [
             'PPP',
             'PWP',
@@ -190,30 +190,30 @@ ServerEvents.recipes(event => {
             P: 'gtceu:microversium_plate',
             W: '#forge:tools/wrenches'
         })
-        event.recipes.gtceu.assembler("microverse_casing")
-            .itemInputs("4x gtceu:microversium_plate")
-            .itemOutputs("kubejs:microverse_casing")
-            .duration(50)
-            .circuit(6)
-            .EUt(16)
+    event.recipes.gtceu.assembler("microverse_casing")
+        .itemInputs("4x gtceu:microversium_plate")
+        .itemOutputs("kubejs:microverse_casing")
+        .duration(50)
+        .circuit(6)
+        .EUt(16)
 
-var projector = [
-    ['gtceu:basic_microverse_projector', '#gtceu:circuits/hv'],
-    ['gtceu:advanced_microverse_projector', '#gtceu:circuits/ev'],
-    ['gtceu:advanced_microverse_projector_ii', '#gtceu:circuits/iv'],
-]
+    var projector = [
+        ['gtceu:basic_microverse_projector', '#gtceu:circuits/hv'],
+        ['gtceu:advanced_microverse_projector', '#gtceu:circuits/ev'],
+        ['gtceu:advanced_microverse_projector_ii', '#gtceu:circuits/iv'],
+    ]
 
-projector.forEach(projector => {
-    event.shaped(
-        projector[0], [
-            'CMC',
-            'MAM',
-            'CMC'
-        ], {
-            C: projector[1],
-            M: 'kubejs:microverse_casing',
-            A: 'gtceu:computer_monitor_cover'
-        }
-    )
-})
+    projector.forEach(projector => {
+        event.shaped(
+            projector[0], [
+                'CMC',
+                'MAM',
+                'CMC'
+            ], {
+                C: projector[1],
+                M: 'kubejs:microverse_casing',
+                A: 'gtceu:computer_monitor_cover'
+            }
+        )
+    })
 })
