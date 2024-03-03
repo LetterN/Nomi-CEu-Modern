@@ -3,11 +3,11 @@
 !/kubejs
 !/defaultconfigs
 !/.gitignore
+!/.gitattributes
 !/manifest.json
 
 !/mods/HostileNeuralNetworks*
 !/mods/systeams*
-!/options.txt
 
 /mods/.index
 
