@@ -991,7 +991,7 @@
 				item: "watercondenser:watercondenser"
 				type: "item"
 			}]
-			title: "&2Infinite Water"
+			title: "&dInfinite Water"
 			x: -3.5d
 			y: 4.0d
 		}
@@ -1757,8 +1757,8 @@
 					id: "thermal:dynamo_output_augment"
 					tag: {
 						AugmentData: {
-							DynamoPower: 3.0f
 							DynamoEnergy: 0.7f
+							DynamoPower: 3.0f
 							Type: "Dynamo"
 						}
 					}
@@ -1838,11 +1838,9 @@
 				""
 				"Currently known issues are:"
 				""
-				"* Gregtech will hide recipes from JEI/etc if you attempt to hide an item from it's tag. Until this is fixed, these duplicate items will remain in JEI."
+				"* Gregtech Modern will hide recipes from JEI/etc if you attempt to hide an item from it's tag. Until this is fixed, these duplicate items will remain in JEI."
 				""
-				"* The Steam Dynamo (not the boiler) currently does not require water to work."
-				""
-				"* Some items don't stack properly, confirmed to be an an issue with avaritia."
+				"* The Steam Dynamo (not the boiler) currently does not require water to work. The stirling dynamo is a stand-in until that is coded."
 				""
 				"* Gregtech Tools durability does not display properly."
 			]

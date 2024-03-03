@@ -1523,8 +1523,8 @@
 					id: "thermal:dynamo_output_augment"
 					tag: {
 						AugmentData: {
-							DynamoPower: 3.0f
 							DynamoEnergy: 0.7f
+							DynamoPower: 3.0f
 							Type: "Dynamo"
 						}
 					}
