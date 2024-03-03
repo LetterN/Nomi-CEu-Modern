@@ -234,7 +234,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .ingot().fluid()
         .color(0x9949cc)
         .iconSet('metallic')
-        .flags(GTMaterialFlags.GENERATE_PLATE)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.NO_SMELTING)
 
     event.create("signalum")
         .ingot().fluid()
