@@ -152,6 +152,13 @@ StartupEvents.registry('item', event => {
     //Extra Utilities 2
     event.create('resonating_crystal').displayName("Resonating Redstone Crystal")
     event.create('ender_shard')
+
+    //Nether Star Crafting
+    event.create('netherstar_south').displayName('\u00A7eNetherstar Part \u00A7r- \u00A7eSouth')
+    event.create('netherstar_east').displayName('\u00A7eNetherstar Part \u00A7r- \u00A7eEast')
+    event.create('netherstar_west').displayName('\u00A7eNetherstar Part \u00A7r- \u00A7eWest')
+    event.create('netherstar_north').displayName('\u00A7eNetherstar Part \u00A7r- \u00A7eNorth')
+    event.create('netherstar_core').displayName('\u00A7eNetherstar Core')
 })
 
 
