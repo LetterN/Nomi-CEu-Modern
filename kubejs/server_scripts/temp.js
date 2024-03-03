@@ -40,4 +40,37 @@ ServerEvents.recipes(event => {
 	event.smelting( "2x gtceu:tin_ingot", "gtceu:raw_cassiterite_sand" ).id("gtceu:smelting/smelt_raw_cassiterite_sand_ore_to_ingot")
 	event.remove( {id:"gtceu:blasting/smelt_raw_cassiterite_sand_ore_to_ingot"})
 	event.blasting( "2x gtceu:tin_ingot", "gtceu:raw_cassiterite_sand" ).id("gtceu:blasting/smelt_raw_cassiterite_sand_ore_to_ingot")
+
+
+    //temp because rubber wood drawers someday?
+    event.shaped(
+        "storagedrawers:oak_full_drawers_1", [
+            'PPP',
+            ' C ',
+            'PPP'
+        ], {
+            P: "gtceu:rubber_planks",
+            C: "#balm:wooden_chests",
+        }
+    )
+    event.shaped(
+        "storagedrawers:oak_full_drawers_2", [
+            'PCP',
+            'PPP',
+            'PCP'
+        ], {
+            P: "gtceu:rubber_planks",
+            C: "#balm:wooden_chests",
+        }
+    )
+    event.shaped(
+        "storagedrawers:oak_full_drawers_4", [
+            'CPC',
+            'PPP',
+            'CPC'
+        ], {
+            P: "gtceu:rubber_planks",
+            C: "#balm:wooden_chests",
+        }
+    )
         })
