@@ -30,5 +30,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     //GTMaterials.NetherQuartz.setProperty($PropertyKey.GEM, new $GemProperty())
 
-    GTMaterials.Electrum.addFlags(GTMaterialFlags.GENERATE_GEAR)
+
+    const missingGears = ['Electrum', 'Lead', 'Silver', 'Nickel', 'Ruby', 'Sapphire', 'Gold', 'Copper', 'Lapis', 'Emerald', 'NetherQuartz']
+    missingGears.forEach(missingGears => {
+        GTMaterials[missingGears].addFlags(GTMaterialFlags.GENERATE_GEAR)
+    })
 })

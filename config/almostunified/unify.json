@@ -101,7 +101,9 @@
         "chromium",
         "osmiridium",
         "hsla_steel",
-        "nichrome"
+        "nichrome",
+        "quartz",
+        "nether_quartz"
     ],
     "priorityOverrides": {},
     "customTags": {},
@@ -116,5 +118,5 @@
         "cucumber:shaped_tag"
     ],
     "ignoredRecipes": [],
-    "itemsHidingJeiRei": true
+    "itemsHidingJeiRei": false
 }
