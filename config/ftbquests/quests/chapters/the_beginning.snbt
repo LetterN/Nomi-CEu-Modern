@@ -704,20 +704,11 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "13BC210346486E40"
-					item: "gtceu:lv_arc_furnace"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "2238DE5FBD5952C8"
-					item: "gtceu:mv_arc_furnace"
-					optional_task: true
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "13BC210346486E40"
+				item: "gtceu:lv_arc_furnace"
+				type: "item"
+			}]
 			title: "&2Arc Furnace"
 			x: 4.5d
 			y: -4.5d
