@@ -73,6 +73,9 @@ ServerEvents.recipes(event => {
             C: "#balm:wooden_chests",
         }
     )
+
+    //temp blanket remove for this patch
+    event.remove({ output: /nuclearcraft/ })
 })
 
 // Temp fix for Avaritia Fabric Stackable Issue, just checks for a blank tag and removes it
@@ -82,3 +85,4 @@ BlockEvents.broken(event =>{
     if (!item.hasTag('')) return 
     nbt.remove('')
 })
+
