@@ -809,13 +809,7 @@
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
-			description: [
-				"If you try to craft each item only when you need it, you'll go insane. It is far more effective to &ebatch-craft&f frequently used items so you don't have to do it as often. It is very satisfying to get all the ingredients together then craft &ea stack of items&f all at once."
-				""
-				"&3Crafting Stations&f are an indispensable tool for batch-crafting. They can save recipes for all the steps in production chains for things like tools, circuits, machine casings, and more. You will want to &emake several of them&r&r for the convenience they offer."
-				""
-				"To use the Crafting Station, you must either manually set up a recipe in the pattern area, or click-in a table recipe from &bJEI&r. Place the ingredients inside the Crafting Station or an adjacent container, then you can click the resulting item to craft it. Once an item is crafted, the recipe will appear on the top-right in the history pane. As usual, Shift-clicking the output item will craft up to a stack of it."
-			]
+			description: ["&3Crafting Stations&f let you also pull from connected inventories when crafting, including when using JEI's &aautofill&r button."]
 			id: "7F291FE6247B57BC"
 			tasks: [{
 				id: "6E936CEF869788B9"
