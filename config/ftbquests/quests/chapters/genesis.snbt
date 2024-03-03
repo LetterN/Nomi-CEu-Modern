@@ -977,7 +977,7 @@
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
-				"&dModern replaces this with a water condenser from the Water Condenser mod, as the NuclearCraft Infinite Water Source is not currently functional.&f"
+				"&dModern replaces this with a water condenser from the Water Condenser mod, as the NuclearCraft Infinite Water Source was overhauled.&f"
 				""
 				"Feeding a &3Steam Dynamo&f with water by hand is a pretty silly idea."
 				""
@@ -1843,11 +1843,13 @@
 				""
 				"Currently known issues are:"
 				""
-				"Gregtech will hide recipes from JEI/etc if you attempt to hide an item from it's tag. Until this is fixed, these duplicate items will remain in JEI."
+				"* Gregtech will hide recipes from JEI/etc if you attempt to hide an item from it's tag. Until this is fixed, these duplicate items will remain in JEI."
 				""
-				"The Steam Dynamo (not the boiler) currently does not require water to work."
+				"* The Steam Dynamo (not the boiler) currently does not require water to work."
 				""
-				"Some items don't stack properly, confirmed to be an an issue with avaritia."
+				"* Some items don't stack properly, confirmed to be an an issue with avaritia."
+				""
+				"* Gregtech Tools durability does not display properly."
 			]
 			icon: "thermal:nuke_tnt"
 			id: "2A511DB40C66CF35"

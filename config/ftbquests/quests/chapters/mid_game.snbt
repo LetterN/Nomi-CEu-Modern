@@ -133,6 +133,11 @@
 				"5D5B76387841C3FA"
 				"6D70F91101D8CBB4"
 			]
+			description: [
+				"ASSEMBLE!"
+				""
+				"&6Mana Dust&r is an important material. It is needed for a variety of materials related to &bThermal Expansion&r."
+			]
 			id: "227F448DFCC3E8C3"
 			rewards: [{
 				id: "6CA886F14DF08A57"
@@ -180,9 +185,10 @@
 			tasks: [{
 				icon: "thermal:blitz_powder"
 				id: "456DD6FD7A2C49D7"
-				item: "minecraft:barrier"
+				item: "thermal:blitz_powder"
 				type: "item"
 			}]
+			title: "Blitz Powder"
 			x: 6.5d
 			y: -2.0d
 		}
@@ -423,6 +429,18 @@
 		}
 		{
 			dependencies: ["5BE9EDB88D656840"]
+			description: [
+				"Combining &9Titanium Tetrachloride&r with &6Magnesium&r in an &3Electric Blast Furnace&r (approximating the Kroll process) will net you your first &6Titanium&r. "
+				""
+				"This process is a loop, and therefore will not cost you any resources, apart from &6Rutile&r, if you process it correctly. "
+				""
+				"Unfortunately, it is super hot. You'll need to cool it in a &3Vacuum Freezer&r for it to be usable."
+				""
+				"You should have set up a &3Vaccum Freezer&r for &6Kanthal&r, but if you haven't done it yet or want to improve your setup, routing through AE is an alternative way to using item conduits. Simply set an Ore Dictionary Storage Bus on the input bus of the freezer, set it to 'ingotHot*', and set it to a high piority. This will accept any new Hot Ingots entering you're system, and eliminates the need for a big conduit network."
+				""
+				"Don't encode the Hot Ingot in a pattern though!"
+			]
+			icon: "gtceu:hot_titanium_ingot"
 			id: "15372CBC9F2EA9BC"
 			rewards: [{
 				id: "0EEE8E7CD495E61E"
@@ -430,9 +448,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "22CEFFE0DDC100E4"
-				item: "gtceu:hot_titanium_ingot"
-				type: "item"
+				id: "41C8D4CA16D237DC"
+				type: "checkmark"
 			}]
 			x: 11.5d
 			y: 1.5d
@@ -2230,6 +2247,7 @@
 				type: "item"
 			}]
 			tasks: [{
+				count: 16L
 				id: "356D9050E33E21D8"
 				item: "kubejs:tungstensteel_coil_block"
 				type: "item"
@@ -2504,8 +2522,6 @@
 		{
 			dependencies: ["1E498F509DB1D460"]
 			description: [
-				"I'm running out of MCU puns."
-				""
 				"The &aAngel Ring&r is actually slower than a jetpack, but it grants creative flight and requires no fuel."
 				""
 				"Up to you if you want to use it over a jetpack for day to day stuff, but it's an ingredient in the next jetpack, so if you want that you'll need to make one eventually."
@@ -2517,6 +2533,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			subtitle: "I'm running out of MCU puns."
 			tasks: [{
 				id: "3BBA27F180D57286"
 				item: "miniutilities:angel_ring"
@@ -2838,11 +2855,25 @@
 				type: "item"
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "26BECEC8E8BA08A3"
-				item: "gtceu:iv_large_miner"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "26BECEC8E8BA08A3"
+					item: "gtceu:iv_large_miner"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7784F218DA88096C"
+					item: "gtceu:steel_machine_casing"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "7B08AB8F0B989EF2"
+					item: "gtceu:steel_frame"
+					type: "item"
+				}
+			]
 			title: "&2Large Miners"
 			x: 32.0d
 			y: 19.0d
