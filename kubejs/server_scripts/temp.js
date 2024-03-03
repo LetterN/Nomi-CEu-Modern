@@ -73,4 +73,12 @@ ServerEvents.recipes(event => {
             C: "#balm:wooden_chests",
         }
     )
-        })
+})
+
+// Temp fix for Avaritia Fabric Stackable Issue, just checks for a blank tag and removes it
+BlockEvents.broken(event =>{
+    const {player, server} = event
+    let item = player.getHeldItem('main_hand')
+    if (!item.hasTag('')) return 
+    nbt.remove('')
+})
