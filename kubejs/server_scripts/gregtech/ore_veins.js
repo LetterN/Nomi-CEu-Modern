@@ -23,13 +23,29 @@ GTCEuServerEvents.oreVeins(event => {
         })
     })
     */
+    event.add("kubejs:overworldurainite", vein => {
+        vein.weight(20)
+        vein.clusterSize(30)    
+        vein.density(0.25)
+        vein.discardChanceOnAirExposure(0)
+        vein.layer("stone")
+        vein.dimensions("minecraft:overworld")
+        vein.biomes("#minecraft:is_overworld")
+        vein.heightRangeUniform(30, 60)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(3).mat(GTMaterials.Pitchblende).size(1, 1))
+                .layer(l => l.weight(3).mat(GTMaterials.Uraninite).size(2, 4))
+            )
+        )
+    })
 })
 
 
 // Remove ore indicators
 
-// GTCEuServerEvents.oreVeins(event => {
-//     event.modifyAll((id, vein) => {
-//         vein.indicatorGenerators().clear()
-//     })
-// })  
+GTCEuServerEvents.oreVeins(event => {
+    event.modifyAll((id, vein) => {
+        vein.indicatorGenerators().clear()
+    })
+})  
