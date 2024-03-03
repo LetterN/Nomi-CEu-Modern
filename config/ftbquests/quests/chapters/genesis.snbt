@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["2A511DB40C66CF35"]
 			description: [
 				"This pack is intended to be played in a &bLost cities/Overworld dimension&r"
 				""
@@ -154,7 +155,7 @@
 				type: "checkmark"
 			}]
 			x: 1.5d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -1268,6 +1269,8 @@
 		{
 			dependencies: ["0FF18D13CD42F48A"]
 			description: [
+				"&d Work is being done to make a custom dynamo that matches the 1.12 thermal's steam dynamo, described below. The stirling dynamo is a stopgap."
+				""
 				"The &6Steam Dynamo&r will be your source of &dpower&r for the early game. It requires &9Water&r and burnable fuel like &6Coal&r or &6Sugar Cane&r to produce power."
 				""
 				"You'll need a small bit of &6Silver&f for this dynamo. If you haven't found a &6Galena vein&f yet (which is where Silver is), then consider \"buying\" some &6Silver Ore&r using &dNomicoins&r. You won't need a ton of silver and lead just yet, so it won't bankrupt you."
@@ -1833,7 +1836,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
 			description: [
 				"This pack is in &eAlpha&r. Issues are to be expected at this stage of development."
 				""
@@ -1844,16 +1846,19 @@
 				"Gregtech will hide recipes from JEI/etc if you attempt to hide an item from it's tag. Until this is fixed, these duplicate items will remain in JEI."
 				""
 				"The Steam Dynamo (not the boiler) currently does not require water to work."
+				""
+				"Some items don't stack properly, confirmed to be an an issue with avaritia."
 			]
 			icon: "thermal:nuke_tnt"
 			id: "2A511DB40C66CF35"
+			size: 1.5d
 			tasks: [{
 				id: "1A2BD249B1DBDA09"
 				type: "checkmark"
 			}]
 			title: "&dThis pack is in alpha!"
-			x: 1.5d
-			y: -2.0d
+			x: -1.0d
+			y: -4.0d
 		}
 	]
 	title: "Genesis"
