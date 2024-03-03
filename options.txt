@@ -1,0 +1,2 @@
+version:3465
+key_key.curios.open.desc:key.keyboard.unknown
