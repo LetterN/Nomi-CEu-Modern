@@ -66,7 +66,19 @@ ServerEvents.recipes(event => {
             D: "#storagedrawers:drawers"
         }
     )
-
+    event.shaped(
+        "storagedrawers:controller_slave", [
+            'III',
+            'CDC',
+            'IEI'
+        ], {
+            I: "gtceu:iron_plate",
+            C: "#gtceu:circuits/lv",
+            D: "#storagedrawers:drawers",
+            G: "minecraft:gold_block"
+        }
+    )
+    
     var controllerCore = ["minecraft:diamond_block", "minecraft:emerald_block"]
     controllerCore.forEach(coreBlock => {
         event.shaped(
