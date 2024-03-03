@@ -1,5 +1,4 @@
 {
-	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "mid_game"
@@ -3160,9 +3159,6 @@
 			y: 1.5d
 		}
 	]
-	subtitle: [
-		"Progression for this chapter is not completely done yet!"
-		"It is currently invis to players not in edit mode!"
-	]
+	subtitle: ["Progression for this chapter is not completely done yet!"]
 	title: "Mid Game"
 }
