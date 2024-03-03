@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
             S: 'gtceu:black_steel_plate',
             L: 'extendedcrafting:luminessence',
             A: 'gtceu:aluminium_plate',
-            B: 'gtceu:enderpearl_plate'
+            B: 'gtceu:ender_pearl_plate'
         })
 
     event.remove({ output: 'extendedcrafting:ultimate_component' })
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
             })
         //Catalysts
     event.replaceInput({ id: /extendedcrafting/ }, 'extendedcrafting:black_iron_ingot', 'gtceu:black_steel_plate')
-    
+
 event.remove({ output: 'extendedcrafting:the_ultimate_catalyst' })
     event.shaped(
         'extendedcrafting:the_ultimate_catalyst', [
