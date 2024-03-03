@@ -44,20 +44,6 @@ ServerEvents.recipes(event => {
         A: "kubejs:compressed_red_sand"
     });
 
-    event.shaped(
-        'minecraft:nether_star', [
-            ' A ',
-            'DEB',
-            ' C '
-        ], {
-            A: 'kubejs:nether_star_north',
-            B: 'kubejs:nether_star_east',
-            C: 'kubejs:nether_star_south',
-            D: 'kubejs:nether_star_west',
-            E: 'kubejs:nether_star_center'
-        }
-    )
-
     event.replaceInput({ id: "hangglider:glider_framework" }, 'minecraft:iron_ingot', 'gtceu:iron_rod')
     event.replaceInput({ id: "gtceu:shaped/basic_circuit_board" }, 'gtceu:copper_single_wire', 'gtceu:fine_copper_wire')
     event.shapeless('16x gtceu:fireclay_dust', ['gtceu:clay_dust', 'gtceu:brick_dust'])
@@ -576,7 +562,7 @@ ServerEvents.recipes(event => {
         .EUt(30000)
 
     //Netherstar Crafting
-    event.shaped('kubejs:netherstar_south', [
+    event.shaped('kubejs:nether_star_south', [
         "ADA",
         "ADA",
         " A "
@@ -585,7 +571,7 @@ ServerEvents.recipes(event => {
         D: 'kubejs:petrotheum_dust'
     })
 
-    event.shaped('kubejs:netherstar_north', [
+    event.shaped('kubejs:nether_star_north', [
         " A ",
         "ADA",
         "ADA"
@@ -594,7 +580,7 @@ ServerEvents.recipes(event => {
         D: 'kubejs:aerotheum_dust'
     })
 
-    event.shaped('kubejs:netherstar_west', [
+    event.shaped('kubejs:nether_star_west', [
         " AA",
         "ADD",
         " AA"
@@ -603,8 +589,8 @@ ServerEvents.recipes(event => {
         D: 'kubejs:cryotheum_dust'
     })
 
-    event.shaped('kubejs:netherstar_east', [
-        "AA",
+    event.shaped('kubejs:nether_star_east', [
+        "AA ",
         "DDA",
         "AA "
     ], {
@@ -612,32 +598,33 @@ ServerEvents.recipes(event => {
         D: 'kubejs:pyrotheum_dust'
     })
 
-    //TODO: finish
-    /*event.shaped('4x kubejs:netherstar_core', [
+    event.shaped('4x kubejs:nether_star_center', [
         "ABA",
         "CDE",
         "AFA"
     ], {
-        A: "minecraft:quartz"
-        B: 
-        C:
-        D: 
-        E:
-        F:
+        A: "minecraft:quartz",
+        B: 'thermal:blitz_rod',
+        C: 'thermal:blizz_rod',
+        D: 'extendedcrafting:luminessence_block',
+        E: 'minecraft:blaze_rod',
+        F: 'thermal:basalz_rod'
     }) 
 
-    event.shaped('minecraft:nether_star', [
-        " A ",
-        "BEC",
-        " D "
-    ], {
-        A: 'kubejs:nehterstar_north',
-        B: 'kubejs:netherstar_west',
-        C: 'kubejs:netherstar_east',
-        D: 'kubejs:netherstar_south',
-        E: 'kubejs:netherstar_core'
-    })
-    */
+    event.shaped(
+        'minecraft:nether_star', [
+            ' A ',
+            'DEB',
+            ' C '
+        ], {
+            A: 'kubejs:nether_star_north',
+            B: 'kubejs:nether_star_east',
+            C: 'kubejs:nether_star_south',
+            D: 'kubejs:nether_star_west',
+            E: 'kubejs:nether_star_center'
+        }
+    )
+    
 
     //
     // Recycling below here
