@@ -575,6 +575,70 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(30000)
 
+    //Netherstar Crafting
+    event.shaped('kubejs:netherstar_south', [
+        "ADA",
+        "ADA",
+        " A "
+    ], {
+        A: "minecraft:quartz",
+        D: 'kubejs:petrotheum_dust'
+    })
+
+    event.shaped('kubejs:netherstar_north', [
+        " A ",
+        "ADA",
+        "ADA"
+    ], {
+        A: "minecraft:quartz",
+        D: 'kubejs:aerotheum_dust'
+    })
+
+    event.shaped('kubejs:netherstar_west', [
+        " AA",
+        "ADD",
+        " AA"
+    ], {
+        A: "minecraft:quartz",
+        D: 'kubejs:cryotheum_dust'
+    })
+
+    event.shaped('kubejs:netherstar_east', [
+        "AA",
+        "DDA",
+        "AA "
+    ], {
+        A: "minecraft:quartz",
+        D: 'kubejs:pyrotheum_dust'
+    })
+
+    //TODO: finish
+    /*event.shaped('4x kubejs:netherstar_core', [
+        "ABA",
+        "CDE",
+        "AFA"
+    ], {
+        A: "minecraft:quartz"
+        B: 
+        C:
+        D: 
+        E:
+        F:
+    }) 
+
+    event.shaped('minecraft:nether_star', [
+        " A ",
+        "BEC",
+        " D "
+    ], {
+        A: 'kubejs:nehterstar_north',
+        B: 'kubejs:netherstar_west',
+        C: 'kubejs:netherstar_east',
+        D: 'kubejs:netherstar_south',
+        E: 'kubejs:netherstar_core'
+    })
+    */
+
     //
     // Recycling below here
     //
