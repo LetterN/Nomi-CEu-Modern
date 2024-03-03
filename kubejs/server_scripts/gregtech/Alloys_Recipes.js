@@ -78,6 +78,8 @@ ServerEvents.recipes(event => {
     alloy_smelter("electrical_steel", 16, 6, "gtceu:steel_ingot", "gtceu:silicon_dust", "gtceu:electrical_steel_ingot");
     alloy_smelter("endsteel", 120, 15, "gtceu:dark_steel_ingot", "minecraft:end_stone", "gtceu:end_steel_ingot");
     alloy_smelter("endsteel_endstone_dust", 120, 15, "gtceu:dark_steel_ingot", "gtceu:endstone_dust", "gtceu:end_steel_ingot");
+    alloy_smelter("tough_alloy", 16, 15, "nuclearcraft:ferroboron_ingot", "gtceu:lithium_dust", "2x nuclearcraft:tough_alloy_ingot");
+    alloy_smelter("hard_carbon_alloy", 16, 15, "2x gtceu:steel_ingot", "minecraft:diamond", "2x nuclearcraft:hard_carbon_ingot");
     //alloy_smelter("stellar_alloy", 2000, 10, "gtceu:end_steel_ingot", "8x enderio:infinity_dust", "enderio:stellar_alloy_ingot");
 })
 
@@ -92,21 +94,84 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(15)
 
-    event.recipes.gtceu.mixer("vibrant_alloy")
+    event.recipes.gtceu.mixer("vibrant_alloy_dust")
         .itemInputs('gtceu:energetic_alloy_dust', 'gtceu:ender_pearl_dust')
         .itemOutputs('gtceu:vibrant_alloy_dust')
         .duration(200)
         .EUt(30)
 
-    event.recipes.gtceu.mixer("energetic_alloy")
+    event.recipes.gtceu.mixer("energetic_alloy_dust")
         .itemInputs('2x gtceu:gold_dust', 'minecraft:redstone', 'minecraft:glowstone_dust')
         .itemOutputs('2x gtceu:energetic_alloy_dust')
         .duration(200)
         .EUt(30)
 
+    event.recipes.gtceu.mixer("mana_infused_dust")
+        .itemInputs('kubejs:primal_mana', 'gtceu:titanium_dust')
+        .itemOutputs('gtceu:mana_infused_metal_dust')
+        .duration(200)
+        .EUt(30)
+
+        event.recipes.gtceu.mixer("lumium_dust")
+        .itemInputs('4x gtceu:tin_alloy_dust', '2x gtceu:sterling_silver_dust', '2x extendedcrafting:lumiessence', 'kubejs:energized_clathrate')
+        .itemOutputs('4x gtceu:lumium_dust')
+        .inputFluids(Fluid.of('kubejs:molten_primal_mana', 250))
+        .duration(200)
+        .EUt(1920)
+
+        event.recipes.gtceu.mixer("signalum_dust")
+        .itemInputs('4x gtceu:annealed_copper_dust', '2x gtceu:ardite_dust', '2x gtceu:red_alloy_dust', 'kubejs:destabilized_clathrate')
+        .itemOutputs('4x gtceu:signalum_dust')
+        .inputFluids(Fluid.of('kubejs:molten_primal_mana', 250))
+        .duration(200)
+        .EUt(1920)
 })
 
+ServerEvents.recipes(event => {
+    event.recipes.gtceu.electric_blast_furnace("mana_infused_metal")
+        .itemInputs('gtceu:mana_infused_metal_dust')
+        .itemOutputs('gtceu:mana_infused_metal_ingot')
+        .inputFluids(Fluid.of('kubejs:molten_primal_mana', 250))
+        .duration(400)
+        .EUt(400)
+        .blastFurnaceTemp(2141)
+})
 
+ServerEvents.recipes(event => {
+    event.recipes.gtceu.alloy_blast_smelter("energetic_alloy_fluid")
+        .itemInputs('2x gtceu:gold_dust', 'minecraft:redstone', 'minecraft:glowstone_dust')
+        .outputFluids(Fluid.of('gtceu:energetic_alloy', 576))
+        .duration(1200)
+        .EUt(120)
+        .circuit(3)
+        .blastFurnaceTemp(1250)
+
+        event.recipes.gtceu.alloy_blast_smelter("energetic_alloy_fluid_gas")
+        .itemInputs('2x gtceu:gold_dust', 'minecraft:redstone', 'minecraft:glowstone_dust')
+        .inputFluids(Fluid.of('gtceu:nitrogen', 4000))
+        .outputFluids(Fluid.of('gtceu:energetic_alloy', 576))
+        .duration(600)
+        .EUt(120)
+        .circuit(13)
+        .blastFurnaceTemp(1250)
+
+    event.recipes.gtceu.alloy_blast_smelter("vibrant_alloy_fluid")
+        .itemInputs('gtceu:energetic_alloy_dust', 'gtceu:ender_pearl_dust')
+        .outputFluids(Fluid.of('gtceu:vibrant_alloy', 288))
+        .duration(900)
+        .EUt(120)
+        .circuit(2)
+        .blastFurnaceTemp(1350)
+
+        event.recipes.gtceu.alloy_blast_smelter("vibrant_alloy_fluid_gas")
+        .itemInputs('gtceu:energetic_alloy_dust', 'gtceu:ender_pearl_dust')
+        .inputFluids(Fluid.of('gtceu:nitrogen', 2000))
+        .outputFluids(Fluid.of('gtceu:vibrant_alloy', 288))
+        .duration(600)
+        .EUt(120)
+        .circuit(12)
+        .blastFurnaceTemp(1350)
+})
 ServerEvents.recipes(event => {
     event.remove({ id: /thermal:[A-Za-z]+_dust_/ })
     event.remove({ id: /thermal:fire_charge/ })
