@@ -111,4 +111,20 @@ ServerEvents.recipes(event => {
         .circuit(14)
         .duration(600)
         .EUt(30)
+
+     // Pyro Oven
+     event.remove({ output: 'gtceu:pyrolyse_oven' })
+     event.shaped(
+        'gtceu:pyrolyse_oven', [
+             'PCW',
+             'CHC',
+             'PUW'
+         ], {
+             P: 'gtceu:lv_electric_piston',
+             C: '#gtceu:circuits/lv',
+             U: 'gtceu:lv_electric_pump',
+             W: 'gtceu:cupronickel_quadruple_wire',
+             H: 'gtceu:ulv_machine_hull'
+         }
+     )  
 })
