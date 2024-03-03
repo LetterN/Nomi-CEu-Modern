@@ -1,4 +1,5 @@
 {
+	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "mid_game"
@@ -13,6 +14,7 @@
 			description: ["&6Luminessence&r is used in a number of things beyond just Extended Crafting Tables, such as nether stars."]
 			disable_toast: true
 			id: "588048A00A6250FB"
+			shape: "hexagon"
 			tasks: [{
 				id: "726E5CFBCCB4B99F"
 				item: "extendedcrafting:luminessence"
@@ -40,6 +42,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "ASSEMBLE... TOO!"
 			tasks: [{
 				id: "6D869576B5A06D95"
@@ -59,6 +62,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "38C04D2A3FD88FB6"
 				item: "kubejs:pyrotheum_dust"
@@ -80,6 +84,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "140B84013154D318"
 				item: "minecraft:blaze_powder"
@@ -97,6 +102,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "1C703B7BA54A5D6B"
 				item: "kubejs:petrotheum_dust"
@@ -118,6 +124,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "360CBAF82535EDEB"
 				item: "thermal:basalz_powder"
@@ -144,6 +151,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "25D333A97EBBD6A4"
 				item: "kubejs:primal_mana"
@@ -161,6 +169,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "404D017870C349C7"
 				item: "kubejs:aerotheum_dust"
@@ -182,6 +191,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				icon: "thermal:blitz_powder"
 				id: "456DD6FD7A2C49D7"
@@ -201,6 +211,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "70831A01976A53FC"
 				item: "kubejs:cryotheum_dust"
@@ -222,6 +233,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "15FD650C7B772E55"
 				item: "thermal:blizz_powder"
@@ -307,6 +319,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "51D23AA950FC0812"
 				item: "kubejs:molten_primal_mana_bucket"
@@ -332,6 +345,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "4BA139CAD2C74A24"
 				item: "gtceu:mana_infused_metal_ingot"
@@ -396,6 +410,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "square"
 			tasks: [{
 				id: "16A558E310D05EC5"
 				item: "thermal:machine_press"
@@ -418,6 +433,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "55E406D669A95D6A"
 				item: "gtceu:titanium_tetrachloride_bucket"
@@ -447,6 +463,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "41C8D4CA16D237DC"
 				type: "checkmark"
@@ -467,6 +484,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "52DA77396FBEFC90"
 				item: "gtceu:titanium_ingot"
@@ -489,6 +507,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "408AF0E440D9B9AB"
 				item: "gtceu:rutile_dust"
@@ -507,6 +526,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "3ABC2F0DA299750C"
 				item: "gtceu:hv_chemical_reactor"
@@ -529,6 +549,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "3243A3CE807A3DC1"
 				item: "gtceu:polytetrafluoroethylene_bucket"
@@ -551,6 +572,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "737FDED5FBDC0BFC"
 				item: "gtceu:double_titanium_plate"
@@ -587,6 +609,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "0589E6FCB6684938"
@@ -612,6 +635,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "231F549BE83551C0"
 				item: "gtceu:radon_bucket"
@@ -630,6 +654,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "When &6Ender Eyes&r just aren't creepy enough."
 			tasks: [{
 				id: "0F943E48FD2BF651"
@@ -655,6 +680,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "0C11BF35EC81146E"
 				item: "gtceu:micro_processor_mainframe"
@@ -673,6 +699,7 @@
 			]
 			disable_toast: true
 			id: "2D600105185AFAE9"
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "626C1AFCBF437304"
@@ -691,6 +718,7 @@
 				"It can also optionally overclock recipes up to 128 EU/t, gaining additional speed for relatively more power."
 			]
 			id: "2F8B802869825E02"
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "6500E62F5D8914D9"
@@ -716,6 +744,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "50CCF15D11C3B693"
 				item: "gtceu:phosphorus_boule"
@@ -744,6 +773,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "293633608B7EDDA0"
 				item: "gtceu:kanthal_ingot"
@@ -770,6 +800,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "5E6B6DF65B03DD17"
 				item: "gtceu:kanthal_coil_block"
@@ -792,6 +823,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "4DC44D14F05D27B4"
 				item: "gtceu:nichrome_ingot"
@@ -820,6 +852,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "771DAE6E383B0605"
 				item: "gtceu:nichrome_coil_block"
@@ -838,6 +871,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "794A362BAEE8DB2D"
 				item: "gtceu:epoxy_printed_circuit_board"
@@ -866,6 +900,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "00BC07CA2824F6C0"
@@ -891,6 +926,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				amount: 1000L
 				fluid: "gtceu:argon"
@@ -920,6 +956,7 @@
 				item: "kubejs:nomi_dollar"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				amount: 1000L
@@ -964,6 +1001,7 @@
 			]
 			disable_toast: true
 			id: "0CD13ABCA8491590"
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "20D04C5FF41C9ED2"
@@ -991,6 +1029,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "7FC04E0CB9796A66"
 				item: {
@@ -1043,6 +1082,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				amount: 1000L
 				fluid: "gtceu:nitrogen"
@@ -1067,6 +1107,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "2415BC74E202A3D1"
 				item: {
@@ -1105,6 +1146,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				amount: 1000L
 				fluid: "gtceu:nitrogen_dioxide"
@@ -1125,6 +1167,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "Don't let the EPA catch you making this stuff."
 			tasks: [{
 				amount: 1000L
@@ -1152,6 +1195,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "Is this that \"Gregtech PGS\" people refer to?"
 			tasks: [
 				{
@@ -1183,6 +1227,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				amount: 1000L
 				fluid: "gtceu:acetic_acid"
@@ -1207,6 +1252,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				amount: 1000L
 				fluid: "gtceu:ethenone"
@@ -1236,6 +1282,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				amount: 1000L
 				fluid: "gtceu:tetranitromethane"
@@ -1269,6 +1316,7 @@
 			]
 			icon: "gtceu:oil_bucket"
 			id: "6D434F3B0E720A5A"
+			shape: "hexagon"
 			tasks: [{
 				id: "4717EFD2B67D9EDB"
 				type: "checkmark"
@@ -1294,11 +1342,7 @@
 			icon: "enderio:painted_stairs"
 			id: "10C4A6FF23A4DF17"
 			invisible_until_tasks: 8
-			rewards: [{
-				id: "3239BC13C0B12775"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
+			shape: "hexagon"
 			size: 0.1d
 			tasks: [{
 				icon: "enderio:painted_stairs"
@@ -1333,6 +1377,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				amount: 1000L
 				fluid: "gtceu:diesel"
@@ -1356,6 +1401,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				amount: 1000L
 				fluid: "gtceu:light_fuel"
@@ -1376,6 +1422,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				amount: 1000L
 				fluid: "gtceu:heavy_fuel"
@@ -1399,6 +1446,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				amount: 1000L
 				fluid: "gtceu:hydrogen_sulfide"
@@ -1422,6 +1470,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "7F5D3D54B145AE62"
 				item: "gtceu:refinery_gas_bucket"
@@ -1445,6 +1494,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				amount: 1000L
 				fluid: "gtceu:naphtha"
@@ -1530,6 +1580,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				amount: 1000L
@@ -1593,6 +1644,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				amount: 1000L
 				fluid: "gtceu:glycerol"
@@ -1616,6 +1668,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "3DA4431E1896AE38"
 				item: "gtceu:sodium_hydroxide_dust"
@@ -1639,6 +1692,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				amount: 1000L
 				fluid: "gtceu:fish_oil"
@@ -1666,6 +1720,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				amount: 1000L
 				fluid: "gtceu:epichlorohydrin"
@@ -1687,6 +1742,7 @@
 			]
 			icon: "gtceu:epoxy_bucket"
 			id: "58A9F4F2BEDB1B96"
+			shape: "hexagon"
 			tasks: [{
 				id: "0548DF6E816D0050"
 				type: "checkmark"
@@ -1706,6 +1762,7 @@
 			]
 			icon: "gtceu:allyl_chloride_bucket"
 			id: "2EFC9DDA09527638"
+			shape: "hexagon"
 			size: 1.0d
 			tasks: [{
 				id: "5AF49C149838D83D"
@@ -1727,6 +1784,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "40BF356B8738C0AC"
@@ -1752,6 +1810,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "5B04A772005B3D99"
 				item: "gtceu:tungsten_ingot"
@@ -1774,6 +1833,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "6B886CA87892FBE7"
 				item: "gtceu:tungsten_carbide_ingot"
@@ -1796,6 +1856,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "74CFD980F2E43686"
 				item: "gtceu:tungsten_carbide_plate"
@@ -1819,6 +1880,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "54BD95C8E2BF7DF4"
 				item: "gtceu:empowerment"
@@ -1861,6 +1923,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "6652A8526BF40563"
@@ -1888,6 +1951,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "6604B33DCD2686DB"
 				item: "gtceu:nano_processor"
@@ -1910,6 +1974,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "2F7CBD80E9241524"
 				item: "gtceu:nano_cpu_chip"
@@ -1931,6 +1996,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "0EB84CAF9F2C94AE"
 				item: "gtceu:carbon_fibers"
@@ -1957,6 +2023,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "451A56FCF12416DC"
@@ -2005,6 +2072,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "7FFE374BAF574325"
@@ -2028,6 +2096,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "square"
 			tasks: [{
 				id: "0A5BDCBE998FAA19"
 				item: "gtceu:lapotron_gem"
@@ -2058,6 +2127,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			subtitle: "TODO: actually make this lol"
 			tasks: [{
 				id: "73CD8DD46EA3E559"
 				item: "minecraft:deepslate"
@@ -2086,6 +2156,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
@@ -2127,6 +2198,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "274F0587A93CEFBE"
 				item: "gtceu:hsla_steel_ingot"
@@ -2149,6 +2221,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "214A71696449A9A4"
 				item: "gtceu:tungsten_steel_ingot"
@@ -2181,6 +2254,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 3.0d
 			tasks: [{
 				id: "4404A112A80D0522"
@@ -2228,6 +2302,7 @@
 				item: "kubejs:nomi_dollar"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "74EAB1DAE678584E"
 				item: "gtceu:iv_machine_hull"
@@ -2246,6 +2321,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				count: 16L
 				id: "356D9050E33E21D8"
@@ -2269,6 +2345,7 @@
 			]
 			icon: "gtceu:silicone_rubber_bucket"
 			id: "08B36E2C37C417E5"
+			shape: "hexagon"
 			tasks: [{
 				id: "2D0945AF2DEA44E4"
 				type: "checkmark"
@@ -2291,6 +2368,7 @@
 				item: "kubejs:nomi_dollar"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				amount: 1000L
@@ -2311,6 +2389,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "23F3DF4504678C8A"
 				item: "gtceu:lapotronic_energy_orb"
@@ -2335,6 +2414,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "22A45119D9E989B7"
 				item: "gtceu:lumium_ingot"
@@ -2357,6 +2437,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "42A0FDC419CC929F"
 				item: "gtceu:hssg_ingot"
@@ -2381,6 +2462,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "0C387205AD0B5BAB"
 				item: "gtceu:signalum_ingot"
@@ -2403,6 +2485,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "0214B5E112994112"
 				item: "gtceu:iv_assembler"
@@ -2427,6 +2510,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "4E1015871D09D640"
 				item: "enderio:slice_and_splice"
@@ -2448,6 +2532,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "3D9C11BCDA6D38F5"
 				item: "enderio:soul_binder"
@@ -2507,6 +2592,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "174DE966E70D375F"
 				item: {
@@ -2552,6 +2638,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "0BAD9D80B9357E77"
 				item: "gtceu:hsss_ingot"
@@ -2570,6 +2657,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "4E4BC0F99B0B1EFC"
 				item: "gtceu:hsse_ingot"
@@ -2608,6 +2696,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
@@ -2644,6 +2733,7 @@
 			dependencies: ["27A80F018F59EF1E"]
 			description: ["Carry &l&o&neven more&r stuff"]
 			id: "1410354FC249B19D"
+			shape: "hexagon"
 			tasks: [{
 				id: "63E826016B3C8755"
 				item: "simplybackpacks:epicbackpack"
@@ -2663,6 +2753,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "7B56F268A1701B03"
 				item: "thermal:upgrade_augment_4"
@@ -2683,6 +2774,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "481C2B7D849A3198"
 				item: "gtceu:yttrium_barium_cuprate_ingot"
@@ -2704,6 +2796,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "347A54FC80E0A7EF"
 				item: "gtceu:yttrium_dust"
@@ -2725,6 +2818,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "6DC9296B5A6B7D75"
 				item: "gtceu:barium_dust"
@@ -2747,6 +2841,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "5A1973C919486D2D"
 				item: "gtceu:rare_earth_dust"
@@ -2775,6 +2870,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "2F34F9E26F3E8779"
 				item: "nuclearcraft:plate_advanced"
@@ -2793,6 +2889,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "615E5F4A60986443"
 				item: "gtceu:boron_dust"
@@ -2814,6 +2911,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "0717C345303F89D1"
 				item: "nuclearcraft:tough_alloy_ingot"
@@ -2832,6 +2930,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			tasks: [{
 				id: "62B776B854AF8612"
 				item: "nuclearcraft:hard_carbon_ingot"
@@ -2848,10 +2947,11 @@
 				""
 				"They automatically macerate the ores, yielding 3 times more crushed ore than a normal Macerator, plus the normal amount of byproduct."
 			]
+			icon: "gtceu:iv_large_miner"
 			id: "6FB0357E12499B5F"
 			rewards: [{
 				id: "5E4EF45EDC85A4AE"
-				item: "kubejs:nomi_nickel"
+				item: "kubejs:nomi_dollar"
 				type: "item"
 			}]
 			size: 2.0d
@@ -3019,6 +3119,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
 				id: "374FBDF56D3B9E22"
@@ -3046,6 +3147,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "You will need either Diesel or Biodiesel"
 			tasks: [{
 				amount: 1000L
@@ -3058,6 +3160,9 @@
 			y: 1.5d
 		}
 	]
-	subtitle: ["Progression for this chapter is not completely done yet!"]
+	subtitle: [
+		"Progression for this chapter is not completely done yet!"
+		"It is currently invis to players not in edit mode!"
+	]
 	title: "Mid Game"
 }
