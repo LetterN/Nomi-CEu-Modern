@@ -11,5 +11,8 @@ ServerEvents.tags('item', event => {
     event.add('forge:dusts/electrum_flux', 'redstone_arsenal:flux_dust')
     event.add('forge:nuggets/electrum_flux', 'redstone_arsenal:flux_nugget')
     event.add('forge:gears/electrum_flux', 'redstone_arsenal:flux_gear')
+})
+
+ServerEvents.tags('block', event => {
     event.add('minecraft:mineable/pickaxe', 'watercondenser:watercondenser')
 })
