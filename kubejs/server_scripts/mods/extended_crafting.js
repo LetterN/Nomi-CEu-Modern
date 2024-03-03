@@ -80,9 +80,10 @@ ServerEvents.recipes(event => {
             })
         //Catalysts
     event.replaceInput({ id: /extendedcrafting/ }, 'extendedcrafting:black_iron_ingot', 'gtceu:black_steel_plate')
-
+    
+event.remove({ output: 'extendedcrafting:the_ultimate_catalyst' })
     event.shaped(
-        'kubejs:conflux_catalyst', [
+        'extendedcrafting:the_ultimate_catalyst', [
             ' B ',
             'ACE',
             ' U '
@@ -139,7 +140,7 @@ ServerEvents.recipes(event => {
         ], {
             E: 'minecraft:emerald_block',
             S: 'gtceu:black_steel_plate',
-            C: 'kubejs:conflux_catalyst',
+            C: 'extendedcrafting:the_ultimate_catalyst',
             U: 'extendedcrafting:ultimate_component',
             R: 'extendedcrafting:crystaltine_component',
             T: 'extendedcrafting:elite_table'
