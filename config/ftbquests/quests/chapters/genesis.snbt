@@ -1758,6 +1758,7 @@
 					tag: {
 						AugmentData: {
 							DynamoPower: 3.0f
+							DynamoEnergy: 0.7f
 							Type: "Dynamo"
 						}
 					}

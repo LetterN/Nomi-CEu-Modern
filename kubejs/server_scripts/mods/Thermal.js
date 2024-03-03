@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
     //Item.of('thermal:dynamo_output_augment', '{AugmentData:{DynamoPower:3.0f,Type:"Dynamo"}}')
     event.recipes.gtceu.assembler('triple_power_augment')
         .itemInputs('6x gtceu:conductive_alloy_block', '6x gtceu:sterling_silver_ingot', '3x kubejs:redstone_transmission_coil', '12x gtceu:energetic_alloy_ingot')
-        .itemOutputs(Item.of('thermal:dynamo_output_augment', '{AugmentData:{DynamoPower:3.0f,Type:"Dynamo"}}'))
+        .itemOutputs(Item.of('thermal:dynamo_output_augment', '{AugmentData:{DynamoPower:3.0f,DynamoEnergy:0.7f,Type:"Dynamo"}}'))
         .duration(80)
         .EUt(32)
 
@@ -220,4 +220,111 @@ ServerEvents.recipes(event => {
     event.recipes.thermal.numismatic_fuel('gtceu:apatite_gem').energy(40000)
     event.recipes.thermal.numismatic_fuel('redstone_arsenal:flux_gem').energy(1500000)
     event.recipes.thermal.numismatic_fuel('minecraft:lapis_lazuli').energy(80000)
+
+
+    //Thermal Essences
+    event.recipes.gtceu.chemical_reactor('elemental_reduction_fluid')
+        .itemInputs('kubejs:pulsating_dust')
+        .inputFluids(Fluid.of('gtceu:hydrofluoric_acid', 1000))
+        .outputFluids('gtceu:elemental_reduction_fluid 1000')
+        .duration(80)
+        .EUt(90)
+
+    //transformation
+    event.recipes.gtceu.chemical_reactor('elemental_reduction_bazalz')
+        .itemInputs('gtceu:coal_dust')
+        .inputFluids(Fluid.of('gtceu:elemental_reduction_fluid', 100))
+        .itemOutputs('thermal:basalz_powder')
+        .duration(80)
+        .EUt(90)
+
+    event.recipes.gtceu.chemical_reactor('elemental_reduction_blaze')
+        .itemInputs('gtceu:netherrack_dust')
+        .inputFluids(Fluid.of('gtceu:elemental_reduction_fluid', 100))
+        .itemOutputs('minecraft:blaze_powder')
+        .duration(80)
+        .EUt(90)
+
+    event.recipes.gtceu.chemical_reactor('elemental_reduction_blitz')
+        .itemInputs('gtceu:endstone_dust')
+        .inputFluids(Fluid.of('gtceu:elemental_reduction_fluid', 100))
+        .itemOutputs('thermal:blitz_powder')
+        .duration(80)
+        .EUt(90)
+
+    event.recipes.gtceu.chemical_reactor('elemental_reduction_blizz')
+        .itemInputs('minecraft:snow_block')
+        .inputFluids(Fluid.of('gtceu:elemental_reduction_fluid', 100))
+        .itemOutputs('thermal:blizz_powder')
+        .duration(80)
+        .EUt(90)
+
+    event.shaped(
+        '4x kubejs:primal_mana', [
+            'AAB',
+            'DEB',
+            'DCC'
+        ], {
+            A: 'kubejs:aerotheum_dust',
+            B: 'kubejs:pyrotheum_dust',
+            C: 'kubejs:petrotheum_dust',
+            D: 'kubejs:cryotheum_dust',
+            E: 'gtceu:diamond_dust'
+        }
+    )
+
+
+    event.shaped(
+        '2x kubejs:petrotheum_dust', [
+            'AA ',
+            'BC ',
+            '   '
+        ], {
+            A: 'thermal:basalz_powder',
+            B: 'minecraft:redstone',
+            C: 'gtceu:obsidian_dust'
+        }
+    ).noMirror().noShrink()
+
+    event.shaped(
+        '2x kubejs:pyrotheum_dust', [
+            'AA ',
+            'BC ',
+            '   '
+        ], {
+            A: 'minecraft:blaze_powder',
+            B: 'minecraft:redstone',
+            C: 'gtceu:sulfur_dust'
+        }
+    ).noMirror().noShrink()
+
+
+    event.shaped(
+        '2x kubejs:aerotheum_dust', [
+            'AA ',
+            'BC ',
+            '   '
+        ], {
+            A: 'thermal:blitz_powder',
+            B: 'minecraft:redstone',
+            C: 'gtceu:saltpeter_dust'
+        }
+    ).noMirror().noShrink()
+
+
+    event.shaped(
+        '2x kubejs:cryotheum_dust', [
+            'AA ',
+            'BC ',
+            '   '
+        ], {
+            A: 'thermal:blizz_powder',
+            B: 'minecraft:redstone',
+            C: 'minecraft:snowball'
+        }
+    ).noMirror().noShrink()
+
+
+
+
 })

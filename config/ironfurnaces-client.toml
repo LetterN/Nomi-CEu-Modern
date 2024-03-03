@@ -160,7 +160,7 @@
 		# What tier this furnace should be.
 		# Default: 2
 		#Range: 0 ~ 2
-		tier = 2
+		tier = 0
 
 	[furnaces.crystal_furnace]
 		# How much RF to generate per tick
@@ -211,7 +211,7 @@
 		# How much power the Rainbow Furnace will generate.
 		# Default: 50000
 		#Range: 1 ~ 100000000
-		rainbow_generation = 50000
+		rainbow_generation = 69
 		# How much RF to generate per tick
 		# Default: 2000
 		#Range: 1 ~ 100000
