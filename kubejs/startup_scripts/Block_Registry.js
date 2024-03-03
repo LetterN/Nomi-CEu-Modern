@@ -47,13 +47,26 @@ StartupEvents.registry("block", (event) => {
 
 })
 
+// StartupEvents.registry('block', event => {
+//     event.create('small_storage_crate')
+//         .property(BlockProperties.CHEST_TYPE)
+//         .resistance(2)
+//         .soundType('oak_plank')
+//         .blockEntity(entityInfo => {
+//             entityInfo.inventory(13, 9)
+//             entityInfo.rightClickOpensInventory()
+//         })
+// })
+
 StartupEvents.registry('block', event => {
-    event.create('small_storage_crate')
-        .property(BlockProperties.CHEST_TYPE)
-        .resistance(2)
-        .soundType('oak_plank')
-        .blockEntity(entityInfo => {
-            entityInfo.inventory(13, 9)
-            entityInfo.rightClickOpensInventory()
-        })
+    event.create('tungstensteel_coil_block', 'gtceu:coil')
+        .temperature(4500)
+        .level(0)
+        .energyDiscount(1) // 
+        .tier(10)
+        .coilMaterial(GTMaterials.get('tungstensteel'))
+        .texture('kubejs:block/machine_coil_tungstensteel')
+        .hardness(5)
+        .requiresTool(true)
+        .material('metal')
 })
