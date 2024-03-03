@@ -127,4 +127,8 @@ ServerEvents.recipes(event => {
              H: 'gtceu:ulv_machine_hull'
          }
      )  
+
+     //Toolbelts
+    event.replaceInput({ output: 'toolbelt:pouch' }, 'minecraft:gold_ingot', 'gtceu:steel_ingot')
+
 })
