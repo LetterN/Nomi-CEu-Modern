@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
         }
     )
     event.shaped(
-        "storagedrawers:oak_full_drawers_2", [
+        "2x storagedrawers:oak_full_drawers_2", [
             'PCP',
             'PPP',
             'PCP'
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
         }
     )
     event.shaped(
-        "storagedrawers:oak_full_drawers_4", [
+        "4x storagedrawers:oak_full_drawers_4", [
             'CPC',
             'PPP',
             'CPC'
