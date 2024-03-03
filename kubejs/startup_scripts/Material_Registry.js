@@ -224,6 +224,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("mana")
         .element(GTElements.get("mana"))
 
+    event.create("mana_infused_metal")
+        .ingot().fluid()
+        .color(0xCF83FB)
+        .iconSet('dull')
+        .flags(GTMaterialFlags.GENERATE_PLATE)
+
     event.create("manyullyn")
         .ingot().fluid()
         .color(0x9949cc)
@@ -492,4 +498,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .dust()
         .color(0xACFFC2)
         .flags(GTMaterialFlags.PHOSPHORESCENT, GTMaterialFlags.GENERATE_PLATE)
+})
+
+// Misc
+GTCEuStartupEvents.registry('gtceu:material', event => {
+event.create('elemental_reduction_fluid')
+.fluid()
+.color(0xbbddbd)
+.iconSet('elemental_reduction_fluid')
 })
