@@ -897,13 +897,9 @@
 				""
 				"&2As stated in the tooltip, higher tier coils will make this faster."
 			]
+			disable_toast: true
 			icon: "gtceu:pyrolyse_oven"
 			id: "2C74A67552A7DC3D"
-			rewards: [{
-				id: "3CF93D77E3A403B6"
-				item: "minecraft:polished_diorite"
-				type: "item"
-			}]
 			shape: "hexagon"
 			tasks: [
 				{
