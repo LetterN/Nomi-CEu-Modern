@@ -2,6 +2,35 @@ ServerEvents.recipes(event => {
         //remove dml iems
         event.remove({ output: ['hostilenetworks:blank_data_model', 'hostilenetworks:deep_learner', 'hostilenetworks:loot_fabricator', 'hostilenetworks:sim_chamber'] })
 
+        //Issue #84
+        event.recipes.gtceu.assembler('bones_to_skull')
+            .itemInputs('4x minecraft:bone')
+            .itemOutputs('minecraft:skeleton_skull')
+            .circuit(13)
+            .duration(20)
+            .EUt(16)
+
+        event.smelting('2x minecraft:slime_ball', 'gtceu:plant_ball')
+
+        event.shaped(
+            'minecraft:wither_skeleton_skull', [
+                "AA ",
+                "AB ",
+                "   "
+            ], {
+                A: 'minecraft:skeleton_skull',
+                B: 'hostilenetworks:nether_prediction'
+            }
+        ).noMirror().noShrink()
+
+        event.recipes.gtceu.compressor('calcium_to_bonemeal')
+            .itemInputs('2x gtceu:calcium_dust')
+            .itemOutputs('minecraft:bone_meal')
+            .duration(20)
+            .EUt(4)
+
+
+
         event.shaped(
             'hostilenetworks:blank_data_model', [
                 'BBA',
