@@ -45,3 +45,4 @@ config/jade/sort-order.json
 config/jei/ingredient-list-mod-sort-order.ini
 config/jei/recipe-category-sort-order.ini
 options.txt
+config/embeddium++.toml
