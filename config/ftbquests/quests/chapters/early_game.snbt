@@ -1000,11 +1000,26 @@
 			]
 			icon: "gtceu:stainless_steel_plate"
 			id: "2823D7B4C8F900CA"
-			rewards: [{
-				id: "39E334FB022AD74E"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "39E334FB022AD74E"
+					item: "kubejs:nomi_nickel"
+					type: "item"
+				}
+				{
+					id: "547F553BA6D87D63"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "nomiceu:stainless"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{

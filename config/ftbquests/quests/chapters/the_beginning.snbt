@@ -572,6 +572,19 @@
 			dependencies: ["29A487F0BC43AAF9"]
 			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either of these dusts, &6Coal Coke Dust&r, &2or Diamond Dust&r into &6Carbon Dust&r, which can be used for Steel and other useful things."]
 			id: "5301E546BAA69844"
+			rewards: [{
+				id: "424A2A6FAB412F69"
+				item: {
+					Count: 1b
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "nomiceu:steel"
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "You already have &6Steel&r, but it can be made much faster in the &3Alloy Smelter&r, at the cost of EU."
@@ -1318,11 +1331,26 @@
 				"&2You can cut by a third the smelting time of Aluminium and some other smelting processes with Nitrogen gas. Higher-tier processes may take different gases."
 			]
 			id: "3AB0402B19DD5BA8"
-			rewards: [{
-				id: "5155898EDA908A3F"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5155898EDA908A3F"
+					item: "kubejs:nomi_nickel"
+					type: "item"
+				}
+				{
+					id: "3D0C6CDEED481E30"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "nomiceu:alumnium"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "76883573CA1B54F4"
