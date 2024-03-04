@@ -478,11 +478,26 @@
 				"Also the tier material for Extreme Voltage (EV)."
 			]
 			id: "0874A0191325CFDB"
-			rewards: [{
-				id: "61701B06472AFA90"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "61701B06472AFA90"
+					item: "kubejs:nomi_nickel"
+					type: "item"
+				}
+				{
+					id: "21935100523DBD85"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "nomiceu:titanium"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "52DA77396FBEFC90"
@@ -2215,11 +2230,26 @@
 				"This alloy is cooked in an &3Electric Blast Furnace&r and cooled in a &3Vacuum Freezer&r."
 			]
 			id: "634E056463ED1532"
-			rewards: [{
-				id: "5F9123370A4D8C0A"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5F9123370A4D8C0A"
+					item: "kubejs:nomi_nickel"
+					type: "item"
+				}
+				{
+					id: "2C123B7485932F5B"
+					item: {
+						Count: 1b
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "nomiceu:tungstensteel"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			tasks: [{
 				id: "214A71696449A9A4"
