@@ -144,6 +144,8 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //Ender Pearl dust Electrolysis
+    //event.remove({ id: 'gtceu:electrolyzer/decomposition_electrolyzing_ender_pearl' })
 
 
 })
