@@ -326,16 +326,36 @@ ServerEvents.recipes(event => {
 
 
     event.recipes.gtceu.chemical_reactor('energized_clathrate')
-    .itemInputs('minecraft:quartz')
-    .inputFluids(Fluid.of('gtceu:glowstone', 250))
-    .itemOutputs('kubejs:energized_clathrate')
-    .duration(120)
-    .EUt(75)
+        .itemInputs('minecraft:quartz')
+        .inputFluids(Fluid.of('gtceu:glowstone', 250))
+        .itemOutputs('kubejs:energized_clathrate')
+        .duration(120)
+        .EUt(75)
 
     event.recipes.gtceu.chemical_reactor('destabilized_clathrate')
-    .itemInputs('minecraft:quartz')
-    .inputFluids(Fluid.of('gtceu:redstone_bucket', 250))
-    .itemOutputs('kubejs:destabilized_clathrate')
-    .duration(120)
-    .EUt(75)
+        .itemInputs('minecraft:quartz')
+        .inputFluids(Fluid.of('gtceu:redstone_bucket', 250))
+        .itemOutputs('kubejs:destabilized_clathrate')
+        .duration(120)
+        .EUt(75)
+
+    //Thermal Dusts
+    event.recipes.gtceu.macerator('dust_blitz')
+        .itemInputs('thermal:blitz_rod')
+        .itemOutputs('4x thermal:blitz_powder')
+        .duration(200)
+        .EUt(16)
+
+    event.recipes.gtceu.macerator('dust_blizz')
+        .itemInputs('thermal:blizz_rod')
+        .itemOutputs('4x thermal:blizz_powder')
+        .duration(200)
+        .EUt(16)
+
+    event.recipes.gtceu.macerator('dust_bazalz')
+        .itemInputs('thermal:basalz_rod')
+        .itemOutputs('4x thermal:basalz_powder')
+        .duration(200)
+        .EUt(16)
+
 })
