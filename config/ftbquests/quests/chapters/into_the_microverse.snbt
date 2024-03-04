@@ -249,7 +249,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "38733A0F278A11E1"
-				item: "kubejs:conflux_catalyst"
+				item: "extendedcrafting:the_ultimate_catalyst"
 				type: "item"
 			}]
 			x: -3.0d
