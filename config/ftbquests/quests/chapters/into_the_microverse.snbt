@@ -260,7 +260,11 @@
 				"04475771966A92C3"
 				"77582C534A994D7C"
 			]
-			description: ["This is the largest Extended Crafting Table, capable of handling 9x9 recipes."]
+			description: [
+				"This is the largest Extended Crafting Table, capable of handling 9x9 recipes."
+				""
+				"&dYou should have PackagedAuto by now, so just use that to automate these recipes."
+			]
 			id: "555BEBF7FD6012B7"
 			rewards: [{
 				id: "636C9B089C324417"
@@ -274,6 +278,7 @@
 				item: "extendedcrafting:ultimate_table"
 				type: "item"
 			}]
+			title: "&dUltimate Crafting Table"
 			x: -3.0d
 			y: -6.0d
 		}
@@ -282,7 +287,11 @@
 				"27692C4A58F1A183"
 				"2181102841205407"
 			]
-			description: ["This table allows you to craft 7x7 Extended Crafting Table recipes."]
+			description: [
+				"This table allows you to craft 7x7 Extended Crafting Table recipes."
+				""
+				"&dDon't forget that you can automate Extended Crafting recipes before you get PackagedAuto by converting your Extended Crafting tables into autocrafting tables."
+			]
 			id: "77582C534A994D7C"
 			rewards: [{
 				id: "283EED18AE8CAD38"
@@ -296,6 +305,7 @@
 				item: "extendedcrafting:elite_table"
 				type: "item"
 			}]
+			title: "&dElite Crafting Table"
 			x: 0.0d
 			y: -6.0d
 		}
@@ -319,7 +329,11 @@
 		}
 		{
 			dependencies: ["3729FBA4FA7E9C12"]
-			description: ["With the Advanced Crafting Table, you can now craft 5x5 recipes."]
+			description: [
+				"With the Advanced Crafting Table, you can now craft 5x5 recipes."
+				""
+				"&dYou can automate Extended Crafting recipes before you get PackagedAuto by converting your Extended Crafting tables into autocrafting tables."
+			]
 			id: "2181102841205407"
 			rewards: [{
 				id: "2D0CA383333B6AC1"
@@ -333,6 +347,7 @@
 				item: "extendedcrafting:advanced_table"
 				type: "item"
 			}]
+			title: "&dAdvanced Crafting Table"
 			x: 0.0d
 			y: -10.5d
 		}

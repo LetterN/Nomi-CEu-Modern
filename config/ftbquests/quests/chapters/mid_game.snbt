@@ -3158,6 +3158,24 @@
 			x: 41.5d
 			y: 1.5d
 		}
+		{
+			dependencies: ["53C00EA9D9BEE776"]
+			description: ["&dWhile not required for progression, the space station serves as both a cool place to build a base, and opens the door to a variety of other space related options, including even making a dyson sphere!"]
+			id: "059A9B12C8478025"
+			rewards: [{
+				id: "62FD649920864137"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "186C8FE63F7C723E"
+				item: "gcyr:space_station_packager"
+				type: "item"
+			}]
+			title: "&dSpace Stationing"
+			x: 9.5d
+			y: 10.5d
+		}
 	]
 	subtitle: ["Progression for this chapter is not completely done yet!"]
 	title: "Mid Game"
