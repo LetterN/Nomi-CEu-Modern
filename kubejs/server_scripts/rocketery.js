@@ -128,6 +128,25 @@ ServerEvents.recipes(event => {
         }, 2
     )
 
+    // Space Station Packager
+    event.remove({ output: "gcyr:space_station_packager" })
+    event.recipes.extendedcrafting.shaped_table(
+        'gcyr:space_station_packager', [
+            "RPEPR",
+            "PXCXP",
+            "PCACP",
+            "PXCXP",
+            "RPEPR"
+        ], {
+            P: 'gtceu:double_titanium_plate',
+            R: 'gtceu:ev_robot_arm',
+            X: 'gtceu:ev_machine_casing',
+            A: 'gtceu:ev_assembler',
+            E: 'gtceu:ev_emitter',
+            C: '#gtceu:circuits/ev'
+        }, 2
+    )
+
     //Motors and Tanks
     event.shaped(
         'gcyr:basic_rocket_motor', [
@@ -148,6 +167,26 @@ ServerEvents.recipes(event => {
             P: 'gtceu:stainless_steel_plate',
             T: 'enderio:fluid_tank'
         })
+
+        event.shaped(
+            'gcyr:advanced_rocket_motor', [
+                ' P ',
+                'PPP',
+                'TTT'
+            ], {
+                P: 'gtceu:double_tungsten_carbide_plate',
+                T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Energetic"}').strongNBT()
+            })
+    
+        event.shaped(
+            'gcyr:advanced_fuel_tank', [
+                'PTP',
+                'PTP',
+                'PTP'
+            ], {
+                P: 'gtceu:tungsten_steel_plate',
+                T: 'enderio:fluid_tank'
+            })
 
     // Launch Pad           
     event.shaped(
