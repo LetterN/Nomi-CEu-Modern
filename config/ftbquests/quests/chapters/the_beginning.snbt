@@ -1236,7 +1236,7 @@
 				}
 				{
 					amount: 1000L
-					fluid: "minecraft:water"
+					fluid: "gtceu:oxygen"
 					id: "6732F515AE6C060A"
 					type: "fluid"
 				}
