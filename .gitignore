@@ -6,7 +6,6 @@
 !/.gitattributes
 !/manifest.json
 
-!/mods/HostileNeuralNetworks*
 !/mods/systeams*
 
 /mods/.index

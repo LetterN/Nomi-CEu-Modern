@@ -12,16 +12,20 @@
     "version": "",
     "author": "NFm Team",
     "files": [{
-            "fileID": 506079,
+            "projectID": 915104,
+            "fileID": 5157326,
+            "required": true
+        }, {
             "projectID": 5066774,
+            "fileID": 506079,
             "required": true
         }, {
-            "fileID": 5151584,
             "projectID": 840010,
+            "fileID": 5151584,
             "required": true
         }, {
-            "fileID": 4962610,
             "projectID": 245755,
+            "fileID": 4962610,
             "required": true
         },
         {
