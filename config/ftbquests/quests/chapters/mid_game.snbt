@@ -2342,8 +2342,12 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["634E056463ED1532"]
-			description: ["&6Tungstensteel&r is the fourth coil material available, increasing your EBF's operating temperature to 4500K so it can process more advanced materials."]
+			dependencies: ["32F80B528E0EAA96"]
+			description: [
+				"&6RTM Alloy&r is the fourth coil material available, increasing your EBF's operating temperature to 4500K so it can process more advanced materials."
+				""
+				"&dIn modern, RTM Alloy replaces tungstensteel in coil progression."
+			]
 			id: "072DB633006E78B7"
 			rewards: [{
 				id: "6D3C752C2E6A7402"
@@ -2354,10 +2358,10 @@
 			tasks: [{
 				count: 16L
 				id: "356D9050E33E21D8"
-				item: "kubejs:tungstensteel_coil_block"
+				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
-			title: "Tungstensteel Coil Blocks"
+			title: "&dRTM Alloy Coil Blocks"
 			x: 37.0d
 			y: 8.5d
 		}
@@ -3205,6 +3209,24 @@
 			title: "&dSpace Stationing"
 			x: 9.5d
 			y: 10.5d
+		}
+		{
+			dependencies: ["3B3F46345D39CAE2"]
+			description: [
+				"&6RTM Alloy&r is an alloy of &6Ruthenium&r, &6Tungsten&r and &6Molybdenum&r."
+				""
+				"This alloy is cooked in an &3Electric Blast Furnace&r and cooled in a &3Vacuum Freezer&r."
+			]
+			id: "32F80B528E0EAA96"
+			shape: "hexagon"
+			tasks: [{
+				id: "3EE0E90EFEBA33D1"
+				item: "gtceu:rtm_alloy_ingot"
+				type: "item"
+			}]
+			title: "&dRTM Alloy"
+			x: 37.0d
+			y: 6.5d
 		}
 	]
 	subtitle: ["Progression for this chapter is not completely done yet!"]
