@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
             'PPP'
         ], {
             P: "gtceu:rubber_planks",
-            C: "#balm:wooden_chests",
+            C: "#balm:wooden_chests"
         }
     )
     event.shaped(
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
             'PCP'
         ], {
             P: "gtceu:rubber_planks",
-            C: "#balm:wooden_chests",
+            C: "#balm:wooden_chests"
         }
     )
     event.shaped(
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
             'CPC'
         ], {
             P: "gtceu:rubber_planks",
-            C: "#balm:wooden_chests",
+            C: "#balm:wooden_chests"
         }
     )
 
