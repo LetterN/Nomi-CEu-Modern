@@ -2790,6 +2790,7 @@
 			tasks: [{
 				id: "7B56F268A1701B03"
 				item: "thermal:upgrade_augment_4"
+				match_nbt: false
 				type: "item"
 			}]
 			x: 37.0d

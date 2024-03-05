@@ -44,8 +44,11 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("thermal:device_rock_gen", "\u00A77Must be placed next to lava and water to produce cobblestone.")
     tooltip.add("thermal:device_water_gen", "\u00A77Must be placed next to two water source blocks to work.")
 
+    tooltip.add(['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_4', 'thermal:upgrade_augment_3', 'thermal:dynamo_output_augment'], '\u00A7aDo not take the items from JEI !, use the crafting recipe to get the NBT data.')
+
+
     // Backpacks, this extra bit of code will made it so that this line will be the first line displayed after the item name (if curios didn't exist lol)
     tooltip.addAdvanced(/simplybackpacks:/, (item, advanced, text) => {
         text.add(1, [Text.of('Items in backpack will be lost if upgraded!').red()])
-      })
+    })
 })
