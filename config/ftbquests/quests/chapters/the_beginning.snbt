@@ -1161,6 +1161,7 @@
 			tasks: [{
 				id: "26BC97C8FD16C12D"
 				item: "thermal:upgrade_augment_1"
+				match_nbt: false
 				type: "item"
 			}]
 			x: 8.5d
