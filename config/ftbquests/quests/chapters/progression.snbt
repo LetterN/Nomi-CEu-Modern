@@ -963,7 +963,7 @@
 			id: "782406193EAE3F7D"
 			tasks: [{
 				id: "3238D64F5041C768"
-				item: "gtceu:tungsten_steel_ingot"
+				item: "gtceu:rtm_alloy_ingot"
 				type: "item"
 			}]
 			x: 15.0d
