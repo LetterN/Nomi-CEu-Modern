@@ -57,16 +57,3 @@ StartupEvents.registry("block", (event) => {
 //             entityInfo.rightClickOpensInventory()
 //         })
 // })
-
-StartupEvents.registry('block', event => {
-    event.create('tungstensteel_coil_block', 'gtceu:coil')
-        .temperature(4500)
-        .level(0)
-        .energyDiscount(1) // 
-        .tier(10)
-        .coilMaterial(GTMaterials.get('tungstensteel'))
-        .texture('kubejs:block/machine_coil_tungstensteel')
-        .hardness(5)
-        .requiresTool(true)
-        .material('metal')
-})
