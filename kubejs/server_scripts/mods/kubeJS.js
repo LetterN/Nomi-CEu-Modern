@@ -218,13 +218,4 @@ ServerEvents.recipes(event => {
         .EUt(420)
 
     event.recipes.minecraft.smelting('gtceu:dilithium_dust', 'gtceu:dilithium_ore')
-
-    //Coils
-    event.recipes.gtceu.assembler('tungstensteel_coil_block')
-    .itemInputs('8x gtceu:tungsten_steel_double_wire', '8x gtceu:vanadium_steel_foil')
-    .inputFluids(Fluid.of('gtceu:nichrome', 144))
-    .itemOutputs('kubejs:tungstensteel_coil_block')
-    .duration(500)
-    .EUt(1920)
-
 })
