@@ -49,6 +49,14 @@ ItemEvents.tooltip(tooltip => {
 
     // Backpacks, this extra bit of code will made it so that this line will be the first line displayed after the item name (if curios didn't exist lol)
     tooltip.addAdvanced(/simplybackpacks:/, (item, advanced, text) => {
+        text.add(1, [Text.of('Deprecated, switch out for a sophisticated backpack.').red()])
+    })
+
+    tooltip.addAdvanced(/sophisticatedbackpacks:backpack/, (item, advanced, text) => {
+        text.add(1, [Text.of('Items and upgrades in backpack will be lost if upgraded!').red()])
+    })
+
+    tooltip.addAdvanced(/sophisticatedbackpacks:[A-Za-z]+_backpack/, (item, advanced, text) => {
         text.add(1, [Text.of('Items in backpack will be lost if upgraded!').red()])
     })
 })
