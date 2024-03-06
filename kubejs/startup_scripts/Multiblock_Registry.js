@@ -7,10 +7,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
-})
 
-// Advanced Microverse Projector Recipe Type
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+
+    // Advanced Microverse Projector Recipe Type
+
     event.create('advanced_microverse')
         .category('multiblock')
         .setEUIO('in')
@@ -18,10 +18,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
-})
 
-// Advanced Microverse Projector II Recipe Type
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+
+    // Advanced Microverse Projector II Recipe Type
+
     event.create('advanced_microverse_ii')
         .category('multiblock')
         .setEUIO('in')
@@ -29,10 +29,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
-})
 
-// Naquadah Reactor I Recipe type
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+
+    // Naquadah Reactor I Recipe type
+
     event.create('naquadah_reactor_i')
         .category('multiblock')
         .setEUIO('in')
@@ -40,10 +40,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
-})
 
-// Naqudah Reactor II Recipe Type
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+
+    // Naqudah Reactor II Recipe Type
+
     event.create('naquadah_reactor_ii')
         .category('multiblock')
         .setEUIO('in')
@@ -51,10 +51,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
-})
 
-// Empowerer
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+
+    // Empowerer
+
     event.create('empowerment')
         .category('multiblock')
         .setEUIO('in')
@@ -85,10 +85,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer("kubejs:block/microverse_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 
-})
 
-// Advanced Microverse Projector
-GTCEuStartupEvents.registry('gtceu:machine', event => {
+
+    // Advanced Microverse Projector
+
     event.create('advanced_microverse_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('advanced_microverse')
@@ -109,10 +109,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingRenderer("kubejs:block/microverse_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
-})
 
-// Advanced Microverse Projecctor II 
-GTCEuStartupEvents.registry('gtceu:machine', event => {
+
+    // Advanced Microverse Projecctor II 
+
     event.create('advanced_microverse_projector_ii', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('advanced_microverse_ii')
@@ -138,10 +138,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .workableCasingRenderer("kubejs:block/microverse_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
 
-})
 
-// Naquadah Reactor I
-GTCEuStartupEvents.registry('gtceu:machine', event => {
+    // Naquadah Reactor I
+
     event.create('naquadah_reactor_i', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('naquadah_reactor_i')
@@ -160,9 +159,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/reaction_safe_mixing_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
-})
 
-GTCEuStartupEvents.registry('gtceu:machine', event => {
+
+
     event.create('naquadah_reactor_ii', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('naquadah_reactor_ii')
@@ -181,11 +180,11 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingRenderer("gtceu:block/casings/gcym/reaction_safe_mixing_casing",
             "gtceu:block/multiblock/implosion_compressor", false)
-})
 
-//TODO: Figure out a way to force specific items into specific busses, perhaps look at assline code?
-//Also make a custom casing texture
-GTCEuStartupEvents.registry('gtceu:machine', event => {
+
+    //TODO: Figure out a way to force specific items into specific busses, perhaps look at assline code?
+    //Also make a custom casing texture
+
     event.create('empowerment', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes('empowerment')
