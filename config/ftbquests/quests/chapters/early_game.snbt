@@ -2595,7 +2595,7 @@
 				item: "enderio:vibrant_capacitor_bank"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 10.5d
 			y: 26.5d
 		}
 		{
@@ -2740,6 +2740,18 @@
 			title: "&2Lossless Cables"
 			x: -6.75d
 			y: 0.75d
+		}
+		{
+			dependencies: ["0A65FC6D798ABFC5"]
+			id: "313ED4E5248EFED3"
+			tasks: [{
+				id: "6B80908A668D1EFF"
+				item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
+				type: "item"
+			}]
+			title: "&d Upgrades, people"
+			x: 9.0d
+			y: 26.5d
 		}
 	]
 	title: "Early Game"

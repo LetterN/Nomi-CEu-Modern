@@ -1262,6 +1262,20 @@
 		{
 			dependencies: ["3F6EDC2481D5877F"]
 			description: ["Carry &oeven more&r stuff."]
+			icon: {
+				Count: 1b
+				id: "sophisticatedbackpacks:iron_backpack"
+				tag: {
+					contentsUuid: [I;
+						890972236
+						1590249428
+						-1212807776
+						575640463
+					]
+					inventorySlots: 54
+					upgradeSlots: 2
+				}
+			}
 			id: "15808BD9C5DBA0F7"
 			rewards: [{
 				id: "3A6C03B13D469DDC"
@@ -1272,18 +1286,22 @@
 				id: "209DE065BB54505D"
 				item: {
 					Count: 1b
-					id: "simplybackpacks:uncommonbackpack"
+					id: "sophisticatedbackpacks:iron_backpack"
 					tag: {
-						UUID: [I;
-							-2022920025
-							1839153713
-							-1753091337
-							-455681616
+						contentsUuid: [I;
+							890972236
+							1590249428
+							-1212807776
+							575640463
 						]
+						inventorySlots: 54
+						upgradeSlots: 2
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
+			title: "&d Better Backpacks"
 			x: 4.5d
 			y: 3.5d
 		}
@@ -1947,9 +1965,23 @@
 			id: "1C2088A496D8FE4F"
 			tasks: [{
 				id: "554C5636BB994E79"
-				item: "simplybackpacks:rarebackpack"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:gold_backpack"
+					tag: {
+						contentsUuid: [I;
+							-2079088966
+							795101541
+							-1099241216
+							-1042767112
+						]
+						inventorySlots: 81
+						upgradeSlots: 3
+					}
+				}
 				type: "item"
 			}]
+			title: "&d Even Better Backpacks"
 			x: 6.5d
 			y: 5.0d
 		}

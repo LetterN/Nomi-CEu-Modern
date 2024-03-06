@@ -1885,7 +1885,7 @@
 			description: [
 				"The&3 Empowerer&r is a multiblock used to convert special crystalline materials into empowered variants."
 				""
-				"TODO: explain this futher when #26 is fixed."
+				"&5TODO: explain this futher when #26 is fixed."
 			]
 			id: "49C8716030809478"
 			rewards: [{
@@ -2769,7 +2769,20 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "63E826016B3C8755"
-				item: "simplybackpacks:epicbackpack"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:diamond_backpack"
+					tag: {
+						contentsUuid: [I;
+							1998719540
+							-2126561006
+							-1970026112
+							791982398
+						]
+						inventorySlots: 108
+						upgradeSlots: 5
+					}
+				}
 				type: "item"
 			}]
 			x: 38.5d
