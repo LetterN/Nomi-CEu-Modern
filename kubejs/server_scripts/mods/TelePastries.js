@@ -2,6 +2,18 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: ["telepastries:nether_cake", 'telepastries:overworld_cake', 'telepastries:end_cake'] })
 
+    // cake base
+    event.shaped(
+        'enderio:cake_base', [
+            'SMS',
+            'WWW'
+        ], {
+            W: 'gtceu:wheat_dust',
+            S: 'minecraft:sugar',
+            M: "minecraft:milk_bucket"
+        }
+    )
+
     //Overworld Cake
     event.shaped(
         'telepastries:overworld_cake', [
