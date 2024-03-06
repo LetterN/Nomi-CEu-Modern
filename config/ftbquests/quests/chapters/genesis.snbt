@@ -22,6 +22,8 @@
 				"Features new to &2CEu&r and quests with new content will be higlighted in &2dark green&r."
 				""
 				"Features new to &dModern&r and quests with new content will be higlighted in &dLight Purple&r."
+				""
+				"Notes about things in &5Alpha&r will be higlighted in &5Dark Purple&r."
 			]
 			icon: "minecraft:crafting_table"
 			id: "66FCC26399376B55"
@@ -83,7 +85,7 @@
 				title: "Genesis #3"
 				type: "checkmark"
 			}]
-			title: "&2Genesis"
+			title: "&dGenesis"
 			x: -1.0d
 			y: -1.5d
 		}
@@ -888,6 +890,8 @@
 				"&bEnderIO&r&6 Fluid Conduits&r. They have the advantage of being &6Conduits&r, allowing them to fit in the same block as other &6Conduits&r. "
 				""
 				"Pick your poison."
+				""
+				"&5Sadly, EnderIO has decided to already abandon 1.20.1 EnderIO, meaning things like speed upgrades, filters, etc will never be officially added. If you are a good coder and are willing to port these elements, please let the NFm dev team know."
 			]
 			icon: "gtceu:steel_small_fluid_pipe"
 			id: "64AAF0CD958D836A"
@@ -909,11 +913,7 @@
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
-			description: [
-				"This tab can be accessed in &bJEI&r, when finding the &ausages or recipes&r of &aany form&r of a &bGregTech&r material!&r"
-				""
-				"It will show you nearly all the different forms of a &bGregTech&r material (&ePlates, Rods, Screws, Dusts...&r) on a single page, as well as showing what can be turned into what. You can then click on those to see their recipes."
-			]
+			description: ["&5This is currently not in GT Modern.&r"]
 			icon: "gtceu:aluminium_ingot"
 			id: "53E600ADCC9DD608"
 			rewards: [{
@@ -921,13 +921,12 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
-			subtitle: "&2Check out the new Material Tree tab!&r"
 			tasks: [{
 				id: "5E73C23D1FA65873"
 				title: "Material Tree"
 				type: "checkmark"
 			}]
-			title: "&2Material Tree"
+			title: "&5Material Tree"
 			x: -5.0d
 			y: 2.0d
 		}
@@ -1276,7 +1275,7 @@
 		{
 			dependencies: ["0FF18D13CD42F48A"]
 			description: [
-				"&d Work is being done to make a custom dynamo that matches the 1.12 thermal's steam dynamo, described below. The stirling dynamo is a stopgap."
+				"&5 Work is being done to make a custom dynamo that matches the 1.12 thermal's steam dynamo, described below. The stirling dynamo is a stopgap."
 				""
 				"The &6Steam Dynamo&r will be your source of &dpower&r for the early game. It requires &9Water&r and burnable fuel like &6Coal&r or &6Sugar Cane&r to produce power."
 				""
@@ -1668,6 +1667,8 @@
 				"This modpack has &aCrafting Calculators&r. It has a steep learning curve, but once you manage to learn how to use it, it's going to be your trusty companion in calculating recipe costs."
 				""
 				"Craft yourself one and hit the book button in the top-left corner for a quick overview of how it works."
+				""
+				"&5EMI is being investigated to possibly replace REI (and also Crafting Calculators) in the pack, if you want to help this, uninstall REI, then install JEI and EMI. If you spot anything wrong, please report it to the applicable repos."
 			]
 			icon: "jecalculation:item_calculator_craft"
 			id: "58566C7BF4C22D86"
@@ -1814,29 +1815,51 @@
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
-			description: ["Carry more stuff."]
+			description: [
+				"Sophisticated Storage and Sophisticated Backpacks are great options for storing items, both at base and on the go, as well as offering a variety of both helpful and fun upgrades."
+				""
+				"Sophisticated Storage in particular is great for cheaply storing, able to store 3 barrels worth of items at it's lowest tier, costing only a bit of iron to craft."
+				""
+				"&5The textures and item names here are to be updated."
+			]
 			id: "61E5D7EEE745C6FB"
 			rewards: [{
 				id: "404D91696592F318"
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
-			tasks: [{
-				id: "46CA42CF7D0730E6"
-				item: {
-					Count: 1b
-					id: "simplybackpacks:commonbackpack"
-					tag: {
-						UUID: [I;
-							1970718959
-							2049720913
-							-1356269712
-							-2105679826
-						]
+			tasks: [
+				{
+					id: "46CA42CF7D0730E6"
+					item: {
+						Count: 1b
+						id: "sophisticatedstorage:gold_barrel"
+						tag: {
+							woodType: "oak"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "142C0C6C043C1F1C"
+					item: {
+						Count: 1b
+						id: "sophisticatedbackpacks:backpack"
+						tag: {
+							contentsUuid: [I;
+								1310140833
+								-356693514
+								-1108671659
+								1683658570
+							]
+							inventorySlots: 27
+							upgradeSlots: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&dSophisticated Storage Shenanigans"
 			x: -8.0d
 			y: 1.0d
 		}
@@ -1861,7 +1884,7 @@
 				id: "1A2BD249B1DBDA09"
 				type: "checkmark"
 			}]
-			title: "&dThis pack is in alpha!"
+			title: "&5This pack is in alpha!"
 			x: -1.0d
 			y: -4.0d
 		}
