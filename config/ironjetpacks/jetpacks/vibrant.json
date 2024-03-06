@@ -13,13 +13,13 @@
     "curios": true,
     "capacity": 20000000,
     "usage": 450,
-    "speedVertical": 1.03,
-    "accelVertical": 0.17,
-    "speedSideways": 0.21,
-    "speedHoverAscend": 0.45,
-    "speedHoverDescend": 0.25,
+    "speedVertical": 0.8,
+    "accelVertical": 0.14,
+    "speedSideways": 0.05,
+    "speedHoverAscend": 0.4,
+    "speedHoverDescend": 0.4,
     "speedHover": 0.0,
     "sprintSpeedMulti": 2.0,
-    "sprintSpeedMultiVertical": 1.5,
-    "sprintFuelMulti": 0.0
+    "sprintSpeedMultiVertical": 2.0,
+    "sprintFuelMulti": 4.0
 }
