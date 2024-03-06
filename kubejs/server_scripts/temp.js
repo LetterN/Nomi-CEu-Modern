@@ -76,5 +76,19 @@ ServerEvents.recipes(event => {
 
     //temp blanket remove for this patch
     event.remove({ output: /nuclearcraft/ })
+
+    // Backpack
+    var backpacks = [
+        ['simplybackpacks:commonbackpack', 'sophisticatedbackpacks:backpack'],
+        ['simplybackpacks:uncommonbackpack','sophisticatedbackpacks:iron_backpack'],
+        ['simplybackpacks:rarebackpack','sophisticatedbackpacks:gold_backpack'],
+        ['simplybackpacks:epicbackpack','sophisticatedbackpacks:diamond_backpack'],
+        ['simplybackpacks:ultimatebackpack','sophisticatedbackpacks:netherite_backpack'],
+    ]
+    backpacks.forEach(material => {
+        event.remove({ output: material[0] })
+        event.shapeless(material[1], [material[0]])
+    })
+
 })
 
