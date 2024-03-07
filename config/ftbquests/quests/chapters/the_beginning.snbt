@@ -1260,7 +1260,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["3F6EDC2481D5877F"]
 			description: ["Carry &oeven more&r stuff."]
 			icon: {
 				Count: 1b
