@@ -129,7 +129,10 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["4A56822201818607"]
+			dependencies: [
+				"4A56822201818607"
+				"7A3F3FB2774A4632"
+			]
 			description: ["Mix &6Stone Dust&r, &6Clay Dust&r and some &9Water&r to make &6Concrete&r. This is probably the easiest way to get &6Concrete&r. You'll need this for &6Plascrete&r, used in &2Cleanrooms&r, and a tiny amount for &6Launch Pads&r.&o"]
 			icon: "gtceu:concrete_bucket"
 			id: "7F165C2BCCCBA565"
@@ -169,10 +172,7 @@
 			y: -7.5d
 		}
 		{
-			dependencies: [
-				"7F165C2BCCCBA565"
-				"0933FF764C1D2399"
-			]
+			dependencies: ["0933FF764C1D2399"]
 			description: ["Crush your &6Clay&r to make &6Clay Dust&r.&r Turns into many useful resources."]
 			id: "7A3F3FB2774A4632"
 			subtitle: "&oThis step requires a Macerator at voltage &lLV&r&o or higher.&r"
@@ -329,9 +329,9 @@
 		}
 		{
 			dependencies: ["6B4A50B6F9F835EF"]
-			description: ["Split your &6Silicon Dioxide Dust&r into &6Silicon Dust and Oxygen&r. This is the best source of Early Game &6Oxygen&r, although distilling &6Liquid Air&r may be better later, depending on your situation."]
+			description: ["Crush your &6Obsidian&r into &6Obsidian Dust&r. You'll need a lot of this for &6Petrotheum Dust&r."]
 			id: "57D410C5A9EAFAD9"
-			subtitle: "&oThis step requires a Electrolyser at voltage &lLV&r&o or higher.&r"
+			subtitle: "&oThis step requires a Macerator at voltage &lLV&r&o or higher.&r"
 			tasks: [{
 				id: "418DD246EDA607CD"
 				item: "gtceu:obsidian_dust"
@@ -371,22 +371,30 @@
 		}
 		{
 			dependencies: ["599012DB0B179B3B"]
-			description: ["Crush your &6Sand&r into &6Quartz Sand&r. Can be electrolysed into useful resources."]
+			description: ["Seperate your &6Quartz Sand&r into &6Quartzite Dust&r and &6Certus Quartz Dust&r. This is a good renewable source of &6Certus Quartz&r, which you need for &bApplied Energistics 2&r."]
 			id: "201B129579ACF449"
 			subtitle: "&oThis step requires a Centrifuge at voltage &lLV&r&o or higher.&r"
-			tasks: [{
-				id: "173CBB96166964FB"
-				item: "gtceu:quartzite_dust"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "173CBB96166964FB"
+					item: "gtceu:quartzite_dust"
+					type: "item"
+				}
+				{
+					id: "60EC948DE2639EC3"
+					item: "gtceu:certus_quartz_dust"
+					type: "item"
+				}
+			]
+			title: "Quartzite and Certus Quartz"
 			x: 8.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["21654B6E703A2923"]
-			description: ["Seperate your &6Glass Dust&r into &6Silicon Dioxide Dust&r. Can be electrolysed into useful resources."]
+			description: ["Crush your &6Sand&r into &6Quartz Sand&r. Can be centrifuged into useful resources."]
 			id: "599012DB0B179B3B"
-			subtitle: "&oThis step requires a Centrifuge at voltage &lLV&r&o or higher.&r"
+			subtitle: "This step requires a Macerator at voltage &lLV&r&o or higher.&r"
 			tasks: [{
 				id: "6D3FA82DF4858787"
 				item: "gtceu:quartz_sand_dust"
