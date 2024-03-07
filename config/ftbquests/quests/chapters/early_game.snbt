@@ -2753,6 +2753,24 @@
 			x: 9.0d
 			y: 26.5d
 		}
+		{
+			dependencies: ["1D95AC7CAC7D5121"]
+			description: ["All this &9Phenol&r needed for MV circuits may be putting stress onto your coal supply, so it may be worth looking into building a &dGreenhouse&r, and converting &9Wood Tar&r into &9Phenol&r"]
+			id: "3A71D736AE5C17E2"
+			rewards: [{
+				id: "1FE4BFEFDB4C34FC"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "64DDAB8716E84F19"
+				item: "gtceu:greenhouse"
+				type: "item"
+			}]
+			title: "&dInfiniter Wood"
+			x: 12.5d
+			y: 7.0d
+		}
 	]
 	title: "Early Game"
 }

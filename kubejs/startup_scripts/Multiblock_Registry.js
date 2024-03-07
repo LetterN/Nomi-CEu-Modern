@@ -62,8 +62,16 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING);
-})
 
+    // Greenhouse
+    event.create('greenhouse')
+        .category('multiblock')
+        .setEUIO('in')
+        .setMaxIOSize(3, 3, 1, 0) // 
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COOLING)
+    })
 // Basic Microverse Projector
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('basic_microverse_projector', 'multiblock')
@@ -206,5 +214,25 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('#', Predicates.any())
             .build())
         .workableCasingRenderer("kubejs:block/empowerer_casing",
+            "gtceu:block/multiblock/implosion_compressor", false)
+
+// Greenhouse
+    event.create('greenhouse', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes('greenhouse')
+        .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("CCC", "CGC", "CGC","CGC","CCC",)
+            .aisle("CDC", "G#G", "G#G","G#G","CGC",)
+            .aisle("CSC", "CGC", "CGC","CGC","CCC",)
+            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('D', Predicates.blocks('minecraft:dirt')
+                .or(Predicates.blocks('minecraft:grass')))
+            .where('C', Predicates.blocks("gtceu:solid_machine_casing")
+                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
+            .where('#', Predicates.any())
+            .build())
+        .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_solid_steel",
             "gtceu:block/multiblock/implosion_compressor", false)
 })

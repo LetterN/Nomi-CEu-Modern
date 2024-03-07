@@ -86,5 +86,7 @@
     "material.gtceu.resonating_redstone": "Resonating Redstone Crystal",
     "material.gtceu.ender_shard": "Ender Shard",
     "material.gtceu.mana_infused_metal": "Mana Infused Metal",
-    "material.gtceu.elemental_reduction_fluid": "Elemental Reduction Fluid"
+    "material.gtceu.elemental_reduction_fluid": "Elemental Reduction Fluid",
+    "block.gtceu.greenhouse": "Greenhouse",
+    "gtceu.greenhouse": "Greenhouse"
 }
