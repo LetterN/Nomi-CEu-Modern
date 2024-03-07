@@ -1876,8 +1876,6 @@
 				"* The Steam Dynamo (not the boiler) currently does not require water to work. The stirling dynamo is a stand-in until that is coded."
 				""
 				"* Gregtech Tools durability does not display properly."
-				""
-				"* Nuclearcraft currently has an odd issue where disabling it's ores will cause the Gregtech ore prospector to not function in ore scanning mode. If this is important to you, renable NC oregen in its config for now."
 			]
 			icon: "thermal:nuke_tnt"
 			id: "2A511DB40C66CF35"
