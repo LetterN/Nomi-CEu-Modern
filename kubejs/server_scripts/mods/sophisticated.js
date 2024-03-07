@@ -61,8 +61,9 @@ backpacks.forEach(material => {
         ['stack_upgrade_tier_3', 'gtceu:signalum', 'stack_upgrade_tier_2'],
         ['stack_upgrade_tier_4', 'gtceu:enderium', 'stack_upgrade_tier_3']
     ]
-
+    event.remove({ output: 'sophisticatedbackpacks:stack_upgrade_starter_tier' })
     event.remove({ output: 'sophisticatedstorage:stack_upgrade_tier_1_plus' })
+    
     stackupgrade.forEach(material => {
         event.remove({ output: 'sophisticatedbackpacks:' + material[0] })
         event.shaped( 'sophisticatedbackpacks:' + material[0], [
