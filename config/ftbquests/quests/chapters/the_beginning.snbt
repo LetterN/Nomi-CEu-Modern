@@ -724,7 +724,7 @@
 			}]
 			title: "&2Arc Furnace"
 			x: 4.5d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5301E546BAA69844"]
@@ -746,7 +746,7 @@
 			}]
 			title: "Infinite Cobblestone"
 			x: 4.5d
-			y: -5.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["4624889F738AB21B"]
@@ -764,7 +764,7 @@
 			}]
 			title: "&2Forge Hammer"
 			x: 4.5d
-			y: -6.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["30EBD4E7BBFFEF2C"]
@@ -1984,6 +1984,31 @@
 			title: "&d Even Better Backpacks"
 			x: 6.5d
 			y: 5.0d
+		}
+		{
+			dependencies: ["5301E546BAA69844"]
+			description: [
+				"The &bPhytogenic Insolator&r is a way to &dpassively produce wood in the earlygame&r. While somewhat slow, it only requires &a20 rf/t&r to operate, meaning you can just set it down and not have to worry about it, and then come back to wood when you need some for crafting or steel production."
+				""
+				"Using &bHardened Integral Components&r in it will cause it to work 1.5x faster, while only requiring an extra &a10 rf/t&r to operate, and using &6Bonemeal&r or otherwise will boost how much wood you get per cycle."
+				""
+				"By the way, &bThermal&r Machines are capable of Automatic I/O, try placing a 2x2 drawer beside your &bPhytogenic Insolator&r and configuring it to both push to and pull from the side with the drawer."
+			]
+			id: "2607F8404B56773B"
+			rewards: [{
+				id: "6AB8644A32EF475D"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			subtitle: "...and crops as well, I guess."
+			tasks: [{
+				id: "4ED486548C376854"
+				item: "thermal:machine_insolator"
+				type: "item"
+			}]
+			title: "&dInfinite Wood"
+			x: 4.5d
+			y: -5.0d
 		}
 	]
 	title: "The Beginning"

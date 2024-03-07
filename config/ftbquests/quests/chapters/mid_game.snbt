@@ -326,7 +326,7 @@
 			}]
 			title: "Primal Mana"
 			x: 5.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -350,7 +350,7 @@
 				item: "gtceu:mana_infused_metal_ingot"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 5.0d
 			y: 4.5d
 		}
 		{
@@ -372,29 +372,8 @@
 				type: "item"
 			}]
 			title: "Thermal Machine Frame"
-			x: 2.0d
+			x: 5.0d
 			y: 6.5d
-		}
-		{
-			dependencies: ["46C6F922B4ADCC8C"]
-			description: [
-				"Praise the sun. \\[T]/"
-				""
-				"This machine uses various tiers of &6Phyto-Gro&r and &9Water&r to grow plants."
-			]
-			id: "782D83BE677B0994"
-			rewards: [{
-				id: "0C5056C5E5DEFD30"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "42A7064CC3E662C9"
-				item: "thermal:machine_insolator"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 8.5d
 		}
 		{
 			dependencies: ["46C6F922B4ADCC8C"]
@@ -417,7 +396,7 @@
 			}]
 			title: "&dMultiservo Press"
 			x: 5.0d
-			y: 6.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["441E5CDAD5007906"]
@@ -1694,26 +1673,22 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"&dUntil a decent method of farming crops is added, your only option for Biodiesel feedstock is Fish Oil."
+				"You will need either &9Seed Oil&r or &9Fish Oil&r in the process of creating &9Biodiesel&r, created by extracting seeds or fish."
 				""
+				"The easiest ways to get seeds are with a &dGreenhouse&r."
 				""
 				"The easiest ways to get fish are via a &aGuardian Model&r from &bHNN&r, or using a &aGregtech Fisher&r."
+				""
+				"Both are viable, so it's ultimately up to you."
 			]
 			icon: "gtceu:fish_oil_bucket"
 			id: "78EB8574A67B10D4"
-			rewards: [{
-				id: "5D39EC95B8A3F8E8"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
 			shape: "hexagon"
 			tasks: [{
-				amount: 1000L
-				fluid: "gtceu:fish_oil"
-				id: "7A81172C3697D0A2"
-				type: "fluid"
+				id: "0948D3609E8F3E64"
+				type: "checkmark"
 			}]
-			title: "&dFish Oil"
+			title: "&dBiodiesel Feedstock"
 			x: 37.0d
 			y: -0.5d
 		}
