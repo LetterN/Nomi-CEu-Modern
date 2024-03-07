@@ -1,6 +1,6 @@
 // /kjs inventory will be your friend.
 
-JEIEvents.hideItems(event => {
+REIEvents.hide(event => {
     //Hides useless items
     event.hide(['ae2:vibration_chamber', 'hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper'])
 
@@ -63,13 +63,13 @@ JEIEvents.hideItems(event => {
     event.hide(['nuclearcraft:foursmore', 'nuclearcraft:evenmoresmore', 'nuclearcraft:moresmore', 'nuclearcraft:smore'])
 })
 
-JEIEvents.removeCategories(event => {
+REIEvents.removeCategories(event => {
     event.remove(['thermal:pulverizer', 'thermal:gourmand_fuel', 'thermal:disenchantement_fuel', 'thermal:lapidary_fuel'])
     event.remove(['enderio:alloy_smelting', 'thermal:furnace'])
     event.remove(['nuclearcraft:supercooler', 'nuclearcraft:rock_crusher', 'nuclearcraft:decay_hastener', 'nuclearcraft:irradiator', 'nuclearcraft:nuclear_furnace', 'nuclearcraft:extractor', 'nuclearcraft:electrolyzer', 'nuclearcraft:pressurizer', 'nuclearcraft:alloy_smelter', 'nuclearcraft:centrifuge', 'nuclearcraft:manufactory', 'nuclearcraft:gas_scrubber', 'nuclearcraft:fluid_enricher', 'nuclearcraft:isotope_separator', 'nuclearcraft:fluid_infuser', 'nuclearcraft:chemical_reactor', 'nuclearcraft:analyzer', 'nuclearcraft:ingot_former', 'nuclearcraft:pump', 'nuclearcraft:fuel_reprocessor', 'nuclearcraft:leacher', 'nuclearcraft:crystallizer', 'nuclearcraft:assembler', 'nuclearcraft:steam_turbine', 'nuclearcraft:melter'])
 })
 
-/*JEIEvents.groupEntries(event => {
+REIEvents.groupEntries(event => {
 
     const useNbt = ['chiselsandbits:block_bit']
 
@@ -80,9 +80,9 @@ JEIEvents.removeCategories(event => {
     })
 
 
-})*/
+})
 
 
-JEIEvents.addItems(event => {
+REIEvents.addItems(event => {
     event.add('ae2:facade')
 })
