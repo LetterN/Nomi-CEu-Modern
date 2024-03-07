@@ -2,17 +2,17 @@
 #Settings for ore generation
 [ores]
 	#List of dimensions to generate ores: lithium, platinum, thorium, tin, magnesium, silver, cobalt, uranium, zinc, boron, lead
-	dimensions = [[0, -4848], [0, -4848], [0, -4848], [0, -4848], [0, -4848], [0, -4848], [0, -4848], [0, -4848], [0, -4848], [0, -4848], [0, -4848]]
+	dimensions = [[42069], [42069], [42069], [42069], [42069], [42069], [42069], [42069], [42069], [42069], [42069]]
 	#Enable ore registration: lithium, platinum, thorium, tin, magnesium, silver, cobalt, uranium, zinc, boron, lead
 	register_ore = [true, true, true, true, true, true, true, true, true, true, true]
 	#Ore blocks per vein. Order: lithium, platinum, thorium, tin, magnesium, silver, cobalt, uranium, zinc, boron, lead
 	vein_size = [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]
 	#Veins in chunk. Order: lithium, platinum, thorium, tin, magnesium, silver, cobalt, uranium, zinc, boron, lead
-	veins_in_chunk = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+	veins_in_chunk = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 	#Minimal generation height. Order: lithium, platinum, thorium, tin, magnesium, silver, cobalt, uranium, zinc, boron, lead
-	min_height = [-60, -60, -60, 4, -60, -60, -60, -60, 4, -60, 4]
+	min_height = [-420, -420, -420, -420, -420, -420, -420, -420, -420, -420, -420]
 	#Max generation height. Order: lithium, platinum, thorium, tin, magnesium, silver, cobalt, uranium, zinc, boron, lead
-	max_height = [60, 0, 60, 60, 60, 60, 60, 60, 60, 60, 60]
+	max_height = [-69, -69, -69, -69, -69, -69, -69, -69, -69, -69, -69]
 
 [slurries]
 	#List of available slurries (dissolved ores in acid)
@@ -272,5 +272,5 @@
 #Forge Tag priority
 [forge_tag_priority]
 	#Priority of mods to resolve forge tags to itemstack and fluidstack.
-	mods_priority = ["nuclearcraft", "mekanism", "immersiveengineering", "tconstruct"]
+	mods_priority = ["gtceu", "nuclearcraft"]
 
