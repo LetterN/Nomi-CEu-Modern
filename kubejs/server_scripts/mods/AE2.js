@@ -400,21 +400,6 @@ ServerEvents.recipes(event => {
         })
 
 
-    // Big Drive
-    event.remove({ output: 'expatternprovider:ex_drive' })
-    event.shaped(
-        Item.of('expatternprovider:ex_drive'), [
-            'ABA',
-            'CDC',
-            'AEA'
-        ], {
-            A: 'gtceu:fluix_plate',
-            B: 'ae2:capacity_card',
-            C: 'ae2:spatial_pylon',
-            D: 'ae2:drive',
-            E: 'gtceu:ev_machine_hull'
-        }
-    )
 
     //TODO Big I/O (MAKE IN IV ASSEMBLY LINE)
 
@@ -558,6 +543,22 @@ ServerEvents.recipes(event => {
         'gtceu:charged_certus_quartz_gem'
     )
 
+    // Presses
+    function pressengrave(name, press, lens) {
+        event.recipes.gtceu.laser_engraver(name)
+            .itemInputs('gtceu:vanadium_steel_block')
+            .notConsumable(lens)
+            .itemOutputs(press)
+            .duration(1600)
+            .EUt(120)
+    }
+
+
+    pressengrave("engineering",'ae2:engineering_processor_press','#forge:lenses/red');
+    pressengrave("calculation",'ae2:calculation_processor_press','#forge:lenses/blue');
+    pressengrave("silicon", "ae2:silicon_press",'#forge:lenses/light_blue');
+    pressengrave("logic", 'ae2:logic_processor_press','#forge:lenses/green');
+    pressengrave("name", 'ae2:name_press','#forge:lenses/white');
 
     // ExtendedAE
 
@@ -602,7 +603,7 @@ ServerEvents.recipes(event => {
 
         event.remove({ output: 'expatternprovider:ex_molecular_assembler' })
         event.recipes.gtceu.assembler("expatternprovider:ex_molecular_assembler")
-            .itemInputs("8x ae2:molecular_assembler", "8x gtceu:draconium_plate", "8x ae2:capacity_card")
+            .itemInputs("8x ae2:molecular_assembler", "8x gtceu:fluix_plate", "8x ae2:capacity_card")
             .itemOutputs("expatternprovider:ex_molecular_assembler")
             .duration(240)
             .EUt(1024)
@@ -611,4 +612,17 @@ ServerEvents.recipes(event => {
     event.replaceInput({ output: Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:f",id:"minecraft:water"}}') }, 'minecraft:water_bucket', 'gtceu:infinite_water_cover')
     event.replaceInput({ output: Item.of('expatternprovider:infinity_cell', '{record:{"#c":"ae2:f",id:"minecraft:water"}}') }, 'minecraft:diamond', 'gtceu:diamond_plate')
 
+    event.remove({ output: 'expatternprovider:ex_drive' })
+    event.recipes.gtceu.assembler("expatternprovider:ex_drive")
+        .itemInputs("2x ae2:drive", "4x gtceu:fluix_plate", "ae2:capacity_card")
+        .itemOutputs("expatternprovider:ex_drive")
+        .duration(240)
+        .EUt(1024)
+
+        event.remove({ output: 'expatternprovider:drive_upgrade' })
+    event.recipes.gtceu.assembler('expatternprovider:drive_upgrade')
+        .itemInputs("1x ae2:drive", "4x gtceu:fluix_plate", "ae2:capacity_card")
+        .itemOutputs('expatternprovider:drive_upgrade')
+        .duration(240)
+        .EUt(1024)
     })

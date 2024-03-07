@@ -666,7 +666,7 @@
 				}
 				type: "item"
 			}]
-			title: "Infiniter Water"
+			title: "&dInfiniter Water"
 			x: 1.0357142857142563d
 			y: -0.4761904761904816d
 		}
@@ -1260,6 +1260,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["3F6EDC2481D5877F"]
 			description: ["Carry &oeven more&r stuff."]
 			icon: {
 				Count: 1b

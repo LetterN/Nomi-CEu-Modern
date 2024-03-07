@@ -730,7 +730,11 @@
 		}
 		{
 			dependencies: ["1AE46C1970378083"]
-			description: ["While &3Obsidian Furnaces&f are the same speed as &3Diamond Furnaces&f, they are the same actually.."]
+			description: [
+				"While &3Obsidian Furnaces&f are the same speed as &3Diamond Furnaces&f, they are blastproof."
+				""
+				"&5Need to buff these to either smelt twice as fast or have 2 smelting slots."
+			]
 			id: "3969150B59EA38A2"
 			rewards: [{
 				id: "7BADB8C39CADB5FF"
@@ -1867,7 +1871,7 @@
 			description: [
 				"This pack is in &eAlpha&r. Issues are to be expected at this stage of development."
 				""
-				"If you find something broken/missing/etc, make an issue on the &5Nomifactory Modern&r repository, or submit a Pull Request to fix it yourself."
+				"&cIf you find something broken/missing/etc, make an issue on the &5Nomifactory Modern&r&c repository, or submit a Pull Request to fix it yourself.&r"
 				""
 				"Currently known issues are:"
 				""
