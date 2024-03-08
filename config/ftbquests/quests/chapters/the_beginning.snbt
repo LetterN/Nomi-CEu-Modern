@@ -1885,7 +1885,7 @@
 				""
 				"The Pyrolyse Oven is also the source of several other fluids that can be distilled for useful ingredients."
 				""
-				"Remember that Hatches and Buses can be replaced by Hatches and Buses of any tier, although the Input Bus must be at least LV, as there are 2 inputs, and that you can  &6sneak-right click&r the controller to enable the in-world preview."
+				"Remember that Hatches and Buses can be replaced by Hatches and Buses of any tier. You can &6sneak-right click&r the controller to enable the in-world preview."
 				""
 				"&2As stated in the tooltip, higher tier coils will make this faster."
 			]
@@ -1918,22 +1918,50 @@
 				}
 				{
 					id: "1B762AEE66C0C4C3"
-					item: "gtceu:lv_input_bus"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "nomi:input_bus"
+						}
+					}
+					title: "Any Input Bus"
 					type: "item"
 				}
 				{
 					id: "510137AE30F928EC"
-					item: "gtceu:lv_output_bus"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "nomi:output_bus"
+						}
+					}
+					title: "Any Output Bus"
 					type: "item"
 				}
 				{
 					id: "2F305D8535C97A0A"
-					item: "gtceu:lv_input_hatch"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "nomi:input_hatch"
+						}
+					}
+					title: "Any Input Hatch"
 					type: "item"
 				}
 				{
 					id: "5582D6BE794C53BB"
-					item: "gtceu:lv_output_hatch"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "nomi:output_hatch"
+						}
+					}
+					title: "Any Output Hatch"
 					type: "item"
 				}
 				{
