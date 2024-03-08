@@ -3,7 +3,6 @@
 ServerEvents.recipes(event => {
 
     event.remove({ id: "watercondenser:watercondenser" })
-
     event.shaped(
         "watercondenser:watercondenser", [
             "AAA",
@@ -105,8 +104,116 @@ ServerEvents.recipes(event => {
     decompdepleted('deplered_californium_hecf_249','nuclearcraft:depleted_fuel_californium_hecf_249','4x nuclearcraft:californium_250','2x nuclearcraft:californium_251','nuclearcraft:californium_252','nuclearcraft:californium_252')
     decompdepleted('depleted_californium_lecf_251','nuclearcraft:depleted_fuel_californium_lecf_251','nuclearcraft:californium_251','2x nuclearcraft:californium_252','2x nuclearcraft:californium_252','2x nuclearcraft:californium_252')
     
-    })
 
-// I feel like theres a more interesting way to do nuclear reprocessing without upsetting the balance of the pack, but if we don"t, just use the above function and edit it a little
 
-// 
+function cansolid(name, input) {
+    event.remove({ output: 'nuclearcraft:' + name })
+    event.recipes.gtceu.canner(name)
+        .itemInputs('nuclearcraft:empty_heat_sink', input)
+        .itemOutputs('nuclearcraft:' + name)
+        .duration(400)
+        .EUt(2)
+}
+function canfluid(name, input) {
+    event.remove({ output: 'nuclearcraft:' + name })
+    event.recipes.gtceu.canner(name)
+        .itemInputs('nuclearcraft:empty_heat_sink')
+        .inputFluids(Fluid.of(input, 1000))
+        .itemOutputs('nuclearcraft:' + name)
+        .duration(400)
+        .EUt(2)
+}
+
+canfluid('water_heat_sink', "minecraft:water")
+cansolid('redstone_heat_sink', "16x minecraft:redstone")
+cansolid('quartz_heat_sink', "16x gtceu:nether_quartz_dust")
+cansolid('gold_heat_sink', "16x gtceu:gold_dust")
+cansolid('glowstone_heat_sink', "16x minecraft:glowstone")
+cansolid('lapis_heat_sink', "16x gtceu:lapis_dust")
+cansolid('diamond_heat_sink', "16x gtceu:diamond_dust")
+canfluid('liquid_helium_heat_sink', "gtceu:helium")
+cansolid('enderium_heat_sink', "16x gtceu:enderium_dust")
+cansolid('cryotheum_heat_sink', "kubejs:molten_cryotheum")
+cansolid('iron_heat_sink', "16x gtceu:iron_dust")
+cansolid('emerald_heat_sink', "16x gtceu:emerald_dust")
+cansolid('copper_heat_sink', "16x gtceu:copper_dust")
+cansolid('magnesium_heat_sink', "16x gtceu:magnesium_dust")
+
+event.remove({ id: "nuclearcraft:empty_heat_sink" })
+event.shaped(
+    "nuclearcraft:empty_heat_sink", [
+        "TST",
+        "S S",
+        "TST"
+    ], {
+        T: 'nuclearcraft:tough_alloy_ingot',
+        S: 'gtceu:steel_ingot'
+    }
+)
+
+event.remove({ output : "nuclearcraft:plate_basic" })
+event.shaped(
+    "nuclearcraft:plate_basic", [
+        "TST",
+        "SDS",
+        "TST"
+    ], {
+        T: 'nuclearcraft:tough_alloy_ingot',
+        S: 'gtceu:tungsten_ingot',
+        D: 'gtceu:double_steel_plate'
+    }
+)
+
+event.remove({ id: "nuclearcraft:plate_advanced" })
+event.shaped(
+    "nuclearcraft:plate_advanced", [
+        "TST",
+        "SDS",
+        "TST"
+    ], {
+        T: 'nuclearcraft:hard_carbon_ingot',
+        S: 'gtceu:yttrium_barium_cuprate_plate',
+        D: 'nuclearcraft:plate_basic'
+    }
+)
+
+event.remove({ id: "nuclearcraft:fission_reactor_casing" })
+event.shaped(
+    "nuclearcraft:fission_reactor_casing", [
+        "DDD",
+        "DFD",
+        "DDD"
+    ], {
+        F: 'gtceu:robust_machine_casing',
+        D: 'nuclearcraft:plate_basic'
+    }
+)
+
+event.remove({ id: 'nuclearcraft:fission_reactor_solid_fuel_cell' })
+event.shaped(
+    'nuclearcraft:fission_reactor_solid_fuel_cell', [
+        "TST",
+        "S S",
+        "TST"
+    ], {
+        T: 'nuclearcraft:tough_alloy_ingot',
+        S: 'gtceu:tempered_glass'
+    }
+)
+
+event.remove({ id: 'nuclearcraft:fission_reactor_controller' })
+event.shaped(
+    'nuclearcraft:fission_reactor_controller', [
+        "DED",
+        "EFE",
+        "DED"
+    ], {
+        F: 'gtceu:robust_machine_casing',
+        E: '#gtceu:circuits/ev',
+        D: 'nuclearcraft:plate_advanced'
+    }
+)
+
+event.remove({ id: 'nuclearcraft:fission_reactor_port' })
+event.shapeless('nuclearcraft:fission_reactor_port', ['nuclearcraft:fission_reactor_casing', "minecraft:hopper"])
+})

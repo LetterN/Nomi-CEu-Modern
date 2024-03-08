@@ -81,6 +81,7 @@ ServerEvents.recipes(event => {
     alloy_smelter("tough_alloy", 16, 15, "nuclearcraft:ferroboron_ingot", "gtceu:lithium_dust", "2x nuclearcraft:tough_alloy_ingot");
     alloy_smelter("hard_carbon_alloy", 16, 15, "2x gtceu:steel_ingot", "minecraft:diamond", "2x nuclearcraft:hard_carbon_ingot");
     alloy_smelter("sunnarium", 400, 100, "kubejs:stabilized_plutonium", "kubejs:stabilized_neptunium", "gtceu:sunnarium_dust");
+    alloy_smelter("fissionglass", 16, 2.5, "nuclearcraft:fission_reactor_casing", "minecraft:glass", 'nuclearcraft:fission_reactor_glass');
     //alloy_smelter("stellar_alloy", 2000, 10, "gtceu:end_steel_ingot", "8x enderio:infinity_dust", "enderio:stellar_alloy_ingot");
 })
 
