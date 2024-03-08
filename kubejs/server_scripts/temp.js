@@ -74,9 +74,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    //temp blanket remove for this patch
-    event.remove({ output: /nuclearcraft/ })
-
     // Backpack
     var backpacks = [
         ['simplybackpacks:commonbackpack', 'sophisticatedbackpacks:backpack'],
