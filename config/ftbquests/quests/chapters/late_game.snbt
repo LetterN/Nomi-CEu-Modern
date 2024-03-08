@@ -7,6 +7,695 @@
 	id: "58ABB361EA301019"
 	order_index: 7
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "2B3705CC19BC02BA"
+			size: 2.0d
+			tasks: [{
+				id: "2307EEE0B7F994F1"
+				item: "gtceu:polybenzimidazole_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			id: "4BF878D201E5DFFD"
+			size: 1.5d
+			tasks: [{
+				id: "7C2FD488E706DCEA"
+				item: "gtceu:advanced_smd_transistor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "52F1953ED72A8AA6"
+			size: 1.5d
+			tasks: [{
+				id: "2AC4B505FA1D3CD7"
+				item: "gtceu:advanced_microverse_projector"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			id: "15DBB22E3DC0AFB7"
+			size: 2.0d
+			tasks: [{
+				id: "41398E76BAF0F92E"
+				item: "kubejs:microminer_t4"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			id: "32CC868E01C62094"
+			size: 1.5d
+			tasks: [{
+				id: "0FDE0B0519C15A77"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "3208E92F2153113D"
+			tasks: [{
+				id: "3B6DB6743CE4068C"
+				item: "gtceu:sunnarium_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			id: "2D757C34B8CC82D4"
+			tasks: [{
+				id: "672878E8473C0B73"
+				item: "gtceu:nano_processor_mainframe"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			id: "383AF0F983B15CA1"
+			tasks: [{
+				id: "4015B5FE8ABBB61C"
+				item: "gtceu:nano_processor_computer"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			id: "747261209378726B"
+			size: 1.5d
+			tasks: [{
+				id: "27469B198BA91338"
+				item: "gtceu:iv_circuit_assembler"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.375d
+		}
+		{
+			id: "00041F4B8EB603DB"
+			tasks: [{
+				id: "3047252B070C8A7B"
+				item: "gtceu:nano_processor_assembly"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			id: "6E5343E45E99CBAD"
+			tasks: [{
+				id: "76BD7DC9E8DFF0C6"
+				item: "gtceu:indium_dust"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.25d
+		}
+		{
+			id: "1AD04099B61E4B0B"
+			tasks: [{
+				id: "19CD56998D5B6872"
+				item: "gtceu:radon_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.25d
+		}
+		{
+			id: "17E787EE424A0210"
+			tasks: [{
+				id: "4B3AE0CFE94E0851"
+				item: "gtceu:quantum_eye"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 8.25d
+		}
+		{
+			id: "1903B26C95DD325A"
+			size: 1.25d
+			tasks: [{
+				id: "1A7AA84791A76177"
+				item: "gtceu:qbit_cpu_chip"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.25d
+		}
+		{
+			id: "12D33BA9CF1DBE54"
+			tasks: [{
+				id: "67605B742ECA0788"
+				item: "gtceu:quantum_processor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.25d
+		}
+		{
+			id: "605B92FDF74E3140"
+			tasks: [{
+				id: "42546DF0EB4A0A4A"
+				item: "gtceu:quantum_processor_assembly"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.25d
+		}
+		{
+			id: "6F3D0400845E43F9"
+			tasks: [{
+				id: "5712D78E83D7CC08"
+				item: "gtceu:quantum_processor_computer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 12.25d
+		}
+		{
+			id: "35567AC1074FB2C0"
+			tasks: [{
+				id: "0B703FB8CD9096F4"
+				item: "gtceu:fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.25d
+		}
+		{
+			id: "40E8C7CEE285D702"
+			tasks: [{
+				id: "662DD44C83E064B9"
+				item: "gtceu:raw_crystal_chip_parts"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.25d
+		}
+		{
+			id: "7A103C8708F3B716"
+			tasks: [{
+				id: "511347C92A4CA551"
+				item: "gtceu:quantum_processor_computer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 14.25d
+		}
+		{
+			id: "2E6BA621B265C3A8"
+			tasks: [{
+				id: "2BB38FC1864BA805"
+				item: "gtceu:engraved_crystal_chip"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.25d
+		}
+		{
+			id: "6DAB13A7BDECE94E"
+			size: 2.0d
+			tasks: [{
+				id: "17A506152F4D9582"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 12.25d
+		}
+		{
+			id: "36CD83333195A24E"
+			tasks: [{
+				id: "4723392C2C8F7FE4"
+				item: "ae2:item_p2p_tunnel"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 14.25d
+		}
+		{
+			id: "672D43BD113251EA"
+			tasks: [{
+				id: "095748957FF71CAF"
+				item: "gtceu:data_stick"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 12.25d
+		}
+		{
+			id: "67833AE5421E10D4"
+			tasks: [{
+				id: "6FA29D68ACD6B0E5"
+				item: "gtceu:crystal_cpu"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.25d
+		}
+		{
+			id: "064DBD0DFB04B320"
+			size: 2.0d
+			tasks: [{
+				id: "3FBAF80640D2617A"
+				item: "gtceu:luv_circuit_assembler"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 16.25d
+		}
+		{
+			id: "5FDBE517E7902FFB"
+			size: 1.25d
+			tasks: [{
+				id: "0B7991BD37F4451E"
+				item: "gtceu:platinum_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 16.25d
+		}
+		{
+			id: "458FF3F9BC8E025B"
+			tasks: [{
+				id: "60852255D5701524"
+				item: "gtceu:ruridit_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 16.25d
+		}
+		{
+			id: "6BE1CD77618EC6C7"
+			tasks: [{
+				id: "29AB96FBD0C7F41F"
+				item: "gtceu:polyphenylene_sulfide_foil"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 18.25d
+		}
+		{
+			id: "76BAC72CC89F390E"
+			size: 1.25d
+			tasks: [{
+				id: "4B5AA5E05B42308C"
+				item: "gtceu:luv_machine_hull"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 18.25d
+		}
+		{
+			id: "2B336FD89B15F98E"
+			tasks: [{
+				id: "0A1E55B5F54F0B7B"
+				item: "gtceu:rhodium_plated_palladium_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 18.25d
+		}
+		{
+			id: "23A867EC14368388"
+			tasks: [{
+				id: "6A11AEB1AFD6DC29"
+				item: "gtceu:lumium_ingot"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 18.25d
+		}
+		{
+			id: "13E85F25A122FF1F"
+			tasks: [{
+				id: "1E668B12F589B060"
+				item: "gtceu:crystal_processor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.25d
+		}
+		{
+			id: "025092551C0A20B6"
+			tasks: [{
+				id: "7467DEF5F692F380"
+				item: "gtceu:iridium_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			id: "4F8B4DCE7C340418"
+			tasks: [{
+				id: "041D836F34743B64"
+				item: "gtceu:double_iridium_plate"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.25d
+		}
+		{
+			id: "04EABD3D2C72D2C5"
+			tasks: [{
+				id: "2E25B07192462553"
+				item: "gtceu:sterilizing_filter_casing"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 12.25d
+		}
+		{
+			id: "1AC91A3E05215569"
+			tasks: [{
+				id: "629F0A48ADFDAC0F"
+				item: "gtceu:bacterial_sludge_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 14.25d
+		}
+		{
+			id: "35D128D56DAFDFAA"
+			tasks: [{
+				id: "3FA7B6B2D1ABF798"
+				item: "gtceu:mutagen_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 16.25d
+		}
+		{
+			id: "2F6EC962007FA9FB"
+			tasks: [{
+				id: "33133365ADB51A10"
+				item: "gtceu:sterilized_growth_medium_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 20.25d
+		}
+		{
+			id: "4AC51394FB5152E5"
+			tasks: [{
+				id: "5C34CD06075B3C3C"
+				item: "gtceu:wetware_printed_circuit_board"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 22.25d
+		}
+		{
+			id: "5C5842E524934F55"
+			tasks: [{
+				id: "08E9788ACBC3E1F4"
+				item: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 22.25d
+		}
+		{
+			id: "0A8FF618A2E06A8E"
+			tasks: [{
+				id: "43D913EA97978B73"
+				item: "extendedcrafting:ultimate_table"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			id: "27B3EB82ED638620"
+			tasks: [{
+				id: "4D9A2E2CB028D8F0"
+				item: "gtceu:double_signalum_plate"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			id: "023197AB7CDBDD6E"
+			size: 2.0d
+			tasks: [{
+				id: "51421243D98A03F2"
+				item: "kubejs:microminer_t5"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.25d
+		}
+		{
+			id: "53C09541792FACF4"
+			size: 1.5d
+			tasks: [{
+				id: "5D316B9999613552"
+				item: "packagedexcrafting:ultimate_crafter"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			id: "213914F96588F0A8"
+			tasks: [{
+				id: "75FD76277BD47E7E"
+				item: "gtceu:hsse_ingot"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 1.0d
+		}
+		{
+			id: "620C42ADF0B9B5C8"
+			tasks: [{
+				id: "7B4F507603DCABD8"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			id: "3DD8D9EEA7189186"
+			tasks: [{
+				id: "585B8ED807736A7A"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			id: "03FD249C64C39941"
+			tasks: [{
+				id: "75BEC56FE237DF24"
+				item: "gtceu:hsss_ingot"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			id: "44003056F9475A47"
+			tasks: [{
+				id: "781C53F22B7D9376"
+				item: "minecraft:barrier"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			id: "4089B8DC59183C07"
+			tasks: [{
+				id: "09BDB2D4232CEC7A"
+				item: "packagedauto:recipe_holder"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			id: "424413BBCE3FD3BF"
+			tasks: [{
+				id: "75892E7951C532B7"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 6.25d
+		}
+		{
+			id: "0889C9E0DD0FDF06"
+			tasks: [{
+				id: "513763D6DD3E629A"
+				item: "gtceu:naquadah_boule"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 6.25d
+		}
+		{
+			id: "7DB174443D7FAFA0"
+			tasks: [{
+				id: "4466DE68C3A06C65"
+				item: "gtceu:enderium_ingot"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 8.25d
+		}
+		{
+			id: "28CA4E5308EC0BB9"
+			size: 1.5d
+			tasks: [{
+				id: "2C1FDC7B8E7B2C03"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 8.25d
+		}
+		{
+			id: "4F2A97487AE923CE"
+			tasks: [{
+				id: "73CA90492D971368"
+				item: "gtceu:double_enderium_plate"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 10.25d
+		}
+		{
+			id: "49B872B193268554"
+			size: 2.0d
+			tasks: [{
+				id: "2BE2D12C219225CD"
+				item: "kubejs:microminer_t6"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 15.25d
+		}
+		{
+			id: "16139ABAE30BF117"
+			tasks: [{
+				id: "1BEA3C67E8A0817E"
+				item: "gtceu:crystal_processor_computer"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 18.25d
+		}
+		{
+			id: "4BFE00ABA1FF6678"
+			tasks: [{
+				id: "4CA430CD2B21A1E0"
+				item: "gtceu:crystal_processor_assembly"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 18.25d
+		}
+		{
+			id: "0F6B344C265D1FBB"
+			tasks: [{
+				id: "360EB81FFBAF3EFD"
+				item: "gtceu:stem_cells"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 20.25d
+		}
+		{
+			id: "039F70814051413E"
+			tasks: [{
+				id: "6E850ABED9B35D45"
+				item: "minecraft:dragon_egg"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 20.25d
+		}
+		{
+			id: "7A7FFE9E89D19A2F"
+			size: 2.0d
+			tasks: [{
+				id: "69983BE8E7F45F6E"
+				item: "kubejs:mote_of_omnium"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 24.25d
+		}
+		{
+			id: "2836DDEE49C3CCFB"
+			size: 1.75d
+			tasks: [{
+				id: "2548B1DB7D823360"
+				item: "gtceu:mega_blast_furnace"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 15.25d
+		}
+		{
+			id: "7F669657313F2E62"
+			tasks: [{
+				id: "75321CAE019C190A"
+				item: "gtceu:draconium_dust"
+				type: "item"
+			}]
+			x: 15.25d
+			y: 6.25d
+		}
+		{
+			id: "1CC092A2F2CD4589"
+			size: 2.0d
+			tasks: [{
+				id: "7D3DF1D033AF6DC9"
+				item: "gtceu:draconium_ingot"
+				type: "item"
+			}]
+			x: 17.25d
+			y: 8.25d
+		}
+		{
+			id: "13B12457AA9BF90D"
+			tasks: [{
+				id: "7CDF0029C8BCDFF9"
+				item: "packagedexcrafting:combination_crafter"
+				type: "item"
+			}]
+			x: 17.25d
+			y: 6.25d
+		}
+		{
+			id: "186C14C113B6F3AD"
+			tasks: [{
+				id: "3C6395EDE0AE8FE3"
+				item: "gtceu:draconic_superconductor_single_wire"
+				type: "item"
+			}]
+			x: 19.25d
+			y: 6.25d
+		}
+	]
 	title: "Late Game"
 }
