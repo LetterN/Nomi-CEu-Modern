@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
     // event.replaceInput({ output: /netherite_barrel/ }, 'minecraft:netherite_ingot', 'gtceu:dark_soularium_ingot')
 
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_barrel/ })
+    event.remove({ output: /limited/ })
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_to_[A-Za-z]+_tier_upgrade/ })
 
     var barrelupgrade = [
@@ -90,6 +91,19 @@ backpacks.forEach(material => {
     )
 })
 
+
+event.remove({  output: 'sophisticatedstorage:hopper_upgrade'})
+event.shaped( '4x sophisticatedstorage:hopper_upgrade', [
+    ' H ',
+    'IUI',
+    'RRR'
+], {
+    U: 'sophisticatedstorage:upgrade_base',
+    I: 'minecraft:iron_ingot',
+    H: 'minecraft:hopper',
+    R: 'gtceu:red_alloy_plate'
+}
+)
     // Misc upgrades
     var upgrades = [
         ['magnet_upgrade', 'pickup_upgrade', 'minecraft:iron_ingot', 'enderio:vacuum_chest']
