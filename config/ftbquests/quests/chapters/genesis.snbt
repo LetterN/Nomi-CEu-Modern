@@ -1822,9 +1822,9 @@
 			description: [
 				"Sophisticated Storage and Sophisticated Backpacks are great options for storing items, both at base and on the go, as well as offering a variety of both helpful and fun upgrades."
 				""
-				"Sophisticated Storage in particular is great for cheaply storing, able to store 3 barrels worth of items at it's lowest tier, costing only a bit of iron to craft."
+				"Sophisticated Storage in particular is great for cheap storage, able to store 3 barrels worth of items at it's lowest tier, costing only a bit of iron to craft, and can be upgraded with barrel upgrades to hold even more items and upgrades."
 				""
-				"&5The textures and item names here are to be updated."
+				"&5The textures and item names here are to be updated. "
 			]
 			id: "61E5D7EEE745C6FB"
 			rewards: [{
