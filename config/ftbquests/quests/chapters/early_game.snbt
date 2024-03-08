@@ -1035,6 +1035,7 @@
 			dependencies: [
 				"1D95AC7CAC7D5121"
 				"3E42B4AAA6D2A05B"
+				"27913342423025C3"
 			]
 			description: [
 				"&3Circuit Assemblers&r are the linchpin of your factory, gating progression through the &6Circuits&r. "
@@ -1101,10 +1102,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: [
-				"7AA5FD63FA3BA43C"
-				"2DDCA4800EFB303E"
-			]
+			dependencies: ["7AA5FD63FA3BA43C"]
 			description: [
 				"These are easier to mass produce than &6Electronic Circuits&r, and they're required to produce the &6Advanced Integrated Circuit&r, your first &6HV&r circuit."
 				""

@@ -1381,10 +1381,7 @@
 			y: 7.5d
 		}
 		{
-			dependencies: [
-				"3F6EDC2481D5877F"
-				"4CD6C60CBEFFA317"
-			]
+			dependencies: ["4CD6C60CBEFFA317"]
 			description: [
 				"The &3Electric Blast Furnace&r is a major, major milestone in your &bGregTech&r career. It has the power to smelt more advanced materials. The first of which, &6Aluminium&r, is going to be important in the immediate future."
 				""
@@ -1885,7 +1882,7 @@
 				""
 				"The Pyrolyse Oven is also the source of several other fluids that can be distilled for useful ingredients."
 				""
-				"Remember that Hatches and Buses can be replaced by Hatches and Buses of any tier. You can &6sneak-right click&r the controller to enable the in-world preview."
+				"Remember that Hatches and Buses can be replaced by Hatches and Buses of any tier, although the Input Bus must be at least LV, as there are 2 inputs, and that you can  &6sneak-right click&r the controller to enable the in-world preview."
 				""
 				"&2As stated in the tooltip, higher tier coils will make this faster."
 			]
@@ -1918,50 +1915,22 @@
 				}
 				{
 					id: "1B762AEE66C0C4C3"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "nomi:input_bus"
-						}
-					}
-					title: "Any Input Bus"
+					item: "gtceu:lv_input_bus"
 					type: "item"
 				}
 				{
 					id: "510137AE30F928EC"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "nomi:output_bus"
-						}
-					}
-					title: "Any Output Bus"
+					item: "gtceu:lv_output_bus"
 					type: "item"
 				}
 				{
 					id: "2F305D8535C97A0A"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "nomi:input_hatch"
-						}
-					}
-					title: "Any Input Hatch"
+					item: "gtceu:lv_input_hatch"
 					type: "item"
 				}
 				{
 					id: "5582D6BE794C53BB"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "nomi:output_hatch"
-						}
-					}
-					title: "Any Output Hatch"
+					item: "gtceu:lv_output_hatch"
 					type: "item"
 				}
 				{
@@ -2010,8 +1979,8 @@
 				type: "item"
 			}]
 			title: "&d Even Better Backpacks"
-			x: 6.5d
-			y: 5.0d
+			x: 4.5d
+			y: 6.25d
 		}
 		{
 			dependencies: ["5301E546BAA69844"]
