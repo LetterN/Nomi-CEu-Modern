@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
             A: 'kubejs:compressed_infinity_dust_block'
         }
     )
-    
+
     // Blazerod Shenanigans
     event.shapeless('minecraft:blaze_rod', 'minecraft:brewing_stand')
     event.replaceInput({ input: 'gtceu:wood_plate' }, 'gtceu:wood_plate', '#minecraft:planks')
@@ -359,7 +359,7 @@ ServerEvents.recipes(event => {
             P: "minecraft:glass_pane"
         }
     )
-    
+
     // Crystal Chip shit
     event.recipes.gtceu.autoclave("starter_enderium_chip")
         .itemInputs(["gtceu:olivine_exquisite_gem", "gtceu:emerald_exquisite_gem"])
@@ -609,7 +609,7 @@ ServerEvents.recipes(event => {
         D: 'extendedcrafting:luminessence_block',
         E: 'minecraft:blaze_rod',
         F: 'thermal:basalz_rod'
-    }) 
+    })
 
     event.shaped(
         'minecraft:nether_star', [
@@ -624,7 +624,7 @@ ServerEvents.recipes(event => {
             E: 'kubejs:nether_star_center'
         }
     )
-    
+
 
     //
     // Recycling below here
@@ -659,4 +659,38 @@ ServerEvents.recipes(event => {
         .itemOutputs("18x gtceu:naquadah_alloy_dust", "50x gtceu:small_rubber_dust", "49x gtceu:small_steel_dust", "12x gtceu:stainless_steel_dust")
         .duration(25408)
         .EUt(302)
+
+
+    //Ender Chest and Tank (gives the full slot version)
+    event.remove({ output: ['endertanks:ender_tank', 'enderchests:ender_chest'] })
+
+    //Chest
+    event.shaped(
+        Item.of('enderchests:ender_chest', '{BlockEntityTag:{ForgeCaps:{},code:"000",id:"enderchests:ender_chest.tile",owner:"all",owner_id:"all"},code:"000",owner:"all"}').strongNBT(), [
+            'ABA',
+            'DED',
+            'AFA '
+        ], {
+            A: 'minecraft:blaze_rod',
+            B: 'minecraft:white_wool',
+            D: 'minecraft:obsidian',
+            E: 'gtceu:steel_crate',
+            F: 'minecraft:ender_pearl'
+        }
+    )
+
+    //Tank
+    event.shaped(
+        'endertanks:ender_tank', [
+            'ABA',
+            'DED',
+            'AFA '
+        ], {
+            A: 'minecraft:blaze_rod',
+            B: 'minecraft:white_wool',
+            D: 'minecraft:obsidian',
+            E: 'enderio:pressurized_fluid_tank',
+            F: 'gtceu:ender_pearl_block'
+        }
+    )
 })
