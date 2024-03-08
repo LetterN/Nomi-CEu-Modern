@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
     // event.replaceInput({ output: /netherite_barrel/ }, 'minecraft:netherite_ingot', 'gtceu:dark_soularium_ingot')
 
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_barrel/ })
+    event.remove({ output: /sophisticatedstorage:[A-Za-z]+_chest/ })
     event.remove({ output: /limited/ })
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_to_[A-Za-z]+_tier_upgrade/ })
 
