@@ -65,6 +65,9 @@ REIEvents.hide(event => {
     //Ender Storage
     event.hide(['endertanks:ender_bucket'])
 
+    //Backpacks
+    event.hide('sophisticatedbackpacks:copper_backpack')
+
 })
 
 REIEvents.removeCategories(event => {

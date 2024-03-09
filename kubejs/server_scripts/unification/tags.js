@@ -16,3 +16,8 @@ ServerEvents.tags('item', event => {
 ServerEvents.tags('block', event => {
     event.add('minecraft:mineable/pickaxe', 'watercondenser:watercondenser')
 })
+
+
+ServerEvents.tags('fluid', event => {
+
+})
