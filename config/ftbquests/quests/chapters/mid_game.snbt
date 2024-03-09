@@ -622,6 +622,7 @@
 				""
 				"Later it will be possible to make Radon using a &bGregTech &3Fusion Reactor&r."
 			]
+			icon: "gtceu:radon_bucket"
 			id: "49D33146A1F417E8"
 			rewards: [{
 				id: "25D8F3FDB3D8A0D6"
@@ -630,9 +631,10 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "231F549BE83551C0"
-				item: "gtceu:radon_bucket"
-				type: "item"
+				amount: 1000L
+				fluid: "gtceu:radon"
+				id: "645C8CC8F6C2397E"
+				type: "fluid"
 			}]
 			title: "&2Radon"
 			x: 13.0d
@@ -1946,7 +1948,7 @@
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			title: "&2The Third And Final Tier One Circuits"
+			title: "&2The Third And Final Tier Three Circuits"
 			x: 19.5d
 			y: 10.5d
 		}
