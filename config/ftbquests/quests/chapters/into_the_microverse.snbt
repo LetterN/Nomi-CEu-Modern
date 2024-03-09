@@ -263,7 +263,7 @@
 			description: [
 				"This is the largest Extended Crafting Table, capable of handling 9x9 recipes."
 				""
-				"&dYou should have PackagedAuto by now, so just use that to automate these recipes."
+				"&dPackagedAuto is now available, so just use that to automate these recipes."
 			]
 			id: "555BEBF7FD6012B7"
 			rewards: [{
