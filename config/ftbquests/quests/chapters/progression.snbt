@@ -690,8 +690,8 @@
 		{
 			id: "3270496124969A51"
 			tasks: [{
-				id: "00522B5DD993D3A8"
-				item: "simplybackpacks:commonbackpack"
+				id: "204DF036220B3222"
+				item: "sophisticatedbackpacks:backpack"
 				type: "item"
 			}]
 			x: 7.0d
