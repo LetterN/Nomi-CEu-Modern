@@ -885,7 +885,7 @@
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"&2GTCEu Fluid Pipes&r are now available, much improved from CE. Their advantage is higher &dthroughput&r, but they have limitations on the kinds of fluids (&eacids, gases&r, etc) they can transport safely. Check each pipe material's tooltip for details."
+				"&2GTCEu Fluid Pipes&r are now available, much improved from CE. Their advantage is higher &dthroughput&r, but they have limitations on the kinds of fluids (&eacids, gases&r, etc) they can transport safely. Check each pipe material's tooltip for details. Fluid pipes do require a pump to be able to pull fluids from tanks or machines that lack an autooutput function, but &dULV pumps (as well as other covers) are now buyable with nomicoins&r."
 				""
 				"There are also &6Quadruple and Nonuple Pipes&r for transporting multiple fluid types through the same block."
 				""
@@ -895,7 +895,7 @@
 				""
 				"Pick your poison."
 				""
-				"&5Sadly, EnderIO has decided to already abandon 1.20.1 EnderIO, meaning things like speed upgrades, filters, etc will never be officially added. If you are a good coder and are willing to port these elements, please let the NFm dev team know."
+				"&5Sadly, EnderIO has decided to already abandon 1.20.1 EnderIO, meaning things like speed upgrades, filters, etc will never be officially added. If you are a mod dev and are willing to port these elements, please let the NFm dev team know."
 			]
 			icon: "gtceu:steel_small_fluid_pipe"
 			id: "64AAF0CD958D836A"
@@ -911,7 +911,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Fluid Transport"
+			title: "&dFluid Transport"
 			x: -3.5d
 			y: 2.5d
 		}
