@@ -3,13 +3,13 @@
         "modid": "thermal",
         "type": "forge:mod_loaded"
     }],
-    "type": "thermal:blitz",
+    "entity": "thermal:blitz",
     "subtypes": [
         "thermal:blizz",
         "thermal:basalz"
     ],
     "name": "hostilenetworks.name.thermal_elemental",
-    "name_color": "0x00FFFFFF",
+    "name_color": "#00FFFFFF",
     "gui_scale": 1.0,
     "gui_x_offset": 0.0,
     "gui_y_offset": 0.0,
