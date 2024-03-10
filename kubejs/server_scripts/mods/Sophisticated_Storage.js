@@ -58,10 +58,10 @@ ServerEvents.recipes(event => {
     // Stack upgrades
 
     var stackupgrade = [
-        ['stack_upgrade_tier_1', 'gtceu:invar', 'upgrade_base'],
-        ['stack_upgrade_tier_2', 'gtceu:electrum', 'stack_upgrade_tier_1'],
-        ['stack_upgrade_tier_3', 'gtceu:signalum', 'stack_upgrade_tier_2'],
-        ['stack_upgrade_tier_4', 'gtceu:enderium', 'stack_upgrade_tier_3']
+        ['stack_upgrade_tier_1', 'gtceu:vibrant_alloy', 'upgrade_base'],
+        ['stack_upgrade_tier_2', 'gtceu:lumium', 'stack_upgrade_tier_1'],
+        ['stack_upgrade_tier_3', 'gtceu:draconium', 'stack_upgrade_tier_2'],
+        ['stack_upgrade_tier_4', 'gtceu:omnium', 'stack_upgrade_tier_3']
     ]
     event.remove({ output: 'sophisticatedbackpacks:stack_upgrade_starter_tier' })
     event.remove({ output: 'sophisticatedstorage:stack_upgrade_tier_1_plus' })
@@ -102,6 +102,22 @@ ServerEvents.recipes(event => {
             H: 'minecraft:hopper',
             R: 'gtceu:red_alloy_plate'
         })
+
+        // Removed Upgrades
+        var removeupgrades = [
+            ['compacting_upgrade'],
+            ['advanced_compacting_upgrade']
+        ]
+        removeupgrades.forEach(material => {
+            event.remove({ output: 'sophisticatedbackpacks:'  + material[0] })
+            event.remove({ output: 'sophisticatedstorage:'  + material[0] })
+        })
+
+        event.remove({ output: 'sophisticatedstorage:compression_upgrade' })
+
+
+
+
         // Misc upgrades
     var upgrades = [
         ['magnet_upgrade', 'pickup_upgrade', 'minecraft:iron_ingot', 'enderio:vacuum_chest']
