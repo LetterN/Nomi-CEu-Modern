@@ -731,7 +731,9 @@
 			description: [
 				"&oThis is represented in a Processing Line. Visit the Processing Lines Tab to have more info, useful tips and a visual representation.&r"
 				""
-				"Now that you have acquired &6Steel&r, your path to infinite cobblestone awaits! The &6Igneous Extruder&r continuously outputs cobblestone into adjacent inventories, and can be upgraded to produce it even faster."
+				"Now that you have acquired &6Steel&r, your path to infinite cobblestone awaits! The &6Igneous Extruder&r continuously generates cobblestone for free."
+				""
+				"Later on, you could look into the &6Rock Crusher&r, which can do it faster at the cost of requiring power."
 			]
 			id: "4624889F738AB21B"
 			rewards: [{
@@ -1780,9 +1782,9 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"Or you can just use the dedicated button in the machine's GUI."
+				"&dOr you can just use the dedicated button in the machine's GUI."
 				""
-				"Whatever floats your boat."
+				"&dWhatever floats your boat."
 			]
 			icon: {
 				Count: 1b
@@ -1801,7 +1803,7 @@
 				title: "Screwdrive Output Sides!"
 				type: "checkmark"
 			}]
-			title: "Screwdrive Output Sides!"
+			title: "&dScrewdrive Output Sides!"
 			x: 12.75d
 			y: 7.5d
 		}
