@@ -119,19 +119,45 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(30)
 
-        event.recipes.gtceu.mixer("lumium_dust")
-        .itemInputs('4x gtceu:tin_alloy_dust', '2x gtceu:sterling_silver_dust', '2x extendedcrafting:lumiessence', 'kubejs:energized_clathrate')
+    event.recipes.gtceu.mixer("lumium_dust")
+        .itemInputs('4x gtceu:tin_alloy_dust', '2x gtceu:sterling_silver_dust', '2x extendedcrafting:luminessence', 'kubejs:energized_clathrate')
         .itemOutputs('4x gtceu:lumium_dust')
         .inputFluids(Fluid.of('kubejs:molten_primal_mana', 250))
         .duration(200)
         .EUt(1920)
 
-        event.recipes.gtceu.mixer("signalum_dust")
+    event.recipes.gtceu.mixer("signalum_dust")
         .itemInputs('4x gtceu:annealed_copper_dust', '2x gtceu:ardite_dust', '2x gtceu:red_alloy_dust', 'kubejs:destabilized_clathrate')
         .itemOutputs('4x gtceu:signalum_dust')
         .inputFluids(Fluid.of('kubejs:molten_primal_mana', 250))
         .duration(200)
         .EUt(1920)
+
+    event.recipes.gtceu.mixer("rhodium_plated_palladium")
+        .itemInputs('3x gtceu:palladium_dust', 'gtceu:rhodium_dust', '2x gtceu:lumium_dust')
+        .itemOutputs('6x gtceu:rhodium_plated_palladium_dust')
+        .duration(400)
+        .EUt(7680)
+        .circuit(1)
+
+    event.recipes.gtceu.mixer("enderium_dust")
+        .itemInputs('4x gtceu:lead_dust', '2x gtceu:platinum_dust', 'gtceu:blue_steel_dust', 'gtceu:osmium_dust', 'kubejs:resonant_clathrate')
+        .itemOutputs('4x gtceu:enderium_dust')
+        .inputFluids(Fluid.of('kubejs:molten_primal_mana', 1000))
+        .duration(300)
+        .EUt(1920)
+
+    event.recipes.gtceu.mixer("ardite_dust")
+        .itemInputs('3x gtceu:red_steel_dust', 'minecraft:blaze_powder')
+        .itemOutputs('4x gtceu:ardite_dust')
+        .duration(200)
+        .EUt(30)
+
+    event.recipes.gtceu.mixer("manyullyn_dust")
+        .itemInputs('4x gtceu:ardite_dust', '4x gtceu:cobalt_dust', 'kubejs:primal_mana')
+        .itemOutputs('4x gtceu:manyullyn_dust')
+        .duration(400)
+        .EUt(30)
 })
 
 ServerEvents.recipes(event => {
