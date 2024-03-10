@@ -1,6 +1,6 @@
 // /kjs inventory will be your friend.
 
-REIEvents.hide(event => {
+REIEvents.hide('item', event => {
     //Hides useless items
     event.hide(['ae2:vibration_chamber', 'hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper'])
 
@@ -71,9 +71,10 @@ REIEvents.hide(event => {
 })
 
 REIEvents.removeCategories(event => {
-    event.remove(['thermal:pulverizer', 'thermal:gourmand_fuel', 'thermal:disenchantement_fuel', 'thermal:lapidary_fuel'])
-    event.remove(['enderio:alloy_smelting', 'thermal:furnace'])
-    event.remove(['nuclearcraft:supercooler', 'nuclearcraft:rock_crusher', 'nuclearcraft:decay_hastener', 'nuclearcraft:irradiator', 'nuclearcraft:nuclear_furnace', 'nuclearcraft:extractor', 'nuclearcraft:electrolyzer', 'nuclearcraft:pressurizer', 'nuclearcraft:alloy_smelter', 'nuclearcraft:centrifuge', 'nuclearcraft:manufactory', 'nuclearcraft:gas_scrubber', 'nuclearcraft:fluid_enricher', 'nuclearcraft:isotope_separator', 'nuclearcraft:fluid_infuser', 'nuclearcraft:chemical_reactor', 'nuclearcraft:analyzer', 'nuclearcraft:ingot_former', 'nuclearcraft:pump', 'nuclearcraft:fuel_reprocessor', 'nuclearcraft:leacher', 'nuclearcraft:crystallizer', 'nuclearcraft:assembler', 'nuclearcraft:steam_turbine', 'nuclearcraft:melter'])
+    event.yeet(['thermal:pulverizer', 'thermal:gourmand_fuel', 'thermal:disenchantement_fuel', 'thermal:lapidary_fuel'])
+    event.yeet(['enderio:alloy_smelting', 'thermal:furnace'])
+    event.yeet(['nuclearcraft:supercooler', 'nuclearcraft:rock_crusher', 'nuclearcraft:decay_hastener', 'nuclearcraft:irradiator', 'nuclearcraft:nuclear_furnace', 'nuclearcraft:extractor', 'nuclearcraft:electrolyzer', 'nuclearcraft:pressurizer', 'nuclearcraft:alloy_smelter', 'nuclearcraft:centrifuge', 'nuclearcraft:manufactory', 'nuclearcraft:gas_scrubber', 'nuclearcraft:fluid_enricher', 'nuclearcraft:isotope_separator', 'nuclearcraft:fluid_infuser', 'nuclearcraft:chemical_reactor', 'nuclearcraft:analyzer', 'nuclearcraft:ingot_former', 'nuclearcraft:pump', 'nuclearcraft:fuel_reprocessor', 'nuclearcraft:leacher', 'nuclearcraft:crystallizer', 'nuclearcraft:assembler', 'nuclearcraft:steam_turbine', 'nuclearcraft:melter'])
+    event.yeet('minecraft:plugins/tag')
 })
 
 REIEvents.groupEntries(event => {
@@ -83,13 +84,7 @@ REIEvents.groupEntries(event => {
     useNbt.forEach(id => {
         const item = Item.of(id)
         const { namespace, path } = Utils.id(item.id)
-        event.groupSameItem(`kubejs:jei_groups/${namespace}/${path}`, item.name, item)
+        event.groupSameItem(`kubejs:rei_groups/${namespace}/${path}`, item.name, item)
     })
 
-
-})
-
-
-REIEvents.addItems(event => {
-    event.add('ae2:facade')
 })
