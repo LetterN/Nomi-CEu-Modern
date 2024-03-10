@@ -2743,13 +2743,14 @@
 		}
 		{
 			dependencies: ["0A65FC6D798ABFC5"]
+			description: ["Bigger barrels."]
 			id: "313ED4E5248EFED3"
 			tasks: [{
 				id: "6B80908A668D1EFF"
 				item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
 				type: "item"
 			}]
-			title: "&d Upgrades, people"
+			title: "&d Upgrades, people, upgrades."
 			x: 9.0d
 			y: 26.5d
 		}

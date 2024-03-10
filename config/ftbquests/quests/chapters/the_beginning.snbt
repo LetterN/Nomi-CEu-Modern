@@ -744,7 +744,7 @@
 				item: "thermal:device_rock_gen"
 				type: "item"
 			}]
-			title: "Infinite Cobblestone"
+			title: "&dInfinite Cobblestone"
 			x: 4.5d
 			y: -6.0d
 		}

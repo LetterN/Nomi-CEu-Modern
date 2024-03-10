@@ -609,7 +609,7 @@
 				item: "kubejs:microminer_t2"
 				type: "item"
 			}]
-			title: "&2Tier Two Micro Miner"
+			title: "&dTier Two Micro Miner"
 			x: 9.5d
 			y: 8.5d
 		}

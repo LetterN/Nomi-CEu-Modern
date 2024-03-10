@@ -16,6 +16,8 @@
 				"The &3Energy Acceptor&r converts RF power into AE power that Applied Energistics uses, in a 2 RF to 1 AE ratio. This power will be transmitted through adjacent full-block ME Network devices, as well as along all connected &6ME Cables&r, &6ME Conduits&r, and &6Quartz Fiber&r. "
 				""
 				"Quartz Fiber are &emicroparts&r you can put between an ME Cable and any ME Network block or another ME Cable. This will allow transmission of AE power but not data, which is useful for having data-isolated ME Networks all sharing the same power source."
+				""
+				"If you have never used AE2 before (or just want to learn some tips and tricks) and you would like a video guide, check out &9Pansmith's Guide to Applied Energistics 2&r. While made for 1.12, nearly of the information contained in that guide will carry over to modern versions of AE2, and was made with &5Nomifactory&r players in mind."
 			]
 			disable_toast: true
 			id: "537C74D3CED36FC2"
@@ -295,16 +297,7 @@
 			description: [
 				"This device can be powered with RF via energy conduits or use AE energy from a network via ME conduits or cables."
 				""
-				"It accepts power from two sides. Which two sides? It's pretty easy to guess."
-				""
-				""
-				""
-				""
-				""
-				""
-				""
-				""
-				"Ok, ok. It's the top and bottom."
+				"It accepts power from the top and the bottom, and can be wrenched to allow for easier automation."
 			]
 			disable_toast: true
 			icon: "ae2:charger"
@@ -813,7 +806,7 @@
 				item: "ae2:cell_component_256k"
 				type: "item"
 			}]
-			title: "256k Item Storage"
+			title: "&d256k Item Storage"
 			x: 3.5d
 			y: -8.0d
 		}
@@ -995,6 +988,50 @@
 			title: "Mastering Patterns"
 			x: 7.0d
 			y: 10.0d
+		}
+		{
+			dependencies: ["15AE607E2EDD0369"]
+			description: ["Placing these in one of your &6ME Drives&r will provide your ME network with an &ainfinite&r amount of water or cobblestone. Use &6interfaces&r or &6export busses&r to provide said substances to whereever you need it."]
+			id: "26C9F1514FD08C81"
+			rewards: [{
+				id: "144A810C0576A3E0"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			subtitle: "It doesn't get any faster than this."
+			tasks: [
+				{
+					id: "4EFDB9B627864D5D"
+					item: {
+						Count: 1b
+						id: "expatternprovider:infinity_cell"
+						tag: {
+							record: {
+								"#c": "ae2:f"
+								id: "minecraft:water"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "215932AC4E4A4995"
+					item: {
+						Count: 1b
+						id: "expatternprovider:infinity_cell"
+						tag: {
+							record: {
+								"#c": "ae2:i"
+								id: "minecraft:cobblestone"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&dInfinitest Water and Stone"
+			x: 5.5d
+			y: -8.0d
 		}
 	]
 	title: "Matter-Energy"

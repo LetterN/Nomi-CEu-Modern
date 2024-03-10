@@ -1486,6 +1486,7 @@
 				""
 				"These recipes require large amounts of RF and it &ewill not use power from your &aME Network&r, so you must also connect the package crafter directly to energy conduits."
 			]
+			icon: "packagedexcrafting:combination_crafter"
 			id: "13B12457AA9BF90D"
 			rewards: [{
 				id: "4659AF3C8FEEF2BB"
@@ -1542,6 +1543,7 @@
 				""
 				"This quest accepts either &6Fluoroantimonic Acid&r, for those doing the recommended full processing, or &6Trinium Dust, Enriched Naquadah Dust&r and &6Naquadria Dust&r, for those doing the mixer recipes."
 			]
+			icon: "gtceu:naquadria_dust"
 			id: "0508D3CCB6C876A3"
 			rewards: [{
 				id: "67B0A4C33D2EDC21"
