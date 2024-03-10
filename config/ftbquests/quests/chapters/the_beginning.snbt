@@ -744,7 +744,7 @@
 				item: "thermal:device_rock_gen"
 				type: "item"
 			}]
-			title: "Infinite Cobblestone"
+			title: "&dInfinite Cobblestone"
 			x: 4.5d
 			y: -6.0d
 		}
@@ -1153,8 +1153,6 @@
 				""
 				"When applied to a dynamo, it increases the &apower generation and fuel burn rate to 150%%&r."
 				""
-				"Increases the base capacity of Portable Tanks to &a200 buckets&r."
-				""
 				"Allows machines operate at &a150%% of base power per tick&r. The more power a machine can use, the faster it works."
 			]
 			id: "356DA8DE256356B8"
@@ -1535,8 +1533,8 @@
 				type: "item"
 			}]
 			title: "Energetic Alloy Energy Conduits"
-			x: 0.5d
-			y: 11.0d
+			x: 1.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]

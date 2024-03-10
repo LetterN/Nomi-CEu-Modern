@@ -1451,6 +1451,7 @@
 				""
 				"&aRF&r converts into &aEU&r at a &e4 to 1 ratio&r. &a100 RF&r becomes &a25 EU&r, and vice-versa. &2Use a Soft Hammer to change the conversion direction."
 			]
+			icon: "gtceu:lv_4a_energy_converter"
 			id: "297B523B6C503957"
 			rewards: [{
 				id: "6F305739BEEDF49B"
@@ -1460,7 +1461,31 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "3217FC6AD2AFA67A"
-				item: "gtceu:lv_4a_energy_converter"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_1a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_4a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_8a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_16a_energy_converter"
+							}
+						]
+					}
+				}
+				title: "Any LV Converter"
 				type: "item"
 			}]
 			title: "LV Power"
@@ -1824,7 +1849,7 @@
 				""
 				"Sophisticated Storage in particular is great for cheap storage, able to store 3 barrels worth of items at it's lowest tier, costing only a bit of iron to craft, and can be upgraded with barrel upgrades to hold even more items and upgrades."
 				""
-				"&5The textures and item names here are to be updated. "
+				"&5Retextures and such are WIP."
 			]
 			id: "61E5D7EEE745C6FB"
 			rewards: [{
