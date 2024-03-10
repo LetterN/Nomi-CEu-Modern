@@ -1,7 +1,7 @@
 {
-    "type": "minecraft:enderman",
+    "entity": "minecraft:enderman",
     "name": "entity.minecraft.enderman",
-    "name_color": "0x00FFFFFF",
+    "name_color": "#00FFFFFF",
     "gui_scale": 0.75,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
