@@ -93,3 +93,25 @@ ServerEvents.recipes(event => {
 
 
 })
+
+// Vacuum Freezer
+
+// Draconic Superconductor Wire
+ServerEvents.recipes(event => {
+    event.recipes.gtceu.vacuum_freezer("draconic_superconductor_wire")
+        .itemInputs('gtceu:draconium_single_wire')
+        .itemOutputs('gtceu:draconic_superconductor_single_wire')
+        .inputFluids(Fluid.of('gtceu:nether_star', 144))
+        .duration(100)
+        .EUt(6000)
+})
+
+// Draconium Dust
+
+ServerEvents.recipes(event => {
+    event.recipes.gtceu.chemical_reactor("draconium_dust")
+        .itemInputs('gtceu:manyullyn_dust', 'minecraft:dragon_breath')
+        .itemOutputs('gtceu:draconium_dust')
+        .duration(500)
+        .EUt(2000)
+})
