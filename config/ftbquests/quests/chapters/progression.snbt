@@ -701,7 +701,7 @@
 			id: "0E824E8BDB286577"
 			tasks: [{
 				id: "005582FE87F58219"
-				item: "simplybackpacks:uncommonbackpack"
+				item: "sophisticatedbackpacks:iron_backpack"
 				type: "item"
 			}]
 			x: 7.0d
@@ -711,7 +711,7 @@
 			id: "3589B278E7BDA769"
 			tasks: [{
 				id: "636BE0B63A2CD2D8"
-				item: "simplybackpacks:rarebackpack"
+				item: "sophisticatedbackpacks:gold_backpack"
 				type: "item"
 			}]
 			x: 7.0d
@@ -721,7 +721,7 @@
 			id: "6DEA5CE28A667453"
 			tasks: [{
 				id: "12C73A9D54273F41"
-				item: "simplybackpacks:ultimatebackpack"
+				item: "sophisticatedbackpacks:netherite_backpack"
 				type: "item"
 			}]
 			x: 7.0d
@@ -731,7 +731,7 @@
 			id: "7F736E1F163463DF"
 			tasks: [{
 				id: "722C21405A11FAB5"
-				item: "simplybackpacks:epicbackpack"
+				item: "sophisticatedbackpacks:diamond_backpack"
 				type: "item"
 			}]
 			x: 7.0d
