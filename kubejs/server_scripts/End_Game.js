@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
     })
 
     // Blacklight
-    event.remove({ output: 'gtceu:blacklight' })
+    event.remove({ id: 'gtceu:shaped/blacklight' })
     event.shaped(
         'gtceu:blacklight', [
             'BPB',
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
     )
 
     // Sterilising Filter Casing
-    event.remove({ output: 'gtceu:sterilizing_filter_casing' })
+    event.remove({ id: 'gtceu:shaped/filter_casing_sterile' })
     event.shaped(
         'gtceu:sterilizing_filter_casing', [
             'PEP',
@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
     )
 
     // FLux Gem
-    event.remove({ output: 'redstone_arsenal:flux_gem' })
+    event.remove({ id: 'redstone_arsenal:materials/flux_gem' })
     event.recipes.gtceu.autoclave("flux_gem")
         .itemInputs('minecraft:diamond')
         .inputFluids('gtceu:redstone 720')
@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
         .EUt(400)
 
     // Flux Plating
-    event.remove({ output: 'redstone_arsenal:flux_plating' })
+    event.remove({ id: 'redstone_arsenal:materials/flux_plating' })
     event.shaped(
         '4x redstone_arsenal:flux_plating', [
             ' P ',
@@ -171,7 +171,8 @@ ServerEvents.recipes(event => {
         .EUt(2000)
 
     //Draconic Stem Cells
-    event.remove({ output: 'gtceu:stem_cells' })
+    event.remove({ id: 'gtceu:chemical_reactor/stem_cells' })
+    event.remove({ id: 'gtceu:large_chemical_reactor/stem_cells'})
     event.recipes.gtceu.chemical_reactor("draconic_stem_cells")
         .itemInputs('minecraft:dragon_egg')
         .inputFluids('gtceu:sterilized_growth_medium 500', 'gtceu:bacteria 500')
