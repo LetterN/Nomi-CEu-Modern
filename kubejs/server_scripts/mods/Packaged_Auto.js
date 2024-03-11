@@ -111,4 +111,61 @@ ServerEvents.recipes(event => {
             W: 'minecraft:crafting_table',
             I: '#gtceu:circuits/ev'
         })
+
+        event.remove({ output: 'packagedexcrafting:advanced_crafter' })
+        event.shaped(
+            'packagedexcrafting:advanced_crafter', [
+                'ACA',
+                'BEB',
+                'ACA'
+            ], {
+                A: 'extendedcrafting:advanced_component',
+                B: 'gtceu:black_steel_plate',
+                C: 'packagedauto:me_package_component',
+                E: 'extendedcrafting:advanced_auto_table'
+            }
+        )
+    
+        event.remove({ output: 'packagedexcrafting:elite_crafter' })
+        event.shaped(
+            'packagedexcrafting:elite_crafter', [
+                'ACA',
+                'BEB',
+                'ACA'
+            ], {
+                A: 'extendedcrafting:elite_component',
+                B: 'gtceu:black_steel_plate',
+                C: 'packagedauto:me_package_component',
+                E: 'extendedcrafting:elite_auto_table'
+            }
+        )
+    
+        event.remove({ output: 'packagedexcrafting:ultimate_crafter' })
+        event.shaped(
+            'packagedexcrafting:ultimate_crafter', [
+                'ACA',
+                'BEB',
+                'ACA'
+            ], {
+                A: 'extendedcrafting:ultimate_component',
+                B: 'gtceu:black_steel_plate',
+                C: 'packagedauto:me_package_component',
+                E:'extendedcrafting:ultimate_auto_table'
+            }
+        )
+        
+        event.remove({ output: 'packagedexcrafting:combination_crafter' })
+        event.shaped(
+            'packagedexcrafting:combination_crafter', [
+                'ACA',
+                'BEB',
+                'DCD'
+            ], {
+                A: 'extendedcrafting:crystaltine_component',
+                B: 'extendedcrafting:ender_star',
+                C: 'packagedauto:me_package_component',
+                D:'packagedexcrafting:combination_crafter',
+                E:'extendedcrafting:crafting_core'
+            }
+        )
 })

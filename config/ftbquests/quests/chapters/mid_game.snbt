@@ -1862,7 +1862,7 @@
 			description: [
 				"The&3 Empowerer&r is a multiblock used to convert special crystalline materials into empowered variants."
 				""
-				"&5TODO: explain this futher when #26 is fixed."
+				"&5Currently, the multiblock doesn't care which item would goes in which slot. I would recommend still setting it where the item to be empowered is in the middle bus so your setup does not break when this is fixed."
 			]
 			id: "49C8716030809478"
 			rewards: [{
