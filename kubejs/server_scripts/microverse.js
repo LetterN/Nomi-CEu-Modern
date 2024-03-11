@@ -392,4 +392,18 @@ ServerEvents.recipes(event => {
         .itemOutputs("kubejs:enderium_micro_miner_core")
         .duration(2000)
         .EUt(8000)
+
+    // Gemstone Sensor - Optical Sensor has been replaced with a Quantum Eye, which is slightly cheaper.
+    event.shaped(
+        'kubejs:gem_sensor', [
+            ' A ',
+            'WCW',
+            ' W '
+        ], {
+            A: 'gtceu:quantum_eye',
+            W: 'gtceu:tungsten_carbide_plate',
+            C: 'gtceu:iv_sensor'
+        }
+    )
+
 })
