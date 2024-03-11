@@ -211,7 +211,7 @@ ServerEvents.recipes(event => {
         .circuit(2)
         .blastFurnaceTemp(1350)
 
-        event.recipes.gtceu.alloy_blast_smelter("vibrant_alloy_fluid_gas")
+    event.recipes.gtceu.alloy_blast_smelter("vibrant_alloy_fluid_gas")
         .itemInputs('gtceu:energetic_alloy_dust', 'gtceu:ender_pearl_dust')
         .inputFluids(Fluid.of('gtceu:nitrogen', 2000))
         .outputFluids(Fluid.of('gtceu:vibrant_alloy', 288))
@@ -219,6 +219,14 @@ ServerEvents.recipes(event => {
         .EUt(120)
         .circuit(12)
         .blastFurnaceTemp(1350)
+
+    event.recipes.gtceu.alloy_blast_smelter("dark_soularium_fluid")
+        .itemInputs('gtceu:soularium_ingot', 'gtceu:dark_steel_ingot')
+        .inputFluids(Fluid.of('gtceu:tritium', 1000))
+        .outputFluids(Fluid.of('gtceu:dark_soularium', 144))
+        .duration(1200)
+        .EUt(32000)
+        .blastFurnaceTemp(8600)
 })
 ServerEvents.recipes(event => {
     event.remove({ id: /thermal:[A-Za-z]+_dust_/ })
