@@ -15,7 +15,7 @@ StartupEvents.registry("block", (event) => {
     event.create('double_compressed_red_sand').displayName("Double Compressed Red Sand").soundType('sand').resistance(2).hardness(2).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING)
 
     // Micro Miner Cores
-    event.create('micro_miner_core_electrum')
+    event.create('electrum_micro_miner_core')
         .displayName("Electrum Micro Miner Engine Core")
         .soundType('metal')
         .resistance(3)
@@ -23,7 +23,7 @@ StartupEvents.registry("block", (event) => {
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
 
-    event.create('micro_miner_core_signalum')
+    event.create('signalum_micro_miner_core')
         .displayName("Signalum Micro Miner Engine Core")
         .soundType('metal')
         .resistance(4)
@@ -31,7 +31,7 @@ StartupEvents.registry("block", (event) => {
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
 
-    event.create('micro_miner_core_enderium')
+    event.create('enderium_micro_miner_core')
         .displayName("Enderium Micro Miner Engine Core")
         .soundType('metal')
         .resistance(5)
@@ -39,7 +39,7 @@ StartupEvents.registry("block", (event) => {
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
 
-    event.create('micro_miner_frame_electrum')
+    event.create('electrum_micro_miner_frame')
         .displayName("Electrum Micro Miner Engine Frame")
         .soundType('metal')
         .resistance(3)
@@ -47,7 +47,7 @@ StartupEvents.registry("block", (event) => {
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
 
-    event.create('micro_miner_frame_signalum')
+    event.create('signalum_micro_miner_frame')
         .displayName("Signalum Micro Miner Engine Frame")
         .soundType('metal')
         .resistance(4)
@@ -55,7 +55,7 @@ StartupEvents.registry("block", (event) => {
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
 
-    event.create('micro_miner_frame_enderium')
+    event.create('enderium_micro_miner_frame')
         .displayName("Enderium Micro Miner Engine Frame")
         .soundType('metal')
         .resistance(5)
