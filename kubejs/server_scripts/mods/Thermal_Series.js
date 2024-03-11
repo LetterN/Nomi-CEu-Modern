@@ -334,7 +334,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_reactor('destabilized_clathrate')
         .itemInputs('minecraft:quartz')
-        .inputFluids(Fluid.of('gtceu:redstone_bucket', 250))
+        .inputFluids(Fluid.of('gtceu:redstone', 250))
         .itemOutputs('kubejs:destabilized_clathrate')
         .duration(120)
         .EUt(75)
