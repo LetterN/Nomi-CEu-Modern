@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:stainless_steel_crate',
             L: 'kubejs:basic_mining_laser',
             B: 'gtceu:lv_field_generator',
-            F: 'thermal:fluid_cell_frame', // TODO: Rename frames
+            F: 'kubejs:electrum_micro_miner_core',
             C: 'gtceu:mv_combustion',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:electrical_steel"}').strongNBT()
         }, 2
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:mv_field_generator',
             B: 'gtceu:titanium_crate',
             L: 'kubejs:reinforced_mining_laser',
-            F: 'thermal:fluid_cell_frame',
+            F: 'kubejs:electrum_micro_miner_core',
             C: 'gtceu:hv_combustion',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Reinforced"}').strongNBT()
         }, 3
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
             S: 'gtceu:double_signalum_plate',
             A: 'gtceu:tungsten_steel_crate',
             B: 'gtceu:hv_field_generator',
-            F: 'thermal:energy_cell_frame',
+            F: 'kubejs:signalum_micro_miner_core',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Energetic"}').strongNBT(),
             D: 'thermal:dynamo_magmatic' // TODO: replace with reactant dynamo when possible
         }, 3
@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
             L: 'kubejs:supercharged_laser_array',
             A: 'gtceu:ev_field_generator',
             B: 'gtceu:mv_super_chest',
-            F: 'thermal:energy_cell_frame',
+            F: 'kubejs:signalum_micro_miner_core',
             C: 'nuclearcraft:fission_reactor_controller', // TODO: REPLACE WITH REAL NC COMPONENT
             P: 'nuclearcraft:fission_reactor_port', // TODO: REPLACE WITH REAL NC COMPONENT
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Vibrant"}').strongNBT()
@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
             G: 'kubejs:advanced_micro_miner_guidance_system',
             E: 'gtceu:double_enderium_plate',
             A: 'gtceu:mv_super_chest',
-            F: 'thermal:energy_cell_frame', // TODO: this should be a third tier of frame
+            F: 'kubejs:enderium_micro_miner_core',
             B: 'gtceu:iv_field_generator',
             C: 'nuclearcraft:fission_reactor_controller',
             P: 'nuclearcraft:fission_reactor_port',
@@ -335,4 +335,61 @@ ServerEvents.recipes(event => {
         .itemOutputs('kubejs:universal_navigator')
         .duration(6000)
         .EUt(491520)
+
+    // Electrum Engine Frame
+    event.shaped(
+        'kubejs:electrum_micro_miner_frame', [
+            'PRP',
+            'R R',
+            'PRP'
+        ], {
+            P: 'gtceu:electrum_plate',
+            R: 'gtceu:electrum_rod',
+        }
+    )
+
+    // Signalum Engine Frame
+    event.shaped(
+        'kubejs:signalum_micro_miner_frame', [
+            'PRP',
+            'R R',
+            'PRP'
+        ], {
+            P: 'gtceu:signalum_plate',
+            R: 'gtceu:signalum_rod',
+        }
+    )
+
+    // Enderium Engine Frame
+    event.shaped(
+        'kubejs:enderium_micro_miner_frame', [
+            'PRP',
+            'R R',
+            'PRP'
+        ], {
+            P: 'gtceu:enderium_plate',
+            R: 'gtceu:enderium_rod',
+        }
+    )
+
+    // Electrum Engine Core
+    event.recipes.gtceu.alloy_smelter("electrum_micro_miner_core")
+        .itemInputs("2x minecraft:redstone_block", "kubejs:electrum_micro_miner_frame")
+        .itemOutputs("kubejs:electrum_micro_miner_core")
+        .duration(500)
+        .EUt(480)
+
+    // Signalum Engine Core
+    event.recipes.gtceu.alloy_smelter("signalum_micro_miner_core")
+        .itemInputs("4x minecraft:redstone_block", "kubejs:signalum_micro_miner_frame")
+        .itemOutputs("kubejs:signalum_micro_miner_core")
+        .duration(1000)
+        .EUt(2000)
+
+    // Enderium Engine Core
+    event.recipes.gtceu.alloy_smelter("enderium_micro_miner_core")
+        .itemInputs("8x minecraft:redstone_block", "kubejs:enderium_micro_miner_frame")
+        .itemOutputs("kubejs:enderium_micro_miner_core")
+        .duration(2000)
+        .EUt(8000)
 })
