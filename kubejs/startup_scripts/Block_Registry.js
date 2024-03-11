@@ -22,8 +22,7 @@ StartupEvents.registry("block", (event) => {
         .hardness(3)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .fullBlock(false)
-        .renderType('cutout')
+        .defaultCutout()
 
     event.create('signalum_micro_miner_core')
         .displayName("Signalum Micro Miner Engine Core")
@@ -32,8 +31,7 @@ StartupEvents.registry("block", (event) => {
         .hardness(4)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .fullBlock(false)
-        .renderType('cutout')
+        .defaultCutout()
 
     event.create('enderium_micro_miner_core')
         .displayName("Enderium Micro Miner Engine Core")
@@ -42,8 +40,7 @@ StartupEvents.registry("block", (event) => {
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .fullBlock(false)
-        .renderType('cutout')
+        .defaultCutout()
 
     event.create('electrum_micro_miner_frame')
         .displayName("Electrum Micro Miner Engine Frame")
@@ -52,8 +49,7 @@ StartupEvents.registry("block", (event) => {
         .hardness(3)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .fullBlock(false)
-        .renderType('cutout')
+        .defaultCutout()
 
     event.create('signalum_micro_miner_frame')
         .displayName("Signalum Micro Miner Engine Frame")
@@ -62,8 +58,7 @@ StartupEvents.registry("block", (event) => {
         .hardness(4)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .fullBlock(false)
-        .renderType('cutout')
+        .defaultCutout()
 
     event.create('enderium_micro_miner_frame')
         .displayName("Enderium Micro Miner Engine Frame")
@@ -72,8 +67,7 @@ StartupEvents.registry("block", (event) => {
         .hardness(5)
         .tagBlock("mineable/pickaxe")
         .requiresTool(true)
-        .fullBlock(false)
-        .renderType('cutout')
+        .defaultCutout()
 
     //Dense Ores
     let ores = [
