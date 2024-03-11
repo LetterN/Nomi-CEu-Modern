@@ -14,6 +14,61 @@ StartupEvents.registry("block", (event) => {
     event.create('compressed_red_sand').displayName("Compressed Red Sand").soundType('sand').resistance(1).hardness(1).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING)
     event.create('double_compressed_red_sand').displayName("Double Compressed Red Sand").soundType('sand').resistance(2).hardness(2).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING)
 
+    // Micro Miner Cores
+    event.create('electrum_micro_miner_core')
+        .displayName("Electrum Micro Miner Engine Core")
+        .soundType('metal')
+        .resistance(3)
+        .hardness(3)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .defaultCutout()
+
+    event.create('signalum_micro_miner_core')
+        .displayName("Signalum Micro Miner Engine Core")
+        .soundType('metal')
+        .resistance(4)
+        .hardness(4)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .defaultCutout()
+
+    event.create('enderium_micro_miner_core')
+        .displayName("Enderium Micro Miner Engine Core")
+        .soundType('metal')
+        .resistance(5)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .defaultCutout()
+
+    event.create('electrum_micro_miner_frame')
+        .displayName("Electrum Micro Miner Engine Frame")
+        .soundType('metal')
+        .resistance(3)
+        .hardness(3)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .defaultCutout()
+
+    event.create('signalum_micro_miner_frame')
+        .displayName("Signalum Micro Miner Engine Frame")
+        .soundType('metal')
+        .resistance(4)
+        .hardness(4)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .defaultCutout()
+
+    event.create('enderium_micro_miner_frame')
+        .displayName("Enderium Micro Miner Engine Frame")
+        .soundType('metal')
+        .resistance(5)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+        .defaultCutout()
+
     //Dense Ores
     let ores = [
         "redstone_ore",
