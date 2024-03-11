@@ -3,11 +3,12 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "extendedcrafting:shaped_table",
         // "tier": "2",
+        // this is really gross but it's not my fault someone put 'E' twice in the original recipe
         "pattern": [
             "A  B  C",
             " D E F ",
             "  GHI  ",
-            "JKLEMNO",
+            "JKLYMNO",
             "  PQR  ",
             " S T U ",
             "V  W  X"
@@ -26,7 +27,7 @@ ServerEvents.recipes(event => {
                 "item": "gtceu:magnalium_ingot"
             },
             "E": {
-                "item": "minecraft:barrier"
+                "item": "gtceu:mana_infused_metal_ingot"
             },
             "F": {
                 "item": "gtceu:manyullyn_ingot"
@@ -84,6 +85,9 @@ ServerEvents.recipes(event => {
             },
             "X": {
                 "item": "gtceu:energetic_alloy_ingot"
+            },
+            "Y": {
+                "item": "gtceu:dark_soularium_ingot"
             }
         },
         "result": {
