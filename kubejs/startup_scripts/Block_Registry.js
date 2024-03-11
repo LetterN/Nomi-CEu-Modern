@@ -14,6 +14,55 @@ StartupEvents.registry("block", (event) => {
     event.create('compressed_red_sand').displayName("Compressed Red Sand").soundType('sand').resistance(1).hardness(1).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING)
     event.create('double_compressed_red_sand').displayName("Double Compressed Red Sand").soundType('sand').resistance(2).hardness(2).tagBlock("mineable/shovel").requiresTool(true).property(BlockProperties.FALLING)
 
+    // Micro Miner Cores
+    event.create('micro_miner_core_electrum')
+        .displayName("Electrum Micro Miner Engine Core")
+        .soundType('metal')
+        .resistance(3)
+        .hardness(3)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+
+    event.create('micro_miner_core_signalum')
+        .displayName("Signalum Micro Miner Engine Core")
+        .soundType('metal')
+        .resistance(4)
+        .hardness(4)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+
+    event.create('micro_miner_core_enderium')
+        .displayName("Enderium Micro Miner Engine Core")
+        .soundType('metal')
+        .resistance(5)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+
+    event.create('micro_miner_frame_electrum')
+        .displayName("Electrum Micro Miner Engine Frame")
+        .soundType('metal')
+        .resistance(3)
+        .hardness(3)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+
+    event.create('micro_miner_frame_signalum')
+        .displayName("Signalum Micro Miner Engine Frame")
+        .soundType('metal')
+        .resistance(4)
+        .hardness(4)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+
+    event.create('micro_miner_frame_enderium')
+        .displayName("Enderium Micro Miner Engine Frame")
+        .soundType('metal')
+        .resistance(5)
+        .hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .requiresTool(true)
+
     //Dense Ores
     let ores = [
         "redstone_ore",
