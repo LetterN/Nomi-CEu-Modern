@@ -96,7 +96,6 @@ ServerEvents.recipes(event => {
     })
 
     // Blacklight
-    event.remove({ id: 'gtceu:shaped/blacklight' })
     event.shaped(
         'gtceu:blacklight', [
             'BPB',
@@ -109,10 +108,9 @@ ServerEvents.recipes(event => {
             S: 'gtceu:hssg_spring',
             W: 'gtceu:platinum_single_cable'
         }
-    )
+    ).id('gtceu:shaped/blacklight')
 
     // Sterilising Filter Casing
-    event.remove({ id: 'gtceu:shaped/filter_casing_sterile' })
     event.shaped(
         'gtceu:sterilizing_filter_casing', [
             'PEP',
@@ -127,7 +125,7 @@ ServerEvents.recipes(event => {
             R: 'gtceu:osmiridium_rotor', // TODO: replace with iridium rotor if possible
             S: 'gtceu:black_steel_frame'
         }
-    )
+    ).id('gtceu:shaped/filter_casing_sterile')
 
     // FLux Gem
     event.remove({ id: 'redstone_arsenal:materials/flux_gem' })
@@ -139,7 +137,6 @@ ServerEvents.recipes(event => {
         .EUt(400)
 
     // Flux Plating
-    event.remove({ id: 'redstone_arsenal:materials/flux_plating' })
     event.shaped(
         '4x redstone_arsenal:flux_plating', [
             ' P ',
@@ -149,7 +146,7 @@ ServerEvents.recipes(event => {
             G: 'redstone_arsenal:flux_gem',
             P: 'gtceu:electrum_flux_plate'
         }
-    )
+    ).id('redstone_arsenal:materials/flux_plating')
 
     // Vacuum Freezer
 

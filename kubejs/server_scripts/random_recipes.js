@@ -6,10 +6,8 @@
 ServerEvents.recipes(event => {
 
     // snad
-    event.remove({ id: "snad:snadrecipe" })
-    event.remove({ id: "snad:red_snad" })
-    event.shapeless('snad:snad', ['kubejs:double_compressed_sand', 'kubejs:double_compressed_sand'])
-    event.shapeless('snad:red_snad', ['kubejs:double_compressed_red_sand', 'kubejs:double_compressed_red_sand'])
+    event.shapeless('snad:snad', ['kubejs:double_compressed_sand', 'kubejs:double_compressed_sand']).id('snad:snadrecipe')
+    event.shapeless('snad:red_snad', ['kubejs:double_compressed_red_sand', 'kubejs:double_compressed_red_sand']).id('snad:red_snad')
 
     // snaded sand snad
     event.shaped("kubejs:compressed_sand", [
@@ -137,9 +135,6 @@ ServerEvents.recipes(event => {
         .EUt(15)
 
     // Change recipes for LV and MV macerators
-    event.remove({ id: "gtceu:shaped/lv_macerator" })
-    event.remove({ id: "gtceu:shaped/mv_macerator" })
-
     event.shaped(
         "gtceu:lv_macerator", [
             'PMB',
@@ -153,7 +148,7 @@ ServerEvents.recipes(event => {
             H: "gtceu:lv_machine_hull",
             C: "#gtceu:circuits/lv"
         }
-    )
+    ).id('gtceu:shaped/lv_macerator')
 
     event.shaped(
         "gtceu:mv_macerator", [
@@ -168,7 +163,7 @@ ServerEvents.recipes(event => {
             H: "gtceu:mv_machine_hull",
             C: "#gtceu:circuits/mv"
         }
-    )
+    ).id('gtceu:shaped/mv_macerator')
 
     // Alternative LV piston recipe
     event.shaped(
@@ -394,7 +389,6 @@ ServerEvents.recipes(event => {
 
     // NC cobble gen replaced with thermal for now, make buckets empty but indicate how it must be placed, also remove easy auto deepslate and friends
     event.remove({ type: "thermal:rock_gen", not: { output: "minecraft:cobblestone" } })
-    event.remove({ id: "thermal:device_rock_gen" })
     event.shaped(
         "thermal:device_rock_gen", [
             'PPP',
@@ -404,12 +398,11 @@ ServerEvents.recipes(event => {
             P: "gtceu:steel_plate",
             B: "minecraft:bucket"
         }
-    )
+    ).id('thermal:device_rock_gen')
 
     //TODO: AE2 crystal growth accelerator goes here
 
     // Nomified distill tower
-    event.remove({ id: "gtceu:shaped/distillation_tower" })
     event.shaped(
         "gtceu:distillation_tower", [
             'LPL',
@@ -421,7 +414,7 @@ ServerEvents.recipes(event => {
             C: "#gtceu:circuits/hv",
             H: "gtceu:hv_machine_hull"
         }
-    )
+    ).id('gtceu:shaped/distillation_tower')
 
     // Implement draconium smelting
     event.remove({ id: "gtceu:electric_blast_furnace/blast_draconium" })
@@ -499,7 +492,6 @@ ServerEvents.recipes(event => {
         .EUt(7680)
 
     // Ass control casing
-    event.remove({ id: "gtceu:shaped/casing_assembly_line" })
     event.shaped(
         "4x gtceu:assembly_line_unit", [
             'CHC',
@@ -513,7 +505,7 @@ ServerEvents.recipes(event => {
             E: "gtceu:iv_emitter",
             M: "gtceu:iv_electric_motor"
         }
-    )
+    ).id('gtceu:shaped/casing_assembly_line')
 
     // Mixer naquadah enrichment
     event.recipes.gtceu.mixer("mixer_enriched_naquadah")
