@@ -1052,6 +1052,18 @@
 			x: 4.0d
 			y: 10.0d
 		}
+		{
+			dependencies: ["537C74D3CED36FC2"]
+			icon: "ae2:flawless_budding_quartz"
+			id: "62356B88D5366D33"
+			tasks: [{
+				id: "01CD6B1C9EF82A30"
+				type: "checkmark"
+			}]
+			title: "&dCrystal Growing"
+			x: -2.0d
+			y: 2.5d
+		}
 	]
 	title: "Matter-Energy"
 }
