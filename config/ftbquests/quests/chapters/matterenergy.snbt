@@ -1054,6 +1054,11 @@
 		}
 		{
 			dependencies: ["537C74D3CED36FC2"]
+			description: [
+				"&6Certus quartz&r can be grown from &6Budding Certus Quartz&r blocks!"
+				""
+				"Check out the ingame guide for specifics on how to get this set up."
+			]
 			icon: "ae2:flawless_budding_quartz"
 			id: "62356B88D5366D33"
 			tasks: [{

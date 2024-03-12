@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 
-    // ME Controller
     event.remove({ output: ['ironfurnaces:rainbow_plating', 'ironfurnaces:rainbow_core', 'ironfurnaces:million_furnace', 'ironfurnaces:augment_factory', 'ironfurnaces:iron_furnace', 'ironfurnaces:silver_furnace', 'ironfurnaces:copper_furnace', 'ironfurnaces:gold_furnace', 'ironfurnaces:diamond_furnace', 'ironfurnaces:obsidian_furnace', 'ironfurnaces:netherite_furnace'] })
     event.shaped(
         'ironfurnaces:iron_furnace', [
@@ -95,4 +94,15 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.shaped(
+        'ironfurnaces:item_copy', [
+            ' I ',
+            'SRS',
+            'SSS'
+        ], {
+            S: 'minecraft:cobblestone',
+            R: "minecraft:redstone",
+            I: "minecraft:iron_ingot"
+        }
+    )
 })
