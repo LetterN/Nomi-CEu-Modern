@@ -474,6 +474,8 @@
 				"3F216049FBBB4E36"
 			]
 			description: [
+				"&5Research is not in GTM yet, but will be incorpated into NFm when it's ported."
+				""
 				"The &3Assembly Line&r is a large multiblock structure that crafts complex materials, similar to an &3Assembling Machine&r. These will be crucial going forward for making a variety of components and machinery."
 				""
 				"Make sure your power generation and circuit production are up to the challenge. &2None of the Assembly Line recipes require programmed circuits anymore.&r It is &anot required&r to insert items or fluids in the correct order."
@@ -541,6 +543,8 @@
 		{
 			dependencies: ["3F216049FBBB4E36"]
 			description: [
+				"&5Research is not in GTM yet, but will be incorpated into NFm when it's ported."
+				""
 				"The &3Assembly Line&r needs to be provided with &edata&r on how to craft items before it can craft them. Data on how to craft each item is stored in a &6Data Stick&r and read by a &aData Access Hatch&r. This data is required to craft &6LuV components&r, the &3Fusion Reactor&r, and some parts from &dDraconic Evolution&r."
 				""
 				"To begin, craft a &3Scanner&r and a few &6Data Sticks&r. The initial Scanner recipes run at &6HV&r, but &1IV&r is required relatively soon so might as well make that one."
@@ -567,7 +571,7 @@
 				item: "gtceu:data_stick"
 				type: "item"
 			}]
-			title: "Assembly Line Data"
+			title: "&dAssembly Line Data"
 			x: -8.0d
 			y: 12.25d
 		}
@@ -1088,7 +1092,7 @@
 				"22EE79257B57E56B"
 			]
 			description: [
-				"Now that you have &6Osmium&r and &6Iridium&r from the &6Tier Four Micro Miner&r or &6Platinum Group Processing&r, you can begin automating &bExtended Crafting&r recipes. &5It is no longer possible to use &6Automation Interfaces&5 for this task, but you have access to something vastly better&r: &bPackagedExCrafting."
+				"Now that you have &6Osmium&r and &6Iridium&r from the &6Tier Four Micro Miner&r or &6Platinum Group Processing&r, you have access to something vastly better for Extended Crafting Table Automation&r: &bPackagedExCrafting."
 				""
 				"To begin, you'll need to craft one of each extended &3Package Crafter&r listed on the right. Put an &3Unpackager&r on top of each one, and then a &3Packager&r anywhere you want. These are all AE2 devices, so you'll need to connect them to an ME Network."
 				""

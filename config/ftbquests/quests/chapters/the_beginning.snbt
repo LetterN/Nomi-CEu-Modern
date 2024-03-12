@@ -439,7 +439,7 @@
 				""
 				"This quest calls for a &aRedstone Timer&r, but there are other ways to make snad grow sugar cane even faster (like a vanilla observer clock pointing into the Snad). Make sure to set the timer to pulse as fast as possible."
 				""
-				"To collect the sugar cane, you can use a piston and an observer. Later you can make an &6Auto-Breaker&r from &bActually Additions&r, which works even better and doesn't spill sugar cane everywhere."
+				"To collect the sugar cane, you can use a piston and an observer."
 				""
 				"For now, a &3Vacuum Chest&r should help keep the floor clean, and causes less lag than Hoppers. A &aVoid Upgrade&r in a &6Storage Drawer&r will automatically delete any items that overflow the drawer's capacity, so it's a good way to ensure you don't crash your server from accumulating a massive sugar cane pile before safer block breakers are available to you."
 			]
