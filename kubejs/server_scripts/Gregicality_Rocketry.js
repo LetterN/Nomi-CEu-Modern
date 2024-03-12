@@ -95,7 +95,6 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     // ID Chip
-    event.remove({ id: "gcyr:shapeless/id_chip" })
     event.shaped(
         'gcyr:id_chip', [
             'VEC',
@@ -107,10 +106,9 @@ ServerEvents.recipes(event => {
             V: 'gtceu:vibrant_alloy_plate',
             P: 'gtceu:glass_plate',
             C: '#gtceu:circuits/mv'
-        })
+        }).id('gcyr:shapeless/id_chip')
 
     // Rocket Scanner
-    event.remove({ id: "gcyr:shaped/rocket_scanner" })
     event.recipes.extendedcrafting.shaped_table(
         'gcyr:rocket_scanner', [
             "RPEPR",
@@ -126,10 +124,9 @@ ServerEvents.recipes(event => {
             E: 'gtceu:hv_emitter',
             C: '#gtceu:circuits/hv'
         }, 2
-    )
+    ).id('gcyr:shaped/rocket_scanner')
 
     // Space Station Packager
-    event.remove({ output: "gcyr:space_station_packager" })
     event.recipes.extendedcrafting.shaped_table(
         'gcyr:space_station_packager', [
             "RPEPR",
@@ -145,7 +142,7 @@ ServerEvents.recipes(event => {
             E: 'gtceu:ev_emitter',
             C: '#gtceu:circuits/ev'
         }, 2
-    )
+    ).id('gcyr:shaped/space_station_packager')
 
     //Motors and Tanks
     event.shaped(

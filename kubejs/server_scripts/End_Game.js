@@ -96,7 +96,6 @@ ServerEvents.recipes(event => {
     })
 
     // Blacklight
-    event.remove({ output: 'gtceu:blacklight' })
     event.shaped(
         'gtceu:blacklight', [
             'BPB',
@@ -109,10 +108,9 @@ ServerEvents.recipes(event => {
             S: 'gtceu:hssg_spring',
             W: 'gtceu:platinum_single_cable'
         }
-    )
+    ).id('gtceu:shaped/blacklight')
 
     // Sterilising Filter Casing
-    event.remove({ output: 'gtceu:sterilizing_filter_casing' })
     event.shaped(
         'gtceu:sterilizing_filter_casing', [
             'PEP',
@@ -124,13 +122,13 @@ ServerEvents.recipes(event => {
             F: 'gtceu:item_filter',
             M: 'gtceu:luv_electric_motor',
             P: 'gtceu:polybenzimidazole_large_fluid_pipe',
-            R: 'gtceu:osmiridium_rotor',
+            R: 'gtceu:osmiridium_rotor', // TODO: replace with iridium rotor if possible
             S: 'gtceu:black_steel_frame'
         }
-    )
+    ).id('gtceu:shaped/filter_casing_sterile')
 
     // FLux Gem
-    event.remove({ output: 'redstone_arsenal:flux_gem' })
+    event.remove({ id: 'redstone_arsenal:materials/flux_gem' })
     event.recipes.gtceu.autoclave("flux_gem")
         .itemInputs('minecraft:diamond')
         .inputFluids('gtceu:redstone 720')
@@ -139,7 +137,6 @@ ServerEvents.recipes(event => {
         .EUt(400)
 
     // Flux Plating
-    event.remove({ output: 'redstone_arsenal:flux_plating' })
     event.shaped(
         '4x redstone_arsenal:flux_plating', [
             ' P ',
@@ -149,7 +146,7 @@ ServerEvents.recipes(event => {
             G: 'redstone_arsenal:flux_gem',
             P: 'gtceu:electrum_flux_plate'
         }
-    )
+    ).id('redstone_arsenal:materials/flux_plating')
 
     // Vacuum Freezer
 
@@ -171,7 +168,8 @@ ServerEvents.recipes(event => {
         .EUt(2000)
 
     //Draconic Stem Cells
-    event.remove({ output: 'gtceu:stem_cells' })
+    event.remove({ id: 'gtceu:chemical_reactor/stem_cells' })
+    event.remove({ id: 'gtceu:large_chemical_reactor/stem_cells'})
     event.recipes.gtceu.chemical_reactor("draconic_stem_cells")
         .itemInputs('minecraft:dragon_egg')
         .inputFluids('gtceu:sterilized_growth_medium 500', 'gtceu:bacteria 500')
