@@ -2580,11 +2580,13 @@
 			y: 15.25d
 		}
 		{
+			dependencies: ["71602D44E1D0013E"]
 			description: [
 				"Some Micro Miner missions use a &6Gemstone Sensor&r to scout out gems instead of ores."
 				""
 				"&6&2Perfect Gems&r can be obtained from such missions."
 			]
+			hide_dependency_lines: true
 			id: "2D0DF78F71760F00"
 			shape: "hexagon"
 			tasks: [{
