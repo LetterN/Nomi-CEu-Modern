@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
             F: 'gtceu:item_filter',
             M: 'gtceu:luv_electric_motor',
             P: 'gtceu:polybenzimidazole_large_fluid_pipe',
-            R: 'gtceu:osmiridium_rotor',
+            R: 'gtceu:osmiridium_rotor', // TODO: replace with iridium rotor if possible
             S: 'gtceu:black_steel_frame'
         }
     )

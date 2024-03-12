@@ -474,39 +474,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // Blacklight & sterile filter
-    event.remove({ output: "gtceu:blacklight" })
-    event.shaped(
-        "gtceu:blacklight", [
-            'SPS',
-            ' H ',
-            'CPW'
-        ], {
-            S: "gtceu:tungsten_carbide_screw",
-            P: "gtceu:tungsten_carbide_plate",
-            H: "gtceu:hssg_spring",
-            C: "#gtceu:circuits/iv",
-            W: "gtceu:platinum_single_cable"
-        }
-    )
-
-    event.remove({ output: "gtceu:sterilizing_filter_casing" })
-    event.shaped(
-        "gtceu:sterilizing_filter_casing", [
-            'PEP',
-            'FBF',
-            'MSR'
-        ], {
-            P: "gtceu:polybenzimidazole_large_fluid_pipe",
-            E: "gtceu:luv_emitter",
-            F: "gtceu:item_filter",
-            B: "gtceu:blacklight",
-            M: "gtceu:luv_electric_motor",
-            S: "gtceu:black_steel_frame",
-            R: "gtceu:osmiridium_rotor" //  TODO: replace with iridium
-        }
-    )
-
     // Prevent cleanroom casings from being usable for free resources
     event.remove({ input: "gtceu:sterilizing_filter_casing" })
     event.recipes.gtceu.arc_furnace("sterile_filter_recycling")
