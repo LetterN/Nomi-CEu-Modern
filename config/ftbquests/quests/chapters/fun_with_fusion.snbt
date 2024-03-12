@@ -10,39 +10,51 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["15FAEE3F625265F4"]
+			description: [
+				"&2A strong heavy element obtained from the Naquadah chain."
+				""
+				"&6Trinium&r can come from &6Kaemanite Ore&r, but you will probably want to bolster its production with &6Naquadah Dust&r processing. It comes out at the second stage, so if you don't mind storing the intermediates and have Fluorine under control, you can hold off doing the full chain if you don't need to yet. You get &d1 Trinium per 6 Naquadah processed&r."
+				""
+				"This will be required in large quantities for &6Trinium Coils&r, &6Superconducting Coil Blocks&r, &6Naquadah Alloy&r, among other things. You will need 14 stacks at least for a &3Fusion Reactor Mk1&r, so stock up on it."
+			]
 			id: "57627DCF9F46A8E2"
-			rewards: [{
-				id: "1D81B977DFF1D051"
-				item: "kubejs:nomi_dollar"
-				type: "item"
-			}]
 			size: 1.5d
 			tasks: [{
 				id: "393228A0D8F67AD2"
 				item: "gtceu:trinium_ingot"
 				type: "item"
 			}]
+			title: "&2Trinium"
 			x: -5.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["57627DCF9F46A8E2"]
+			description: [
+				"The &3Fusion Reactor&r is a multiblock that uses enormous amounts of energy to fuse fluids into new elements. This one is less flexible than the previous GregTech multiblocks, as you can only put hatches where the preview shows. &6Sneak-right click&r the controller to enable the in-world preview."
+				""
+				"The &bJEI&r preview shows &e&eall valid hatch locations&r, but you don't actually need that many fluid hatches. You can replace any of the hatch positions in the structure with &2Fusion Glass or Fusion Machine Casings&r as long as you have at least &atwo Fluid Input Hatches&r and &aone Fluid Output Hatch&r. It's possible to use input/output hatches in every valid location, if you prefer."
+			]
 			id: "70EFDBB0FFC9B28D"
 			rewards: [{
 				id: "3274F49718960647"
 				item: "kubejs:nomi_dollar"
 				type: "item"
 			}]
+			subtitle: "Time to get fusing!"
 			tasks: [{
 				id: "28F27BBFA5273F78"
 				item: "gtceu:luv_fusion_reactor"
 				type: "item"
 			}]
+			title: "&2Fusion Reactor MK1"
 			x: -4.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["70EFDBB0FFC9B28D"]
+			description: ["&3Large Plasma Turbines&r are a powerful late game method of generating power. One Large Plasma Turbine produces &2a base of 16384 EU/t when using an IV Rotor Holder&r."]
 			id: "1405D08C6A87B3BB"
 			rewards: [{
 				id: "265F8AF395C89377"
@@ -54,11 +66,19 @@
 				item: "gtceu:plasma_large_turbine"
 				type: "item"
 			}]
+			title: "&2Plasma Turbine"
 			x: -4.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["70EFDBB0FFC9B28D"]
+			description: [
+				"With a &3Fusion Reactor&r, you can make Europium!"
+				""
+				"This element is needed for making things in &bDraconic Evolution&r, as well as the &6Fusion Reactor Computer Mark 2&r, &2Crystal Chip growing&r, and &6Wetware Supercomputers&r."
+				""
+				"You make it by fusing molten &9Neodymium&r and &9Hydrogen&r."
+			]
 			id: "25E1DE210726372E"
 			rewards: [{
 				id: "4755D59B4D91BAB4"
@@ -70,11 +90,13 @@
 				item: "gtceu:europium_ingot"
 				type: "item"
 			}]
+			title: "&2Europium Ingot"
 			x: -2.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["25E1DE210726372E"]
+			description: ["&6Fusion Coils&r are &2no longer EBF coil materials, but they are used in the next Fusion Reactors."]
 			id: "1183B96529D08326"
 			rewards: [{
 				id: "064FF89D54EB9137"
@@ -86,11 +108,26 @@
 				item: "gtceu:fusion_coil"
 				type: "item"
 			}]
+			title: "&2Fusion Coils"
 			x: -1.0d
 			y: -3.4928571428571473d
 		}
 		{
 			dependencies: ["1183B96529D08326"]
+			description: [
+				"Upgrade time! "
+				"...or building a new one, which is probably better."
+				""
+				"Yet again this quest asks for the minimal number of casings. Make an extra &229&r if you don't want more than &a2 Fluid Inputs&r&r and &a1 Fluid Output&r. Don't forget the extra &e31 Fusion Glass&r or &6Fusion Machine Casings&r!"
+				""
+				"&bYes, the Fusion Glass is the same tier as last time, but the Fusion Machine Casings are more expensive.&r"
+				""
+				"Make sure your using &6ZPM Energy Hatches&r!"
+				""
+				"If you insist on upgrading instead of making a new one, don't dismantle the current one before you're sure you've got everything you need to upgrade it, or you might end up having to rebuild the &3Mark 1 Fusion Reactor&r again."
+				""
+				"The &3Mark 2 Fusion Reactor&r has an energy buffer of &e320M EU&r."
+			]
 			id: "069773756716E192"
 			rewards: [{
 				id: "27AA4E8C62913D0C"
@@ -102,11 +139,17 @@
 				item: "gtceu:zpm_fusion_reactor"
 				type: "item"
 			}]
+			title: "&2Fusion Reactor MK2"
 			x: 0.5d
 			y: -3.4928571428571473d
 		}
 		{
 			dependencies: ["069773756716E192"]
+			description: [
+				"&2A lighter and unstable Naquadah isotope."
+				""
+				"&6Naquadria&o&r is used in the construction of &6UV components&r, the &3Fusion Reactor Mk2&r, and in fusing &6Neutronium&r. Each piece of Naquadria also makes &d4 times&r more power than &6Enriched Naquadah&r in &3Naquadah Reactors&r."
+			]
 			id: "10DD3A6BE5F9624D"
 			rewards: [{
 				id: "3DECE7737E023059"
@@ -118,11 +161,17 @@
 				item: "gtceu:naquadria_ingot"
 				type: "item"
 			}]
+			title: "&2Naquadria"
 			x: 0.5d
 			y: -4.992857142857147d
 		}
 		{
 			dependencies: ["069773756716E192"]
+			description: [
+				"&2Do you remember Darmstadtium tools in CE? Well you can make their material now!"
+				""
+				"It is formed by fusing Arsenic and Ruthenium, and is the main material for UV machines."
+			]
 			id: "3FFC053E3E11D586"
 			rewards: [{
 				id: "51F748D4099BAC22"
@@ -134,11 +183,21 @@
 				item: "gtceu:darmstadtium_ingot"
 				type: "item"
 			}]
+			title: "&2Darmstadtium"
 			x: 2.0d
 			y: -3.4928571428571473d
 		}
 		{
 			dependencies: ["069773756716E192"]
+			description: [
+				"&2Doesn't look exactly like Europium anymore.&r"
+				""
+				"To make &9Tritanium&r, you first need to make &9Duranium&r. This is done by fusing molten &9Gallium&r and &9Radon&r in a &3Fusion Reactor Mark 1&r or better."
+				""
+				"Once you have Duranium, you can fuse Tritanium in a &3Fusion Reactor Mark 2&r using the Duranium and molten &9Titanium&r."
+				""
+				"If you're having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into the &aCrafting Calculator&r."
+			]
 			id: "79EFCD8E01384C0C"
 			rewards: [{
 				id: "6238A522FF95AD44"
@@ -150,11 +209,13 @@
 				item: "gtceu:tritanium_ingot"
 				type: "item"
 			}]
+			title: "&2Tritanium Ingot"
 			x: 2.0d
 			y: -1.9928571428571473d
 		}
 		{
 			dependencies: ["79EFCD8E01384C0C"]
+			description: ["&2Tritanium Coils are the final coil material. At 10800K, it's capable of smelting every material."]
 			id: "15607184B546F5EE"
 			rewards: [{
 				id: "4D377BF47452A80F"
@@ -166,17 +227,23 @@
 				item: "gtceu:tritanium_coil_block"
 				type: "item"
 			}]
+			title: "&2Tritanium Coils"
 			x: 0.5d
 			y: -1.9928571428571473d
 		}
 		{
 			dependencies: ["79EFCD8E01384C0C"]
+			description: [
+				"The final circuit!"
+				""
+				"The only novel ingredient is &6Tritanium Frames&r."
+				""
+				"&6Wetware Processor Mainframes&r are unique in that there are no subsquent circuit themes, and thus no other kinds of Tier Nine circuits. Unlike past mainframes, you will need to craft more than just a few of them. They're mostly used in the Endgame though, so you don't have to worry too much yet."
+				""
+				"Definitely consider parallelizing your &3Assembly Lines&r if you haven't already. Even just having two or three lines will vastly improve your production speeds and help avoid bottlenecks as you push towards the Endgame."
+			]
 			id: "6F9BAA754DC26A3D"
-			rewards: [{
-				id: "025A24ACC934029E"
-				item: "kubejs:nomi_dollar"
-				type: "item"
-			}]
+			subtitle: "The final circuit!"
 			tasks: [{
 				id: "3B593A41F874A1DC"
 				item: "gtceu:wetware_processor_mainframe"
@@ -187,6 +254,15 @@
 		}
 		{
 			dependencies: ["7D29C79DE1CCA2A2"]
+			description: [
+				"&6Neutronium&r is a hyper-dense material normally found in the hearts of neutron stars: the collapsed cores of stars between ten and thirty times the size of the sun."
+				""
+				"Fun fact: a single neutronium block is approximately 2884 million metric tons and somewhere around 600000K, yet you're somehow capable of holding one with your bare hands. Don't think about it too much."
+				""
+				"Neutronium is made from fusing molten &9Naquadria&r, a super-enriched form of &6Naquadah&r, with molten &9Americium&r, &2or from the Tier Eight Micro Miner.&r"
+				""
+				"After getting &6Chaotic Fusion Injectors&r, you might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
+			]
 			id: "0DF2AF70CB1FEFB3"
 			rewards: [{
 				id: "7BE5FDAE7CA95D53"
@@ -198,6 +274,7 @@
 				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
+			title: "&2Neutronium Ingot"
 			x: 5.0d
 			y: -1.9928571428571473d
 		}
@@ -207,22 +284,38 @@
 				"6F9BAA754DC26A3D"
 				"5BADF536443E712D"
 			]
+			description: [
+				"This baby can do any fusion recipe, notably giving you access to &6Neutronium&r."
+				""
+				"The multiblock layout is the same as the Mark 1 and Mark 2, with the same hatch and casing substitutions permitted."
+				""
+				"Obviously though, this one uses &6Fusion Machine Casing Mk &2III&r and only works with &aUV Energy Hatches&r."
+				""
+				"The &3Mark 3 Fusion Reactor&r has an energy buffer of &e640M EU&r."
+			]
 			id: "7D29C79DE1CCA2A2"
 			rewards: [{
 				id: "342B04DA3362D0B9"
 				item: "kubejs:nomi_dollar"
 				type: "item"
 			}]
+			subtitle: "FUSION!"
 			tasks: [{
 				id: "3816F5546D4E770F"
 				item: "gtceu:uv_fusion_reactor"
 				type: "item"
 			}]
+			title: "&2Fusion Reactor MK3"
 			x: 5.0d
 			y: -3.4928571428571473d
 		}
 		{
 			dependencies: ["7D29C79DE1CCA2A2"]
+			description: [
+				"&6Awakened Draconium&r is a powerful material used for crafting high-grade components, items, and machines from &bDraconic Evolution&r."
+				""
+				"Five &6Draconium Blocks&r can be processed in a Wyvern Tier fusion crafting setup to create an equal output of five &6Awakened Draconium Blocks&r. At &e24 Billion RF per craft&r, you better have a handle on your power infrastructure."
+			]
 			id: "4D0E5DE8475E126E"
 			rewards: [{
 				id: "5C2CDB46B35C0418"
@@ -234,11 +327,19 @@
 				item: "gtceu:awakened_draconium_block"
 				type: "item"
 			}]
+			title: "Awakened Draconium"
 			x: 5.0d
 			y: -4.992857142857147d
 		}
 		{
 			dependencies: ["3FFC053E3E11D586"]
+			description: [
+				"&bUV&r Machine Hulls. The second last Machine Hull. &bUV&r stands for &bUltimate Voltage&r."
+				""
+				"This Hull is made with &2Darmstadtium, Yttrium Barium Cuprate Cables, and Polybenzimidazole.&r"
+				""
+				"You'll need it mainly for the &6Fusion Reactor MK 3&r."
+			]
 			id: "5BADF536443E712D"
 			rewards: [{
 				id: "31762D923359C463"
@@ -250,11 +351,17 @@
 				item: "gtceu:uv_machine_hull"
 				type: "item"
 			}]
+			title: "&2UV Machine Hulls"
 			x: 3.5d
 			y: -3.4928571428571473d
 		}
 		{
 			dependencies: ["069773756716E192"]
+			description: [
+				"&6Americium Ingots&r are obtained by placing &dNuclearCraft&r Americium isotopes into an &3Extractor&r and solidifying the fluid. As with other GT materials, use the ingot or fluid to forge the other forms."
+				""
+				"&2Americium is used in larger quantities in CEu progression.&r You cannot convert this form of Americium back to NuclearCraft Americium isotopes. These are also the best &aItem Pipe&r material, in terms of throughput."
+			]
 			id: "4A8FB1EF600F0882"
 			rewards: [{
 				id: "3644007E720DE6EE"
@@ -266,6 +373,7 @@
 				item: "gtceu:americium_ingot"
 				type: "item"
 			}]
+			title: "&2Americium Ingot"
 			x: 2.75d
 			y: -5.0d
 		}
