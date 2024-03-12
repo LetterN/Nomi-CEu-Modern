@@ -2499,7 +2499,7 @@
 					Count: 1b
 					id: "ironjetpacks:jetpack"
 					tag: {
-						Id: "ironjetpacks:Energetic"
+						Id: "ironjetpacks:energetic"
 						Throttle: 1.0d
 					}
 				}

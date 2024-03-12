@@ -2567,7 +2567,7 @@
 					Count: 1b
 					id: "ironjetpacks:jetpack"
 					tag: {
-						Id: "ironjetpacks:Vibrant"
+						Id: "ironjetpacks:vibrant"
 						Throttle: 1.0d
 					}
 				}
