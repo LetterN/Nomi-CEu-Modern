@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ServerEvents.recipes(event => {
     //FIXME Broken recipe and needs tier 2
     event.custom({
@@ -151,22 +152,34 @@ ServerEvents.recipes(event => {
     // Vacuum Freezer
 
     // Draconic Superconductor Wire
+=======
+// Vacuum Freezer
+// Draconic Superconductor Wire
+ServerEvents.recipes(event => {
+>>>>>>> Stashed changes
     event.recipes.gtceu.vacuum_freezer("draconic_superconductor_wire")
         .itemInputs('gtceu:draconium_single_wire')
         .itemOutputs('gtceu:draconic_superconductor_single_wire')
         .inputFluids(Fluid.of('gtceu:nether_star', 144))
         .duration(100)
         .EUt(6000)
+<<<<<<< Updated upstream
 
     // Chemical Reactor
 
     //Draconium Dust
+=======
+
+
+// Draconium Dust
+>>>>>>> Stashed changes
     event.recipes.gtceu.chemical_reactor("draconium_dust")
         .itemInputs('gtceu:manyullyn_dust', 'minecraft:dragon_breath')
         .itemOutputs('gtceu:draconium_dust')
         .duration(500)
         .EUt(2000)
 
+<<<<<<< Updated upstream
     //Draconic Stem Cells
     event.remove({ id: 'gtceu:chemical_reactor/stem_cells' })
     event.remove({ id: 'gtceu:large_chemical_reactor/stem_cells'})
@@ -187,4 +200,12 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(250000)
         .blastFurnaceTemp(9000)
+=======
+// Mote of omnium
+        event.recipes.gtceu.implosion_compressor("implosion_compressor_ominium_nugget")
+        .itemInputs('kubejs:mote_of_omnium', 'minecraft:tnt')
+        .itemOutputs('extendedcrafting:the_ultimate_nugget')
+        .duration(20)
+        .EUt(30)
+>>>>>>> Stashed changes
 })
