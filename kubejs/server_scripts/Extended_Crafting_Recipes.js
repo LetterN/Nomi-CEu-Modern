@@ -151,13 +151,13 @@ ServerEvents.recipes(event => {
                 "type": "forge:nbt",
                 "item": "ironjetpacks:jetpack",
                 "count": 1,
-                "nbt": "{Id:\"ironjetpacks:Reinforced\",Throttle:1.0d}"
+                "nbt": "{Id:\"ironjetpacks:reinforced\",Throttle:1.0d}"
             },
             "C": {
                 "type": "forge:nbt",
                 "item": "ironjetpacks:jetpack",
                 "count": 1,
-                "nbt": "{Id:\"ironjetpacks:Vibrant\",Throttle:1.0d}"
+                "nbt": "{Id:\"ironjetpacks:vibrant\",Throttle:1.0d}"
             }
         },
         "result": {

@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
                 'TTT'
             ], {
                 P: 'gtceu:double_tungsten_carbide_plate',
-                T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Energetic"}').strongNBT()
+                T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:energetic"}').strongNBT()
             })
     
         event.shaped(
