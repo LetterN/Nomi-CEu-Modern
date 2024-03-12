@@ -999,7 +999,7 @@
 					Count: 1b
 					id: "ironjetpacks:jetpack"
 					tag: {
-						Id: "ironjetpacks:Hardened"
+						Id: "ironjetpacks:hardened"
 						Throttle: 1.0d
 					}
 				}
@@ -1027,7 +1027,7 @@
 					Count: 1b
 					id: "ironjetpacks:jetpack"
 					tag: {
-						Id: "ironjetpacks:Reinforced"
+						Id: "ironjetpacks:reinforced"
 						Throttle: 1.0d
 					}
 				}
