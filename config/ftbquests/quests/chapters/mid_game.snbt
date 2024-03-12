@@ -2104,11 +2104,11 @@
 				""
 				"&6Fluorine&r is needed in &6Polytetrafluoroethylene (PTFE)&r, and &6Thorium&r is used in &bNuclearCraft &3Fission Reactors&r."
 				""
-				"&3Rock Breakers&r are first used to achieve renewable &6Black Granite&r. This recipe runs at &dEV&r or higher."
+				"&3Rock Breakers&r are first used to achieve renewable &6Deepslate&r. This recipe runs at &dEV&r or higher."
 				""
 				"After this, &3Macerators&r should pulverise the &6Black Granite&r into &6Black Granite Dust&r and a chance of &6Thorium&r. It is recommended to overclock this recipe as much as you can, in order to maximize output of &6Thorium&r."
 				""
-				"A &3Centrifuge&r then turns &6Black Granite Dust&r into &6Biotite Dust&r and &6Silicon Dioxide Dust&r. The latter can be electrolysed, yielding &6Silicon&r and &6Oxygen&r."
+				"A &3Centrifuge&r then turns &6Deepslate Dust&r into &6Biotite Dust&r and &6Silicon Dioxide Dust&r. The latter can be electrolysed, yielding &6Silicon&r and &6Oxygen&r."
 				""
 				"&6Biotite Dust &ris then finally put into a &3Electrolyser&r. This yeilds &6Potassium, Magnesium, Aluminium&r and &6Silicon Dust&r, as well as some &6Fluorine&r."
 			]
@@ -2118,7 +2118,6 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
-			subtitle: "TODO: actually make this lol"
 			tasks: [{
 				id: "73CD8DD46EA3E559"
 				item: "minecraft:deepslate"

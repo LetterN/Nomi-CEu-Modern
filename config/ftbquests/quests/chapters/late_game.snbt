@@ -2156,7 +2156,6 @@
 			dependencies: [
 				"2358A5CF22FF5495"
 				"7E3A179376673590"
-				"2D0DF78F71760F00"
 				"56EFA6A07C7291F7"
 				"6391447F1A411281"
 			]
@@ -2199,6 +2198,11 @@
 		}
 		{
 			dependencies: ["7FAB6FD0A054443E"]
+			description: [
+				"&6Awakened Draconium&r is a powerful material used for crafting high-grade components, items, and machines from &bDraconic Evolution&r."
+				""
+				"Five &6Draconium Blocks&r can be processed in a Wyvern Tier fusion crafting setup to create an equal output of five &6Awakened Draconium Blocks&r. At &e24 Billion RF per craft&r, you better have a handle on your power infrastructure."
+			]
 			id: "0562D9F4C441EAF9"
 			shape: "hexagon"
 			tasks: [{
@@ -2206,6 +2210,7 @@
 				item: "gtceu:awakened_draconium_block"
 				type: "item"
 			}]
+			title: "Awakened Draconium"
 			x: 24.75d
 			y: 18.25d
 		}
@@ -2349,6 +2354,15 @@
 		}
 		{
 			dependencies: ["2D47BFA44BDB5E6A"]
+			description: [
+				"&6Neutronium&r is a hyper-dense material normally found in the hearts of neutron stars: the collapsed cores of stars between ten and thirty times the size of the sun."
+				""
+				"Fun fact: a single neutronium block is approximately 2884 million metric tons and somewhere around 600000K, yet you're somehow capable of holding one with your bare hands. Don't think about it too much."
+				""
+				"Neutronium is made from fusing molten &9Naquadria&r, a super-enriched form of &6Naquadah&r, with molten &9Americium&r, &2or from the Tier Eight Micro Miner.&r"
+				""
+				"After getting &6Chaotic Fusion Injectors&r, you might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
+			]
 			id: "22E50A6923EBF5CB"
 			shape: "hexagon"
 			size: 2.0d
@@ -2357,6 +2371,7 @@
 				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
+			title: "&2Neutronium Ingot"
 			x: 29.25d
 			y: 18.25d
 		}
@@ -2395,6 +2410,7 @@
 		}
 		{
 			dependencies: ["524E7A937C2D9DDD"]
+			description: ["&2For making Wetware Circuits more easily. You need UV-tier power to make them that way."]
 			id: "485CEA4199AAD352"
 			shape: "hexagon"
 			tasks: [{
@@ -2402,18 +2418,22 @@
 				item: "gtceu:highly_advanced_soc_wafer"
 				type: "item"
 			}]
+			title: "&2Highly Advanced SoCs"
 			x: 31.25d
 			y: 22.25d
 		}
 		{
 			dependencies: ["22E50A6923EBF5CB"]
+			description: ["It grants the most wafers, and is required for Highly Advanced Systems-on-Chip."]
 			id: "524E7A937C2D9DDD"
 			shape: "hexagon"
+			subtitle: "The final Boule."
 			tasks: [{
 				id: "3BC9108FCF45C8A6"
 				item: "gtceu:neutronium_boule"
 				type: "item"
 			}]
+			title: "&2Neutronium Boules"
 			x: 31.25d
 			y: 20.25d
 		}
@@ -2530,6 +2550,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["56EFA6A07C7291F7"]
 			id: "6391447F1A411281"
 			shape: "hexagon"
 			tasks: [{
@@ -2541,6 +2562,12 @@
 			y: 15.25d
 		}
 		{
+			dependencies: ["2D0DF78F71760F00"]
+			description: [
+				"&2Perfect Gems are equivalent to 8 of the base gem."
+				""
+				"&211 Perfect Diamonds are used in crafting each Crystal Matrix Ingot."
+			]
 			id: "56EFA6A07C7291F7"
 			shape: "hexagon"
 			tasks: [{
@@ -2548,10 +2575,16 @@
 				item: "gtceu:diamond_perfect"
 				type: "item"
 			}]
+			title: "&2Perfect Gems"
 			x: 30.25d
 			y: 15.25d
 		}
 		{
+			description: [
+				"Some Micro Miner missions use a &6Gemstone Sensor&r to scout out gems instead of ores."
+				""
+				"&6&2Perfect Gems&r can be obtained from such missions."
+			]
 			id: "2D0DF78F71760F00"
 			shape: "hexagon"
 			tasks: [{
@@ -3069,7 +3102,7 @@
 	]
 	subtitle: [
 		"Progression for this chapter isn't done!"
-		"(waiting for DE to port)"
+		"(Waiting for DE to port)"
 	]
 	title: "Late Game"
 }
