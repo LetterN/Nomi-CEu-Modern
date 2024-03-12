@@ -1655,7 +1655,7 @@
 					Count: 1b
 					id: "ironjetpacks:jetpack"
 					tag: {
-						Id: "ironjetpacks:Leadstone"
+						Id: "ironjetpacks:leadstone"
 						Throttle: 1.0d
 					}
 				}
