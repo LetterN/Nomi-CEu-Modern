@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     // May as well remove ender dust usage while we're at it
-    event.remove({ input: "miniutilities:ender_dust" })
+    event.remove({ id: "miniutilities:ender_dust_to_ender_pearl" })
 
     var plantMaterial = ["#minecraft:leaves", "#minecraft:saplings", "minecraft:vine"]
     plantMaterial.forEach(ballIngredient => {
@@ -28,7 +28,6 @@ ServerEvents.recipes(event => {
     event.shapeless("kubejs:dust", ["minecraft:sand", "#forge:tools/hammers"])
 
     // EIO Solar
-    event.remove({ output: "enderio:photovoltaic_plate" })
     event.recipes.gtceu.alloy_smelter("photovoltaic_plate")
         .itemInputs("2x enderio:photovoltaic_composite", "gtceu:electrical_steel_plate")
         .itemOutputs("enderio:photovoltaic_plate")
@@ -36,14 +35,14 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     // Solar composite
-    event.remove({ output: "enderio:photovoltaic_composite" })
+    event.remove({ id: "enderio:photovoltaic_composite" })
     event.shapeless("3x enderio:photovoltaic_composite", ["gtceu:lapis_dust", "gtceu:coal_dust", "gtceu:silicon_dust"])
 
     // Drawers
-    event.remove({ output: "storagedrawers:obsidian_storage_upgrade" })
-    event.remove({ output: "storagedrawers:compacting_drawers_3" })
-    event.remove({ output: "storagedrawers:controller" })
-    event.remove({ output: "storagedrawers:controller_slave" })
+    event.remove({ id: "storagedrawers:obsidian_storage_upgrade" })
+    event.remove({ id: "storagedrawers:compacting_drawers_3" })
+    event.remove({ id: "storagedrawers:controller" })
+    event.remove({ id: "storagedrawers:controller_slave" })
     event.shaped(
         "storagedrawers:obsidian_storage_upgrade", [
         'SSS',
@@ -125,7 +124,7 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     // Pyro Oven
-    event.remove({ output: 'gtceu:pyrolyse_oven' })
+    event.remove({ id: 'gtceu:shaped/pyrolyse_oven' })
     event.shaped(
         'gtceu:pyrolyse_oven', [
         'PCW',

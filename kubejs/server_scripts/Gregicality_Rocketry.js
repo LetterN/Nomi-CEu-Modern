@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
     )
 
     // Space Station Packager
-    event.remove({ output: "gcyr:space_station_packager" })
+    event.remove({ id: "gcyr:shaped/space_station_packager" })
     event.recipes.extendedcrafting.shaped_table(
         'gcyr:space_station_packager', [
             "RPEPR",
