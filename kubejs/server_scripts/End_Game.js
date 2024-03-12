@@ -147,10 +147,10 @@ ServerEvents.recipes(event => {
             P: 'gtceu:electrum_flux_plate'
         }
     ).id('redstone_arsenal:materials/flux_plating')
-
-    // Vacuum Freezer
-
-    // Draconic Superconductor Wire
+    })
+// Vacuum Freezer
+// Draconic Superconductor Wire
+ServerEvents.recipes(event => {
     event.recipes.gtceu.vacuum_freezer("draconic_superconductor_wire")
         .itemInputs('gtceu:draconium_single_wire')
         .itemOutputs('gtceu:draconic_superconductor_single_wire')
@@ -158,9 +158,7 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(6000)
 
-    // Chemical Reactor
-
-    //Draconium Dust
+// Draconium Dust
     event.recipes.gtceu.chemical_reactor("draconium_dust")
         .itemInputs('gtceu:manyullyn_dust', 'minecraft:dragon_breath')
         .itemOutputs('gtceu:draconium_dust')
@@ -187,4 +185,10 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(250000)
         .blastFurnaceTemp(9000)
+// Mote of omnium
+        event.recipes.gtceu.implosion_compressor("implosion_compressor_ominium_nugget")
+        .itemInputs('kubejs:mote_of_omnium', 'minecraft:tnt')
+        .itemOutputs('extendedcrafting:the_ultimate_nugget')
+        .duration(20)
+        .EUt(30)
 })
