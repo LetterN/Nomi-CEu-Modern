@@ -35,14 +35,10 @@ ServerEvents.recipes(event => {
         .EUt(16)
 
     // Solar composite
-    event.remove({ id: "enderio:photovoltaic_composite" })
-    event.shapeless("3x enderio:photovoltaic_composite", ["gtceu:lapis_dust", "gtceu:coal_dust", "gtceu:silicon_dust"])
+    event.shapeless("3x enderio:photovoltaic_composite", ["gtceu:lapis_dust", "gtceu:coal_dust", "gtceu:silicon_dust"]).id('enderio:photovoltaic_composite')
 
     // Drawers
-    event.remove({ id: "storagedrawers:obsidian_storage_upgrade" })
-    event.remove({ id: "storagedrawers:compacting_drawers_3" })
     event.remove({ id: "storagedrawers:controller" })
-    event.remove({ id: "storagedrawers:controller_slave" })
     event.shaped(
         "storagedrawers:obsidian_storage_upgrade", [
         'SSS',
@@ -53,7 +49,7 @@ ServerEvents.recipes(event => {
         C: "minecraft:coal",
         U: "storagedrawers:upgrade_template"
     }
-    )
+    ).id('storagedrawers:obsidian_storage_upgrade')
     event.shaped(
         "storagedrawers:compacting_drawers_3", [
         'III',
@@ -64,7 +60,7 @@ ServerEvents.recipes(event => {
         P: "gtceu:lv_electric_piston",
         D: "#storagedrawers:drawers"
     }
-    )
+    ).id('storagedrawers:compacting_drawers_3')
     event.shaped(
         "storagedrawers:controller_slave", [
         'III',
@@ -76,7 +72,7 @@ ServerEvents.recipes(event => {
         D: "#storagedrawers:drawers",
         G: "minecraft:gold_block"
     }
-    )
+    ).id('storagedrawers:controller_slave')
 
     var controllerCore = ["minecraft:diamond_block", "minecraft:emerald_block"]
     controllerCore.forEach(coreBlock => {
@@ -124,7 +120,6 @@ ServerEvents.recipes(event => {
         .EUt(30)
 
     // Pyro Oven
-    event.remove({ id: 'gtceu:shaped/pyrolyse_oven' })
     event.shaped(
         'gtceu:pyrolyse_oven', [
         'PCW',
@@ -137,7 +132,7 @@ ServerEvents.recipes(event => {
         W: 'gtceu:cupronickel_quadruple_wire',
         H: 'gtceu:ulv_machine_hull'
     }
-    )
+    ).id('gtceu:shaped/pyrolyse_oven')
 
     //Toolbelts
     event.replaceInput({ output: 'toolbelt:pouch' }, 'minecraft:gold_ingot', 'gtceu:steel_ingot')
