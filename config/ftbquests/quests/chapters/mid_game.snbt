@@ -1128,6 +1128,7 @@
 				title: "A Centrifuge"
 				type: "item"
 			}]
+			title: "Air Cetrifuging"
 			x: 34.0d
 			y: -4.5d
 		}
@@ -1170,6 +1171,7 @@
 				id: "17B29E8E12D6BF89"
 				type: "fluid"
 			}]
+			title: "Nitric Acid"
 			x: 38.0d
 			y: -4.5d
 		}
@@ -1291,8 +1293,6 @@
 		{
 			dependencies: ["48E83C38B37DFEE6"]
 			description: [
-				"&oNote: this quest accepts either Oil, Raw Oil, Light Oil or Heavy Oil.&r"
-				""
 				"Petrochemistry is the category of organic chemistry pertaining to petroleum, otherwise known as &9Oil&r."
 				""
 				"&bGregTech&r's petrochemistry may seem daunting at first, given the sheer number of chemicals and processing options, but it's actually easier to get into than you think."
@@ -1316,6 +1316,7 @@
 				id: "4717EFD2B67D9EDB"
 				type: "checkmark"
 			}]
+			title: "Navigating Petrochem"
 			x: 47.0d
 			y: -2.5d
 		}
@@ -1424,6 +1425,7 @@
 				id: "5FD80D64119C2662"
 				type: "fluid"
 			}]
+			title: "Heavy Fuel"
 			x: 45.0d
 			y: -2.5d
 		}
@@ -1759,6 +1761,7 @@
 				id: "5AF49C149838D83D"
 				type: "checkmark"
 			}]
+			title: "Allyl Chloride"
 			x: 47.0d
 			y: 4.5d
 		}
@@ -2490,8 +2493,8 @@
 			]
 			id: "5732018AA35D69B6"
 			rewards: [{
-				id: "01FCF3F1165E11F6"
-				item: "kubejs:nomi_nickel"
+				id: "7C75FECF0159D446"
+				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2702,7 +2705,7 @@
 			id: "38791476E970C57D"
 			rewards: [{
 				id: "70C66EF123AE5DD5"
-				item: "kubejs:nomi_nickel"
+				item: "kubejs:nomi_dollar"
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2768,6 +2771,13 @@
 			dependencies: [
 				"54C3B1B782FDF57F"
 				"27A80F018F59EF1E"
+			]
+			description: [
+				"Having unlocked &6Signalum&r, at long last you can make &aSignalum Integral Components&r!"
+				""
+				"Dynamos operate at &a500% of base power generation and fuel burn rate&r."
+				""
+				"Machines operate at &a400% of base speed&r."
 			]
 			id: "347983576B8C27F3"
 			rewards: [{
