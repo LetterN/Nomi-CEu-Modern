@@ -10,9 +10,10 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_barrel/ })
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_chest/ })
-    event.remove({ output: /limited/ })
+    event.remove({ output: /limited_barrel/ })
     event.remove({ output: /sophisticatedstorage:[A-Za-z]+_to_[A-Za-z]+_tier_upgrade/ })
-
+    event.remove({ input: 'minecraft:redstone_torch', mod: 'sophisticatedstorage'})
+    
     var barrelupgrade = [
         [Item.of('sophisticatedstorage:gold_barrel', '{woodType:"oak"}'), 'minecraft:iron_ingot', 'minecraft:barrel', 'minecraft:barrel'],
         ['sophisticatedstorage:basic_to_gold_tier_upgrade', 'minecraft:iron_ingot', 'minecraft:barrel', 'minecraft:iron_ingot'],

@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
             L: 'kubejs:reinforced_mining_laser',
             F: 'kubejs:electrum_micro_miner_core',
             C: 'gtceu:hv_combustion',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Reinforced"}').strongNBT()
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:reinforced"}').strongNBT()
         }, 3
     )
 
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:tungsten_steel_crate',
             B: 'gtceu:hv_field_generator',
             F: 'kubejs:signalum_micro_miner_core',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Energetic"}').strongNBT(),
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:energetic"}').strongNBT(),
             D: 'thermal:dynamo_magmatic' // TODO: replace with reactant dynamo when possible
         }, 3
     )
@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
             F: 'kubejs:signalum_micro_miner_core',
             C: 'nuclearcraft:fission_reactor_controller', // TODO: REPLACE WITH REAL NC COMPONENT
             P: 'nuclearcraft:fission_reactor_port', // TODO: REPLACE WITH REAL NC COMPONENT
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Vibrant"}').strongNBT()
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:vibrant"}').strongNBT()
         }, 3
     )
 
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
             B: 'gtceu:iv_field_generator',
             C: 'nuclearcraft:fission_reactor_controller',
             P: 'nuclearcraft:fission_reactor_port',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:Resonant"}').strongNBT()
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:resonant"}').strongNBT()
         }, 3
     )
 
@@ -305,7 +305,7 @@ ServerEvents.recipes(event => {
             'minecraft:bedrock', /* DE Magnet */
             '2x avaritia:crystal_matrix_ingot', /* TODO: replace with plate */
             '2x gtceu:iv_field_generator',
-            Item.of('2x ironjetpacks:thruster', '{Id:"ironjetpacks:Fluxed"}').strongNBT(),
+            Item.of('2x ironjetpacks:thruster', '{Id:"ironjetpacks:fluxed"}').strongNBT(),
             Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:dark_soularium"}').strongNBT())
         .itemOutputs('kubejs:warp_engine')
         .inputFluids('gtceu:soldering_alloy 1152')
