@@ -2653,7 +2653,13 @@
 		}
 		{
 			dependencies: ["356DA8DE256356B8"]
-			description: ["Same deal as Hardened Components, but even faster."]
+			description: [
+				"Same deal as Hardened Components, but even faster."
+				""
+				"Dynamos operate at &a250% of base power generation and fuel burn rate&r."
+				""
+				"Machines operate at &a250% of base speed&r."
+			]
 			id: "41501AC2D3FC70AD"
 			rewards: [{
 				id: "6E444F028048555A"
@@ -2724,7 +2730,7 @@
 				item: "sophisticatedstorage:gold_to_diamond_tier_upgrade"
 				type: "item"
 			}]
-			title: "&d Upgrades, people, upgrades."
+			title: "&dUpgrades, people, upgrades."
 			x: 9.0d
 			y: 26.5d
 		}

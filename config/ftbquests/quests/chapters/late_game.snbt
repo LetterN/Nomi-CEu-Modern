@@ -2412,6 +2412,11 @@
 			dependencies: ["524E7A937C2D9DDD"]
 			description: ["&2For making Wetware Circuits more easily. You need UV-tier power to make them that way."]
 			id: "485CEA4199AAD352"
+			rewards: [{
+				id: "223E9ECE8A5FA09D"
+				item: "kubejs:nomi_dollar"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "5DDE773859BDF9DC"
@@ -3100,6 +3105,28 @@
 			title: "&2Fluid Rig"
 			x: 25.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["0889C9E0DD0FDF06"]
+			description: [
+				"The &6Advanced System-on-Chip&r (or &6ASoC&r) is the &2penultimate&r component miniaturization. These unlock the most efficient recipe for producing &2Nanocircuits and &6Quantum Circuits&r."
+				""
+				"The latter circuits must be made in a &aZPM Assembling Machine&r."
+			]
+			id: "7ECA688A91A1392A"
+			rewards: [{
+				id: "57F1601344CCFD75"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D3D6B5AEB319758"
+				item: "gtceu:advanced_soc_wafer"
+				type: "item"
+			}]
+			title: "Advanced System-on-Chip"
+			x: 13.0d
+			y: 4.5d
 		}
 	]
 	subtitle: [
