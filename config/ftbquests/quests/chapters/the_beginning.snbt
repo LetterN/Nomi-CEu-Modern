@@ -9,7 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["0381DCD3FD3C9ED2"]
 			description: [
 				"The &3Wiremill&r is a major efficiency boost, giving you double yield of &6wires&r for your ingots. But first, you'll need to make some &6Motors&r."
 				""
@@ -87,7 +86,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["2D31856F6EF1ED69"]
+			dependencies: [
+				"2D31856F6EF1ED69"
+				"62BBD1F6767A4D90"
+			]
 			description: [
 				"A &6Programmed Circuit&r is an item used to configure machines. In essence, they tell a machine what to make if there's multiple things it could make from a certain input."
 				""
@@ -1468,7 +1470,10 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["1DBBE96165C7987D"]
+			dependencies: [
+				"1DBBE96165C7987D"
+				"1BC6DDC2D50F9C46"
+			]
 			description: [
 				"This alloy is made from &2mixing 2 Gold Dust, 1 Redstone, and 1 Glowstone Dust in a Mixer, creating Energetic Alloy Dust,&r and putting it in your new &3Electric Blast Furnace&r."
 				""
@@ -1650,7 +1655,11 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
+			dependencies: [
+				"0D6C8FFD01BE5C21"
+				"1BC6DDC2D50F9C46"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"&2Certain multiblocks in CEu will require a Maintenance Hatch and/or Muffler Hatch. These cannot be shared between multiblocks. If you knew Maintenance in GT5u, fret not - Maintenance mechanics are far less punishing in CEu."
 				""
@@ -1666,6 +1675,7 @@
 				""
 				"- &3Configurable Maintenance Hatch&r (&6HV&r): You can configure it to cut off &a10%% duration&r on recipes, at the cost of making Maintenance issues happen three times as fast. That is &d16 real hours&r of activity. &9Tape&r can fix problems in this Hatch as well."
 			]
+			hide_dependency_lines: true
 			icon: "gtceu:maintenance_hatch"
 			id: "0523F4AB9A794390"
 			size: 1.5d
@@ -1674,8 +1684,8 @@
 				type: "checkmark"
 			}]
 			title: "&2Maintenance and Muffler Mechanics"
-			x: 12.75d
-			y: 5.25d
+			x: 10.5d
+			y: 9.375d
 		}
 		{
 			dependencies: ["2D31856F6EF1ED69"]
@@ -1698,8 +1708,8 @@
 				type: "checkmark"
 			}]
 			title: "&2GT Power Management"
-			x: 15.0d
-			y: 5.25d
+			x: 12.75d
+			y: 7.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -1777,7 +1787,7 @@
 			]
 			title: "&2Machine Covers"
 			x: 15.0d
-			y: 7.5d
+			y: 9.375d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -1805,7 +1815,7 @@
 			}]
 			title: "&dScrewdrive Output Sides!"
 			x: 12.75d
-			y: 7.5d
+			y: 9.375d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -1847,7 +1857,7 @@
 				}
 			]
 			title: "&2Filters"
-			x: 10.5d
+			x: 15.0d
 			y: 7.5d
 		}
 		{
@@ -2006,6 +2016,30 @@
 			title: "&dInfinite Wood"
 			x: 4.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["3EDD0A986384F2A7"]
+			description: [
+				"Now that you have a &3Wiremill&f and a &2Bending Machine&f, you can consider starting to do &eBounties&f. The &6Bounty Board&f has a global inventory containing quests to turn in specific items in exchange for &dNomicoins&f. These quests have a fairly short duration, so make sure to &estockpile the items&f that come up on them or else they'll &cexpire before you can complete them&f."
+				""
+				"With renewable &dNomicoins&f, you should feel free to spend the ones you have on whatever you need. &aSpend your coins!"
+			]
+			hide_dependency_lines: true
+			id: "3E69E1949316BD0C"
+			rewards: [{
+				id: "09A5BDC0CF107A1C"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "79EF1B91285482AB"
+				item: "bountiful:bountyboard"
+				type: "item"
+			}]
+			title: "&2Bounties For Nomicoins!"
+			x: 10.5d
+			y: 7.5d
 		}
 	]
 	title: "The Beginning"
