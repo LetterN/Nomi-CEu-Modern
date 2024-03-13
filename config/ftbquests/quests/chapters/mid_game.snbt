@@ -2493,8 +2493,8 @@
 			]
 			id: "5732018AA35D69B6"
 			rewards: [{
-				id: "01FCF3F1165E11F6"
-				item: "kubejs:nomi_nickel"
+				id: "7C75FECF0159D446"
+				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -2705,7 +2705,7 @@
 			id: "38791476E970C57D"
 			rewards: [{
 				id: "70C66EF123AE5DD5"
-				item: "kubejs:nomi_nickel"
+				item: "kubejs:nomi_dollar"
 				type: "item"
 			}]
 			shape: "hexagon"
