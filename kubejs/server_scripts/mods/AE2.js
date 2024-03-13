@@ -439,7 +439,7 @@ ServerEvents.recipes(event => {
         "type": "ae2:inscriber",
         "ingredients": {
             "middle": {
-                "tag": "plates/silicon"
+                "tag": "forge:plates/silicon"
             },
             "top": {
                 "item": "ae2:silicon_press"
