@@ -1392,6 +1392,11 @@
 				"Later, you'll also get substantial quantities from Tier Eight Micro Miners, while you are accumulating &6Chaos Shards&r."
 			]
 			id: "039F70814051413E"
+			rewards: [{
+				id: "520DF324FC7B83F9"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				count: 32L
@@ -1411,6 +1416,11 @@
 				"Fun fact: you'll need to make 487 motes. You've got all this automated, right?"
 			]
 			id: "7A7FFE9E89D19A2F"
+			rewards: [{
+				id: "722444CB8E93D6CF"
+				item: "kubejs:nomi_dollar"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -1434,6 +1444,11 @@
 				"The &aRotary Hearth Furnace&r is quite big!"
 			]
 			id: "2836DDEE49C3CCFB"
+			rewards: [{
+				id: "4CB36CCB71658862"
+				item: "kubejs:nomi_dollar"
+				type: "item"
+			}]
 			size: 1.75d
 			tasks: [
 				{
@@ -1557,6 +1572,11 @@
 				"These can also be made into the final form of RF conduits that can transmit a whopping 134 Million RF/t."
 			]
 			id: "186C14C113B6F3AD"
+			rewards: [{
+				id: "5074404224B5E530"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "3C6395EDE0AE8FE3"
@@ -1696,6 +1716,11 @@
 			dependencies: ["15FAEE3F625265F4"]
 			description: ["&2Naquadah Alloy is different in CEu, it requires Naquadah, Osmiridium and Trinium."]
 			id: "1B07DB4D58D43B7C"
+			rewards: [{
+				id: "0A307605C7249051"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "643EAAB3956473B9"
@@ -1714,6 +1739,11 @@
 				"&6Naquadria&o&r is used in the construction of &6UV components&r, the &3Fusion Reactor Mk2&r, and in fusing &6Neutronium&r. Each piece of Naquadria also makes &d4 times&r more power than &6Enriched Naquadah&r in &3Naquadah Reactors&r."
 			]
 			id: "5792330C6E5B87A3"
+			rewards: [{
+				id: "6B89F5CC9DB5CF2E"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "07036EFE867BC11D"
@@ -1777,6 +1807,11 @@
 			dependencies: ["5792330C6E5B87A3"]
 			description: ["A complex plating material used exclusively for the Tier Nine Micro Miner."]
 			id: "57D9FA04817CB92F"
+			rewards: [{
+				id: "6ABD44B2AE43E4E3"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "09EF929F3BDB6617"
@@ -1795,6 +1830,11 @@
 				"This is a critical material for the Endgame."
 			]
 			id: "4DF92773C82F4AAC"
+			rewards: [{
+				id: "164F147085D3C08C"
+				item: "kubejs:nomi_dollar"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "19750B567D0D0ABC"
@@ -1815,6 +1855,11 @@
 				"As a bonus, brings &6Dragon Eggs, Dragon's Breath, Ender Dragon Scales&r, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
 			]
 			id: "5FE96C30454A0374"
+			rewards: [{
+				id: "054FA1CE3A3D79F3"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -2165,6 +2210,11 @@
 				"The other mission gives negligible amounts of &6Neutronium&r and some other moderately useful things, but you're better off making Neutronium in the &3Fusion Reactor Mark 3&r&r and the other items are otherwise craftable."
 			]
 			id: "2D47BFA44BDB5E6A"
+			rewards: [{
+				id: "5D074328E8D1E7A2"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -2186,6 +2236,11 @@
 				"&6Sneak-right click&r the controller to enable the in-world preview."
 			]
 			id: "7E3A179376673590"
+			rewards: [{
+				id: "685F19529C786FAC"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.75d
 			tasks: [{
@@ -2204,6 +2259,11 @@
 				"Five &6Draconium Blocks&r can be processed in a Wyvern Tier fusion crafting setup to create an equal output of five &6Awakened Draconium Blocks&r. At &e24 Billion RF per craft&r, you better have a handle on your power infrastructure."
 			]
 			id: "0562D9F4C441EAF9"
+			rewards: [{
+				id: "770D7F5115A71602"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "50929C3F5F044E40"
@@ -2282,6 +2342,11 @@
 				"The alternate mission brings a decent quantity of &6Neutronium&r. It might be easier to just make all your Neutronium in the reactor, but it's up to you."
 			]
 			id: "6BF4A76C5B84EEE9"
+			rewards: [{
+				id: "5FA553DCC8666ADA"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -2364,6 +2429,12 @@
 				"After getting &6Chaotic Fusion Injectors&r, you might consider using Tier Nine Micro Miners to supplement the fusion, as it is net-positive for Neutronium. These miners are expensive though, so it's up to you."
 			]
 			id: "22E50A6923EBF5CB"
+			rewards: [{
+				count: 5
+				id: "5A61462892D564CB"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -2412,6 +2483,11 @@
 			dependencies: ["524E7A937C2D9DDD"]
 			description: ["&2For making Wetware Circuits more easily. You need UV-tier power to make them that way."]
 			id: "485CEA4199AAD352"
+			rewards: [{
+				id: "223E9ECE8A5FA09D"
+				item: "kubejs:nomi_dollar"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "5DDE773859BDF9DC"
@@ -2426,6 +2502,11 @@
 			dependencies: ["22E50A6923EBF5CB"]
 			description: ["It grants the most wafers, and is required for Highly Advanced Systems-on-Chip."]
 			id: "524E7A937C2D9DDD"
+			rewards: [{
+				id: "088BB71A2B6A615E"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "The final Boule."
 			tasks: [{
@@ -2476,6 +2557,11 @@
 			]
 			hide_dependency_lines: true
 			id: "72FFB2AAB5EA049D"
+			rewards: [{
+				id: "7CCDAA726A94F22F"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "0DF055B71C2833F8"
@@ -2495,6 +2581,11 @@
 			]
 			hide_dependency_lines: true
 			id: "2BBAF93506DD79C1"
+			rewards: [{
+				id: "3248AEB7F7568507"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "4690FCEE96F1452A"
@@ -2518,6 +2609,11 @@
 			]
 			hide_dependency_lines: true
 			id: "36B1B083B4FA439F"
+			rewards: [{
+				id: "74137AF1D413A38D"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "07359B5EBA5AA568"
@@ -2539,6 +2635,11 @@
 			]
 			hide_dependency_lines: true
 			id: "20745EB9A695E365"
+			rewards: [{
+				id: "15899CA6F8B8B442"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "70194E2E6210DDEF"
@@ -2569,6 +2670,11 @@
 				"&211 Perfect Diamonds are used in crafting each Crystal Matrix Ingot."
 			]
 			id: "56EFA6A07C7291F7"
+			rewards: [{
+				id: "50912497381111B9"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "78B7AF390BA27B08"
@@ -2588,6 +2694,11 @@
 			]
 			hide_dependency_lines: true
 			id: "2D0DF78F71760F00"
+			rewards: [{
+				id: "6F3E0BE43F386D11"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "1923177CCC7CB6F7"
@@ -2607,6 +2718,12 @@
 				"It will also be vital for processing &5Motes of Omnium&f."
 			]
 			id: "62AC7103FF9D25FD"
+			rewards: [{
+				count: 2
+				id: "0B271AF5EC0CC260"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.25d
 			tasks: [{
@@ -2619,8 +2736,14 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["3E51686E2DBD380F"]
 			description: [" &6TNT&r is an explosive made from &9Toluene&r, a distillation byproduct of &9Wood Tar&r or various &eSteam-Cracked Fuels&r. Besides its typical uses in Minecraft, it is a crafting ingredient you can use in the &3Implosion Compressor&r."]
 			id: "25B0271106684DF7"
+			rewards: [{
+				id: "3025735A47D591DE"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "74D85DC6D137784C"
@@ -2855,6 +2978,11 @@
 				"These are required for crafting the &3ZPM Assembling Machine&r. As usual, these are extremely expensive: invest in the next theme of circuits instead of trying to mass-produce these."
 			]
 			id: "6588C68DE6973BCC"
+			rewards: [{
+				id: "44E6E8165DBEC0A8"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "1AFE6053A50B6188"
@@ -2944,6 +3072,12 @@
 				"Definitely consider parallelizing your &3Assembly Lines&r if you haven't already. Even just having two or three lines will vastly improve your production speeds and help avoid bottlenecks as you push towards the Endgame."
 			]
 			id: "619D94FE1D9834FA"
+			rewards: [{
+				count: 10
+				id: "14FC9E519EDE4F8D"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "The final circuit!"
 			tasks: [{
@@ -2963,6 +3097,11 @@
 				"You'll need &6Europium&r from the &3Fusion Reactor&r to craft these."
 			]
 			id: "5EE23A29090BD374"
+			rewards: [{
+				id: "5AE3A43C14D02922"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "39A5471F38915E67"
@@ -2977,6 +3116,11 @@
 			dependencies: ["1E121286E4EFBB97"]
 			description: ["&6Wetware Processors&r are made in &2the ZPM+ Circuit Assembler still."]
 			id: "0F612EAA83D23F9B"
+			rewards: [{
+				id: "71EE67E8F571822E"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "1FE5E4966CC2B0CD"
@@ -3000,6 +3144,11 @@
 				"These are fairly slow to craft and you're going to need considerable quantities, so make sure you have a good parallelized infrastructure for keeping these stocked."
 			]
 			id: "1E121286E4EFBB97"
+			rewards: [{
+				id: "2A6EED68E7A5C7F0"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "19973552943EFCCE"
@@ -3014,6 +3163,11 @@
 			dependencies: ["0F6B344C265D1FBB"]
 			description: ["&2Use the Stem Cells and more advanced materials to build a Neuro Processing Unit. This is used in the first Wetware Circuit."]
 			id: "6B851C550A0C6C4A"
+			rewards: [{
+				id: "48A87DAC7AA75A2F"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "6B2E02ECF4209A83"
@@ -3032,6 +3186,11 @@
 				"&6Sneak-right click&r the controller to enable the in-world preview."
 			]
 			id: "425D1C34A82B054D"
+			rewards: [{
+				id: "01C277FEA61EBA19"
+				item: "kubejs:nomi_dollar"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7890B705137B8EA5"
 				item: "gtceu:naquadah_reactor_i"
@@ -3048,6 +3207,11 @@
 				"This is a pretty expensive structure though, as it needs blocks of &dOmnium&r."
 			]
 			id: "2E8AFA6B42E939B4"
+			rewards: [{
+				id: "08A490626FF2A96E"
+				item: "kubejs:nomi_dollar"
+				type: "item"
+			}]
 			tasks: [{
 				id: "134557DDF5E22B0B"
 				item: "gtceu:naquadah_reactor_ii"
@@ -3077,6 +3241,11 @@
 			disable_toast: true
 			icon: "gtceu:mv_fluid_drilling_rig"
 			id: "5D7FE4BD4C4CA3E9"
+			rewards: [{
+				id: "33506FA2F82441A5"
+				item: "kubejs:nomi_dollar"
+				type: "item"
+			}]
 			size: 2.0d
 			tasks: [
 				{
@@ -3100,6 +3269,28 @@
 			title: "&2Fluid Rig"
 			x: 25.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["0889C9E0DD0FDF06"]
+			description: [
+				"The &6Advanced System-on-Chip&r (or &6ASoC&r) is the &2penultimate&r component miniaturization. These unlock the most efficient recipe for producing &2Nanocircuits and &6Quantum Circuits&r."
+				""
+				"The latter circuits must be made in a &aZPM Assembling Machine&r."
+			]
+			id: "7ECA688A91A1392A"
+			rewards: [{
+				id: "57F1601344CCFD75"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D3D6B5AEB319758"
+				item: "gtceu:advanced_soc_wafer"
+				type: "item"
+			}]
+			title: "Advanced System-on-Chip"
+			x: 13.0d
+			y: 4.5d
 		}
 	]
 	subtitle: [
