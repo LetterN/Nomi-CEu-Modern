@@ -116,14 +116,14 @@
 			description: [
 				"&bStorage Drawers&f provide a huge amount of storage for a single item type. Use them for things you have a lot of, such as stone, dirt and ores."
 				""
-				"&dFramed Drawers currently are non-functional.&f"
+				"&dFraming Template items can be used to easily decorate your drawers."
 				""
 				"Furthermore, you can do special stuff with your drawers, with &6Keys&r! Search &e@StorageDrawers Keys&r in &bJEI&r to see them! You can do things from 'locking' the drawer, meaning only that item can enter the drawer, show how many items are in the drawer, and even remove the display of items! "
 				""
 				"&cPlease note that excessive use of the Quantify Key may lead to lag."
 			]
 			id: "4A696D4BA5442928"
-			subtitle: "&oThis quest completes with any wood-type drawer, or a Framed Drawer and a Framing Table."
+			subtitle: "&oThis quest completes with any wood-type drawer."
 			tasks: [{
 				id: "02543E826A43185A"
 				item: {
@@ -1655,7 +1655,7 @@
 					Count: 1b
 					id: "ironjetpacks:jetpack"
 					tag: {
-						Id: "ironjetpacks:Leadstone"
+						Id: "ironjetpacks:leadstone"
 						Throttle: 1.0d
 					}
 				}

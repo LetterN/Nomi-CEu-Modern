@@ -439,7 +439,7 @@
 				""
 				"This quest calls for a &aRedstone Timer&r, but there are other ways to make snad grow sugar cane even faster (like a vanilla observer clock pointing into the Snad). Make sure to set the timer to pulse as fast as possible."
 				""
-				"To collect the sugar cane, you can use a piston and an observer. Later you can make an &6Auto-Breaker&r from &bActually Additions&r, which works even better and doesn't spill sugar cane everywhere."
+				"To collect the sugar cane, you can use a piston and an observer."
 				""
 				"For now, a &3Vacuum Chest&r should help keep the floor clean, and causes less lag than Hoppers. A &aVoid Upgrade&r in a &6Storage Drawer&r will automatically delete any items that overflow the drawer's capacity, so it's a good way to ensure you don't crash your server from accumulating a massive sugar cane pile before safer block breakers are available to you."
 			]
@@ -999,7 +999,7 @@
 					Count: 1b
 					id: "ironjetpacks:jetpack"
 					tag: {
-						Id: "ironjetpacks:Hardened"
+						Id: "ironjetpacks:hardened"
 						Throttle: 1.0d
 					}
 				}
@@ -1027,7 +1027,7 @@
 					Count: 1b
 					id: "ironjetpacks:jetpack"
 					tag: {
-						Id: "ironjetpacks:Reinforced"
+						Id: "ironjetpacks:reinforced"
 						Throttle: 1.0d
 					}
 				}
@@ -1153,9 +1153,9 @@
 				""
 				"Upgrade kits can be applied to Thermal Expansion Dynamos, machines, and even Portable Tanks. Machines and dynamos get additional augment slots."
 				""
-				"When applied to a dynamo, it increases the &apower generation and fuel burn rate to 150%%&r."
+				"When applied to a dynamo, it increases the &apower generation and fuel burn rate to 150%&r."
 				""
-				"Allows machines operate at &a150%% of base power per tick&r. The more power a machine can use, the faster it works."
+				"Allows machines operate at &a150% of base power per tick&r. The more power a machine can use, the faster it works."
 			]
 			id: "356DA8DE256356B8"
 			tasks: [{

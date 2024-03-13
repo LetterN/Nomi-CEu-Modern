@@ -4,9 +4,9 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         'gtceu:greenhouse',
-        ['AWA', 
-         'ASA',
-         'WAW'],
+        ['AWA',
+            'ASA',
+            'WAW'],
         {
             A: '#gtceu:circuits/mv',
             W: 'gtceu:copper_single_cable',
@@ -142,33 +142,37 @@ ServerEvents.recipes(event => {
 
     event.shaped(
         "thermal:machine_insolator", [
-            " A ",
-            "SBS",
-            "ARA"
-        ], {
-            A: "gtceu:steel_plate",
-            B: "minecraft:bucket",
-            S: '#minecraft:saplings',
-            R: 'thermal:rf_coil'
-        }
+        " A ",
+        "SBS",
+        "ARA"
+    ], {
+        A: "gtceu:steel_plate",
+        B: "minecraft:bucket",
+        S: '#minecraft:saplings',
+        R: 'thermal:rf_coil'
+    }
     )
 
     event.custom({
         type: 'thermal:insolator',
         "ingredient": {
             "item": "gtceu:rubber_sapling"
-          },
-          "result": [
+        },
+        "result": [
             {
-              "item": "gtceu:rubber_log",
-              "chance": 6.0
+                "item": "gtceu:rubber_log",
+                "chance": 6.0
             },
             {
-              "item": "gtceu:rubber_sapling",
-              "chance": 1.1
+                "item": "gtceu:sticky_resin",
+                "chance": 1.25
+            },
+            {
+                "item": "gtceu:rubber_sapling",
+                "chance": 1.1
             }
-          ],
-          "energy_mod": 3.0,
-          "water_mod": 3.0
-})
+        ],
+        "energy_mod": 3.0,
+        "water_mod": 3.0
+    })
 })

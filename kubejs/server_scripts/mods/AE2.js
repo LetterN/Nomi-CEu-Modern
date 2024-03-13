@@ -241,6 +241,21 @@ ServerEvents.recipes(event => {
         }
     )
 
+    // Charged Certus
+
+    event.remove({ id: 'ae2:charger/charged_certus_quartz_crystal' })
+    event.remove({ id: 'ae2:transform/certus_quartz_crystal' })
+    event.custom({
+        "type": "ae2:charger",
+        "ingredient": {
+                "item": "gtceu:certus_quartz_gem"
+            },
+        "result": {
+            "item": "ae2:charged_certus_quartz_crystal"
+        }
+    })
+
+
     // Matter Condenser
     event.remove({ output: 'ae2:condenser' })
     event.shaped(
@@ -404,12 +419,27 @@ ServerEvents.recipes(event => {
     //TODO Big I/O (MAKE IN IV ASSEMBLY LINE)
 
     //Processors
-    event.remove({ output: ['ae2:printed_silicon', 'ae2:logic_processor', 'ae2:calculation_processor', 'ae2:engineering_processor'] })
+    event.remove({ output: ['ae2:printed_silicon', 'ae2:logic_processor', 'ae2:calculation_processor', 'ae2:engineering_processor','ae2:printed_calculation_processor'] })
     event.custom({
         "type": "ae2:inscriber",
         "ingredients": {
             "middle": {
-                "tag": "plates/silicon"
+                "item": "gtceu:certus_quartz_gem"
+            },
+            "top": {
+                "item": "ae2:calculation_processor_press"
+            }
+        },
+        "mode": "inscribe",
+        "result": {
+            "item": "ae2:printed_calculation_processor"
+        }
+    })
+    event.custom({
+        "type": "ae2:inscriber",
+        "ingredients": {
+            "middle": {
+                "tag": "forge:plates/silicon"
             },
             "top": {
                 "item": "ae2:silicon_press"
@@ -525,7 +555,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "ae2:network/cables/glass_fluix" })
 
     event.recipes.gtceu.wiremill('quartz_fiber')
-        .itemInputs('gtceu:nether_quartz_flawed_gem')
+        .itemInputs('gtceu:certus_quartz_gem')
         .itemOutputs('ae2:quartz_fiber')
         .duration(50)
         .EUt(16)

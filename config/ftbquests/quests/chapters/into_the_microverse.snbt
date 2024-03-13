@@ -268,7 +268,7 @@
 			id: "555BEBF7FD6012B7"
 			rewards: [{
 				id: "636C9B089C324417"
-				item: "kubejs:nomi_nickel"
+				item: "kubejs:nomi_dollar"
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -295,7 +295,7 @@
 			id: "77582C534A994D7C"
 			rewards: [{
 				id: "283EED18AE8CAD38"
-				item: "kubejs:nomi_nickel"
+				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -672,8 +672,9 @@
 			description: ["Mix &9Oxygen&r and &91,1-Dimethylhydrazine&r together to make &9Rocket Fuel&r."]
 			id: "24415A26E5A0FD72"
 			rewards: [{
+				count: 2
 				id: "38B02071529926AE"
-				item: "kubejs:nomi_nickel"
+				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
 			shape: "hexagon"
