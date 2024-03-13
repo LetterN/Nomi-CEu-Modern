@@ -630,7 +630,7 @@ ServerEvents.recipes(event => {
         Item.of('enderchests:ender_chest', '{BlockEntityTag:{ForgeCaps:{},code:"000",id:"enderchests:ender_chest.tile",owner:"all",owner_id:"all"},code:"000",owner:"all"}').strongNBT(), [
             'ABA',
             'DED',
-            'AFA '
+            'AFA'
         ], {
             A: 'minecraft:blaze_rod',
             B: 'minecraft:white_wool',
@@ -645,7 +645,7 @@ ServerEvents.recipes(event => {
         'endertanks:ender_tank', [
             'ABA',
             'DED',
-            'AFA '
+            'AFA'
         ], {
             A: 'minecraft:blaze_rod',
             B: 'minecraft:white_wool',
