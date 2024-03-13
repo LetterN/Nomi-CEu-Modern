@@ -207,7 +207,7 @@
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"The &aCrescent Hammer&r is for use on machines from &bThermal Expansion&f, but can be used for basic wrench interactions with blocks from almost every mod."
+				"The &aCrescent Hammer&r is for use on machines from &bThermal Expansion&f, but can be used for basic wrench interactions with blocks from almost every mod. &dIt can also now adjust Gregtech pipes,"
 				""
 				"The &aYeta Wrench&r is used with machines and conduits from &bEnderIO&f, and has several special display modes (&6sneak-mouse wheel&f to switch between them)."
 				""
@@ -253,7 +253,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Wrenches Galore"
+			title: "&dWrenches Galore"
 			x: 0.0d
 			y: 2.5d
 		}
@@ -1319,7 +1319,7 @@
 				item: { Count: 2b, id: "thermal:dynamo_fuel_augment" }
 				type: "item"
 			}]
-			title: "More Efficient"
+			title: "&dMore Efficient"
 			x: -4.5d
 			y: 7.5d
 		}
@@ -1838,7 +1838,7 @@
 					type: "item"
 				}
 			]
-			title: "Triple Power Augment"
+			title: "&dTriple Power Augment"
 			x: -4.5d
 			y: 6.5d
 		}
