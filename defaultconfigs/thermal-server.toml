@@ -180,7 +180,7 @@
 	[Dynamos.Numismatic]
 		#This sets the base power generation (RF/t) for the Numismatic Dynamo.
 		#Range: 10 ~ 32000
-		"Base Power" = 500
+		"Base Power" = 2500
 
 	[Dynamos.Lapidary]
 		#This sets the base power generation (RF/t) for the Lapidary Dynamo.
