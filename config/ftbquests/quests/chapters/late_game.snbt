@@ -559,6 +559,7 @@
 				""
 				"If you need to create duplicate Data items, you can copy the data to a blank data item of the same type using the Scanner."
 			]
+			icon: "gtceu:data_stick"
 			id: "672D43BD113251EA"
 			rewards: [{
 				id: "3212CC0C2E024DDC"
@@ -567,9 +568,8 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "095748957FF71CAF"
-				item: "gtceu:data_stick"
-				type: "item"
+				id: "7BFFD184B42E366A"
+				type: "checkmark"
 			}]
 			title: "&dAssembly Line Data"
 			x: -8.0d
