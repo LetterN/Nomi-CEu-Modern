@@ -94,8 +94,9 @@ ServerEvents.recipes(event => {
             .duration(240)
             .EUt(7)
 
-        event.recipes.minecraft.smelting('kubejs:pulsating_dust', ['gtceu:uraninite_dust', 'kubejs:resonant_clathrate'])
-
+        event.recipes.minecraft.smelting('kubejs:pulsating_dust', ['gtceu:uraninite_dust'])
+        event.recipes.minecraft.smelting('kubejs:pulsating_dust', ['kubejs:resonant_clathrate'])
+        
         event.recipes.gtceu.extractor('resonant_ender')
             .itemInputs('minecraft:ender_pearl')
             .outputFluids(Fluid.of('kubejs:resonant_ender', 250))
