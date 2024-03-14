@@ -1,21 +1,15 @@
-/*
-!/config
-!/kubejs
-!/defaultconfigs
-!/.gitignore
-!/.gitattributes
-!/manifest.json
+# Ignore builds
+/dist
 
-!/mods/systeams*
-
+# Ignore mod files
 /mods/.index
+/mods/.connector
+/mods/memoryleakfix*
 
 /config/fml.toml
 /config/jei/world/local/*
-/kubejs/probe
-/mods/.connector
 
-/mods/memoryleakfix*
+/kubejs/probe
 
 config/fabric/indigo-renderer.properties
 config/roughlyenoughitems/pinyin.properties
@@ -42,7 +36,41 @@ config/jecalculation/record.json
 config/voicechat/voicechat-client.properties
 config/jade/sort-order.json
 config/jei*
+config/embeddium++.toml
+config/embeddium++.toml
 options.txt
-config/embeddium++.toml
-config/embeddium++.toml
 
+# dotenv
+.env
+
+### https://raw.github.com/github/gitignore/cc542de017c606138a87ee4880e5f06b3a306def/Global/Linux.gitignore
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+### https://raw.github.com/github/gitignore/cc542de017c606138a87ee4880e5f06b3a306def/Global/Windows.gitignore
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows shortcuts
+*.lnk
+
+### https://raw.github.com/github/gitignore/cc542de017c606138a87ee4880e5f06b3a306def/Global/OSX.gitignore
+.DS_Store
+.AppleDouble
+.LSOverride
