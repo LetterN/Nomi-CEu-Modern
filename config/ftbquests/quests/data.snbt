@@ -18,6 +18,6 @@
 	}
 	pause_game: false
 	progression_mode: "flexible"
-	title: "Nomifactory CEu Modern"
+	title: "&dNomifactory CEu Modern"
 	version: 13
 }
