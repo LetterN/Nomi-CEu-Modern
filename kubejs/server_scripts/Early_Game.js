@@ -1,3 +1,6 @@
+const JSONObject = Java.loadClass('com.google.gson.JsonObject')
+const FluidIngredientJS = Java.loadClass('com.gregtechceu.gtceu.integration.kjs.recipe.components.GTRecipeComponents$FluidIngredientJS')
+
 ServerEvents.recipes(event => {
     // Ender Pearls
     event.recipes.gtceu.alloy_smelter("pulsating_ender_pearl")
@@ -101,9 +104,15 @@ ServerEvents.recipes(event => {
 
     //phenol
 
+		let steam = new JSONObject()
+		steam.add('amount', 4000)
+		steam.add('value', {tag:'forge:steam'})
+		
+
+		//Look at the top of the script to see where FluidIngredientJS is defined
     event.recipes.gtceu.pyrolyse_oven('phenol_coal')
         .itemInputs('16x minecraft:coal')
-        .inputFluids('systeams:steam 4000')
+        .inputFluids(FluidIngredientJS.of(steam))
         .itemOutputs('20x gtceu:coke_gem')
         .outputFluids('gtceu:phenol 1000')
         .circuit(14)
@@ -112,7 +121,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.pyrolyse_oven('phenol_coal_dust')
         .itemInputs('16x gtceu:coal_dust')
-        .inputFluids('systeams:steam 4000')
+        .inputFluids(FluidIngredientJS.of(steam))
         .itemOutputs('20x gtceu:coke_dust')
         .outputFluids('gtceu:phenol 1000')
         .circuit(14)
