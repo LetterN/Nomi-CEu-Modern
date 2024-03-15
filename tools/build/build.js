@@ -51,7 +51,7 @@ async function packMod(group) {
     Juke.logger.error(error);
     throw new Juke.ExitCode(1);
   } finally {
-    // Juke.rm(`dist/.tmp/${group}`, { recursive: true });
+    Juke.rm(`dist/.tmp/${group}`, { recursive: true });
   }
 }
 
