@@ -1,2 +1,2 @@
 @echo off
-"node" --experimental-modules "%~dp0\build.js" %*
+"%~dp0\..\bootstrap\node.bat" --experimental-modules "%~dp0\build.js" %*
