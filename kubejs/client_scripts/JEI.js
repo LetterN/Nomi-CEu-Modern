@@ -1,6 +1,6 @@
 // /kjs inventory will be your friend.
 
-JEIEvents.hide('item', event => {
+JEIEvents.hideItems(event => {
     //Hides useless items
     event.hide(['ae2:vibration_chamber', 'hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper'])
 
@@ -72,7 +72,6 @@ JEIEvents.hide('item', event => {
 
 })
 
-JEIEvents.hide('fluid', event => {
+JEIEvents.hideFluids(event => {
     event.hide(/nuclearcraft:/)
 })
-
