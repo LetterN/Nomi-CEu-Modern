@@ -42,6 +42,22 @@ ServerEvents.recipes(event => {
 	event.blasting( "2x gtceu:tin_ingot", "gtceu:raw_cassiterite_sand" ).id("gtceu:blasting/smelt_raw_cassiterite_sand_ore_to_ingot")
 
 
+    // temp iron chest > sophisticated barrel recipe
+
+    var ironchest = [
+        ['ironchest:copper_chest', 'sophisticatedstorage:copper_barrel'],
+        ['ironchest:iron_chest', 'sophisticatedstorage:iron_barrel'],
+        ['ironchest:gold_chest', 'sophisticatedstorage:gold_barrel'],
+        ['ironchest:diamond_chest', 'sophisticatedstorage:diamond_barrel'],
+        ['ironchest:crystal_chest', 'sophisticatedstorage:diamond_barrel'],
+        ['ironchest:obsidian_chest', 'sophisticatedstorage:diamond_barrel'],
+    ]
+    ironchest.forEach(material => {
+        event.remove({ output: material[0] })
+        event.shapeless(material[1], [material[0]])
+    })
+
+
     //temp because rubber wood drawers someday?
     event.shaped(
         "storagedrawers:oak_full_drawers_1", [
