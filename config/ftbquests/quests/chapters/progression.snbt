@@ -778,7 +778,10 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["4400136254030EE3"]
+			dependencies: [
+				"4400136254030EE3"
+				"4A2F8BEA3524F2A7"
+			]
 			icon: "miniutilities:angel_ring"
 			id: "6DAF9B5110C8396E"
 			tasks: [{
@@ -1250,6 +1253,7 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["6381CB6DAA7E3D0D"]
 			id: "231EEE7ABF1F2D44"
 			tasks: [{
 				id: "14BB0F19BFE05029"
@@ -1267,6 +1271,7 @@
 			y: -7.0d
 		}
 		{
+			dependencies: ["231EEE7ABF1F2D44"]
 			id: "4A2F8BEA3524F2A7"
 			tasks: [{
 				id: "66C55CA81C78C431"
@@ -1284,6 +1289,7 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["6DAF9B5110C8396E"]
 			id: "7EF7F951F1A892A1"
 			tasks: [{
 				id: "0C93C04472129BC9"
