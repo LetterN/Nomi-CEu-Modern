@@ -1,0 +1,40 @@
+name: Build PR
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+  merge_group:
+    branches:
+    - main
+jobs:
+  pack_pr:
+    if: ( !contains(github.event.head_commit.message, '[ci skip]') )
+    name: Pack PR
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: pack_pr-${{ github.head_ref || github.run_id }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore Node cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.nvm
+          key: ${{ runner.os }}-node-14.16.1
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Pack Modpack
+        env:
+          CFCORE_API_TOKEN: ${{ secrets.API_TOKEN }}
+        run: bash tools/build/build build-all
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: "client-and-server"
+          path: dist/**.zip
+          if-no-files-found: error
+          retention-days: 30
+

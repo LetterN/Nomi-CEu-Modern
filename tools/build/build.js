@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Build script for /tg/station 13 codebase.
+ * Build script for nomifactory-modern
  *
  * This script uses Juke Build, read the docs here:
  * https://github.com/stylemistake/juke-build
@@ -163,7 +163,7 @@ export const BuildDevTarget = new Juke.Target({
     return [
       "dist/dev/",
       "dist/.devtmp/",
-      "dist/dev.zip",
+      // "dist/dev.zip",
       ...includeList.map(v => `dist/dev/${v}`)
     ]
   },
@@ -179,7 +179,7 @@ export const BuildDevTarget = new Juke.Target({
     fs.cpSync('mods', 'dist/.devtmp', { recursive: true, force: true });
     fs.symlinkSync(resolve('dist/.devtmp'), resolve('dist/dev/mods'));
 
-    await packMod("dev");
+    // await packMod("dev"); // manual copypaste
   }
 })
 
