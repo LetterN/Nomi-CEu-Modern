@@ -654,4 +654,16 @@ ServerEvents.recipes(event => {
             F: 'gtceu:ender_pearl_block'
         }
     )
+
+    //Strings Recipe
+    event.shaped(
+        '6x minecraft:string', [
+            ' A ',
+            'ABA',
+            ' A '
+        ], {
+            A: '#minecraft:saplings',
+            B: '#minecraft:swords'
+        }
+    ).damageIngredient('#minecraft:swords')
 })
