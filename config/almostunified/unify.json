@@ -1,9 +1,9 @@
 {
     "modPriorities": [
-        "minecraft",
         "kubejs",
         "avaritia",
         "gtceu",
+        "minecraft",
         "thermal"
     ],
     "stoneStrata": [
