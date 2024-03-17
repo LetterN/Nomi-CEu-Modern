@@ -1,6 +1,5 @@
 {
-    "filters": [
-        {
+    "filters": [{
             "category": "ironfurnaces:generator_regular"
         },
         {
@@ -125,6 +124,63 @@
         {
             "id": "/repair/",
             "category": "emi:anvil_repairing"
+        },
+        {
+            "category": "emi:tag"
+        },
+        {
+            "category": "thermal:smelter"
+        },
+        {
+            "category": "thermal:smelter_catalyst"
+        },
+        {
+            "category": "thermal:sawmill"
+        },
+        {
+            "category": "thermal:refinery"
+        },
+        {
+            "category": "thermal:pyrolyzer"
+        },
+        {
+            "category": "thermal:pulverizer_catalyst"
+        },
+        {
+            "category": "thermal:disenchantement_fuel"
+        },
+        {
+            "category": "thermal:crystallizer"
+        },
+        {
+            "category": "thermal:crucible"
+        },
+        {
+            "category": "thermal:chiller"
+        },
+        {
+            "category": "thermal:centrifuge"
+        },
+        {
+            "category": "thermal:brewer"
+        },
+        {
+            "category": "thermal:bottler"
+        },
+        {
+            "category": "sgjourney:crystallizing"
+        },
+        {
+            "category": "sgjourney:advanced_crystallizing"
+        },
+        {
+            "category": "ae2:entropy"
+        },
+        {
+            "category": "emi_loot:archaeology_drops"
+        },
+        {
+            "category": "emi_loot:gameplay_drops"
         }
     ]
 }

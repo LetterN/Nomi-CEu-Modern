@@ -4,7 +4,8 @@
         "avaritia",
         "gtceu",
         "minecraft",
-        "thermal"
+        "thermal",
+        "nuclearcraft"
     ],
     "stoneStrata": [
         "stone",
@@ -103,7 +104,11 @@
         "hsla_steel",
         "nichrome",
         "quartz",
-        "nether_quartz"
+        "nether_quartz",
+        "niobium",
+        "niobium_titanium",
+        "tungsten_carbide",
+        "yttrium"
     ],
     "priorityOverrides": {},
     "customTags": {},
