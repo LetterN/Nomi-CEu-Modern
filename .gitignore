@@ -44,3 +44,6 @@ options.txt
 config/embeddium++.toml
 config/embeddium++.toml
 
+
+defaultconfigs/ftbultimine/ftbultimine-client.snbt
+defaultconfigs/ftbultimine/ftbultimine-server.snbt
