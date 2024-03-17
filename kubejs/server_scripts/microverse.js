@@ -108,8 +108,8 @@ ServerEvents.recipes(event => {
             A: 'gtceu:ev_field_generator',
             B: 'gtceu:mv_super_chest',
             F: 'kubejs:signalum_micro_miner_core',
-            C: 'nuclearcraft:fission_reactor_controller', // TODO: REPLACE WITH REAL NC COMPONENT
-            P: 'nuclearcraft:fission_reactor_port', // TODO: REPLACE WITH REAL NC COMPONENT
+            C: 'nuclearcraft:fission_reactor_controller',
+            P: 'nuclearcraft:fission_reactor_port',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:vibrant"}').strongNBT()
         }, 3
     )
