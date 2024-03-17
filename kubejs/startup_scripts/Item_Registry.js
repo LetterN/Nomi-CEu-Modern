@@ -151,6 +151,15 @@ StartupEvents.registry('item', event => {
     //Extra Utilities 2
     event.create('resonating_crystal').displayName("Resonating Redstone Crystal")
     event.create('ender_shard')
+
+    //Glitch Armor
+    event.create('glitch_fragment').displayName('\u00A7bGlitch Fragment')
+    event.create('glitch_heart').displayName('\u00A7bGlitch Heart')
+    event.create('glitch_infused_ingot').displayName('\u00A7bGlitch Infused Ingot')
+    event.create('glitch_infused_helmet', 'helmet').tier('netherite').displayName('\u00A7bGlitch Infused Helmet')
+    event.create('glitch_infused_chestplate', 'chestplate').tier('netherite').displayName('\u00A7bGlitch Infused Chestplate')
+    event.create('glitch_infused_leggings', 'leggings').tier('netherite').displayName('\u00A7bGlitch Infused Leggings')
+    event.create('glitch_infused_boots', 'boots').tier('netherite').displayName('\u00A7bGlitch Infused Boots')
 })
 
 

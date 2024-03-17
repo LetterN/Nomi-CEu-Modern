@@ -12,6 +12,8 @@ ServerEvents.tags('item', event => {
     event.add('forge:nuggets/electrum_flux', 'redstone_arsenal:flux_nugget')
     event.add('forge:gears/electrum_flux', 'redstone_arsenal:flux_gear')
     event.removeAllTagsFrom('ae2:certus_quartz_crystal')
+    event.remove('forge:ingots/aluminum', 'nuclearcraft:aluminum_ingot')
+    event.add('forge:ingots/aluminium', 'nuclearcraft:aluminum_ingot')
 })
 
 ServerEvents.tags('block', event => {

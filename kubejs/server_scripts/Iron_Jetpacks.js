@@ -121,8 +121,7 @@ ServerEvents.recipes(event => {
 
     event.shapeless('8x kubejs:ender_shard', ['minecraft:ender_pearl'])
 
-    // Battery chain
-    // TODO
+
 
 
     //Cells
