@@ -108,7 +108,9 @@
         "niobium",
         "niobium_titanium",
         "tungsten_carbide",
-        "yttrium"
+        "yttrium",
+        "draconium",
+        "draconium_awakened"
     ],
     "priorityOverrides": {},
     "customTags": {},

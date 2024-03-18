@@ -2162,7 +2162,7 @@
 			tasks: [{
 				count: 4L
 				id: "715AA1ECF4474085"
-				item: "kubejs:draconic_evolution_chaotic_core"
+				item: { Count: 4b, id: "draconicevolution:chaotic_core" }
 				type: "item"
 			}]
 			title: "Chaotic Cores"
@@ -2291,8 +2291,8 @@
 			id: "10A6C332D8BED5FD"
 			size: 3.5d
 			tasks: [{
-				id: "397B293760C23998"
-				item: "enderio:creative_power"
+				id: "0DA711CB36A29601"
+				item: "draconicevolution:creative_op_capacitor"
 				type: "item"
 			}]
 			x: 57.0d
