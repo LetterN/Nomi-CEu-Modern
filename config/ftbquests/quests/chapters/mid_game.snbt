@@ -1863,9 +1863,9 @@
 		{
 			dependencies: ["14F1FF4656693711"]
 			description: [
-				"The&3 Empowerer&r is a multiblock used to convert special crystalline materials into empowered variants."
+				"The &3Crafting Core&r is used to convert special crystalline materials into empowered variants."
 				""
-				"&5Currently, the multiblock doesn't care which item would goes in which slot. I would recommend still setting it where the item to be empowered is in the middle bus so your setup does not break when this is fixed."
+				"&5Currently, AA has not been completely ported to 1.20.1, in the meantime, you get the better option for infusement from the get go!"
 			]
 			id: "49C8716030809478"
 			rewards: [{
@@ -1877,10 +1877,10 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "54BD95C8E2BF7DF4"
-				item: "gtceu:empowerment"
+				item: "extendedcrafting:crafting_core"
 				type: "item"
 			}]
-			title: "&dEmpowerer"
+			title: "&dEmpowererment"
 			x: 23.0d
 			y: 6.5d
 		}
