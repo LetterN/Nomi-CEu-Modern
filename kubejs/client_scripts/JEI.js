@@ -45,7 +45,7 @@ JEIEvents.hideItems(event => {
 
     event.hide([/antiblocksrechiseled:.*?pressure_plate\S*/g, /antiblocksrechiseled:.*?button\S*/g, /antiblocksrechiseled:.*?stair\S*/g, /antiblocksrechiseled:.*?slab\S*/g, /antiblocksrechiseled:.*?border\b/g, /antiblocksrechiseled:.*?wool\S*/g])
 
-    event.hide(/chiselandbits:block_bit/)
+    event.hide(/chiselandbits:block_bit/i)
     event.hide(/ae2:facade/)
 
     //AA

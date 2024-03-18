@@ -324,7 +324,7 @@
 			}]
 			tasks: [{
 				id: "013101DE01341EF9"
-				item: "gtceu:awakened_draconium_block"
+				item: "gtceu:draconium_awakened_block"
 				type: "item"
 			}]
 			title: "Awakened Draconium"

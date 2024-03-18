@@ -96,9 +96,7 @@ StartupEvents.registry('item', event => {
     event.create('radium_salt').displayName("Radium Salt").rarity('Epic')
     event.create('moon_dust').displayName("Moon Dust")
     event.create('dilithium_crystal').displayName("Dilithium Crystal")
-        //public static ItemBase REDSTONE_ARMOR_PLATE;
-        //public static ItemBase CARBON_ARMOR_PLATE;
-        //public static ItemBase LAPIS_ARMOR_PLATE;
+    event.create('crystal_matrix_plate').tag('forge:plates/crystal_matrix')
 
     //TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
     event.create('compressed_octadic_capacitor').displayName("Compressed Octadic Capacitor")

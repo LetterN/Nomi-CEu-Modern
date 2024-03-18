@@ -2023,8 +2023,8 @@
 			id: "7C89BC235C988689"
 			shape: "hexagon"
 			tasks: [{
-				id: "659EA77EDD6CB26C"
-				item: "minecraft:barrier"
+				id: "712064FEEFCC29AA"
+				item: "draconicevolution:draconium_core"
 				type: "item"
 			}]
 			title: "No Draconic Evolution?"
@@ -2077,8 +2077,8 @@
 			id: "7FAB6FD0A054443E"
 			shape: "hexagon"
 			tasks: [{
-				id: "6C5CA56B3383D45E"
-				item: "minecraft:barrier"
+				id: "7615C990816E6132"
+				item: "draconicevolution:dragon_heart"
 				type: "item"
 			}]
 			title: "No Draconic Evolution?"
@@ -2102,13 +2102,22 @@
 				"⠀⠀⠀⡟⡾⣿⢿⢿⢵⣽⣾⣼⣘⢸⢸⣞⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
 				"⠀⠀⠀⠀⠁⠇⠡⠩⡫⢿⣝⡻⡮⣒⢽⠋⠀⠀⠀⠀⠀"
 			]
+			icon: "draconicevolution:basic_crafting_injector"
 			id: "713FAECEE5046121"
 			shape: "hexagon"
-			tasks: [{
-				id: "1C119900347AE34A"
-				item: "minecraft:barrier"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 8L
+					id: "0156A50DDEF3B674"
+					item: "draconicevolution:basic_crafting_injector"
+					type: "item"
+				}
+				{
+					id: "556C2F341A14E657"
+					item: "draconicevolution:crafting_core"
+					type: "item"
+				}
+			]
 			title: "No Draconic Evolution?"
 			x: 27.25d
 			y: 8.25d
@@ -2133,8 +2142,8 @@
 			id: "20CB8F878CADA235"
 			shape: "hexagon"
 			tasks: [{
-				id: "0DB7C2850988AD88"
-				item: "minecraft:barrier"
+				id: "5A46206776E20233"
+				item: "draconicevolution:wyvern_core"
 				type: "item"
 			}]
 			title: "No Draconic Evolution?"
@@ -2161,8 +2170,8 @@
 			id: "2358A5CF22FF5495"
 			shape: "hexagon"
 			tasks: [{
-				id: "4A54D547076F42D2"
-				item: "minecraft:barrier"
+				id: "09CD18933F28FA28"
+				item: "draconicevolution:awakened_crafting_injector"
 				type: "item"
 			}]
 			title: "No Draconic Evolution?"
@@ -2189,8 +2198,8 @@
 			id: "6F5579E1646634C7"
 			shape: "hexagon"
 			tasks: [{
-				id: "67B06564512AA823"
-				item: "minecraft:barrier"
+				id: "581D806823B709C3"
+				item: "draconicevolution:wyvern_crafting_injector"
 				type: "item"
 			}]
 			title: "No Draconic Evolution?"
@@ -2267,7 +2276,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "50929C3F5F044E40"
-				item: "gtceu:awakened_draconium_block"
+				item: "gtceu:draconium_awakened_block"
 				type: "item"
 			}]
 			title: "Awakened Draconium"
@@ -2294,8 +2303,8 @@
 			id: "03F04B4005F2CBE1"
 			shape: "hexagon"
 			tasks: [{
-				id: "6032786F00EDBFFE"
-				item: "minecraft:barrier"
+				id: "71171679FDF638A6"
+				item: "draconicevolution:awakened_core"
 				type: "item"
 			}]
 			title: "No Draconic Evolution?"
@@ -2322,8 +2331,8 @@
 			id: "6ABD83B58FADD4DF"
 			shape: "hexagon"
 			tasks: [{
-				id: "69BA5583E602EB59"
-				item: "minecraft:barrier"
+				id: "69DC07184B74DB07"
+				item: "draconicevolution:reactor_core"
 				type: "item"
 			}]
 			title: "No Draconic Evolution?"
@@ -2381,8 +2390,8 @@
 			id: "483652BAEF59E125"
 			shape: "hexagon"
 			tasks: [{
-				id: "13A95028EBFF9D6D"
-				item: "minecraft:barrier"
+				id: "6D27E0C7357E8F5A"
+				item: "draconicevolution:reactor_stabilizer"
 				type: "item"
 			}]
 			title: "No Draconic Evolution?"
@@ -2409,8 +2418,8 @@
 			id: "235C1E5B2C58B5AF"
 			shape: "hexagon"
 			tasks: [{
-				id: "3AFB76DCAD2DCE52"
-				item: "minecraft:barrier"
+				id: "31B73CD828CA2128"
+				item: "draconicevolution:chaos_shard"
 				type: "item"
 			}]
 			title: "No Draconic Evolution?"
@@ -2471,8 +2480,8 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				id: "35B1B96DC57900B1"
-				item: "minecraft:barrier"
+				id: "140C83AB5FE8450E"
+				item: "draconicevolution:chaotic_crafting_injector"
 				type: "item"
 			}]
 			title: "No Draconic Evolution?"
@@ -2535,15 +2544,31 @@
 				"⠀⠀⠀⡟⡾⣿⢿⢿⢵⣽⣾⣼⣘⢸⢸⣞⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
 				"⠀⠀⠀⠀⠁⠇⠡⠩⡫⢿⣝⡻⡮⣒⢽⠋⠀⠀⠀⠀⠀"
 			]
+			icon: "draconicevolution:energy_core"
 			id: "48D3640053770BD8"
 			shape: "hexagon"
-			tasks: [{
-				id: "37BE9D17A4130DC5"
-				item: "minecraft:barrier"
-				type: "item"
-			}]
+			size: 2.0d
+			tasks: [
+				{
+					id: "6C9957529780CBFB"
+					item: "draconicevolution:energy_core"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "62599F4AC08F92EB"
+					item: { Count: 2b, id: "draconicevolution:energy_pylon" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0E0CB12516222A89"
+					item: { Count: 4b, id: "draconicevolution:energy_core_stabilizer" }
+					type: "item"
+				}
+			]
 			title: "No Draconic Evolution?"
-			x: 31.25d
+			x: 30.25d
 			y: 12.25d
 		}
 		{
