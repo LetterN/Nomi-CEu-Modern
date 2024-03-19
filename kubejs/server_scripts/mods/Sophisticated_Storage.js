@@ -33,6 +33,8 @@ ServerEvents.recipes(event => {
         })
     })
 
+    event.remove({ output: 'sophisticatedstorage:controller' })
+
     // Backpacks
     event.remove({ output: 'sophisticatedbackpacks:copper_backpack' })
 
