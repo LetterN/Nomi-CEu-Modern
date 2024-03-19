@@ -3269,9 +3269,6 @@
 			y: 4.5d
 		}
 	]
-	subtitle: [
-		"Progression for this chapter isn't done!"
-		"(Waiting for DE to port)"
-	]
+	subtitle: ["Progression for this chapter isn't done!"]
 	title: "Late Game"
 }

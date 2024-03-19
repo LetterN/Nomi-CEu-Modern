@@ -1900,13 +1900,6 @@
 				""
 				"&cIf you find something broken/missing/etc, make an issue on the &5Nomifactory Modern&r&c repository, or submit a Pull Request to fix it yourself.&r"
 				""
-				"Currently known issues are:"
-				""
-				"* Gregtech Modern will hide recipes from JEI/etc if you attempt to hide an item from it's tag. Until this is fixed, these duplicate items will remain in JEI."
-				""
-				"* The Steam Dynamo (not the boiler) currently does not require water to work. The stirling dynamo is a stand-in until that is coded."
-				""
-				"* Gregtech Tools durability does not display properly."
 			]
 			icon: "thermal:nuke_tnt"
 			id: "2A511DB40C66CF35"
