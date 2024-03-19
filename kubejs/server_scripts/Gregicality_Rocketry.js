@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(30)
 
-    event.remove({ id: "gcyr:shaped/space_chestplate" })
+    event.remove({ id: "gcyr:shaped/space_chest" })
     event.recipes.gtceu.assembler("space_chestplate")
         .itemInputs("kubejs:unprepared_space_chestpiece", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
         .itemOutputs("gcyr:space_chestplate")
@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gcyr:shaped/space_boots" })
     event.recipes.gtceu.assembler("space_boots")
         .itemInputs("kubejs:unprepared_space_boots", "2x kubejs:pressure_layer", "2x kubejs:radiation_layer")
-        .itemOutputs("gcyr:space_leggings")
+        .itemOutputs("gcyr:space_boots")
         .duration(300)
         .EUt(30)
 
@@ -195,4 +195,11 @@ ServerEvents.recipes(event => {
             C: 'gtceu:concrete_dust'
         })
 
+    // Launch Pad           
+    event.shaped(
+        'gcyr:seat', [
+            'CCC',
+        ], {
+            C: 'minecraft:white_wool'
+        })
 })

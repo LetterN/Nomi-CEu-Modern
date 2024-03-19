@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["2D31856F6EF1ED69"]
 			description: [
 				"The &3Wiremill&r is a major efficiency boost, giving you double yield of &6wires&r for your ingots. But first, you'll need to make some &6Motors&r."
 				""
