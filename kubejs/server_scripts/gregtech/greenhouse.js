@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
                 .itemInputs('4x gtceu:fertilizer')
                 .inputFluids(Fluid.of('minecraft:water', fluid))
                 .itemOutputs(output)
-                .duration(320)
+                .duration(640)
                 .EUt(120)
         } else {
             event.recipes.gtceu.greenhouse(id)
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
                 .notConsumable(InputItem.of(input))
                 .inputFluids(Fluid.of('minecraft:water', fluid))
                 .itemOutputs(output)
-                .duration(640)
+                .duration(1280)
                 .EUt(120)
         }
     }

@@ -43,6 +43,14 @@ ServerEvents.recipes(event => {
         A: "kubejs:compressed_red_sand"
     });
 
+// Reversal
+    event.shapeless('9x kubejs:compressed_sand', ['kubejs:double_compressed_sand'])
+    event.shapeless('9x minecraft:sand', ['kubejs:compressed_sand'])
+    event.shapeless('9x kubejs:compressed_red_sand', ['kubejs:double_compressed_red_sand'])
+    event.shapeless('9x minecraft:red_sand', ['kubejs:compressed_red_sand'])
+
+
+    // Glider
     event.replaceInput({ id: "hangglider:glider_framework" }, 'minecraft:iron_ingot', 'gtceu:iron_rod')
     event.replaceInput({ id: "gtceu:shaped/basic_circuit_board" }, 'gtceu:copper_single_wire', 'gtceu:fine_copper_wire')
     event.shapeless('16x gtceu:fireclay_dust', ['gtceu:clay_dust', 'gtceu:brick_dust'])

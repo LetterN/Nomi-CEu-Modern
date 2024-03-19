@@ -1581,7 +1581,7 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["2FA9404468E4BBD9"]
+			dependencies: ["06E9B9DDDB245F38"]
 			description: [
 				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
 				""
@@ -1638,7 +1638,7 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["2FA9404468E4BBD9"]
+			dependencies: ["06E9B9DDDB245F38"]
 			description: [
 				"It's probably a bit premature to consider a &6jetpack&r at this point, but if you really want to craft this bad boy, I won't stop you."
 				""
@@ -1661,10 +1661,10 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 11.5d
+			y: 10.5d
 		}
 		{
-			dependencies: ["2FA9404468E4BBD9"]
+			dependencies: ["06E9B9DDDB245F38"]
 			description: [
 				"Now that you have a &abattery&r to keep things charged, you might consider making yourself an &aElectromagnet&r."
 				""
@@ -1918,6 +1918,18 @@
 			title: "&5This pack is in alpha!"
 			x: -1.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["2FA9404468E4BBD9"]
+			description: ["Used to charge items that consume RF."]
+			id: "06E9B9DDDB245F38"
+			tasks: [{
+				id: "362A4D34BDE5BF63"
+				item: "thermal:tinker_bench"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 11.5d
 		}
 	]
 	title: "Genesis"

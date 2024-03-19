@@ -4,96 +4,97 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'extendedcrafting:basic_component' })
     event.shaped(
         'extendedcrafting:basic_component', [
-            'SL ',
-            'AB ',
-            '   '
-        ], {
-            S: 'gtceu:black_steel_plate',
-            L: 'extendedcrafting:luminessence',
-            A: 'gtceu:nether_quartz_plate',
-            B: 'gtceu:iron_plate'
-        })
+        'SL ',
+        'AB ',
+        '   '
+    ], {
+        S: 'gtceu:black_steel_plate',
+        L: 'extendedcrafting:luminessence',
+        A: 'gtceu:nether_quartz_plate',
+        B: 'gtceu:iron_plate'
+    })
 
     event.remove({ output: 'extendedcrafting:advanced_component' })
     event.shaped(
         'extendedcrafting:advanced_component', [
-            'SL ',
-            'AB ',
-            '   '
-        ], {
-            S: 'gtceu:black_steel_plate',
-            L: 'extendedcrafting:luminessence',
-            A: 'gtceu:electrum_plate',
-            B: 'gtceu:glowstone_plate'
-        })
+        'SL ',
+        'AB ',
+        '   '
+    ], {
+        S: 'gtceu:black_steel_plate',
+        L: 'extendedcrafting:luminessence',
+        A: 'gtceu:electrum_plate',
+        B: 'gtceu:glowstone_plate'
+    })
 
     event.remove({ output: 'extendedcrafting:elite_component' })
     event.shaped(
         'extendedcrafting:elite_component', [
-            'SL ',
-            'AB ',
-            '   '
-        ], {
-            S: 'gtceu:black_steel_plate',
-            L: 'extendedcrafting:luminessence',
-            A: 'gtceu:aluminium_plate',
-            B: 'gtceu:ender_pearl_plate'
-        })
+        'SL ',
+        'AB ',
+        '   '
+    ], {
+        S: 'gtceu:black_steel_plate',
+        L: 'extendedcrafting:luminessence',
+        A: 'gtceu:aluminium_plate',
+        B: 'gtceu:ender_pearl_plate'
+    })
 
     event.remove({ output: 'extendedcrafting:ultimate_component' })
     event.shaped(
         'extendedcrafting:ultimate_component', [
-            'SL ',
-            'AB ',
-            '   '
-        ], {
-            S: 'gtceu:black_steel_plate',
-            L: 'extendedcrafting:luminessence',
-            A: 'gtceu:uranium_plate',
-            B: 'gtceu:emerald_plate'
-        })
+        'SL ',
+        'AB ',
+        '   '
+    ], {
+        S: 'gtceu:black_steel_plate',
+        L: 'extendedcrafting:luminessence',
+        A: 'gtceu:uranium_plate',
+        B: 'gtceu:emerald_plate'
+    })
 
     event.remove({ output: 'extendedcrafting:crystaltine_component' })
     event.shaped(
         'extendedcrafting:crystaltine_component', [
-            'SL ',
-            'AB ',
-            '   '
-        ], {
-            S: 'gtceu:black_steel_plate',
-            L: 'extendedcrafting:luminessence',
-            A: 'gtceu:osmiridium_plate',
-            B: 'extendedcrafting:crystaltine_ingot'
-        })
+        'SL ',
+        'AB ',
+        '   '
+    ], {
+        S: 'gtceu:black_steel_plate',
+        L: 'extendedcrafting:luminessence',
+        A: 'gtceu:osmiridium_plate',
+        B: 'extendedcrafting:crystaltine_ingot'
+    })
 
     event.remove({ output: 'extendedcrafting:redstone_component' })
     event.shaped(
-            'extendedcrafting:redstone_component', [
-                'SL ',
-                'AB ',
-                '   '
-            ], {
-                S: 'gtceu:black_steel_plate',
-                L: 'extendedcrafting:luminessence',
-                A: 'gtceu:copper_plate',
-                B: 'gtceu:redstone_plate'
-            })
-        //Catalysts
+        'extendedcrafting:redstone_component', [
+        'SL ',
+        'AB ',
+        '   '
+    ], {
+        S: 'gtceu:black_steel_plate',
+        L: 'extendedcrafting:luminessence',
+        A: 'gtceu:copper_plate',
+        B: 'gtceu:redstone_plate'
+    })
+
     event.replaceInput({ id: /extendedcrafting/ }, 'extendedcrafting:black_iron_ingot', 'gtceu:black_steel_plate')
 
-event.remove({ output: 'extendedcrafting:the_ultimate_catalyst' })
+    //Catalysts
+    event.remove({ output: 'extendedcrafting:the_ultimate_catalyst' })
     event.shaped(
         'extendedcrafting:the_ultimate_catalyst', [
-            ' B ',
-            'ACE',
-            ' U '
-        ], {
-            A: 'extendedcrafting:advanced_catalyst',
-            B: 'extendedcrafting:basic_catalyst',
-            C: 'extendedcrafting:crystaltine_catalyst',
-            E: 'extendedcrafting:elite_catalyst',
-            U: 'extendedcrafting:ultimate_catalyst',
-        })
+        ' B ',
+        'ACE',
+        ' U '
+    ], {
+        A: 'extendedcrafting:advanced_catalyst',
+        B: 'extendedcrafting:basic_catalyst',
+        C: 'extendedcrafting:crystaltine_catalyst',
+        E: 'extendedcrafting:elite_catalyst',
+        U: 'extendedcrafting:ultimate_catalyst',
+    })
 
     // Tables
     event.remove({ output: 'extendedcrafting:basic_table' })
@@ -101,52 +102,65 @@ event.remove({ output: 'extendedcrafting:the_ultimate_catalyst' })
     event.remove({ output: 'extendedcrafting:advanced_table' })
     event.shaped(
         'extendedcrafting:advanced_table', [
-            'ABA',
-            'CDC',
-            'ABA'
-        ], {
-            A: 'extendedcrafting:advanced_component',
-            B: 'extendedcrafting:basic_catalyst',
-            C: 'craftingstation:crafting_station',
-            D: 'extendedcrafting:advanced_catalyst'
-        })
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        A: 'extendedcrafting:advanced_component',
+        B: 'extendedcrafting:basic_catalyst',
+        C: 'craftingstation:crafting_station',
+        D: 'extendedcrafting:advanced_catalyst'
+    })
 
     event.remove({ output: 'extendedcrafting:elite_table' })
     event.recipes.extendedcrafting.shaped_table(
         'extendedcrafting:elite_table', [
-            'ASESA',
-            'SCCCS',
-            'ECTCE',
-            'SCCCS',
-            'ASESA'
-        ], {
-            A: 'gtceu:aluminium_block',
-            S: 'gtceu:black_steel_plate',
-            E: 'extendedcrafting:elite_catalyst',
-            C: 'extendedcrafting:elite_component',
-            T: 'extendedcrafting:advanced_table'
-        }, 2
+        'ASESA',
+        'SCCCS',
+        'ECTCE',
+        'SCCCS',
+        'ASESA'
+    ], {
+        A: 'gtceu:aluminium_block',
+        S: 'gtceu:black_steel_plate',
+        E: 'extendedcrafting:elite_catalyst',
+        C: 'extendedcrafting:elite_component',
+        T: 'extendedcrafting:advanced_table'
+    }, 2
     )
     event.remove({ output: 'extendedcrafting:ultimate_table' })
     event.recipes.extendedcrafting.shaped_table(
         'extendedcrafting:ultimate_table', [
-            'ESSCSSE',
-            'SUUUUUS',
-            'SUSRSUS',
-            'CURTRUC',
-            'SUSRSUS',
-            'SUUUUUS',
-            'ESSCSSE'
-        ], {
-            E: 'minecraft:emerald_block',
-            S: 'gtceu:black_steel_plate',
-            C: 'extendedcrafting:the_ultimate_catalyst',
-            U: 'extendedcrafting:ultimate_component',
-            R: 'extendedcrafting:crystaltine_component',
-            T: 'extendedcrafting:elite_table'
-        }, 3
+        'ESSCSSE',
+        'SUUUUUS',
+        'SUSRSUS',
+        'CURTRUC',
+        'SUSRSUS',
+        'SUUUUUS',
+        'ESSCSSE'
+    ], {
+        E: 'minecraft:emerald_block',
+        S: 'gtceu:black_steel_plate',
+        C: 'extendedcrafting:the_ultimate_catalyst',
+        U: 'extendedcrafting:ultimate_component',
+        R: 'extendedcrafting:crystaltine_component',
+        T: 'extendedcrafting:elite_table'
+    }, 3
     )
 
+    event.remove({ output: 'extendedcrafting:crafting_core' })
+    event.shaped(
+        'extendedcrafting:crafting_core', [
+        'ABA',
+        'CDC',
+        'ABA'
+    ], {
+        A: 'gtceu:black_steel_plate',
+        B: 'extendedcrafting:elite_catalyst',
+        C: 'extendedcrafting:elite_component',
+        D: 'gtceu:tungsten_carbide_block'
+    })
+    
     //        let tables = ['extendedcrafting:advanced_table', 'extendedcrafting:elite_table', 'extendedcrafting:ultimate_table']
     //        tables.forEach(table => {
     //            event.shapeless(2x table, [table])
