@@ -2006,19 +2006,9 @@
 		{
 			dependencies: ["0B6196692F9E176D"]
 			description: [
-				"⠀⣞⢽⢪⢣⢣⢣⢫⡺⡵⣝⡮⣗⢷⢽⢽⢽⣮⡷⡽⣜⣜⢮⢺⣜⢷⢽⢝⡽⣝"
-				"⠸⡸⠜⠕⠕⠁⢁⢇⢏⢽⢺⣪⡳⡝⣎⣏⢯⢞⡿⣟⣷⣳⢯⡷⣽⢽⢯⣳⣫⠇"
-				"⠀⠀⢀⢀⢄⢬⢪⡪⡎⣆⡈⠚⠜⠕⠇⠗⠝⢕⢯⢫⣞⣯⣿⣻⡽⣏⢗⣗⠏⠀"
-				"⠀⠪⡪⡪⣪⢪⢺⢸⢢⢓⢆⢤⢀⠀⠀⠀⠀⠈⢊⢞⡾⣿⡯⣏⢮⠷⠁⠀⠀"
-				"⠀⠀⠀⠈⠊⠆⡃⠕⢕⢇⢇⢇⢇⢇⢏⢎⢎⢆⢄⠀⢑⣽⣿⢝⠲⠉⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⠀⡿⠂⠠⠀⡇⢇⠕⢈⣀⠀⠁⠡⠣⡣⡫⣂⣿⠯⢪⠰⠂⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⡦⡙⡂⢀⢤⢣⠣⡈⣾⡃⠠⠄⠀⡄⢱⣌⣶⢏⢊⠂⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⢝⡲⣜⡮⡏⢎⢌⢂⠙⠢⠐⢀⢘⢵⣽⣿⡿⠁⠁⠀⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⠨⣺⡺⡕⡕⡱⡑⡆⡕⡅⡕⡜⡼⢽⡻⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⣼⣳⣫⣾⣵⣗⡵⡱⡡⢣⢑⢕⢜⢕⡝⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⣴⣿⣾⣿⣿⣿⡿⡽⡑⢌⠪⡢⡣⣣⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⡟⡾⣿⢿⢿⢵⣽⣾⣼⣘⢸⢸⣞⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⠁⠇⠡⠩⡫⢿⣝⡻⡮⣒⢽⠋⠀⠀⠀⠀⠀"
+				"&6Draconic Cores&r are the first crafting step into &bDraconic Evolution&r."
+				""
+				"These serve as the basis for crafting many items and can be upgraded into different tiers of cores via &eFusion Crafting&r."
 			]
 			id: "7C89BC235C988689"
 			shape: "hexagon"
@@ -2027,7 +2017,7 @@
 				item: "draconicevolution:draconium_core"
 				type: "item"
 			}]
-			title: "No Draconic Evolution?"
+			title: "Draconic Cores"
 			x: 25.25d
 			y: 8.25d
 		}
@@ -2081,26 +2071,18 @@
 				item: "draconicevolution:dragon_heart"
 				type: "item"
 			}]
-			title: "No Draconic Evolution?"
+			title: "Dragon Hearts"
 			x: 23.25d
 			y: 18.25d
 		}
 		{
 			dependencies: ["7C89BC235C988689"]
 			description: [
-				"⠀⣞⢽⢪⢣⢣⢣⢫⡺⡵⣝⡮⣗⢷⢽⢽⢽⣮⡷⡽⣜⣜⢮⢺⣜⢷⢽⢝⡽⣝"
-				"⠸⡸⠜⠕⠕⠁⢁⢇⢏⢽⢺⣪⡳⡝⣎⣏⢯⢞⡿⣟⣷⣳⢯⡷⣽⢽⢯⣳⣫⠇"
-				"⠀⠀⢀⢀⢄⢬⢪⡪⡎⣆⡈⠚⠜⠕⠇⠗⠝⢕⢯⢫⣞⣯⣿⣻⡽⣏⢗⣗⠏⠀"
-				"⠀⠪⡪⡪⣪⢪⢺⢸⢢⢓⢆⢤⢀⠀⠀⠀⠀⠈⢊⢞⡾⣿⡯⣏⢮⠷⠁⠀⠀"
-				"⠀⠀⠀⠈⠊⠆⡃⠕⢕⢇⢇⢇⢇⢇⢏⢎⢎⢆⢄⠀⢑⣽⣿⢝⠲⠉⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⠀⡿⠂⠠⠀⡇⢇⠕⢈⣀⠀⠁⠡⠣⡣⡫⣂⣿⠯⢪⠰⠂⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⡦⡙⡂⢀⢤⢣⠣⡈⣾⡃⠠⠄⠀⡄⢱⣌⣶⢏⢊⠂⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⢝⡲⣜⡮⡏⢎⢌⢂⠙⠢⠐⢀⢘⢵⣽⣿⡿⠁⠁⠀⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⠨⣺⡺⡕⡕⡱⡑⡆⡕⡅⡕⡜⡼⢽⡻⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⣼⣳⣫⣾⣵⣗⡵⡱⡡⢣⢑⢕⢜⢕⡝⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⣴⣿⣾⣿⣿⣿⡿⡽⡑⢌⠪⡢⡣⣣⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⡟⡾⣿⢿⢿⢵⣽⣾⣼⣘⢸⢸⣞⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⠁⠇⠡⠩⡫⢿⣝⡻⡮⣒⢽⠋⠀⠀⠀⠀⠀"
+				"&bDraconic Evolution&r features &eFusion Crafting&r, which requires a &6Fusion Crafting Core&r and up to ten injectors of the appropriate tier."
+				""
+				"You'll need eight &6Basic Fusion Crafting Injectors&r to upgrade any additional injectors you make to Wyvern Tier."
+				""
+				"Yes, that means you should plan to make more than eight. If you really want to plan ahead, make thirty-four of these."
 			]
 			icon: "draconicevolution:basic_crafting_injector"
 			id: "713FAECEE5046121"
@@ -2118,26 +2100,16 @@
 					type: "item"
 				}
 			]
-			title: "No Draconic Evolution?"
+			title: "Basic Fusion Injector"
 			x: 27.25d
 			y: 8.25d
 		}
 		{
 			dependencies: ["713FAECEE5046121"]
 			description: [
-				"⠀⣞⢽⢪⢣⢣⢣⢫⡺⡵⣝⡮⣗⢷⢽⢽⢽⣮⡷⡽⣜⣜⢮⢺⣜⢷⢽⢝⡽⣝"
-				"⠸⡸⠜⠕⠕⠁⢁⢇⢏⢽⢺⣪⡳⡝⣎⣏⢯⢞⡿⣟⣷⣳⢯⡷⣽⢽⢯⣳⣫⠇"
-				"⠀⠀⢀⢀⢄⢬⢪⡪⡎⣆⡈⠚⠜⠕⠇⠗⠝⢕⢯⢫⣞⣯⣿⣻⡽⣏⢗⣗⠏⠀"
-				"⠀⠪⡪⡪⣪⢪⢺⢸⢢⢓⢆⢤⢀⠀⠀⠀⠀⠈⢊⢞⡾⣿⡯⣏⢮⠷⠁⠀⠀"
-				"⠀⠀⠀⠈⠊⠆⡃⠕⢕⢇⢇⢇⢇⢇⢏⢎⢎⢆⢄⠀⢑⣽⣿⢝⠲⠉⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⠀⡿⠂⠠⠀⡇⢇⠕⢈⣀⠀⠁⠡⠣⡣⡫⣂⣿⠯⢪⠰⠂⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⡦⡙⡂⢀⢤⢣⠣⡈⣾⡃⠠⠄⠀⡄⢱⣌⣶⢏⢊⠂⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⢝⡲⣜⡮⡏⢎⢌⢂⠙⠢⠐⢀⢘⢵⣽⣿⡿⠁⠁⠀⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⠨⣺⡺⡕⡕⡱⡑⡆⡕⡅⡕⡜⡼⢽⡻⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⣼⣳⣫⣾⣵⣗⡵⡱⡡⢣⢑⢕⢜⢕⡝⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⣴⣿⣾⣿⣿⣿⡿⡽⡑⢌⠪⡢⡣⣣⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⡟⡾⣿⢿⢿⢵⣽⣾⣼⣘⢸⢸⣞⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-				"⠀⠀⠀⠀⠁⠇⠡⠩⡫⢿⣝⡻⡮⣒⢽⠋⠀⠀⠀⠀⠀"
+				"&6Wyvern Cores&r are the second tier of cores, used for intermediate crafting recipes."
+				""
+				"Each Wyvern Core is made via fusion crafting and the setup needs eight &6Basic Fusion Crafting Injectors&r."
 			]
 			id: "20CB8F878CADA235"
 			shape: "hexagon"
@@ -2146,7 +2118,7 @@
 				item: "draconicevolution:wyvern_core"
 				type: "item"
 			}]
-			title: "No Draconic Evolution?"
+			title: "Wyvern Core"
 			x: 27.25d
 			y: 10.25d
 		}
@@ -2174,7 +2146,7 @@
 				item: "draconicevolution:awakened_crafting_injector"
 				type: "item"
 			}]
-			title: "No Draconic Evolution?"
+			title: "Draconic Fusion Injectors"
 			x: 25.25d
 			y: 12.25d
 		}
@@ -2202,7 +2174,7 @@
 				item: "draconicevolution:wyvern_crafting_injector"
 				type: "item"
 			}]
-			title: "No Draconic Evolution?"
+			title: "Wyvern Fusion Injectors"
 			x: 27.25d
 			y: 12.25d
 		}
@@ -2231,7 +2203,7 @@
 				item: "kubejs:microminer_t8"
 				type: "item"
 			}]
-			title: "The Eighth Micro Miner."
+			title: "Tier Eight Micro Miner"
 			x: 27.25d
 			y: 15.25d
 		}
@@ -2307,7 +2279,7 @@
 				item: "draconicevolution:awakened_core"
 				type: "item"
 			}]
-			title: "No Draconic Evolution?"
+			title: "Awakened Core"
 			x: 24.75d
 			y: 21.0d
 		}
@@ -2335,7 +2307,7 @@
 				item: "draconicevolution:reactor_core"
 				type: "item"
 			}]
-			title: "No Draconic Evolution?"
+			title: "Draconic Reactor Core"
 			x: 22.75d
 			y: 21.0d
 		}
@@ -2394,7 +2366,7 @@
 				item: "draconicevolution:reactor_stabilizer"
 				type: "item"
 			}]
-			title: "No Draconic Evolution?"
+			title: "Reactor Stabilizer"
 			x: 24.75d
 			y: 24.0d
 		}
@@ -2422,7 +2394,7 @@
 				item: "draconicevolution:chaos_shard"
 				type: "item"
 			}]
-			title: "No Draconic Evolution?"
+			title: "Chaos Shards"
 			x: 26.75d
 			y: 21.0d
 		}
@@ -2484,7 +2456,7 @@
 				item: "draconicevolution:chaotic_crafting_injector"
 				type: "item"
 			}]
-			title: "No Draconic Evolution?"
+			title: "Chaotic Fusion Injectors"
 			x: 29.25d
 			y: 24.0d
 		}
@@ -2567,7 +2539,7 @@
 					type: "item"
 				}
 			]
-			title: "No Draconic Evolution?"
+			title: "Power Storage on a Massive Level"
 			x: 30.25d
 			y: 12.25d
 		}
