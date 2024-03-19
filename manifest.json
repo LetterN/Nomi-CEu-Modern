@@ -1,6 +1,10 @@
 {
     "author": "Nomifactory CEu Modern Team",
     "files": [{
+            "projectID": 627196,
+            "fileID": 5090810,
+            "required": true
+        }, {
             "projectID": 570073,
             "fileID": 5093329,
             "required": true
