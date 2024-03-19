@@ -1,6 +1,7 @@
 ServerEvents.recipes(event => {
 
     event.replaceInput({ id: /packaged/ }, 'extendedcrafting:black_iron_ingot', 'gtceu:black_steel_plate')
+    event.replaceInput({ id: /packaged/ }, 'extendedcrafting:frame', 'gtceu:tungsten_carbide_block')
 
     event.remove({ output: 'packagedauto:package_component' })
     event.shaped(
