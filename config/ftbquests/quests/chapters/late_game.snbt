@@ -2011,6 +2011,11 @@
 				"These serve as the basis for crafting many items and can be upgraded into different tiers of cores via &eFusion Crafting&r."
 			]
 			id: "7C89BC235C988689"
+			rewards: [{
+				id: "7E797523F3F19768"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "712064FEEFCC29AA"
@@ -2051,6 +2056,11 @@
 			]
 			description: ["&6Dragon Hearts&r are needed for both &6Awakened Draconium&r and &6The Ultimate Material&r."]
 			id: "7FAB6FD0A054443E"
+			rewards: [{
+				id: "2AA894050D239DEE"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "7615C990816E6132"
@@ -2072,6 +2082,11 @@
 			]
 			icon: "draconicevolution:basic_crafting_injector"
 			id: "713FAECEE5046121"
+			rewards: [{
+				id: "1334EFA413965845"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [
 				{
@@ -2098,6 +2113,11 @@
 				"Each Wyvern Core is made via fusion crafting and the setup needs eight &6Basic Fusion Crafting Injectors&r."
 			]
 			id: "20CB8F878CADA235"
+			rewards: [{
+				id: "6C1605F1E280EA28"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "5A46206776E20233"
@@ -2116,6 +2136,11 @@
 				"You'll need a fusion crafting setup with ten of these for the next tier of injector, and the next tier you'll also need ten injectors, so consider making 20 of these."
 			]
 			id: "2358A5CF22FF5495"
+			rewards: [{
+				id: "0022ECDC55B22DC3"
+				item: "kubejs:nomi_dollar"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "09CD18933F28FA28"
@@ -2134,6 +2159,12 @@
 				"Technically you only need six of these to start making the next tier of injectors, but some recipes will need more than that. Plan on making at least twenty-six of these."
 			]
 			id: "6F5579E1646634C7"
+			rewards: [{
+				count: 2
+				id: "049628C1CAA8417E"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "581D806823B709C3"
@@ -2229,6 +2260,11 @@
 				"These cores are made with &6Awakened Draconium&r and also cost &e3 Billion RF&r to craft."
 			]
 			id: "03F04B4005F2CBE1"
+			rewards: [{
+				id: "6F7838D02F126912"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "71171679FDF638A6"
@@ -2247,6 +2283,11 @@
 				"This is an important component in the Tier Nine and Tier Ten Micro Miners, as well as some Endgame items."
 			]
 			id: "6ABD83B58FADD4DF"
+			rewards: [{
+				id: "3835B0C85300B9AF"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "69DC07184B74DB07"
@@ -2296,6 +2337,11 @@
 				"They are made in a Chaotic Tier fusion crafting setup, requiring a whopping &e56 Billion total RF each&r. You're gonna need some serious power generation and crafting infrastructure to make everything for these."
 			]
 			id: "483652BAEF59E125"
+			rewards: [{
+				id: "6D6D92F23F1DCEA5"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "6D27E0C7357E8F5A"
@@ -2314,6 +2360,11 @@
 				"They are the base material for Chaotic Tier materials and come exclusively from Tier Eight Micro Miners. You'll need the Tier Seven Micro Miner for the &6Lair of the Chaos Dragon Data&r."
 			]
 			id: "235C1E5B2C58B5AF"
+			rewards: [{
+				id: "7ADB865F026B73CB"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "31B73CD828CA2128"
@@ -2367,6 +2418,12 @@
 				"Hope you've got those Tier Eight Micro Miners automated."
 			]
 			id: "738A141D31AD7CE3"
+			rewards: [{
+				count: 5
+				id: "284D36F54887F2BB"
+				item: "kubejs:nomi_dollar"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -2434,6 +2491,12 @@
 			]
 			icon: "draconicevolution:energy_core"
 			id: "48D3640053770BD8"
+			rewards: [{
+				count: 2
+				id: "5D820B09C4CFB783"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [
