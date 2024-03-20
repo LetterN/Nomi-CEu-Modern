@@ -156,10 +156,20 @@ StartupEvents.registry('item', event => {
     event.create('glitch_fragment').displayName('\u00A7bGlitch Fragment')
     event.create('glitch_heart').displayName('\u00A7bGlitch Heart')
     event.create('glitch_infused_ingot').displayName('\u00A7bGlitch Infused Ingot')
-    event.create('glitch_infused_helmet', 'helmet').tier('netherite').displayName('\u00A7bGlitch Infused Helmet')
-    event.create('glitch_infused_chestplate', 'chestplate').tier('netherite').displayName('\u00A7bGlitch Infused Chestplate')
-    event.create('glitch_infused_leggings', 'leggings').tier('netherite').displayName('\u00A7bGlitch Infused Leggings')
-    event.create('glitch_infused_boots', 'boots').tier('netherite').displayName('\u00A7bGlitch Infused Boots')
+    event.create('glitch_infused_helmet', 'helmet').tier('glitch').displayName('\u00A7bGlitch Infused Helmet')
+    event.create('glitch_infused_chestplate', 'chestplate').tier('glitch').displayName('\u00A7bGlitch Infused Chestplate')
+    event.create('glitch_infused_leggings', 'leggings').tier('glitch').displayName('\u00A7bGlitch Infused Leggings')
+    event.create('glitch_infused_boots', 'boots').tier('glitch').displayName('\u00A7bGlitch Infused Boots')
+})
+
+ItemEvents.armorTierRegistry(event => {
+    event.add("glitch", (tier) => {
+        tier.durabilityMultiplier = 15
+        tier.equipSound = 'minecraft:item.armor.equip_iron'
+        tier.toughness = 4.0
+        tier.slotProtections = [3, 10, 6, 3]
+    })
+
 })
 
 
