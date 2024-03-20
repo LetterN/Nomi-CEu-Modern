@@ -20,10 +20,6 @@ StartupEvents.registry('item', event => {
     placeHolder("draconic_evolution_ender_energy_manipulator");
     placeHolder("advanced_rocketry_warp_core");
     placeHolder("advanced_rocketry_warp_controller");
-    placeHolder("nuclearcraft_fission_reactor");
-    placeHolder("nuclearcraft_fission_reactor_port");
-    placeHolder("ender_star");
-    placeHolder("endest_star");
     placeHolder("ultimate_generator") // TODO: I hate this.
     placeHolder("reactant_dynamo")
     placeHolder("flight_control_unit")

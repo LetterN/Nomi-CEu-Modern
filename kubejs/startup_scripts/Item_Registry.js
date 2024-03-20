@@ -97,6 +97,8 @@ StartupEvents.registry('item', event => {
     event.create('moon_dust').displayName("Moon Dust")
     event.create('dilithium_crystal').displayName("Dilithium Crystal")
     event.create('crystal_matrix_plate').tag('forge:plates/crystal_matrix')
+    event.create('ender_star').displayName('\u00A7dEnder Star').glow(true)
+    event.create('endest_star').displayName('\u00A7dEndest Star').glow(true)
 
     //TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
     event.create('compressed_octadic_capacitor').displayName("Compressed Octadic Capacitor")
