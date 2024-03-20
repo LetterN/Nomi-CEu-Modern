@@ -76,7 +76,7 @@
 					type: "item"
 				}
 			]
-			title: "Medium Microverse Projector"
+			title: "Advanced Microverse Projector"
 			x: 3.0d
 			y: -2.0d
 		}
@@ -1804,7 +1804,10 @@
 			y: 16.75d
 		}
 		{
-			dependencies: ["5792330C6E5B87A3"]
+			dependencies: [
+				"5792330C6E5B87A3"
+				"0562D9F4C441EAF9"
+			]
 			description: ["A complex plating material used exclusively for the Tier Nine Micro Miner."]
 			id: "57D9FA04817CB92F"
 			rewards: [{
@@ -1823,7 +1826,7 @@
 			y: 18.25d
 		}
 		{
-			dependencies: ["5792330C6E5B87A3"]
+			dependencies: ["7FAB6FD0A054443E"]
 			description: [
 				"You don't need it just yet, but you can make it now."
 				""
@@ -1848,6 +1851,7 @@
 			dependencies: [
 				"2358A5CF22FF5495"
 				"7E3A179376673590"
+				"0B6196692F9E176D"
 			]
 			description: [
 				"The source of &6Dragon Hearts&r and the valuable &6Lair of The Chaos Guardian Data&r."
@@ -1903,8 +1907,6 @@
 				"15FAEE3F625265F4"
 			]
 			description: [
-				"Time to get fusing!"
-				""
 				"The &3Fusion Reactor&r is a multiblock that uses enormous amounts of energy to fuse fluids into new elements. This one is less flexible than the previous GregTech multiblocks, as you can only put hatches where the preview shows. &6Sneak-right click&r the controller to enable the in-world preview."
 				""
 				"The &bJEI&r preview shows &eall valid hatch locations&r, but you don't actually need that many fluid hatches. You can replace any of the hatch positions in the structure with &2Fusion Machine Casings&r as long as you have at least &atwo Fluid Input Hatches&r and &aone Fluid Output Hatch&r. It's possible to use input/output hatches in every valid location, if you prefer."
@@ -1930,6 +1932,7 @@
 				type: "item"
 			}]
 			size: 2.0d
+			subtitle: "Time to get fusing!"
 			tasks: [
 				{
 					id: "58C69AD21BA53BEB"
@@ -2004,7 +2007,7 @@
 			y: 8.25d
 		}
 		{
-			dependencies: ["0B6196692F9E176D"]
+			dependencies: ["1CC092A2F2CD4589"]
 			description: [
 				"&6Draconic Cores&r are the first crafting step into &bDraconic Evolution&r."
 				""
@@ -2049,11 +2052,7 @@
 			y: 10.25d
 		}
 		{
-			dependencies: [
-				"57D9FA04817CB92F"
-				"5FE96C30454A0374"
-				"4DF92773C82F4AAC"
-			]
+			dependencies: ["5FE96C30454A0374"]
 			description: ["&6Dragon Hearts&r are needed for both &6Awakened Draconium&r and &6The Ultimate Material&r."]
 			id: "7FAB6FD0A054443E"
 			rewards: [{
@@ -2303,6 +2302,7 @@
 				"57D9FA04817CB92F"
 				"619D94FE1D9834FA"
 				"6ABD83B58FADD4DF"
+				"483652BAEF59E125"
 			]
 			description: [
 				"Combines &bStellar Creation Data&r into the &dUniverse Creation Data&r, which is a crucial component for the Tier Ten Micro Miner mission."
@@ -2328,8 +2328,8 @@
 		}
 		{
 			dependencies: [
-				"6BF4A76C5B84EEE9"
 				"03F04B4005F2CBE1"
+				"738A141D31AD7CE3"
 			]
 			description: [
 				"The &6Reactor Stabilizer&r is a component needed for the Tier Nine and Tier Ten Micro Miners, as well as a component in a few Endgame recipes."
@@ -2376,7 +2376,11 @@
 			y: 21.0d
 		}
 		{
-			dependencies: ["2D47BFA44BDB5E6A"]
+			dependencies: [
+				"2D47BFA44BDB5E6A"
+				"7D29C79DE1CCA2A2"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"&6Neutronium&r is a hyper-dense material normally found in the hearts of neutron stars: the collapsed cores of stars between ten and thirty times the size of the sun."
 				""
@@ -2408,7 +2412,6 @@
 			dependencies: [
 				"22E50A6923EBF5CB"
 				"235C1E5B2C58B5AF"
-				"483652BAEF59E125"
 			]
 			description: [
 				"The highest tier of fusion crafting injectors. You will need at least ten of these to reach the &dCreative Tank&r."
@@ -2713,7 +2716,7 @@
 		}
 		{
 			dependencies: ["3E51686E2DBD380F"]
-			description: [" &6TNT&r is an explosive made from &9Toluene&r, a distillation byproduct of &9Wood Tar&r or various &eSteam-Cracked Fuels&r. Besides its typical uses in Minecraft, it is a crafting ingredient you can use in the &3Implosion Compressor&r."]
+			description: ["&6TNT&r is an explosive made from &9Toluene&r, a distillation byproduct of &9Wood Tar&r or various &eSteam-Cracked Fuels&r. Besides its typical uses in Minecraft, it is a crafting ingredient you can use in the &3Implosion Compressor&r."]
 			id: "25B0271106684DF7"
 			rewards: [{
 				id: "3025735A47D591DE"
@@ -3039,7 +3042,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["5EE23A29090BD374"]
+			dependencies: [
+				"5EE23A29090BD374"
+				"79EFCD8E01384C0C"
+			]
 			description: [
 				"The only novel ingredient is &6Tritanium Frames&r."
 				""
