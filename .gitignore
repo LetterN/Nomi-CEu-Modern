@@ -48,3 +48,4 @@ config/embeddium++.toml
 defaultconfigs/ftbultimine/ftbultimine-client.snbt
 defaultconfigs/ftbultimine/ftbultimine-server.snbt
 config/emi.css
+config/connector_global_mod_aliases.json
