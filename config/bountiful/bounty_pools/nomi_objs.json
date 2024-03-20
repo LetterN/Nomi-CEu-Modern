@@ -30,7 +30,7 @@
 				"min": 2,
 				"max": 5
 			},
-			"unitWorth": 5,
+			"unitWorth": 15,
 			"rarity": "UNCOMMON"
 		},
 		"all_obj_ender_widget": {
@@ -40,7 +40,7 @@
 				"min": 2,
 				"max": 5
 			},
-			"unitWorth": 6,
+			"unitWorth": 20,
 			"rarity": "EPIC"
 		},
 		"all_obj_lv_con": {
@@ -50,7 +50,7 @@
 				"min": 1,
 				"max": 5
 			},
-			"unitWorth": 7,
+			"unitWorth": 10,
 			"rarity": "UNCOMMON"
 		},
 		"all_obj_lv_pump": {
@@ -60,7 +60,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 8,
+			"unitWorth": 10,
 			"rarity": "UNCOMMON"
 		},
 		"all_obj_lv_robot_arm": {
@@ -70,17 +70,17 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 10,
+			"unitWorth": 15,
 			"rarity": "EPIC"
 		},
 		"all_obj_lv_circuit": {
 			"type": "item",
 			"content": "gtceu:basic_electronic_circuit",
 			"amount": {
-				"min": 2,
-				"max": 5
+				"min": 5,
+				"max": 10
 			},
-			"unitWorth": 10,
+			"unitWorth": 12,
 			"rarity": "RARE"
 		}
 	
