@@ -2,7 +2,7 @@
 GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('omnium', 130, 234, -1, null, 'Nm', false)
     event.create('draconium', 149, 234, -1, null, 'Dc', false)
-    event.create('awakened_draconium', 149, 264, -1, null, 'Dc*', false)
+    event.create('draconium_awakened', 149, 264, -1, null, 'Dc*', false)
     event.create('taranium', 149, 264, -1, null, 'Tn', false)
 })
 
@@ -18,9 +18,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_DENSE)
         .cableProperties('524288', '1', '0', true);
 
-    event.create("awakened_draconium")
+    event.create("draconium_awakened")
         .ingot().fluid()
-        .element(GTElements.get("awakened_draconium"))
+        .element(GTElements.get("draconium_awakened"))
         .color(0xf58742)
         .iconSet('metallic')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
@@ -502,8 +502,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 // Misc
 GTCEuStartupEvents.registry('gtceu:material', event => {
-event.create('elemental_reduction_fluid')
-.fluid()
-.color(0xbbddbd)
-.iconSet('elemental_reduction_fluid')
+    event.create('elemental_reduction_fluid')
+        .fluid()
+        .color(0xbbddbd)
+        .iconSet('elemental_reduction_fluid')
 })

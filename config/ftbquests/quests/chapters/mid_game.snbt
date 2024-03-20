@@ -1451,7 +1451,7 @@
 				type: "fluid"
 			}]
 			title: "&2Hydrogen Sulfide"
-			x: 45.0d
+			x: 43.25d
 			y: -4.5d
 		}
 		{
@@ -1474,7 +1474,7 @@
 				type: "item"
 			}]
 			title: "&2Refinery Gas"
-			x: 47.0d
+			x: 45.0d
 			y: -4.5d
 		}
 		{
@@ -1863,10 +1863,11 @@
 		{
 			dependencies: ["14F1FF4656693711"]
 			description: [
-				"The&3 Empowerer&r is a multiblock used to convert special crystalline materials into empowered variants."
+				"The &3Crafting Core&r is used to convert special crystalline materials into empowered variants."
 				""
-				"&5Currently, the multiblock doesn't care which item would goes in which slot. I would recommend still setting it where the item to be empowered is in the middle bus so your setup does not break when this is fixed."
+				"&5Currently, AA has not been completely ported to 1.20.1, in the meantime, you get the better option for empowerment from the get go!"
 			]
+			icon: "extendedcrafting:crafting_core"
 			id: "49C8716030809478"
 			rewards: [{
 				count: 2
@@ -1875,12 +1876,20 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "54BD95C8E2BF7DF4"
-				item: "gtceu:empowerment"
-				type: "item"
-			}]
-			title: "&dEmpowerer"
+			tasks: [
+				{
+					id: "54BD95C8E2BF7DF4"
+					item: "extendedcrafting:crafting_core"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "184D8B8C8770C62B"
+					item: "extendedcrafting:pedestal"
+					type: "item"
+				}
+			]
+			title: "&dEmpowererment"
 			x: 23.0d
 			y: 6.5d
 		}
@@ -3227,6 +3236,28 @@
 			title: "&dRTM Alloy"
 			x: 37.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["6D434F3B0E720A5A"]
+			description: [
+				"&2The Cracker gives you higher yields from cracking organic substances."
+				""
+				"&2New in GTCEu, many organic substances offer the option of being Severely or Lightly cracked, as well as Hydro or Steam cracked, with each one granting different ratios of distillates."
+			]
+			id: "60B16BB064E2FF4C"
+			rewards: [{
+				id: "70B5CA698487B70D"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "55F52E742F32D3A0"
+				item: "gtceu:cracker"
+				type: "item"
+			}]
+			title: "&2Cracker"
+			x: 47.0d
+			y: -4.5d
 		}
 	]
 	title: "Mid Game"

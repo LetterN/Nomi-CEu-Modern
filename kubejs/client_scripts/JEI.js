@@ -1,12 +1,12 @@
 // /kjs inventory will be your friend.
 
-REIEvents.hide('item', event => {
+JEIEvents.hideItems(event => {
     //Hides useless items
     event.hide(['ae2:vibration_chamber', 'hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper'])
 
     //i really hate these kind of mods
     event.hide('ironfurnaces:million_furnace')
-    event.hide(['ironfurnaces:crystal_furnace', 'ironfurnaces:emerald_furnace', 'ironfurnaces:item_spooky', 'ironfurnaces:item_xmas', 'ironfurnaces:item_copy', 'ironfurnaces:item_linker', 'ironfurnaces:rainbow_core', 'ironfurnaces:rainbow_plating', 'ironfurnaces:rainbow_coal', 'ironfurnaces:upgrade_iron', 'ironfurnaces:upgrade_gold', 'ironfurnaces:upgrade_diamond', 'ironfurnaces:upgrade_emerald', 'ironfurnaces:upgrade_obsidian', 'ironfurnaces:upgrade_crystal', 'ironfurnaces:upgrade_netherite', 'ironfurnaces:upgrade_copper', 'ironfurnaces:upgrade_obsidian2', 'ironfurnaces:upgrade_silver', 'ironfurnaces:upgrade_obsidian2', 'ironfurnaces:upgrade_iron2', 'ironfurnaces:upgrade_gold2', 'ironfurnaces:upgrade_silver2', 'ironfurnaces:allthemodium_furnace', 'ironfurnaces:vibranium_furnace', 'ironfurnaces:unobtainium_furnace', 'ironfurnaces:upgrade_allthemodium', 'ironfurnaces:upgrade_vibranium', 'ironfurnaces:upgrade_unobtainium', 'ironfurnaces:item_heater', 'ironfurnaces:augment_blasting', 'ironfurnaces:augment_smoking', 'ironfurnaces:heater', 'ironfurnaces:augment_generator'])
+    event.hide(['ironfurnaces:crystal_furnace', 'ironfurnaces:emerald_furnace', 'ironfurnaces:item_spooky', 'ironfurnaces:item_xmas', 'ironfurnaces:item_linker', 'ironfurnaces:rainbow_core', 'ironfurnaces:rainbow_plating', 'ironfurnaces:rainbow_coal', 'ironfurnaces:upgrade_iron', 'ironfurnaces:upgrade_gold', 'ironfurnaces:upgrade_diamond', 'ironfurnaces:upgrade_emerald', 'ironfurnaces:upgrade_obsidian', 'ironfurnaces:upgrade_crystal', 'ironfurnaces:upgrade_netherite', 'ironfurnaces:upgrade_copper', 'ironfurnaces:upgrade_obsidian2', 'ironfurnaces:upgrade_silver', 'ironfurnaces:upgrade_obsidian2', 'ironfurnaces:upgrade_iron2', 'ironfurnaces:upgrade_gold2', 'ironfurnaces:upgrade_silver2', 'ironfurnaces:allthemodium_furnace', 'ironfurnaces:vibranium_furnace', 'ironfurnaces:unobtainium_furnace', 'ironfurnaces:upgrade_allthemodium', 'ironfurnaces:upgrade_vibranium', 'ironfurnaces:upgrade_unobtainium', 'ironfurnaces:item_heater', 'ironfurnaces:augment_blasting', 'ironfurnaces:augment_smoking', 'ironfurnaces:heater', 'ironfurnaces:augment_generator'])
 
     //dml
     event.hide(['hostilenetworks:twilight_prediction'])
@@ -45,7 +45,7 @@ REIEvents.hide('item', event => {
 
     event.hide([/antiblocksrechiseled:.*?pressure_plate\S*/g, /antiblocksrechiseled:.*?button\S*/g, /antiblocksrechiseled:.*?stair\S*/g, /antiblocksrechiseled:.*?slab\S*/g, /antiblocksrechiseled:.*?border\b/g, /antiblocksrechiseled:.*?wool\S*/g])
 
-    event.hide('chiselandbits:block_bit')
+    event.hide(/chiselandbits:block_bit/i)
     event.hide(/ae2:facade/)
 
     //AA
@@ -70,34 +70,15 @@ REIEvents.hide('item', event => {
     //Backpacks
     event.hide('sophisticatedbackpacks:copper_backpack')
 
+    //EMI Hacky Fix
+    event.hide(['thermal:bronze_nugget', 'thermal:bronze_block', 'thermal:bronze_ingot', 'nuclearcraft:aluminum_ingot', 'thermal:electrum_plate', 'thermal:electrum_gear', 'thermal:enderium_gear', 'thermal:enderium_plate', 'nuclearcraft:enderium_dust', 'nuclearcraft:lead_dust', 'thermal:nickel_gear', 'thermal:nickel_plate', 'thermal:lumium_block', 'thermal:lumium_ingot', 'thermal:ruby_block', 'thermal:ruby_dust', 'nuclearcraft:platinum_plate', 'nuclearcraft:platinum_nugget', 'thermal:lumium_gear', 'thermal:lumium_plate', 'thermal:lead_gear', 'nuclearcraft:fluorite_dust', 'nuclearcraft:fluorite_gem', 'thermal:enderium_ingot', 'thermal:enderium_block', 'thermal:enderium_nugget', 'thermal:enderium_dust', 'thermal:electrum_dust', 'thermal:electrum_nugget', 'thermal:electrum_ingot', 'nuclearcraft:electrum_ingot', 'thermal:bronze_plate', 'nuclearcraft:nichrome_ingot', 'nuclearcraft:cobalt_ingot', 'thermal:bronze_gear', 'thermal:bronze_dust'])
+    event.hide(['thermal:invar_gear', 'thermal:invar_dust', 'nuclearcraft:osmiridium_ingot', 'thermal:invar_nugget', 'thermal:invar_ingot', 'thermal:invar_block', 'nuclearcraft:graphite_dust', 'thermal:lead_block', 'thermal:lead_ingot', 'thermal:silver_ingot', 'thermal:silver_block', 'thermal:tin_dust', 'thermal:tin_gear', 'thermal:sulfur_block', 'thermal:sulfur', 'thermal:sulfur_dust', 'nuclearcraft:sulfur_dust', 'nuclearcraft:hsla_steel_dust', 'nuclearcraft:steel_dust', 'nuclearcraft:hsla_steel_ingot', 'thermal:sapphire_block', 'nuclearcraft:platinum_dust', 'nuclearcraft:osmium_ingot', 'nuclearcraft:lead_plate', 'thermal:nickel_dust', 'thermal:nickel_nugget', 'thermal:nickel_ingot', 'thermal:nickel_block', 'nuclearcraft:osmium_dust', 'thermal:lead_nugget', 'thermal:lumium_dust', 'thermal:lumium_nugget', 'nuclearcraft:lead_ingot', 'thermal:lead_plate', 'thermal:lead_dust', 'thermal:invar_plate'])
+    event.hide(['thermal:signalum_plate', 'thermal:signalum_gear', 'thermal:signalum_dust', 'thermal:signalum_nugget', 'thermal:signalum_ingot', 'thermal:signalum_block', 'thermal:sapphire_gear', 'thermal:sapphire_dust', 'thermal:sapphire', 'thermal:tin_plate', 'nuclearcraft:steel_block', 'nuclearcraft:stainless_steel_ingot', 'nuclearcraft:steel_ingot', 'thermal:tin_block', 'nuclearcraft:zinc_block', 'nuclearcraft:zinc_dust', 'nuclearcraft:zinc_nugget', 'nuclearcraft:zinc_plate', 'nuclearcraft:tungsten_ingot', 'nuclearcraft:tungsten_dust', 'gtceu:tungsten_nugget', 'gtceu:tungsten_carbide_nugget', 'nuclearcraft:zinc_ingot', 'nuclearcraft:uranium_dust', 'nuclearcraft:uranium_block', 'thermal:tin_ingot', 'thermal:silver_plate', 'thermal:tin_nugget', 'thermal:silver_gear', 'thermal:silver_dust', 'thermal:silver_nugget', 'nuclearcraft:hsla_steel_plate', 'nuclearcraft:steel_plate', 'nuclearcraft:steel_nugget', 'nuclearcraft:platinum_ingot', 'nuclearcraft:platinum_block'])
+    event.hide(['draconicevolution:awakened_draconium_dust', 'nuclearcraft:chromium_ingot', 'nuclearcraft:hsla_steel_plate', 'nuclearcraft:hsla_steel_ingot', 'nuclearcraft:osmiridium_ingot', 'nuclearcraft:chromium_dust', 'nuclearcraft:manganese_plate', 'draconicevolution:draconium_ingot', 'nuclearcraft:yttrium_dust', 'nuclearcraft:beryllium_ingot', 'nuclearcraft:beryllium_block', 'nuclearcraft:palladium_dust', 'nuclearcraft:palladium_plate', 'enderio:end_steel_ingot', 'nuclearcraft:thorium_block', 'nuclearcraft:thorium_plate', 'nuclearcraft:thorium_nugget', 'enderio:end_steel_nugget', 'nuclearcraft:thorium_ingot', 'nuclearcraft:thorium_dust', 'nuclearcraft:palladium_ingot', 'nuclearcraft:niobium_titanium_ingot', 'nuclearcraft:titanium_dust', 'nuclearcraft:titanium_ingot', 'nuclearcraft:aluminum_block', 'nuclearcraft:aluminum_dust', 'nuclearcraft:aluminum_ingot', 'nuclearcraft:yttrium_ingot', 'nuclearcraft:hsla_steel_dust', 'nuclearcraft:aluminum_nugget', 'nuclearcraft:manganese_ingot', 'nuclearcraft:manganese_dust', 'draconicevolution:draconium_dust', 'draconicevolution:draconium_nugget', 'draconicevolution:awakened_draconium_ingot', 'draconicevolution:awakened_draconium_nugget'])
+    event.hide(['enderio:conductive_alloy_nugget', 'enderio:conductive_alloy_block', 'enderio:soularium_nugget', 'enderio:soularium_ingot', 'enderio:soularium_block', 'enderio:end_steel_block', 'nuclearcraft:beryllium_plate', 'nuclearcraft:beryllium_nugget', 'nuclearcraft:beryllium_dust', 'enderio:conductive_alloy_ingot', 'enderio:energetic_alloy_nugget', 'enderio:energetic_alloy_block', 'enderio:energetic_alloy_ingot', 'gtceu:neutronium_block', 'gtceu:neutronium_ingot', 'nuclearcraft:uranium_ingot', 'nuclearcraft:tungsten_carbide_ingot', 'enderio:dark_steel_block', 'enderio:dark_steel_nugget', 'enderio:dark_steel_ingot', 'gtceu:neutronium_nugget', 'enderio:pulsating_alloy_nugget', 'enderio:pulsating_alloy_ingot', 'enderio:pulsating_alloy_block', 'enderio:vibrant_alloy_ingot', 'enderio:vibrant_alloy_nugget', 'enderio:vibrant_alloy_block'])
+
 })
 
-REIEvents.hide('fluid', event => {
-    //event.hide(/nuclearcraft:/i)
-})
-
-
-
-
-
-
-
-
-REIEvents.removeCategories(event => {
-    event.yeet(['thermal:pulverizer', 'thermal:gourmand_fuel', 'thermal:disenchantement_fuel', 'thermal:lapidary_fuel'])
-    event.yeet(['enderio:alloy_smelting', 'thermal:furnace'])
-    event.yeet(['nuclearcraft:supercooler', 'nuclearcraft:rock_crusher', 'nuclearcraft:decay_hastener', 'nuclearcraft:irradiator', 'nuclearcraft:nuclear_furnace', 'nuclearcraft:extractor', 'nuclearcraft:electrolyzer', 'nuclearcraft:pressurizer', 'nuclearcraft:alloy_smelter', 'nuclearcraft:centrifuge', 'nuclearcraft:manufactory', 'nuclearcraft:gas_scrubber', 'nuclearcraft:fluid_enricher', 'nuclearcraft:isotope_separator', 'nuclearcraft:fluid_infuser', 'nuclearcraft:chemical_reactor', 'nuclearcraft:analyzer', 'nuclearcraft:ingot_former', 'nuclearcraft:pump', 'nuclearcraft:fuel_reprocessor', 'nuclearcraft:leacher', 'nuclearcraft:crystallizer', 'nuclearcraft:assembler', 'nuclearcraft:steam_turbine', 'nuclearcraft:melter'])
-    event.yeet('minecraft:plugins/tag')
-})
-
-REIEvents.groupEntries(event => {
-
-    const useNbt = ['chiselsandbits:block_bit']
-
-    useNbt.forEach(id => {
-        const item = Item.of(id)
-        const { namespace, path } = Utils.id(item.id)
-        event.groupSameItem(`kubejs:rei_groups/${namespace}/${path}`, item.name, item)
-    })
-
+JEIEvents.hideFluids(event => {
+    event.hide(/nuclearcraft:/)
 })

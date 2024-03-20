@@ -147,7 +147,7 @@ ServerEvents.recipes(event => {
             P: 'gtceu:electrum_flux_plate'
         }
     ).id('redstone_arsenal:materials/flux_plating')
-    })
+})
 
 // Vacuum Freezer
 // Draconic Superconductor Wire
@@ -169,7 +169,7 @@ ServerEvents.recipes(event => {
 
     //Draconic Stem Cells
     event.remove({ id: 'gtceu:chemical_reactor/stem_cells' })
-    event.remove({ id: 'gtceu:large_chemical_reactor/stem_cells'})
+    event.remove({ id: 'gtceu:large_chemical_reactor/stem_cells' })
     event.recipes.gtceu.chemical_reactor("draconic_stem_cells")
         .itemInputs('minecraft:dragon_egg')
         .inputFluids('gtceu:sterilized_growth_medium 500', 'gtceu:bacteria 500')
@@ -181,15 +181,15 @@ ServerEvents.recipes(event => {
 
     //Blast Furnace
     event.recipes.gtceu.electric_blast_furnace("quantum_fluxed_eternium_heavy_plating")
-        .itemInputs('10x redstone_arsenal:flux_plating', 'gtceu:awakened_draconium_plate', '16x kubejs:quantum_flux')
+        .itemInputs('10x redstone_arsenal:flux_plating', 'gtceu:draconium_awakened_plate', '16x kubejs:quantum_flux')
         .inputFluids('gtceu:krypton 1000')
         .itemOutputs('kubejs:quantum_fluxed_eternium_heavy_plating')
         .duration(200)
         .EUt(250000)
         .blastFurnaceTemp(9000)
 
-// Mote of omnium
-        event.recipes.gtceu.implosion_compressor("implosion_compressor_ominium_nugget")
+    // Mote of omnium
+    event.recipes.gtceu.implosion_compressor("implosion_compressor_ominium_nugget")
         .itemInputs('kubejs:mote_of_omnium', 'minecraft:tnt')
         .itemOutputs('gtceu:omnium_nugget')
         .duration(20)

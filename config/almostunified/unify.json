@@ -1,10 +1,9 @@
 {
     "modPriorities": [
-        "minecraft",
         "kubejs",
         "avaritia",
         "gtceu",
-        "thermal"
+        "minecraft"
     ],
     "stoneStrata": [
         "stone",
@@ -103,7 +102,13 @@
         "hsla_steel",
         "nichrome",
         "quartz",
-        "nether_quartz"
+        "nether_quartz",
+        "niobium",
+        "niobium_titanium",
+        "tungsten_carbide",
+        "yttrium",
+        "draconium",
+        "draconium_awakened"
     ],
     "priorityOverrides": {},
     "customTags": {},
@@ -118,5 +123,5 @@
         "cucumber:shaped_tag"
     ],
     "ignoredRecipes": [],
-    "itemsHidingJeiRei": false
+    "itemsHidingJeiRei": true
 }

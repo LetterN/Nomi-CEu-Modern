@@ -96,9 +96,7 @@ StartupEvents.registry('item', event => {
     event.create('radium_salt').displayName("Radium Salt").rarity('Epic')
     event.create('moon_dust').displayName("Moon Dust")
     event.create('dilithium_crystal').displayName("Dilithium Crystal")
-        //public static ItemBase REDSTONE_ARMOR_PLATE;
-        //public static ItemBase CARBON_ARMOR_PLATE;
-        //public static ItemBase LAPIS_ARMOR_PLATE;
+    event.create('crystal_matrix_plate').tag('forge:plates/crystal_matrix')
 
     //TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
     event.create('compressed_octadic_capacitor').displayName("Compressed Octadic Capacitor")
@@ -151,6 +149,15 @@ StartupEvents.registry('item', event => {
     //Extra Utilities 2
     event.create('resonating_crystal').displayName("Resonating Redstone Crystal")
     event.create('ender_shard')
+
+    //Glitch Armor
+    event.create('glitch_fragment').displayName('\u00A7bGlitch Fragment')
+    event.create('glitch_heart').displayName('\u00A7bGlitch Heart')
+    event.create('glitch_infused_ingot').displayName('\u00A7bGlitch Infused Ingot')
+    event.create('glitch_infused_helmet', 'helmet').tier('netherite').displayName('\u00A7bGlitch Infused Helmet')
+    event.create('glitch_infused_chestplate', 'chestplate').tier('netherite').displayName('\u00A7bGlitch Infused Chestplate')
+    event.create('glitch_infused_leggings', 'leggings').tier('netherite').displayName('\u00A7bGlitch Infused Leggings')
+    event.create('glitch_infused_boots', 'boots').tier('netherite').displayName('\u00A7bGlitch Infused Boots')
 })
 
 

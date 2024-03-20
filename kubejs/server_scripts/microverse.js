@@ -108,8 +108,8 @@ ServerEvents.recipes(event => {
             A: 'gtceu:ev_field_generator',
             B: 'gtceu:mv_super_chest',
             F: 'kubejs:signalum_micro_miner_core',
-            C: 'nuclearcraft:fission_reactor_controller', // TODO: REPLACE WITH REAL NC COMPONENT
-            P: 'nuclearcraft:fission_reactor_port', // TODO: REPLACE WITH REAL NC COMPONENT
+            C: 'nuclearcraft:fission_reactor_controller',
+            P: 'nuclearcraft:fission_reactor_port',
             T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:vibrant"}').strongNBT()
         }, 3
     )
@@ -152,7 +152,7 @@ ServerEvents.recipes(event => {
             L: 'kubejs:supercharged_laser_array',
             D: 'gtceu:double_draconium_plate',
             G: 'kubejs:advanced_micro_miner_guidance_system',
-            P: 'kubejs:draconic_evolution_particle_generator', // TODO: REPLACE WITH REAL DE COMPONENT
+            P: 'draconicevolution:particle_generator', // TODO: REPLACE WITH REAL DE COMPONENT
             A: 'gtceu:luv_field_generator',
             E: 'kubejs:draconic_evolution_ender_energy_manipulator', // TODO: REPLACE WITH REAL DE COMPONENT
             W: 'kubejs:warp_engine'
@@ -203,8 +203,8 @@ ServerEvents.recipes(event => {
             U: 'kubejs:universal_navigator',
             A: 'gtceu:uv_field_generator',
             B: 'gtceu:ev_super_chest',
-            R: 'kubejs:draconic_evolution_reactor_stabilizer', // TODO: REPLACE WITH THE REAL DE COMPONENT
-            C: 'kubejs:draconic_evolution_reactor_core', // TODO: REPLACE WITH THE REAL DE COMPONENT
+            R: 'draconicevolution:reactor_stabilizer', // TODO: REPLACE WITH THE REAL DE COMPONENT
+            C: 'draconicevolution:reactor_core', // TODO: REPLACE WITH THE REAL DE COMPONENT
             W: 'kubejs:warp_engine'
         }
     )
@@ -225,9 +225,9 @@ ServerEvents.recipes(event => {
         ], {
             N: 'gtceu:double_neutronium_plate',
             U: 'kubejs:universal_navigator',
-            C: 'kubejs:draconic_evolution_reactor_core', // TODO: REPLACE WITH THE REAL DE COMPONENT
+            C: 'draconicevolution:reactor_core', // TODO: REPLACE WITH THE REAL DE COMPONENT
             P: 'solarflux:sp_avaritia.neutronium',
-            R: 'kubejs:draconic_evolution_reactor_stabilizer', // TODO: REPLACE WITH THE REAL DE COMPONENT
+            R: 'draconicevolution:energy_core_stabilizer', // TODO: REPLACE WITH THE REAL DE COMPONENT
             A: 'gtceu:iv_quantum_chest',
             W: 'kubejs:warp_engine'
         }
