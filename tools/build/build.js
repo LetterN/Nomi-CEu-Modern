@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * Build script for nomifactory-modern
- *
- * This script uses Juke Build, read the docs here:
- * https://github.com/stylemistake/juke-build
- */
+* Build script for nomifactory-modern
+*
+* This script uses Juke Build, read the docs here:
+* https://github.com/stylemistake/juke-build
+*/
 
 import fs from 'fs';
 import { resolve } from 'path';
@@ -39,14 +39,33 @@ async function packMod(group) {
   fs.copyFileSync('dist/modlist.html', `dist/.tmp/${group}/modlist.html`)
 
   try {
-    await Juke.exec(`tar${process.platform === 'win32' ? '.exe' : ''}`, [
-      '-hacf',
-      `dist/${group}.zip`,
-      `--directory=dist/.tmp/${group}`,
-      'overrides',
-      'manifest.json',
-      'modlist.html'
-    ]);
+    let hasZipCmd = false;
+    try {
+      await Juke.exec('zip', ['--help'], { silent: true });
+      hasZipCmd = true;
+    } catch { /* noop */ }
+
+    if (hasZipCmd) {
+      Juke.chdir(`../../dist/.tmp/${group}`, import.meta.url);
+      await Juke.exec('zip', [
+        '-rqy',
+        `../../${group}.zip`,
+        'overrides',
+        'manifest.json',
+        'modlist.html',
+      ])
+      Juke.chdir('../..', import.meta.url);
+      return;
+    }
+
+    if (process.platform === 'win32') {
+      await Juke.exec('powershell', [
+        'Compress-Archive',
+        `-Path ${resolve(`dist\\.tmp\\${group}\\overrides`)},${resolve(`dist\\.tmp\\${group}\\manifest.json`)},${resolve(`dist\\.tmp\\${group}\\modlist.html`)}`,
+        `-DestinationPath ${resolve(`dist\\${group}.zip`)}`,
+      ])
+    }
+
   } catch (error) {
     Juke.logger.error(error);
     throw new Juke.ExitCode(1);
@@ -163,7 +182,7 @@ export const BuildDevTarget = new Juke.Target({
     return [
       "dist/dev/",
       "dist/.devtmp/",
-      // "dist/dev.zip",
+      "dist/dev.zip",
       ...includeList.map(v => `dist/dev/${v}`)
     ]
   },
@@ -179,7 +198,7 @@ export const BuildDevTarget = new Juke.Target({
     fs.cpSync('mods', 'dist/.devtmp', { recursive: true, force: true });
     fs.symlinkSync(resolve('dist/.devtmp'), resolve('dist/dev/mods'));
 
-    // await packMod("dev"); // manual copypaste
+    await packMod("dev");
   }
 })
 
@@ -189,7 +208,7 @@ export const BuildAllTarget = new Juke.Target({
 
 export const CleanCacheTarget = new Juke.Target({
   executes: async () => {
-    Juke.rm('dist/modcache');
+    Juke.rm('dist/modcache', { recursive: true });
     Juke.rm('dist/modlist.html');
   },
 })
@@ -200,6 +219,7 @@ export const CleanBuildTarget = new Juke.Target({
     Juke.rm('dist/dev', { recursive: true });
     Juke.rm('dist/server', { recursive: true });
     Juke.rm('dist/.devtmp', { recursive: true });
+    Juke.rm('dist/.tmp', { recursive: true });
     Juke.rm('dist/*.zip');
   },
 })

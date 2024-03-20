@@ -30,7 +30,7 @@ $Cache = "$BaseDir\.cache"
 if ($Env:TG_BOOTSTRAP_CACHE) {
 	$Cache = $Env:TG_BOOTSTRAP_CACHE
 }
-$NodeVersion = "14.16.1"
+$NodeVersion = "16.7.0"
 $NodeSource = "https://nodejs.org/download/release/v$NodeVersion/win-x64/node.exe"
 $NodeTargetDir = "$Cache\node-v$NodeVersion-x64"
 $NodeTarget = "$NodeTargetDir\node.exe"

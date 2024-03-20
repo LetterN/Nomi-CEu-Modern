@@ -15,8 +15,8 @@ if [ "$TG_BOOTSTRAP_CACHE" ]; then
 	Cache="$TG_BOOTSTRAP_CACHE"
 fi
 OldPWD="$PWD"
-NodeVersion="14.16.1"
-NodeFullVersion="node-v14-win-x64"
+NodeVersion="16.7.0"
+NodeFullVersion="node-v16-win-x64"
 NodeDir="$Cache/$NodeFullVersion"
 NodeExe="$NodeDir/node.exe"
 is_vendored="1"
