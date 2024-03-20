@@ -214,7 +214,7 @@ export const BuildDevTarget = new Juke.Target({
 })
 
 export const BuildAllTarget = new Juke.Target({
-  dependsOn: [DownloadModsTarget, BuildClientTarget, BuildServerTarget]
+  dependsOn: [BuildServerTarget, BuildClientTarget]
 })
 
 export const CleanCacheTarget = new Juke.Target({
