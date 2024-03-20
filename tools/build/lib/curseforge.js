@@ -49,16 +49,16 @@ export const DownloadCF = async (key, modInfo = {}, dest) => {
   dest = `${dest}${modDataJson.fileName}`
   // TODO hash chk
   // let's see if the file exists
-  if (fs.existsSync(dest)) {
-    const stats = fs.statSync(dest);
-    if (stats.size === modDataJson.fileLength) {
-      Juke.logger.info(`Skipped ${modDataJson.fileName}`)
-      return;
-    }
+  if (fs.existsSync(dest) && fs.statSync(dest).size === modDataJson.fileLength) {
+    Juke.logger.info(`Skipped ${modDataJson.fileName}`)
+    return;
   }
 
-  Juke.logger.info(`Downloading: ${dest}`)
+  Juke.logger.info(`Downloading: ${modDataJson.fileName}`)
   await download_file(modDataJson.downloadUrl, { headers: headers }, dest);
+  if (!fs.existsSync(dest) || fs.statSync(dest).size !== modDataJson.fileLength) {
+    Juke.logger.warn(`Download failed ${modDataJson.fileName}`)
+  }
 };
 
 export const UploadCF = async (key, options = {}) => {

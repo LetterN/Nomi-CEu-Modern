@@ -74,6 +74,11 @@ async function packMod(group) {
   }
 }
 
+const CheckParameter = new Juke.Parameter({
+  type: "boolean",
+  alias: 'c',
+})
+
 export const BuildModlistTarget = new Juke.Target({
   inputs: [
     'manifest.json',
@@ -99,12 +104,18 @@ export const BuildModlistTarget = new Juke.Target({
 })
 
 export const DownloadModsTarget = new Juke.Target({
+  parameters: [CheckParameter],
   inputs: [
     'manifest.json',
   ],
-  outputs: [
-    "dist/modcache/"
-  ],
+  outputs: ({ get }) => {
+    if (get(CheckParameter)) {
+      return []; // run this target if --check or -c is passed
+    }
+    return [
+      "dist/modcache/"
+    ]
+  },
   executes: async () => {
     if (!env.CFCORE_API_TOKEN) {
       Juke.logger.error('CFCORE_API_TOKEN env var is required for downloading mods.');
@@ -203,7 +214,7 @@ export const BuildDevTarget = new Juke.Target({
 })
 
 export const BuildAllTarget = new Juke.Target({
-  dependsOn: [BuildClientTarget, BuildServerTarget]
+  dependsOn: [DownloadModsTarget, BuildClientTarget, BuildServerTarget]
 })
 
 export const CleanCacheTarget = new Juke.Target({
