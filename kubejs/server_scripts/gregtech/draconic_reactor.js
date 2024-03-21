@@ -17,7 +17,7 @@ event.shaped(
             .notConsumable('10x #nomi:' + tier + '_injector_tier')
             .itemInputs(input)
             .itemOutputs(output)
-            .duration(RF / 4 / 61440) //wip
+            .duration(200) //wip
             .EUt(61440)
     }
 
