@@ -511,7 +511,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["01CC71429CFCAE0B"]
+			dependencies: ["15E34DEC491FAB81"]
 			description: ["You'll need an &3HV Chemical Reactor&r for processing &6Titanium&r."]
 			id: "78DCEF2FF2E1AC8C"
 			rewards: [{
@@ -713,6 +713,11 @@
 				"It can also optionally overclock recipes up to 128 EU/t, gaining additional speed for relatively more power."
 			]
 			id: "2F8B802869825E02"
+			rewards: [{
+				id: "11A4B74776A7F2EB"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
