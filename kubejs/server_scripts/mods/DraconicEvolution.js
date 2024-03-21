@@ -4,4 +4,6 @@ ServerEvents.recipes(event => {
     const regexPattern = new RegExp(`^(?!(${excludedItems.join('|')})$)draconicevolution:`, 'i')
 
     event.remove({ output: regexPattern })
+
+    ['solarflux:sp_de.draconic', 'solarflux:sp_de.chaotic', 'solarflux:sp_de.wyvern', 'draconicevolution:energy_core_stabilizer', 'draconicevolution:draconic_energy_core', 'draconicevolution:wyvern_core']
 })
