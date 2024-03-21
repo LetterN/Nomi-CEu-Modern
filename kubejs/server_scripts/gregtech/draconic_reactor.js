@@ -34,6 +34,6 @@ event.shaped(
     Reactor('reactor_stabilizer', 'draconicevolution:reactor_stabilizer', ['draconicevolution:reactor_prt_stab_frame', 'draconicevolution:reactor_prt_stab_frame', 'draconicevolution:reactor_prt_focus_ring', '2x draconicevolution:draconic_energy_core', '4x draconicevolution:awakened_core'], 'awakened', 56320000000)
     Reactor('draconic_energy_core', 'draconicevolution:draconic_energy_core', ['draconicevolution:wyvern_energy_core', '4x gtceu:draconium_awakened_ingot', '2x draconicevolution:awakened_core', '2x gtceu:energy_module', 'gtceu:energy_module', '4x gtceu:restonia_empowered_block'], 'awakened', 419430000)
     Reactor('draconium_awakened_block', '5x gtceu:draconium_awakened_block', ['5x gtceu:draconium_block', '4x draconicevolution:wyvern_core', '2x draconicevolution:dragon_heart'], 'wyvern', 24000000000)
-    Reactor('awakened_core', 'gtceu:draconium_awakened_core', ['minecraft:nether_star', '4x draconicevolution:wyvern_core', '2x gtceu:draconium_awakened_block'], 'wyvern', 3000000000)
+    Reactor('awakened_core', 'draconicevolution:awakened_core', ['minecraft:nether_star', '4x draconicevolution:wyvern_core', '2x gtceu:draconium_awakened_block'], 'wyvern', 3000000000)
     Reactor('chaotic_core', 'draconicevolution:chaotic_core', ['minecraft:nether_star', '4x draconicevolution:chaos_shard', '2x avaritia:neutronium_ingot', '2x gtceu:omnium_ingot'], 'chaotic', 30000000000)
 })
