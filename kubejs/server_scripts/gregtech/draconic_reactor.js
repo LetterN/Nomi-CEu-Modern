@@ -1,12 +1,24 @@
-ServerEvents.recipes(event => { 
-   
+ServerEvents.recipes(event => {
+
+// The crafting core is expensive enough as is, dont need to throw extra circuits on top
+event.shaped(
+    'gtceu:draconic_reactor',
+        ['PPP',
+        'PFP',
+        'PPP'
+    ],{
+    P: 'gtceu:stainless_steel_plate',
+    F: 'draconicevolution:crafting_core'
+    }
+)
+
     function Reactor(id, output, input, tier, RF) {
-            event.recipes.gtceu.draconic_reactor(id)
-                .notConsumable('10x #nomi:' + tier + '_injector_tier')
-                .itemInputs(input)
-                .itemOutputs(output)
-                .duration(RF / 4 / 61440 / 20) //WIP
-                .EUt(61440)
+        event.recipes.gtceu.draconic_reactor(id)
+            .notConsumable('10x #nomi:' + tier + '_injector_tier')
+            .itemInputs(input)
+            .itemOutputs(output)
+            .duration(RF / 4 / 61440) //wip
+            .EUt(61440)
     }
 
     Reactor('wyvern_crafting_injector', 'draconicevolution:wyvern_crafting_injector', ['draconicevolution:basic_crafting_injector', 'draconicevolution:wyvern_core', '2x draconicevolution:draconium_core', 'gtceu:draconium_block', '4x minecraft:nether_star'], 'basic', 20480000)
@@ -22,6 +34,6 @@ ServerEvents.recipes(event => {
     Reactor('reactor_stabilizer', 'draconicevolution:reactor_stabilizer', ['draconicevolution:reactor_prt_stab_frame', 'draconicevolution:reactor_prt_stab_frame', 'draconicevolution:reactor_prt_focus_ring', '2x draconicevolution:draconic_energy_core', '4x draconicevolution:awakened_core'], 'awakened', 56320000000)
     Reactor('draconic_energy_core', 'draconicevolution:draconic_energy_core', ['draconicevolution:wyvern_energy_core', '4x gtceu:draconium_awakened_ingot', '2x draconicevolution:awakened_core', '2x gtceu:energy_module', 'gtceu:energy_module', '4x gtceu:restonia_empowered_block'], 'awakened', 419430000)
     Reactor('draconium_awakened_block', '5x gtceu:draconium_awakened_block', ['5x gtceu:draconium_block', '4x draconicevolution:wyvern_core', '2x draconicevolution:dragon_heart'], 'wyvern', 24000000000)
-    Reactor('awakened_core', 'gtceu:draconium_awakened_block', ['minecraft:nether_star', '4x draconicevolution:wyvern_core', '2x gtceu:draconium_awakened_block'], 'wyvern', 3000000000)
+    Reactor('awakened_core', 'gtceu:draconium_awakened_core', ['minecraft:nether_star', '4x draconicevolution:wyvern_core', '2x gtceu:draconium_awakened_block'], 'wyvern', 3000000000)
     Reactor('chaotic_core', 'draconicevolution:chaotic_core', ['minecraft:nether_star', '4x draconicevolution:chaos_shard', '2x avaritia:neutronium_ingot', '2x gtceu:omnium_ingot'], 'chaotic', 30000000000)
 })

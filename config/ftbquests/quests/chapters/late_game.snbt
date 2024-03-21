@@ -2078,6 +2078,8 @@
 				"You'll need eight &6Basic Fusion Crafting Injectors&r to upgrade any additional injectors you make to Wyvern Tier."
 				""
 				"Yes, that means you should plan to make more than eight. If you really want to plan ahead, make thirty-four of these."
+				""
+				"&5Until Fusion Crafting is ported, you get to use a (albet nerfed) version of a new Post-Tank Multiblock, the Draconic Fusion Reactor. The final version will not require the injectors to be in the machine, have a different design, and will be able to parallelize."
 			]
 			icon: "draconicevolution:basic_crafting_injector"
 			id: "713FAECEE5046121"
@@ -2089,14 +2091,14 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					count: 8L
-					id: "0156A50DDEF3B674"
-					item: "draconicevolution:basic_crafting_injector"
+					id: "3C9333ECA3F6B5F9"
+					item: "gtceu:draconic_reactor"
 					type: "item"
 				}
 				{
-					id: "556C2F341A14E657"
-					item: "draconicevolution:crafting_core"
+					count: 10L
+					id: "5756875831B786CB"
+					item: "draconicevolution:basic_crafting_injector"
 					type: "item"
 				}
 			]

@@ -1547,20 +1547,19 @@
 		}
 		{
 			dependencies: ["297B523B6C503957"]
-			description: [
-				"The &6Battery Buffer&r is a machine which can hold &6Batteries&r for energy storage. Each Battery accepts up to 2 amps and outputs up to 1 amp."
-				""
-				"You can also charge &6Electric tools&r in them."
-				""
-				"&cRF batteries such as Flux Capacitors cannot be drained by Battery Buffers!"
-			]
+			description: ["The &6Battery Buffer&r is a machine which can hold &6Batteries&r for energy storage. Each Battery accepts up to 2 amps and outputs up to 1 amp."]
 			id: "2FA9404468E4BBD9"
+			rewards: [{
+				id: "325B36632BC87A4F"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0527876D6287634B"
 				item: "gtceu:lv_battery_buffer_4x"
 				type: "item"
 			}]
-			title: "LV Battery Buffer"
+			title: "Charging Batteries"
 			x: -2.5d
 			y: 11.5d
 		}
@@ -1656,6 +1655,11 @@
 				"If the &6Jetpack&r overview and information from &bThe One Probe&r conflict, The One Probe may be moved using &6/topcfg&r."
 			]
 			id: "7E66445087E82F65"
+			rewards: [{
+				id: "24ED21C395B4B39F"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			subtitle: "Being able to fly is pretty sick. It's also pretty expensive."
 			tasks: [{
 				id: "7CE647770625D692"
@@ -1674,12 +1678,13 @@
 		}
 		{
 			dependencies: ["06E9B9DDDB245F38"]
-			description: [
-				"Now that you have a &abattery&r to keep things charged, you might consider making yourself an &aElectromagnet&r."
-				""
-				"This relatively inexpensive item will suck nearby items into your inventory."
-			]
+			description: ["This relatively inexpensive item will suck nearby items into your inventory."]
 			id: "39394D5596FF8BC8"
+			rewards: [{
+				id: "20D8F149F414F950"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "36817E3C33876798"
 				item: {
@@ -1923,13 +1928,52 @@
 		}
 		{
 			dependencies: ["2FA9404468E4BBD9"]
-			description: ["Used to charge items that consume RF."]
+			description: [
+				"The &dTinker's Workstation&r is able to charge items at a modest rate, but can only charge items that use &aRF&r."
+				""
+				"The Turbo Charger is a litte more expensive, but is able to charge items at a &omuch&r faster rate and is able to charge items that use &aRF&r and &aEU&r."
+			]
+			icon: "gtceu:lv_charger_4x"
 			id: "06E9B9DDDB245F38"
-			tasks: [{
-				id: "362A4D34BDE5BF63"
-				item: "thermal:tinker_bench"
+			rewards: [{
+				id: "193ED94FC1B59BB0"
+				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			tasks: [{
+				id: "0560C9C2C5EC9998"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "thermal:tinker_bench"
+								tag: {
+									BlockEntityTag: {
+										Energy: 9688
+										EnergyMax: 500000
+										EnergyRecv: 1000
+										EnergySend: 1000
+										RSControl: {
+											RSMode: 0b
+											RSThreshold: 0b
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_charger_4x"
+							}
+						]
+					}
+				}
+				title: "Charger"
+				type: "item"
+			}]
+			title: "&dCharging Items"
 			x: -3.5d
 			y: 11.5d
 		}
