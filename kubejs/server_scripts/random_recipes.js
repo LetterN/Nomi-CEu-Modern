@@ -674,4 +674,15 @@ ServerEvents.recipes(event => {
             B: '#minecraft:swords'
         }
     ).damageIngredient('#minecraft:swords')
+
+		//Wooden rods from armor plus are easy to accidentally craft instead of wood gears. Turn it into a shaped recipe
+		event.remove( {id: "armorplus:crafting/shapeless/wooden_rod" })
+		event.shaped(
+			'2x armorplus:wooden_rod', [
+				'SS',
+				'SS'
+			], {
+				S: 'minecraft:stick'
+			}
+		).id('kubejs:not_a_wood_gear')
 })
