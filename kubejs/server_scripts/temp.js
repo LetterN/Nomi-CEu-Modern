@@ -9,6 +9,8 @@ ServerEvents.recipes(event => {
         .duration(320)
         .EUt(32)
 
+    event.replaceInput({ output: 'waystones:warp_plate' }, 'minecraft:gravel', 'waystones:warp_stone')
+
     event.remove({ output: "thermal:device_water_gen" })
     event.shaped(
             "thermal:device_water_gen", [
