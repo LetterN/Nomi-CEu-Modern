@@ -1304,7 +1304,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "&d Better Backpacks"
+			title: "&dBetter Backpacks"
 			x: 4.5d
 			y: 3.5d
 		}
@@ -1969,7 +1969,7 @@
 				"3AB0402B19DD5BA8"
 				"15808BD9C5DBA0F7"
 			]
-			description: ["Carry &o&neven more&r stuff"]
+			description: ["Carry &oeven more&r stuff."]
 			id: "1C2088A496D8FE4F"
 			tasks: [{
 				id: "554C5636BB994E79"
@@ -1989,7 +1989,7 @@
 				}
 				type: "item"
 			}]
-			title: "&d Even Better Backpacks"
+			title: "&dEven Better Backpacks"
 			x: 4.5d
 			y: 6.25d
 		}
