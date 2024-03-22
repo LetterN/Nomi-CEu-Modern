@@ -5,5 +5,5 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: regexPattern })
 
-    ['solarflux:sp_de.draconic', 'solarflux:sp_de.chaotic', 'solarflux:sp_de.wyvern', 'draconicevolution:energy_core_stabilizer', 'draconicevolution:draconic_energy_core', 'draconicevolution:wyvern_core']
+    event.remove({output:['solarflux:sp_de.draconic', 'solarflux:sp_de.chaotic', 'solarflux:sp_de.wyvern', 'draconicevolution:energy_core_stabilizer', 'draconicevolution:draconic_energy_core', 'draconicevolution:wyvern_core']})
 })
