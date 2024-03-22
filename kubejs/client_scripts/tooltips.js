@@ -28,7 +28,8 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add('hostilenetworks:nether_prediction', '\u00A77Experience per item: 20')
     tooltip.add('hostilenetworks:end_prediction', '\u00A77Experience per item: 25')
 
-    //Hand Framing Tool
+    //Debug Laser
+    tooltip.add('kubejs:debug_laser', '\u00A7fYou need to be a \u00A74D\u00A7ee\u00A79v \u00A7fto use this')
 
     //Conduits
     tooltip.add('enderio:conductive_conduit', '\u00A77Max Output 512 RF/t')
