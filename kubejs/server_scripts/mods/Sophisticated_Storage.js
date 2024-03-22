@@ -55,8 +55,14 @@ ServerEvents.recipes(event => {
             L: material[1],
             T: material[2],
             C: material[3]
-        })
-    })
+        }).modifyResult((grid, result) => { //Copy the contentsUuid tag to the new item to transfer the inventory over
+					let item = grid.find(material[3])
+					if (item.nbt && item.nbt.contentsUuid) {
+						return result.withNBT({contentsUuid: item.nbt.contentsUuid})
+					}
+					return result;
+				})
+		})
 
     // Stack upgrades
 
