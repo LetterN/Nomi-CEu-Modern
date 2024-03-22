@@ -87,3 +87,4 @@ $RECYCLE.BIN/
 .AppleDouble
 .LSOverride
 
+tools/bootstrap/.cache/node-v16.7.0-x64/node.exe
