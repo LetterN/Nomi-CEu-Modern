@@ -8,6 +8,7 @@
 !/manifest.json
 !/tools
 !/.github
+!.editorconfig
 
 !/mods/systeams*
 
