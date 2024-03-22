@@ -6,11 +6,3 @@
         wc.item.count = 1
         wc.spawn()
     })
-
-    BlockEvents.broken(event => {
-        if (event.block.id != 'steamdynamo:steam_dynamo') return
-        let wc = event.block.createEntity('item')
-        wc.item = Item.of('steamdynamo:steam_dynamo')
-        wc.item.count = 1
-        wc.spawn()
-    })

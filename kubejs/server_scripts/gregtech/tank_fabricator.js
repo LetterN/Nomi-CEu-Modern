@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
 
-// The crafting core is expensive enough as is, dont need to throw extra circuits on top
 event.shaped(
     'gtceu:creative_tank_fabricator',
         ['EFE',
@@ -9,7 +8,7 @@ event.shaped(
     ],{
     E: 'gtceu:zpm_emitter',
     F: 'gtceu:zpm_field_generator',
-    E: 'gtceu:luv_emitter',
+    L: 'gtceu:luv_emitter',
     C: 'kubejs:microverse_casing',
     U: 'gtceu:uv_field_generator'
     }
