@@ -17,7 +17,7 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.tags('block', event => {
-    event.add('minecraft:mineable/pickaxe', 'watercondenser:watercondenser')
+    event.add('minecraft:mineable/pickaxe', 'steamdynamo:steam_dynamo')
     event.add('minecraft:mineable/pickaxe', 'forge:glass')
     event.add('minecraft:mineable/pickaxe', 'forge:glass_panes')
 })
