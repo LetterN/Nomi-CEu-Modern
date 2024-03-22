@@ -46,15 +46,13 @@ async function packMod(group) {
     } catch { /* noop */ }
 
     if (hasZipCmd) {
-      Juke.chdir(`../../dist/.tmp/${group}`, import.meta.url);
-      await Juke.exec('zip', [
-        '-rqy',
-        `../../${group}.zip`,
+      await Juke.exec('tools/zip-stuff', [
+        `dist/.tmp/${group}`,
+        `dist/${group}.zip`,
         'overrides',
         'manifest.json',
-        'modlist.html',
+        'modlist.html'
       ])
-      Juke.chdir('../..', import.meta.url);
       return;
     }
 
@@ -74,6 +72,7 @@ async function packMod(group) {
   }
 }
 
+// add --check if you want the modjars to be rebuilt
 const CheckParameter = new Juke.Parameter({
   type: "boolean",
   alias: 'c',
