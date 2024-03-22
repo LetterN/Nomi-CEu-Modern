@@ -26,8 +26,7 @@ const includeList = [
   "config",
   "defaultconfigs",
   "kubejs",
-  "mods",
-  "LICENSE.md"
+  "mods"
 ]
 
 async function packMod(group) {
@@ -37,6 +36,7 @@ async function packMod(group) {
   fs.cpSync(`dist/${group}`, `dist/.tmp/${group}/overrides`, { recursive: true, force: true })
   fs.copyFileSync('manifest.json', `dist/.tmp/${group}/manifest.json`)
   fs.copyFileSync('dist/modlist.html', `dist/.tmp/${group}/modlist.html`)
+  fs.copyFileSync('LICENSE.md', `dist/.tmp/${group}/LICENSE.md`)
 
   try {
     let hasZipCmd = false;
@@ -51,7 +51,8 @@ async function packMod(group) {
         `dist/${group}.zip`,
         'overrides',
         'manifest.json',
-        'modlist.html'
+        'modlist.html',
+        'LICENSE.md'
       ])
       return;
     }
@@ -59,7 +60,7 @@ async function packMod(group) {
     if (process.platform === 'win32') {
       await Juke.exec('powershell', [
         'Compress-Archive',
-        `-Path "${resolve(`dist\\.tmp\\${group}\\overrides`)}","${resolve(`dist\\.tmp\\${group}\\manifest.json`)}","${resolve(`dist\\.tmp\\${group}\\modlist.html`)}"`,
+        `-Path "${resolve(`dist\\.tmp\\${group}\\overrides`)}","${resolve(`dist\\.tmp\\${group}\\manifest.json`)}","${resolve(`dist\\.tmp\\${group}\\modlist.html`)}","${resolve(`dist\\.tmp\\${group}\\LICENSE.md`)}"`,
         `-DestinationPath "${resolve(`dist\\${group}.zip`)}"`,
       ])
     }
@@ -91,7 +92,7 @@ export const BuildModlistTarget = new Juke.Target({
       Juke.logger.error('CFCORE_API_TOKEN env var is required for downloading mods.');
       throw new Juke.ExitCode(1);
     }
-    fs.mkdirSync("dist")
+    fs.mkdirSync("dist", { recursive: true })
     const jsonData = JSON.parse(fs.readFileSync('manifest.json', 'utf-8'));
     let html = '<ul>\n'
     for (const key in jsonData.files) {
