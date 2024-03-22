@@ -99,7 +99,7 @@ export const BuildModlistTarget = new Juke.Target({
       html += `<li><a href=${modInfo.links.websiteUrl}>${modInfo.name} (by ${modInfo.authors[0].name})</a></li>\n`;
     }
     html += '</ul>'
-    fs.writeFileSync('dist/modlist.html', html);
+    fs.writeFileSync(resolve('dist/modlist.html'), html);
   }
 })
 
