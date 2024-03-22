@@ -26,6 +26,14 @@ jobs:
           key: ${{ runner.os }}-node-16.7.0
           restore-keys: |
             ${{ runner.os }}-node-
+      - name: Restore mods cache
+        uses: actions/cache@v4
+        with:
+          # observe if this makes broken builds due to outdated mods (server onl)
+          path: dist/modcache
+          key: ${{ runner.os }}-mods-${{ hashFiles('manifest.json') }}
+          restore-keys: |
+            ${{ runner.os }}-mods-
       - name: Pack Modpack
         env:
           CFCORE_API_TOKEN: ${{ secrets.API_TOKEN }}
