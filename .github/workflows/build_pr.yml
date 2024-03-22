@@ -37,7 +37,7 @@ jobs:
       - name: Pack Modpack
         env:
           CFCORE_API_TOKEN: ${{ secrets.API_TOKEN }}
-        run: bash tools/build/build build-all
+        run: bash tools/build/build -c build-all
       - name: Upload client artifact
         uses: actions/upload-artifact@v4
         with:
