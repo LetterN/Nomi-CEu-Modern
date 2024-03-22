@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
 
-    event.remove({ output: ['enderio:energy_conduit'] })
-
     //Conductive Iron
     event.shaped(
         '3x enderio:conductive_conduit', [
@@ -285,4 +283,21 @@ ServerEvents.recipes(event => {
 
     //Redstone Conduit
     event.replaceInput({ id: 'enderio:redstone_conduit' }, 'enderio:redstone_alloy_ingot', 'gtceu:red_alloy_single_wire')
+
+    // Fluid of the Void (TODO: actually use EnderIO machines when they are totally definitely for sure ported to 1.20.1)
+
+    event.recipes.gtceu.chemical_reactor('dew_of_the_void')
+        .itemInputs('enderio:pulsating_powder', 'enderio:vibrant_powder')
+        .inputFluids('kubejs:resonant_ender 4000')
+        .outputFluids('enderio:dew_of_the_void 2000')
+        .duration(84)
+        .EUt(15)
+
+    event.recipes.gtceu.chemical_reactor('ender_star')
+        .itemInputs('minecraft:nether_star')
+        .inputFluids('enderio:dew_of_the_void 8000')
+        .itemOutputs('kubejs:ender_star')
+        .duration(2000)
+        .EUt(400)
+
 })
