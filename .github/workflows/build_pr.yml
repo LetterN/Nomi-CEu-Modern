@@ -6,6 +6,7 @@ on:
   merge_group:
     branches:
     - main
+  workflow_dispatch:
 jobs:
   pack_pr:
     if: ( !contains(github.event.head_commit.message, '[ci skip]') )
