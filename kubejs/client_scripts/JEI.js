@@ -63,6 +63,8 @@ JEIEvents.hideItems(event => {
     event.hide(['nuclearcraft:foursmore', 'nuclearcraft:evenmoresmore', 'nuclearcraft:moresmore', 'nuclearcraft:smore'])
     event.hide(/nuclearcraft:.*_bucket/i)
 
+    //JAVD
+    event.hide(["javd:portal_block"])
 
     //Ender Storage
     event.hide(['endertanks:ender_bucket'])

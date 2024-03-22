@@ -90,5 +90,7 @@
     "block.gtceu.greenhouse": "Greenhouse",
     "gtceu.greenhouse": "Greenhouse",
     "block.gtceu.draconic_reactor": "Draconic Fusion Reactor",
-    "gtceu.draconic_reactor": "Draconic Fusion Reaction"
+    "gtceu.draconic_reactor": "Draconic Fusion Reaction",
+    "block.gtceu.creative_tank_fabricator": "Creative Tank Fabricator",
+    "gtceu.creative_tank_fabricator": "Creative Tank Fabrication"
 }
