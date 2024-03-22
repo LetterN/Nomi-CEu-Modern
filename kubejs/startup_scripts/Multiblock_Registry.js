@@ -80,8 +80,16 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
-    })
 
+    // Creative Tank Fabricator
+    event.create('creative_tank_fabricator')
+        .category('multiblock')
+        .setEUIO('in')
+        .setMaxIOSize(1, 1, 0, 0) // 
+        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.COOLING)
+    })
     
 // Basic Microverse Projector
 GTCEuStartupEvents.registry('gtceu:machine', event => {
@@ -271,4 +279,24 @@ event.create('draconic_reactor', 'multiblock')
     .build())
 .workableCasingRenderer("gtceu:block/casings/solid/machine_casing_clean_stainless_steel",
     "gtceu:block/multiblock/implosion_compressor", false)
+
+// Creative Tank Fabricator
+// TODO: Cooler Design, thinking about some kind of computer that fabricates the tanks from the data
+    event.create('creative_tank_fabricator', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeTypes('creative_tank_fabricator')
+        .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("CCC", "GGG", "CCC")
+            .aisle("CCC", "G#G", "CCC")
+            .aisle("CSC", "GGG", "CCC")
+            .where('S', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('G', Predicates.blocks(GTBlocks.CASING_TEMPERED_GLASS.get()))
+            .where('C', Predicates.blocks("kubejs:microverse_casing")
+                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+                .where('#', Predicates.any())
+            .build())
+        .workableCasingRenderer("kubejs:block/microverse_casing",
+            "gtceu:block/multiblock/implosion_compressor", false)
+
 })
