@@ -196,6 +196,18 @@ ServerEvents.recipes(event => {
         .duration(40)
         .EUt(30)
 
+    // Endest Star
+    event.shaped(
+        'kubejs:endest_star', [
+            ' E ',
+            'ESE',
+            ' E '
+        ], {
+            E: 'minecraft:ender_eye',
+            S: 'minecraft:nether_star'
+        }
+    )
+
     //Space Stuff
 
     event.recipes.gtceu.macerator('moon_dust')

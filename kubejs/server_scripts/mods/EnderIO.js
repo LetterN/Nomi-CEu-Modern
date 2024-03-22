@@ -1,6 +1,60 @@
 ServerEvents.recipes(event => {
 
-    event.remove({ output: ['enderio:energy_conduit'] })
+    // Item and Fluid Conduits //
+
+    // Make lowest tier fluid conduit pressurized
+    event.remove({ id: "enderio:fluid_conduit" })
+    event.shaped(
+        "4x enderio:pressurized_fluid_conduit", [
+            'BBB',
+            'GGG',
+            'BBB'
+        ], {
+            B: "enderio:conduit_binder",
+            G: "minecraft:glass"
+        }
+    )
+
+    // Manual item conduit
+    event.shaped(
+        "4x enderio:item_conduit", [
+            'BBB',
+            'WWW',
+            'BBB'
+        ], {
+            B: "enderio:conduit_binder",
+            W: "gtceu:pulsating_alloy_single_wire"
+        }
+    )
+
+    // Manual ender fluid conduit
+    event.shaped(
+        "4x enderio:ender_fluid_conduit", [
+            'BBB',
+            'WPW',
+            'BBB'
+        ], {
+            B: "enderio:conduit_binder",
+            W: "gtceu:vibrant_alloy_single_wire",
+            P: "enderio:pressurized_fluid_conduit"
+        }
+    )
+
+    // Assembler item conduit
+    event.recipes.gtceu.assembler("efficent_item_conduit")
+        .itemInputs("6x enderio:conduit_binder", "3x gtceu:pulsating_alloy_single_wire")
+        .itemOutputs("8x enderio:item_conduit")
+        .duration(80)
+        .EUt(16)
+
+    // Assembler ender fluid conduit
+    event.recipes.gtceu.assembler("efficent_ender_conduit")
+        .itemInputs("6x enderio:conduit_binder", "2x gtceu:vibrant_alloy_single_wire", "enderio:pressurized_fluid_conduit")
+        .itemOutputs("8x enderio:ender_fluid_conduit")
+        .duration(80)
+        .EUt(16)
+
+    // Energy Conduits //
 
     //Conductive Iron
     event.shaped(
@@ -285,4 +339,62 @@ ServerEvents.recipes(event => {
 
     //Redstone Conduit
     event.replaceInput({ id: 'enderio:redstone_conduit' }, 'enderio:redstone_alloy_ingot', 'gtceu:red_alloy_single_wire')
+
+    //Villager Soul Vial
+    event.shaped(Item.of('enderio:filled_soul_vial', '{BlockEntityTag: {EntityStorage: {Entity: {id: "minecraft:villager"}}}}').strongNBT(), [
+        ' E ',
+        'EVE',
+        ' E '
+    ], {
+        E: 'minecraft:emerald',
+        V: 'enderio:empty_soul_vial'
+    })
+
+    //Grains
+    event.recipes.gtceu.macerator('grains_of_prescience')
+        .itemInputs('enderio:prescient_crystal')
+        .itemOutputs('enderio:prescient_powder')
+        .duration(400)
+        .EUt(16)
+
+    event.recipes.gtceu.macerator('grains_of_vibrancy')
+        .itemInputs('enderio:vibrant_crystal')
+        .itemOutputs('enderio:vibrant_powder')
+        .duration(300)
+        .EUt(16)
+
+    event.recipes.gtceu.macerator('grains_of_piezallity')
+        .itemInputs('enderio:pulsating_crystal')
+        .itemOutputs('enderio:pulsating_powder')
+        .duration(200)
+        .EUt(16)
+
+    event.recipes.gtceu.macerator('grains_of_the_end')
+        .itemInputs('enderio:ender_crystal')
+        .itemOutputs('enderio:ender_crystal_powder')
+        .duration(500)
+        .EUt(16)
+
+    event.recipes.gtceu.macerator('grains_of_innocence')
+        .itemInputs('enderio:enticing_crystal')
+        .itemOutputs('kubejs:grains_of_innocence')
+        .duration(200)
+        .EUt(16)
+
+    // Fluid of the Void (TODO: actually use EnderIO machines when they are totally definitely for sure ported to 1.20.1)
+
+    event.recipes.gtceu.chemical_reactor('dew_of_the_void')
+        .itemInputs('enderio:pulsating_powder', 'enderio:vibrant_powder')
+        .inputFluids('kubejs:resonant_ender 4000')
+        .outputFluids('enderio:dew_of_the_void 2000')
+        .duration(84)
+        .EUt(15)
+
+    event.recipes.gtceu.chemical_reactor('ender_star')
+        .itemInputs('minecraft:nether_star')
+        .inputFluids('enderio:dew_of_the_void 8000')
+        .itemOutputs('kubejs:ender_star')
+        .duration(2000)
+        .EUt(400)
+
 })

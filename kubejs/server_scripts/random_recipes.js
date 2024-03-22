@@ -188,19 +188,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // Make lowest tier fluid conduit pressurized
-    event.remove({ id: "enderio:fluid_conduit" })
-    event.shaped(
-        "4x enderio:pressurized_fluid_conduit", [
-            'BBB',
-            'GGG',
-            'BBB'
-        ], {
-            B: "enderio:conduit_binder",
-            G: "minecraft:glass"
-        }
-    )
-
     // Steam oven & grinder
     event.shaped(
         "gtceu:steam_oven", [
@@ -287,47 +274,6 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:rubber_plate")
         .duration(20)
         .EUt(8)
-
-    // ~Conduits~ //
-
-    // Manual item conduit
-    event.shaped(
-        "4x enderio:item_conduit", [
-            'BBB',
-            'WWW',
-            'BBB'
-        ], {
-            B: "enderio:conduit_binder",
-            W: "gtceu:pulsating_alloy_single_wire"
-        }
-    )
-
-    // Manual ender fluid conduit
-    event.shaped(
-        "4x enderio:ender_fluid_conduit", [
-            'BBB',
-            'WPW',
-            'BBB'
-        ], {
-            B: "enderio:conduit_binder",
-            W: "gtceu:vibrant_alloy_single_wire",
-            P: "enderio:pressurized_fluid_conduit"
-        }
-    )
-
-    // Assembler item conduit
-    event.recipes.gtceu.assembler("efficent_item_conduit")
-        .itemInputs("6x enderio:conduit_binder", "3x gtceu:pulsating_alloy_single_wire")
-        .itemOutputs("8x enderio:item_conduit")
-        .duration(80)
-        .EUt(16)
-
-    // Assembler ender fluid conduit
-    event.recipes.gtceu.assembler("efficent_ender_conduit")
-        .itemInputs("6x enderio:conduit_binder", "2x gtceu:vibrant_alloy_single_wire", "enderio:pressurized_fluid_conduit")
-        .itemOutputs("8x enderio:ender_fluid_conduit")
-        .duration(80)
-        .EUt(16)
 
     // Nomify LV motors
     event.remove({ id: "gtceu:shaped/electric_motor_lv_steel" })
