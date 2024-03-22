@@ -92,7 +92,7 @@ export const BuildModlistTarget = new Juke.Target({
       Juke.logger.error('CFCORE_API_TOKEN env var is required for downloading mods.');
       throw new Juke.ExitCode(1);
     }
-    fs.mkdirSync("dist")
+    fs.mkdirSync("dist", { recursive: true })
     const jsonData = JSON.parse(fs.readFileSync('manifest.json', 'utf-8'));
     let html = '<ul>\n'
     for (const key in jsonData.files) {
