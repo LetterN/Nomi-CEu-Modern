@@ -102,6 +102,7 @@ export const UploadCF = async (key, options = {}) => {
       Juke.logger.error(`UploadCF missing mcVersion in options.`);
       throw new Juke.ExitCode(1);
     }
+    // doc says this requires keys, its lying
     const gameVerApi = await fetch(`https://api.curseforge.com/v1/minecraft/version/${mcVersion}`, {
       headers,
       redirect: "follow",
