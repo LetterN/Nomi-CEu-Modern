@@ -23,7 +23,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.nvm
-          key: ${{ runner.os }}-node-16.7.0
+          key: ${{ runner.os }}-node-18.19.1
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Restore mods cache

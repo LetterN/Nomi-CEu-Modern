@@ -7,7 +7,7 @@
 !/.gitattributes
 !/manifest.json
 !/tools
-/tools/.cache
+/tools/bootstrap/.cache
 !/.github
 !.editorconfig
 
@@ -87,5 +87,3 @@ $RECYCLE.BIN/
 .DS_Store
 .AppleDouble
 .LSOverride
-
-tools/bootstrap/.cache/node-v16.7.0-x64/node.exe
