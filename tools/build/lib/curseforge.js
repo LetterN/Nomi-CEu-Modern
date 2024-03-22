@@ -61,20 +61,35 @@ export const DownloadCF = async (key, modInfo = {}, dest) => {
   }
 };
 
+/**
+ * Upload to curseforge, see [old curseforge api doc](https://support.curseforge.com/en/support/solutions/articles/9000197321-curseforge-upload-api#Project-Upload-File-API)
+ * @param {string} key api key
+ * @param {{
+ *  mcVersion?: string;
+ *  file: any;
+ *  displayName: string;
+ *  projectID: number | string;
+ *  releaseType: 'release' | 'beta' | 'alpha';
+ *  parentFileID?: number | string;
+ *  changelog?: string;
+ * }} options
+ * @returns
+ */
 export const UploadCF = async (key, options = {}) => {
   const {
     mcVersion,
     file,
     displayName,
     projectID,
-    releaseType = "release",
+    releaseType = 'beta',
     parentFileID,
     changelog = ""
   } = options;
-  if (!mcVersion || !file || !displayName || !projectID) {
+  if (!file || !displayName || !projectID) {
     Juke.logger.error(`UploadCF missing values in options.`);
     throw new Juke.ExitCode(1);
   }
+
   const headers = {
     "X-Api-Key": key,
     Accept: "application/json"
@@ -83,7 +98,11 @@ export const UploadCF = async (key, options = {}) => {
   let gameVersions = undefined;
   // dont bother fetching if parentFileID exists, gameVersions gets ignored anyways
   if (parentFileID) {
-    const gameVerApi = await fetch(`https://minecraft.curseforge.com/api/projects/${projectID}/upload-file`, {
+    if (!mcVersion) {
+      Juke.logger.error(`UploadCF missing mcVersion in options.`);
+      throw new Juke.ExitCode(1);
+    }
+    const gameVerApi = await fetch(`https://api.curseforge.com/v1/minecraft/version/${mcVersion}`, {
       headers,
       redirect: "follow",
     });
@@ -96,8 +115,20 @@ export const UploadCF = async (key, options = {}) => {
       throw new Juke.ExitCode(1);
     }
 
-    gameVersions = [(await gameVerApi.json()).find(m => m.name == mcVersion)];
+    gameVersions = (await gameVerApi.json()).data.gameVersionTypeID;
   }
+
+  const formData = new FormData();
+  formData.append('metadata',
+    JSON.stringify({
+      changelog,
+      changelogType: ["markdown"],
+      releaseType,
+      parentFileID,
+      gameVersions,
+      displayName
+    }))
+  formData.append('file', fs.createReadStream(file));
 
   const uploadResponse = await fetch(`https://minecraft.curseforge.com/api/projects/${projectID}/upload-file`, {
     method: 'post',
@@ -106,17 +137,7 @@ export const UploadCF = async (key, options = {}) => {
       "Content-Type": "multipart/form-data",
     },
     redirect: "follow",
-    formData: {
-      metadata: JSON.stringify({
-					changelog,
-					changelogType: ["markdown"],
-          releaseType,
-          parentFileID,
-          gameVersions,
-          displayName
-      }),
-      file: fs.createReadStream(file)
-    }
+    body: formData
   });
 
   if (uploadResponse.status !== 200) {
@@ -128,7 +149,7 @@ export const UploadCF = async (key, options = {}) => {
     throw new Juke.ExitCode(1);
   }
 
-  return (await gameVerApi.json()).id;
+  return (await gameVerApi.json());
 }
 
 async function download_file(url, options = {}, file) {

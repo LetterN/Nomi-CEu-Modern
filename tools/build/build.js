@@ -10,7 +10,7 @@ import fs from 'fs';
 import { resolve } from 'path';
 import { env } from 'process';
 import Juke from './juke/index.js';
-import { DownloadCF, GetModInfo } from './lib/curseforge.js';
+import { DownloadCF, GetModInfo, UploadCF } from './lib/curseforge.js';
 
 Juke.chdir('../..', import.meta.url);
 Juke.setup({ file: import.meta.url }).then((code) => {
@@ -73,18 +73,19 @@ async function packMod(group) {
 }
 
 // add --check if you want the modjars to be rebuilt
-const CheckParameter = new Juke.Parameter({
+export const CheckParameter = new Juke.Parameter({
   type: "boolean",
   alias: 'c',
 })
 
+// for --mode=beta/release
+export const ModeParameter = new Juke.Parameter({
+  type: 'string'
+})
+
 export const BuildModlistTarget = new Juke.Target({
-  inputs: [
-    'manifest.json',
-  ],
-  outputs: [
-    "dist/modlist.html"
-  ],
+  inputs: ['manifest.json'],
+  outputs: ['dist/modlist.html'],
   executes: async () => {
     if (!env.CFCORE_API_TOKEN) {
       Juke.logger.error('CFCORE_API_TOKEN env var is required for downloading mods.');
@@ -104,17 +105,10 @@ export const BuildModlistTarget = new Juke.Target({
 
 export const DownloadModsTarget = new Juke.Target({
   parameters: [CheckParameter],
-  inputs: [
-    'manifest.json',
-  ],
-  outputs: ({ get }) => {
-    if (get(CheckParameter)) {
-      return []; // run this target if --check or -c is passed
-    }
-    return [
-      "dist/modcache/"
-    ]
-  },
+  inputs: ['manifest.json'],
+  outputs: ({ get }) => (
+    get(CheckParameter) ? [] : ['dist/modcache/']
+  ),
   executes: async () => {
     if (!env.CFCORE_API_TOKEN) {
       Juke.logger.error('CFCORE_API_TOKEN env var is required for downloading mods.');
@@ -124,12 +118,19 @@ export const DownloadModsTarget = new Juke.Target({
 
     fs.mkdirSync("dist/modcache", { recursive: true })
 
+    const max_conc_download = 3;
+    let await_bucket = [];
     for (const key in jsonData.files) {
       const file = jsonData.files[key];
-      await DownloadCF(env.CFCORE_API_TOKEN, {
+      await_bucket.push(DownloadCF(env.CFCORE_API_TOKEN, {
         modID: file.projectID,
         modFileID: file.fileID
-      }, `dist/modcache/`)
+      }, `dist/modcache/`));
+
+      if (await_bucket.length <= max_conc_download) {
+        await Promise.all(await_bucket)
+        await_bucket = [];
+      }
     }
   }
 });
@@ -140,13 +141,11 @@ export const BuildClientTarget = new Juke.Target({
     ...includeList,
     "dist/modlist.html"
   ],
-  outputs: () => {
-    return [
-      "dist/client/",
-      "dist/client.zip",
-      ...includeList.map(v => `dist/client/${v}`)
-    ]
-  },
+  outputs: () => ([
+    "dist/client/",
+    "dist/client.zip",
+    ...includeList.map(v => `dist/client/${v}`)
+  ]),
   executes: async () => {
     fs.mkdirSync("dist/client", { recursive: true })
     for (const folders of includeList) {
@@ -163,13 +162,11 @@ export const BuildServerTarget = new Juke.Target({
     ...includeList,
     "dist/modlist.html"
   ],
-  outputs: () => {
-    return [
-      "dist/server/",
-      "dist/server.zip",
-      ...includeList.map(v => `dist/server/${v}`)
-    ]
-  },
+  outputs: () => ([
+    "dist/server/",
+    "dist/server.zip",
+    ...includeList.map(v => `dist/server/${v}`)
+  ]),
   executes: async () => {
     fs.mkdirSync("dist/server", { recursive: true })
     for (const folders of includeList) {
@@ -188,14 +185,12 @@ export const BuildDevTarget = new Juke.Target({
     ...includeList,
     "dist/modlist.html"
   ],
-  outputs: () => {
-    return [
-      "dist/dev/",
-      "dist/.devtmp/",
-      "dist/dev.zip",
-      ...includeList.map(v => `dist/dev/${v}`)
-    ]
-  },
+  outputs: () => ([
+    "dist/dev/",
+    "dist/.devtmp/",
+    "dist/dev.zip",
+    ...includeList.map(v => `dist/dev/${v}`)
+  ]),
   executes: async () => {
     fs.mkdirSync("dist/dev", { recursive: true });
     fs.mkdirSync("dist/.devtmp", { recursive: true });
@@ -214,6 +209,39 @@ export const BuildDevTarget = new Juke.Target({
 
 export const BuildAllTarget = new Juke.Target({
   dependsOn: [BuildServerTarget, BuildClientTarget]
+})
+
+export const UploadTarget = new Juke.Target({
+  dependsOn: [BuildAllTarget],
+  parameters: [ModeParameter],
+  inputs: [
+    "dist/client.zip",
+    "dist/server.zip",
+  ],
+  executes: async ({ get }) => {
+    if (!env.CFCORE_API_TOKEN) {
+      Juke.logger.error('CFCORE_API_TOKEN env var is required for downloading mods.');
+      throw new Juke.ExitCode(1);
+    }
+    const rt = get(ModeParameter);
+    const clientUploadResponse = await UploadCF(env.CFCORE_API_TOKEN, {
+      mcVersion: '1.20.1',
+      file: 'dist/client.zip',
+      displayName: 'client',
+      projectID: 123, //! CHANGE THIS
+      releaseType: rt, // default beta
+      // TODO changelog
+    });
+
+    await UploadCF(env.CFCORE_API_TOKEN, {
+      parentFileID: clientUploadResponse.id,
+      file: 'dist/server.zip',
+      displayName: 'server',
+      projectID: 123, //! CHANGE THIS
+      releaseType: rt, // default beta
+      // TODO changelog
+    });
+  },
 })
 
 export const CleanCacheTarget = new Juke.Target({
