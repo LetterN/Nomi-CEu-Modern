@@ -59,8 +59,8 @@ async function packMod(group) {
     if (process.platform === 'win32') {
       await Juke.exec('powershell', [
         'Compress-Archive',
-        `-Path ${resolve(`dist\\.tmp\\${group}\\overrides`)},${resolve(`dist\\.tmp\\${group}\\manifest.json`)},${resolve(`dist\\.tmp\\${group}\\modlist.html`)}`,
-        `-DestinationPath ${resolve(`dist\\${group}.zip`)}`,
+        `-Path "${resolve(`dist\\.tmp\\${group}\\overrides`)}","${resolve(`dist\\.tmp\\${group}\\manifest.json`)}","${resolve(`dist\\.tmp\\${group}\\modlist.html`)}"`,
+        `-DestinationPath "${resolve(`dist\\${group}.zip`)}"`,
       ])
     }
 
