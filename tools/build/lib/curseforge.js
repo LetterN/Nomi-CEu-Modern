@@ -179,7 +179,7 @@ async function download_file(url, options = {}, file) {
 
     }).on("error", (err) => {
       file_stream.close();
-      Juke.rm(download_into);
+      Juke.rm(file);
       Juke.logger.error(`Failed to download ${url}: ${err.message}`);
       reject()
     });
