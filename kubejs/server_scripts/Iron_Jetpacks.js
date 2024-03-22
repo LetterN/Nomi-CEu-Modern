@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
 
     // Generate thermal thruster recipes
     var thermalType = [
-        ['leadstone', 'lead', 'lead', 'thermal:dynamo_stirling'],
+        ['leadstone', 'lead', 'lead', 'steamdynamo:steam_dynamo'],
         ['hardened', 'invar', 'invar', 'thermal:dynamo_magmatic'],
         ['reinforced', 'aluminium', 'electrum', 'kubejs:reactant_dynamo'],
         ['resonant', 'enderium', 'enderium', 'thermal:dynamo_numismatic']

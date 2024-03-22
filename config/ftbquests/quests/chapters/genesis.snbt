@@ -1274,7 +1274,7 @@
 		{
 			dependencies: ["0FF18D13CD42F48A"]
 			description: [
-				"&5 Work is being done to make a custom dynamo that matches the 1.12 thermal's steam dynamo, described below. The stirling dynamo is a stopgap."
+				""
 				""
 				"The &6Steam Dynamo&r will be your source of &dpower&r for the early game. It requires &9Water&r and burnable fuel like &6Coal&r or &6Sugar Cane&r to produce power."
 				""
@@ -1292,7 +1292,7 @@
 			subtitle: "Your first major crafting project!"
 			tasks: [{
 				id: "78D31068BB10B20B"
-				item: "thermal:dynamo_stirling"
+				item: "steamdynamo:steam_dynamo"
 				type: "item"
 			}]
 			title: "Steam Dynamo"
