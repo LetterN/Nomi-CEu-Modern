@@ -13,9 +13,9 @@ export const GetModInfo = async (key, modID) => {
 
   if (modData.status !== 200) {
     if (modData.status == 403) {
-      Juke.logger.error(`Failed to fetch download url at ${modData.url}: Bad CF Token`);
+      Juke.logger.error(`Failed to fetch mod info at ${modData.url}: Bad CF Token`);
     } else {
-      Juke.logger.error(`Failed to fetch download url at ${modData.url}: ${modData.status}`);
+      Juke.logger.error(`Failed to fetch mod info at ${modData.url}: ${modData.status}`);
     }
     throw new Juke.ExitCode(1);
   }
@@ -160,7 +160,7 @@ async function download_file(url, options = {}, file) {
       if (response.statusCode === 302) {
         file_stream.close();
         download_file(response.headers.location, options, file)
-          .then((value) => resolve());
+          .then(() => resolve());
         return;
       }
       if (response.statusCode !== 200) {
