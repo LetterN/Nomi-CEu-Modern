@@ -40,8 +40,8 @@ ServerEvents.recipes(event => {
     //NC
     event.remove({ output: ["nuclearcraft:hard_carbon_ingot"] });
     event.remove({ output: ["nuclearcraft:tough_alloy_ingot"] });
-
-
+    //JAVD
+    event.remove({ output: ["javd:portal_block"] });
 
     //Hides useless items
     event.remove({ output: ['ae2:vibration_chamber', 'hammerlib:gears/netherite', 'hammerlib:gears/gold', 'hammerlib:gears/copper'] })
