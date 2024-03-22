@@ -1,14 +1,22 @@
-# Ignore builds
-/dist
+/*
 
-# Ignore mod files
+!/config
+!/kubejs
+!/defaultconfigs
+!/.gitignore
+!/.gitattributes
+!/manifest.json
+!/tools
+!/.github
+
+!/mods/systeams*
+
 /mods/.index
 /mods/.connector
 /mods/memoryleakfix*
 
 /config/fml.toml
 /config/jei/world/local/*
-
 /kubejs/probe
 
 config/fabric/indigo-renderer.properties
@@ -77,3 +85,4 @@ $RECYCLE.BIN/
 .DS_Store
 .AppleDouble
 .LSOverride
+
