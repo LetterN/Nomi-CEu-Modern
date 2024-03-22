@@ -51,12 +51,4 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced(/simplybackpacks:/, (item, advanced, text) => {
         text.add(1, [Text.of('Deprecated, switch out for a sophisticated backpack.').red()])
     })
-
-    tooltip.addAdvanced(/sophisticatedbackpacks:backpack/, (item, advanced, text) => {
-        text.add(1, [Text.of('Items and upgrades in backpack will be lost if upgraded!').red()])
-    })
-
-    tooltip.addAdvanced(/sophisticatedbackpacks:[A-Za-z]+_backpack/, (item, advanced, text) => {
-        text.add(1, [Text.of('Items in backpack will be lost if upgraded!').red()])
-    })
 })
