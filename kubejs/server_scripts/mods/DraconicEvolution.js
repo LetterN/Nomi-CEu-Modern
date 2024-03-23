@@ -6,4 +6,18 @@ ServerEvents.recipes(event => {
     event.remove({ output: regexPattern })
 
     event.remove({output:['solarflux:sp_de.draconic', 'solarflux:sp_de.chaotic', 'solarflux:sp_de.wyvern', 'draconicevolution:energy_core_stabilizer', 'draconicevolution:draconic_energy_core', 'draconicevolution:wyvern_core']})
+
+    event.shaped(
+        'draconicevolution:advanced_magnet', [
+            'D D',
+            'RMR',
+            'ETE'
+        ], {
+            D: 'gtceu:draconium_ingot',
+            E: 'gtceu:europium_ingot',
+            M: 'draconicevolution:magnet',
+            R: 'minecraft:redstone',
+            T: 'draconicevolution:advanced_dislocator'
+        }
+    ).id('draconicevolution:tools/advanced_magnet')
 })

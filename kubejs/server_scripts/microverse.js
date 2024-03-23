@@ -301,8 +301,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line('warp_engine')
         .itemInputs('gtceu:microversium_frame',
             '6x gtceu:enderium_plate',
-            'minecraft:bedrock', /* Item dislocation inhibitor */
-            'minecraft:bedrock', /* DE Magnet */
+            'draconicevolution:dislocation_inhibitor', /* Item dislocation inhibitor */
+            'draconicevolution:advanced_magnet', /* DE Magnet */
             '2x avaritia:crystal_matrix_ingot', /* TODO: replace with plate */
             '2x gtceu:iv_field_generator',
             Item.of('2x ironjetpacks:thruster', '{Id:"ironjetpacks:fluxed"}').strongNBT(),
@@ -329,7 +329,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:uv_robot_arm',
             '#gtceu:circuits/uhv',
             '2x gtceu:dense_naquadah_alloy_plate',
-            '4x gtceu:enriched_naquadah_trinium_europium_diuranide_quadruple_wire',
+            '4x gtceu:enriched_naquadah_trinium_europium_duranide_quadruple_wire',
             '64x gtceu:fine_tritanium_wire')
         .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:naquadria 576')
         .itemOutputs('kubejs:universal_navigator')

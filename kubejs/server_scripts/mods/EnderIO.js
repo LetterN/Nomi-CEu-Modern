@@ -393,7 +393,7 @@ ServerEvents.recipes(event => {
     })
 
     //Witch Soul Vial
-    event.shaped(Item.of('enderio:filled_soul_vial', '{BlockEntityTag: {EntityStorage: {Entity: {id: "minecraft:zombie"}}}}').strongNBT(), [
+    event.shaped(Item.of('enderio:filled_soul_vial', '{BlockEntityTag: {EntityStorage: {Entity: {id: "minecraft:witch"}}}}').strongNBT(), [
         'GEG',
         'EVE',
         'GEG'
