@@ -2495,7 +2495,7 @@
 				item: "kubejs:nomi_quarter"
 				type: "item"
 			}]
-			shape: "rectangle"
+			shape: "square"
 			tasks: [{
 				id: "3959B38E4D99E1BC"
 				item: {

@@ -1973,8 +1973,13 @@
 				"3AB0402B19DD5BA8"
 				"15808BD9C5DBA0F7"
 			]
-			description: ["Carry &oeven more&r stuff."]
+			description: ["Carry &o&leven more&r stuff."]
 			id: "1C2088A496D8FE4F"
+			rewards: [{
+				id: "4E4E7320F0994D1D"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "554C5636BB994E79"
 				item: {
