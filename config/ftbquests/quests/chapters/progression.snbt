@@ -277,192 +277,95 @@
 			y: 6.5d
 		}
 		{
-			id: "47522085F7B4CD94"
-			tasks: [{
-				id: "2485EF72E74DA88B"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:tools/wrenches"
-					}
-				}
-				title: "Any #forge:tools/wrenches"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 8.0d
-		}
-		{
-			description: ["Power Units"]
+			dependencies: ["077AA27F26B7831F"]
+			description: [
+				"&oNote: this quest accepts a Power Unit of any voltage (LV, MV, HV, EV \\& IV).&r"
+				""
+				"With &bGregTech &6Power Storage&r unlocked, you can make &aPower Units&r for electric GT tools."
+				""
+				"Check if that tool has that tier first! &6Drills&r are available at all tiers, the &6Wrench&r is available at &7LV&r, &6HV&r and &1IV&r, and the other electric tools, such as &6Chainsaws&r and &6Screwdrivers&r are only available at &7LV&r. "
+				""
+				"&2A new addition among them is the Drill, which at LV tier can mine a 3x3x1 area of blocks, and at MV tier can mine a 3x3x3 area of blocks."
+				""
+				"Higher tier drills can mine 5x5x5, 7x7x7 and 9x9x9 areas! Shift-right-click to change the breaking area.&r"
+				""
+				"Charge these with a &6Battery&r of appropriate tier, or in an appropriately tiered &3Machine&r, &3Battery Buffer&r or &3Turbo Charger&r. "
+				""
+				"You may want to look into &6Chainsaws&r for mass tree felling as well, or a &6Wrench&r, for breaking machines very quickly. The other electric tools are probably not worth making."
+			]
 			id: "2280472741683581"
 			tasks: [{
-				id: "2CB5268C74192BFB"
-				item: "minecraft:barrier"
+				id: "028CED757315461B"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_power_unit"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_power_unit"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_power_unit"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_power_unit"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_power_unit"
+							}
+						]
+					}
+				}
+				title: "Any Power Unit"
 				type: "item"
 			}]
+			title: "GregTech Electric Tools"
 			x: 8.0d
 			y: 8.0d
 		}
 		{
-			id: "693B699829D70F51"
-			tasks: [
-				{
-					id: "6929843185DC6E54"
-					item: "buildinggadgets2:gadget_building"
-					type: "item"
-				}
-				{
-					id: "5426E9DE9BF93C16"
-					item: "buildinggadgets2:gadget_exchanging"
-					type: "item"
-				}
-				{
-					id: "3234AD8EC054345A"
-					item: {
-						Count: 1b
-						id: "buildinggadgets2:gadget_copy_paste"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "31D43FB3B2D73027"
-					item: "buildinggadgets2:gadget_destruction"
-					type: "item"
-				}
-				{
-					id: "6678770088D15596"
-					item: {
-						Count: 1b
-						id: "buildinggadgets2:gadget_cut_paste"
-						tag: {
-							pastereplace: 1b
-						}
-					}
-					type: "item"
-				}
-			]
-			x: 9.5d
-			y: 8.0d
-		}
-		{
-			icon: "bountiful:bountyboard"
-			id: "2910B99D626F1965"
-			rewards: [{
-				id: "01E8D9CF2F389E32"
-				item: "bountiful:bountyboard"
-				type: "item"
-			}]
-			tasks: [{
-				id: "431AFCC1DCBC1036"
-				type: "checkmark"
-			}]
-			x: 11.0d
-			y: 8.0d
-		}
-		{
-			id: "0F2C9B1B0D4B4E8C"
-			tasks: [{
-				id: "213538791C122F9A"
-				item: {
-					Count: 1b
-					id: "enderio:staff_of_travelling"
-					tag: {
-						Energy: {
-							EnergyStored: 100000
-							MaxEnergyStored: 100000
-							MaxEnergyUse: 100000
-						}
-					}
-				}
-				match_nbt: false
-				type: "item"
-			}]
-			x: 12.5d
-			y: 8.0d
-		}
-		{
+			description: ["Carry stuff."]
+			disable_toast: true
 			id: "3270496124969A51"
 			tasks: [{
 				id: "204DF036220B3222"
 				item: "sophisticatedbackpacks:backpack"
 				type: "item"
 			}]
+			title: "&dBackpack"
 			x: 7.0d
 			y: -8.5d
 		}
 		{
-			id: "0E824E8BDB286577"
-			tasks: [{
-				id: "005582FE87F58219"
-				item: "sophisticatedbackpacks:iron_backpack"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -7.0d
-		}
-		{
-			id: "3589B278E7BDA769"
-			tasks: [{
-				id: "636BE0B63A2CD2D8"
-				item: "sophisticatedbackpacks:gold_backpack"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -5.5d
-		}
-		{
+			dependencies: ["0A9BC922CF76F48A"]
+			description: ["Carry &3&l&o&neven more&r stuff."]
+			disable_toast: true
 			id: "6DEA5CE28A667453"
 			tasks: [{
 				id: "12C73A9D54273F41"
 				item: "sophisticatedbackpacks:netherite_backpack"
 				type: "item"
 			}]
+			title: "&dResonant Backpack"
 			x: 7.0d
 			y: -2.5d
 		}
 		{
-			id: "7F736E1F163463DF"
-			tasks: [{
-				id: "722C21405A11FAB5"
-				item: "sophisticatedbackpacks:diamond_backpack"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -4.0d
-		}
-		{
-			id: "6013C02A8E538039"
-			tasks: [{
-				id: "66A158488E448F64"
-				item: "thermal:upgrade_augment_1"
-				type: "item"
-			}]
-			x: 9.0d
-			y: -8.5d
-		}
-		{
-			id: "685EE76CC8277C26"
-			tasks: [{
-				id: "416E5A4FC9CC3FC1"
-				item: "thermal:upgrade_augment_2"
-				type: "item"
-			}]
-			x: 9.0d
-			y: -7.0d
-		}
-		{
-			id: "2FBB49D3D5B339E1"
-			tasks: [{
-				id: "77542D82F09A4D6F"
-				item: "thermal:upgrade_augment_4"
-				type: "item"
-			}]
-			x: 9.0d
-			y: -5.5d
-		}
-		{
+			dependencies: [
+				"7DB174443D7FAFA0"
+				"1CC092A2F2CD4589"
+				"14F1FF4656693711"
+				"55074143B559493F"
+			]
+			disable_toast: true
 			id: "15B1277EF8657C65"
 			tasks: [{
 				id: "445CD99C82559395"
@@ -1904,6 +1807,337 @@
 			title: "&2ZPM Circuit Assembling Machine"
 			x: 4.0d
 			y: -7.0d
+		}
+		{
+			dependencies: [
+				"3F6EDC2481D5877F"
+				"3270496124969A51"
+			]
+			description: ["Carry &oeven more&r stuff."]
+			icon: {
+				Count: 1b
+				id: "sophisticatedbackpacks:iron_backpack"
+				tag: {
+					contentsUuid: [I;
+						890972236
+						1590249428
+						-1212807776
+						575640463
+					]
+					inventorySlots: 54
+					upgradeSlots: 2
+				}
+			}
+			id: "1F976B197DEFF654"
+			tasks: [{
+				id: "7F9D573211B5B2FB"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:iron_backpack"
+					tag: {
+						contentsUuid: [I;
+							890972236
+							1590249428
+							-1212807776
+							575640463
+						]
+						inventorySlots: 54
+						upgradeSlots: 2
+					}
+				}
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "&dHardened Backpack"
+			x: 7.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"3AB0402B19DD5BA8"
+				"1F976B197DEFF654"
+			]
+			description: ["Carry &o&leven more&r stuff."]
+			disable_toast: true
+			id: "503CA19637471E6E"
+			tasks: [{
+				id: "7AE450006E9274BE"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:gold_backpack"
+					tag: {
+						contentsUuid: [I;
+							-2079088966
+							795101541
+							-1099241216
+							-1042767112
+						]
+						inventorySlots: 81
+						upgradeSlots: 3
+					}
+				}
+				type: "item"
+			}]
+			title: "&dReinforced Backpack"
+			x: 7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"27A80F018F59EF1E"
+				"503CA19637471E6E"
+			]
+			description: ["Carry &l&o&neven more&r stuff."]
+			disable_toast: true
+			id: "0A9BC922CF76F48A"
+			shape: "square"
+			tasks: [{
+				id: "76D574F61E10C5A2"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:diamond_backpack"
+					tag: {
+						contentsUuid: [I;
+							1998719540
+							-2126561006
+							-1970026112
+							791982398
+						]
+						inventorySlots: 108
+						upgradeSlots: 5
+					}
+				}
+				type: "item"
+			}]
+			title: "&dSignalum Backpack"
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["025543EDB0A4AC22"]
+			description: [
+				"What?!"
+				"&6STEAM DYNAMO&r is evolving!"
+				""
+				"Upgrade kits can be applied to Thermal Expansion Dynamos, machines, and even Portable Tanks. Machines and dynamos get additional augment slots."
+				""
+				"When applied to a dynamo, it increases the &apower generation and fuel burn rate to 150%&r."
+				""
+				"Allows machines operate at &a150% of base power per tick&r. The more power a machine can use, the faster it works."
+			]
+			disable_toast: true
+			id: "126ED4A0AEA05DCD"
+			tasks: [{
+				id: "78E3752A857221D8"
+				item: "thermal:upgrade_augment_1"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 9.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["126ED4A0AEA05DCD"]
+			description: [
+				"Same deal as Hardened Components, but even faster."
+				""
+				"Dynamos operate at &a250% of base power generation and fuel burn rate&r."
+				""
+				"Machines operate at &a250% of base speed&r."
+			]
+			disable_toast: true
+			id: "5CFBAB5F83E33064"
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				id: "5A83B44B86BFE10C"
+				item: "thermal:upgrade_augment_2"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"54C3B1B782FDF57F"
+				"27A80F018F59EF1E"
+				"5CFBAB5F83E33064"
+			]
+			description: [
+				"Having unlocked &6Signalum&r, at long last you can make &aSignalum Integral Components&r!"
+				""
+				"Dynamos operate at &a500% of base power generation and fuel burn rate&r."
+				""
+				"Machines operate at &a400% of base speed&r."
+			]
+			disable_toast: true
+			id: "55074143B559493F"
+			shape: "square"
+			tasks: [{
+				id: "22B125A4AD3E034B"
+				item: "thermal:upgrade_augment_4"
+				match_nbt: false
+				type: "item"
+			}]
+			x: 9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["06E9B9DDDB245F38"]
+			description: [
+				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
+				""
+				"Also important to note that it won't work with TileEntities, so it pretty much only works with simple blocks (not stuff like machines)."
+				""
+				"A very cool feature of this mod is how you can &dshift-right click&r an &ainventory&r with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will &dpull items from the inventory&r, `connecting' the gadget to the inventory."
+				""
+				"For example, if you shift-right click a chest full of cobblestone, the gadget will use cobblestone from that chest to place blocks."
+				""
+				"By default, the config GUI is bound to &6G&r."
+			]
+			disable_toast: true
+			icon: "buildinggadgets2:gadget_building"
+			id: "0D457F1ECCA89F43"
+			subtitle: "This pack has &bBuilding Gadgets&r."
+			tasks: [
+				{
+					id: "4BDBB32DEB2ACA29"
+					item: "buildinggadgets2:gadget_building"
+					type: "item"
+				}
+				{
+					id: "13641F91D50E3C45"
+					item: "buildinggadgets2:gadget_exchanging"
+					type: "item"
+				}
+				{
+					id: "70604E431CE62463"
+					item: {
+						Count: 1b
+						id: "buildinggadgets2:gadget_copy_paste"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5C5089F6B5483188"
+					item: {
+						Count: 1b
+						id: "buildinggadgets2:gadget_cut_paste"
+						tag: {
+							pastereplace: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "78D232748DE433AA"
+					item: "buildinggadgets2:gadget_destruction"
+					type: "item"
+				}
+			]
+			title: "Inspector Gadget"
+			x: 9.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3EDD0A986384F2A7"]
+			description: [
+				"Now that you have a &3Wiremill&f and a &2Bending Machine&f, you can consider starting to do &eBounties&f. The &6Bounty Board&f has a global inventory containing quests to turn in specific items in exchange for &dNomicoins&f. These quests have a fairly short duration, so make sure to &estockpile the items&f that come up on them or else they'll &cexpire before you can complete them&f."
+				""
+				"With renewable &dNomicoins&f, you should feel free to spend the ones you have on whatever you need. &aSpend your coins!"
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "3418E5AB8FEEB34C"
+			size: 1.0d
+			tasks: [{
+				id: "2AF929CAA963A2A2"
+				item: "bountiful:bountyboard"
+				type: "item"
+			}]
+			title: "&2Bounties For Nomicoins!"
+			x: 11.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			description: [
+				"The &aCrescent Hammer&r is for use on machines from &bThermal Expansion&f, but can be used for basic wrench interactions with blocks from almost every mod. &dIt can also now adjust Gregtech pipes,"
+				""
+				"The &aYeta Wrench&r is used with machines and conduits from &bEnderIO&f, and has several special display modes (&6sneak-mouse wheel&f to switch between them)."
+				""
+				"The &aGregTech Wrench&r is used to rotate GregTech machines and redefine their output sides. &2It also has some of the capabilities of the other Wrenches now.&r"
+				""
+				"You can see which mod a machine is from with the &9blue text&f at the bottom of its tooltip."
+			]
+			disable_toast: true
+			icon: "enderio:yeta_wrench"
+			id: "0B6D32379AFF2C12"
+			subtitle: "Confused about all the Wrenches yet?"
+			tasks: [
+				{
+					id: "565F739ADF041BB4"
+					item: "enderio:yeta_wrench"
+					type: "item"
+				}
+				{
+					id: "4C80B954B02DE199"
+					item: {
+						Count: 1b
+						id: "gtceu:wrought_iron_wrench"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "56CC1F155FD07039"
+					item: {
+						Count: 1b
+						id: "thermal:wrench"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "&dWrenches Galore"
+			x: 6.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0A65FC6D798ABFC5"]
+			description: [
+				"Holding one of these reveals &aTravel Anchors&r and &aTelepads&r in range."
+				""
+				"Shift + right-click after aiming to warp to one, or point it anywhere to teleport forward a short distance (works through walls)."
+				""
+				"These are powered with RF, and can be further enchanted through &bEnderIO&r's enchanting mechanics."
+				""
+				"The &6Vibrant Crystal&r will require an &3Autoclave&r."
+			]
+			id: "49BEBA1632D41E18"
+			tasks: [{
+				id: "62FF9717DD8EE67D"
+				item: {
+					Count: 1b
+					id: "enderio:staff_of_travelling"
+					tag: {
+						Energy: {
+							EnergyStored: 100000
+							MaxEnergyStored: 100000
+							MaxEnergyUse: 100000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 8.0d
 		}
 	]
 	title: "Progression"

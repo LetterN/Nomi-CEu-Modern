@@ -2757,7 +2757,7 @@
 		}
 		{
 			dependencies: ["27A80F018F59EF1E"]
-			description: ["Carry &l&o&neven more&r stuff"]
+			description: ["Carry &l&o&neven more&r stuff."]
 			id: "1410354FC249B19D"
 			shape: "hexagon"
 			tasks: [{
