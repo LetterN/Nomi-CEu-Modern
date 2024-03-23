@@ -30,8 +30,8 @@
 				"min": 2,
 				"max": 5
 			},
-			"unitWorth": 15,
-			"rarity": "UNCOMMON"
+			"unitWorth": 20,
+			"rarity": "RARE"
 		},
 		"all_obj_ender_widget": {
 			"type": "item",
@@ -40,7 +40,7 @@
 				"min": 2,
 				"max": 5
 			},
-			"unitWorth": 20,
+			"unitWorth": 30,
 			"rarity": "EPIC"
 		},
 		"all_obj_lv_con": {
@@ -60,7 +60,7 @@
 				"min": 2,
 				"max": 4
 			},
-			"unitWorth": 10,
+			"unitWorth": 12,
 			"rarity": "UNCOMMON"
 		},
 		"all_obj_lv_robot_arm": {
@@ -68,9 +68,9 @@
 			"content": "gtceu:lv_robot_arm",
 			"amount": {
 				"min": 2,
-				"max": 4
+				"max": 5
 			},
-			"unitWorth": 15,
+			"unitWorth": 25,
 			"rarity": "EPIC"
 		},
 		"all_obj_lv_circuit": {
@@ -80,8 +80,30 @@
 				"min": 5,
 				"max": 10
 			},
-			"unitWorth": 12,
-			"rarity": "RARE"
+			"unitWorth": 15,
+			"rarity": "EPIC"
+		},
+
+		"all_obj_alloy_widget_legendary": {
+			"type": "item",
+			"content": "kubejs:alloy_widget",
+			"amount": {
+				"min": 6,
+				"max": 10
+			},
+			"unitWorth": 20,
+			"rarity": "LEGENDARY"
+		},
+
+		"all_obj_ender_widget_legendary": {
+			"type": "item",
+			"content": "kubejs:ender_widget",
+			"amount": {
+				"min": 6,
+				"max": 10
+			},
+			"unitWorth": 30,
+			"rarity": "LEGENDARY"
 		}
 	
 	}
