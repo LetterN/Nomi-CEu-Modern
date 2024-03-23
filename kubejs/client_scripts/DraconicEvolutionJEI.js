@@ -4,3 +4,13 @@ JEIEvents.hideItems(event => {
 
     event.hide(regexPattern)
 })
+
+//EMI Hacky Fix
+global.manualUnification = ['hammerlib:gears/stone', 'hammerlib:gears/wooden', 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget']
+global.UnificationExcludedITems = ['nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:tough_alloy_ingot']
+global.unificationPattern = new RegExp(`^(?!${global.UnificationExcludedITems.join('|')}).*(nuclearcraft|thermal):(.*(_block|_plate|_ingot|_nugget|_gear))`, 'i')
+
+JEIEvents.hideItems(event => {
+    event.hide(global.unificationPattern)
+    event.hide(global.manualUnification)
+})
