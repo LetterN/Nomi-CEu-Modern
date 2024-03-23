@@ -2517,19 +2517,13 @@
 				{
 					count: 2L
 					id: "62599F4AC08F92EB"
-					item: {
-						Count: 2b
-						id: "draconicevolution:energy_pylon"
-					}
+					item: { Count: 2b, id: "draconicevolution:energy_pylon" }
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "0E0CB12516222A89"
-					item: {
-						Count: 4b
-						id: "draconicevolution:energy_core_stabilizer"
-					}
+					item: { Count: 4b, id: "draconicevolution:energy_core_stabilizer" }
 					type: "item"
 				}
 			]

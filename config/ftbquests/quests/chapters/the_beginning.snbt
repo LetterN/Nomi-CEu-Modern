@@ -694,10 +694,7 @@
 				}
 				{
 					id: "12315AEA66B77CB2"
-					item: {
-						Count: 2b
-						id: "systeams:stirling_boiler"
-					}
+					item: { Count: 2b, id: "systeams:stirling_boiler" }
 					type: "item"
 				}
 			]
