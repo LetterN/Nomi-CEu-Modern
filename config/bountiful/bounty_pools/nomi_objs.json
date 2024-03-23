@@ -70,17 +70,17 @@
 				"min": 2,
 				"max": 5
 			},
-			"unitWorth": 25,
+			"unitWorth": 24,
 			"rarity": "EPIC"
 		},
 		"all_obj_lv_circuit": {
 			"type": "item",
 			"content": "gtceu:basic_electronic_circuit",
 			"amount": {
-				"min": 5,
-				"max": 10
+				"min": 2,
+				"max": 8
 			},
-			"unitWorth": 15,
+			"unitWorth": 8,
 			"rarity": "EPIC"
 		},
 
