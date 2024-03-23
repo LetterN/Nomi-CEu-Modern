@@ -450,4 +450,17 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(400)
 
+    //Painting Machine
+    event.shaped('enderio:painting_machine', [
+        'QDQ',
+        'GHG',
+        'RRR'
+    ], {
+        D: 'minecraft:diamond',
+        G: 'gtceu:iron_gear',
+        H: 'gtceu:lv_machine_hull',
+        Q: 'minecraft:quartz',
+        R: 'gtceu:red_alloy_ingot'
+    }).id('enderio:painting_machine')
+
 })
