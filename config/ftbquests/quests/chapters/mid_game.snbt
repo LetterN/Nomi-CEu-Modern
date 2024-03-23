@@ -802,6 +802,7 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
+				count: 16L
 				id: "5E6B6DF65B03DD17"
 				item: "gtceu:kanthal_coil_block"
 				type: "item"
@@ -854,6 +855,7 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
+				count: 16L
 				id: "771DAE6E383B0605"
 				item: "gtceu:nichrome_coil_block"
 				type: "item"
@@ -3232,6 +3234,11 @@
 				"This alloy is cooked in an &3Electric Blast Furnace&r and cooled in a &3Vacuum Freezer&r."
 			]
 			id: "32F80B528E0EAA96"
+			rewards: [{
+				id: "6339CD11A76FCF56"
+				item: "kubejs:nomi_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "3EE0E90EFEBA33D1"

@@ -434,339 +434,6 @@
 			y: -7.0d
 		}
 		{
-			icon: "gtceu:electric_blast_furnace"
-			id: "3A51778DDFF09B5D"
-			tasks: [
-				{
-					id: "1BE86E53BBD60DA4"
-					item: "gtceu:electric_blast_furnace"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "0B663B305521E78B"
-					item: { Count: 16b, id: "gtceu:cupronickel_coil_block" }
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "070BFD918AF3D795"
-					item: { Count: 2b, id: "gtceu:lv_energy_input_hatch" }
-					type: "item"
-				}
-				{
-					id: "4DFD68636C4D5E3C"
-					item: "gtceu:lv_input_bus"
-					type: "item"
-				}
-				{
-					id: "0A2E012046ECAF0C"
-					item: "gtceu:lv_output_bus"
-					type: "item"
-				}
-				{
-					id: "496848B57450D7CA"
-					item: "gtceu:lv_input_hatch"
-					type: "item"
-				}
-				{
-					id: "456EFC9190A07E04"
-					item: "gtceu:lv_output_hatch"
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "2C4D51542878BE8A"
-					item: { Count: 9b, id: "gtceu:heatproof_machine_casing" }
-					type: "item"
-				}
-				{
-					id: "0FDF5AFAEA9E4DE8"
-					item: "gtceu:maintenance_hatch"
-					type: "item"
-				}
-				{
-					id: "3239FB90B36CF9F9"
-					item: "gtceu:lv_muffler_hatch"
-					type: "item"
-				}
-			]
-			x: 13.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["3A51778DDFF09B5D"]
-			id: "525E4D6DD4DE2570"
-			tasks: [{
-				id: "2095FE83E15EA956"
-				item: "gtceu:kanthal_ingot"
-				type: "item"
-			}]
-			x: 15.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["2A5CD1100C051031"]
-			id: "59D36FED58B96039"
-			tasks: [{
-				id: "555F7B523C9C1495"
-				item: "gtceu:nichrome_ingot"
-				type: "item"
-			}]
-			x: 15.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["32957C4D6A907CD1"]
-			id: "782406193EAE3F7D"
-			tasks: [{
-				id: "3238D64F5041C768"
-				item: "gtceu:rtm_alloy_ingot"
-				type: "item"
-			}]
-			x: 15.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["4D10234DFC92774B"]
-			id: "4389847CFD5C73F3"
-			tasks: [{
-				id: "723BB75389599D5F"
-				item: "gtceu:hssg_ingot"
-				type: "item"
-			}]
-			x: 15.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["7051B1438C950D20"]
-			id: "71AB2E6F6E9B49A5"
-			tasks: [{
-				id: "1B0FA85D200A70FF"
-				item: "gtceu:naquadah_ingot"
-				type: "item"
-			}]
-			x: 15.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["50CF28D29A65C78E"]
-			id: "2E0870930E947D36"
-			tasks: [{
-				id: "3376DB96650E7F15"
-				item: "gtceu:trinium_ingot"
-				type: "item"
-			}]
-			x: 15.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["18DB76345F300491"]
-			id: "2C6C4FF8428DB2D0"
-			tasks: [{
-				id: "7BE5B4A23A4EBA72"
-				item: "gtceu:tritanium_ingot"
-				type: "item"
-			}]
-			x: 15.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["525E4D6DD4DE2570"]
-			id: "2A5CD1100C051031"
-			tasks: [{
-				count: 16L
-				id: "706EC7CA6B39EF5F"
-				item: { Count: 16b, id: "gtceu:kanthal_coil_block" }
-				type: "item"
-			}]
-			x: 13.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["59D36FED58B96039"]
-			id: "32957C4D6A907CD1"
-			tasks: [{
-				count: 16L
-				id: "040BFF05ADE9997D"
-				item: { Count: 16b, id: "gtceu:nichrome_coil_block" }
-				type: "item"
-			}]
-			x: 13.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["782406193EAE3F7D"]
-			id: "4D10234DFC92774B"
-			tasks: [{
-				count: 16L
-				id: "0542F14927307DDF"
-				item: { Count: 16b, id: "gtceu:rtm_alloy_coil_block" }
-				type: "item"
-			}]
-			x: 13.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["4389847CFD5C73F3"]
-			id: "7051B1438C950D20"
-			tasks: [{
-				count: 16L
-				id: "55758D7E1CE65EFD"
-				item: { Count: 16b, id: "gtceu:hssg_coil_block" }
-				type: "item"
-			}]
-			x: 13.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["71AB2E6F6E9B49A5"]
-			id: "50CF28D29A65C78E"
-			tasks: [{
-				count: 16L
-				id: "1A3E2F2AEE039B97"
-				item: { Count: 16b, id: "gtceu:naquadah_coil_block" }
-				type: "item"
-			}]
-			x: 13.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["2E0870930E947D36"]
-			id: "18DB76345F300491"
-			tasks: [{
-				count: 16L
-				id: "2D5A480216CDE260"
-				item: { Count: 16b, id: "gtceu:trinium_coil_block" }
-				type: "item"
-			}]
-			x: 13.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["2C6C4FF8428DB2D0"]
-			id: "60DDCC5739C9E7D6"
-			tasks: [{
-				count: 16L
-				id: "619DC8758AF546C7"
-				item: { Count: 16b, id: "gtceu:tritanium_coil_block" }
-				type: "item"
-			}]
-			x: 13.5d
-			y: 2.0d
-		}
-		{
-			id: "66A2B8B61A8A9950"
-			size: 1.2d
-			tasks: [{
-				id: "760B281F9CBE3BA2"
-				item: "kubejs:microminer_t1"
-				type: "item"
-			}]
-			x: 18.0d
-			y: -8.5d
-		}
-		{
-			id: "5F8CDE667032AC05"
-			size: 1.2d
-			tasks: [{
-				id: "219F87F5927FFD35"
-				item: "kubejs:microminer_t2"
-				type: "item"
-			}]
-			x: 18.0d
-			y: -7.0d
-		}
-		{
-			id: "3E4ED1EB0F8FBD68"
-			size: 1.2d
-			tasks: [{
-				id: "1C9ECA73ADFE605E"
-				item: "kubejs:microminer_t3"
-				type: "item"
-			}]
-			x: 18.0d
-			y: -5.5d
-		}
-		{
-			id: "289D7568A273FC39"
-			size: 1.4d
-			tasks: [{
-				id: "1E108164C00D2EE3"
-				item: "kubejs:microminer_t4"
-				type: "item"
-			}]
-			x: 18.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["71AB2E6F6E9B49A5"]
-			id: "0864B659BA9ED73B"
-			size: 1.4d
-			tasks: [{
-				id: "28B0926B119F4389"
-				item: "kubejs:microminer_t5"
-				type: "item"
-			}]
-			x: 18.0d
-			y: -2.5d
-		}
-		{
-			id: "7BCE690327496521"
-			size: 1.4d
-			tasks: [{
-				id: "1B340648B2213981"
-				item: "kubejs:microminer_t6"
-				type: "item"
-			}]
-			x: 18.0d
-			y: -1.0d
-		}
-		{
-			id: "296F7C59CA4F967F"
-			size: 1.4d
-			tasks: [{
-				id: "7A3F1F624F940578"
-				item: "kubejs:microminer_t7"
-				type: "item"
-			}]
-			x: 18.0d
-			y: 0.5d
-		}
-		{
-			id: "038B6FBA6E86E662"
-			size: 1.9d
-			tasks: [{
-				id: "21A558D85298BA76"
-				item: "kubejs:microminer_t8"
-				type: "item"
-			}]
-			x: 18.05d
-			y: 4.75d
-		}
-		{
-			id: "1C081DACB8792BDE"
-			size: 1.9d
-			tasks: [{
-				id: "557211A41FBB43DC"
-				item: "kubejs:microminer_t9"
-				type: "item"
-			}]
-			x: 18.05d
-			y: 6.65d
-		}
-		{
-			id: "5F1A524E0EBFA3AB"
-			size: 1.9d
-			tasks: [{
-				id: "30FBE9B884FC120F"
-				item: "kubejs:microminer_t10"
-				type: "item"
-			}]
-			x: 18.05d
-			y: 8.55d
-		}
-		{
 			dependencies: ["4FFC3501158AF85D"]
 			id: "38101BD734F691DE"
 			tasks: [{
@@ -2138,6 +1805,691 @@
 			}]
 			x: 12.5d
 			y: 8.0d
+		}
+		{
+			dependencies: [
+				"4F572CA3678CB287"
+				"5B07A88C0BFF6586"
+			]
+			description: [
+				"This is your first Micro Miner ever. &2You'll need that Phosphorous in the LV Field Generators.&r"
+				"Yes, not the last: these things aren't reusable."
+				""
+				"This one can get you:"
+				"&6* Dense Iron Ore"
+				"* Cassiterite Ore"
+				"* Redstone Ore"
+				"* Nickel Ore"
+				"&2* Imenite Ore&r"
+				"&6* Uraninite Ore"
+				"* Galena Ore"
+				"&2* Molybdenum Ore&r"
+				"&6* Moon Turf"
+				"* Dilithium"
+				"* Salt Ore&r"
+				""
+				"When equipped with a Gemstone Sensor (which may currently not be available to you yet):"
+				"&2* Perfect Diamond"
+				"&6* Apatite Ore"
+				"* Tricalcium Phosphate Ore"
+				"* Quartzite Ore&r"
+				""
+				"Can also be used to bring &bStellar Creation Data&r, but less efficiently than the Tier Two."
+			]
+			disable_toast: true
+			id: "0BBFE430F25449D4"
+			shape: "square"
+			size: 1.2d
+			tasks: [{
+				id: "5826A3E97E91E6FE"
+				item: "kubejs:microminer_t1"
+				type: "item"
+			}]
+			title: "&2First Foray Into The Microverse"
+			x: 18.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["397DB20B979BC714"]
+			description: [
+				"The Second Micro Miner! &2You'll need that Phosphorous in the LV Field Generators.&r"
+				""
+				"&dDon't forget that you can automate Extended Crafting recipes before you get PackagedAuto by converting your Extended Crafting tables into autocrafting tables."
+				""
+				"This Micro Miner can get you:&6"
+				"&6* Bauxite Ore"
+				"&2* Pyrochlore Ore&6"
+				"&6* Copper Ore"
+				"&2* Sphalerite Ore&r"
+				"&6* Cassiterite Ore"
+				"&6* Scheelite Ore"
+				"&6* Tungstate Ore"
+				"&6* Radium Salt&r"
+				""
+				"As well as the &6Stellar Creation Data&r, which will be useful much, much later."
+				""
+				"&2A new mission is available in CEu. This mission costs HV Electric Pumps and Cryotheum Dust. This nets you Solidified Neon, Xenon and Krypton, although it is better to get those from distilling Liquid Nether and Ender Air, as of the useful byproducts you get, and the tiny amount of each element you get in this mission."
+			]
+			disable_toast: true
+			id: "472AEEB068D18244"
+			shape: "square"
+			size: 1.2d
+			tasks: [{
+				id: "0772040FEF57AEEF"
+				item: "kubejs:microminer_t2"
+				type: "item"
+			}]
+			title: "&dTier Two Micro Miner"
+			x: 18.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7E9DF1139829C78B"]
+			description: [
+				"The Third Micro Miner. &2You'll need that Boron in the MV Field Generators.&r"
+				""
+				"This one can get you:"
+				"&6* Scheelite Ore"
+				"&6* Tungstate Ore"
+				"&2* Ilmenite Ore&6"
+				"&6* Vanadium Magnetite Ore"
+				"&6* Tetrahedrite Ore"
+				"&6* Cassiterite Ore"
+				"&6* Tin Ore"
+				"&6* Redstone Ore"
+				"&6* Certus Quartz Ore"
+				"&6* Almandine Ore"
+				"&6* Lepidolite Ore&r"
+				""
+				"When equipped with Gemstone Sensor:"
+				"&2* Perfect Diamonds"
+				"&6* Perfect Rubies"
+				"&6* Perfect Topaz"
+				"&6* Perfect Emeralds"
+				"&6* Sapphire Ore"
+				"&6* Silver Ore"
+				"&6* Gold Ore"
+			]
+			disable_toast: true
+			id: "38BC2580D6D4546A"
+			shape: "square"
+			size: 1.2d
+			tasks: [{
+				id: "2583D472B3FD5C15"
+				item: "kubejs:microminer_t3"
+				type: "item"
+			}]
+			title: "&2Tier Three Micro Miner"
+			x: 18.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"7D39A4D0CC886796"
+				"27B3EB82ED638620"
+				"52F1953ED72A8AA6"
+				"77582C534A994D7C"
+			]
+			description: [
+				"The Fourth Micro Miner."
+				""
+				"All of the Tier Four missions require &68 Quantum Flux&r and a stack of &6Petrotheum Dust&r."
+				""
+				"This miner is the first convenient source of &6Osmium&r and &6Iridium&r, via a mission requiring &6Wither Realm Data&r."
+				""
+				"A &6Composition Sensor&r instead directs the miner to obtain &6Dense Oilsands Ore&r, equivalent to &232&r stacks of &6End Oilsands Ore&r, and 32 &6Compressed Infinity Dust Blocks&r, equivalent to 2592 &6Infinity Dust&r."
+				""
+				"When equipped with a &6Gemstone Sensor&r:"
+				"&6* Dense Lapis Ore"
+				"* Dense Diamond Ore"
+				"* Dense Coal Ore"
+				"* Dense Emerald Ore"
+				"* Dense Redstone Ore&r"
+			]
+			disable_toast: true
+			id: "41ACC0937AA9D1E3"
+			shape: "square"
+			size: 1.4d
+			tasks: [{
+				id: "176FA720198D8858"
+				item: "kubejs:microminer_t4"
+				type: "item"
+			}]
+			title: "Tier Four Micro Miner"
+			x: 18.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4F8B4DCE7C340418"]
+			description: [
+				"The only source of &6Naquadah &2Ore&r. Along with it, &2Sheldonite Ore&r (for &6PGS&r) and &2Kaemanite Ore&r (for &6Trinium&r), via a mission with &6Stabilized Plutonium&r."
+				""
+				"When provided with &6Stabilized Uranium&r, brings:"
+				"&2* Uraninite Ore&6"
+				"* Palladium Ore"
+				"&2* Realgar Ore"
+				"&6* Bastnasite Ore"
+				"* Sphalerite Ore"
+				"* Monazite Ore"
+				"&2* Enderpearl Blocks"
+				"* Osmiridium 80/20 Ore"
+				"&6* Boron Dust"
+				"* Molybdenite Ore"
+				"* Beryllium Ore"
+			]
+			disable_toast: true
+			id: "45F67FCB190EDF9D"
+			shape: "square"
+			size: 1.4d
+			tasks: [{
+				id: "510AE2417F5495F5"
+				item: "kubejs:microminer_t5"
+				type: "item"
+			}]
+			title: "&2Tier Five Micro Miner"
+			x: 18.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4F2A97487AE923CE"]
+			description: [
+				"The first decent source of &6Dragon Eggs&r and &6Stabilized Einsteinium&r."
+				""
+				"Is also useful for:"
+				"&2* Uraninite Ore"
+				"* Iridosmine 80/20 Ore"
+				"* Osmiridium 80/20 Ore"
+			]
+			disable_toast: true
+			id: "3610B7A42E7710C1"
+			shape: "square"
+			size: 1.4d
+			tasks: [{
+				id: "2A2D25257CE7EFFF"
+				item: "kubejs:microminer_t6"
+				type: "item"
+			}]
+			title: "&2Tier Six Micro Miner"
+			x: 18.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2358A5CF22FF5495"
+				"7E3A179376673590"
+				"0B6196692F9E176D"
+			]
+			description: [
+				"The source of &6Dragon Hearts&r and the valuable &6Lair of The Chaos Guardian Data&r."
+				""
+				"As a bonus, brings &6Dragon Eggs, Dragon's Breath, Ender Dragon Scales&r, &2Ruthenium Blocks&r and a plenty of different precious metals and gems."
+			]
+			disable_toast: true
+			id: "66BD8FA2507509A9"
+			shape: "square"
+			size: 1.4d
+			tasks: [{
+				id: "76BD3C96F092EDC4"
+				item: "kubejs:microminer_t7"
+				type: "item"
+			}]
+			title: "&2Tier Seven Micro Miner"
+			x: 18.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2358A5CF22FF5495"
+				"7E3A179376673590"
+				"56EFA6A07C7291F7"
+				"6391447F1A411281"
+			]
+			description: [
+				"The main source of &6Chaos Shards&r."
+				""
+				"The other mission gives negligible amounts of &6Neutronium&r and some other moderately useful things, but you're better off making Neutronium in the &3Fusion Reactor Mark 3&r&r and the other items are otherwise craftable."
+			]
+			disable_toast: true
+			id: "61DE92B5E822027F"
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "7140C1B7FF5795BE"
+				item: "kubejs:microminer_t8"
+				type: "item"
+			}]
+			title: "Tier Eight Micro Miner"
+			x: 18.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"57D9FA04817CB92F"
+				"619D94FE1D9834FA"
+				"6ABD83B58FADD4DF"
+				"483652BAEF59E125"
+				"0B0DA891DF699A1A"
+			]
+			description: [
+				"Combines &bStellar Creation Data&r into the &dUniverse Creation Data&r, which is a crucial component for the Tier Ten Micro Miner mission."
+				""
+				"The alternate mission brings a decent quantity of &6Neutronium&r. It might be easier to just make all your Neutronium in the reactor, but it's up to you."
+			]
+			disable_toast: true
+			id: "206B8889A4A22C26"
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "18BCE52F27AB5682"
+				item: "kubejs:microminer_t9"
+				type: "item"
+			}]
+			title: "Tier Nine Micro Miner"
+			x: 18.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["22DC32C2B67EFD25"]
+			description: [
+				"You have become Death, destroyer of Universes."
+				""
+				"Might probably be obvious, but this miner gathers a &6Heart of a Universe&r."
+			]
+			disable_toast: true
+			id: "2C7576660329BA8E"
+			size: 2.0d
+			tasks: [{
+				id: "70F5B6D1402BA780"
+				item: "kubejs:microminer_t10"
+				type: "item"
+			}]
+			title: "Tier Ten Micro Miner"
+			x: 18.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["4CD6C60CBEFFA317"]
+			description: [
+				"The &3Electric Blast Furnace&r is a major, major milestone in your &bGregTech&r career. It has the power to smelt more advanced materials. The first of which, &6Aluminium&r, is going to be important in the immediate future."
+				""
+				"Since smelting &6Aluminium&r requires MV power, you're going to have to power this with 2 LV Energy Input Hatches."
+				""
+				"There is a diagram of how to build the EBF in &bJEI&r. The second and third levels must be a 3x3 square shape of Coil Blocks (&6Cupronickel&r is the only type of coil block you have access to for now) with an empty center. You can also &6sneak-right click&r the controller to enable the in-world preview."
+				""
+				"However, the bottom and top layers are very flexible. The &6EBF Controller&r must be on the &ebottom layer&r of the structure, and on the &emiddle of an outer edge&r; the &6Muffler Hatch&r must be in the &eexact middle of the top layer&r. Otherwise, you can put the hatches and buses wherever you want, filling in all gaps in each layer with &6Heatproof Machine Casings&r. It's worth noting that you must &euse at least &29&e Heatproof Machine Casings in your layout or the structure will not form&r."
+				""
+				"This quest calls for a &2maintenance hatch&r, two energy hatches, a fluid input and output, and an item input and output, which is a total of 7 positions. Their specific order and placement don't matter, as long as you can access them. The 8th position is your EBF controller, leaving 9 gaps to be filled by Heatproof Machine Casings. If you did everything right, the structure will form: the colors on its hatches and casings will unify, and the controller will say \"Idling.\""
+				""
+				"Hatches and Buses can be replaced by Hatches and Buses of any tier, although the Input Bus must be at least LV, as there are 2 inputs."
+				""
+				"You'll most likely want to locate your power quite near to the EBF. It is very power hungry, and if it cannot get enough energy, progress on the current item smelting will start to regress. Be careful to ensure the EBF has enough power, and keep a Soft Hammer nearby to pause it by tapping the controller if you run out of power."
+				""
+				"&2In GTCEu, all hatches except Maintenance can be shared between Multiblocks!"
+			]
+			disable_toast: true
+			icon: "gtceu:electric_blast_furnace"
+			id: "296930D2866DF7BE"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "3BB9927EAAF6563D"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2445FA65AD7BB9C3"
+					item: "gtceu:cupronickel_coil_block"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3CCC265673AE6FBC"
+					item: "gtceu:lv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "7E87F0A26D423A97"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "1EA164EB62E6100D"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "3D16C3F7E26C4EB4"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "17CE31B5916557C0"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "00AA165B61258854"
+					item: "gtceu:heatproof_machine_casing"
+					type: "item"
+				}
+				{
+					id: "19368865517F941F"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "0DA9A5D7E74B0952"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+			]
+			title: "&2Blast Furnace Fun"
+			x: 13.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"061904A6FEED5B66"
+				"776199B37A19A592"
+				"09A389EC37805A0A"
+				"296930D2866DF7BE"
+			]
+			description: [
+				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chrome&r."
+				""
+				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Hot Kanthal Ingot&r which will damage you if it is held. To prevent this damage and obtain the desired ingot, the Hot Ingot must be cooled in a &3Chemical Bath&r or &3Vacuum Freezer&r."
+				""
+				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &3Chemical Bath&r, or once you get it, the &6Input Bus&r of your &3Vacuum Freezer&r via conduits or an &6Ore Dictionary Filter&r set to 'ingotHot*' with a high piority."
+			]
+			disable_toast: true
+			id: "4005450FC9363880"
+			shape: "hexagon"
+			tasks: [{
+				id: "50568E831EF9268A"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			title: "Kanthal Ingots"
+			x: 15.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4005450FC9363880"]
+			description: [
+				"Time to upgrade your &3Electric Blast Furnace&r! &6Kanthal&r is the second coil material available, increasing your EBF's operating temperature to 2700K so it can process more advanced materials."
+				""
+				"&6Kanthal Coils&r are required primarily for producing &6Silicon&r, required for Circuit parts, and &6Titanium&r, used for &5EV&r machines. An &bMV &3Assembler&r is required to produce them, and they require &62x Kanthal Wire&r, &6Aluminium Foil&r, and &9Copper fluid&r."
+				""
+				"&2In CEu, using higher-tier coils provides some bonuses to their multiblocks.&r For the &3Electric Blast Furnace&r, running recipes hotter than required can reduce the energy cost and time taken. The &dtemperature&r of the EBF depends on the coil used and the voltage it is running at. For Kanthal Coils, this means that recipes you could run with &6Cupronickel Coils&r will save &d5%%&r energy."
+				""
+				"Refer to the coil tooltip and EBF controller tooltip for the other bonuses provided."
+			]
+			id: "573B0EF472FDF0B1"
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "01EAB6614DAA1668"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			title: "&2Kanthal Coil Blocks"
+			x: 13.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["573B0EF472FDF0B1"]
+			description: [
+				"&6Nichrome&r is an alloy of &6Nickel&r and &6Chrome&r."
+				""
+				"This alloy is cooked in an &3Electric Blast Furnace&r and cooled in a &3Vacuum Freezer&r."
+			]
+			disable_toast: true
+			id: "3D1FD5A875C83E2E"
+			shape: "hexagon"
+			tasks: [{
+				id: "12B4070530B5921C"
+				item: "gtceu:nichrome_ingot"
+				type: "item"
+			}]
+			title: "Nichrome Ingots"
+			x: 15.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3D1FD5A875C83E2E"]
+			description: [
+				"&6Nichrome&r is the third coil material available, increasing your EBF's operating temperature to 3600K so it can process more advanced materials."
+				""
+				"Notice that an &6HV&r &3Assembler&r is required to make them. Each tier of coil requires their tier of Assembler - we won't remind you again."
+				""
+				"&d3600K&r is now also hot enough to grant a single &d100%% efficient overclock&r to 1800K and below recipes. This means that one overclock will grant &d4x speed&r instead of the normal &d2x&r. In effect, you will get an additional 2x speed boost by overclocking once. "
+				""
+				"This means that the gas-boosted recipe for &6Aluminium&r will get cut from about &e7s&r to &e3s&r at HV. Once you upgrade your EBF to EV power, &6Stainless Steel Ingots&r will get cut from about &e37s&r to &e9s&r! It's well worth upgrading the EBFs producing these materials to &6Nichrome&r once you can afford it. "
+				""
+				"Later coils will give similar bonuses. Additionally, the EBF's temperature will increase by &d100K&r for each voltage tier above MV, which could make a difference for future materials."
+			]
+			disable_toast: true
+			id: "4133AC6062B00994"
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "6CDDC82BC4DD8A3B"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			title: "&2Nichrome Coil Blocks"
+			x: 13.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"3B3F46345D39CAE2"
+				"4133AC6062B00994"
+			]
+			description: [
+				"&6RTM Alloy&r is an alloy of &6Ruthenium&r, &6Tungsten&r and &6Molybdenum&r."
+				""
+				"This alloy is cooked in an &3Electric Blast Furnace&r and cooled in a &3Vacuum Freezer&r."
+			]
+			disable_toast: true
+			id: "5D0A642048AF909B"
+			shape: "hexagon"
+			tasks: [{
+				id: "1B62381FBD08C4A9"
+				item: "gtceu:rtm_alloy_ingot"
+				type: "item"
+			}]
+			title: "&dRTM Alloy"
+			x: 15.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5D0A642048AF909B"]
+			description: [
+				"&6RTM Alloy&r is the fourth coil material available, increasing your EBF's operating temperature to 4500K so it can process more advanced materials."
+				""
+				"&dIn modern, RTM Alloy replaces tungstensteel in coil progression."
+			]
+			disable_toast: true
+			id: "6DC635766CD40FFF"
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "7C94792375FF4CAB"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			title: "&dRTM Alloy Coil Blocks"
+			x: 13.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6DC635766CD40FFF"]
+			description: [
+				"&6HSS-G&r is an alloy of &6Tungstensteel&r, &6Chrome&r, &6Molybdenum&r, and &6Vanadium&r."
+				""
+				"This alloy is cooked in an &3Electric Blast Furnace&r and cooled in a &3Vacuum Freezer&r."
+			]
+			disable_toast: true
+			id: "437027889A4C8801"
+			shape: "hexagon"
+			tasks: [{
+				id: "4F147EFD4ABB7B37"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
+			title: "High Speed Steel Type G"
+			x: 15.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"14F1FF4656693711"
+				"437027889A4C8801"
+			]
+			description: ["&6HSS-G&r is the fifth coil material available, increasing your EBF's operating temperature to 5400K so it can process more advanced materials, such as &6Naquadah&r."]
+			disable_toast: true
+			id: "1D8E5D1C2C865D32"
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "16EA280697B0E8FB"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			title: "HSS-G Coil Blocks"
+			x: 13.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1D8E5D1C2C865D32"
+				"45F67FCB190EDF9D"
+				"745628397790ED7A"
+			]
+			description: [
+				"An otherworldly material exclusive to Microverses, &6Naquadah&r is an important material in the late game."
+				""
+				"It can be alloyed and enriched to various forms, and is the eventual source of &6Neutronium&r in a &3Mark Three Fusion Reactor&r."
+			]
+			disable_toast: true
+			id: "74EB55B2657624B2"
+			shape: "hexagon"
+			tasks: [{
+				id: "45C807FE59139B86"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			title: "Naquadah Ingots"
+			x: 15.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["74EB55B2657624B2"]
+			description: [
+				"&6Naquadah&r is the sixth coil material available, increasing your EBF's operating temperature to 7200K so it can process more advanced materials."
+				""
+				"&2You cannot skip a coil material anymore."
+			]
+			disable_toast: true
+			id: "753182760993B187"
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "7090280792B3E871"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			title: "Naquadah Coil Blocks"
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"753182760993B187"
+				"0508D3CCB6C876A3"
+			]
+			description: [
+				"&2A strong heavy element obtained from the Naquadah chain."
+				""
+				"&6Trinium&r can come from &6Kaemanite Ore&r, but you will probably want to bolster its production with &6Naquadah Dust&r processing. It comes out at the second stage, so if you don't mind storing the intermediates and have Fluorine under control, you can hold off doing the full chain if you don't need to yet. You get &d1 Trinium per 6 Naquadah processed&r."
+				""
+				"This will be required in large quantities for &6Trinium Coils&r, &6Superconducting Coil Blocks&r, &6Naquadah Alloy&r, among other things. You will need 14 stacks at least for a &3Fusion Reactor Mk1&r, so stock up on it."
+			]
+			disable_toast: true
+			id: "4CA5BA3F11169D79"
+			shape: "hexagon"
+			tasks: [{
+				id: "33E64510588C3E95"
+				item: "gtceu:trinium_ingot"
+				type: "item"
+			}]
+			title: "&2Trinium"
+			x: 15.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"41FA85A3920EB334"
+				"4CA5BA3F11169D79"
+			]
+			description: ["&2Trinium Coils&r are the eight coiil material available, increasing your EBF's operating temperature to 9001K so it can process more advanced materials."]
+			disable_toast: true
+			id: "4FEF99FCFEC947C9"
+			shape: "hexagon"
+			subtitle: "Holy crap it's that thing from the boxart"
+			tasks: [{
+				count: 16L
+				id: "6A640F26EE3EBE97"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			title: "&2Trinium Coils"
+			x: 13.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"069773756716E192"
+				"4FEF99FCFEC947C9"
+			]
+			description: [
+				"&2Doesn't look exactly like Europium anymore.&r"
+				""
+				"To make &9Tritanium&r, you first need to make &9Duranium&r. This is done by fusing molten &9Gallium&r and &9Radon&r in a &3Fusion Reactor Mark 1&r or better."
+				""
+				"Once you have Duranium, you can fuse Tritanium in a &3Fusion Reactor Mark 2&r using the Duranium and molten &9Titanium&r."
+				""
+				"If you're having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into the &aCrafting Calculator&r."
+			]
+			disable_toast: true
+			id: "46CD6750E8963351"
+			shape: "hexagon"
+			tasks: [{
+				id: "2060C3BEBD46E3DD"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			title: "&2Tritanium Ingot"
+			x: 15.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["46CD6750E8963351"]
+			description: ["&2Tritanium Coils are the final coil material. At 10800K, it's capable of smelting every material."]
+			disable_toast: true
+			id: "23A57C125DC0F948"
+			shape: "hexagon"
+			tasks: [{
+				id: "588ABC7B3A040B2E"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			title: "&2Tritanium Coils"
+			x: 13.5d
+			y: 2.0d
 		}
 	]
 	title: "Progression"

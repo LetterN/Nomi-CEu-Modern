@@ -1172,6 +1172,7 @@
 				item: "gtceu:hssg_coil_block"
 				type: "item"
 			}]
+			title: "HSS-G Coil Blocks"
 			x: 11.0d
 			y: 3.0d
 		}
