@@ -1,4 +1,5 @@
 {
+	autofocus_id: "281DE48E7260BC8E"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "end_game"
@@ -421,6 +422,7 @@
 				item: "kubejs:solidified_hydrogen"
 				type: "item"
 			}]
+			title: "Element 001: Hydrogen"
 			x: 12.5d
 			y: -2.5d
 		}
@@ -437,6 +439,7 @@
 				item: "kubejs:solidified_helium"
 				type: "item"
 			}]
+			title: "Element 002: Helium"
 			x: 38.0d
 			y: -2.5d
 		}
@@ -453,6 +456,7 @@
 				item: "gtceu:lithium_dust"
 				type: "item"
 			}]
+			title: "Element 003: Lithium"
 			x: 12.5d
 			y: -1.0d
 		}
@@ -469,6 +473,7 @@
 				item: "gtceu:beryllium_ingot"
 				type: "item"
 			}]
+			title: "Element 004: Beryllium"
 			x: 14.0d
 			y: -1.0d
 		}
@@ -485,6 +490,7 @@
 				item: "gtceu:boron_dust"
 				type: "item"
 			}]
+			title: "Element 005: Boron"
 			x: 30.5d
 			y: -1.0d
 		}
@@ -501,6 +507,7 @@
 				item: "gtceu:carbon_dust"
 				type: "item"
 			}]
+			title: "&2Element 006: Carbon"
 			x: 32.0d
 			y: -1.0d
 		}
@@ -517,6 +524,7 @@
 				item: "kubejs:solidified_nitrogen"
 				type: "item"
 			}]
+			title: "Element 007: Nitrogen"
 			x: 33.5d
 			y: -1.0d
 		}
@@ -533,6 +541,7 @@
 				item: "kubejs:solidified_oxygen"
 				type: "item"
 			}]
+			title: "Element 008: Oxygen"
 			x: 35.0d
 			y: -1.0d
 		}
@@ -549,6 +558,7 @@
 				item: "kubejs:solidified_fluorine"
 				type: "item"
 			}]
+			title: "Element 009: Fluorine"
 			x: 36.5d
 			y: -1.0d
 		}
@@ -565,6 +575,7 @@
 				item: "kubejs:solidified_neon"
 				type: "item"
 			}]
+			title: "Element 010: Neon"
 			x: 38.0d
 			y: -1.0d
 		}
@@ -581,6 +592,7 @@
 				item: "gtceu:sodium_dust"
 				type: "item"
 			}]
+			title: "&2Element 011: Sodium"
 			x: 12.5d
 			y: 0.5d
 		}
@@ -597,6 +609,7 @@
 				item: "gtceu:magnesium_dust"
 				type: "item"
 			}]
+			title: "&2Element 012: Magnesium"
 			x: 14.0d
 			y: 0.5d
 		}
@@ -613,6 +626,7 @@
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
+			title: "Element 013: Aluminium"
 			x: 30.5d
 			y: 0.5d
 		}
@@ -629,6 +643,7 @@
 				item: "gtceu:silicon_ingot"
 				type: "item"
 			}]
+			title: "Element 014: Silicon"
 			x: 32.0d
 			y: 0.5d
 		}
@@ -645,6 +660,7 @@
 				item: "gtceu:phosphorus_dust"
 				type: "item"
 			}]
+			title: "Element 015: Phosphorus"
 			x: 33.5d
 			y: 0.5d
 		}
@@ -661,6 +677,7 @@
 				item: "gtceu:sulfur_dust"
 				type: "item"
 			}]
+			title: "Element 016: Sulfur"
 			x: 35.0d
 			y: 0.5d
 		}
@@ -677,6 +694,7 @@
 				item: "kubejs:solidified_chlorine"
 				type: "item"
 			}]
+			title: "Element 017: Chlorine"
 			x: 36.5d
 			y: 0.5d
 		}
@@ -693,6 +711,7 @@
 				item: "kubejs:solidified_argon"
 				type: "item"
 			}]
+			title: "Element 018: Argon"
 			x: 38.0d
 			y: 0.5d
 		}
@@ -709,6 +728,7 @@
 				item: "gtceu:potassium_dust"
 				type: "item"
 			}]
+			title: "&2Element 019: Potassium"
 			x: 12.5d
 			y: 2.0d
 		}
@@ -725,6 +745,7 @@
 				item: "gtceu:calcium_dust"
 				type: "item"
 			}]
+			title: "Element 020: Calcium"
 			x: 14.0d
 			y: 2.0d
 		}
@@ -741,6 +762,7 @@
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
+			title: "Element 022: Titanium"
 			x: 17.0d
 			y: 2.0d
 		}
@@ -757,6 +779,7 @@
 				item: "gtceu:vanadium_ingot"
 				type: "item"
 			}]
+			title: "Element 023: Vanadium"
 			x: 18.5d
 			y: 2.0d
 		}
@@ -771,6 +794,7 @@
 				count: 64L
 				id: "64E4171E8B8F7956"
 				item: "gtceu:chromium_ingot"
+				title: "Element 024: Chromium"
 				type: "item"
 			}]
 			x: 20.0d
@@ -789,6 +813,7 @@
 				item: "gtceu:manganese_ingot"
 				type: "item"
 			}]
+			title: "Element 025: Manganese"
 			x: 21.5d
 			y: 2.0d
 		}
@@ -805,6 +830,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
+			title: "Element 026: Iron"
 			x: 23.0d
 			y: 2.0d
 		}
@@ -821,6 +847,7 @@
 				item: "gtceu:cobalt_ingot"
 				type: "item"
 			}]
+			title: "Element 027: Cobalt"
 			x: 24.5d
 			y: 2.0d
 		}
@@ -837,6 +864,7 @@
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
+			title: "Element 028: Nickel"
 			x: 26.0d
 			y: 2.0d
 		}
@@ -853,6 +881,7 @@
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
+			title: "Element 029: Copper"
 			x: 27.5d
 			y: 2.0d
 		}
@@ -869,6 +898,7 @@
 				item: "gtceu:zinc_ingot"
 				type: "item"
 			}]
+			title: "Element 030: Zinc"
 			x: 29.0d
 			y: 2.0d
 		}
@@ -885,6 +915,7 @@
 				item: "gtceu:gallium_ingot"
 				type: "item"
 			}]
+			title: "Element 031: Gallium"
 			x: 30.5d
 			y: 2.0d
 		}
@@ -901,6 +932,7 @@
 				item: "gtceu:arsenic_dust"
 				type: "item"
 			}]
+			title: "Element 033: Arsenic"
 			x: 33.5d
 			y: 2.0d
 		}
@@ -917,6 +949,7 @@
 				item: "kubejs:solidified_krypton"
 				type: "item"
 			}]
+			title: "Element 036: Krypton"
 			x: 38.0d
 			y: 2.0d
 		}
@@ -933,6 +966,7 @@
 				item: "gtceu:yttrium_ingot"
 				type: "item"
 			}]
+			title: "Element 039: Yttrium"
 			x: 15.5d
 			y: 3.5d
 		}
@@ -949,6 +983,7 @@
 				item: "gtceu:palladium_ingot"
 				type: "item"
 			}]
+			title: "Element 046: Palladium"
 			x: 26.0d
 			y: 3.5d
 		}
@@ -965,6 +1000,7 @@
 				item: "gtceu:silver_ingot"
 				type: "item"
 			}]
+			title: "Element 047: Silver"
 			x: 27.5d
 			y: 3.5d
 		}
@@ -981,6 +1017,7 @@
 				item: "gtceu:indium_ingot"
 				type: "item"
 			}]
+			title: "Element 049: Indium"
 			x: 30.5d
 			y: 3.5d
 		}
@@ -997,6 +1034,7 @@
 				item: "gtceu:tin_ingot"
 				type: "item"
 			}]
+			title: "Element 050: Tin"
 			x: 32.0d
 			y: 3.5d
 		}
@@ -1013,6 +1051,7 @@
 				item: "gtceu:antimony_ingot"
 				type: "item"
 			}]
+			title: "Element 051: Antimony"
 			x: 33.5d
 			y: 3.5d
 		}
@@ -1029,6 +1068,7 @@
 				item: "kubejs:solidified_xenon"
 				type: "item"
 			}]
+			title: "Element 054: Xenon"
 			x: 38.0d
 			y: 3.5d
 		}
@@ -1043,6 +1083,7 @@
 				count: 64L
 				id: "2D438909DE308C35"
 				item: "gtceu:lanthanum_dust"
+				title: "Element 057: Lanthanum"
 				type: "item"
 			}]
 			x: 17.0d
@@ -1061,6 +1102,7 @@
 				item: "gtceu:tungsten_ingot"
 				type: "item"
 			}]
+			title: "Element 074: Tungsten"
 			x: 21.5d
 			y: 5.0d
 		}
@@ -1077,6 +1119,7 @@
 				item: "gtceu:osmium_ingot"
 				type: "item"
 			}]
+			title: "Element 076: Osmium"
 			x: 23.0d
 			y: 5.0d
 		}
@@ -1093,6 +1136,7 @@
 				item: "gtceu:iridium_ingot"
 				type: "item"
 			}]
+			title: "Element 077: Iridium"
 			x: 24.5d
 			y: 5.0d
 		}
@@ -1109,6 +1153,7 @@
 				item: "gtceu:platinum_ingot"
 				type: "item"
 			}]
+			title: "Element 078: Platinum"
 			x: 26.0d
 			y: 5.0d
 		}
@@ -1125,6 +1170,7 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
+			title: "Element 079: Gold"
 			x: 27.5d
 			y: 5.0d
 		}
@@ -1141,6 +1187,7 @@
 				item: "kubejs:solidified_mercury"
 				type: "item"
 			}]
+			title: "Element 080: Mercury"
 			x: 29.0d
 			y: 5.0d
 		}
@@ -1157,6 +1204,7 @@
 				item: "kubejs:solidified_radon"
 				type: "item"
 			}]
+			title: "Element 086: Radon"
 			x: 38.0d
 			y: 5.0d
 		}
@@ -1173,6 +1221,7 @@
 				item: "gtceu:thorium_ingot"
 				type: "item"
 			}]
+			title: "Element 090: Thorium"
 			x: 18.5d
 			y: 9.5d
 		}
@@ -1189,6 +1238,7 @@
 				item: "kubejs:stabilized_uranium"
 				type: "item"
 			}]
+			title: "Element 092: Uranium"
 			x: 21.5d
 			y: 9.5d
 		}
@@ -1205,6 +1255,7 @@
 				item: "kubejs:stabilized_neptunium"
 				type: "item"
 			}]
+			title: "Element 093: Neptunium"
 			x: 23.0d
 			y: 9.5d
 		}
@@ -1221,6 +1272,7 @@
 				item: "kubejs:stabilized_plutonium"
 				type: "item"
 			}]
+			title: "Element 094: Plutonium"
 			x: 24.5d
 			y: 9.5d
 		}
@@ -1237,6 +1289,7 @@
 				item: "gtceu:americium_ingot"
 				type: "item"
 			}]
+			title: "&2Element 095: Americium"
 			x: 26.0d
 			y: 9.5d
 		}
@@ -1269,6 +1322,7 @@
 				item: "kubejs:stabilized_berkelium"
 				type: "item"
 			}]
+			title: "Element 097: Berkelium"
 			x: 29.0d
 			y: 9.5d
 		}
@@ -1285,6 +1339,7 @@
 				item: "kubejs:stabilized_californium"
 				type: "item"
 			}]
+			title: "Element 098: Californium"
 			x: 30.5d
 			y: 9.5d
 		}
@@ -1301,6 +1356,7 @@
 				item: "kubejs:stabilized_einsteinium"
 				type: "item"
 			}]
+			title: "Element 099: Einsteinium"
 			x: 32.0d
 			y: 9.5d
 		}
@@ -1333,6 +1389,7 @@
 				item: "gtceu:cadmium_dust"
 				type: "item"
 			}]
+			title: "Element 032: Cadmium"
 			x: 32.0d
 			y: 2.0d
 		}
@@ -1381,6 +1438,7 @@
 				item: "gtceu:duranium_ingot"
 				type: "item"
 			}]
+			title: "Element 034: Duranium"
 			x: 35.0d
 			y: 2.0d
 		}
@@ -1413,6 +1471,7 @@
 				item: "gtceu:caesium_dust"
 				type: "item"
 			}]
+			title: "Element 037: Caesium"
 			x: 12.5d
 			y: 3.5d
 		}
@@ -1623,132 +1682,6 @@
 			}]
 			x: 33.5d
 			y: 5.0d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "598F46411E0C909E"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "697740D68733EAD9"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 20.0d
-			y: 3.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "062E4C27F73EDC20"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "0F023A187B14DC15"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 17.0d
-			y: 3.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "6EE904ACA2D7D22C"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "7FCC8AF98404ACD3"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 15.5d
-			y: 2.0d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "150510B59EE6069B"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "766E5C8C98CD959A"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 14.0d
-			y: 3.5d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "6A798E371C43851A"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "7095A25B4D938219"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 14.0d
-			y: 5.0d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "44EAC2DD5794E641"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "6B2177462BE5E16E"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 12.5d
-			y: 5.0d
-		}
-		{
-			description: ["This element is not in Gregtech."]
-			disable_toast: true
-			icon: "enderio:painted_fence"
-			id: "36B478563A854573"
-			tasks: [{
-				disable_toast: true
-				icon: "enderio:painted_fence"
-				id: "17E629F3AE56D5B2"
-				stat: "minecraft:play_time"
-				title: " "
-				type: "stat"
-				value: 1
-			}]
-			title: "Nothing"
-			x: 17.0d
-			y: 9.5d
 		}
 		{
 			description: ["This element is not in Gregtech."]
@@ -2011,9 +1944,6 @@
 				"4A6F916494B787AE"
 				"26380A0FD7A8688C"
 				"37FD045CC0AEB11B"
-				"36B478563A854573"
-				"062E4C27F73EDC20"
-				"6A798E371C43851A"
 				"0D552ECAE4FC617B"
 				"21F3839E5E4B57BE"
 				"73F80C5062B86D09"
@@ -2042,13 +1972,11 @@
 				"4BBB1F5A2657650D"
 				"07706AB24D866D7F"
 				"102BE3675105B9F5"
-				"6EE904ACA2D7D22C"
 				"5A25A4DEF1CCA576"
 				"1A693859BD2CDADF"
 				"3D54068FFDD1F3CE"
 				"4EDE4D4D109BF2C2"
 				"7D50B0E825F8D70B"
-				"150510B59EE6069B"
 				"75FDDFCD19B1614C"
 				"293A7F5F0A58E5F3"
 				"33131617D0919A5B"
@@ -2060,14 +1988,12 @@
 				"6F76D81C52F0E04C"
 				"03819818FD208DEE"
 				"76B813A1717561B5"
-				"598F46411E0C909E"
 				"36902938AFF55303"
 				"59C4DA6088B9BC7D"
 				"7B8621728BF88BEC"
 				"4E39FDB6FACDF522"
 				"6648CD525CE34898"
 				"0DB13ACF2241345E"
-				"44EAC2DD5794E641"
 				"4DC7B2BB86A2FEBD"
 				"7B73FD81B7E8FFFE"
 				"63969C74693044BA"
@@ -2088,16 +2014,23 @@
 				"6F7D6294E9F311E4"
 				"77880E592DB38C9C"
 				"67591B6025C03130"
+				"1D5D25F52BE6709E"
+				"21000D112770C852"
+				"6FD050692DF28458"
+				"28558A445F62D737"
+				"748F599A5AA59D98"
+				"47E4558362202D5D"
 			]
 			description: [
 				"Man, that's a LOT of quests linked to this one."
 				""
 				"&dOmnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."
 				""
-				"Fun fact: you'll need to make 487 motes. You've got all this automated, right?"
+				"Fun fact: you'll need to make 487 motes. You've got all this automated, &oright&r?"
 			]
 			id: "281DE48E7260BC8E"
-			size: 2.5d
+			shape: "hexagon"
+			size: 3.0d
 			tasks: [{
 				count: 64L
 				id: "2930DDCAF43468A4"
@@ -2134,14 +2067,13 @@
 				"2D9A95AC50CCB988"
 			]
 			description: [
-				"Are you ready to go infinite?"
-				""
 				"Reinforcing &6Heart of a Universe&r with &6Chaotic Cores&r, many &6Piles of Neutrons&r, and a bunch of &6Eternal Catalysts&r produces an &cInfinity Catalyst&r."
 				""
 				"This material is the core of most creative-tier crafting recipes."
 			]
 			id: "1D00150456DEF379"
 			size: 4.0d
+			subtitle: "Are you ready to go infinite?"
 			tasks: [{
 				id: "6E04AE0160E4D09E"
 				item: "avaritia:infinity_catalyst"
@@ -2162,7 +2094,10 @@
 			tasks: [{
 				count: 4L
 				id: "715AA1ECF4474085"
-				item: { Count: 4b, id: "draconicevolution:chaotic_core" }
+				item: {
+					Count: 4b
+					id: "draconicevolution:chaotic_core"
+				}
 				type: "item"
 			}]
 			title: "Chaotic Cores"
@@ -2277,11 +2212,13 @@
 			]
 			id: "2EBB9A154522348F"
 			size: 5.0d
+			subtitle: "A winner is you!"
 			tasks: [{
 				id: "392DAFD3A4019E34"
 				item: "gtceu:creative_chest"
 				type: "item"
 			}]
+			title: "&5&lCreative Chest&r"
 			x: 78.5d
 			y: -7.0d
 		}
@@ -2538,6 +2475,132 @@
 			title: "&2Creative Power, Gregtech Edition"
 			x: 67.5d
 			y: -1.75d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "39999DC07696B3FC"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "107456F9C5FC6932"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 20.0d
+			y: 3.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "47E4558362202D5D"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "1624AC337BD63AAA"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 17.0d
+			y: 3.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "6FD050692DF28458"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "12BC664CC36B39BA"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 15.5d
+			y: 2.0d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "21000D112770C852"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "7DC386F41AA01A9B"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 14.0d
+			y: 3.5d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "748F599A5AA59D98"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "02E3A9718B98B430"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 14.0d
+			y: 5.0d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "28558A445F62D737"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "376026CA732087F5"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 12.5d
+			y: 5.0d
+		}
+		{
+			description: ["This element is not in Gregtech."]
+			disable_toast: true
+			icon: "enderio:painted_fence"
+			id: "1D5D25F52BE6709E"
+			tasks: [{
+				disable_toast: true
+				icon: "enderio:painted_fence"
+				id: "7546DF93889C5CA8"
+				stat: "minecraft:play_time"
+				title: " "
+				type: "stat"
+				value: 1
+			}]
+			title: "Nothing"
+			x: 17.0d
+			y: 9.5d
 		}
 	]
 	title: "End Game"

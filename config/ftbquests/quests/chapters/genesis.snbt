@@ -1,6 +1,8 @@
 {
+	autofocus_id: "4FE53F31E68F4C1C"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
+	disable_toast: true
 	filename: "genesis"
 	group: ""
 	icon: "minecraft:iron_ingot"
@@ -16,12 +18,14 @@
 				"If you're playing with friends, don't forget to invite them to the &eFTB Teams party&r. "
 				""
 				"If you wish to build your base in a skyblock world, place the &6Void World Cake&r down on the ground, and eat a slice to be sent to the void. Please note that you'll still need to return to the Lost Cities/Overworld dimension to mine, but you can freely build in complete safety in the &eVoid World&r."
-				""
+				"{@pagebreak}"
 				"Features new to &2CEu&r and quests with new content will be higlighted in &2dark green&r."
 				""
 				"Features new to &dModern&r and quests with new content will be higlighted in &dLight Purple&r."
 				""
 				"Notes about things in &5Alpha&r will be higlighted in &5Dark Purple&r."
+				""
+				"[\"Text with \",{\"text\":\"underlines\",\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"But not this!\"}},\" are (mostly) clickable.\"]"
 			]
 			icon: "minecraft:crafting_table"
 			id: "66FCC26399376B55"
@@ -74,6 +78,12 @@
 					}
 					type: "item"
 				}
+				{
+					auto: "invisible"
+					id: "24FE5D5A412EA666"
+					title: "FREE CAKES"
+					type: "custom"
+				}
 			]
 			shape: "hexagon"
 			size: 2.0d
@@ -90,9 +100,11 @@
 		{
 			can_repeat: true
 			dependencies: ["66FCC26399376B55"]
-			description: ["This quest is repeatable and gives you a free cake to the Void World or Overworld. You can also refill your cakes with the items indicated in their tooltips."]
+			description: ["This quest is repeatable and gives you a free cake to the &6Void World&r or &2Overworld&r every hour. You can also refill your cakes with the items indicated in their tooltips."]
+			disable_toast: true
 			icon: "telepastries:overworld_cake"
 			id: "542F0090D8975D3C"
+			optional: true
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "1F03FEFB5B2A3B47"
@@ -100,11 +112,21 @@
 				type: "choice"
 			}]
 			subtitle: "Cakes are magical!"
-			tasks: [{
-				id: "423B4FAF11B1C0FA"
-				title: "Cake Based Dimensional Transit"
-				type: "checkmark"
-			}]
+			tags: ["nomi_cakequest"]
+			tasks: [
+				{
+					id: "423B4FAF11B1C0FA"
+					title: "Cake Based Dimensional Transit"
+					type: "checkmark"
+				}
+				{
+					disable_toast: true
+					icon: "minecraft:clock"
+					id: "138B92A597D63C12"
+					title: "Timer"
+					type: "custom"
+				}
+			]
 			title: "Cake Based Dimensional Transit"
 			x: -3.0d
 			y: -2.0d
@@ -120,7 +142,9 @@
 				""
 				"&cPlease note that excessive use of the Quantify Key may lead to lag."
 			]
+			disable_toast: true
 			id: "4A696D4BA5442928"
+			optional: true
 			subtitle: "&oThis quest completes with any wood-type drawer."
 			tasks: [{
 				id: "02543E826A43185A"
@@ -141,6 +165,7 @@
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: ["&dStill very barebone at the moment. Currently shows which multiblocks can be made at what tier. How machines function, ore generation, tools, multiblocks, filters and finally covers.&r"]
+			disable_toast: true
 			icon: "gtceu:terminal"
 			id: "07DC7FC23332B847"
 			rewards: [{
@@ -163,7 +188,7 @@
 				"&c&rOres in &5Nomifactory&f exist in large clusters, or '&eveins&f'. These veins are scattered around the world, and are relatively common. &2The upgraded HV Electric Prospector's Scanner you were given will tell you the types of ores you can find within a 7x7 chunk area!"
 				"&r"
 				"While the Scanner requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making &2an HV Battery&r to charge &aHV tools &rin your inventory."
-				""
+				"{@pagebreak}"
 				"In order to proceed, you'll need to locate a source of &6Iron&f. You have a few options. &6Magnetite&f veins are higher up and contain large amounts of iron, as well as some &6Vanadium&f and &6Gold&f. Another good source of iron is &dGoethite&f veins, which contain several types of iron. Finally, &6Pyrite&f can be found paired with &6Copper&f in several types of veins."
 				""
 				"&6Wrought Iron&f is obtained simply by &esmelting Iron a second time&f. It has more durability than Iron, so it is better for making tools, but &cdo not convert your entire Iron supply over to Wrought Iron&f. The two materials are not interchangeable and you'll need Iron or Wrought Iron as demanded by various recipes."
@@ -184,6 +209,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			subtitle: "ULV Beginings"
 			tasks: [
 				{
 					count: 12L
@@ -481,9 +507,20 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			subtitle: "Diggy Diggy Hole"
 			tasks: [{
-				id: "39656E09593E3D83"
-				type: "checkmark"
+				consume_items: false
+				id: "589A0779F965D77A"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/mining_hammers"
+					}
+				}
+				match_nbt: false
+				title: "Any Mining Hammers"
+				type: "item"
 			}]
 			title: "Mining Hammers"
 			x: 0.5d
@@ -933,7 +970,7 @@
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"Take a peek at The &eEnd Game quest book tab&f. This might seem a bit premature to suggest, but it has a reason."
+				"[\"Take a peek at the \",{\"text\":\"End Game quest book tab\",\"color\":\"yellow\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2BEB72BC6C6FB4E9\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the chapter\"}},\". This might seem a bit premature to suggest, but it has a reason.\"]"
 				""
 				"These are quests for a full stack of many of the materials in the game. Those are the materials you'll need to synthesize &5Omnium&r, the basic end game resource. It's the pack's way of letting you know what materials you should be prepared to mass produce as you approach the end."
 				""
@@ -953,11 +990,9 @@
 			description: [
 				"While there are no types of veins that are extremely rare, you're likely to struggle with finding at least one of the less common vein types. This isn't really avoidable."
 				""
-				"You will accumulate a lot of &dNomicoins&f from quest turn-ins while playing Nomifactory. Do not be hesitant to spend them on things you need! "
+				"[\"You will accumulate a lot of \",{\"text\":\"Nomicoins\",\"color\":\"dark_purple\",\"hoverEvent\":{\"action\":\"show_item\",\"contents\":{\"id\":\"kubejs:nomi_quarter\"}}},\" from quest turn-ins while playing Nomifactory. Do not be hesitant to spend them on things you need!\"]"
 				""
 				"Search for various ores (generally the first one listed in &bJEI&f) to find the coin recipes for them. Alternatively, hover your cursor over a coin and press &6U&f to see what you can buy with it."
-				""
-				"&aDon't be a hoarder!"
 			]
 			icon: "kubejs:nomi_penny"
 			id: "115D2BEB18929C7C"
@@ -972,6 +1007,7 @@
 				}
 				type: "item"
 			}]
+			subtitle: "Don't be a hoarder!"
 			tasks: [{
 				id: "7275E7D7E7F140B8"
 				type: "checkmark"
@@ -1099,18 +1135,19 @@
 		}
 		{
 			description: [
-				"&bEMI&r is the list of all items that you see every time you open your inventory. It's the better(tm) recipe book that shows you all available items and recipes in the modpack. Note that &bEMI&r is based on &bJEI&r, and people tend to use the names interchangably."
+				"&b&lEMI&r is the list of all items that you see every time you open your inventory. It's the better(tm) recipe book that shows you all available items and recipes in the modpack. Note that &b&lEMI&r is based on &b&lJEI&r, and people tend to use the names interchangably."
 				""
 				"To see it in action, pull up a quest that requires an item of some sort and just click the item!"
 				""
-				"If you want to know how to craft an item, just hover your mouse over it and press &6R&r. EMI will list all available recipes."
+				"[\"If you want to know how to craft an item, just hover your mouse over it and press \",{\"keybind\":\"key.jei.showRecipe\",\"color\":\"gold\",\"bold\":true,\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"\\\"Show Recipe\\\" in keybind option\"}},\". EMI will list all available recipes.\"]"
 				""
-				"If you instead want to know what recipes use an item, hover over it and press &6U&r."
+				"[\"If you instead want to know what recipes use an item, hover over it and press \",{\"keybind\":\"key.jei.showUses\",\"color\":\"gold\",\"bold\":true,\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"\",\"contents\":\"\\\"Show Uses\\\" in keybind option\"}},\".\"]"
 				""
-				"Hover over an item and press &6A&r to bookmark it. To remove a bookmarked item from the list, press A on the bookmark."
+				"[\"Hover over an item and press \",{\"keybind\":\"key.jei.bookmark\",\"color\":\"gold\",\"bold\":true,\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"\\\"Add/Remove Bookmark\\\" in keybind option\"}},\" to bookmark it. To remove a bookmarked item from the list, press \",{\"keybind\":\"key.jei.bookmark\",\"color\":\"gold\",\"bold\":true,\"underlined\":true,\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"\\\"Add/Remove Bookmark\\\" in keybind option\"}},\" on the bookmark.\"]"
 				""
 				"One of the remarkable features of EMI is that it's also capable of helping you with recipes, covered more in the quest to the right of this one."
 			]
+			disable_toast: true
 			icon: "ftbquests:book"
 			id: "3B200AD6EFF90DFA"
 			shape: "hexagon"
@@ -1120,7 +1157,7 @@
 				id: "7449A54608D60DF8"
 				type: "checkmark"
 			}]
-			title: "&dUse EMI! Use EMI! USE. EMI."
+			title: "&d&lUse EMI! Use EMI! USE. EMI."
 			x: -11.5d
 			y: -1.5d
 		}
@@ -1134,8 +1171,10 @@
 				""
 				"To invite players to your &bFTB Utils&f party, look for a corresponding button in the same corner. Parties share claimed chunks with each other. You can configure permissions for your party's claimed chunks in the party settings menu."
 			]
+			disable_toast: true
 			icon: "minecraft:tnt"
 			id: "6A7A480FAC6103D2"
+			optional: true
 			subtitle: "You might be wondering what chunkloading options there are in the pack."
 			tasks: [{
 				id: "78BC5B51125B35BD"
@@ -1711,13 +1750,15 @@
 				"Let's start with &9[+]&r, as it's the simplest: right-click a crafting table, look up the recipe you need and press the &9[+]&r button: if you have all required items for the recipe, this will put them all into the crafting table for you."
 				""
 				"&c[❤]&r and &a[┴]&r are used in tandem to create &arecipe trees&r. Pressing &a[┴]&r will pull up a &arecipe tree&r for that given item. Pressing &c[❤]&r on a recipe will mark it as the &cdefault recipe&r for that item, and will show that recipe (and the items used to craft it) in &arecipe trees&r. You can then add &cdefault recipes&r for the items used to craft that recipe, repeat ad nauseam. Note that you can click on a item in the &arecipe tree&r and it's recipes will be pulled up."
-				""
+				"{@pagebreak}"
 				"In the &arecipe tree&r GUI, you can change the batch size by scrolling on the number to the right of the final result. Finally, and most importantly, you can press the &6Magnifying Glass&r to switch to &6Crafting Tree Mode&r, this will &edisplay the items that you need for every step to craft the number of items that you specified&r in your sidebar, and will dynamically update as you craft items. You can click on these &6Synethic Favorites&r to push the items used to craft said item into the crafting table (or other machine)."
 				""
 				"Also note that EMI will commit &cdefault recipes&r to memory, meaning that as you save more and more recipes, EMI will remember them all, and will automatically use them when you pull up a &arecipe tree&r for any given item. Also, you can change the &cdefault recipe&r for an item, and EMI will automatically update the &arecipe tree&r as well. You can also click the &a[┴]&r button found in the bottom left of your screen and it will pull up the &arecipe tree&r GUI as well."
 			]
+			disable_toast: true
 			icon: "gtceu:crafting_table_cover"
 			id: "58566C7BF4C22D86"
+			optional: true
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "Extremely powerful when crafting."
@@ -1736,7 +1777,7 @@
 				"To use &bEffortless Building&r, start by pressing and holding the &6Alt&r key. This opens a wheel-shaped menu displaying &especial building modes&r. With this menu open, simply move your cursor over the desired building mode and release &6Alt&r. This will select that mode and you can begin building."
 				""
 				"Choose the starting location for your shape by &6right-clicking&r on a blockspace while holding your desired building block. Next, move your cursor to another blockspace to see a preview of the final structure. &6Right-click&r again on the desired ending block to actually build the shape from blocks in your inventory."
-				""
+				"{@pagebreak}"
 				"Most shapes are flat and are defined using a starting and ending location, but 3D shapes have a third location to complete the shape. Some special modes also have &eoptions&r, like making a &ehollow cube&r instead of a &efilled cube&r."
 				""
 				"If you made a mistake, you can use the &aUndo&r button in the menu to break the blocks you just placed so you can collect them and try again."
@@ -1744,13 +1785,15 @@
 				"To change building modes, just open the menu with &6Alt&r as before and pick a different one. To exit the special building modes, select the &eNormal&r mode."
 				""
 				"&cMake sure you return to Normal mode when you're done building shapes, since the special building modes will interfere with normal gameplay.&r"
-				""
+				"{@pagebreak}"
 				"The size of shapes you can make in special building modes is limited by your &ereach&r, which is how far away you can click from yourself to start building, or from the previous location to complete a shape. You can craft and eat several tiers of &areach upgrades&r in succession to increase your reach to very high numbers."
 				""
 				"Overall, &bEffortless Building&r is a powerful mod that is very useful for construction. Experiment with it and you'll see how much time it can save you!"
 			]
+			disable_toast: true
 			icon: "effortlessbuilding:reach_upgrade1"
 			id: "0137ECCCD7A11A15"
+			optional: true
 			tasks: [{
 				id: "23ED12507CA3130E"
 				type: "checkmark"
@@ -1764,7 +1807,7 @@
 			description: [
 				"In most expert packs, you want to try to process as little ore as possible before you get access to ore doubling. It's a habit most of us pick up."
 				""
-				"&eYou shouldn't feel any pressure to do that in Nomifactory, though&f. Ore veins are massive, and mining is extremely fast with &aMining Hammers&f. What's more, even once you get access to &3Macerators&f, they initially process ore slowly and require power to operate."
+				"[\"\",{\"text\":\"You shouldn't feel any pressure to do that in Nomifactory, though\",\"color\":\"yellow\"},\". Ore veins are massive, and mining is extremely fast with \",{\"text\":\"Mining Hammers\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"Click to go to the quest\"}},\". What's more, even once you get access to \",{\"text\":\"Macerators\",\"color\":\"dark_aqua\"},\", they initially process ore slowly and require power to operate.\"]"
 				""
 				"Obvious exceptions would be rare materials or anything you buy with &dNomicoins &fbecause you can't find it. Those are worth doubling, if possible."
 				""
@@ -1782,18 +1825,21 @@
 		}
 		{
 			description: [
-				"&5Nomifactory Modern&r shares an official Discord server with &5Nomifactory&r and &5Nomi-CEu&r, which serves as a useful community resource."
+				"&n&5Nomifactory Modern&r&r shares an official Discord server with &5Nomifactory&r and &5Nomi-CEu&r, which serves as a useful community resource."
 				""
-				"On the server, there are flowcharts and guides to help you with many parts of the pack, development announcements and more are available in the Nomi-CEu-News channel, and the community helps with tech support questions, and investigates possible bug reports."
+				"On the server, there are flowcharts and guides to help you with many parts of the pack, development announcements and more are available in the &nNomi-CEu-News&r channel, and the community helps with tech support questions, and investigates possible bug reports."
 				""
 				"You can also chat with many fellow players there if you like, who are largely willing to help with general questions one might have."
+				"{@pagebreak}"
+				"[\"To join the server, you can use the button on the Main Menu to go to the join URL, or if you're not into Discord you can find our projects on GitHub at our organization page \", {\"text\": \"here.\", \"color\": \"blue\", \"underlined\": \"true\", \"clickEvent\": {\"action\": \"open_url\", \"value\": \"https://github.com/Nomi-CEu\"}}, \".\"]"
 				""
-				"To join the server, you can use the button on the Main Menu to go to the join URL, or if you're not into Discord you can find our projects on GitHub at our organization page: &9https://github.com/Nomi-CEu&r."
-				""
-				"Issue tracking and development is handled on our respective GitHub project repositories. The repository for this pack is &9https://github.com/Nomi-CEu/Nomi-CEu-Modern&r."
+				"[\"Issue tracking and development is handled on our respective GitHub project repositories. The repository for this pack is \", {\"text\": \"here\", \"color\": \"blue\", \"underlined\": \"true\", \"clickEvent\": {\"action\": \"open_url\", \"value\": \"https://github.com/Nomi-CEu/Nomi-CEu-Modern\"}}, \".\"]"
 			]
+			disable_toast: true
 			icon: "minecraft:writable_book"
 			id: "70026930847E8EC0"
+			optional: true
+			subtitle: "what's a voltage? can I eat it?"
 			tasks: [{
 				id: "1278CD7DD38F751A"
 				type: "checkmark"
@@ -1872,6 +1918,7 @@
 				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
+			subtitle: "Bags of holding"
 			tasks: [
 				{
 					id: "46CA42CF7D0730E6"
@@ -1885,21 +1932,15 @@
 					type: "item"
 				}
 				{
-					id: "142C0C6C043C1F1C"
+					id: "3A3F4984E9A1A81E"
 					item: {
 						Count: 1b
-						id: "sophisticatedbackpacks:backpack"
+						id: "itemfilters:tag"
 						tag: {
-							contentsUuid: [I;
-								1310140833
-								-356693514
-								-1108671659
-								1683658570
-							]
-							inventorySlots: 27
-							upgradeSlots: 1
+							value: "nomi_quest:backpack"
 						}
 					}
+					title: "Any Sophisticated Backpack"
 					type: "item"
 				}
 			]
@@ -1911,14 +1952,14 @@
 			description: [
 				"This pack is in &eAlpha&r. Issues are to be expected at this stage of development."
 				""
-				"&cIf you find something broken/missing/etc, make an issue on the &5Nomifactory Modern&r&c repository, or submit a Pull Request to fix it yourself.&r"
-				""
+				"[\"\",{\"text\":\"If you find something broken/missing/etc, make an issue on the \",\"color\":\"dark_purple\"},{\"text\":\"Nomifactory Modern repository\",\"color\":\"dark_purple\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Nomi-CEu/Nomi-CEu-Modern\"}},{\"text\":\", or submit a Pull Request to fix it yourself.\",\"color\":\"dark_purple\"}]"
 			]
 			icon: "thermal:nuke_tnt"
 			id: "2A511DB40C66CF35"
 			size: 1.5d
 			tasks: [{
 				id: "1A2BD249B1DBDA09"
+				title: "Acknowleged"
 				type: "checkmark"
 			}]
 			title: "&5This pack is in alpha!"
