@@ -20,7 +20,7 @@ event.shaped(
         S: '#minecraft:wooden_slabs',
         A: '#forge:tools/saws',
     }
-)
+).noMirror()
 event.shaped(
     'kubejs:wooden_widget', [
         'LGR'
@@ -29,7 +29,7 @@ event.shaped(
         G: 'enderio:wood_gear',
         R: 'kubejs:wooden_widget_right'
     }
-)
+).noMirror()
 
 event.shaped(
     'kubejs:stone_widget_up', [
