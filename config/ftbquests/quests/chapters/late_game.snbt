@@ -629,7 +629,7 @@
 		{
 			dependencies: [
 				"072DB633006E78B7"
-				"1DCFBC6C049F6E82"
+				"67A4F273A29043D4"
 			]
 			description: [
 				"Coming into &dLudicrous Voltage&r, many new advanced materials will be required to craft items and components. Most of these materials require &6Tungstensteel Coils&r."
@@ -2914,43 +2914,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["1C1B1E1BBFA079F5"]
-			description: [
-				"&2A rudimentary version of Platinum Group Sludge (PGS) processing existed in the base pack. Here, it is a strong source of the Platinum Group Metals - Ruthenium, Rhodium, Palladium, Osmium, Iridium, and Platinum - as well as Gold. All of these elements will be used in IV-tier and above materials."
-				""
-				"&rYou will need to treat certain ores with &9Nitric Acid&r to yield &6PGS&r - &6Sheldonite&r is the best. Then, using an &3HV+ Centrifuge&r and &9Aqua Regia&r, break it down into the PGS salts, and reduce those salts to the metals."
-				""
-				"This is still optional, and you can get &6Ruthenium&r and &6Rhodium&r from &6Osmiridium 80/20 Ore&r and &6Iridosmine 80/20 Ore&r from Microverse adventures instead."
-			]
-			disable_toast: true
-			icon: "gtceu:platinum_dust"
-			id: "1DCFBC6C049F6E82"
-			rewards: [{
-				count: 2
-				id: "48C9EBD4FA7D2696"
-				item: "kubejs:nomi_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "Is this that \"Gregtech PGS\" people refer to?"
-			tasks: [
-				{
-					id: "168AA4519CB56CD6"
-					item: "gtceu:ruthenium_dust"
-					type: "item"
-				}
-				{
-					id: "79883FE45EA0C3CC"
-					item: "gtceu:rhodium_dust"
-					type: "item"
-				}
-			]
-			title: "&2Platinum Group Processing"
-			x: -6.0d
-			y: 16.25d
-		}
-		{
 			dependencies: ["16139ABAE30BF117"]
 			description: [
 				"The &6Crystal Processor Mainframe&r is the first Tier Eight circuit."
@@ -3306,6 +3269,36 @@
 			title: "Endgame"
 			x: 19.25d
 			y: 10.25d
+		}
+		{
+			dependencies: ["595F205B551A53C9"]
+			description: [
+				"&2A rudimentary version of Platinum Group Sludge (PGS) processing existed in the base pack. Here, it is a strong source of the Platinum Group Metals - Ruthenium, Rhodium, Palladium, Osmium, Iridium, and Platinum - as well as Gold. All of these elements will be used in IV-tier and above materials."
+				""
+				"&rYou will need to treat certain ores with &9Nitric Acid&r to yield &6PGS&r - &6Sheldonite&r is the best. Then, using an &3HV+ Centrifuge&r and &9Aqua Regia&r, break it down into the PGS salts, and reduce those salts to the metals."
+				""
+				"This is still optional, and you can get &6Ruthenium&r and &6Rhodium&r from &6Osmiridium 80/20 Ore&r and &6Iridosmine 80/20 Ore&r from Microverse adventures instead."
+			]
+			icon: "gtceu:platinum_dust"
+			id: "67A4F273A29043D4"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Is this that \"Gregtech PGS\" people refer to?"
+			tasks: [
+				{
+					id: "5C370E547650A61F"
+					item: "gtceu:ruthenium_dust"
+					type: "item"
+				}
+				{
+					id: "1F8AC42325E15B02"
+					item: "gtceu:rhodium_dust"
+					type: "item"
+				}
+			]
+			title: "&2Platinum Group Processing"
+			x: -6.0d
+			y: 16.25d
 		}
 	]
 	subtitle: ["Progression for this chapter isn't done!"]

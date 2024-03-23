@@ -312,6 +312,7 @@
 		{
 			dependencies: ["227F448DFCC3E8C3"]
 			description: ["Melting &6Mana Dust&r in a &3Fluid Extractor&r produces &9Primal Mana&r, which is needed for smelting various alloys from &bThermal Expansion&r."]
+			icon: "kubejs:molten_primal_mana_bucket"
 			id: "63F438F7033521C3"
 			rewards: [{
 				id: "18A9F94036616751"
@@ -320,9 +321,10 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "51D23AA950FC0812"
-				item: "kubejs:molten_primal_mana_bucket"
-				type: "item"
+				amount: 1000L
+				fluid: "kubejs:molten_primal_mana"
+				id: "5FBAD0D8C7909AB0"
+				type: "fluid"
 			}]
 			title: "Primal Mana"
 			x: 5.0d
@@ -446,6 +448,7 @@
 				id: "41C8D4CA16D237DC"
 				type: "checkmark"
 			}]
+			title: "Hot Titanium"
 			x: 11.5d
 			y: 1.5d
 		}
@@ -2142,7 +2145,7 @@
 				item: "minecraft:deepslate"
 				type: "item"
 			}]
-			title: "&dDeepslate processing"
+			title: "&dDeepslate Processing"
 			x: 13.0d
 			y: 15.5d
 		}
@@ -2793,7 +2796,7 @@
 				""
 				"Dynamos operate at &a500% of base power generation and fuel burn rate&r."
 				""
-				"Machines operate at &a400% of base speed&r."
+				"Machines operate at &a500% of base speed&r."
 			]
 			id: "347983576B8C27F3"
 			rewards: [{
