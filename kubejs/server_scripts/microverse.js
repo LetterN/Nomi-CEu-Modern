@@ -179,8 +179,8 @@ ServerEvents.recipes(event => {
             I: 'gtceu:double_iridium_plate',
             A: 'gtceu:hv_super_chest',
             B: 'gtceu:zpm_field_generator',
-            D: 'kubejs:advanced_rocketry_warp_core', // TODO: REPLACE WITH REAL AR COMPONENT
-            M: 'kubejs:advanced_rocketry_warp_controller', // TODO: REPLACE WITH REAL AR COMPONENT
+            D: 'kubejs:warp_core', // TODO: REPLACE WITH REAL AR COMPONENT
+            M: 'kubejs:warp_controller', // TODO: REPLACE WITH REAL AR COMPONENT
             E: 'kubejs:warp_engine'
         }, 4
     )
@@ -294,6 +294,33 @@ ServerEvents.recipes(event => {
             A: 'gtceu:ev_sensor',
             W: 'gtceu:double_tungsten_carbide_plate',
             C: '#gtceu:circuits/ev'
+        }
+    )
+
+    // Warp Core
+    event.shaped(
+        'kubejs:warp_core', [
+            'LTL',
+            'TNT',
+            'LTL'
+        ], {
+            L: 'gtceu:lumium_block',
+            N: 'gtceu:nether_star_block',
+            T: 'gtceu:titanium_block'
+        }
+    )
+
+    // Warp Controller
+    event.shaped(
+        'kubejs:warp_controller', [
+            'SMS',
+            'CHC',
+            'SCS'
+        ], {
+            C: '#gtceu:circuits/ev',
+            H: 'gtceu:ev_machine_hull',
+            M: 'gtceu:computer_monitor_cover',
+            S: 'gtceu:ev_sensor'
         }
     )
 
