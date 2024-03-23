@@ -179,8 +179,8 @@ ServerEvents.recipes(event => {
             I: 'gtceu:double_iridium_plate',
             A: 'gtceu:hv_super_chest',
             B: 'gtceu:zpm_field_generator',
-            D: 'kubejs:advanced_rocketry_warp_core', // TODO: REPLACE WITH REAL AR COMPONENT
-            M: 'kubejs:advanced_rocketry_warp_controller', // TODO: REPLACE WITH REAL AR COMPONENT
+            D: 'kubejs:warp_core',
+            M: 'kubejs:warp_controller',
             E: 'kubejs:warp_engine'
         }, 4
     )
@@ -297,12 +297,39 @@ ServerEvents.recipes(event => {
         }
     )
 
+    // Warp Core
+    event.shaped(
+        'kubejs:warp_core', [
+            'LTL',
+            'TNT',
+            'LTL'
+        ], {
+            L: 'gtceu:lumium_block',
+            N: 'gtceu:nether_star_block',
+            T: 'gtceu:titanium_block'
+        }
+    )
+
+    // Warp Controller
+    event.shaped(
+        'kubejs:warp_controller', [
+            'SMS',
+            'CHC',
+            'SCS'
+        ], {
+            C: '#gtceu:circuits/ev',
+            H: 'gtceu:ev_machine_hull',
+            M: 'gtceu:computer_monitor_cover',
+            S: 'gtceu:ev_sensor'
+        }
+    )
+
     // Warp engine
     event.recipes.gtceu.assembly_line('warp_engine')
         .itemInputs('gtceu:microversium_frame',
             '6x gtceu:enderium_plate',
-            'minecraft:bedrock', /* Item dislocation inhibitor */
-            'minecraft:bedrock', /* DE Magnet */
+            'draconicevolution:dislocation_inhibitor', /* Item dislocation inhibitor */
+            'draconicevolution:advanced_magnet', /* DE Magnet */
             '2x avaritia:crystal_matrix_ingot', /* TODO: replace with plate */
             '2x gtceu:iv_field_generator',
             Item.of('2x ironjetpacks:thruster', '{Id:"ironjetpacks:fluxed"}').strongNBT(),
@@ -329,7 +356,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:uv_robot_arm',
             '#gtceu:circuits/uhv',
             '2x gtceu:dense_naquadah_alloy_plate',
-            '4x gtceu:enriched_naquadah_trinium_europium_diuranide_quadruple_wire',
+            '4x gtceu:enriched_naquadah_trinium_europium_duranide_quadruple_wire',
             '64x gtceu:fine_tritanium_wire')
         .inputFluids('gtceu:soldering_alloy 1152', 'gtceu:naquadria 576')
         .itemOutputs('kubejs:universal_navigator')

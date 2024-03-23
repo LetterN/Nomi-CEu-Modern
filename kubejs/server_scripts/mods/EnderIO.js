@@ -340,6 +340,8 @@ ServerEvents.recipes(event => {
     //Redstone Conduit
     event.replaceInput({ id: 'enderio:redstone_conduit' }, 'enderio:redstone_alloy_ingot', 'gtceu:red_alloy_single_wire')
 
+    // Soul Vials
+
     //Villager Soul Vial
     event.shaped(Item.of('enderio:filled_soul_vial', '{BlockEntityTag: {EntityStorage: {Entity: {id: "minecraft:villager"}}}}').strongNBT(), [
         ' E ',
@@ -347,6 +349,57 @@ ServerEvents.recipes(event => {
         ' E '
     ], {
         E: 'minecraft:emerald',
+        V: 'enderio:empty_soul_vial'
+    })
+
+    //Enderman Soul Vial
+    event.shaped(Item.of('enderio:filled_soul_vial', '{BlockEntityTag: {EntityStorage: {Entity: {id: "minecraft:enderman"}}}}').strongNBT(), [
+        ' E ',
+        'EVE',
+        ' E '
+    ], {
+        E: 'enderio:enderman_head',
+        V: 'enderio:empty_soul_vial'
+    })
+
+    //Shulker Soul Vial
+    event.shaped(Item.of('enderio:filled_soul_vial', '{BlockEntityTag: {EntityStorage: {Entity: {id: "minecraft:shulker"}}}}').strongNBT(), [
+        ' E ',
+        'EVE',
+        ' E '
+    ], {
+        E: 'minecraft:shulker_shell',
+        V: 'enderio:empty_soul_vial'
+    })
+
+    //Zombie Soul Vial
+    event.shaped(Item.of('enderio:filled_soul_vial', '{BlockEntityTag: {EntityStorage: {Entity: {id: "minecraft:zombie"}}}}').strongNBT(), [
+        ' E ',
+        'EVE',
+        ' E '
+    ], {
+        E: 'minecraft:zombie_head',
+        V: 'enderio:empty_soul_vial'
+    })
+
+    //Ghast Soul Vial
+    event.shaped(Item.of('enderio:filled_soul_vial', '{BlockEntityTag: {EntityStorage: {Entity: {id: "minecraft:ghast"}}}}').strongNBT(), [
+        ' E ',
+        'EVE',
+        ' E '
+    ], {
+        E: 'minecraft:ghast_tear',
+        V: 'enderio:empty_soul_vial'
+    })
+
+    //Witch Soul Vial
+    event.shaped(Item.of('enderio:filled_soul_vial', '{BlockEntityTag: {EntityStorage: {Entity: {id: "minecraft:witch"}}}}').strongNBT(), [
+        'GEG',
+        'EVE',
+        'GEG'
+    ], {
+        E: 'minecraft:redstone',
+        G: 'minecraft:glowstone_dust',
         V: 'enderio:empty_soul_vial'
     })
 
