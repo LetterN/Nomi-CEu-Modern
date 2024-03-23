@@ -377,171 +377,6 @@
 		}
 		{
 			dependencies: [
-				"4400136254030EE3"
-				"4A2F8BEA3524F2A7"
-			]
-			icon: "miniutilities:angel_ring"
-			id: "6DAF9B5110C8396E"
-			tasks: [{
-				id: "4501FEB43382D518"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:angelring"
-					}
-				}
-				title: "Any #forge:angelring"
-				type: "item"
-			}]
-			title: "Angel Ring"
-			x: 12.0d
-			y: -4.0d
-		}
-		{
-			id: "6139942FCA21267E"
-			tasks: [{
-				id: "336FE878C9960AE5"
-				item: {
-					Count: 1b
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:conductive_iron"
-						Throttle: 1.0d
-					}
-				}
-				type: "item"
-			}]
-			x: 10.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["6139942FCA21267E"]
-			id: "4FFC3501158AF85D"
-			tasks: [{
-				id: "6BE9955B37F50E53"
-				item: {
-					Count: 1b
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:electrical_steel"
-						Throttle: 1.0d
-					}
-				}
-				type: "item"
-			}]
-			x: 10.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["4FFC3501158AF85D"]
-			id: "38101BD734F691DE"
-			tasks: [{
-				id: "5CD57181CAF7A4CB"
-				item: {
-					Count: 1b
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:energetic"
-						Throttle: 1.0d
-					}
-				}
-				type: "item"
-			}]
-			x: 10.5d
-			y: -5.5d
-		}
-		{
-			id: "6381CB6DAA7E3D0D"
-			tasks: [{
-				id: "7DC10BC4D779DAD3"
-				item: {
-					Count: 1b
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:leadstone"
-						Throttle: 1.0d
-					}
-				}
-				type: "item"
-			}]
-			x: 12.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["6381CB6DAA7E3D0D"]
-			id: "231EEE7ABF1F2D44"
-			tasks: [{
-				id: "14BB0F19BFE05029"
-				item: {
-					Count: 1b
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:hardened"
-						Throttle: 1.0d
-					}
-				}
-				type: "item"
-			}]
-			x: 12.0d
-			y: -7.0d
-		}
-		{
-			dependencies: ["231EEE7ABF1F2D44"]
-			id: "4A2F8BEA3524F2A7"
-			tasks: [{
-				id: "66C55CA81C78C431"
-				item: {
-					Count: 1b
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:reinforced"
-						Throttle: 1.0d
-					}
-				}
-				type: "item"
-			}]
-			x: 12.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["6DAF9B5110C8396E"]
-			id: "7EF7F951F1A892A1"
-			tasks: [{
-				id: "0C93C04472129BC9"
-				item: {
-					Count: 1b
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:dark_soularium"
-						Throttle: 1.0d
-					}
-				}
-				type: "item"
-			}]
-			x: 12.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["38101BD734F691DE"]
-			id: "4400136254030EE3"
-			tasks: [{
-				id: "3D069A0A15B5E915"
-				item: {
-					Count: 1b
-					id: "ironjetpacks:jetpack"
-					tag: {
-						Id: "ironjetpacks:vibrant"
-						Throttle: 1.0d
-					}
-				}
-				type: "item"
-			}]
-			x: 10.5d
-			y: -4.0d
-		}
-		{
-			dependencies: [
 				"7FA0E6F3B466576C"
 				"747434DD99118DA4"
 			]
@@ -2490,6 +2325,212 @@
 			title: "&2Tritanium Coils"
 			x: 13.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["06E9B9DDDB245F38"]
+			description: [
+				"It's probably a bit premature to consider a &6jetpack&r at this point, but if you really want to craft this bad boy, I won't stop you."
+				""
+				"There's also a quest chain for &bEnderIO&r Jetpacks (starting with the &6Conductive Iron Jetpack&r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying."
+				""
+				"If the &6Jetpack&r overview and information from &bThe One Probe&r conflict, The One Probe may be moved using &6/topcfg&r."
+			]
+			id: "712023557B5B1812"
+			subtitle: "Being able to fly is pretty sick. It's also pretty expensive."
+			tasks: [{
+				id: "0AEBB08D9E593A5B"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:leadstone"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["7842EC1C389C4B7E"]
+			description: [
+				"Being able to fly is nice. This is the first jetpack that uses &bEnderIO&r materials."
+				""
+				"There's also a quest chain for &bThermal Expansion&r material Jetpacks (starting with the &6Leadstone Jetpack&r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you really really like flying."
+			]
+			id: "6ABF927014F8B79D"
+			tasks: [{
+				id: "31C521D0A2BB2C03"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:conductive_iron"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["64F45D98FA48D834"]
+			description: ["Flying faster is nice."]
+			id: "7B1D349ADD9D1140"
+			tasks: [{
+				id: "201BBD5AAF78AE0C"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:electrical_steel"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "Ironman 2"
+			x: 10.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0607A59215F0F8B3"]
+			description: ["Flying faster, even nicer."]
+			id: "15A43AB700CADF2D"
+			rewards: [{
+				id: "3D990FB80B9FA05C"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "7F66940735049C04"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:energetic"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "Ironman 3"
+			x: 10.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"1CA6D620309F2B9E"
+				"3BD20358F137E7C6"
+				"712023557B5B1812"
+			]
+			description: ["Better flying."]
+			id: "4542BF5E00FCBEA1"
+			tasks: [{
+				id: "60D1C9D97E874348"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:hardened"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4542BF5E00FCBEA1"]
+			description: [
+				"Even better flying."
+				""
+				"You're not getting up to Resonant for a long time, just FYI."
+			]
+			id: "2D46EC96DB37ED8A"
+			tasks: [{
+				id: "25694A15F26F5483"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:reinforced"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 12.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1349044BF8C04A12"]
+			description: ["Give me a little juice, FRIDAY!"]
+			id: "1FE8D35B4A5BFA16"
+			tasks: [{
+				id: "47722FD59AD2C4E3"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:vibrant"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "Infinity War"
+			x: 10.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"1FE8D35B4A5BFA16"
+				"2D46EC96DB37ED8A"
+			]
+			description: [
+				"The &aAngel Ring&r is actually slower than a jetpack, but it grants creative flight and requires no fuel."
+				""
+				"Up to you if you want to use it over a jetpack for day to day stuff, but it's an ingredient in the next jetpack, so if you want that you'll need to make one eventually."
+			]
+			id: "2923E98849358E16"
+			subtitle: "I'm running out of MCU puns."
+			tasks: [{
+				id: "1E1C020C525B7F47"
+				item: "miniutilities:angel_ring"
+				type: "item"
+			}]
+			title: "&dCaptain... Marvel? IDK"
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"7A65459E4DFAAC2D"
+				"09002E8DD1A359AD"
+			]
+			description: ["This is the flight of our lives."]
+			id: "5EE4F76D1F237A13"
+			shape: "square"
+			tasks: [{
+				id: "798E10A74B24D6B4"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:dark_soularium"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "Endgame"
+			x: 12.0d
+			y: -2.5d
 		}
 	]
 	title: "Progression"

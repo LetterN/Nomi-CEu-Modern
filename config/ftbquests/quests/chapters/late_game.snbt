@@ -3277,6 +3277,36 @@
 			x: 13.0d
 			y: 4.5d
 		}
+		{
+			dependencies: [
+				"7A65459E4DFAAC2D"
+				"09002E8DD1A359AD"
+			]
+			description: ["This is the flight of our lives."]
+			id: "747A3DEA569CB6C9"
+			rewards: [{
+				count: 2
+				id: "018B129C225E0193"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "373620DA46014CE2"
+				item: {
+					Count: 1b
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:dark_soularium"
+						Throttle: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "Endgame"
+			x: 19.25d
+			y: 10.25d
+		}
 	]
 	subtitle: ["Progression for this chapter isn't done!"]
 	title: "Late Game"
