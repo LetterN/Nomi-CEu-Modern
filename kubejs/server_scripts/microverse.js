@@ -179,8 +179,8 @@ ServerEvents.recipes(event => {
             I: 'gtceu:double_iridium_plate',
             A: 'gtceu:hv_super_chest',
             B: 'gtceu:zpm_field_generator',
-            D: 'kubejs:warp_core', // TODO: REPLACE WITH REAL AR COMPONENT
-            M: 'kubejs:warp_controller', // TODO: REPLACE WITH REAL AR COMPONENT
+            D: 'kubejs:warp_core',
+            M: 'kubejs:warp_controller',
             E: 'kubejs:warp_engine'
         }, 4
     )
