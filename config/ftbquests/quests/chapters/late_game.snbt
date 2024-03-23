@@ -1756,7 +1756,10 @@
 			y: 15.25d
 		}
 		{
-			dependencies: ["217F85D6FE2A467D"]
+			dependencies: [
+				"217F85D6FE2A467D"
+				"6588C68DE6973BCC"
+			]
 			description: [
 				"With your &2Naquadah Alloy&r-based machine hulls and &6Crystal Processor Mainframes&r squared away, you can finally get on the path to making a ZPM &3Circuit Assembling Machine&r."
 				""
@@ -3114,7 +3117,10 @@
 			y: 22.25d
 		}
 		{
-			dependencies: ["0F6B344C265D1FBB"]
+			dependencies: [
+				"0F6B344C265D1FBB"
+				"4AC51394FB5152E5"
+			]
 			description: ["&2Use the Stem Cells and more advanced materials to build a Neuro Processing Unit. This is used in the first Wetware Circuit."]
 			id: "6B851C550A0C6C4A"
 			rewards: [{
