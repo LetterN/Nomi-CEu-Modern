@@ -6,7 +6,14 @@
 	icon: "gtceu:advanced_integrated_circuit"
 	id: "7041EC01A69404E6"
 	order_index: 4
-	quest_links: [ ]
+	quest_links: [{
+		id: "7471AD069CC1E5EC"
+		linked_quest: "5CFBAB5F83E33064"
+		shape: "hexagon"
+		size: 1.5d
+		x: -6.75d
+		y: 3.0d
+	}]
 	quests: [
 		{
 			dependencies: ["5C4E189A3E401566"]
@@ -1592,6 +1599,7 @@
 			dependencies: [
 				"7D0351942F4DB8E0"
 				"3907A69C91726479"
+				"2230386A91502CC0"
 			]
 			description: [
 				"&2Unique to this tier of Circuit, this MV circuit doesn't require the previous tier to craft.&r These are the best kind of Tier Two circuits you can make, and you won't unlock the better recipes for quite a while."
@@ -2629,31 +2637,6 @@
 			title: "&2More Blast Furnaces"
 			x: -6.75d
 			y: 6.75d
-		}
-		{
-			dependencies: ["356DA8DE256356B8"]
-			description: [
-				"Same deal as Hardened Components, but even faster."
-				""
-				"Dynamos operate at &a250% of base power generation and fuel burn rate&r."
-				""
-				"Machines operate at &a250% of base speed&r."
-			]
-			id: "41501AC2D3FC70AD"
-			rewards: [{
-				id: "6E444F028048555A"
-				item: "kubejs:nomi_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "766BCD7A512CEFA3"
-				item: "thermal:upgrade_augment_2"
-				type: "item"
-			}]
-			x: -6.75d
-			y: 2.75d
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]
