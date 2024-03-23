@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
             S: '#minecraft:wooden_slabs',
             A: '#forge:tools/saws'
         }
-    )
+    ).noMirror()
 event.shaped(
     'kubejs:wooden_widget_right', [
         'PPS',
