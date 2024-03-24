@@ -194,4 +194,31 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:omnium_nugget')
         .duration(20)
         .EUt(30)
+
+    // Creative Items //
+
+    //Creative Vending Upgrade
+    event.recipes.extendedcrafting.shaped_table(
+        'storagedrawers:creative_storage_upgrade', [
+            'ABCDEDCBA',
+            'BCDEFEDCB',
+            'CDEFGFEDC',
+            'DEFGHGFED',
+            'EFGHIHGFE',
+            'DEFGHGFED',
+            'CDEFGFEDC',
+            'BCDEFEDCB',
+            'ABCDEDCBA'
+        ], {
+            A: 'storagedrawers:emerald_storage_upgrade',
+            B: 'sophisticatedstorage:gold_barrel',
+            C: 'sophisticatedstorage:diamond_barrel',
+            D: 'gtceu:tungsten_steel_crate',
+            E: 'gtceu:luv_quantum_chest',
+            F: 'gtceu:zpm_quantum_chest',
+            G: 'gtceu:uv_quantum_chest',
+            H: 'gtceu:uhv_quantum_chest',
+            I: 'avaritia:infinity_catalyst'
+        }
+    )
 })
