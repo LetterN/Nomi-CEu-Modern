@@ -210,7 +210,7 @@ ServerEvents.recipes(event => {
 
     event.remove({id: 'avaritia:crystal_matrix_ingot' })
     event.recipes.extendedcrafting.shaped_table(
-        'gtceu:crystal_matrix_ingot', [
+        'avaritia:crystal_matrix_ingot', [
             '         ',
             '      DDD',
             '   DDDSLD',
@@ -226,6 +226,13 @@ ServerEvents.recipes(event => {
             S: 'minecraft:nether_star'
         }
     )
+
+    event.recipes.gtceu.bender("crystal_matrix_plate")
+        .itemInputs('avaritia:crystal_matrix_ingot')
+        .itemOutputs('kubejs:crystal_matrix_plate')
+        .duration(98)
+        .EUt(24)
+        .circuit(1)
 
     // Creative Items //
 
