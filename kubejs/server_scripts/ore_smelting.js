@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
         event.smelting(output, "gtceu:raw_" + oreName).id("gtceu:smelting/smelt_raw_" + oreName + "_ore_to_ingot").cookingTime(50)
         event.blasting(output, "gtceu:raw_" + oreName).id("gtceu:blasting/smelt_raw_" + oreName + "_ore_to_ingot").cookingTime(50)
     }
-    quickSmelt("redstone", "minecraft:redstone")
+    quickSmelt("redstone", "3x minecraft:redstone")
     quickSmelt("electrotine", "gtceu:electrotine_dust")
 
     quickSmelt("lapis", "minecraft:lapis_lazuli")
