@@ -450,4 +450,66 @@ ServerEvents.recipes(event => {
         .duration(2000)
         .EUt(400)
 
+    //Painting Machine
+    event.shaped('enderio:painting_machine', [
+        'QDQ',
+        'GHG',
+        'RRR'
+    ], {
+        D: 'minecraft:diamond',
+        G: 'gtceu:iron_gear',
+        H: 'gtceu:lv_machine_hull',
+        Q: 'minecraft:quartz',
+        R: 'gtceu:red_alloy_ingot'
+    }).id('enderio:painting_machine')
+
+    //Z-Logic Controller
+    event.shaped('enderio:z_logic_controller', [
+        'SHS',
+        'SCS',
+        'WBW'
+    ], {
+        B: 'gtceu:red_alloy_block',
+        C: '#gtceu:circuits/mv',
+        H: 'minecraft:zombie_head',
+        S: '#forge:ingots/soularium',
+        W: 'gtceu:silicon_wafer'
+    })
+
+    event.shaped('2x enderio:z_logic_controller', [
+        'SHS',
+        'SCS',
+        'WBW'
+    ], {
+        B: 'gtceu:red_alloy_block',
+        C: '#gtceu:circuits/mv',
+        H: 'minecraft:zombie_head',
+        S: '#forge:ingots/soularium',
+        W: 'gtceu:phosphorus_wafer'
+    })
+
+    event.shaped('4x enderio:z_logic_controller', [
+        'SHS',
+        'SCS',
+        'WBW'
+    ], {
+        B: 'gtceu:red_alloy_block',
+        C: '#gtceu:circuits/mv',
+        H: 'minecraft:zombie_head',
+        S: '#forge:ingots/soularium',
+        W: 'gtceu:naquadah_wafer'
+    })
+
+    event.shaped('8x enderio:z_logic_controller', [
+        'SHS',
+        'SCS',
+        'WBW'
+    ], {
+        B: 'gtceu:red_alloy_block',
+        C: '#gtceu:circuits/mv',
+        H: 'minecraft:zombie_head',
+        S: '#forge:ingots/soularium',
+        W: 'gtceu:neutronium_wafer'
+    })
+
 })

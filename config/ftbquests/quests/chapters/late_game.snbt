@@ -2637,13 +2637,20 @@
 		}
 		{
 			dependencies: ["56EFA6A07C7291F7"]
+			description: ["Double Plates used exclusively for the Tier Eight Micro Miner."]
 			id: "6391447F1A411281"
+			rewards: [{
+				id: "1DAE2A0FADC5CC24"
+				item: "kubejs:nomi_quarter"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "44BD150EF26C4421"
-				item: "avaritia:crystal_matrix_ingot"
+				item: "gtceu:double_crystal_matrix_plate"
 				type: "item"
 			}]
+			title: "Crystal Matrix Double Plates"
 			x: 29.25d
 			y: 15.25d
 		}

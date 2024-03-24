@@ -173,7 +173,7 @@ ServerEvents.recipes(event => {
             ' E     E '
         ], {
             G: 'kubejs:advanced_micro_miner_guidance_system',
-            C: 'avaritia:crystal_matrix_ingot', // TODO: replace with double plate
+            C: 'gtceu:double_crystal_matrix_plate',
             W: 'gtceu:double_tungsten_carbide_plate',
             L: 'kubejs:supercharged_laser_array',
             I: 'gtceu:double_iridium_plate',
@@ -330,7 +330,7 @@ ServerEvents.recipes(event => {
             '6x gtceu:enderium_plate',
             'draconicevolution:dislocation_inhibitor', /* Item dislocation inhibitor */
             'draconicevolution:advanced_magnet', /* DE Magnet */
-            '2x avaritia:crystal_matrix_ingot', /* TODO: replace with plate */
+            '2x #forge:plates/crystal_matrix',
             '2x gtceu:iv_field_generator',
             Item.of('2x ironjetpacks:thruster', '{Id:"ironjetpacks:fluxed"}').strongNBT(),
             Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:dark_soularium"}').strongNBT())

@@ -18,7 +18,6 @@ StartupEvents.registry('item', event => {
     }
 
     placeHolder("draconic_evolution_ender_energy_manipulator");
-    placeHolder("ultimate_generator") // TODO: I hate this.
     placeHolder("reactant_dynamo")
     placeHolder("flight_control_unit")
     placeHolder("glowstone_elevation_unit")

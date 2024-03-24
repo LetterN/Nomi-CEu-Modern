@@ -272,6 +272,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet('dull')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
 
+    event.create("crystal_matrix")
+        .ingot().fluid()
+        .color(0x66ffff)
+        .iconSet('shiny')
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.NO_SMELTING)
+
 
 })
 

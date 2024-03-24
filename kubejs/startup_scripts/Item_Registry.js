@@ -161,6 +161,40 @@ StartupEvents.registry('item', event => {
     event.create('glitch_infused_chestplate', 'chestplate').tier('glitch').displayName('\u00A7bGlitch Infused Chestplate')
     event.create('glitch_infused_leggings', 'leggings').tier('glitch').displayName('\u00A7bGlitch Infused Leggings')
     event.create('glitch_infused_boots', 'boots').tier('glitch').displayName('\u00A7bGlitch Infused Boots')
+
+    //Ultimate Generator Components
+    //event.create('survival_generator_component').textureJson({ layer0: 'gtceu:item/material_sets/dull/gear'}).color(0, '#70F00F')
+    let generators = [
+    ['survival', '#333333'],
+    ['furnace', '#888888'],
+    ['culinary', '#FFFFFF'],
+    ['magmatic', '#630000'],
+    ['heated_redstone','#CF2600'],
+    ['slimey', '#7EB53C'],
+    ['ender', '#21593b'],
+    ['disenchantment', '#30183B'],
+    ['potion', '#6F348A'],
+    ['death', '#E3CF81'],
+    ['pink', '#E381A8'],
+    ['frosty', '#81B1E3'],
+    ['halitosis', '#A1688F'],
+    ['nether_star', '#000000'],
+    ['explosive', '#FF4800'],
+    ['overclocked', '#1D24A1']
+    ]
+
+    function Capitalize(word) {
+        return (word[0].toUpperCase() + word.substring(1));
+    }
+
+    generators.forEach(generator => {
+        let genArray = generator[0].split("_");
+        for (let i = 0; i < genArray.length; i++) {
+            genArray[i] = Capitalize(genArray[i]);
+        }
+        let displayName = genArray.join(" ") + " Generator Component";
+        event.create(generator[0]+'_generator_component').displayName(displayName).textureJson({ layer0: 'gtceu:item/material_sets/dull/gear'}).color(0, generator[1]);
+    })
 })
 
 ItemEvents.armorTierRegistry(event => {
