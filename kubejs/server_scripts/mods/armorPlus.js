@@ -95,4 +95,12 @@ ServerEvents.recipes(event => {
     // Fix buggy recipes
     event.remove( { id: 'armorplus:crafting/shapeless/storage/infused_frost_crystal_to_item' } )
     event.remove( { id: 'armorplus:crafting/shapeless/storage/block_infused_frost_crystal_to_item' } )
+
+    // Lava Crystal
+    event.recipes.gtceu.chemical_reactor("infused_lava_crystal")
+        .itemInputs('minecraft:quartz')
+        .inputFluids('minecraft:lava 1000')
+        .itemOutputs('armorplus:infused_lava_crystal')
+        .duration(100)
+        .EUt(15)
 });
