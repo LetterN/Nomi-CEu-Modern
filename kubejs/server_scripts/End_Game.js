@@ -297,51 +297,51 @@ ServerEvents.recipes(event => {
             // Row 3
             { "item": "thermal:upgrade_augment_3"},
             { "item": "nuclearcraft:enderium_heat_sink"},
-            { "item": "minecraft:cobblestone"}, // Survival Generator
-            { "item": "gtceu:wrought_iron_block"}, // Furnace Generator
-            { "item": "gtceu:red_alloy_block"}, // Culinary Generator
-            { "item": "minecraft:gold_block"}, // Magmatic Generator
-            { "item": "gtceu:tantalum_block"}, //Heated Redstone Generator
+            { "item": "kubejs:survival_generator_component"}, // Survival Generator
+            { "item": "kubejs:furnace_generator_component"}, // Furnace Generator
+            { "item": "kubejs:culinary_generator_component"}, // Culinary Generator
+            { "item": "kubejs:magmatic_generator_component"}, // Magmatic Generator
+            { "item": "kubejs:heated_redstone_generator_component"}, //Heated Redstone Generator
             { "item": "nuclearcraft:enderium_heat_sink"},
             { "item": "thermal:upgrade_augment_3"},
             // Row 4
             { "item": "gtceu:lv_combustion"},
             { "item": "gtceu:luv_fusion_reactor"},
-            { "item": "gtceu:polybenzimidazole_block"}, // Slimey Generator
+            { "item": "kubejs:slimey_generator_component"}, // Slimey Generator
             { "item": "steamdynamo:steam_dynamo"},
             { "item": "nuclearcraft:fission_reactor_controller"},
             { "item": "steamdynamo:steam_dynamo"},
-            { "item": "miniutilities:ender_pearl_block"}, // Ender Generator
+            { "item": "kubejs:ender_generator_component"}, // Ender Generator
             { "item": "gtceu:uv_fusion_reactor"},
             { "item": "gtceu:lv_combustion"},
             // Row 5
             { "item": "gtceu:mv_combustion"},
             { "item": "draconicevolution:reactor_stabilizer"},
-            { "item": "gtceu:mana_infused_metal_block"}, // Disenchantment Generator
+            { "item": "kubejs:disenchantment_generator_component"}, // Disenchantment Generator
             { "item": "thermal:dynamo_magmatic"},
             { "item": "draconicevolution:reactor_core"},
             { "item": "thermal:dynamo_magmatic"},
-            { "item": "gtceu:nichrome_block"}, // Potion Generator
+            { "item": "kubejs:potion_generator_component"}, // Potion Generator
             { "item": "draconicevolution:reactor_stabilizer"},
             { "item": "gtceu:mv_combustion"},
             // Row 6
             { "item": "gtceu:hv_combustion"},
             { "item": "gtceu:zpm_fusion_reactor"},
-            { "item": "gtceu:end_steel_block"}, // Death Generator
+            { "item": "kubejs:death_generator_component"}, // Death Generator
             { "item": "thermal:dynamo_numismatic"},
             { "item": "draconicevolution:generator"},
             { "item": "thermal:dynamo_numismatic"},
-            { "item": "gtceu:rhodium_block"}, // Pink Generator
+            { "item": "kubejs:pink_generator_component"}, // Pink Generator
             { "item": "gtceu:draconic_reactor"},
             { "item": "gtceu:hv_combustion"},
             // Row 7
             { "item": "thermal:upgrade_augment_3"},
             { "item": "nuclearcraft:enderium_heat_sink"},
-            { "item": "minecraft:blue_ice"}, // Frosty Generator
-            { "item": "gtceu:cobalt_brass_block"}, // Halitosis Generator
-            { "item": "gtceu:nether_star_block"}, // Netherstar Generator
-            { "item": "gtceu:incoloy_ma_956_block"}, // Explosive Generator
-            { "item": "gtceu:uranium_rhodium_dinaquadide_block"}, // Overclocked Generator
+            { "item": "kubejs:frosty_generator_component"}, // Frosty Generator
+            { "item": "kubejs:halitosis_generator_component"}, // Halitosis Generator
+            { "item": "kubejs:nether_star_generator_component"}, // Netherstar Generator
+            { "item": "kubejs:explosive_generator_component"}, // Explosive Generator
+            { "item": "kubejs:overclocked_generator_component"}, // Overclocked Generator
             { "item": "nuclearcraft:enderium_heat_sink"},
             { "item": "thermal:upgrade_augment_3"},
             // Row 8
