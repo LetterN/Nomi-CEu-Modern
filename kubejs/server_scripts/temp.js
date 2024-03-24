@@ -88,5 +88,17 @@ ServerEvents.recipes(event => {
         event.shapeless(material[1], [material[0]])
     })
 
+    //funny rubbah wood -> sign
+    event.shaped(
+        "3x minecraft:oak_sign", [
+            'PPP',
+            'PPP',
+            ' C '
+        ], {
+            P: "gtceu:rubber_planks",
+            C: "minecraft:stick"
+        }
+    )
+
 })
 
