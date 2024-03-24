@@ -512,4 +512,6 @@ ServerEvents.recipes(event => {
         W: 'gtceu:neutronium_wafer'
     })
 
+    //Whatever
+    event.replaceInput({ input: 'enderio:copper_alloy_ingot' }, 'enderio:copper_alloy_ingot', 'gtceu:pulsating_iron_ingot')
 })
