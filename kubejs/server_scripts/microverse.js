@@ -173,7 +173,7 @@ ServerEvents.recipes(event => {
             ' E     E '
         ], {
             G: 'kubejs:advanced_micro_miner_guidance_system',
-            C: 'avaritia:crystal_matrix_ingot', // TODO: replace with double plate
+            C: 'gtceu:double_crystal_matrix_plate',
             W: 'gtceu:double_tungsten_carbide_plate',
             L: 'kubejs:supercharged_laser_array',
             I: 'gtceu:double_iridium_plate',

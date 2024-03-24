@@ -195,6 +195,38 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(30)
 
+    // Crystal Matrix Materials
+    event.shaped(
+        'avaritia:diamond_lattice', [
+            'PBP',
+            'BGB',
+            'PBP'
+        ], {
+            B: 'minecraft:diamond_block',
+            G: 'gtceu:diamond_perfect',
+            P: 'gtceu:diamond_plate'
+        }
+    ).id('avaritia:diamond_lattice')
+
+    event.remove({id: 'avaritia:crystal_matrix_ingot' })
+    event.recipes.extendedcrafting.shaped_table(
+        'gtceu:crystal_matrix_ingot', [
+            '         ',
+            '      DDD',
+            '   DDDSLD',
+            'DDDLSLLSD',
+            'DLSSLSSLD',
+            'DSLLSLDDD',
+            'DLSDDD   ',
+            'DDD      ',
+            '         '
+        ], {
+            D: 'minecraft:diamond',
+            L: 'avaritia:diamond_lattice',
+            S: 'minecraft:nether_star'
+        }
+    )
+
     // Creative Items //
 
     //Creative Vending Upgrade
