@@ -174,8 +174,19 @@ export const BuildServerTarget = new Juke.Target({
     for (const folders of includeList) {
       fs.cpSync(folders, `dist/server/${folders}`, { recursive: true })
     }
-    // mods
-    fs.cpSync('dist/modcache', 'dist/server/mods', { recursive: true, force: true })
+
+    fs.cpSync('dist/modcache', 'dist/server/mods', {
+      recursive: true,
+      force: true,
+      filter: file => {
+        const fillet = file.toLowerCase();
+        return (
+          !fillet.includes('oculus')
+          && !fillet.toLowerCase().includes('effortlessbuilding')
+          && !fillet.toLowerCase().includes('citresewn')
+        )
+      }
+    })
 
     await packMod("server");
   }
