@@ -178,6 +178,25 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.recipes.gtceu.alloy_smelter('du_plating')
+        .itemInputs('nuclearcraft:plate_advanced', 'kubejs:stabilized_uranium')
+        .itemOutputs('2x nuclearcraft:plate_du')
+        .duration(400)
+        .EUt(2000)
+
+    event.shaped(
+        "nuclearcraft:plate_elite", [
+            "TST",
+            "SDS",
+            "TST"
+        ], {
+            T: 'nuclearcraft:rhodochrosite_dust',
+            S: 'gtceu:enderium_plate',
+            D: 'nuclearcraft:plate_du'
+        }
+    )
+
+
     event.remove({ id: "nuclearcraft:fission_reactor_casing" })
     event.shaped(
         "nuclearcraft:fission_reactor_casing", [
@@ -217,4 +236,12 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: 'nuclearcraft:fission_reactor_port' })
     event.shapeless('nuclearcraft:fission_reactor_port', ['nuclearcraft:fission_reactor_casing', "minecraft:hopper"])
+
+    event.recipes.gtceu.chemical_reactor('rhodochrosite_dust')
+        .itemInputs('6x gtceu:pyrolusite_ore')
+        .inputFluids('gtceu:sulfuric_acid 3000')
+        .itemOutputs('nuclearcraft:rhodochrosite_dust')
+        .outputFluids('gtceu:manganese 4320')
+        .duration(200)
+        .EUt(2000)
 })
