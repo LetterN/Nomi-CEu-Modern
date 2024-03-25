@@ -100,6 +100,7 @@ StartupEvents.registry('item', event => {
     event.create('ender_star').displayName('\u00A7dEnder Star').glow(true)
     event.create('endest_star').displayName('\u00A7dEndest Star').glow(true)
     event.create('debug_laser').displayName('\u00A7dDebug Laser').glow(true)
+    event.create('ender_energy_manipulator').displayName('Ender Energy Manipulator').glow(true)
 
     //TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
     event.create('compressed_octadic_capacitor').displayName("Compressed Octadic Capacitor")
