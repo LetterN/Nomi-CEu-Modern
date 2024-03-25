@@ -100,6 +100,14 @@ StartupEvents.registry('item', event => {
     event.create('ender_star').displayName('\u00A7dEnder Star').glow(true)
     event.create('endest_star').displayName('\u00A7dEndest Star').glow(true)
     event.create('debug_laser').displayName('\u00A7dDebug Laser').glow(true)
+    event.create('ender_energy_manipulator').displayName('Ender Energy Manipulator').glow(true)
+
+    //Jetpack Units
+    event.create('empty_fluxed_jetpack_unit').displayName('Empty Fluxed Jetpack Unit')
+    event.create('empty_soularium_jetpack_unit').displayName('Empty Soularium Jetpack Unit')
+    event.create('flight_control_unit').displayName('Ensouled Flight Control Unit')
+    event.create('glowstone_elevation_unit').displayName('Glowstone Elevation Unit')
+    event.create('cryotheum_coolant_unit').displayName('Cryotheum Coolant Unit')
 
     //TODO: GIVE CAPACITORS LORE AND NBT FOR THEM TO WORK
     event.create('compressed_octadic_capacitor').displayName("Compressed Octadic Capacitor")
