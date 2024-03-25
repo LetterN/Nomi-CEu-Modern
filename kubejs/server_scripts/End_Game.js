@@ -443,4 +443,29 @@ ServerEvents.recipes(event => {
             I: 'avaritia:infinity_catalyst'
         }
     )
+
+    //Creative Energy Cell (AE2)
+    event.recipes.extendedcrafting.shaped_table(
+        'ae2:creative_energy_cell', [
+            'ABCDEDCBA',
+            'BCDEFEDCB',
+            'CDEFGFEDC',
+            'DEFGHGFED',
+            'EFGHIHGFE',
+            'DEFGHGFED',
+            'CDEFGFEDC',
+            'BCDEFEDCB',
+            'ABCDEDCBA'
+        ], {
+            A: 'kubejs:ultimate_power_storage',
+            B: 'gtceu:hv_battery_buffer_16x',
+            C: 'gtceu:ev_battery_buffer_16x',
+            D: 'gtceu:iv_battery_buffer_16x',
+            E: 'gtceu:luv_battery_buffer_16x',
+            F: 'gtceu:zpm_battery_buffer_16x',
+            G: 'gtceu:uv_battery_buffer_16x',
+            H: 'gtceu:uhv_battery_buffer_16x',
+            I: 'avaritia:infinity_catalyst'
+        }
+    )
 })
