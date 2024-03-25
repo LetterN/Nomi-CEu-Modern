@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
     var thermalType = [
         ['leadstone', 'lead', 'lead', 'steamdynamo:steam_dynamo'],
         ['hardened', 'invar', 'invar', 'thermal:dynamo_magmatic'],
-        ['reinforced', 'aluminium', 'electrum', 'kubejs:reactant_dynamo'],
+        ['reinforced', 'aluminium', 'electrum', 'thermal:dynamo_compression'],
         ['resonant', 'enderium', 'enderium', 'thermal:dynamo_numismatic']
     ]
 
@@ -121,7 +121,45 @@ ServerEvents.recipes(event => {
 
     event.shapeless('8x kubejs:ender_shard', ['minecraft:ender_pearl'])
 
+    event.shaped('kubejs:empty_fluxed_jetpack_unit', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'gtceu:electrum_flux_ingot',
+        B: 'gtceu:signalum_ingot',
+        C: 'enderio:fused_quartz'
+    })
 
+    event.shaped('kubejs:empty_soularium_jetpack_unit', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ], {
+        A: 'gtceu:dark_soularium_ingot',
+        B: 'gtceu:electrical_steel_ingot',
+        C: 'enderio:fused_quartz'
+    })
+
+    event.recipes.gtceu.alloy_smelter('flight_control_unit')
+        .itemInputs('4x minecraft:ghast_tear', 'kubejs:empty_soularium_jetpack_unit')
+        .itemOutputs('kubejs:flight_control_unit')
+        .duration(100)
+        .EUt(2000)
+
+    event.recipes.gtceu.canner('glowstone_elevation_unit')
+        .itemInputs('kubejs:empty_fluxed_jetpack_unit')
+        .inputFluids('gtceu:glowstone 4032')
+        .itemOutputs('kubejs:glowstone_elevation_unit')
+        .duration(100)
+        .EUt(7)
+
+    event.recipes.gtceu.canner('cyrotheum_coolant_unit')
+        .itemInputs('kubejs:empty_fluxed_jetpack_unit')
+        .inputFluids('kubejs:molten_cryotheum 6000')
+        .itemOutputs('kubejs:cryotheum_coolant_unit')
+        .duration(100)
+        .EUt(7)
 
 
     //Cells
