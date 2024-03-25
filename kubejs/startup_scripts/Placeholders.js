@@ -17,10 +17,8 @@ StartupEvents.registry('item', event => {
         event.create(name).texture('kubejs:item/barrier').displayName("\u00A7eT. B. I. \u00A7r- \u00A7d" + UpperCaseFirst(name).join(" "));
     }
 
-    placeHolder("draconic_evolution_ender_energy_manipulator");
-    placeHolder("reactant_dynamo")
-    placeHolder("flight_control_unit")
-    placeHolder("glowstone_elevation_unit")
+    //Placeholders go here...
+    
 })
 
 Platform.mods.kubejs.name = "Nomi Labs"

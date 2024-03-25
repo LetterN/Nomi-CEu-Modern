@@ -23,7 +23,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("draconium_awakened"))
         .color(0xf58742)
         .iconSet('metallic')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_RING)
 
     event.create("omnium")
         .ingot().fluid()

@@ -1,16 +1,16 @@
 ServerEvents.recipes(event => {
 
 // The crafting core is expensive enough as is, dont need to throw extra circuits on top
-event.shaped(
-    'gtceu:draconic_reactor',
-        ['PPP',
-        'PFP',
-        'PPP'
-    ],{
-    P: 'gtceu:stainless_steel_plate',
-    F: 'draconicevolution:crafting_core'
-    }
-)
+    event.shaped(
+        'gtceu:draconic_reactor',
+            ['PPP',
+            'PFP',
+            'PPP'
+        ],{
+        P: 'gtceu:stainless_steel_plate',
+        F: 'draconicevolution:crafting_core'
+        }
+    )
 
     function Reactor(id, output, input, tier, RF) {
         event.recipes.gtceu.draconic_reactor(id)
@@ -36,4 +36,8 @@ event.shaped(
     Reactor('draconium_awakened_block', '5x gtceu:draconium_awakened_block', ['5x gtceu:draconium_block', '4x draconicevolution:wyvern_core', '2x draconicevolution:dragon_heart'], 'wyvern', 24000000000)
     Reactor('awakened_core', 'draconicevolution:awakened_core', ['minecraft:nether_star', '4x draconicevolution:wyvern_core', '2x gtceu:draconium_awakened_block'], 'wyvern', 3000000000)
     Reactor('chaotic_core', 'draconicevolution:chaotic_core', ['minecraft:nether_star', '4x draconicevolution:chaos_shard', '2x avaritia:neutronium_ingot', '2x gtceu:omnium_ingot'], 'chaotic', 30000000000)
+    Reactor('draconium_infused_obsidian', 'draconicevolution:infused_obsidian', ['2x gtceu:draconium_dust', '2x kubejs:pyrotheum_dust', '2x armorplus:compressed_obsidian', '2x armorplus:infused_lava_crystal', 'gtceu:dark_steel_block'], 'basic', 104857000)
+    Reactor('ender_energy_manipulator', 'kubejs:ender_energy_manipulator', ['1x minecraft:wither_skeleton_skull', '4x draconicevolution:draconium_core', '3x minecraft:ender_eye', '3x draconicevolution:wyvern_core'], 'wyvern', 320000000)
+
+    event.remove({ id: 'draconicevolution:infused_obsidian'})
 })

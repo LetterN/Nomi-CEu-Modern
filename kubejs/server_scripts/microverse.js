@@ -147,14 +147,15 @@ ServerEvents.recipes(event => {
             'DDDAEADDD',
             'DDDDPDDDD',
             'D DDDDD D',
+            'D DDDDD D',
             'D WW WW D'
         ], {
             L: 'kubejs:supercharged_laser_array',
             D: 'gtceu:double_draconium_plate',
             G: 'kubejs:advanced_micro_miner_guidance_system',
-            P: 'draconicevolution:particle_generator', // TODO: REPLACE WITH REAL DE COMPONENT
+            P: 'draconicevolution:particle_generator',
             A: 'gtceu:luv_field_generator',
-            E: 'kubejs:draconic_evolution_ender_energy_manipulator', // TODO: REPLACE WITH REAL DE COMPONENT
+            E: 'kubejs:ender_energy_manipulator', // TODO: REPLACE WITH REAL DE COMPONENT
             W: 'kubejs:warp_engine'
         }, 4
     )

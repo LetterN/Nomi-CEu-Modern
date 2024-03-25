@@ -373,6 +373,50 @@ ServerEvents.recipes(event => {
         }
     })
 
+    event.recipes.extendedcrafting.shaped_table(
+        'kubejs:ultimate_power_storage', [
+            'ABCDEDCBA',
+            'BCDEFEDCB',
+            'CDEFGFEDC',
+            'DEFGHGFED',
+            'EFGHIHGFE',
+            'DEFGHGFED',
+            'CDEFGFEDC',
+            'BCDEFEDCB',
+            'ABCDEDCBA'
+        ], {
+            A: 'gtceu:lv_lithium_battery',
+            B: 'gtceu:mv_lithium_battery',
+            C: 'gtceu:energy_crystal',
+            D: 'gtceu:lapotron_crystal',
+            E: 'gtceu:lapotronic_energy_orb',
+            F: 'gtceu:lapotronic_energy_orb_cluster',
+            G: 'gtceu:zero_point_module',
+            H: 'gtceu:energy_cluster',
+            I: 'gtceu:max_battery'
+        }
+    )
+
+    event.recipes.extendedcrafting.shaped_table(
+        'gtceu:zero_point_module', [
+            '  PPPPP  ',
+            '  PBCBP  ',
+            '  PCBCP  ',
+            '  PBCBP  ',
+            '   ZZZ   ',
+            '   ZFZ   ',
+            '   ZFZ   ',
+            '   ZZZ   ',
+            '   PPP   '
+        ], {
+            B: 'kubejs:stabilized_berkelium',
+            C: 'kubejs:stabilized_californium',
+            F: 'gtceu:zpm_field_generator',
+            P: 'nuclearcraft:plate_elite',
+            Z: '#gtceu:circuits/zpm'
+        }
+    )
+
     // Creative Items //
 
     //Creative Vending Upgrade
@@ -396,6 +440,31 @@ ServerEvents.recipes(event => {
             F: 'gtceu:zpm_quantum_chest',
             G: 'gtceu:uv_quantum_chest',
             H: 'gtceu:uhv_quantum_chest',
+            I: 'avaritia:infinity_catalyst'
+        }
+    )
+
+    //Creative Energy Cell (AE2)
+    event.recipes.extendedcrafting.shaped_table(
+        'ae2:creative_energy_cell', [
+            'ABCDEDCBA',
+            'BCDEFEDCB',
+            'CDEFGFEDC',
+            'DEFGHGFED',
+            'EFGHIHGFE',
+            'DEFGHGFED',
+            'CDEFGFEDC',
+            'BCDEFEDCB',
+            'ABCDEDCBA'
+        ], {
+            A: 'kubejs:ultimate_power_storage',
+            B: 'gtceu:hv_battery_buffer_16x',
+            C: 'gtceu:ev_battery_buffer_16x',
+            D: 'gtceu:iv_battery_buffer_16x',
+            E: 'gtceu:luv_battery_buffer_16x',
+            F: 'gtceu:zpm_battery_buffer_16x',
+            G: 'gtceu:uv_battery_buffer_16x',
+            H: 'gtceu:uhv_battery_buffer_16x',
             I: 'avaritia:infinity_catalyst'
         }
     )
