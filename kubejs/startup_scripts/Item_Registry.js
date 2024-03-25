@@ -1,6 +1,10 @@
 //Microminers
 StartupEvents.registry('item', event => {
 
+    function Capitalize(word) {
+        return (word[0].toUpperCase() + word.substring(1));
+    }
+
     event.create('microminer_t1').displayName("\u00A7eSteel Plated Micro Miner [Tier One]").maxStackSize(16)
     event.create('microminer_t2').displayName("\u00A7eTitanium Plated Micro Miner [Tier Two]").maxStackSize(16)
     event.create('microminer_t3').displayName("\u00A7eTungsten Carbide Plated Micro Miner [Tier Three]").maxStackSize(16)
@@ -73,14 +77,25 @@ StartupEvents.registry('item', event => {
     event.create('solidified_xenon').displayName("Solidified Xenon")
 
     //Stabilized Items
-    event.create('stabilized_einsteinium').displayName("\u00A7dStabilized Einsteinium")
-    event.create('stabilized_berkelium').displayName("Stabilized Berkelium")
-    event.create('stabilized_neptunium').displayName("Stabilized Neptunium")
-    event.create('stabilized_plutonium').displayName("Stabilized Plutonium")
-    event.create('stabilized_uranium').displayName("Stabilized Uranium")
-    event.create('stabilized_curium').displayName("Stabilized Curium")
-    event.create('stabilized_californium').displayName("Stabilized Californium")
-    event.create('stabilized_americium').displayName("Stabilized Americium")
+    let stabilized_elements = [
+    ['einsteinium', '#ffea00'],
+    ['berkelium', '#ff8400'],
+    ['neptunium', '#2e66ff'],
+    ['plutonium', '#ff0066'],
+    ['uranium', '#04ff00'],
+    ['curium', '#c800ff'],
+    ['californium', '#ad0232'],
+    ['americium', '#875800']
+    ]
+
+    stabilized_elements.forEach(element => {
+        let elementArray = element[0].split("_");
+        for (let i = 0; i < elementArray.length; i++) {
+            elementArray[i] = Capitalize(elementArray[i]);
+        }
+        let displayName = "Stabilized "+elementArray.join(" ");
+        event.create("stabilized_"+element[0]).displayName(displayName).textureJson({ layer0: 'kubejs:item/stabilized_element'}).color(0, element[1]);
+    })
 
     //End Game Items
     event.create('heart_of_a_universe').displayName("\u00A7dHeart Of A Universe")
@@ -190,10 +205,6 @@ StartupEvents.registry('item', event => {
     ['explosive', '#FF4800'],
     ['overclocked', '#1D24A1']
     ]
-
-    function Capitalize(word) {
-        return (word[0].toUpperCase() + word.substring(1));
-    }
 
     generators.forEach(generator => {
         let genArray = generator[0].split("_");
