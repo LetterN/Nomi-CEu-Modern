@@ -1,41 +1,22 @@
-/*
-ServerEvents.commandRegistry(e => {
-    const { commands: Commands, arguments: Arguments } = e
-
-    e.register(Commands.literal('fly')
-        .requires(s => s.hasPermission(2))
-        .executes(c => fly(c.source.player))
-        .then(Commands.argument('target', Arguments.PLAYER.create(e))
-            .executes(c => fly(Arguments.PLAYER.getResult(c, 'target')))
-        )
-    )
-
-    let fly = (player) => {
-        console.log(player)
-        if (player.abilities.mayfly) {
-            player.abilities.mayfly = false
-            player.abilities.flying = false
-            player.displayClientMessage(Component.gold('Flying: ').append(Component.red('disabled')), true)
-        } else {
-            player.abilities.mayfly = true
-            player.displayClientMessage(Component.gold('Flying: ').append(Component.green('enabled')), true)
-        }
-
-        player.onUpdateAbilities()
-        return 1
-    }
-})
-
 PlayerEvents.tick(event => {
+
+    if (event.player.age % 20 != 0) return
+
+    const glitchArmorEquipped = player.headArmorItem === 'kubejs:glitch_infused_helmet' &&
+        player.chestArmorItem === 'kubejs:glitch_infused_chestplate' &&
+        player.legsArmorItem === 'kubejs:glitch_infused_leggings' &&
+        player.feetArmorItem === 'kubejs:glitch_infused_boots'
+
     const { player } = event
-    if (player.chestArmorItem == 'kubejs:glitch_infused_chestplate') {
+    if (glitchArmorEquipped || player.isCreative()) {
         player.abilities.mayfly = true
-        player.abilities.flying = true
         player.onUpdateAbilities()
     } else {
-        player.abilities.mayfly = false
-        player.onUpdateAbilities()
+        if (player.abilities.mayfly || !player.isCreative()) {
+            player.abilities.mayfly = false
+            player.abilities.flying = false
+            player.onUpdateAbilities()
+        }
     }
 
 })
-*/
