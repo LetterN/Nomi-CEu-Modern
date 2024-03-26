@@ -10,28 +10,6 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(32)
 
-    //Cheaper Gears (for bounties)
-    event.shaped(
-        'gtceu:wood_gear', [
-            ' S ',
-            'S S',
-            ' S '
-        ], {
-            S: 'minecraft:stick'
-        }
-    ).id('gtceu:shaped/gear_wood')
-
-    event.shaped(
-        'gtceu:stone_gear', [
-            ' S ',
-            'SGS',
-            ' S '
-        ], {
-            S: 'minecraft:stone',
-            G: 'gtceu:wood_gear'
-        }
-    ).id('gtceu:shaped/gear_stone')
-
     //DML MATTERS
     event.recipes.gtceu.extractor('overworld_fluid')
         .itemInputs('hostilenetworks:overworld_prediction')
