@@ -1,3 +1,5 @@
+const $ItemBuilder = Java.loadClass("dev.latvian.mods.kubejs.item.custom.BasicItemJS$Builder")
+
 ItemEvents.modification(event => {
     event.modify('minecraft:sugar_cane', item => { item.burnTime = 300 })
 
@@ -14,8 +16,7 @@ ItemEvents.modification(event => {
 
     itemsToModify.forEach(itemName => {
         event.modify(itemName, item => {
-            const ItemBuilder = Java.loadClass("dev.latvian.mods.kubejs.item.custom.BasicItemJS$Builder")
-            const builder = new ItemBuilder(itemName).glow(true)
+            const builder = new $ItemBuilder(itemName).glow(true)
             item.setItemBuilder(builder)
         })
     })

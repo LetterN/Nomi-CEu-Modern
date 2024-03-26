@@ -1,4 +1,5 @@
 PlayerEvents.tick(event => {
+    const { player } = event;
 
     if (event.player.age % 20 != 0) return
 
@@ -7,7 +8,6 @@ PlayerEvents.tick(event => {
         player.legsArmorItem === 'kubejs:glitch_infused_leggings' &&
         player.feetArmorItem === 'kubejs:glitch_infused_boots'
 
-    const { player } = event
     if (glitchArmorEquipped || player.isCreative()) {
         player.abilities.mayfly = true
         player.onUpdateAbilities()
