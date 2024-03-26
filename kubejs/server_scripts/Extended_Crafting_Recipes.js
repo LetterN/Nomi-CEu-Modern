@@ -132,47 +132,6 @@ ServerEvents.recipes(event => {
         }, 4
     )
 
-
-
-    event.recipes.extendedcrafting.shaped_table(
-        'kubejs:exotic_materials_catalyst', [
-            'A  B  C',
-            ' D E F ',
-            '  GHI  ',
-            'JKLZMNO',
-            '  PQR  ',
-            ' S T U',
-            'V  W  X',
-
-        ], {
-            A: 'gtceu:nichrome_ingot',
-            B: 'gtceu:red_steel_ingot',
-            C: 'gtceu:kanthal_ingot',
-            D: "gtceu:magnalium_ingot",
-            E: 'gtceu:mana_infused_metal_ingot',
-            F: "gtceu:manyullyn_ingot",
-            G: "gtceu:enderium_ingot",
-            H: "gtceu:blue_steel_ingot",
-            I: "gtceu:microversium_ingot",
-            J: "gtceu:vanadium_steel_ingot",
-            K: "gtceu:rhodium_plated_palladium_ingot",
-            L: "gtceu:electrum_flux_ingot",
-            Z: 'gtceu:dark_soularium_ingot',
-            M: "avaritia:crystal_matrix_ingot",
-            N: "gtceu:end_steel_ingot",
-            O: "gtceu:electrical_steel_ingot",
-            P: "gtceu:signalum_ingot",
-            Q: "gtceu:vibrant_alloy_ingot",
-            R: "gtceu:soularium_ingot",
-            S: "gtceu:hsse_ingot",
-            T: "gtceu:dark_steel_ingot",
-            U: "gtceu:hssg_ingot",
-            V: "gtceu:ruridit_ingot",
-            W: 'gtceu:hsss_ingot',
-            X: "gtceu:energetic_alloy_ingot",
-
-        }, 3
-    )
     event.custom({
         "type": "extendedcrafting:shapeless_table",
         "ingredients": [{
