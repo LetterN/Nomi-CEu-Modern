@@ -532,5 +532,5 @@ ServerEvents.recipes(event => {
     })
 
     //Whatever
-    event.replaceInput({ input: 'enderio:copper_alloy_ingot' }, 'enderio:copper_alloy_ingot', 'gtceu:pulsating_iron_ingot')
+    event.replaceInput({ input: '#forge:ingots/copper_alloy' }, 'enderio:copper_alloy_ingot', 'gtceu:pulsating_iron_ingot')
 })

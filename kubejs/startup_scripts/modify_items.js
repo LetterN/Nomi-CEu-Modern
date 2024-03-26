@@ -11,7 +11,8 @@ ItemEvents.modification(event => {
         'gtceu:dark_soularium_ingot',
         'gtceu:small_dark_soularium_dust',
         'hostilenetworks:prediction',
-        /empowered/
+        /empowered/,
+        'kubejs:dev_tool'
     ];
 
     itemsToModify.forEach(itemName => {

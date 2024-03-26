@@ -45,8 +45,10 @@ ItemEvents.tooltip(tooltip => {
 
     tooltip.add(['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_4', 'thermal:upgrade_augment_3', 'thermal:dynamo_output_augment'], '§aDo not take the items from EMI! Use the crafting recipe to get the correct NBT data.')
 
-
-    // Backpacks, this extra bit of code will made it so that this line will be the first line displayed after the item name (if curios didn't exist lol)
+    tooltip.addAdvanced('kubejs:dev_tool', (item, advanced, text) => {
+            text.add(2, "§9Leclo§fwndu§c93150§f's §6Tool")
+        })
+        // Backpacks, this extra bit of code will made it so that this line will be the first line displayed after the item name (if curios didn't exist lol)
     tooltip.addAdvanced(/simplybackpacks:/, (item, advanced, text) => {
         text.add(1, [Text.red('Deprecated, switch out for a sophisticated backpack.').bold()])
     })

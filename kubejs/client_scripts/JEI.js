@@ -21,7 +21,7 @@ JEIEvents.hideItems(event => {
     //Thermal
     event.hide(['thermal:dynamo_gourmand', 'thermal:dynamo_disenchantment', 'thermal:dynamo_lapidary', 'systeams:numismatic_boiler', 'systeams:magmatic_boiler', 'systeams:compression_boiler', 'systeams:gourmand_boiler', 'systeams:lapidary_boiler', 'systeams:disenchantment_boiler'])
         //event.hide(['thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3', 'thermal:upgrade_augment_4', 'thermal:dynamo_output_augment'])
-		event.hide(['thermal:coal_coke', 'thermal:coal_coke_block'])
+    event.hide(['thermal:coal_coke', 'thermal:coal_coke_block'])
 
     //EnderIO
     event.hide(['enderio:energy_conduit', 'enderio:plant_matter_green', 'enderio:plant_matter_brown', 'enderio:clayed_glowstone', 'enderio:flour', 'enderio:organic_green_dye', 'enderio:organic_brown_dye', 'enderio:industrial_insulation_block', "enderio:primitive_alloy_smelter", "enderio:alloy_smelter", "enderio:sag_mill", "enderio:stirling_generator"])
@@ -71,6 +71,8 @@ JEIEvents.hideItems(event => {
     //Backpacks
     event.hide('sophisticatedbackpacks:copper_backpack')
 
+    //Leave me alone
+    event.hide('kubejs:dev_tool')
 })
 
 JEIEvents.hideFluids(event => {
