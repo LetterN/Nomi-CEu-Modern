@@ -468,4 +468,54 @@ ServerEvents.recipes(event => {
             I: 'avaritia:infinity_catalyst'
         }
     )
+
+    //Creative Jetpack
+    event.recipes.extendedcrafting.shaped_table(
+        Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative"}').strongNBT(), [
+            '  C   L  ',
+            ' CCC LLL ',
+            ' CVCFLEL ',
+            ' CVCILEL ',
+            ' CVCDLEL ',
+            ' CVC LEL ',
+            ' SSS HHH ',
+            '  N   R  ',
+            ' NNN RRR '
+        ], {
+            C: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:conductive_iron"}').strongNBT(),
+            D: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:dark_soularium"}').strongNBT(),
+            E: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:resonant"}').strongNBT(),
+            F: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:fluxed"}').strongNBT(),
+            H: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:hardened"}').strongNBT(),
+            I: 'avaritia:infinity_catalyst',
+            L: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:leadstone"}').strongNBT(),
+            N: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').strongNBT(),
+            R: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:reinforced"}').strongNBT(),
+            S: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').strongNBT(),
+            V: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}').strongNBT()
+        }
+    )
+
+    //Creative Solar Panel
+    event.recipes.extendedcrafting.shaped_table(
+        'solarflux:sp_avaritia.infinity', [
+            'SNNNNNNNS',
+            'NPPPNPPPN',
+            'NPPPNPPPN',
+            'NPPPNPPPN',
+            'NNNNINNNN',
+            'NPPPNPPPN',
+            'NPPPNPPPN',
+            'NPPPNPPPN',
+            'SNNNNNNNS'
+        ], {
+            I: 'avaritia:infinity_catalyst',
+            N: 'gtceu:neutronium_plate',
+            P: 'kubejs:infinity_plate',
+            S: 'solarflux:sp_avaritia.neutronium'
+
+        }
+    )
+
+
 })

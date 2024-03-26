@@ -78,11 +78,16 @@ ServerEvents.recipes(event => {
     alloy_smelter("electrical_steel", 16, 6, "gtceu:steel_ingot", "gtceu:silicon_dust", "gtceu:electrical_steel_ingot");
     alloy_smelter("endsteel", 120, 15, "gtceu:dark_steel_ingot", "minecraft:end_stone", "gtceu:end_steel_ingot");
     alloy_smelter("endsteel_endstone_dust", 120, 15, "gtceu:dark_steel_ingot", "gtceu:endstone_dust", "gtceu:end_steel_ingot");
+    alloy_smelter("ferroboron_alloy", 16, 15, "gtceu:steel_ingot", "gtceu:boron_dust", "2x nuclearcraft:ferroboron_ingot")
     alloy_smelter("tough_alloy", 16, 15, "nuclearcraft:ferroboron_ingot", "gtceu:lithium_dust", "2x nuclearcraft:tough_alloy_ingot");
     alloy_smelter("hard_carbon_alloy", 16, 15, "2x gtceu:steel_ingot", "minecraft:diamond", "2x nuclearcraft:hard_carbon_ingot");
     alloy_smelter("sunnarium", 400, 100, "kubejs:stabilized_plutonium", "kubejs:stabilized_curium", "gtceu:sunnarium_dust");
     alloy_smelter("fissionglass", 16, 2.5, "nuclearcraft:fission_reactor_casing", "minecraft:glass", 'nuclearcraft:fission_reactor_glass');
     //alloy_smelter("stellar_alloy", 2000, 10, "gtceu:end_steel_ingot", "8x enderio:infinity_dust", "enderio:stellar_alloy_ingot");
+
+    event.remove({ id: "minecraft:nuclearcraft_ferroboron_plate" })
+    event.remove({ id: "minecraft:nuclearcraft_ferroboron_dust" })
+    event.remove({ id: "nuclearcraft:blast_ferroboron_dust" })
 })
 
 
