@@ -74,22 +74,22 @@ StartupEvents.registry('item', event => {
 
     //Stabilized Items
     const stabilized_elements = [
-		['einsteinium', '#ffea00'],
-		['berkelium', '#ff8400'],
-		['neptunium', '#2e66ff'],
-		['plutonium', '#ff0066'],
-		['uranium', '#04ff00'],
-		['curium', '#c800ff'],
-		['californium', '#ad0232'],
-		['americium', '#875800']
+        ['einsteinium', '#ffea00'],
+        ['berkelium', '#ff8400'],
+        ['neptunium', '#2e66ff'],
+        ['plutonium', '#ff0066'],
+        ['uranium', '#04ff00'],
+        ['curium', '#c800ff'],
+        ['californium', '#ad0232'],
+        ['americium', '#875800']
     ]
 
-	for (const [element, elemColor] of stabilized_elements) {
-		event.create(`stabilized_${element}`)
-			.displayName(`Stabilized ${element.split('_').map(v => capitalize(v)).join(" ")}`)
-			.textureJson({ layer0: 'kubejs:item/stabilized_element'})
-			.color(0, elemColor);
-	}
+    for (const [element, elemColor] of stabilized_elements) {
+        event.create(`stabilized_${element}`)
+            .displayName(`Stabilized ${element.split('_').map(v => capitalize(v)).join(" ")}`)
+            .textureJson({ layer0: 'kubejs:item/stabilized_element' })
+            .color(0, elemColor);
+    }
 
     //End Game Items
     event.create('heart_of_a_universe').displayName("§dHeart Of A Universe")
@@ -180,33 +180,37 @@ StartupEvents.registry('item', event => {
     event.create('glitch_infused_leggings', 'leggings').tier('glitch').displayName('§bGlitch Infused Leggings')
     event.create('glitch_infused_boots', 'boots').tier('glitch').displayName('§bGlitch Infused Boots')
 
+    const cool = Java.loadClass("net.laith.avaritia.util.TextUtil")
+        //Dev Tool
+    event.create('dev_tool', 'pickaxe').tier("dev").unstackable().displayName(cool.makeFabulous("Developer Multi-Tool"))
+
     //Ultimate Generator Components
     //event.create('survival_generator_component').textureJson({ layer0: 'gtceu:item/material_sets/dull/gear'}).color(0, '#70F00F')
     const generators = [
-		['survival', '#333333'],
-		['furnace', '#888888'],
-		['culinary', '#FFFFFF'],
-		['magmatic', '#630000'],
-		['heated_redstone','#CF2600'],
-		['slimey', '#7EB53C'],
-		['ender', '#21593b'],
-		['disenchantment', '#30183B'],
-		['potion', '#6F348A'],
-		['death', '#E3CF81'],
-		['pink', '#E381A8'],
-		['frosty', '#81B1E3'],
-		['halitosis', '#A1688F'],
-		['nether_star', '#000000'],
-		['explosive', '#FF4800'],
-		['overclocked', '#1D24A1']
+        ['survival', '#333333'],
+        ['furnace', '#888888'],
+        ['culinary', '#FFFFFF'],
+        ['magmatic', '#630000'],
+        ['heated_redstone', '#CF2600'],
+        ['slimey', '#7EB53C'],
+        ['ender', '#21593b'],
+        ['disenchantment', '#30183B'],
+        ['potion', '#6F348A'],
+        ['death', '#E3CF81'],
+        ['pink', '#E381A8'],
+        ['frosty', '#81B1E3'],
+        ['halitosis', '#A1688F'],
+        ['nether_star', '#000000'],
+        ['explosive', '#FF4800'],
+        ['overclocked', '#1D24A1']
     ]
 
-	for (const [genny, gennyColor] of generators) {
-		event.create(`${genny}_generator_component`)
-			.displayName(`${genny.split('_').map(v => capitalize(v)).join(" ")} Generator Component`)
-			.textureJson({ layer0: 'gtceu:item/material_sets/dull/gear'})
-			.color(0, gennyColor);
-	}
+    for (const [genny, gennyColor] of generators) {
+        event.create(`${genny}_generator_component`)
+            .displayName(`${genny.split('_').map(v => capitalize(v)).join(" ")} Generator Component`)
+            .textureJson({ layer0: 'gtceu:item/material_sets/dull/gear' })
+            .color(0, gennyColor);
+    }
 })
 
 ItemEvents.armorTierRegistry(event => {
@@ -216,6 +220,13 @@ ItemEvents.armorTierRegistry(event => {
         tier.toughness = 4.0
         tier.slotProtections = [3, 10, 6, 3]
     })
-
 })
 
+ItemEvents.toolTierRegistry(event => {
+    event.add("dev", (tier) => {
+        tier.enchantmentValue = 42
+        tier.level = 42
+        tier.uses = 42690
+        tier.speed = 12
+    })
+})

@@ -80,6 +80,7 @@
 				}
 				{
 					auto: "invisible"
+					icon: "enderio:cake_base"
 					id: "24FE5D5A412EA666"
 					title: "FREE CAKES"
 					type: "custom"

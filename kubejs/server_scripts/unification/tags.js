@@ -19,19 +19,19 @@ ServerEvents.tags('item', event => {
 ServerEvents.tags('block', event => {
     event.add('minecraft:mineable/pickaxe', ['forge:glass', 'forge:glass_panes']);
 
-	// snad
-	const compacted_sand = ['kubejs:compressed_sand', 'kubejs:double_compressed_sand', 'kubejs:compressed_red_sand', 'kubejs:double_compressed_red_sand'];
-	event.add('minecraft:dead_bush_may_place_on', compacted_sand);
-	event.add('minecraft:bamboo_plantable_on', compacted_sand);
-	event.add('minecraft:azalea_grows_on', compacted_sand);
-	event.add('framedblocks:camo_sustain_plant', compacted_sand);
+    // snad
+    const compacted_sand = ['kubejs:compressed_sand', 'kubejs:double_compressed_sand', 'kubejs:compressed_red_sand', 'kubejs:double_compressed_red_sand'];
+    event.add('minecraft:dead_bush_may_place_on', compacted_sand);
+    event.add('minecraft:bamboo_plantable_on', compacted_sand);
+    event.add('minecraft:azalea_grows_on', compacted_sand);
+    event.add('framedblocks:camo_sustain_plant', compacted_sand);
 })
 
 ServerEvents.tags('fluid', event => {
 
 })
 
-let manualUnification = ['draconicevolution:draconium_ingot', 'draconicevolution:draconium_nugget', 'draconicevolution:draconium_dust', 'draconicevolution:awakened_draconium_ingot', 'draconicevolution:awakened_draconium_nugget', 'draconicevolution:awakened_draconium_dust', 'hammerlib:gears/stone', 'hammerlib:gears/wooden', 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget']
+let manualUnification = ['hammerlib:gears/netherite', 'hammerlib:gears/wooden', 'hammerlib:gears/stone', 'hammerlib:gears/copper', 'hammerlib:gears/iron', 'hammerlib:gears/gold', 'hammerlib:gears/diamond', 'draconicevolution:draconium_ingot', 'draconicevolution:draconium_nugget', 'draconicevolution:draconium_dust', 'draconicevolution:awakened_draconium_ingot', 'draconicevolution:awakened_draconium_nugget', 'draconicevolution:awakened_draconium_dust', 'hammerlib:gears/stone', 'hammerlib:gears/wooden', 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget']
 let UnificationExcludedItems = ['nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:tough_alloy_ingot']
 let unificationPattern = new RegExp(`^(?!(${UnificationExcludedItems.join('|')})).*(nuclearcraft|thermal|enderio):(.*(_block|_plate|_ingot|_nugget|_gear|_dust))`, 'i')
 
