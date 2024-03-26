@@ -35,7 +35,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('naquadah_reactor_i')
         .category('multiblock')
-        .setEUIO('in')
+        .setEUIO('out')
         .setMaxIOSize(1, 1, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
@@ -46,7 +46,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
     event.create('naquadah_reactor_ii')
         .category('multiblock')
-        .setEUIO('in')
+        .setEUIO('out')
         .setMaxIOSize(1, 1, 0, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
