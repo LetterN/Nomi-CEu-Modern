@@ -14,6 +14,10 @@ ServerEvents.tags('item', event => {
     event.removeAllTagsFrom('ae2:certus_quartz_crystal')
     event.remove('forge:ingots/aluminum', 'nuclearcraft:aluminum_ingot')
     event.add('forge:ingots/aluminium', 'nuclearcraft:aluminum_ingot')
+
+		// can't replace tags in recipes so we just add the tag to the item instead
+		event.add('forge:ingots/redstone_alloy', 'gtceu:red_alloy_ingot')
+		event.add('forge:ingots/copper_alloy', 'gtceu:electrical_steel_ingot')
 })
 
 ServerEvents.tags('block', event => {
@@ -32,7 +36,7 @@ ServerEvents.tags('fluid', event => {
 })
 
 let manualUnification = ['hammerlib:gears/netherite', 'hammerlib:gears/wooden', 'hammerlib:gears/stone', 'hammerlib:gears/copper', 'hammerlib:gears/iron', 'hammerlib:gears/gold', 'hammerlib:gears/diamond', 'draconicevolution:draconium_ingot', 'draconicevolution:draconium_nugget', 'draconicevolution:draconium_dust', 'draconicevolution:awakened_draconium_ingot', 'draconicevolution:awakened_draconium_nugget', 'draconicevolution:awakened_draconium_dust', 'hammerlib:gears/stone', 'hammerlib:gears/wooden', 'gtceu:neutronium_ingot', 'gtceu:neutronium_nugget']
-let UnificationExcludedItems = ['nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:tough_alloy_ingot']
+let UnificationExcludedItems = ['nuclearcraft:hard_carbon_ingot', 'nuclearcraft:ferroboron_ingot', 'nuclearcraft:tough_alloy_ingot', 'enderio:wood_gear', 'enderio:stone_gear', 'enderio:iron_gear', 'enderio:energized_gear', 'enderio:vibrant_gear']
 let unificationPattern = new RegExp(`^(?!(${UnificationExcludedItems.join('|')})).*(nuclearcraft|thermal|enderio):(.*(_block|_plate|_ingot|_nugget|_gear|_dust))`, 'i')
 
 //EMI Hacky Fix   MODS TO FIX: DRACONIC EVOLUTION, THERMAL SERIES, GTCEU NEUTRONIUM, NUCLEARCRAFT
