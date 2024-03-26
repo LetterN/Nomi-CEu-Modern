@@ -10,7 +10,6 @@ ServerEvents.tags('item', event => {
 })
 
 // timer for cake
-const cake_reset_time = 60; // in seconds
 FTBQuestsEvents.customTask('138B92A597D63C12', event => {
 	event.setMaxProgress(60*cake_reset_time);
 	event.setCheckTimer(20);

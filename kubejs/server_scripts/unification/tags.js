@@ -17,8 +17,14 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.tags('block', event => {
-    event.add('minecraft:mineable/pickaxe', 'forge:glass')
-    event.add('minecraft:mineable/pickaxe', 'forge:glass_panes')
+    event.add('minecraft:mineable/pickaxe', ['forge:glass', 'forge:glass_panes']);
+
+	// snad
+	const compacted_sand = ['kubejs:compressed_sand', 'kubejs:double_compressed_sand', 'kubejs:compressed_red_sand', 'kubejs:double_compressed_red_sand'];
+	event.add('minecraft:dead_bush_may_place_on', compacted_sand);
+	event.add('minecraft:bamboo_plantable_on', compacted_sand);
+	event.add('minecraft:azalea_grows_on', compacted_sand);
+	event.add('framedblocks:camo_sustain_plant', compacted_sand);
 })
 
 ServerEvents.tags('fluid', event => {

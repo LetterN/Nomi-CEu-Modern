@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         //event.remove({ id: "" })
 
     //redstone and lapis ores now drop multiple raw ore per ore block. They are tedious to smelt so we speed them up
-    let quickSmelt = function(oreName, output) {
+    const quickSmelt = (oreName, output) => {
         event.remove({ id: "gtceu:smelting/smelt_raw_" + oreName + "_ore_to_ingot" })
         event.remove({ id: "gtceu:blasting/smelt_raw_" + oreName + "_ore_to_ingot" })
         event.smelting(output, "gtceu:raw_" + oreName).id("gtceu:smelting/smelt_raw_" + oreName + "_ore_to_ingot").cookingTime(50)
