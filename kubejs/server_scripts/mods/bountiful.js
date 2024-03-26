@@ -26,7 +26,7 @@ event.shaped(
         'LGR'
     ], {
         L: 'kubejs:wooden_widget_left',
-        G: '#forge:gears/wood',
+        G: 'enderio:wood_gear',
         R: 'kubejs:wooden_widget_right'
     }
 ).noMirror()
@@ -60,7 +60,7 @@ event.shaped(
     'D'
     ], {
     U: 'kubejs:stone_widget_up',
-    G: '#forge:gears/stone',
+    G: 'enderio:stone_gear',
     D: 'kubejs:stone_widget_down'
     }
 )

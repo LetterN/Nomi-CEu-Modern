@@ -27,6 +27,7 @@ ServerEvents.recipes(event => {
         }
     )
 
+		event.remove({ id: "enderio:ender_fluid_conduit" })
     // Manual ender fluid conduit
     event.shaped(
         "4x enderio:ender_fluid_conduit", [
@@ -38,7 +39,7 @@ ServerEvents.recipes(event => {
             W: "gtceu:vibrant_alloy_single_wire",
             P: "enderio:pressurized_fluid_conduit"
         }
-    )
+    ).id("enderio:ender_fluid_conduit_upgrade")
 
     // Assembler item conduit
     event.recipes.gtceu.assembler("efficent_item_conduit")
@@ -197,13 +198,10 @@ ServerEvents.recipes(event => {
 
     // Disable EnderIO machinery
 
-    event.remove({ type: 'enderio:primitive_alloy_smelting' })
-    event.remove({ type: 'enderio:alloy_smelting' })
-    event.remove({ type: 'enderio:sagmilling' })
-
-
-
-    //TODO: Capacitor Banks Recipes
+		event.remove({ id: "enderio:primitive_alloy_smelter"})
+		event.remove({ id: "enderio:alloy_smelter"})
+		event.remove({ id: "enderio:sag_mill"})
+		event.remove({ id: "enderio:stirling_generator"})
 
     // Capacitors
 
@@ -250,6 +248,14 @@ ServerEvents.recipes(event => {
             C: 'kubejs:compressed_octadic_capacitor'
         }
     )
+
+		// capacitor banks
+		event.remove( {id: 'enderio:advanced_capacitor_bank'} )
+		event.remove( {id: 'enderio:vibrant_capacitor_bank_upgrade'} )
+
+		event.replaceInput( {id: 'enderio:basic_capacitor_bank'}, "#forge:ingots/iron", "#forge:plates/iron")
+		event.replaceInput( {id: 'enderio:advanced_capacitor_bank_upgrade'}, "#forge:ingots/energetic_alloy", "#forge:plates/electrical_steel")
+		event.replaceInput( {id: 'enderio:vibrant_capacitor_bank'}, ["#forge:ingots/vibrant_alloy"], "#forge:plates/vibrant_alloy")
 
     // Fused Quartz
     event.recipes.gtceu.alloy_smelter("fused_quartz")
@@ -338,7 +344,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'enderio:void_chassis' })
 
     //Redstone Conduit
-    event.replaceInput({ id: 'enderio:redstone_conduit' }, 'enderio:redstone_alloy_ingot', 'gtceu:red_alloy_single_wire')
+    event.replaceInput({ id: 'enderio:redstone_conduit' }, 'gtceu:red_alloy_ingot', 'gtceu:red_alloy_single_wire')
 
     // Soul Vials
 
@@ -462,6 +468,19 @@ ServerEvents.recipes(event => {
         Q: 'minecraft:quartz',
         R: 'gtceu:red_alloy_ingot'
     }).id('enderio:painting_machine')
+
+		// Crafter
+    event.shaped('enderio:crafter', [
+			'RCR',
+			'GFG',
+			'SSS'
+	], {
+			C: 'avaritia:compressed_crafting_table',
+			F: 'gtceu:lv_machine_hull',
+			G: '#forge:small_gears/steel',
+			R: 'kubejs:resonating_crystal',
+			S: '#forge:plates/steel'
+	}).id('enderio:crafter')
 
     //Z-Logic Controller
     event.shaped('enderio:z_logic_controller', [
