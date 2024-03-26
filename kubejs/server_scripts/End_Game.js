@@ -496,5 +496,26 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //Creative Solar Panel
+    event.recipes.extendedcrafting.shaped_table(
+        'solarflux:sp_avaritia.infinity', [
+            'SNNNNNNNS',
+            'NPPPNPPPN',
+            'NPPPNPPPN',
+            'NPPPNPPPN',
+            'NNNNINNNN',
+            'NPPPNPPPN',
+            'NPPPNPPPN',
+            'NPPPNPPPN',
+            'SNNNNNNNS'
+        ], {
+            I: 'avaritia:infinity_catalyst',
+            N: 'gtceu:neutronium_plate',
+            P: 'kubejs:infinity_plate',
+            S: 'solarflux:sp_avaritia.neutronium'
+
+        }
+    )
+
 
 })
