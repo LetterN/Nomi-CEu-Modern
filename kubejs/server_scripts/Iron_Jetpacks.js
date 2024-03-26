@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
     // Jetpacks
     //
 
-    var jetpackRecipe = [
+    const jetpackRecipe = [
         ['leadstone', 'ironjetpacks:strap', 'lead', Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:leadstone"}').strongNBT()],
         ['hardened', Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:leadstone"}').strongNBT(), 'invar', Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:hardened"}').strongNBT()],
         ['reinforced', Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:hardened"}').strongNBT(), 'electrum', Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:reinforced"}').strongNBT()],
@@ -220,5 +220,4 @@ ServerEvents.recipes(event => {
         C: Item.of('ironjetpacks:cell', '{Id:"ironjetpacks:reinforced"}').strongNBT(),
         D: 'kubejs:pyrotheum_dust'
     })
-
 })

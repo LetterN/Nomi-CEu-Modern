@@ -1,54 +1,18 @@
 // THIS FILE IS FOR RANDOM RECIPES THAT DOESNT REQUIRE THEIR OWN FILE
 
-//Idk for what v is but i'ma keep it here. Stole it from normal.js (which got deleted)
-// CleanroomType = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CleanroomType")
-
 ServerEvents.recipes(event => {
 
     // snad
-    event.shapeless('snad:snad', ['kubejs:double_compressed_sand', 'kubejs:double_compressed_sand']).id('snad:snadrecipe')
-    event.shapeless('snad:red_snad', ['kubejs:double_compressed_red_sand', 'kubejs:double_compressed_red_sand']).id('snad:red_snad')
+    event.shapeless('snad:snad', ['2x kubejs:double_compressed_sand']).id('snad:snadrecipe')
+    event.shapeless('snad:red_snad', ['2x kubejs:double_compressed_red_sand']).id('snad:red_snad')
 
     // snaded sand snad
-    event.shaped("kubejs:compressed_sand", [
-        "AAA",
-        "AAA",
-        "AAA"
-    ], {
-        A: "minecraft:sand"
-    });
-
-    event.shaped("kubejs:double_compressed_sand", [
-        "AAA",
-        "AAA",
-        "AAA"
-    ], {
-        A: "kubejs:compressed_sand"
-    });
+	comapcting(event, 'kubejs:compressed_sand', 'minecraft:sand');
+	comapcting(event, 'kubejs:double_compressed_sand', 'kubejs:compressed_sand');
 
     // red snaded red sand red snad
-    event.shaped("kubejs:compressed_red_sand", [
-        "AAA",
-        "AAA",
-        "AAA"
-    ], {
-        A: "minecraft:red_sand"
-    });
-
-    event.shaped("kubejs:double_compressed_red_sand", [
-        "AAA",
-        "AAA",
-        "AAA"
-    ], {
-        A: "kubejs:compressed_red_sand"
-    });
-
-// Reversal
-    event.shapeless('9x kubejs:compressed_sand', ['kubejs:double_compressed_sand'])
-    event.shapeless('9x minecraft:sand', ['kubejs:compressed_sand'])
-    event.shapeless('9x kubejs:compressed_red_sand', ['kubejs:double_compressed_red_sand'])
-    event.shapeless('9x minecraft:red_sand', ['kubejs:compressed_red_sand'])
-
+	comapcting(event, 'kubejs:compressed_red_sand', 'minecraft:red_sand');
+	comapcting(event, 'kubejs:double_compressed_red_sand', 'kubejs:compressed_red_sand');
 
     // Glider
     event.replaceInput({ id: "hangglider:glider_framework" }, 'minecraft:iron_ingot', 'gtceu:iron_rod')
@@ -74,39 +38,9 @@ ServerEvents.recipes(event => {
 
 
     // Infinity Dust Blocks
-    event.recipes.shapeless('9x kubejs:compressed_infinity_dust_block', 'kubejs:double_compressed_infinity_dust_block')
-    event.recipes.shapeless('9x kubejs:infinity_dust_block', 'kubejs:compressed_infinity_dust_block')
-    event.recipes.shapeless('9x enderio:grains_of_infinity', 'kubejs:infinity_dust_block')
-
-    event.shaped(
-        'kubejs:infinity_dust_block', [
-            'AAA',
-            'AAA',
-            'AAA'
-        ], {
-            A: 'enderio:grains_of_infinity'
-        }
-    )
-
-    event.shaped(
-        'kubejs:compressed_infinity_dust_block', [
-            'AAA',
-            'AAA',
-            'AAA'
-        ], {
-            A: 'kubejs:infinity_dust_block'
-        }
-    )
-
-    event.shaped(
-        'kubejs:double_compressed_infinity_dust_block', [
-            'AAA',
-            'AAA',
-            'AAA'
-        ], {
-            A: 'kubejs:compressed_infinity_dust_block'
-        }
-    )
+	comapcting(event, 'kubejs:infinity_dust_block', 'enderio:grains_of_infinity');
+	comapcting(event, 'kubejs:compressed_infinity_dust_block', 'kubejs:infinity_dust_block');
+	comapcting(event, 'kubejs:double_compressed_infinity_dust_block', 'kubejs:compressed_infinity_dust_block');
 
     // Blazerod Shenanigans
     event.shapeless('minecraft:blaze_rod', 'minecraft:brewing_stand')
@@ -115,8 +49,7 @@ ServerEvents.recipes(event => {
     // Nomi Steel
     event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot" })
 
-    var carbonSources = ["gtceu:coal_dust", "gtceu:charcoal_dust", "gtceu:carbon_dust"]
-
+    const carbonSources = ["gtceu:coal_dust", "gtceu:charcoal_dust", "gtceu:carbon_dust"]
     // Alloy smelter steel
     carbonSources.forEach(carbonSource => {
         event.recipes.gtceu.alloy_smelter("steel_" + carbonSource.replace(/\W/g, '')) // The replace line removes non alphanumeric chars, regex is magic
@@ -128,7 +61,7 @@ ServerEvents.recipes(event => {
 
     // Wrought iron per ingot
     event.remove({ type: "minecraft:smelting", output: "gtceu:wrought_iron_nugget" })
-    event.recipes.minecraft.smelting("gtceu:wrought_iron_ingot", "minecraft:iron_ingot")
+    event.smelting("gtceu:wrought_iron_ingot", "minecraft:iron_ingot")
 
     // Dust hydration
     event.shapeless("minecraft:clay", ["kubejs:dust", "minecraft:water_bucket"])
@@ -222,7 +155,8 @@ ServerEvents.recipes(event => {
     event.remove({ type: "gtceu:primitive_blast_furnace" })
 
     // Table with various burn time lengths
-    var pbfTimes = [
+    const pbfTimes = [
+		// material | fuel | length in ticks
         ["wrought_iron", "coal", 400],
         ["wrought_iron", "charcoal", 400],
         ["wrought_iron", "coke", 600],
@@ -231,23 +165,20 @@ ServerEvents.recipes(event => {
         ["iron", "coke", 1500]
     ]
 
-    // Trigger Warning: JavaScript pain
-    // TODO: Make coal show up
-    pbfTimes.forEach(recipeInfo => {
-        var efficent = recipeInfo[1] == "coke"
-
+	for (const [material, fuel, time] of pbfTimes) {
+		let efficient = (fuel === "coke");
         // Ingot form
-        event.recipes.gtceu.primitive_blast_furnace("pbf_" + recipeInfo[0] + "_" + recipeInfo[1])
-            .itemInputs((efficent ? "2x " : "") + "#forge:ingots/" + recipeInfo[0], ["#forge:gems/" + recipeInfo[1], "#forge:dusts/" + recipeInfo[1]])
-            .itemOutputs((efficent ? "2x " : "") + "gtceu:steel_ingot", "gtceu:tiny_" + (efficent ? "" : "dark_") + "ash_dust")
-            .duration(recipeInfo[2])
+        event.recipes.gtceu.primitive_blast_furnace(`pbf_${material}_${fuel}`)
+            .itemInputs(`${efficient ? '2x ' : ''}#forge:ingots/${material}`, [`#forge:gems/${fuel}`, `#forge:dusts/${fuel}`])
+            .itemOutputs(`${efficient ? '2x ' : ''}gtceu:steel_ingot`, `gtceu:tiny_${efficient ? "" : "dark_"}ash_dust`)
+            .duration(time)
 
         // Block form
-        event.recipes.gtceu.primitive_blast_furnace("pbf_block_" + recipeInfo[0] + "_" + recipeInfo[1])
-            .itemInputs((efficent ? "2x " : "") + "#forge:storage_blocks/" + recipeInfo[0], "#forge:storage_blocks/" + recipeInfo[1])
-            .itemOutputs((efficent ? "2x " : "") + "gtceu:steel_block", "gtceu:" + (efficent ? "" : "dark_") + "ash_dust")
-            .duration(recipeInfo[2] * 9)
-    })
+        event.recipes.gtceu.primitive_blast_furnace(`pbf_block_${material}_${fuel}`)
+			.itemInputs(`${efficient ? '2x ' : ''}#forge:storage_blocks/${material}`, `#forge:storage_blocks/${fuel}`)
+            .itemOutputs(`${efficient ? '2x ' : ''}gtceu:steel_block`, `gtceu:${efficient ? "" : "dark_"}ash_dust`)
+            .duration(time * 9)
+	}
 
     // Data Stuff
     event.recipes.gtceu.extractor("tank_data")
@@ -373,29 +304,29 @@ ServerEvents.recipes(event => {
     // Implement draconium smelting
     event.remove({ id: "gtceu:electric_blast_furnace/blast_draconium" })
 
-    var draconiumFuels = [
+    const draconiumFuels = [
         [2000, "gtceu:cetane_boosted_diesel"],
         [2000, "gtceu:gasoline"],
         [500, "gtceu:high_octane_gasoline"]
     ]
 
-    draconiumFuels.forEach(fuelType => {
-        event.recipes.gtceu.electric_blast_furnace("draconium_" + fuelType[1].replace(/\W/g, ''))
+	for (const [mB, id] of draconiumFuels) {
+        event.recipes.gtceu.electric_blast_furnace("draconium_" + id.replace(/\W/g, ''))
             .itemInputs("gtceu:draconium_dust")
-            .inputFluids(fuelType[1] + " " + fuelType[0])
+            .inputFluids(`${id} ${mB}`)
             .itemOutputs("gtceu:hot_draconium_ingot")
             .duration(10000)
             .blastFurnaceTemp(6800)
             .EUt(120)
 
-        event.recipes.gtceu.electric_blast_furnace("draconium_scale_" + fuelType[1].replace(/\W/g, ''))
+        event.recipes.gtceu.electric_blast_furnace("draconium_scale_" + id.replace(/\W/g, ''))
             .itemInputs("4x armorplus:ender_dragon_scale")
-            .inputFluids(fuelType[1] + " " + fuelType[0] * 4)
+			.inputFluids(`${id} ${mB * 4}`)
             .itemOutputs("2x gtceu:hot_draconium_ingot")
             .duration(20000)
             .blastFurnaceTemp(6800)
             .EUt(120)
-    })
+	}
 
     // Diamond -> carbon
     event.recipes.gtceu.electrolyzer("diamond_decomposition")
