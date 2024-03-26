@@ -2003,7 +2003,7 @@
 		{
 			dependencies: ["0F140E480826AA81"]
 			description: [
-				"&2Systems on Chip can be engraved with HV power and Glowstone Boules. This unlocks the ultimate tier one circuit recipe in the EV Circuit Assembler."
+				"&2Systems on Chip can be engraved with HV power and Phosphorus Boules. This unlocks the ultimate tier one circuit recipe in the EV Circuit Assembler."
 				""
 				"The ultimate tier two circuit recipe requires an IV Circuit Assembler."
 			]
@@ -2015,7 +2015,7 @@
 			}]
 			tasks: [{
 				id: "237B8FA53789FE37"
-				item: "gtceu:simple_soc_wafer"
+				item: "gtceu:soc_wafer"
 				type: "item"
 			}]
 			x: 19.5d

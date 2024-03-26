@@ -12,7 +12,7 @@ let ores = [
 
 ServerEvents.recipes(event => {
     function unDensify(name) {
-        let normal = "minecraft:" + name;
+        let normal = "gtceu:" + name;
         let dense = "kubejs:dense_" + name;
         event.recipes.gtceu.chemical_reactor("undensify_" + name)
             .itemInputs(dense)
