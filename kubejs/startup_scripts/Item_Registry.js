@@ -182,7 +182,7 @@ StartupEvents.registry('item', event => {
 
     const cool = Java.loadClass("net.laith.avaritia.util.TextUtil")
         //Dev Tool
-    event.create('dev_tool', 'pickaxe').tier("dev").unstackable().displayName(cool.makeFabulous("Developer Multi-Tool"))
+    event.create('dev_tool', 'paxel').tier("dev").unstackable().displayName(cool.makeFairiec("The Holy Pickaxe"))
 
     //Ultimate Generator Components
     //event.create('survival_generator_component').textureJson({ layer0: 'gtceu:item/material_sets/dull/gear'}).color(0, '#70F00F')
