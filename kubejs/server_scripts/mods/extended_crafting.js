@@ -193,7 +193,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.extendedcrafting.combination(
         "gtceu:palis_empowered_block",
-        "gtceu:palis_block", ["gtceu:sapphire_gem", "minecraft:bedrock", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').strongNBT(), "extendedcrafting:elite_component"],
+        "gtceu:palis_block", ["gtceu:sapphire_gem", "gtceu:mana_infused_metal_ingot", Item.of('gtceu:fluid_cell', '{Fluid:{Amount:1000,FluidName:"minecraft:water"}}').strongNBT(), "extendedcrafting:elite_component"],
         4000000, 400000
     )
 
