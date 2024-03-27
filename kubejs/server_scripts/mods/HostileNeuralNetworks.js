@@ -55,6 +55,12 @@ ServerEvents.recipes(event => {
         }
     )
 
+		event.recipes.gtceu.assembler('dark_steel_machine_hull')
+        .itemInputs('gtceu:lv_machine_hull', '8x #forge:plates/dark_steel')
+        .itemOutputs('kubejs:dark_steel_machine_hull')
+        .duration(50)
+        .EUt(16)
+
     event.shaped(
         'hostilenetworks:sim_chamber', [
             'ACA',

@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
             G: 'kubejs:basic_micro_miner_guidance_system',
             L: 'kubejs:basic_mining_laser',
             A: 'gtceu:lv_field_generator',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:conductive_iron"}').strongNBT(),
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:conductive_iron"}').weakNBT(),
             M: 'gtceu:lv_combustion'
         }
     )
@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
             B: 'gtceu:lv_field_generator',
             F: 'kubejs:electrum_micro_miner_core',
             C: 'gtceu:mv_combustion',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:electrical_steel"}').strongNBT()
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:electrical_steel"}').weakNBT()
         }, 2
     )
 
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
             L: 'kubejs:reinforced_mining_laser',
             F: 'kubejs:electrum_micro_miner_core',
             C: 'gtceu:hv_combustion',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:reinforced"}').strongNBT()
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:reinforced"}').weakNBT()
         }, 3
     )
 
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
             A: 'gtceu:tungsten_steel_crate',
             B: 'gtceu:hv_field_generator',
             F: 'kubejs:signalum_micro_miner_core',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:energetic"}').strongNBT(),
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:energetic"}').weakNBT(),
             D: 'thermal:dynamo_magmatic' // TODO: replace with reactant dynamo when possible
         }, 3
     )
@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
             F: 'kubejs:signalum_micro_miner_core',
             C: 'nuclearcraft:fission_reactor_controller',
             P: 'nuclearcraft:fission_reactor_port',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:vibrant"}').strongNBT()
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:vibrant"}').weakNBT()
         }, 3
     )
 
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
             B: 'gtceu:iv_field_generator',
             C: 'nuclearcraft:fission_reactor_controller',
             P: 'nuclearcraft:fission_reactor_port',
-            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:resonant"}').strongNBT()
+            T: Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:resonant"}').weakNBT()
         }, 3
     )
 
@@ -333,8 +333,8 @@ ServerEvents.recipes(event => {
             'draconicevolution:advanced_magnet', /* DE Magnet */
             '2x #forge:plates/crystal_matrix',
             '2x gtceu:iv_field_generator',
-            Item.of('2x ironjetpacks:thruster', '{Id:"ironjetpacks:fluxed"}').strongNBT(),
-            Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:dark_soularium"}').strongNBT())
+            Item.of('2x ironjetpacks:thruster', '{Id:"ironjetpacks:fluxed"}').weakNBT(),
+            Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:dark_soularium"}').weakNBT())
         .itemOutputs('kubejs:warp_engine')
         .inputFluids('gtceu:soldering_alloy 1152')
         .duration(1800)

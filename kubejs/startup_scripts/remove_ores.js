@@ -1,5 +1,4 @@
-//Doesnt work for some reason, ive tried multiple ways.
-//TODO: Remove NC ores
+//Does work, you just had the wrong ids
 
 WorldgenEvents.remove(event => {
     event.removeFeatureById('underground_ores', [

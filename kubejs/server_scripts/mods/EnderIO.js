@@ -156,7 +156,7 @@ ServerEvents.recipes(event => {
         .duration(80)
         .EUt(16)
 
-    event.remove({ output: ['enderio:iron_gear', 'enderio:energized_gear', 'enderio:vibrant_gear'] })
+    event.remove({ output: ['enderio:iron_gear', 'enderio:energized_gear', 'enderio:vibrant_gear', 'enderio:dark_bimetal_gear'] })
 
     // Infinity Bimetal Gear
     event.recipes.gtceu.alloy_smelter('infinity_gear')
@@ -176,6 +176,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.alloy_smelter('vibrant_gear')
         .itemInputs('enderio:energized_gear', '4x gtceu:vibrant_alloy_ingot')
         .itemOutputs('enderio:vibrant_gear')
+        .duration(200)
+        .EUt(16)
+
+		// Dark Bimetal Gear
+    event.recipes.gtceu.alloy_smelter('dark_bimetal_gear')
+        .itemInputs('enderio:iron_gear', '4x gtceu:dark_steel_ingot')
+        .itemOutputs('enderio:dark_bimetal_gear')
         .duration(200)
         .EUt(16)
 
