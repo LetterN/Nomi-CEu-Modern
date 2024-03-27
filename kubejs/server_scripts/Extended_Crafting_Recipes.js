@@ -1,32 +1,8 @@
 //Anything that is an extended crafting recipe comes here
+//! DO NOT PUT CREATIVE STUFF, PUT IT ON END_GAME.js
+//? For end game intermediates (ingots plates..) that uses ectendedcrafting, put it here
 
 ServerEvents.recipes(event => {
-
-    //GT CREATIVE EU SOURCE
-    event.recipes.extendedcrafting.shaped_table(
-        'gtceu:creative_energy', [
-            'ABCDEDCBA',
-            'BCDEFEDCB',
-            'CDEFGFEDC',
-            'DEFGHGFED',
-            'EFGHIHGFE',
-            'DEFGHGFED',
-            'CDEFGFEDC',
-            'BCDEFEDCB',
-            'ABCDEDCBA',
-        ], {
-            A: 'gtceu:mercury_barium_calcium_cuprate_hex_wire',
-            B: 'gtceu:uranium_triplatinum_hex_wire',
-            C: 'gtceu:samarium_iron_arsenic_oxide_hex_wire',
-            D: 'gtceu:indium_tin_barium_titanium_cuprate_hex_wire',
-            E: 'gtceu:uranium_rhodium_dinaquadide_hex_wire',
-            F: 'gtceu:enriched_naquadah_trinium_europium_duranide_hex_wire',
-            G: 'gtceu:ruthenium_trinium_americium_neutronate_hex_wire',
-            H: 'gtceu:omnium_hex_wire',
-            I: 'draconicevolution:creative_op_capacitor'
-        }, 4
-    )
-
     //ETERNAL CATALYST
     event.recipes.extendedcrafting.shaped_table(
         'kubejs:eternal_catalyst', [
@@ -52,7 +28,7 @@ ServerEvents.recipes(event => {
             Z: 'gtceu:quantum_star',
             Y: 'kubejs:endest_star',
             U: 'armorplus:the_ultimate_material'
-        }, 4);
+        });
 
     //INFINITY CATALYST
     event.recipes.extendedcrafting.shaped_table(
@@ -71,349 +47,168 @@ ServerEvents.recipes(event => {
             E: "kubejs:eternal_catalyst",
             C: 'draconicevolution:chaotic_core',
             H: 'kubejs:heart_of_a_universe'
-        }, 4);
+        });
 
-    //CREATIVE RF SOURCE
-    event.recipes.extendedcrafting.shaped_table(
-        'draconicevolution:creative_op_capacitor', [
-            "UPPCGCPPU",
-            'PPCGSGCPP',
-            'PCGSRSGCP',
-            'CGSRORSGC',
-            'GSROIORSG',
-            'CGSRORSGC',
-            'PCGSRSGCP',
-            'PPCGSGCPP',
-            "UPPCGCPPU",
-        ], {
-            U: 'kubejs:ultimate_generator',
-            P: 'draconicevolution:energy_pylon',
-            C: 'draconicevolution:energy_core',
-            G: 'draconicevolution:particle_generator',
-            S: 'draconicevolution:energy_core_stabilizer',
-            R: 'draconicevolution:reactor_stabilizer',
-            O: 'draconicevolution:reactor_core',
-            I: 'avaritia:infinity_catalyst'
-        }, 4
-    )
+	// infinity ingot
+	event.recipes.extendedcrafting.shaped_table(
+		'avaritia:infinity_ingot', [
+            '         ',
+            '     BAAA',
+            '  BAAADCA',
+            'AAACDCCDA',
+            'ACDDEDDCA',
+            'ADCCDCAAA',
+            'ACDAAAB  ',
+            'AAAB     ',
+            '         '
+		], {
+			A: 'avaritia:neutronium_ingot',
+			B: 'avaritia:neutronium_nugget',
+			C: 'kubejs:omnium_ingot',
+			D: 'kubejs:eternal_catalyst',
+			E: 'avaritia:infinity_catalyst',
+		}
+	)
 
-    // Creative Chest
-    event.recipes.extendedcrafting.shaped_table(
-        'gtceu:creative_chest', [
-            'ABBBBBBBA',
-            'BCTEDETCB',
-            'BFSGHGSFB',
-            'BUJXIXJUB',
-            'BNSWKWSNB',
-            'BUJXLXJUB',
-            'BFSGMGSFB',
-            'BCTEDETCB',
-            'ABBBBBBBA'
-        ], {
-            A: "storagedrawers:creative_storage_upgrade",
-            B: "avaritia:infinity_ingot",
-            C: "enderio:creative_power",
-            D: "minecraft:bedrock",
-            E: "minecraft:bedrock",
-            F: "minecraft:bedrock",
-            G: "minecraft:bedrock",
-            H: "avaritia:infinity_helmet",
-            I: "avaritia:infinity_chestplate",
-            J: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative",Throttle:1.0d}').strongNBT(),
-            K: "avaritia:infinity_sword",
-            L: "avaritia:infinity_leggings",
-            M: "avaritia:infinity_boots",
-            N: "minecraft:bedrock",
-            S: "solarflux:sp_avaritia.infinity",
-            T: "gtceu:creative_tank",
-            U: "ae2:creative_energy_cell",
-            W: "minecraft:bedrock",
-            X: "minecraft:bedrock"
-        }, 4
-    )
+	// mote of omnium
+	event.recipes.extendedcrafting.shapeless_table(
+		'kubejs:mote_of_omnium', [
+			'gtceu:tiny_nether_star_dust',
+			'kubejs:solidified_hydrogen',
+			'kubejs:solidified_helium',
+			'gtceu:lithium_dust',
+			'gtceu:beryllium_ingot',
+			'gtceu:boron_dust',
+			'gtceu:carbon_dust',
+			'kubejs:solidified_nitrogen',
+			'gtceu:tiny_nether_star_dust',
+			'kubejs:solidified_oxygen',
+			'kubejs:solidified_fluorine',
+			'kubejs:solidified_neon',
+			'gtceu:sodium_dust',
+			'gtceu:magnesium_dust',
+			'gtceu:aluminium_ingot',
+			'gtceu:silicon_dust',
+			'gtceu:phosphorus_dust',
+			'gtceu:sulfur_dust',
+			'kubejs:solidified_chlorine',
+			'kubejs:solidified_argon',
+			'gtceu:potassium_dust',
+			'gtceu:calcium_dust',
+			'gtceu:titanium_ingot',
+			'gtceu:vanadium_ingot',
+			'gtceu:chromium_ingot',
+			'gtceu:manganese_ingot',
+			'iron_ingot',
+			'gtceu:cobalt_ingot',
+			'gtceu:nickel_ingot',
+			'copper_ingot',
+			'gtceu:zinc_ingot',
+			'gtceu:gallium_ingot',
+			'gtceu:arsenic_dust',
+			'kubejs:solidified_krypton',
+			'gtceu:yttrium_ingot',
+			'gtceu:niobium_ingot',
+			'gtceu:molybdenum_ingot',
+			'gtceu:ruthenium_ingot',
+			'gtceu:rhodium_ingot',
+			'gtceu:palladium_ingot',
+			'kubejs:exotic_materials_catalyst',
+			'gtceu:silver_ingot',
+			'gtceu:cadmium_dust',
+			'gtceu:indium_ingot',
+			'gtceu:tin_ingot',
+			'gtceu:antimony_ingot',
+			'kubejs:solidified_xenon',
+			'gtceu:caesium_dust',
+			'gtceu:barium_dust',
+			'gtceu:lanthanum_dust',
+			'gtceu:cerium_dust',
+			'gtceu:neodymium_ingot',
+			'gtceu:samarium_ingot',
+			'gtceu:europium_ingot',
+			'gtceu:lutetium_ingot',
+			'gtceu:tantalum_ingot',
+			'gtceu:tungsten_ingot',
+			'gtceu:osmium_ingot',
+			'gtceu:iridium_ingot',
+			'gtceu:platinum_ingot',
+			'gold_ingot',
+			'kubejs:solidified_mercury',
+			'gtceu:lead_ingot',
+			'kubejs:solidified_radon',
+			'gtceu:thorium_ingot',
+			'kubejs:stabilized_uranium',
+			'kubejs:stabilized_neptunium',
+			'kubejs:stabilized_plutonium',
+			'gtceu:americium_ingot',
+			'kubejs:stabilized_curium',
+			'kubejs:stabilized_berkelium',
+			'kubejs:stabilized_californium',
+			'gtceu:tiny_nether_star_dust',
+			'kubejs:stabilized_einsteinium',
+			'gtceu:darmstadtium_ingot',
+			'gtceu:tritanium_ingot',
+			'gtceu:duranium_ingot',
+			'gtceu:trinium_ingot',
+			'gtceu:draconium_ingot',
+			'gtceu:naquadah_ingot',
+			'gtceu:tiny_nether_star_dust',
+		]
+	)
 
-    event.custom({
-        "type": "extendedcrafting:shapeless_table",
-        "ingredients": [{
-                "item": "gtceu:tiny_nether_star_dust"
-            },
-            {
-                "item": "kubejs:solidified_hydrogen"
-            },
-            {
-                "item": "kubejs:solidified_helium"
-            },
-            {
-                "item": "gtceu:lithium_dust"
-            },
-            {
-                "item": "gtceu:beryllium_ingot"
-            },
-            {
-                "item": "gtceu:boron_dust"
-            },
-            {
-                "item": "gtceu:carbon_dust"
-            },
-            {
-                "item": "kubejs:solidified_nitrogen"
-            },
-            {
-                "item": "gtceu:tiny_nether_star_dust"
-            },
-            {
-                "item": "kubejs:solidified_oxygen"
-            },
-            {
-                "item": "kubejs:solidified_fluorine"
-            },
-            {
-                "item": "kubejs:solidified_neon"
-            },
-            {
-                "item": "gtceu:sodium_dust"
-            },
-            {
-                "item": "gtceu:magnesium_dust"
-            },
-            {
-                "item": "gtceu:aluminium_ingot"
-            },
-            {
-                "item": "gtceu:silicon_dust"
-            },
-            {
-                "item": "gtceu:phosphorus_dust"
-            },
-            {
-                "item": "gtceu:sulfur_dust"
-            },
-            {
-                "item": "kubejs:solidified_chlorine"
-            },
-            {
-                "item": "kubejs:solidified_argon"
-            },
-            {
-                "item": "gtceu:potassium_dust"
-            },
-            {
-                "item": "gtceu:calcium_dust"
-            },
-            {
-                "item": "gtceu:titanium_ingot"
-            },
-            {
-                "item": "gtceu:vanadium_ingot"
-            },
-            {
-                "item": "gtceu:chromium_ingot"
-            },
-            {
-                "item": "gtceu:manganese_ingot"
-            },
-            {
-                "item": "minecraft:iron_ingot"
-            },
-            {
-                "item": "gtceu:cobalt_ingot"
-            },
-            {
-                "item": "gtceu:nickel_ingot"
-            },
-            {
-                "item": "minecraft:copper_ingot"
-            },
-            {
-                "item": "gtceu:zinc_ingot"
-            },
-            {
-                "item": "gtceu:gallium_ingot"
-            },
-            {
-                "item": "gtceu:arsenic_dust"
-            },
-            {
-                "item": "kubejs:solidified_krypton"
-            },
-            {
-                "item": "gtceu:yttrium_ingot"
-            },
-            {
-                "item": "gtceu:niobium_ingot"
-            },
-            {
-                "item": "gtceu:molybdenum_ingot"
-            },
-            {
-                "item": "gtceu:ruthenium_ingot"
-            },
-            {
-                "item": "gtceu:rhodium_ingot"
-            },
-            {
-                "item": "gtceu:palladium_ingot"
-            },
-            {
-                "item": "kubejs:exotic_materials_catalyst"
-            },
-            {
-                "item": "gtceu:silver_ingot"
-            },
-            {
-                "item": "gtceu:cadmium_dust"
-            },
-            {
-                "item": "gtceu:indium_ingot"
-            },
-            {
-                "item": "gtceu:tin_ingot"
-            },
-            {
-                "item": "gtceu:antimony_ingot"
-            },
-            {
-                "item": "kubejs:solidified_xenon"
-            },
-            {
-                "item": "gtceu:caesium_dust"
-            },
-            {
-                "item": "gtceu:barium_dust"
-            },
-            {
-                "item": "gtceu:lanthanum_dust"
-            },
-            {
-                "item": "gtceu:cerium_dust"
-            },
-            {
-                "item": "gtceu:neodymium_ingot"
-            },
-            {
-                "item": "gtceu:samarium_ingot"
-            },
-            {
-                "item": "gtceu:europium_ingot"
-            },
-            {
-                "item": "gtceu:lutetium_ingot"
-            },
-            {
-                "item": "gtceu:tantalum_ingot"
-            },
-            {
-                "item": "gtceu:tungsten_ingot"
-            },
-            {
-                "item": "gtceu:osmium_ingot"
-            },
-            {
-                "item": "gtceu:iridium_ingot"
-            },
-            {
-                "item": "gtceu:platinum_ingot"
-            },
-            {
-                "item": "minecraft:gold_ingot"
-            },
-            {
-                "item": "kubejs:solidified_mercury"
-            },
-            {
-                "item": "gtceu:lead_ingot"
-            },
-            {
-                "item": "kubejs:solidified_radon"
-            },
-            {
-                "item": "gtceu:thorium_ingot"
-            },
-            {
-                "item": "kubejs:stabilized_uranium"
-            },
-            {
-                "item": "kubejs:stabilized_neptunium"
-            },
-            {
-                "item": "kubejs:stabilized_plutonium"
-            },
-            {
-                "item": "gtceu:americium_ingot"
-            },
-            {
-                "item": "kubejs:stabilized_curium"
-            },
-            {
-                "item": "kubejs:stabilized_berkelium"
-            },
-            {
-                "item": "kubejs:stabilized_californium"
-            },
-            {
-                "item": "gtceu:tiny_nether_star_dust"
-            },
-            {
-                "item": "kubejs:stabilized_einsteinium"
-            },
-            {
-                "item": "gtceu:darmstadtium_ingot"
-            },
-            {
-                "item": "gtceu:tritanium_ingot"
-            },
-            {
-                "item": "gtceu:duranium_ingot"
-            },
-            {
-                "item": "gtceu:trinium_ingot"
-            },
-            {
-                "item": "gtceu:draconium_ingot"
-            },
-            {
-                "item": "gtceu:naquadah_ingot"
-            },
-            {
-                "item": "gtceu:tiny_nether_star_dust"
-            }
-        ],
-        "result": {
-            "item": "kubejs:mote_of_omnium"
+	// exotic material catalyst
+	event.recipes.extendedcrafting.shaped_table(
+		'kubejs:exotic_materials_catalyst', [
+            "A  B  C",
+            " D E F ",
+            "  GHI  ",
+            "JKLMNOP",
+            "  QRS  ",
+            " T U V ",
+            "W  X  Y"
+		], {
+			A: 'gtceu:nichrome_ingot',
+			B: 'gtceu:red_steel_ingot',
+			C: 'gtceu:kanthal_ingot',
+			D: 'gtceu:magnalium_ingot',
+			E: 'gtceu:mana_infused_metal_ingot',
+			F: 'gtceu:manyullyn_ingot',
+			G: 'gtceu:enderium_ingot',
+			H: 'gtceu:blue_steel_ingot',
+			I: 'gtceu:microversium_ingot',
+			J: 'gtceu:vanadium_steel_ingot',
+			K: 'gtceu:rhodium_plated_palladium_ingot',
+			L: 'gtceu:electrum_flux_ingot',
+			M: 'gtceu:dark_soularium_ingot',
+			N: 'avaritia:crystal_matrix_ingot',
+			O: 'gtceu:end_steel_ingot',
+			P: 'gtceu:electrical_steel_ingot',
+			Q: 'gtceu:signalum_ingot',
+			R: 'gtceu:vibrant_alloy_ingot',
+			S: 'gtceu:soularium_ingot',
+			T: 'gtceu:hsse_ingot',
+			U: 'gtceu:dark_steel_ingot',
+			V: 'gtceu:hssg_ingot',
+			W: 'gtceu:ruridit_ingot',
+			X: 'gtceu:hsss_ingot',
+			Y: 'gtceu:energetic_alloy_ingot'
+		}
+	)
 
-        }
-    })
-
-    // Angel Ring
+	// Angel Ring
     event.remove({ id: 'miniutilities:angel_ring_crafting' })
-    event.custom({
-        "type": "extendedcrafting:shaped_table",
-        "pattern": [
+	event.recipes.extendedcrafting.shaped_table(
+		'miniutilities:angel_ring', [
             " AAA ",
             "A B A",
             "AC CA",
             "A B A",
             " AAA "
-        ],
-        "key": {
-            "A": {
-                "item": "gtceu:rose_gold_ingot"
-            },
-            "B": {
-                "type": "forge:nbt",
-                "item": "ironjetpacks:jetpack",
-                "count": 1,
-                "nbt": "{Id:\"ironjetpacks:reinforced\",Throttle:1.0d}"
-            },
-            "C": {
-                "type": "forge:nbt",
-                "item": "ironjetpacks:jetpack",
-                "count": 1,
-                "nbt": "{Id:\"ironjetpacks:vibrant\",Throttle:1.0d}"
-            }
-        },
-        "result": {
-            "item": "miniutilities:angel_ring"
-        }
-    })
+		], {
+			A: 'gtceu:rose_gold_ingot',
+			B: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:reinforced"}').strongNBT(),
+			C: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}').strongNBT(),
+		} //, 2 // remove this comment to force t2 crafting only.
+	)
 })

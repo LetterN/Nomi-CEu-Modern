@@ -11,12 +11,10 @@ PlayerEvents.tick(event => {
     if (glitchArmorEquipped || player.isCreative()) {
         player.abilities.mayfly = true
         player.onUpdateAbilities()
-    } else {
-        if (player.abilities.mayfly || !player.isCreative()) {
-            player.abilities.mayfly = false
-            player.abilities.flying = false
-            player.onUpdateAbilities()
-        }
+    } else if (player.abilities.mayfly || !player.isCreative()) {
+        player.abilities.mayfly = false
+        player.abilities.flying = false
+        player.onUpdateAbilities()
     }
 
 })

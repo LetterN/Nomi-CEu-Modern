@@ -211,8 +211,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .iconSet('rough')
 })
 
-
-
 // Thermal Materials
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("ardite")
@@ -243,6 +241,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(4000)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
         .cableProperties(32768, 1, 0, true)
+
     event.create("lumium")
         .ingot().fluid()
         .blastTemp(4500)
@@ -264,21 +263,19 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(1100)
         .color(0xf7be20)
         .iconSet('bright')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR);
 
-    event.create("mythril")
+	event.create("mythril")
         .ingot().fluid()
         .color(0x428fdb)
         .iconSet('dull')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR);
 
     event.create("crystal_matrix")
-        .ingot().fluid()
+        .dust().fluid() // dont gen an ingot
         .color(0x66ffff)
         .iconSet('shiny')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.NO_SMELTING)
-
-
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.NO_SMELTING);
 })
 
 
