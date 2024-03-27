@@ -207,7 +207,7 @@
 				""
 				"Once you have Duranium, you can fuse Tritanium in a &3Fusion Reactor Mark 2&r using the Duranium and molten &9Titanium&r."
 				""
-				"If you're having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into the &aCrafting Calculator&r."
+				"If you're having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into &aEMI&r."
 			]
 			id: "79EFCD8E01384C0C"
 			rewards: [{
@@ -795,10 +795,17 @@
 		}
 		{
 			dependencies: ["7D7B34CF5145F971"]
+			description: [
+				"&6Sunnarium&r is an alloy formed from &6Stabilized Plutonium&r and &6Stabilized Curium&r in an IV or better &3Alloy Smelter&r."
+				""
+				"It is a common ingredient in higher tier &6Solar Panels&r."
+				""
+				"This stuff takes a long time to produce so consider stocking it passively."
+			]
 			id: "171EE3A4129F19A5"
 			rewards: [{
 				id: "3C74F3D9993A0E7E"
-				item: "kubejs:nomi_dollar"
+				item: "kubejs:nomi_nickel"
 				type: "item"
 			}]
 			tasks: [{
