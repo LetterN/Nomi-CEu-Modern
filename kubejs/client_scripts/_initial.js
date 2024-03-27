@@ -37,7 +37,7 @@ const ____rainbowify_idx_to_color = (char, idx) => {
  * @param {number} offset
  * @returns {Internal.MutableComponent}
  */
-const rainbowify = (text, offset, real) => {
+const rainbowify = (text, offset) => {
 	const components = [];
 	let idx = 0 + (offset || 0);
 	for (const char of text) {
