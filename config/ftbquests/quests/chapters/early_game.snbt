@@ -1090,6 +1090,15 @@
 		}
 		{
 			dependencies: ["3E42B4AAA6D2A05B"]
+			description: [
+				"Having trouble finding a biome? Never fear, the &6Nature’s Compass&r is here! For a very small price, you’ll be able to find any biome your heart pleases!"
+				""
+				"&bRight-clicking&r with the Nature’s Compass in hand will open the &eSelect Biome GUI&r, where you can search any biome, modded or vanilla. Once you find the desired biome, double click or hit &aStart Search&r, and the compass will now point you in the direction of the biome, and tell you how far it it is."
+				""
+				"In the top left of the Select Biome GUI, you can hit the &aInfo&r button for additional information on the biome. You can also press &aSort By&r to change how the biomes are organized."
+				""
+				"Once you have found your desired biome, you can &bshift right-click&r while holding the compass to clear the selected biome. When no biome is selected, the compass will simply point to world spawn."
+			]
 			id: "29A9DFAEBB30F205"
 			rewards: [{
 				id: "32B5F5712D5AB1E9"
