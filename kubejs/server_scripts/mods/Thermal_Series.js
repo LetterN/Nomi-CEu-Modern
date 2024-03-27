@@ -4,6 +4,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: ['systeams:steam_dynamo', 'steamdynamo:steam_dynamo', 'thermal:dynamo_compression', 'thermal:dynamo_magmatic', 'thermal:dynamo_numismatic', 'systeams:boiler_pipe', 'thermal:dynamo_fuel_augment', 'thermal:rf_coil', 'thermal:dynamo_output_augment'] })
     event.remove({ output: ['thermal:dynamo_throttle_augment', 'thermal:upgrade_augment_1', 'thermal:upgrade_augment_2', 'thermal:upgrade_augment_3'] })
     event.remove({ output: ['thermal:machine_frame', 'thermal:energy_cell_frame', 'thermal:fluid_cell_frame'] })
+    event.remove({ output: ['thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer', 'thermal:machine_smelter', 'thermal:machine_centrifuge', 'thermal:machine_crucible', 'thermal:machine_chiller', 'thermal:machine_refinery', 'thermal:machine_pyrolyzer', 'thermal:machine_bottler', 'thermal:machine_brewer', 'thermal:machine_crystallizer', 'thermal:machine_crafter']})
     event.shaped(
         'systeams:boiler_pipe', [
             ' C ',
@@ -207,6 +208,70 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //Machines
+    event.shaped(
+        'thermal:machine_frame', [
+            'SSS',
+            'SMS',
+            'SSS'
+        ], {
+            M: 'gtceu:mana_infused_metal_block',
+            S: 'gtceu:stainless_steel_plate'
+        }
+    )
+
+    event.shaped(
+        'thermal:machine_press', [
+            ' A ',
+            'BCB',
+            'DED'
+        ], {
+            A: 'minecraft:iron_block',
+            B: 'gtceu:bronze_ingot',
+            C: 'thermal:machine_frame',
+            D: 'gtceu:copper_gear',
+            E: 'thermal:rf_coil'
+        }
+    ).id('thermal:machine_press')
+
+    event.shaped(
+        'thermal:device_potion_diffuser', [
+            ' A ',
+            'BCB',
+            'DED'
+        ], {
+            A: 'enderio:fused_quartz',
+            B: 'gtceu:silver_ingot',
+            C: 'thermal:machine_frame',
+            D: 'gtceu:iron_gear',
+            E: 'thermal:redstone_servo'
+        }
+    ).id('thermal:device_potion_diffuser')
+
+    event.shaped(
+        'thermal:machine_catalyst_augment', [
+            ' A ',
+            'BCB',
+            ' A '
+        ], {
+            A: 'gtceu:bronze_gear',
+            B: 'gtceu:lead_plate',
+            C: 'thermal:redstone_servo'
+        }
+    ).id('thermal:augments/machine_catalyst_augment')
+
+    event.shaped(
+        'thermal:machine_cycle_augment', [
+            'DAD',
+            'BCB',
+            'DAD'
+        ], {
+            A: 'gtceu:signalum_gear',
+            B: 'gtceu:bronze_plate',
+            C: 'thermal:redstone_servo',
+            D: 'gtceu:silver_plate'
+        }
+    ).id('thermal:augments/machine_cycle_augment')
 
     //Diamond as Fuel
     event.recipes.thermal.numismatic_fuel('minecraft:diamond').energy(1200000)
@@ -220,7 +285,6 @@ ServerEvents.recipes(event => {
     event.recipes.thermal.numismatic_fuel('gtceu:apatite_gem').energy(40000)
     event.recipes.thermal.numismatic_fuel('redstone_arsenal:flux_gem').energy(1500000)
     event.recipes.thermal.numismatic_fuel('minecraft:lapis_lazuli').energy(80000)
-
 
     //Thermal Essences
     event.recipes.gtceu.chemical_reactor('elemental_reduction_fluid')
