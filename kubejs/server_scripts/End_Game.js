@@ -373,7 +373,7 @@ ServerEvents.recipes(event => {
 
     //Creative Jetpack
     event.recipes.extendedcrafting.shaped_table(
-        Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative"}').strongNBT(), [
+        Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative"}').weakNBT(), [
             '  C   L  ',
             ' CCC LLL ',
             ' CVCFLEL ',
@@ -384,17 +384,17 @@ ServerEvents.recipes(event => {
             '  N   R  ',
             ' NNN RRR '
         ], {
-            C: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:conductive_iron"}').strongNBT(),
-            D: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:dark_soularium"}').strongNBT(),
-            E: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:resonant"}').strongNBT(),
-            F: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:fluxed"}').strongNBT(),
-            H: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:hardened"}').strongNBT(),
+            C: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:conductive_iron"}').weakNBT(),
+            D: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:dark_soularium"}').weakNBT(),
+            E: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:resonant"}').weakNBT(),
+            F: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:fluxed"}').weakNBT(),
+            H: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:hardened"}').weakNBT(),
             I: 'avaritia:infinity_catalyst',
-            L: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:leadstone"}').strongNBT(),
-            N: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').strongNBT(),
-            R: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:reinforced"}').strongNBT(),
-            S: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').strongNBT(),
-            V: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}').strongNBT()
+            L: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:leadstone"}').weakNBT(),
+            N: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:energetic"}').weakNBT(),
+            R: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:reinforced"}').weakNBT(),
+            S: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:electrical_steel"}').weakNBT(),
+            V: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:vibrant"}').weakNBT()
         }
     )
 

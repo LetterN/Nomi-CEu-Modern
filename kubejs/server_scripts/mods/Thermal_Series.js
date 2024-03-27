@@ -162,7 +162,7 @@ ServerEvents.recipes(event => {
             A: 'kubejs:excitationcoil',
             B: 'gtceu:dark_steel_plate',
             C: 'ironfurnaces:copper_furnace',
-            D: 'gtceu:dark_steel_gear',
+            D: 'enderio:dark_bimetal_gear',
             E: 'kubejs:redstone_transmission_coil'
         }
     )
