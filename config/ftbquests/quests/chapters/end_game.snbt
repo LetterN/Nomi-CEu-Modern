@@ -1909,13 +1909,10 @@
 				"18EF39D0C5B55C34"
 				"0B5B7A15B7FD684C"
 			]
-			description: [
-				"A small appetizer, before the &dOmnium&r main course."
-				""
-				"As the name suggests, this catalyst is formed from exotic non-elemental materials and alloys."
-			]
+			description: ["As the name suggests, this catalyst is formed from exotic non-elemental materials and alloys."]
 			id: "67591B6025C03130"
 			size: 2.0d
+			subtitle: "A small appetizer, before the &dOmnium&r main course."
 			tasks: [{
 				id: "4E828B100CB2362F"
 				item: "kubejs:exotic_materials_catalyst"
@@ -2022,8 +2019,6 @@
 				"47E4558362202D5D"
 			]
 			description: [
-				"Man, that's a LOT of quests linked to this one."
-				""
 				"&dOmnium&r, as the name suggests, is an incredible material composed of all elements and alloys you've encountered so far."
 				""
 				"Fun fact: you'll need to make 487 motes. You've got all this automated, &oright&r?"
@@ -2031,6 +2026,7 @@
 			id: "281DE48E7260BC8E"
 			shape: "hexagon"
 			size: 3.0d
+			subtitle: "Man, that's a LOT of quests linked to this one."
 			tasks: [{
 				count: 64L
 				id: "2930DDCAF43468A4"
@@ -2084,13 +2080,10 @@
 		}
 		{
 			dependencies: ["281DE48E7260BC8E"]
-			description: [
-				"The culmination of so much effort."
-				""
-				"&6Chaotic Cores&r are the ultimate tier of &bDraconic Evolution&r core, used for the most powerful and advanced items."
-			]
+			description: ["&6Chaotic Cores&r are the ultimate tier of &bDraconic Evolution&r core, used for the most powerful and advanced items."]
 			id: "3171F83E24C8F740"
 			size: 2.75d
+			subtitle: "The culmination of so much effort."
 			tasks: [{
 				count: 4L
 				id: "715AA1ECF4474085"
@@ -2104,8 +2097,6 @@
 		{
 			dependencies: ["6F9041F256F517A3"]
 			description: [
-				"&oNow this is not the end. It is not even the beginning of the end. But it is, perhaps, the end of the beginning.&r"
-				""
 				"The &dCreative Tank&r is a major milestone. Great work!"
 				""
 				"This tank is your first proper creative item, which can be set to a fluid and then provides an infinite quantity of that fluid. &2Use the Creative Tank Provider to supply you with Creative Tanks."
@@ -2113,7 +2104,7 @@
 				"The GT Creative Tank has been enhanced. You can turn it on and off, configure exactly how much fluid you want it to push and how often, and change which direction the fluid is pushed out. You can even configure the fluid you want directly from JEI!&r"
 				""
 				"From there you can set up tanks with infinite quantities of every fluid you can think of. &3Fluid Solidifiers&r &2or the much more powerful Large Solidification Arrays&r can be used to make infinite of every element you can melt and solidify."
-				""
+				"{@pagebreak}"
 				"This is quite a game-changer as far as infrastructure goes. You'll find that many machines won't need to be used for their original purpose anymore. Some major base redesign is in order. Have you considered moving to space?"
 				""
 				"All that said, &ethe pack will still be challenging to complete&r. Infinite resources and power is nice, but it's not everything. There are plenty of materials you can't melt, and creative items will push your factory automation engineering skills to their limits."
@@ -2122,11 +2113,13 @@
 			]
 			id: "2D9A95AC50CCB988"
 			size: 3.5d
+			subtitle: "Now this is not the end.\\nIt is not even the beginning of the end.\\nBut it is, perhaps, the end of the beginning."
 			tasks: [{
 				id: "55C6A472371D7AEC"
 				item: "gtceu:creative_tank"
 				type: "item"
 			}]
+			title: "&2Creative Tank"
 			x: 57.0d
 			y: -13.5d
 		}
@@ -2157,13 +2150,10 @@
 		}
 		{
 			dependencies: ["27EBB5AAF8A40F3D"]
-			description: [
-				"No hypothetical aliens were harmed in the harvesting of this item."
-				""
-				"Probably."
-			]
+			description: ["Probably."]
 			id: "6F9041F256F517A3"
 			size: 3.0d
+			subtitle: "No hypothetical aliens were harmed in the harvesting of this item."
 			tasks: [{
 				id: "34944C8F2D44E07E"
 				item: "kubejs:heart_of_a_universe"
@@ -2186,7 +2176,7 @@
 				item: "kubejs:microminer_t10"
 				type: "item"
 			}]
-			title: "Tier Ten Micro Miner"
+			title: "&dTier Ten Micro Miner"
 			x: 39.0d
 			y: -13.5d
 		}
@@ -2221,7 +2211,11 @@
 		}
 		{
 			dependencies: ["1D00150456DEF379"]
-			description: ["A single-block solution to all your power needs."]
+			description: [
+				"A single-block solution to all your power needs."
+				""
+				"This baby pushes out 2.14 GRF/t per side!"
+			]
 			id: "10A6C332D8BED5FD"
 			size: 3.5d
 			tasks: [{
@@ -2229,35 +2223,42 @@
 				item: "draconicevolution:creative_op_capacitor"
 				type: "item"
 			}]
+			title: "Creative RF Source"
 			x: 57.0d
 			y: -1.75d
 		}
 		{
 			dependencies: ["3171F83E24C8F740"]
 			description: [
-				"How much do you think these solar panels weigh? "
-				""
 				"These are quite expensive and two of them are required for each Tier Ten Micro Miner."
 				""
 				"&6Neutronium Solar Panels&r generate an enormous amount of RF power in sunlight, so once you get your tank it's also a good choice for compact power generation."
 				""
-				"Protip: it's always daytime in space."
+				"&oProtip: it's always daytime in space.&r"
 			]
 			id: "22DC32C2B67EFD25"
+			rewards: [{
+				id: "7B7E7F5CE4947127"
+				item: "kubejs:nomi_dollar"
+				type: "item"
+			}]
 			size: 3.0d
+			subtitle: "How much do you think these solar panels weigh? "
 			tasks: [{
 				count: 2L
 				id: "6F9246E97321EF11"
 				item: "solarflux:sp_avaritia.neutronium"
 				type: "item"
 			}]
-			title: "Neutronium Solar Panel"
+			title: "&dNeutronium Solar Panel"
 			x: 32.0d
 			y: -13.5d
 		}
 		{
 			dependencies: ["2D9A95AC50CCB988"]
 			description: [
+				"&l&5Item not yet implemented!&r"
+				""
 				"The &3Simulation Supercomputer&r is a multiblock structure that performs &bDeep Mob Evolution&r simulations like the &3Simulation Chamber&r, but is capable of overclocking these simulations to incredible speeds."
 				""
 				"One of these structures can perform the equivalent work of hundreds of individual Simulation Chambers more efficiently. This will make it far easier to generate pristine matter you'll need for things like &6Dragon Lair Data&r. You'll probably need several &3Loot Fabricators&r to keep up with it."
@@ -2266,15 +2267,49 @@
 				""
 				"As a &dCreative Tier&r structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with your second &dHeart of a Universe&r."
 			]
+			icon: "gcyr:dyson_system_controller"
 			id: "5A70898C99B828E3"
 			size: 3.0d
-			tasks: [{
-				id: "1AB3EBEFC4DB93A9"
-				item: "gcyr:dyson_system_controller"
-				title: "a placeholder"
-				type: "item"
-			}]
-			title: "Simulation Supercomputer"
+			tasks: [
+				{
+					icon: "gcyr:dyson_system_controller"
+					id: "6E3D9FEFB4E9E640"
+					title: "&l&5Placeholder, doesnt exist yet!!"
+					type: "custom"
+				}
+				{
+					count: 26L
+					id: "59B95DC9936246B6"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:storage_blocks/omnium"
+						}
+					}
+					title: "Omnium Block"
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "5C159D99CDA8EEE0"
+					item: "gtceu:enderium_block"
+					type: "item"
+				}
+				{
+					count: 37L
+					id: "5DEC122EDABB5D6F"
+					item: "gtceu:atomic_casing"
+					type: "item"
+				}
+				{
+					count: 26L
+					id: "5C51134773E5231F"
+					item: "ae2:quartz_vibrant_glass"
+					type: "item"
+				}
+			]
+			title: "&2Simulation Supercomputer"
 			x: 67.5d
 			y: -13.5d
 		}
@@ -2341,12 +2376,15 @@
 		{
 			dependencies: ["4EA1E0D437528747"]
 			description: [
-				"Forged from the raw fury of the universe, this set of armor has it all, from flight to autoeating."
+				"Forged from the &craw fury&r of the universe, this set of armor has it all, from flight to autoeating."
 				""
-				"It also makes you invincible*."
+				"It also makes you &ci&r&6n&r&ev&r&ai&r&bn&r&9c&r&di&r&cb&r&6l&r&ee&r*."
+				""
+				"[\"\",{\"text\":\"*Nomi-co Not responsible for any deaths due to \",\"color\":\"gray\",\"italic\":true},{\"text\":\"Sword of the Cosmos\",\"color\":\"red\",\"italic\":true,\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"02F9A348301274A3\"},\"hoverEvent\":{\"action\":\"show_item\",\"contents\":{\"id\":\"avaritia:infinity_sword\"}}},{\"text\":\" or armor misuse or other unforseen bugs related to the item.\",\"color\":\"gray\",\"italic\":true}]"
 			]
 			hide_dependency_lines: true
 			id: "42566D73F0F8188D"
+			subtitle: "Immovable Object "
 			tasks: [
 				{
 					id: "6EC86152DABE9C01"
@@ -2375,13 +2413,10 @@
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
-			description: [
-				"*To everything but this sword."
-				""
-				"Fun fact: This sword deals void damage, meaning it works on players in creative mode. "
-			]
+			description: ["This sword deals &8void&r damage, meaning it works on players in creative mode. "]
 			hide_dependency_lines: true
 			id: "02F9A348301274A3"
+			subtitle: "Unstoppable Force"
 			tasks: [{
 				id: "0C7ADE397D4ECB2D"
 				item: "avaritia:infinity_sword"
@@ -2396,6 +2431,7 @@
 			description: ["Even more creative energy blocks!"]
 			hide_dependency_lines: true
 			id: "3B57A9816A61C1DC"
+			subtitle: "Is Neutronium not enough?!"
 			tasks: [{
 				count: 6L
 				id: "2EE60D5EE1564FCF"
@@ -2426,9 +2462,9 @@
 			description: ["The fastest flight."]
 			hide_dependency_lines: true
 			id: "4EFA6F2466231C23"
+			subtitle: "Creative Gamemode Flight"
 			tasks: [{
 				consume_items: true
-				count: 4L
 				id: "7D6B65EEC3863252"
 				item: {
 					Count: 1b
@@ -2450,7 +2486,6 @@
 			hide_dependency_lines: true
 			id: "6E8D4566A63A3146"
 			tasks: [{
-				count: 4L
 				id: "1B8701D8C5992B1D"
 				item: "ae2:creative_energy_cell"
 				type: "item"
