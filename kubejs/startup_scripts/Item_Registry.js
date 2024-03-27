@@ -180,6 +180,10 @@ StartupEvents.registry('item', event => {
     event.create('glitch_infused_leggings', 'leggings').tier('glitch').displayName('§bGlitch Infused Leggings')
     event.create('glitch_infused_boots', 'boots').tier('glitch').displayName('§bGlitch Infused Boots')
 
+    const cool = Java.loadClass("net.laith.avaritia.util.TextUtil")
+        //Dev Tool
+    event.create('dev_tool', 'paxel').tier("dev").unstackable().displayName(cool.makeFairiec("The Holy Pickaxe"))
+    
     //Ultimate Generator Components
     //event.create('survival_generator_component').textureJson({ layer0: 'gtceu:item/material_sets/dull/gear'}).color(0, '#70F00F')
     const generators = [
