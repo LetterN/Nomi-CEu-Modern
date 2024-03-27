@@ -121,26 +121,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["171EE3A4129F19A5"]
-			description: [
-				"&6Sunnarium&r is an alloy formed from &6Stabilized Plutonium&r and &6Stabilized Curium&r in an IV or better &3Alloy Smelter&r."
-				""
-				"It is a common ingredient in higher tier &6Solar Panels&r, as well as a crucial ingredient of the &3Processing Array&r."
-				""
-				"This stuff takes a long time to produce so consider stocking it passively."
-			]
-			id: "3208E92F2153113D"
-			shape: "hexagon"
-			tasks: [{
-				id: "3B6DB6743CE4068C"
-				item: "gtceu:sunnarium_dust"
-				type: "item"
-			}]
-			title: "Sunnarium"
-			x: -2.0d
-			y: 1.0d
-		}
-		{
 			dependencies: ["383AF0F983B15CA1"]
 			description: [
 				"The first and most expensive Tier Six Circuit, needed for crafting the &3IV Assembling Machine&r."
@@ -1715,7 +1695,7 @@
 		}
 		{
 			dependencies: ["15FAEE3F625265F4"]
-			description: ["&2Naquadah Alloy is different in CEu, it requires Naquadah, Osmiridium and Trinium."]
+			description: ["&2Naquadah Alloy is different in CEu. It requires Naquadah, Osmiridium and Trinium."]
 			id: "1B07DB4D58D43B7C"
 			rewards: [{
 				id: "0A307605C7249051"
@@ -2869,7 +2849,6 @@
 				"36E4AD11927664C8"
 				"7615FABC8B262803"
 				"38791476E970C57D"
-				"3208E92F2153113D"
 			]
 			description: [
 				"&2Advanced SMD Components&r are new to CEu and are required for &6Crystal and Wetware circuits&r. They can also be substituted for the equivalent of 4 normal SMD components in Nano and Quantum circuits."
@@ -3146,17 +3125,54 @@
 				""
 				"&6Sneak-right click&r the controller to enable the in-world preview."
 			]
+			icon: "gtceu:naquadah_reactor_i"
 			id: "425D1C34A82B054D"
 			rewards: [{
 				id: "01C277FEA61EBA19"
 				item: "kubejs:nomi_dollar"
 				type: "item"
 			}]
-			tasks: [{
-				id: "7890B705137B8EA5"
-				item: "gtceu:naquadah_reactor_i"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7890B705137B8EA5"
+					item: "gtceu:naquadah_reactor_i"
+					type: "item"
+				}
+				{
+					id: "3C8BD4187F47FBC9"
+					item: "gtceu:black_steel_block"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4F11D4069AEF06CA"
+					item: "gtceu:duranium_block"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "2FF2B4C219053E6A"
+					item: "ae2:spatial_pylon"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "27B323E3ADED4829"
+					item: "gtceu:fusion_glass"
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "2D40468415EA637F"
+					item: "gtceu:reaction_safe_mixing_casing"
+					type: "item"
+				}
+				{
+					id: "1685A72D65A02E82"
+					item: "gtceu:luv_energy_output_hatch"
+					type: "item"
+				}
+			]
 			x: 11.0d
 			y: 24.0d
 		}
@@ -3167,17 +3183,36 @@
 				""
 				"This is a pretty expensive structure though, as it needs blocks of &dOmnium&r."
 			]
+			icon: "gtceu:naquadah_reactor_ii"
 			id: "2E8AFA6B42E939B4"
 			rewards: [{
 				id: "08A490626FF2A96E"
 				item: "kubejs:nomi_dollar"
 				type: "item"
 			}]
-			tasks: [{
-				id: "134557DDF5E22B0B"
-				item: "gtceu:naquadah_reactor_ii"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "134557DDF5E22B0B"
+					item: "gtceu:naquadah_reactor_ii"
+					type: "item"
+				}
+				{
+					id: "5B267E479790306D"
+					item: "gtceu:omnium_block"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "3405F2EC601908BB"
+					item: "gtceu:ruthenium_trinium_americium_neutronate_block"
+					type: "item"
+				}
+				{
+					id: "3B162FA985E74B6A"
+					item: "gtceu:uv_energy_output_hatch"
+					type: "item"
+				}
+			]
 			x: 13.0d
 			y: 24.0d
 		}

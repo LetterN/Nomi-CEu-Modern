@@ -790,7 +790,7 @@
 				""
 				"&6Kanthal Coils&r are required primarily for producing &6Silicon&r, required for Circuit parts, and &6Titanium&r, used for &5EV&r machines. An &bMV &3Assembler&r is required to produce them, and they require &62x Kanthal Wire&r, &6Aluminium Foil&r, and &9Copper fluid&r."
 				""
-				"&2In CEu, using higher-tier coils provides some bonuses to their multiblocks.&r For the &3Electric Blast Furnace&r, running recipes hotter than required can reduce the energy cost and time taken. The &dtemperature&r of the EBF depends on the coil used and the voltage it is running at. For Kanthal Coils, this means that recipes you could run with &6Cupronickel Coils&r will save &d5%%&r energy."
+				"&2In CEu, using higher-tier coils provides some bonuses to their multiblocks.&r For the &3Electric Blast Furnace&r, running recipes hotter than required can reduce the energy cost and time taken. The &dtemperature&r of the EBF depends on the coil used and the voltage it is running at. For Kanthal Coils, this means that recipes you could run with &6Cupronickel Coils&r will save &d5%&r energy."
 				""
 				"Refer to the coil tooltip and EBF controller tooltip for the other bonuses provided."
 			]
@@ -841,7 +841,7 @@
 				""
 				"Notice that an &6HV&r &3Assembler&r is required to make them. Each tier of coil requires their tier of Assembler - we won't remind you again."
 				""
-				"&d3600K&r is now also hot enough to grant a single &d100%% efficient overclock&r to 1800K and below recipes. This means that one overclock will grant &d4x speed&r instead of the normal &d2x&r. In effect, you will get an additional 2x speed boost by overclocking once. "
+				"&d3600K&r is now also hot enough to grant a single &d100% efficient overclock&r to 1800K and below recipes. This means that one overclock will grant &d4x speed&r instead of the normal &d2x&r. In effect, you will get an additional 2x speed boost by overclocking once. "
 				""
 				"This means that the gas-boosted recipe for &6Aluminium&r will get cut from about &e7s&r to &e3s&r at HV. Once you upgrade your EBF to EV power, &6Stainless Steel Ingots&r will get cut from about &e37s&r to &e9s&r! It's well worth upgrading the EBFs producing these materials to &6Nichrome&r once you can afford it. "
 				""
@@ -2164,11 +2164,28 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "274F0587A93CEFBE"
-				item: "gtceu:hsla_steel_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "274F0587A93CEFBE"
+					item: "gtceu:hsla_steel_ingot"
+					type: "item"
+				}
+				{
+					id: "1AC30DEFADCFA79A"
+					item: "gtceu:tantalum_carbide_ingot"
+					type: "item"
+				}
+				{
+					id: "2FF57D1947E075F7"
+					item: "gtceu:titanium_carbide_ingot"
+					type: "item"
+				}
+				{
+					id: "68EB90B0E6FB43B2"
+					item: "gtceu:molybdenum_disilicide_ingot"
+					type: "item"
+				}
+			]
 			title: "&2Advanced Alloys"
 			x: 19.5d
 			y: 15.5d
@@ -2221,7 +2238,7 @@
 				""
 				"&rThese are formed like multiblocks. You can add a &3Parallel Control Hatch&r in order to allow them to process &dmore recipes&r at the same time, similarly to a &3Processing Array&r. The highest tier of Parallel Control Hatch can facilitate processing &d256 recipes&r at once!"
 				""
-				"&d In Modern, Gregicality Multiblocks was folded into the main mod&r"
+				"&dIn Modern, Gregicality Multiblocks was folded into the main mod.&r"
 				""
 				"Look up the usages of Parallel Hatches in JEI to see details of all the multiblock machines."
 				""
@@ -2772,6 +2789,11 @@
 				"072DB633006E78B7"
 				"7D39A4D0CC886796"
 				"3B6331F5763C4932"
+			]
+			description: [
+				"&6Yttrium Barium Cuprate&r (more accurately, Yttrium Barium Copper Oxide, or YBCO) is, among other things, a high-temperature superconductor material."
+				""
+				"This is used as plates in &3Nuclearcraft&r, and will become an important cable material for later tiers of &bGregTech&r components."
 			]
 			id: "6ED1605A65CF3724"
 			rewards: [{
