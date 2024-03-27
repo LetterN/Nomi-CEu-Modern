@@ -505,139 +505,139 @@ ServerEvents.recipes(event => {
 
 	//! avaritia endgame items
 	// skullfire sword
-    event.recipes.extendedcrafting.shaped_table(
-        'avaritia:skullfire_sword', [
-            '       B ',
-            '      BIB',
-            '     BHB ',
-            '    BGB  ',
-            ' D BFB   ',
-            '  DEB    ',
-            '  CD     ',
-            ' C  D    ',
-            'A        ',
-        ], {
-            A: 'nether_star',
-            B: 'avaritia:crystal_matrix_ingot',
-            C: '#minecraft:logs',
-            D: 'armorplus:wither_bone',
+	event.recipes.extendedcrafting.shaped_table(
+		'avaritia:skullfire_sword', [
+			'       B ',
+			'      BIB',
+			'     BHB ',
+			'    BGB  ',
+			' D BFB   ',
+			'  DEB    ',
+			'  CD     ',
+			' C  D    ',
+			'A        ',
+		], {
+			A: 'nether_star',
+			B: 'avaritia:crystal_matrix_ingot',
+			C: '#minecraft:logs',
+			D: 'armorplus:wither_bone',
 			E: 'armorplus:redstone_sword',
 			F: 'armorplus:lapis_sword',
 			G: 'armorplus:emerald_sword',
 			H: 'armorplus:guardian_sword',
 			I: 'armorplus:infused_lava_sword',
 			// J: 'nano_saber' // missing
-        }
-    );
+		}
+	);
 	// sword of the cosmos
-    event.recipes.extendedcrafting.shaped_table(
-        'avaritia:infinity_sword', [
-            '       BB',
-            '      BIB',
-            '     B B ',
-            '    B B  ',
-            ' D BFB   ',
-            '  DEB    ',
-            '  CD     ',
-            ' C  D    ',
-            'A        ',
-        ], {
-            A: 'avaritia:infinity_catalyst',
-            B: 'avaritia:infinity_ingot',
-            C: 'avaritia:neutronium_ingot',
-            D: 'avaritia:crystal_matrix_ingot',
+	event.recipes.extendedcrafting.shaped_table(
+		'avaritia:infinity_sword', [
+			'       BB',
+			'      BIB',
+			'     B B ',
+			'    B B  ',
+			' D BFB   ',
+			'  DEB    ',
+			'  CD     ',
+			' C  D    ',
+			'A        ',
+		], {
+			A: 'avaritia:infinity_catalyst',
+			B: 'avaritia:infinity_ingot',
+			C: 'avaritia:neutronium_ingot',
+			D: 'avaritia:crystal_matrix_ingot',
 			E: 'armorplus:super_star_sword',
 			F: 'armorplus:ender_dragon_sword',
 			// G: 'draconicevolution:wyvern_sword', 	// not yet finished
 			// H: 'draconicevolution:draconic_sword', 	// same as this
 			I: 'avaritia:skullfire_sword'
-        }
-    );
+		}
+	);
 	// infinity helmet
-    event.recipes.extendedcrafting.shaped_table(
-        'avaritia:infinity_helmet', [
-            '  AAAAA  ',
-            ' ABBDBBA ',
-            ' ACCECCA ',
-            ' ABBFBBA ',
-            ' ABBEBBA ',
-            '   B B   ',
-            '         ',
-            '         ',
-            '         ',
-        ], {
+	event.recipes.extendedcrafting.shaped_table(
+		'avaritia:infinity_helmet', [
+			'  AAAAA  ',
+			' ABBDBBA ',
+			' ACCECCA ',
+			' ABBFBBA ',
+			' ABBEBBA ',
+			'   B B   ',
+			'         ',
+			'         ',
+			'         ',
+		], {
 			// TODO readd the items once they exist
-            A: 'avaritia:neutronium_ingot',
+			A: 'avaritia:neutronium_ingot',
 			B: 'barrier', // the ultimate helmet
 			C: 'avaritia:infinity_ingot',
 			D: 'barrier', // draconic helm
 			E: 'barrier', // quarktech helmet
 			F: 'barrier' // wyvern helmet
-        }, 4 // explicitly make this t4 only, as this can fit into a t3 table
-    );
+		}, 4 // explicitly make this t4 only, as this can fit into a t3 table
+	);
 	// infinity chestplate
-    event.recipes.extendedcrafting.shaped_table(
-        'avaritia:infinity_chestplate', [
-            ' AA   AA ',
-            'AAA   AAA',
-            'AAAA AAAA',
-            ' AEBGBFA ',
-            ' ABBCBBA ',
-            ' ABCDCBA ',
-            ' ABBCBBA ',
-            ' ABBBBBA ',
-            '  AAAAA  ',
-        ], {
-            A: 'avaritia:neutronium_ingot',
+	event.recipes.extendedcrafting.shaped_table(
+		'avaritia:infinity_chestplate', [
+			' AA   AA ',
+			'AAA   AAA',
+			'AAAA AAAA',
+			' AEBGBFA ',
+			' ABBCBBA ',
+			' ABCDCBA ',
+			' ABBCBBA ',
+			' ABBBBBA ',
+			'  AAAAA  ',
+		], {
+			A: 'avaritia:neutronium_ingot',
 			B: 'barrier', // the ultimate chestplate
 			C: 'avaritia:infinity_ingot',
 			D: 'avaritia:infinity_block',
 			E: 'barrier', // draconic chestplate
 			F: 'barrier', // wyvern chestplate
 			G: 'barrier', // quarktech chestplate
-        }
-    );
+		}
+	);
 	// infinity leggings
-    event.recipes.extendedcrafting.shaped_table(
-        'avaritia:infinity_leggings', [
-            'AAAAAAAAA',
-            'AEBBBBBFA',
-            'ABA   ABA',
-            'ABA   ABA',
-            'ADA   ADA',
-            'ACA   ACA',
-            'ABA   ABA',
-            'ABA   ABA',
-            'AAA   AAA',
+	event.recipes.extendedcrafting.shaped_table(
+		'avaritia:infinity_leggings', [
+			'AAAAAAAAA',
+			'AEBBBBBFA',
+			'ABA   ABA',
+			'ABA   ABA',
+			'ADA   ADA',
+			'ACA   ACA',
+			'ABA   ABA',
+			'ABA   ABA',
+			'AAA   AAA',
         ], {
 			// TODO readd the items once they exist
-            A: 'avaritia:neutronium_ingot',
+			A: 'avaritia:neutronium_ingot',
 			B: 'barrier', // the ultimate leggings
 			C: 'avaritia:infinity_ingot',
 			D: 'barrier', // quarktech leggings
 			E: 'barrier', // draconic leggings
 			F: 'barrier', // wyvern leggings
-        }
+		}
     );
 	// infinity boots
-    event.recipes.extendedcrafting.shaped_table(
-        'avaritia:infinity_boots', [
-            ' AAA AAA ',
-            ' ADA ADA ',
-            ' AEA AFA ',
-            'AABA ABAA',
-            'ABBA ABBA',
-            'AAAC CAAA',
-            '         ',
-            '         ',
-            '         ',
-        ], {
-            A: 'avaritia:neutronium_ingot',
+	event.recipes.extendedcrafting.shaped_table(
+		'avaritia:infinity_boots', [
+			' AAA AAA ',
+			' ADA ADA ',
+			' AEA AFA ',
+			'AABA ABAA',
+			'ABBA ABBA',
+			'AAAC CAAA',
+			'         ',
+			'         ',
+			'         ',
+		], {
+			A: 'avaritia:neutronium_ingot',
 			B: 'barrier', // the ultimate boots
 			C: 'avaritia:infinity_ingot',
 			D: 'barrier', //quarktech boots
 			E: 'barrier', // draconic boots
 			F: 'barrier', // wyvern boots
-        }, 4
-    );
+		}, 4
+	);
 })
