@@ -1,100 +1,4 @@
 ServerEvents.recipes(event => {
-    //FIXME Broken recipe and needs tier 2
-    event.custom({
-        "type": "extendedcrafting:shaped_table",
-        // "tier": "2",
-        // this is really gross but it's not my fault someone put 'E' twice in the original recipe
-        "pattern": [
-            "A  B  C",
-            " D E F ",
-            "  GHI  ",
-            "JKLYMNO",
-            "  PQR  ",
-            " S T U ",
-            "V  W  X"
-        ],
-        "key": {
-            "A": {
-                "item": "gtceu:nichrome_ingot"
-            },
-            "B": {
-                "item": "gtceu:red_steel_ingot"
-            },
-            "C": {
-                "item": "gtceu:kanthal_ingot"
-            },
-            "D": {
-                "item": "gtceu:magnalium_ingot"
-            },
-            "E": {
-                "item": "gtceu:mana_infused_metal_ingot"
-            },
-            "F": {
-                "item": "gtceu:manyullyn_ingot"
-            },
-            "G": {
-                "item": "gtceu:enderium_ingot"
-            },
-            "H": {
-                "item": "gtceu:blue_steel_ingot"
-            },
-            "I": {
-                "item": "gtceu:microversium_ingot"
-            },
-            "J": {
-                "item": "gtceu:vanadium_steel_ingot"
-            },
-            "K": {
-                "item": "gtceu:rhodium_plated_palladium_ingot"
-            },
-            "L": {
-                "item": "gtceu:electrum_flux_ingot"
-            },
-            "M": {
-                "item": "avaritia:crystal_matrix_ingot"
-            },
-            "N": {
-                "item": "gtceu:end_steel_ingot"
-            },
-            "O": {
-                "item": "gtceu:electrical_steel_ingot"
-            },
-            "P": {
-                "item": "gtceu:signalum_ingot"
-            },
-            "Q": {
-                "item": "gtceu:vibrant_alloy_ingot"
-            },
-            "R": {
-                "item": "gtceu:soularium_ingot"
-            },
-            "S": {
-                "item": "gtceu:hsse_ingot"
-            },
-            "T": {
-                "item": "gtceu:dark_steel_ingot"
-            },
-            "U": {
-                "item": "gtceu:hssg_ingot"
-            },
-            "V": {
-                "item": "gtceu:ruridit_ingot"
-            },
-            "W": {
-                "item": "gtceu:hsss_ingot"
-            },
-            "X": {
-                "item": "gtceu:energetic_alloy_ingot"
-            },
-            "Y": {
-                "item": "gtceu:dark_soularium_ingot"
-            }
-        },
-        "result": {
-            "item": "kubejs:exotic_materials_catalyst"
-        }
-    })
-
     // Blacklight
     event.shaped(
         'gtceu:blacklight', [
@@ -147,11 +51,9 @@ ServerEvents.recipes(event => {
             P: 'gtceu:electrum_flux_plate'
         }
     ).id('redstone_arsenal:materials/flux_plating')
-})
 
-// Vacuum Freezer
-// Draconic Superconductor Wire
-ServerEvents.recipes(event => {
+	// Vacuum Freezer
+	// Draconic Superconductor Wire
     event.recipes.gtceu.vacuum_freezer("draconic_superconductor_wire")
         .itemInputs('gtceu:draconium_single_wire')
         .itemOutputs('gtceu:draconic_superconductor_single_wire')
@@ -417,7 +319,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    // Creative Items //
+    //! Creative Items !//
 
     //Creative Vending Upgrade
     event.recipes.extendedcrafting.shaped_table(
@@ -517,5 +419,225 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //GT CREATIVE EU SOURCE
+    event.recipes.extendedcrafting.shaped_table(
+        'gtceu:creative_energy', [
+            'ABCDEDCBA',
+            'BCDEFEDCB',
+            'CDEFGFEDC',
+            'DEFGHGFED',
+            'EFGHIHGFE',
+            'DEFGHGFED',
+            'CDEFGFEDC',
+            'BCDEFEDCB',
+            'ABCDEDCBA',
+        ], {
+            A: 'gtceu:mercury_barium_calcium_cuprate_hex_wire',
+            B: 'gtceu:uranium_triplatinum_hex_wire',
+            C: 'gtceu:samarium_iron_arsenic_oxide_hex_wire',
+            D: 'gtceu:indium_tin_barium_titanium_cuprate_hex_wire',
+            E: 'gtceu:uranium_rhodium_dinaquadide_hex_wire',
+            F: 'gtceu:enriched_naquadah_trinium_europium_duranide_hex_wire',
+            G: 'gtceu:ruthenium_trinium_americium_neutronate_hex_wire',
+            H: 'gtceu:omnium_hex_wire',
+            I: 'draconicevolution:creative_op_capacitor'
+        }
+    )
 
+    //CREATIVE RF SOURCE
+    event.recipes.extendedcrafting.shaped_table(
+        'draconicevolution:creative_op_capacitor', [
+            "UPPCGCPPU",
+            'PPCGSGCPP',
+            'PCGSRSGCP',
+            'CGSRORSGC',
+            'GSROIORSG',
+            'CGSRORSGC',
+            'PCGSRSGCP',
+            'PPCGSGCPP',
+            "UPPCGCPPU",
+        ], {
+            U: 'kubejs:ultimate_generator',
+            P: 'draconicevolution:energy_pylon',
+            C: 'draconicevolution:energy_core',
+            G: 'draconicevolution:particle_generator',
+            S: 'draconicevolution:energy_core_stabilizer',
+            R: 'draconicevolution:reactor_stabilizer',
+            O: 'draconicevolution:reactor_core',
+            I: 'avaritia:infinity_catalyst'
+        }, 4
+    )
+
+    // Creative Chest
+    event.recipes.extendedcrafting.shaped_table(
+        'gtceu:creative_chest', [
+            'ABBBBBBBA',
+            'BCTEDETCB',
+            'BFSGHGSFB',
+            'BUJXIXJUB',
+            'BNSWKWSNB',
+            'BUJXLXJUB',
+            'BFSGMGSFB',
+            'BCTEDETCB',
+            'ABBBBBBBA'
+        ], {
+            A: "storagedrawers:creative_storage_upgrade",
+            B: "avaritia:infinity_ingot",
+            C: "enderio:creative_power",
+            D: "minecraft:bedrock",
+            E: "minecraft:bedrock",
+            F: "minecraft:bedrock",
+            G: "minecraft:bedrock",
+            H: "avaritia:infinity_helmet",
+            I: "avaritia:infinity_chestplate",
+            J: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative",Throttle:1.0d}').strongNBT(),
+            K: "avaritia:infinity_sword",
+            L: "avaritia:infinity_leggings",
+            M: "avaritia:infinity_boots",
+            N: "minecraft:bedrock",
+            S: "solarflux:sp_avaritia.infinity",
+            T: "gtceu:creative_tank",
+            U: "ae2:creative_energy_cell",
+            W: "minecraft:bedrock",
+            X: "minecraft:bedrock"
+        }, 4
+    )
+
+	//! avaritia endgame items
+	// skullfire sword
+    event.recipes.extendedcrafting.shaped_table(
+        'avaritia:skullfire_sword', [
+            '       B ',
+            '      BIB',
+            '     BHB ',
+            '    BGB  ',
+            ' D BFB   ',
+            '  DEB    ',
+            '  CD     ',
+            ' C  D    ',
+            'A        ',
+        ], {
+            A: 'nether_star',
+            B: 'avaritia:crystal_matrix_ingot',
+            C: '#minecraft:logs',
+            D: 'armorplus:wither_bone',
+			E: 'armorplus:redstone_sword',
+			F: 'armorplus:lapis_sword',
+			G: 'armorplus:emerald_sword',
+			H: 'armorplus:guardian_sword',
+			I: 'armorplus:infused_lava_sword',
+			// J: 'nano_saber' // missing
+        }
+    );
+	// sword of the cosmos
+    event.recipes.extendedcrafting.shaped_table(
+        'avaritia:infinity_sword', [
+            '       BB',
+            '      BIB',
+            '     B B ',
+            '    B B  ',
+            ' D BFB   ',
+            '  DEB    ',
+            '  CD     ',
+            ' C  D    ',
+            'A        ',
+        ], {
+            A: 'avaritia:infinity_catalyst',
+            B: 'avaritia:infinity_ingot',
+            C: 'avaritia:neutronium_ingot',
+            D: 'avaritia:crystal_matrix_ingot',
+			E: 'armorplus:super_star_sword',
+			F: 'armorplus:ender_dragon_sword',
+			// G: 'draconicevolution:wyvern_sword', 	// not yet finished
+			// H: 'draconicevolution:draconic_sword', 	// same as this
+			I: 'avaritia:skullfire_sword'
+        }
+    );
+	// infinity helmet
+    event.recipes.extendedcrafting.shaped_table(
+        'avaritia:infinity_helmet', [
+            '  AAAAA  ',
+            ' ABBDBBA ',
+            ' ACCECCA ',
+            ' ABBFBBA ',
+            ' ABBEBBA ',
+            '   B B   ',
+            '         ',
+            '         ',
+            '         ',
+        ], {
+			// TODO readd the items once they exist
+            A: 'avaritia:neutronium_ingot',
+			B: 'barrier', // the ultimate helmet
+			C: 'avaritia:infinity_ingot',
+			D: 'barrier', // draconic helm
+			E: 'barrier', // quarktech helmet
+			F: 'barrier' // wyvern helmet
+        }, 4 // explicitly make this t4 only, as this can fit into a t3 table
+    );
+	// infinity chestplate
+    event.recipes.extendedcrafting.shaped_table(
+        'avaritia:infinity_chestplate', [
+            ' AA   AA ',
+            'AAA   AAA',
+            'AAAA AAAA',
+            ' AEBGBFA ',
+            ' ABBCBBA ',
+            ' ABCDCBA ',
+            ' ABBCBBA ',
+            ' ABBBBBA ',
+            '  AAAAA  ',
+        ], {
+            A: 'avaritia:neutronium_ingot',
+			B: 'barrier', // the ultimate chestplate
+			C: 'avaritia:infinity_ingot',
+			D: 'avaritia:infinity_block',
+			E: 'barrier', // draconic chestplate
+			F: 'barrier', // wyvern chestplate
+			G: 'barrier', // quarktech chestplate
+        }
+    );
+	// infinity leggings
+    event.recipes.extendedcrafting.shaped_table(
+        'avaritia:infinity_leggings', [
+            'AAAAAAAAA',
+            'AEBBBBBFA',
+            'ABA   ABA',
+            'ABA   ABA',
+            'ADA   ADA',
+            'ACA   ACA',
+            'ABA   ABA',
+            'ABA   ABA',
+            'AAA   AAA',
+        ], {
+			// TODO readd the items once they exist
+            A: 'avaritia:neutronium_ingot',
+			B: 'barrier', // the ultimate leggings
+			C: 'avaritia:infinity_ingot',
+			D: 'barrier', // quarktech leggings
+			E: 'barrier', // draconic leggings
+			F: 'barrier', // wyvern leggings
+        }
+    );
+	// infinity boots
+    event.recipes.extendedcrafting.shaped_table(
+        'avaritia:infinity_boots', [
+            ' AAA AAA ',
+            ' ADA ADA ',
+            ' AEA AFA ',
+            'AABA ABAA',
+            'ABBA ABBA',
+            'AAAC CAAA',
+            '         ',
+            '         ',
+            '         ',
+        ], {
+            A: 'avaritia:neutronium_ingot',
+			B: 'barrier', // the ultimate boots
+			C: 'avaritia:infinity_ingot',
+			D: 'barrier', //quarktech boots
+			E: 'barrier', // draconic boots
+			F: 'barrier', // wyvern boots
+        }, 4
+    );
 })

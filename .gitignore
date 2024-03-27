@@ -20,6 +20,7 @@
 /config/fml.toml
 /config/jei/world/local/*
 /kubejs/probe
+/kubejs/config/probejs.json
 
 config/fabric/indigo-renderer.properties
 config/roughlyenoughitems/pinyin.properties
