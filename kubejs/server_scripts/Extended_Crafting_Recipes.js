@@ -49,66 +49,6 @@ ServerEvents.recipes(event => {
             H: 'kubejs:heart_of_a_universe'
         });
 
-
-    //CREATIVE RF SOURCE
-    event.recipes.extendedcrafting.shaped_table(
-        'draconicevolution:creative_op_capacitor', [
-            "UPPCGCPPU",
-            'PPCGSGCPP',
-            'PCGSRSGCP',
-            'CGSRORSGC',
-            'GSROIORSG',
-            'CGSRORSGC',
-            'PCGSRSGCP',
-            'PPCGSGCPP',
-            "UPPCGCPPU",
-        ], {
-            U: 'kubejs:ultimate_generator',
-            P: 'draconicevolution:energy_pylon',
-            C: 'draconicevolution:energy_core',
-            G: 'draconicevolution:particle_generator',
-            S: 'draconicevolution:energy_core_stabilizer',
-            R: 'draconicevolution:reactor_stabilizer',
-            O: 'draconicevolution:reactor_core',
-            I: 'avaritia:infinity_catalyst'
-        }, 4
-    )
-
-    // Creative Chest
-    event.recipes.extendedcrafting.shaped_table(
-        'gtceu:creative_chest', [
-            'ABBBBBBBA',
-            'BCTEDETCB',
-            'BFSGHGSFB',
-            'BUJXIXJUB',
-            'BNSWKWSNB',
-            'BUJXLXJUB',
-            'BFSGMGSFB',
-            'BCTEDETCB',
-            'ABBBBBBBA'
-        ], {
-            A: "storagedrawers:creative_storage_upgrade",
-            B: "avaritia:infinity_ingot",
-            C: "enderio:creative_power",
-            D: "minecraft:bedrock",
-            E: "minecraft:bedrock",
-            F: "minecraft:bedrock",
-            G: "minecraft:bedrock",
-            H: "avaritia:infinity_helmet",
-            I: "avaritia:infinity_chestplate",
-            J: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative"}').weakNBT(),
-            K: "avaritia:infinity_sword",
-            L: "avaritia:infinity_leggings",
-            M: "avaritia:infinity_boots",
-            N: "minecraft:bedrock",
-            S: "solarflux:sp_avaritia.infinity",
-            T: "gtceu:creative_tank",
-            U: "ae2:creative_energy_cell",
-            W: "minecraft:bedrock",
-            X: "minecraft:bedrock"
-        }, 4
-    )
-
 	// infinity ingot
 	event.recipes.extendedcrafting.shaped_table(
 		'avaritia:infinity_ingot', [
