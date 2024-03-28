@@ -6,7 +6,8 @@ ServerEvents.tags('item', event => {
     event.add('ae2:all_fluix', 'gtceu:fluix_gem')
     event.add('forge:singularities/ultimate', 'kubejs:mote_of_omnium')
     event.add('forge:singularities/ultimate', 'extendedcrafting:ultimate_singularity')
-    event.add('forge:ingots/the_ultimate', 'kubejs:omnium_ingot')
+    event.add('forge:ingots/the_ultimate', 'kubejs:omnium_ingot') // this sucks!
+    event.add('forge:ingots/omnium', 'kubejs:omnium_ingot')
     event.add('forge:ingots/electrum_flux', 'redstone_arsenal:flux_ingot')
     event.add('forge:dusts/electrum_flux', 'redstone_arsenal:flux_dust')
     event.add('forge:nuggets/electrum_flux', 'redstone_arsenal:flux_nugget')
@@ -15,14 +16,14 @@ ServerEvents.tags('item', event => {
     event.remove('forge:ingots/aluminum', 'nuclearcraft:aluminum_ingot')
     event.add('forge:ingots/aluminium', 'nuclearcraft:aluminum_ingot')
 
-		// can't replace tags in recipes so we just add the tag to the item instead
-		event.add('forge:ingots/redstone_alloy', 'gtceu:red_alloy_ingot')
-		event.add('forge:ingots/copper_alloy', 'gtceu:electrical_steel_ingot')
+	// can't replace tags in recipes so we just add the tag to the item instead
+	event.add('forge:ingots/redstone_alloy', 'gtceu:red_alloy_ingot')
+	event.add('forge:ingots/copper_alloy', 'gtceu:electrical_steel_ingot')
 
-		event.remove('forge:gears/wood', 'enderio:wood_gear')
-		event.remove('forge:gears/stone', 'enderio:stone_gear')
-		event.remove('forge:gears/iron', 'enderio:iron_gear')
-		event.remove('forge:gears/dark_steel', 'enderio:dark_bimetal_gear')
+	event.remove('forge:gears/wood', 'enderio:wood_gear')
+	event.remove('forge:gears/stone', 'enderio:stone_gear')
+	event.remove('forge:gears/iron', 'enderio:iron_gear')
+	event.remove('forge:gears/dark_steel', 'enderio:dark_bimetal_gear')
 })
 
 ServerEvents.tags('block', event => {

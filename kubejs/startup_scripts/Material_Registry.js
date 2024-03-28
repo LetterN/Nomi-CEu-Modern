@@ -6,6 +6,25 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('taranium', 149, 264, -1, null, 'Tn', false)
 })
 
+// tags
+GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
+	TagPrefix.ingot.setIgnored(GTMaterials.get('crystal_matrix'), 'avaritia:crystal_matrix_ingot')
+	TagPrefix.ingot.setIgnored(GTMaterials.get('infinity'), 'avaritia:infinity_ingot')
+	TagPrefix.ingot.setIgnored(GTMaterials.get('omnium'), 'kubejs:omnium_ingot')
+
+	TagPrefix.nugget.setIgnored(GTMaterials.get('omnium'), 'extendedcrafting:the_ultimate_nugget')
+
+	// gt auto enables unification once ingot is setignored or something???
+	// TagPrefix.plate.setIgnored(GTMaterials.get('crystal_matrix'), 'kubejs:crystal_matrix_plate')
+	// TagPrefix.plate.setIgnored(GTMaterials.get('infinity'), 'kubejs:infinity_plate')
+
+	TagPrefix.block.setIgnored(GTMaterials.get('crystal_matrix'), 'avaritia:crystal_matrix_block')
+	TagPrefix.block.setIgnored(GTMaterials.get('infinity'), 'avaritia:infinity_block')
+	TagPrefix.block.setIgnored(GTMaterials.get('omnium'), 'extendedcrafting:the_ultimate_block')
+
+	// idk where to throw this, but on this stage the material is already generated
+	GTMaterials.get('infinity').setFormula("∞")
+})
 
 // Elemental materials
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -30,7 +49,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .element(GTElements.get("omnium"))
         .color(0x414751)
         .iconSet('shiny')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
+        .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
         .cableProperties('2147483647', '64', '0', true);
 
     event.create('taranium')
@@ -42,8 +61,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE)
 
 })
-
-
 
 // Chemical Materials
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -270,12 +287,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .color(0x428fdb)
         .iconSet('dull')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR);
-
-    event.create("crystal_matrix")
-        .dust().fluid() // dont gen an ingot
-        .color(0x66ffff)
-        .iconSet('shiny')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.NO_SMELTING);
 })
 
 
@@ -352,12 +363,23 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 // Endgame stuff
 GTCEuStartupEvents.registry('gtceu:material', event => {
+    event.create("crystal_matrix")
+        .ingot().fluid()
+        .color(0x66ffff)
+        .iconSet('shiny')
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING);
     event.create("draconic_superconductor")
         .ingot().fluid()
         .element(GTElements.get("draconic_superconductor"))
         .color(0xffffff)
         .iconSet('shiny')
         .cableProperties(2147483647, 4, 0, true)
+	event.create('infinity')
+		.ingot()
+		.color(0x000000)
+		.iconSet("shiny")
+		.flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE)
+		// .components('5x neutronium')  doesnt exist!
 })
 
 
@@ -378,8 +400,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 })
 
 //Space Materials
-
-
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create("dilithium")
         .dust()
@@ -406,7 +426,6 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
 })
 
 // AA gems
-
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('restonia')
         .gem()
@@ -451,7 +470,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 })
 
 // AA empowered gems
-
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('restonia_empowered')
         .gem().fluid()
