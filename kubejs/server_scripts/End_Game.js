@@ -490,7 +490,7 @@ ServerEvents.recipes(event => {
             G: "minecraft:bedrock",
             H: "avaritia:infinity_helmet",
             I: "avaritia:infinity_chestplate",
-            J: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative",Throttle:1.0d}').strongNBT(),
+            J: Item.of('ironjetpacks:jetpack', '{Id:"ironjetpacks:creative",Throttle:1.0d}').weakNBT(),
             K: "avaritia:infinity_sword",
             L: "avaritia:infinity_leggings",
             M: "avaritia:infinity_boots",
