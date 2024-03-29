@@ -14,10 +14,6 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
 
 	TagPrefix.nugget.setIgnored(GTMaterials.get('omnium'), 'extendedcrafting:the_ultimate_nugget')
 
-	// gt auto enables unification once ingot is setignored or something???
-	// TagPrefix.plate.setIgnored(GTMaterials.get('crystal_matrix'), 'kubejs:crystal_matrix_plate')
-	// TagPrefix.plate.setIgnored(GTMaterials.get('infinity'), 'kubejs:infinity_plate')
-
 	TagPrefix.block.setIgnored(GTMaterials.get('crystal_matrix'), 'avaritia:crystal_matrix_block')
 	TagPrefix.block.setIgnored(GTMaterials.get('infinity'), 'avaritia:infinity_block')
 	TagPrefix.block.setIgnored(GTMaterials.get('omnium'), 'extendedcrafting:the_ultimate_block')
@@ -378,7 +374,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 		.ingot()
 		.color(0x000000)
 		.iconSet("shiny")
-		.flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE)
+		.flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.GENERATE_PLATE)
 		// .components('5x neutronium')  doesnt exist!
 })
 
