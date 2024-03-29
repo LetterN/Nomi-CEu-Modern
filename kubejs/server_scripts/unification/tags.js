@@ -1,13 +1,7 @@
 ServerEvents.tags('item', event => {
-    event.add('forge:ingots/neutronium', 'avaritia:neutronium_ingot')
-    event.add('forge:nuggets/neutronium', 'avaritia:neutronium_nugget')
-    event.add('forge:storage_blocks/neutronium', 'avaritia:neutronium_block')
-    event.add('forge:dusts/tiny/neutronium', 'avaritia:pile_of_neutrons')
     event.add('ae2:all_fluix', 'gtceu:fluix_gem')
     event.add('forge:singularities/ultimate', 'kubejs:mote_of_omnium')
     event.add('forge:singularities/ultimate', 'extendedcrafting:ultimate_singularity')
-    event.add('forge:ingots/the_ultimate', 'kubejs:omnium_ingot') // this sucks!
-    event.add('forge:ingots/omnium', 'kubejs:omnium_ingot')
     event.add('forge:ingots/electrum_flux', 'redstone_arsenal:flux_ingot')
     event.add('forge:dusts/electrum_flux', 'redstone_arsenal:flux_dust')
     event.add('forge:nuggets/electrum_flux', 'redstone_arsenal:flux_nugget')
@@ -24,6 +18,23 @@ ServerEvents.tags('item', event => {
 	event.remove('forge:gears/stone', 'enderio:stone_gear')
 	event.remove('forge:gears/iron', 'enderio:iron_gear')
 	event.remove('forge:gears/dark_steel', 'enderio:dark_bimetal_gear')
+
+	// endgame mats
+	// neutronium
+    event.add('forge:ingots/neutronium', 'avaritia:neutronium_ingot')
+    event.add('forge:nuggets/neutronium', 'avaritia:neutronium_nugget')
+    event.add('forge:dusts/tiny/neutronium', 'avaritia:pile_of_neutrons')
+    event.add('forge:storage_blocks/neutronium', 'avaritia:neutronium_block')
+	// crystal matrix
+	event.add('forge:storage_blocks/crystal_matrix', 'avaritia:crystal_matrix_block')
+	// omnium hacks
+    event.add('forge:ingots/the_ultimate', 'kubejs:omnium_ingot') // this sucks!
+    event.add('forge:ingots/omnium', 'kubejs:omnium_ingot')
+	// infinity
+	event.add('forge:storage_blocks/infinity', 'avaritia:infinity_block')
+
+	// generic unification
+    event.add('forge:storage_blocks', ['avaritia:neutronium_block', 'avaritia:crystal_matrix_block', 'avaritia:infinity_block'])
 })
 
 ServerEvents.tags('block', event => {

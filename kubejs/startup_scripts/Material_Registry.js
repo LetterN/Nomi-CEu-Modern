@@ -8,18 +8,25 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
 
 // tags
 GTCEuStartupEvents.registry('gtceu:tag_prefix', event => {
-	TagPrefix.ingot.setIgnored(GTMaterials.get('crystal_matrix'), 'avaritia:crystal_matrix_ingot')
-	TagPrefix.ingot.setIgnored(GTMaterials.get('infinity'), 'avaritia:infinity_ingot')
-	TagPrefix.ingot.setIgnored(GTMaterials.get('omnium'), 'kubejs:omnium_ingot')
 
-	TagPrefix.nugget.setIgnored(GTMaterials.get('omnium'), 'extendedcrafting:the_ultimate_nugget')
+})
+GTCEuStartupEvents.materialModification(() => {
+	const INFINITY = GTMaterials.get('infinity');
+	INFINITY.setFormula("∞")
+	const CRYSTAL_MATRIX = GTMaterials.get('crystal_matrix');
+	const OMNIUM = GTMaterials.get('omnium');
 
-	TagPrefix.block.setIgnored(GTMaterials.get('crystal_matrix'), 'avaritia:crystal_matrix_block')
-	TagPrefix.block.setIgnored(GTMaterials.get('infinity'), 'avaritia:infinity_block')
-	TagPrefix.block.setIgnored(GTMaterials.get('omnium'), 'extendedcrafting:the_ultimate_block')
+	TagPrefix.ingot.setIgnored(CRYSTAL_MATRIX, 'avaritia:crystal_matrix_ingot')
+	TagPrefix.ingot.setIgnored(INFINITY, 'avaritia:infinity_ingot')
+	TagPrefix.ingot.setIgnored(OMNIUM, 'kubejs:omnium_ingot')
 
-	// idk where to throw this, but on this stage the material is already generated
-	GTMaterials.get('infinity').setFormula("∞")
+	TagPrefix.nugget.setIgnored(OMNIUM, 'extendedcrafting:the_ultimate_nugget')
+
+	TagPrefix.block.setIgnored(CRYSTAL_MATRIX, 'avaritia:crystal_matrix_block')
+	TagPrefix.block.setIgnored(INFINITY, 'avaritia:infinity_block')
+	TagPrefix.block.setIgnored(OMNIUM, 'extendedcrafting:the_ultimate_block')
+
+	TagPrefix.plate.setIgnored(INFINITY, 'kubejs:infinity_plate')
 })
 
 // Elemental materials
