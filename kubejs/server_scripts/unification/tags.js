@@ -23,18 +23,27 @@ ServerEvents.tags('item', event => {
 	// neutronium
     event.add('forge:ingots/neutronium', 'avaritia:neutronium_ingot')
     event.add('forge:nuggets/neutronium', 'avaritia:neutronium_nugget')
-    event.add('forge:dusts/tiny/neutronium', 'avaritia:pile_of_neutrons')
+    event.add('forge:tiny_dusts/neutronium', 'avaritia:pile_of_neutrons')
     event.add('forge:storage_blocks/neutronium', 'avaritia:neutronium_block')
 	// crystal matrix
+	event.add('forge:ingots/crystal_matrix', 'avaritia:crystal_matrix_ingot')
 	event.add('forge:storage_blocks/crystal_matrix', 'avaritia:crystal_matrix_block')
-	// omnium hacks
+	event.add('forge:plates/crystal_matrix', 'kubejs:crystal_matrix_plate')
+	// omnium
     event.add('forge:ingots/the_ultimate', 'kubejs:omnium_ingot') // this sucks!
     event.add('forge:ingots/omnium', 'kubejs:omnium_ingot')
+	// HACK: remove extreme crafting tags
+	event.add('forge:nuggets/omnium', 'extendedcrafting:the_ultimate_nugget')
+	event.add('forge:storage_blocks/omnium', 'extendedcrafting:the_ultimate_block')
 	// infinity
+	event.add('forge:ingots/infinity', 'avaritia:infinity_ingot')
 	event.add('forge:storage_blocks/infinity', 'avaritia:infinity_block')
+	event.add('forge:plates/infinity', 'kubejs:infinity_plate')
 
 	// generic unification
     event.add('forge:storage_blocks', ['avaritia:neutronium_block', 'avaritia:crystal_matrix_block', 'avaritia:infinity_block'])
+    event.add('forge:nuggets', ['extendedcrafting:the_ultimate_nugget', 'avaritia:neutronium_nugget'])
+	event.add('forge:plates', ['kubejs:crystal_matrix_plate', 'kubejs:infinity_plate'])
 })
 
 ServerEvents.tags('block', event => {

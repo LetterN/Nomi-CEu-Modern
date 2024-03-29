@@ -129,12 +129,13 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.recipes.gtceu.bender("crystal_matrix_plate")
-        .itemInputs('avaritia:crystal_matrix_ingot')
-        .itemOutputs('kubejs:crystal_matrix_plate')
-        .duration(98)
-        .EUt(24)
-        .circuit(1)
+	// Handled by gregtech, left here incase of emergency
+    // event.recipes.gtceu.bender("crystal_matrix_plate")
+    //     .itemInputs('avaritia:crystal_matrix_ingot')
+    //     .itemOutputs('kubejs:crystal_matrix_plate')
+    //     .duration(98)
+    //     .EUt(24)
+    //     .circuit(1)
 
     // Ultimate Gem
     event.custom({
