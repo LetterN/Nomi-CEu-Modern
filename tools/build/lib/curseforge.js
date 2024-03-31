@@ -22,7 +22,10 @@ export const GetModInfo = async (key, modID) => {
   return (await modData.json()).data;
 }
 
-export const DownloadCF = async (key, modInfo = {}, dest) => {
+export const DownloadCF = async (key, modInfo = {}, dest, retrycount) => {
+  if (retrycount === null || retrycount === undefined) {
+    retrycount = 5;
+  }
   const { modID, modFileID } = modInfo;
   if (!modID || !modFileID) {
     Juke.logger.error(`Bad DownloadCF modInfo args. modID: ${modID} | modFileID: ${modFileID}`);
@@ -40,25 +43,39 @@ export const DownloadCF = async (key, modInfo = {}, dest) => {
   if (modData.status !== 200) {
     if (modData.status == 403) {
       Juke.logger.error(`Failed to fetch download url at ${modData.url}: Bad CF Token`);
+      throw new Juke.ExitCode(1); // explicitly dont retry if this is the error
     } else {
       Juke.logger.error(`Failed to fetch download url at ${modData.url}: ${modData.status}`);
     }
-    throw new Juke.ExitCode(1);
+    if (retrycount <= 0) {
+      Juke.logger.error('Exhausted retries, exiting download');
+      throw new Juke.ExitCode(1);
+    }
+    retrycount--;
+    return await DownloadCF(key, modInfo, dest, retrycount);
   }
   const modDataJson = (await modData.json()).data;
+
   dest = `${dest}${modDataJson.fileName}`
   // TODO hash chk
   // let's see if the file exists
   if (fs.existsSync(dest) && fs.statSync(dest).size === modDataJson.fileLength) {
-    Juke.logger.info(`Skipped ${modDataJson.fileName}`)
-    return;
+    Juke.logger.info(`Skipped: ${modDataJson.fileName}`)
+    return modDataJson;
   }
 
   Juke.logger.info(`Downloading: ${modDataJson.fileName}`)
   await download_file(modDataJson.downloadUrl, { headers: headers }, dest);
   if (!fs.existsSync(dest) || fs.statSync(dest).size !== modDataJson.fileLength) {
     Juke.logger.warn(`Download failed ${modDataJson.fileName}`)
+    if (retrycount <= 0) {
+      Juke.logger.error('Exhausted retries, exiting download');
+      throw new Juke.ExitCode(1);
+    }
+    retrycount--;
+    return await DownloadCF(key, modInfo, dest, retrycount);
   }
+  return modDataJson;
 };
 
 /**

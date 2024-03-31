@@ -29,6 +29,22 @@ const includeList = [
   "mods"
 ]
 
+/**
+ * @param {fs.PathLike} ourDir
+ * @param {fs.PathLike} newDir
+ */
+const symlinkSync = (ourDir, newDir) => {
+  if (process.platform === 'win32') {
+    if (!fs.lstatSync(ourDir).isDirectory()) {
+      fs.copyFileSync(ourDir, newDir);
+      return;
+    }
+    fs.symlinkSync(ourDir, newDir, 'junction')
+    return;
+  }
+  fs.symlinkSync(ourDir, newDir)
+}
+
 async function packMod(group) {
   Juke.rm(`dist/.tmp/${group}`, { recursive: true });
   // copy dir to dist/.tmp
@@ -116,24 +132,76 @@ export const DownloadModsTarget = new Juke.Target({
       Juke.logger.error('CFCORE_API_TOKEN env var is required for downloading mods.');
       throw new Juke.ExitCode(1);
     }
-    const jsonData = JSON.parse(fs.readFileSync('manifest.json', 'utf-8'));
+    const manifest = JSON.parse(fs.readFileSync('manifest.json', 'utf-8'));
 
     fs.mkdirSync("dist/modcache", { recursive: true })
 
-    const max_conc_download = 3;
-    let await_bucket = [];
-    for (const key in jsonData.files) {
-      const file = jsonData.files[key];
-      await_bucket.push(DownloadCF(env.CFCORE_API_TOKEN, {
-        modID: file.projectID,
-        modFileID: file.fileID
-      }, `dist/modcache/`));
+    // get old jsondata files cache
+    let dataKeys = {};
+    const mIdToDownload = [];
+    if (fs.existsSync('dist/modcache/cache.json')) {
+      Juke.logger.info('Modmeta cache hit')
+      // diff new & old data
+      const oldData = JSON.parse(fs.readFileSync('dist/modcache/cache.json', 'utf-8'));
+      const newData = {}
+      for (const key in manifest.files) {
+        const data = manifest.files[key];
+        const { projectID, fileID, required } = data;
+        newData[`${projectID}`] = { fileID, required }
+      }
 
-      if (await_bucket.length <= max_conc_download) {
-        await Promise.all(await_bucket)
-        await_bucket = [];
+      const oldDataKeys = Object.keys(oldData);
+      const newDataKeys = Object.keys(newData);
+
+      // filter returns changed mods, lets see now who owns them
+      for (const pid of oldDataKeys.filter(pid => !newDataKeys.includes(pid))) {
+        const fromOldData = oldData[`${pid}`];
+        if (fromOldData) {
+          // from old, which means this is removed
+          Juke.rm(`dist/modcache/${fromOldData['file']}`)
+          Juke.logger.info(`Mod was removed from modpack: ${pid}`)
+          continue;
+        }
+        if (newData[`${pid}`]) { // new mod added
+          if (mIdToDownload.find(`${pid}`)) {
+            mIdToDownload.push(`${pid}`);
+            Juke.logger.info(`Mod was added from modpack: ${pid}`)
+          }
+        }
+      }
+
+      // now filter changed *fileids*, could prolly b optimized and use 1 loop instead of 2
+      for (const pid of oldDataKeys.filter(pid => (
+          newData[pid] && oldData[pid]['fileID'] !== newData[pid]['fileID']))) {
+        const fromOldData = oldData[`${pid}`];
+        if (fromOldData) {
+          // from old, which means this is updated
+          Juke.rm(`dist/modcache/${fromOldData['file']}`)
+          Juke.logger.info(`Mod was updated from modpack: ${pid}`)
+          if (mIdToDownload.find(`${pid}`))
+            mIdToDownload.push(`${pid}`);
+        }
+      }
+      dataKeys = newData;
+    } else {
+      Juke.logger.info('Modmeta remapping')
+      for (const key in manifest.files) {
+        const data = manifest.files[key];
+        const { projectID, fileID, required } = data;
+        dataKeys[`${projectID}`] = { fileID, required }
+        mIdToDownload.push(`${projectID}`);
       }
     }
+
+    for (const modID of mIdToDownload) {
+      const file = dataKeys[modID];
+      const res = await DownloadCF(env.CFCORE_API_TOKEN, {
+        modID,
+        modFileID: file.fileID
+      }, `dist/modcache/`);
+      dataKeys[modID]['file'] = res.fileName;
+    }
+    fs.writeFileSync('dist/modcache/cache.json', JSON.stringify(dataKeys))
   }
 });
 
@@ -182,8 +250,8 @@ export const BuildServerTarget = new Juke.Target({
         const fillet = file.toLowerCase();
         return (
           !fillet.includes('oculus')
-          && !fillet.toLowerCase().includes('effortlessbuilding')
-          && !fillet.toLowerCase().includes('citresewn')
+          && !fillet.includes('citresewn')
+          && fillet.includes('.jar')
         )
       }
     })
@@ -195,6 +263,7 @@ export const BuildServerTarget = new Juke.Target({
 export const BuildDevTarget = new Juke.Target({
   dependsOn: [BuildModlistTarget, DownloadModsTarget],
   inputs: [
+    // weird bug with symlinked config and mods folder
     ...includeList,
     "dist/modlist.html"
   ],
@@ -205,17 +274,24 @@ export const BuildDevTarget = new Juke.Target({
     ...includeList.map(v => `dist/dev/${v}`)
   ]),
   executes: async () => {
+    Juke.rm('dist/.devtmp', { recursive: true })
     fs.mkdirSync("dist/dev", { recursive: true });
     fs.mkdirSync("dist/.devtmp", { recursive: true });
-    for (const folders of includeList.filter(v => (v !== "mods"))) {
-      fs.symlinkSync(resolve(folders), resolve(`dist/dev/${folders}`));
+    for (const folders of includeList.filter(v => !(v === "mods" || v === "config"))) {
+      symlinkSync(resolve(folders), resolve(`dist/dev/${folders}`));
     }
 
     // "merge" both mod folders
-    fs.cpSync('dist/modcache', 'dist/.devtmp', { recursive: true });
+    fs.cpSync('dist/modcache', 'dist/.devtmp', {
+      recursive: true,
+      filter: file => file.toLowerCase().includes('.jar')
+    });
     fs.cpSync('mods', 'dist/.devtmp', { recursive: true, force: true });
-    fs.symlinkSync(resolve('dist/.devtmp'), resolve('dist/dev/mods'));
+    fs.cpSync('dist/.devtmp', 'dist/dev/mods', { recursive: true });
+    fs.cpSync('config', 'dist/dev/config', { recursive: true });
 
+    // todo find the mod to blame, or just remove this and the filters up there if this ever gets fixed
+    Juke.logger.warn('Due to a bug with a mod, symlinking the mod folder or config causes errors which breaks game startup.')
     await packMod("dev");
   }
 })
