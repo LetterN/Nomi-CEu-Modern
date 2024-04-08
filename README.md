@@ -14,7 +14,7 @@
 
 ## Features
 - GTCEu Modern which is on active development in-parity with regular GTCEu
-- LV-HV tier in-parity of Nomifactory CEu
+- LV-ZPM tier in-parity of Nomifactory CEu
 
 ## Contributing and Maintainer Information
 This is available on our [wiki](https://github.com/Nomi-CEu/Nomi-CEu/wiki).
