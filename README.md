@@ -1,6 +1,6 @@
-<div style="text-align:center">
+<center>
 
-<img align="center" src="https://raw.githubusercontent.com/Nomi-CEu/Nomi-CEu-Modern/main/tools/638448313865454254.png" width="250" height="250" alt="Logo">
+<img src="https://raw.githubusercontent.com/Nomi-CEu/Nomi-CEu-Modern/main/tools/638448313865454254.png" width="250" height="250" alt="Logo">
 
 # Nomifactory CEu Modern
 
@@ -16,7 +16,7 @@ _**Port of [Nomifactory CEu](https://github.com/Nomi-CEu/Nomi-CEu) using [GregTe
 
 **FOR DOWNLOADS GO TO THE [RELEASES](https://github.com/Nomi-CEu/Nomi-CEu-Modern/releases) TAB**
 
-</div>
+</center>
 
 ## Features
 
