@@ -1,6 +1,6 @@
 <div style="text-align:center">
 
-<img src="https://github.com/Nomi-CEu/Nomi-CEu-Modern/blob/main/tools/638448313865454254.png" width="250" height="250" alt="Logo">
+<img align="center" src="https://raw.githubusercontent.com/Nomi-CEu/Nomi-CEu-Modern/main/tools/638448313865454254.png" width="250" height="250" alt="Logo">
 
 # Nomifactory CEu Modern
 
