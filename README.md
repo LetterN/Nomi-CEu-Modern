@@ -1,6 +1,6 @@
 <div style="text-align:center">
 
-<img src="https://cdn.discordapp.com/attachments/959801878135316511/1214687721289949254/5ci9uXoV.png?ex=65fa0518&is=65e79018&hm=959a4069a6c5711ac5e345ec40e48ad7062d6db8604125d2580702d617990048&" width="250" height="250" alt="Logo">
+<img src="https://github.com/Nomi-CEu/Nomi-CEu-Modern/blob/main/tools/638448313865454254.png" width="250" height="250" alt="Logo">
 
 # Nomifactory CEu Modern
 
